@@ -151,6 +151,8 @@ TYPE_BY_ID = {
     "community.tk.containers.industry_tk_02_25": "ExtinguisherBox",
     "community.tk.containers.kitchen_misc_tk_01_12": "Shelf",
     "community.tk.kitchen_misc.ice_machine": "IceMachine",
+    "community.tk.kitchen_misc.ice_machine_65": "IceMachine",
+    "community.tk.kitchen_misc.ice_machine_100": "IceMachine",
     "community.tk.kitchen_misc.deep_fryer": "DeepFryer",
     "community.tk.kitchen_misc.coffee_maker": "CoffeeMaker",
     "community.tk.kitchen_misc.coffee_machine": "CoffeeMaker",

@@ -105,7 +105,10 @@ Last verified: 2026-10-28, from console.txt (13:52 session) + on-disk build of T
   Unverified guess: the tooltip reads the tile property, while KBW's `Properties.lua` only calls
   `setCapacity` on the built object. To check:
   - what the build-menu tooltip actually reads;
-  - what a built crate's container really holds (100 vs 30);
+  - what a built crate's container really holds (100 vs 30); **ANSWERED 2026-11-02: holds 100**
+    (user, in game). KBW Properties.lua `container` handler calls
+    `part:getContainer():setCapacity(stage.container.capacity)` on the built object, so the
+    definition sets the real capacity; the tile's ContainerCapacity only feeds the tooltip.
   - whether the plain cases show 30 but have 25.
   Likely fixes: set `ContainerCapacity` in the tile patch to match the definition, or point
   the same-sprite variants at a capacity both agree on. Then audit every container buildable,

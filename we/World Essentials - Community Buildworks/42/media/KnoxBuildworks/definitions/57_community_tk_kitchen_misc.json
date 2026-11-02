@@ -273,8 +273,8 @@
           "requirements": {
             "materials": "kbwve.appliance.refrigerator",
             "skills": {
-              "MetalWelding": 4,
-              "Electricity": 3
+              "MetalWelding": 5,
+              "Electricity": 4
             },
             "knowledge": {
               "recipes": [
@@ -292,8 +292,8 @@
                 {
                   "mode": "all",
                   "skills": {
-                    "MetalWelding": 4,
-                    "Electricity": 7
+                    "MetalWelding": 5,
+                    "Electricity": 8
                   }
                 }
               ]
@@ -456,8 +456,8 @@
           "requirements": {
             "materials": "kbwcb.appliance.freezer65",
             "skills": {
-              "MetalWelding": 5,
-              "Electricity": 4
+              "MetalWelding": 6,
+              "Electricity": 5
             },
             "knowledge": {
               "recipes": [
@@ -475,8 +475,8 @@
                 {
                   "mode": "all",
                   "skills": {
-                    "MetalWelding": 5,
-                    "Electricity": 8
+                    "MetalWelding": 6,
+                    "Electricity": 9
                   }
                 }
               ]
@@ -507,7 +507,7 @@
                 "items": [
                   "KnoxBuildworks.InsulationFoam"
                 ],
-                "amount": 5
+                "amount": 4
               },
               {
                 "id": "expansion_thincopperpipe",
@@ -516,7 +516,7 @@
                 "items": [
                   "KnoxBuildworks.ThinCopperPipe"
                 ],
-                "amount": 5
+                "amount": 4
               },
               {
                 "id": "expansion_rubberseal",
@@ -525,7 +525,7 @@
                 "items": [
                   "KnoxBuildworks.RubberSeal"
                 ],
-                "amount": 5
+                "amount": 4
               },
               {
                 "id": "expansion_plasticsheet",
@@ -534,7 +534,7 @@
                 "items": [
                   "KnoxBuildworks.PlasticSheet"
                 ],
-                "amount": 5
+                "amount": 3
               }
             ]
           },
@@ -642,8 +642,8 @@
           "requirements": {
             "materials": "kbwcb.appliance.freezer100",
             "skills": {
-              "MetalWelding": 6,
-              "Electricity": 5
+              "MetalWelding": 7,
+              "Electricity": 6
             },
             "knowledge": {
               "recipes": [
@@ -661,8 +661,8 @@
                 {
                   "mode": "all",
                   "skills": {
-                    "MetalWelding": 6,
-                    "Electricity": 9
+                    "MetalWelding": 7,
+                    "Electricity": 10
                   }
                 }
               ]
@@ -684,7 +684,7 @@
                 "items": [
                   "KnoxBuildworks.RefrigerantBottle"
                 ],
-                "uses": 9
+                "uses": 8
               },
               {
                 "id": "expansion_insulationfoam",
@@ -693,7 +693,7 @@
                 "items": [
                   "KnoxBuildworks.InsulationFoam"
                 ],
-                "amount": 9
+                "amount": 6
               },
               {
                 "id": "expansion_thincopperpipe",
@@ -702,7 +702,7 @@
                 "items": [
                   "KnoxBuildworks.ThinCopperPipe"
                 ],
-                "amount": 9
+                "amount": 4
               },
               {
                 "id": "expansion_rubberseal",
@@ -711,7 +711,7 @@
                 "items": [
                   "KnoxBuildworks.RubberSeal"
                 ],
-                "amount": 9
+                "amount": 6
               },
               {
                 "id": "expansion_plasticsheet",
@@ -720,7 +720,7 @@
                 "items": [
                   "KnoxBuildworks.PlasticSheet"
                 ],
-                "amount": 9
+                "amount": 4
               }
             ]
           },
@@ -1094,7 +1094,7 @@
         "items": [
           "Base.BlowTorch"
         ],
-        "uses": 13
+        "uses": 5
       },
       {
         "id": "welding_rods",
@@ -1103,7 +1103,7 @@
         "items": [
           "Base.WeldingRods"
         ],
-        "uses": 13
+        "uses": 10
       },
       {
         "id": "sheet_metal",
@@ -1112,7 +1112,7 @@
         "items": [
           "Base.SheetMetal"
         ],
-        "amount": 20
+        "amount": 12
       },
       {
         "id": "electronics",
@@ -1121,7 +1121,7 @@
         "items": [
           "Base.ElectronicsScrap"
         ],
-        "amount": 75
+        "amount": 60
       },
       {
         "id": "electric_wire",
@@ -1130,7 +1130,7 @@
         "items": [
           "Base.ElectricWire"
         ],
-        "amount": 10
+        "amount": 8
       },
       {
         "id": "screws",
@@ -1139,7 +1139,7 @@
         "items": [
           "Base.Screws"
         ],
-        "amount": 50
+        "amount": 40
       }
     ],
     "kbwcb.appliance.freezer100": [
@@ -1168,7 +1168,7 @@
         "items": [
           "Base.BlowTorch"
         ],
-        "uses": 23
+        "uses": 5
       },
       {
         "id": "welding_rods",
@@ -1177,7 +1177,7 @@
         "items": [
           "Base.WeldingRods"
         ],
-        "uses": 23
+        "uses": 15
       },
       {
         "id": "sheet_metal",
@@ -1186,7 +1186,7 @@
         "items": [
           "Base.SheetMetal"
         ],
-        "amount": 36
+        "amount": 16
       },
       {
         "id": "electronics",
@@ -1195,7 +1195,7 @@
         "items": [
           "Base.ElectronicsScrap"
         ],
-        "amount": 135
+        "amount": 100
       },
       {
         "id": "electric_wire",
@@ -1204,7 +1204,7 @@
         "items": [
           "Base.ElectricWire"
         ],
-        "amount": 18
+        "amount": 12
       },
       {
         "id": "screws",
@@ -1213,7 +1213,7 @@
         "items": [
           "Base.Screws"
         ],
-        "amount": 90
+        "amount": 60
       }
     ]
   }

@@ -1,0 +1,20 @@
+name=World Essentials - Community Buildworks
+id=KnoxCommunityTilepack
+description=Knox Buildworks buildables for the Community Tilepack (abandoned community packs rebundled for B42). Bundled World Essentials submod; requires Knox Buildworks + Community Tilepack.
+require=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,UnofficialMappersCommunityTilePack
+loadModAfter=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,UnofficialMappersCommunityTilePack
+versionMin=42.0
+tags=Build 42,Build
+tiledef=kbwcommunity_tvpatch.patch 8185
+pack=KBWCommunityTVScreens
+tiledef=kbwcommunity_tvscreens 8186
+pack=KBWCommunityViewscreens
+tiledef=kbwcommunity_viewscreens 8187
+pack=KBWCommunityFears
+tiledef=kbwcommunity_fears 8184
+
+pack=KBWCommunityCases
+tiledef=kbwcommunity_cases 8183
+
+pack=WECommunityDylan
+tiledef=wecommunity_dylan 8182

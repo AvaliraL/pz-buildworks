@@ -1,0 +1,1151 @@
+{
+ "schemaVersion": 1,
+ "category": "Decorations",
+ "source": "Drazion tt_newburbs_details_01 Flags (lifted from ExtraNoise addExtraNoisesNewburbsFlagsToMenu). 8 decorative flags, 4-facing floor-helper (kind object requiresFloor false) - FLAG verify in-game.",
+ "buildables": [
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_16",
+   "translationKey": "IGUI_tt_newburbs_details_01_16",
+   "displayName": "Newburbs Flag 1",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_16",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_16",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_19"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_18"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 1
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_16"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_20",
+   "translationKey": "IGUI_tt_newburbs_details_01_20",
+   "displayName": "Newburbs Flag 2",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_20",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_20",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_23"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_22"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 2
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_20"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_24",
+   "translationKey": "IGUI_tt_newburbs_details_01_24",
+   "displayName": "Newburbs Flag 3",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_24",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_24",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_25"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_27"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_26"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 3
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_24"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_28",
+   "translationKey": "IGUI_tt_newburbs_details_01_28",
+   "displayName": "Newburbs Flag 4",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_28",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_28",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_31"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_30"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 4
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_28"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_32",
+   "translationKey": "IGUI_tt_newburbs_details_01_32",
+   "displayName": "Newburbs Flag 5",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_32",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_32",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_35"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_34"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 5
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_32"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_36",
+   "translationKey": "IGUI_tt_newburbs_details_01_36",
+   "displayName": "Newburbs Flag 6",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_36",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_36",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_39"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_38"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 6
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_36"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_40",
+   "translationKey": "IGUI_tt_newburbs_details_01_40",
+   "displayName": "Newburbs Flag 7",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_40",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_40",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_41"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_43"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_42"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 7
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_40"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_flags.tt_newburbs_details_01_44",
+   "translationKey": "IGUI_tt_newburbs_details_01_44",
+   "displayName": "Newburbs Flag 8",
+   "tooltipKey": "Tooltip_tt_newburbs_details_01_44",
+   "category": "Decorations",
+   "subcategory": "Newburbs Flags",
+   "material": "Fabric",
+   "iconSprite": "tt_newburbs_details_01_44",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-flags"
+   ],
+   "pieceClass": "decoration",
+   "stages": [
+    {
+     "id": "built",
+     "health": 60,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_47"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_details_01_46"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Sheet"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 120,
+      "timedAction": "BuildWoodenStructureSmall",
+      "completionSound": "BuildMetalStructureWallFrame",
+      "xp": {
+       "Woodwork": 20
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_1f15541504ce2418",
+    "name": "Newburbs Flag",
+    "translationKey": "IGUI_WETiki_family_1f15541504ce2418",
+    "level": 8
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_flags.tt_newburbs_details_01_44"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,845 @@
+{
+  "schemaVersion": 1,
+  "category": "Furniture and Appliances",
+  "source": "DylansRandomFurniture02 one-offs: exercise ball (3 color variants), punching bag (2 variants), and two functional CRT TVs (nativeObject:television, FLOOR-STANDING like KBW_VE valutech_television \u00e2\u20ac\u201d these sprites cannot wall-mount). Standalone.",
+  "buildables": [
+    {
+      "id": "community.dylan.rf02.exercise_ball",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_rf02_exercise_ball",
+      "displayName": "Exercise Ball",
+      "tooltipKey": "Tooltip_KBW_Shared_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Decor",
+      "material": "Fabric",
+      "iconSprite": "WECommunity_DylansRandomFurniture02_5",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "decor",
+        "walkthrough"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_5"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.DuctTape",
+                  "Base.Thread"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Woodwork": 1
+            }
+          },
+          "construction": {
+            "time": 60,
+            "timedAction": "BuildLowNoTool",
+            "completionSound": "BuildWoodenStructureSmall",
+            "xp": {
+              "Woodwork": 5
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "pink",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Pink",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_5",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_5"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Blue",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_6",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_6"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Yellow",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_7",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_7"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.rf02.punching_bag",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_rf02_punching_bag",
+      "displayName": "Punching Bag",
+      "tooltipKey": "Tooltip_KBW_Shared_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Decor",
+      "material": "Fabric",
+      "iconSprite": "WECommunity_DylansRandomFurniture02_12",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "decor",
+        "walkthrough"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_12"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.DuctTape",
+                  "Base.Thread"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Woodwork": 1
+            }
+          },
+          "construction": {
+            "time": 60,
+            "timedAction": "BuildLowNoTool",
+            "completionSound": "BuildWoodenStructureSmall",
+            "xp": {
+              "Woodwork": 5
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "red",
+          "labelKey": "IGUI_KBW_Variant_PunchingBag_Red",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_12",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_12"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "black",
+          "labelKey": "IGUI_KBW_Variant_PunchingBag_Black",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_13",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_13"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.rf02.tv_crt_small",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_rf02_tv_crt_small",
+      "displayName": "CRT Television",
+      "tooltipKey": "Tooltip_KBW_Shared_Television",
+      "category": "Appliances",
+      "subcategory": "Radios & TVs",
+      "material": "Metal",
+      "materialTags": [
+        "Metal",
+        "Electrical"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture02_36",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "television",
+        "appliance"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_37"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 6
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electric_wire",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectricWire"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Electricity": 4
+                  }
+                }
+              ]
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWallMetal",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 30
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": false
+          },
+          "nativeObject": {
+            "type": "television"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.rf02.tv_crt_premium",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_rf02_tv_crt_premium",
+      "displayName": "Premium CRT Television",
+      "tooltipKey": "Tooltip_KBW_Shared_Television",
+      "category": "Appliances",
+      "subcategory": "Radios & TVs",
+      "material": "Metal",
+      "materialTags": [
+        "Metal",
+        "Electrical"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture02_38",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "television",
+        "appliance"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_39"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_39"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 6
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electric_wire",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectricWire"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Electricity": 4
+                  }
+                }
+              ]
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWallMetal",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 30
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": false
+          },
+          "nativeObject": {
+            "type": "television"
+          }
+        }
+      ]
+    }
+  ]
+}

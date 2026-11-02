@@ -1,0 +1,8 @@
+Bundled with World Essentials, with author attribution.
+Original Workshop item: 3828080624
+Original content and identifiers retained; metadata adjusted for optional WE submod.
+Reviewed Community runtime callbacks are supplied once by main World Essentials.
+Do not enable the separate Workshop copy alongside this bundled version.
+
+30 Oct 2026: Cases artwork/rotation updated from WE_CommunityTilepack_KBW_package.
+Shared loading dispatcher adapted in main WE; original protection and cache fixes retained.

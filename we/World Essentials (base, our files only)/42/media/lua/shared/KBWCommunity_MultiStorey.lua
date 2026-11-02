@@ -1,0 +1,3 @@
+-- WE validates complete multi-storey footprints in its source-checked Placement derivative.
+-- Do not install the upstream ground-only fallback: it drops upper-tile validation.
+-- Without the WE expansion, normal Knox validation remains authoritative.

@@ -1,0 +1,5 @@
+# Keep files byte-identical to what WE ships (no line-ending conversion), so diffs and drop-ins match.
+* -text
+*.pack binary
+*.tiles binary
+*.png binary

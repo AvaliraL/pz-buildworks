@@ -1,0 +1,4164 @@
+tileGeometry
+{
+    VERSION = 2,
+tileset
+    {
+        name = WECommunity_Block_Trasher,
+
+        /* Block_Trasher_0 */
+        tile
+        {
+            xy = 0x0,
+
+            box
+            {
+                translate = -5349x0x-1846,
+                rotate = 0x-899802x0,
+                min = -3102x0x-167,
+                max = 3102x17884x167,
+            }
+
+            box
+            {
+                translate = 15604x666x-858,
+                rotate = 0x-899802x0,
+                min = -2965x0x-167,
+                max = 2965x17992x167,
+            }
+
+            box
+            {
+                translate = 4685x575x-1482,
+                rotate = 0x-899802x0,
+                min = -2684x0x-9687,
+                max = 2684x889x9687,
+            }
+
+            box
+            {
+                translate = 5053x5891x-1486,
+                rotate = 0x-899802x0,
+                min = -2779x0x-9687,
+                max = 2779x889x9687,
+            }
+
+            box
+            {
+                translate = 4605x10479x-1512,
+                rotate = 0x-899802x0,
+                min = -2714x0x-9687,
+                max = 2714x889x9687,
+            }
+
+            box
+            {
+                translate = 4781x15894x-1478,
+                rotate = 0x-899802x0,
+                min = -2680x0x-9687,
+                max = 2680x889x9687,
+            }
+
+            box
+            {
+                translate = 4672x0x-4154,
+                rotate = 0x-899802x0,
+                min = -303x0x-9866,
+                max = 303x16602x9866,
+            }
+        }
+
+        /* Block_Trasher_1 */
+        tile
+        {
+            xy = 1x0,
+
+            box
+            {
+                translate = -15349x0x-1387,
+                rotate = 0x-899802x0,
+                min = -2643x0x-167,
+                max = 2643x17884x167,
+            }
+
+            box
+            {
+                translate = 5604x666x-858,
+                rotate = 0x-899802x0,
+                min = -2965x0x-167,
+                max = 2965x17992x167,
+            }
+
+            box
+            {
+                translate = -5315x575x-1482,
+                rotate = 0x-899802x0,
+                min = -2684x0x-9687,
+                max = 2684x889x9687,
+            }
+
+            box
+            {
+                translate = -4947x5891x-1486,
+                rotate = 0x-899802x0,
+                min = -2779x0x-9687,
+                max = 2779x889x9687,
+            }
+
+            box
+            {
+                translate = -5395x10479x-1512,
+                rotate = 0x-899802x0,
+                min = -2714x0x-9687,
+                max = 2714x889x9687,
+            }
+
+            box
+            {
+                translate = -5219x15894x-1478,
+                rotate = 0x-899802x0,
+                min = -2680x0x-9687,
+                max = 2680x889x9687,
+            }
+
+            box
+            {
+                translate = -5328x0x-4154,
+                rotate = 0x-899802x0,
+                min = -303x0x-9866,
+                max = 303x16602x9866,
+            }
+        }
+
+        /* Block_Trasher_2 */
+        tile
+        {
+            xy = 2x0,
+
+            box
+            {
+                translate = -1758x0x4802,
+                rotate = 0x0x0,
+                min = -2643x0x-167,
+                max = 2643x17884x167,
+            }
+
+            box
+            {
+                translate = -858x666x-14286,
+                rotate = 0x0x0,
+                min = -2965x0x-167,
+                max = 2965x17992x167,
+            }
+
+            box
+            {
+                translate = -961x575x-5053,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x6087x-5053,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x9336x-5053,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x12671x-5053,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -1478x15894x-5053,
+                rotate = 0x0x0,
+                min = -2680x0x-9687,
+                max = 2680x889x9687,
+            }
+
+            box
+            {
+                translate = -4152x311x-4795,
+                rotate = 0x0x0,
+                min = -303x0x-9716,
+                max = 303x16602x9716,
+            }
+        }
+
+        /* Block_Trasher_3 */
+        tile
+        {
+            xy = 3x0,
+
+            box
+            {
+                translate = -1758x0x14802,
+                rotate = 0x0x0,
+                min = -2643x0x-167,
+                max = 2643x17884x167,
+            }
+
+            box
+            {
+                translate = -858x666x-4286,
+                rotate = 0x0x0,
+                min = -2965x0x-167,
+                max = 2965x17992x167,
+            }
+
+            box
+            {
+                translate = -961x575x4947,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x6087x4947,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x9336x4947,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -961x12671x4947,
+                rotate = 0x0x0,
+                min = -2163x0x-9687,
+                max = 2163x889x9687,
+            }
+
+            box
+            {
+                translate = -1478x15894x4947,
+                rotate = 0x0x0,
+                min = -2680x0x-9687,
+                max = 2680x889x9687,
+            }
+
+            box
+            {
+                translate = -4152x0x4780,
+                rotate = 0x0x0,
+                min = -303x0x-10141,
+                max = 303x16602x10141,
+            }
+        }
+
+        /* Block_Trasher_26 */
+        tile
+        {
+            xy = 2x3,
+
+            polygon
+            {
+                translate = 0x0x-4403,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -5000x0 5313x255 5440x24408 -5000x24750,
+            }
+        }
+
+        /* Block_Trasher_27 */
+        tile
+        {
+            xy = 3x3,
+
+            polygon
+            {
+                translate = 0x0x-4403,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -5000x0 5313x255 4062x24240 -5000x24750,
+            }
+        }
+
+        /* Block_Trasher_28 */
+        tile
+        {
+            xy = 4x3,
+
+            polygon
+            {
+                translate = -4360x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4859x331 6391x-562 6079x16789 -4859x17809,
+            }
+        }
+
+        /* Block_Trasher_29 */
+        tile
+        {
+            xy = 5x3,
+
+            polygon
+            {
+                translate = -4360x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4859x331 6391x-562 6079x16789 -4859x17809,
+            }
+        }
+
+        /* Block_Trasher_32 */
+        tile
+        {
+            xy = 0x4,
+
+            polygon
+            {
+                translate = -4360x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4859x331 13579x331 10766x11431 -4859x17809,
+            }
+        }
+
+        /* Block_Trasher_33 */
+        tile
+        {
+            xy = 1x4,
+
+            polygon
+            {
+                translate = -4360x0x-6116,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4859x331 6391x-562 6079x16789 -4859x17809,
+            }
+        }
+
+        /* Block_Trasher_34 */
+        tile
+        {
+            xy = 2x4,
+
+            polygon
+            {
+                translate = -4360x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4859x331 14516x-179 14204x14748 -4859x17809,
+            }
+        }
+
+        /* Block_Trasher_38 */
+        tile
+        {
+            xy = 6x4,
+
+            box
+            {
+                translate = -1113x0x-853,
+                rotate = 0x-899802x0,
+                min = -299x0x-390,
+                max = 299x4107x390,
+            }
+
+            box
+            {
+                translate = -1089x4073x-749,
+                rotate = 0x-899802x0,
+                min = -2772x0x-390,
+                max = 2772x9866x390,
+            }
+
+            box
+            {
+                translate = -782x22x-437,
+                rotate = 0x-899802x0,
+                min = -1849x0x-916,
+                max = 1849x385x916,
+            }
+        }
+
+        /* Block_Trasher_39 */
+        tile
+        {
+            xy = 7x4,
+
+            box
+            {
+                translate = 810x267x-1105,
+                rotate = 0x0x0,
+                min = -299x0x-390,
+                max = 299x4107x390,
+            }
+
+            box
+            {
+                translate = 1085x4394x-1105,
+                rotate = 0x0x0,
+                min = -2772x0x-390,
+                max = 2772x9866x390,
+            }
+
+            box
+            {
+                translate = 637x22x-1325,
+                rotate = 0x0x0,
+                min = -1849x0x-916,
+                max = 1849x385x916,
+            }
+        }
+
+        /* Block_Trasher_43 */
+        tile
+        {
+            xy = 3x5,
+
+            polygon
+            {
+                translate = 1588x4711x1905,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -4994x-93 -1869x34 -1087x352 -930x544 -930x927 -1244x798 -1244x671 -1712x480 -4681x416 -4994x289,
+            }
+
+            box
+            {
+                translate = -4017x0x-521,
+                rotate = 0x0x0,
+                min = -601x0x-4504,
+                max = 601x11059x4504,
+            }
+
+            box
+            {
+                translate = -1279x0x-521,
+                rotate = 0x0x0,
+                min = -2142x0x-4504,
+                max = 2142x1955x4504,
+            }
+
+            polygon
+            {
+                translate = 1588x4711x-1842,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -4994x-93 -1869x34 -1087x352 -930x544 -930x928 -1244x798 -1244x671 -1712x480 -4681x416 -4994x289,
+            }
+
+            polygon
+            {
+                translate = 1588x9210x1905,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -4994x-93 -2337x-62 -1556x256 -1244x638 -1244x894 -1556x766 -1712x575 -2181x383 -4681x416 -4994x289,
+            }
+
+            polygon
+            {
+                translate = 1588x9210x-1918,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -4994x-93 -2256x-60 -1319x322 -1005x705 -1005x960 -1319x832 -1474x641 -1787x513 -4681x416 -4994x289,
+            }
+        }
+
+        /* Block_Trasher_44 */
+        tile
+        {
+            xy = 4x5,
+
+            polygon
+            {
+                translate = -1905x4711x1588,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -4994x-93 -1869x34 -1087x352 -930x544 -930x927 -1244x798 -1244x671 -1712x480 -4681x416 -4994x289,
+            }
+
+            box
+            {
+                translate = -664x0x-4016,
+                rotate = 0x-899802x0,
+                min = -601x0x-4504,
+                max = 601x11059x4504,
+            }
+
+            box
+            {
+                translate = -630x0x-1278,
+                rotate = 0x-899802x0,
+                min = -2142x0x-4504,
+                max = 2142x1955x4504,
+            }
+
+            polygon
+            {
+                translate = 1842x4711x1588,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -4994x-93 -1869x34 -1087x352 -930x544 -930x928 -1244x798 -1244x671 -1712x480 -4681x416 -4994x289,
+            }
+
+            polygon
+            {
+                translate = -1905x9210x1588,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -4994x-93 -2337x-62 -1556x256 -1244x638 -1244x894 -1556x766 -1712x575 -2181x383 -4681x416 -4994x289,
+            }
+
+            polygon
+            {
+                translate = 1918x9210x1588,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -4994x-93 -2256x-60 -1319x322 -1005x705 -1005x960 -1319x832 -1474x641 -1787x513 -4681x416 -4994x289,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansBar01,
+
+        /* DylansBar01_0 */
+        tile
+        {
+            xy = 0x0,
+
+            polygon
+            {
+                translate = 0x11288x-4729,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+        }
+
+        /* DylansBar01_1 */
+        tile
+        {
+            xy = 1x0,
+
+            polygon
+            {
+                translate = -4729x11078x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+        }
+
+        /* DylansBar01_2 */
+        tile
+        {
+            xy = 2x0,
+
+            cylinder
+            {
+                translate = 277x6422x0,
+                rotate = 2700000x0x0,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 1264,
+            }
+
+            cylinder
+            {
+                translate = 277x3659x0,
+                rotate = 2700000x0x0,
+                radius1 = 1657,
+                radius2 = 1657,
+                height = 754,
+            }
+
+            polygon
+            {
+                translate = 936x0x2156,
+                rotate = 0x450000x0,
+                plane = XY,
+                points = -242x-12 310x-12 310x2793 420x2921 420x6110 -21x6110 -242x3559 -242x2666,
+            }
+
+            polygon
+            {
+                translate = 147x1491x2946,
+                rotate = 0x450000x0,
+                plane = XY,
+                points = -242x-12 310x-12 321x1557 432x1557 653x4874 211x5256 -9x3599 -230x1557,
+            }
+
+            polygon
+            {
+                translate = 2001x2141x1091,
+                rotate = 0x450000x0,
+                plane = XY,
+                points = -201x13 240x13 240x3968 -201x3968,
+            }
+
+            polygon
+            {
+                translate = 3201x485x-108,
+                rotate = 0x450000x0,
+                plane = XY,
+                points = -242x-12 310x-12 -240x6136 -903x5625 -461x2308,
+            }
+        }
+
+        /* DylansBar01_3 */
+        tile
+        {
+            xy = 3x0,
+
+            cylinder
+            {
+                translate = 3921x2464x177,
+                rotate = -717063x785599x-179539,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 1264,
+            }
+
+            cylinder
+            {
+                translate = 1109x1924x-2,
+                rotate = -717063x785599x-179539,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 519,
+            }
+
+            cylinder
+            {
+                translate = -737x-47x1375,
+                rotate = -933287x730736x35319,
+                radius1 = 369,
+                radius2 = 369,
+                height = 7622,
+            }
+
+            cylinder
+            {
+                translate = 713x4102x376,
+                rotate = 1441777x887321x1258665,
+                radius1 = 369,
+                radius2 = 369,
+                height = 6454,
+            }
+
+            cylinder
+            {
+                translate = 158x3289x1195,
+                rotate = 1746863x820851x954025,
+                radius1 = 369,
+                radius2 = 369,
+                height = 7014,
+            }
+
+            cylinder
+            {
+                translate = 208x771x-276,
+                rotate = 1746863x820851x954025,
+                radius1 = 369,
+                radius2 = 369,
+                height = 7014,
+            }
+        }
+
+        /* DylansBar01_4 */
+        tile
+        {
+            xy = 4x0,
+
+            cylinder
+            {
+                translate = -120x1983x3096,
+                rotate = -108760x-35694x-900000,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 1264,
+            }
+
+            cylinder
+            {
+                translate = 41x1804x489,
+                rotate = -108760x-35694x-900000,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 519,
+            }
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1719x3636 3437x3189 3281x3891 -2031x4146,
+            }
+
+            polygon
+            {
+                translate = 981x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1918x3097 4801x2013 4488x2906 -2231x3863,
+            }
+
+            polygon
+            {
+                translate = 981x-2972x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1918x3008 5426x1158 5426x1796 -2074x3837,
+            }
+
+            polygon
+            {
+                translate = 0x-3043x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1250x3936 3906x2852 3594x3617 -1719x4765,
+            }
+        }
+
+        /* DylansBar01_5 */
+        tile
+        {
+            xy = 5x0,
+
+            cylinder
+            {
+                translate = 3921x2464x177,
+                rotate = -717063x785599x-179539,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 1264,
+            }
+
+            cylinder
+            {
+                translate = 1109x1924x-2,
+                rotate = -717063x785599x-179539,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 519,
+            }
+
+            cylinder
+            {
+                translate = -737x-47x1375,
+                rotate = -933287x730736x35319,
+                radius1 = 369,
+                radius2 = 369,
+                height = 7622,
+            }
+
+            cylinder
+            {
+                translate = 713x4102x376,
+                rotate = 1441777x887321x1258665,
+                radius1 = 369,
+                radius2 = 369,
+                height = 6454,
+            }
+
+            cylinder
+            {
+                translate = 1518x3271x1006,
+                rotate = 1746863x820851x954025,
+                radius1 = 369,
+                radius2 = 369,
+                height = 4268,
+            }
+
+            cylinder
+            {
+                translate = 208x771x-276,
+                rotate = 1746863x820851x954025,
+                radius1 = 369,
+                radius2 = 369,
+                height = 7014,
+            }
+        }
+
+        /* DylansBar01_6 */
+        tile
+        {
+            xy = 6x0,
+
+            cylinder
+            {
+                translate = -120x1983x3096,
+                rotate = -108760x-35694x-900000,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 1264,
+            }
+
+            cylinder
+            {
+                translate = 41x1804x489,
+                rotate = -108760x-35694x-900000,
+                radius1 = 2274,
+                radius2 = 2274,
+                height = 519,
+            }
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1719x3636 4062x2934 3906x3636 -2031x4146,
+            }
+
+            polygon
+            {
+                translate = 981x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1918x3097 894x2587 738x3288 -2231x3863,
+            }
+
+            polygon
+            {
+                translate = 981x-2972x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1918x3008 6051x775 5894x1604 -2074x3837,
+            }
+
+            polygon
+            {
+                translate = 0x-3043x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -1250x3936 4375x2660 4375x3171 -1719x4765,
+            }
+        }
+
+        /* DylansBar01_8 */
+        tile
+        {
+            xy = 0x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_9 */
+        tile
+        {
+            xy = 1x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_10 */
+        tile
+        {
+            xy = 2x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_11 */
+        tile
+        {
+            xy = 3x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_12 */
+        tile
+        {
+            xy = 4x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_13 */
+        tile
+        {
+            xy = 5x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_14 */
+        tile
+        {
+            xy = 6x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_15 */
+        tile
+        {
+            xy = 7x1,
+
+            polygon
+            {
+                translate = 0x9293x-3898,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -14663x-8954 5946x-9860 5946x19993 -14819x11267,
+            }
+        }
+
+        /* DylansBar01_23 */
+        tile
+        {
+            xy = 7x2,
+
+            polygon
+            {
+                translate = 0x19484x0,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -3125x-7109 4063x-7109 4219x3799 -3281x3926,
+            }
+
+            cylinder
+            {
+                translate = -446x23886x0,
+                rotate = -899986x897099x0,
+                radius1 = 193,
+                radius2 = 193,
+                height = 10139,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansFutureRoom01,
+
+        /* DylansFutureRoom01_0 */
+        tile
+        {
+            xy = 0x0,
+
+            box
+            {
+                translate = -283x0x-964,
+                rotate = 0x0x0,
+                min = -4274x0x-4036,
+                max = 4274x4273x4036,
+            }
+        }
+
+        /* DylansFutureRoom01_1 */
+        tile
+        {
+            xy = 1x0,
+
+            box
+            {
+                translate = -283x0x1175,
+                rotate = 0x0x0,
+                min = -4274x0x-4036,
+                max = 4274x4273x4036,
+            }
+        }
+
+        /* DylansFutureRoom01_24 */
+        tile
+        {
+            xy = 0x3,
+
+            polygon
+            {
+                translate = -4318x7436x-632,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4907x-6433 5093x-6561 4936x17743 -5064x17488,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansFutureRoom01_32 */
+        tile
+        {
+            xy = 0x4,
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansFutureRoom01_33 */
+        tile
+        {
+            xy = 1x4,
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansFutureRoom01_34 */
+        tile
+        {
+            xy = 2x4,
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansGardenStuff01,
+
+        /* DylansGardenStuff01_0 */
+        tile
+        {
+            xy = 0x0,
+
+            polygon
+            {
+                translate = 0x0x-98,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -567x622 840x1834 1465x558 1465x175 1621x111 2090x303 2246x749 1777x813 996x2025 1777x4258 -254x4321 -1504x4194 -254x2408 -2285x48 -879x-16,
+            }
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -132x4248x-1827,
+                rotate = 0x0x0,
+                min = -2338x0x-1702,
+                max = 2338x7397x1702,
+            }
+
+            box
+            {
+                translate = -132x-515x-5166,
+                rotate = 0x0x0,
+                min = -2338x0x-1702,
+                max = 2338x7397x1702,
+            }
+        }
+
+        /* DylansGardenStuff01_1 */
+        tile
+        {
+            xy = 1x0,
+
+            polygon
+            {
+                translate = 120x0x-123,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -567x622 840x1834 1465x558 1465x175 1621x111 2274x290 2246x749 1777x813 1336x1948 1180x2139 867x2394 2274x4245 -254x4321 -1504x4194 -254x2408 -2285x48 -1008x-30,
+            }
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -1557x4248x-131,
+                rotate = 0x-899802x0,
+                min = -2338x0x-1702,
+                max = 2338x7397x1702,
+            }
+
+            box
+            {
+                translate = -4958x-515x-129,
+                rotate = 0x-899802x0,
+                min = -2338x0x-1702,
+                max = 2338x7397x1702,
+            }
+        }
+
+        /* DylansGardenStuff01_4 */
+        tile
+        {
+            xy = 4x0,
+
+            box
+            {
+                translate = -4764x8758x-4020,
+                rotate = 0x0x0,
+                min = -5000x0x-5000,
+                max = 5000x3633x5000,
+            }
+        }
+
+        /* DylansGardenStuff01_5 */
+        tile
+        {
+            xy = 5x0,
+
+            box
+            {
+                translate = -4764x8758x-4020,
+                rotate = 0x0x0,
+                min = -5000x0x-5000,
+                max = 5000x3633x5000,
+            }
+        }
+
+        /* DylansGardenStuff01_12 */
+        tile
+        {
+            xy = 4x1,
+
+            box
+            {
+                translate = 0x0x-4411,
+                rotate = 0x0x0,
+                min = -5000x0x-213,
+                max = 5000x4327x213,
+            }
+        }
+
+        /* DylansGardenStuff01_13 */
+        tile
+        {
+            xy = 5x1,
+
+            box
+            {
+                translate = -4353x0x397,
+                rotate = 0x-899802x0,
+                min = -5394x0x-213,
+                max = 5394x4327x213,
+            }
+        }
+
+        /* DylansGardenStuff01_32 */
+        tile
+        {
+            xy = 0x4,
+
+            polygon
+            {
+                translate = -2893x0x0,
+                rotate = -900000x500521x900000,
+                plane = YZ,
+                points = -58x1975 4130x1926 4223x11561 -28x11512,
+            }
+
+            box
+            {
+                translate = 621x0x-670,
+                rotate = 0x0x0,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_33 */
+        tile
+        {
+            xy = 1x4,
+
+            polygon
+            {
+                translate = -4899x-380x-2575,
+                rotate = -399479x0x0,
+                plane = YZ,
+                points = -58x1975 4130x1926 4223x11561 -28x11512,
+            }
+
+            box
+            {
+                translate = -935x0x1348,
+                rotate = 0x-899802x0,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_34 */
+        tile
+        {
+            xy = 2x4,
+
+            box
+            {
+                translate = -1108x0x-998,
+                rotate = 0x0x0,
+                min = -1387x0x-1448,
+                max = 1387x3905x1448,
+            }
+        }
+
+        /* DylansGardenStuff01_35 */
+        tile
+        {
+            xy = 3x4,
+
+            box
+            {
+                translate = -1333x0x-584,
+                rotate = 0x0x0,
+                min = -1387x0x-1448,
+                max = 1387x3905x1448,
+            }
+        }
+
+        /* DylansGardenStuff01_36 */
+        tile
+        {
+            xy = 4x4,
+
+            box
+            {
+                translate = 198x0x-3282,
+                rotate = -71413x0x0,
+                min = -1413x0x-363,
+                max = 1413x11061x363,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_37 */
+        tile
+        {
+            xy = 5x4,
+
+            box
+            {
+                translate = -3248x-265x-198,
+                rotate = -899999x828587x899999,
+                min = -1413x0x-363,
+                max = 1413x11328x363,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_45 */
+        tile
+        {
+            xy = 5x5,
+
+            box
+            {
+                translate = -3036x0x-2197,
+                rotate = 0x0x0,
+                min = -1387x0x-1448,
+                max = 1387x3905x1448,
+            }
+        }
+
+        /* DylansGardenStuff01_46 */
+        tile
+        {
+            xy = 6x5,
+
+            box
+            {
+                translate = -3493x0x-2197,
+                rotate = 0x0x0,
+                min = -1387x0x-1448,
+                max = 1387x3905x1448,
+            }
+        }
+
+        /* DylansGardenStuff01_60 */
+        tile
+        {
+            xy = 4x7,
+
+            polygon
+            {
+                translate = -2893x0x0,
+                rotate = -900000x500521x900000,
+                plane = YZ,
+                points = -58x1975 4130x1926 2815x8152 -305x8646 -1753x7608,
+            }
+
+            box
+            {
+                translate = -143x0x-282,
+                rotate = 0x0x0,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            box
+            {
+                translate = -4472x829x-282,
+                rotate = 0x0x-148676,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_61 */
+        tile
+        {
+            xy = 5x7,
+
+            polygon
+            {
+                translate = -3592x-380x-2575,
+                rotate = -399479x0x0,
+                plane = YZ,
+                points = -58x1975 4130x1926 4223x11561 -28x11512,
+            }
+
+            box
+            {
+                translate = -340x0x1348,
+                rotate = 0x-899802x0,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            box
+            {
+                translate = -341x1080x-2473,
+                rotate = 0x-900000x-121559,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_62 */
+        tile
+        {
+            xy = 6x7,
+
+            polygon
+            {
+                translate = -1140x529x-776,
+                rotate = -1400520x0x-1800000,
+                plane = YZ,
+                points = -965x206 6625x-1637 9373x-321 -2112x10997,
+            }
+
+            box
+            {
+                translate = 85x0x-2422,
+                rotate = 1799855x899802x-1799855,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            box
+            {
+                translate = -401x751x2560,
+                rotate = -12x899657x-147631,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff01_63 */
+        tile
+        {
+            xy = 7x7,
+
+            polygon
+            {
+                translate = -776x529x-3592,
+                rotate = -900000x-500521x-900000,
+                plane = YZ,
+                points = -933x732 4130x1926 4539x10470 -6271x206,
+            }
+
+            box
+            {
+                translate = -2611x0x-85,
+                rotate = -1800000x-198x-1800000,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            box
+            {
+                translate = 2473x1080x-341,
+                rotate = -1800000x0x1678441,
+                min = -3498x0x-2219,
+                max = 3498x2485x2219,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansGardenStuff02,
+
+        /* DylansGardenStuff02_0 */
+        tile
+        {
+            xy = 0x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1563x-510 469x-829 1406x4912 937x5486 1719x6698 3125x7527 3594x10270 2031x10270 0x9058,
+            }
+
+            polygon
+            {
+                translate = 0x0x4100,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1563x-510 469x-829 1756x5325 937x5486 1719x6698 3319x7749 4256x9790 3475x10492 1756x10301 0x9058,
+            }
+
+            polygon
+            {
+                translate = 0x0x-3546,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1563x-510 516x-727 1923x4823 937x5486 1766x6418 3798x7247 4110x10181 2031x10270 0x9058,
+            }
+
+            polygon
+            {
+                translate = -4266x0x-3546,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1563x-510 516x-727 937x5486 1766x6418 3798x7247 4110x10181 2127x10309 0x9058,
+            }
+
+            polygon
+            {
+                translate = -4588x0x-233,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1563x-510 516x-727 937x5486 1766x6418 3798x7247 4110x10181 2031x10270 -176x9059,
+            }
+
+            polygon
+            {
+                translate = -4743x158x3081,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -1551x-450 516x-727 1261x2867 1417x4845 937x5486 1766x6418 3798x7247 4110x10181 2031x10270 -458x8800,
+            }
+        }
+
+        /* DylansGardenStuff02_1 */
+        tile
+        {
+            xy = 1x0,
+
+            polygon
+            {
+                translate = -121x294x1208,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -2268x-777 469x-829 1406x4912 937x5486 1719x6698 3125x7527 3594x10270 2031x10270 0x9058,
+            }
+
+            polygon
+            {
+                translate = -4322x-294x621,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -1563x-510 469x-829 1756x5325 937x5486 1777x6015 3340x7419 4256x9790 3475x10492 1756x10301 0x9058,
+            }
+
+            polygon
+            {
+                translate = 3546x0x0,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -1563x-510 1203x-613 1923x4823 937x5486 1766x6418 4485x7489 4798x10679 2031x10270 578x8700,
+            }
+
+            polygon
+            {
+                translate = 2516x0x-4266,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -1563x-510 516x-727 1626x4925 937x5486 1766x6418 3798x7247 4110x10181 2127x10309 0x9058 -1187x5562,
+            }
+
+            polygon
+            {
+                translate = -820x0x-3945,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -1563x-510 516x-727 937x5486 1766x6418 3798x7247 4110x10181 2031x10270 -176x9059,
+            }
+
+            polygon
+            {
+                translate = -3889x158x-3191,
+                rotate = 0x-899802x0,
+                plane = XY,
+                points = -1551x-450 516x-727 1261x2867 1417x4845 937x5486 1766x6418 3798x7247 4110x10181 2031x10270 -458x8800,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff02_2 */
+        tile
+        {
+            xy = 2x0,
+
+            box
+            {
+                translate = -293x0x-515,
+                rotate = 0x0x0,
+                min = -4283x0x-3980,
+                max = 4283x6236x3980,
+            }
+
+            box
+            {
+                translate = -71x6306x-525,
+                rotate = 0x0x0,
+                min = -3455x0x-3001,
+                max = 3455x7761x3001,
+            }
+        }
+
+        /* DylansGardenStuff02_16 */
+        tile
+        {
+            xy = 0x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+        }
+
+        /* DylansGardenStuff02_17 */
+        tile
+        {
+            xy = 1x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+        }
+
+        /* DylansGardenStuff02_18 */
+        tile
+        {
+            xy = 2x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = -2326x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 4357x1865 5294x7606 -7674x8307,
+            }
+
+            polygon
+            {
+                translate = 2438x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 5374x715 4905x6903 -6813x6456,
+            }
+        }
+
+        /* DylansGardenStuff02_19 */
+        tile
+        {
+            xy = 3x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = -2326x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 4357x1865 5294x7606 -7674x8307,
+            }
+
+            polygon
+            {
+                translate = 2438x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 5374x715 4124x5308 -6970x5244,
+            }
+        }
+
+        /* DylansGardenStuff02_20 */
+        tile
+        {
+            xy = 4x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = -2326x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 4357x1865 4201x14304 -7674x13155,
+            }
+
+            polygon
+            {
+                translate = 2438x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 5374x715 4124x12708 -6345x12771,
+            }
+        }
+
+        /* DylansGardenStuff02_21 */
+        tile
+        {
+            xy = 5x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = -2326x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 4357x1865 4201x14304 -4706x15643,
+            }
+
+            polygon
+            {
+                translate = 2438x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7206x1610 5374x715 5530x14940 -4313x14749,
+            }
+        }
+
+        /* DylansGardenStuff02_22 */
+        tile
+        {
+            xy = 6x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+        }
+
+        /* DylansGardenStuff02_23 */
+        tile
+        {
+            xy = 7x2,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 550x1154x462,
+                rotate = 0x0x0,
+                min = -4381x0x-4538,
+                max = 4381x1149x4538,
+            }
+
+            box
+            {
+                translate = 4239x0x4241,
+                rotate = 0x0x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 1117x0x4233,
+                rotate = 0x0x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = -574x0x4225,
+                rotate = 0x0x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = -3707x0x4260,
+                rotate = 0x0x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4481x0x-3670,
+                rotate = 0x0x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = -2326x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -7362x4097 4357x1865 3732x10030 -7362x13028,
+            }
+
+            polygon
+            {
+                translate = 2438x0x0,
+                rotate = 0x900000x0,
+                plane = YZ,
+                points = -4470x2182 5999x1481 3968x10475 -4001x9901,
+            }
+        }
+
+        /* DylansGardenStuff02_24 */
+        tile
+        {
+            xy = 0x3,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 517x1154x272,
+                rotate = 0x-899802x0,
+                min = -4658x0x-4538,
+                max = 4658x1149x4538,
+            }
+
+            box
+            {
+                translate = -3732x0x4424,
+                rotate = 0x-899802x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 4339x0x767,
+                rotate = 0x-899802x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = 4295x0x-669,
+                rotate = 0x-899802x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = 4371x0x-4052,
+                rotate = 0x-899802x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4317x0x4157,
+                rotate = 0x-899802x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = 0x0x-2326,
+                rotate = 0x0x0,
+                plane = YZ,
+                points = -7206x1610 2518x1992 2361x3969 7205x4033 7518x7605 5174x14813 -4706x15643,
+            }
+
+            polygon
+            {
+                translate = 0x0x2438,
+                rotate = 0x0x0,
+                plane = YZ,
+                points = -6000x1353 -2093x1417 -1156x3840 1657x3458 2125x1991 3375x1991 5530x14940 -4313x14749 -5531x11368,
+            }
+        }
+
+        /* DylansGardenStuff02_25 */
+        tile
+        {
+            xy = 1x3,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -160x1154x-101,
+                rotate = 1799855x899802x-1799855,
+                min = -4390x0x-5000,
+                max = 4390x1413x5000,
+            }
+
+            box
+            {
+                translate = 4117x0x-4418,
+                rotate = 1799855x899802x-1799855,
+                min = -232x0x-259,
+                max = 232x1191x259,
+            }
+
+            box
+            {
+                translate = 4131x0x-998,
+                rotate = 1799855x899802x-1799855,
+                min = -232x0x-259,
+                max = 232x1191x259,
+            }
+
+            box
+            {
+                translate = 4146x0x123,
+                rotate = 1799855x899802x-1799855,
+                min = -232x0x-259,
+                max = 232x1191x259,
+            }
+
+            box
+            {
+                translate = 4131x0x3598,
+                rotate = 1799855x899802x-1799855,
+                min = -232x0x-259,
+                max = 232x1191x259,
+            }
+
+            box
+            {
+                translate = -4916x0x3645,
+                rotate = 1799855x899802x-1799855,
+                min = -232x0x-259,
+                max = 232x1191x259,
+            }
+        }
+
+        /* DylansGardenStuff02_26 */
+        tile
+        {
+            xy = 2x3,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 517x1154x272,
+                rotate = 0x-899802x0,
+                min = -4658x0x-4538,
+                max = 4658x1149x4538,
+            }
+
+            box
+            {
+                translate = -3732x0x4424,
+                rotate = 0x-899802x0,
+                min = -388x0x-423,
+                max = 388x1191x423,
+            }
+
+            box
+            {
+                translate = 4339x0x767,
+                rotate = 0x-899802x0,
+                min = -402x0x-431,
+                max = 402x1191x431,
+            }
+
+            box
+            {
+                translate = 4295x0x-669,
+                rotate = 0x-899802x0,
+                min = -404x0x-439,
+                max = 404x1191x439,
+            }
+
+            box
+            {
+                translate = 4371x0x-4052,
+                rotate = 0x-899802x0,
+                min = -402x0x-404,
+                max = 402x1191x404,
+            }
+
+            box
+            {
+                translate = 4317x0x4157,
+                rotate = 0x-899802x0,
+                min = -373x0x-444,
+                max = 373x1191x444,
+            }
+
+            polygon
+            {
+                translate = 0x0x-2326,
+                rotate = 0x0x0,
+                plane = YZ,
+                points = -7206x1610 2518x1992 2361x4225 5486x4480 5174x14813 -4706x15643,
+            }
+
+            polygon
+            {
+                translate = 0x0x2438,
+                rotate = 0x0x0,
+                plane = YZ,
+                points = -6156x2310 -2093x1417 -1156x3840 1657x3458 2125x1991 3375x1991 5530x14940 -4313x14749 -5531x11368,
+            }
+        }
+
+        /* DylansGardenStuff02_32 */
+        tile
+        {
+            xy = 0x4,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 3172x0x-511,
+                rotate = 0x0x0,
+                min = -1450x0x-4489,
+                max = 1450x2428x4489,
+            }
+
+            box
+            {
+                translate = 81x3871x-511,
+                rotate = 0x0x0,
+                min = -1696x0x-4489,
+                max = 1696x1935x4489,
+            }
+
+            box
+            {
+                translate = -3549x7794x-511,
+                rotate = 0x0x0,
+                min = -1696x0x-4489,
+                max = 1696x1935x4489,
+            }
+
+            box
+            {
+                translate = -4897x-542x4033,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = -1907x-542x4033,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = 1366x-542x4033,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x4659x292,
+            }
+
+            box
+            {
+                translate = 1366x-542x-5389,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x5803x292,
+            }
+
+            box
+            {
+                translate = -1907x-542x-5482,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = -4977x-542x-5482,
+                rotate = 0x0x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+        }
+
+        /* DylansGardenStuff02_33 */
+        tile
+        {
+            xy = 1x4,
+
+            polygon
+            {
+                translate = 0x0x-452,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -584x0x3172,
+                rotate = 0x-899802x0,
+                min = -1450x0x-4489,
+                max = 1450x2428x4489,
+            }
+
+            box
+            {
+                translate = -595x3871x81,
+                rotate = 0x-899802x0,
+                min = -1696x0x-4489,
+                max = 1696x1935x4489,
+            }
+
+            box
+            {
+                translate = -753x7794x-3549,
+                rotate = 0x-899802x0,
+                min = -1696x0x-4489,
+                max = 1696x1935x4489,
+            }
+
+            box
+            {
+                translate = -5489x-542x-4896,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = -5465x-542x-1907,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = -5475x-542x1366,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x5961x292,
+            }
+
+            box
+            {
+                translate = 3922x-542x1367,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x5803x292,
+            }
+
+            box
+            {
+                translate = 3924x-542x-1906,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+
+            box
+            {
+                translate = 3936x-542x-4976,
+                rotate = 0x-899802x0,
+                min = -348x0x-292,
+                max = 348x10271x292,
+            }
+        }
+
+        /* DylansGardenStuff02_36 */
+        tile
+        {
+            xy = 4x4,
+
+            box
+            {
+                translate = -3454x13614x-90,
+                rotate = 0x0x0,
+                min = -1546x0x-3875,
+                max = 1546x10881x3875,
+            }
+        }
+
+        /* DylansGardenStuff02_37 */
+        tile
+        {
+            xy = 5x4,
+
+            box
+            {
+                translate = 90x13614x-3454,
+                rotate = 0x-899802x0,
+                min = -1546x0x-3875,
+                max = 1546x10881x3875,
+            }
+        }
+
+        /* DylansGardenStuff02_38 */
+        tile
+        {
+            xy = 6x4,
+
+            box
+            {
+                translate = -4197x11446x0,
+                rotate = 0x0x0,
+                min = -314x0x-5000,
+                max = 314x13049x5000,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff02_39 */
+        tile
+        {
+            xy = 7x4,
+
+            box
+            {
+                translate = 0x9620x-4197,
+                rotate = 0x-899802x0,
+                min = -314x0x-5000,
+                max = 314x13049x5000,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff02_40 */
+        tile
+        {
+            xy = 0x5,
+
+            box
+            {
+                translate = 581x8445x1935,
+                rotate = 0x0x0,
+                min = -3232x0x-1090,
+                max = 3232x2111x1090,
+            }
+
+            box
+            {
+                translate = 581x8445x-2744,
+                rotate = 0x0x0,
+                min = -3232x0x-1090,
+                max = 3232x2111x1090,
+            }
+        }
+
+        /* DylansGardenStuff02_41 */
+        tile
+        {
+            xy = 1x5,
+
+            box
+            {
+                translate = -2433x8445x-439,
+                rotate = 0x-899802x0,
+                min = -3232x0x-1090,
+                max = 3232x2111x1090,
+            }
+
+            box
+            {
+                translate = 2216x8445x173,
+                rotate = 0x-899802x0,
+                min = -3232x0x-1090,
+                max = 3232x2111x1090,
+            }
+        }
+
+        /* DylansGardenStuff02_42 */
+        tile
+        {
+            xy = 2x5,
+
+            cylinder
+            {
+                translate = 606x3311x0,
+                rotate = 2700000x0x0,
+                radius1 = 1890,
+                radius2 = 1890,
+                height = 6622,
+            }
+        }
+
+        /* DylansGardenStuff02_43 */
+        tile
+        {
+            xy = 3x5,
+
+            cylinder
+            {
+                translate = 606x3588x0,
+                rotate = 2700000x0x0,
+                radius1 = 2264,
+                radius2 = 2264,
+                height = 7175,
+            }
+        }
+
+        /* DylansGardenStuff02_44 */
+        tile
+        {
+            xy = 4x5,
+
+            cylinder
+            {
+                translate = 740x1485x259,
+                rotate = 2700000x0x0,
+                radius1 = 1595,
+                radius2 = 1595,
+                height = 2970,
+            }
+        }
+
+        /* DylansGardenStuff02_45 */
+        tile
+        {
+            xy = 5x5,
+
+            cylinder
+            {
+                translate = 217x1151x0,
+                rotate = 2700000x0x0,
+                radius1 = 1334,
+                radius2 = 1334,
+                height = 2301,
+            }
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            cylinder
+            {
+                translate = -409x4089x-769,
+                rotate = 2700000x0x0,
+                radius1 = 3231,
+                radius2 = 3231,
+                height = 3602,
+            }
+        }
+
+        /* DylansGardenStuff02_46 */
+        tile
+        {
+            xy = 6x5,
+
+            cylinder
+            {
+                translate = 606x3588x0,
+                rotate = 2700000x0x0,
+                radius1 = 2264,
+                radius2 = 2264,
+                height = 7175,
+            }
+        }
+
+        /* DylansGardenStuff02_47 */
+        tile
+        {
+            xy = 7x5,
+
+            cylinder
+            {
+                translate = 606x3588x0,
+                rotate = 2700000x0x0,
+                radius1 = 2264,
+                radius2 = 2264,
+                height = 7175,
+            }
+        }
+
+        /* DylansGardenStuff02_48 */
+        tile
+        {
+            xy = 0x6,
+
+            polygon
+            {
+                translate = 0x9619x-2318,
+                rotate = 0x0x0,
+                plane = XY,
+                points = -912x-2517 2838x-1114 4557x-157 4401x4244 -1380x3798 -2474x-1879,
+            }
+
+            box
+            {
+                translate = -2702x0x-507,
+                rotate = 0x0x0,
+                min = -2298x0x-4493,
+                max = 2298x4889x4493,
+            }
+
+            box
+            {
+                translate = 2115x0x-2709,
+                rotate = 0x0x0,
+                min = -2538x0x-2291,
+                max = 2538x4889x2291,
+            }
+
+            cylinder
+            {
+                translate = 1104x1529x645,
+                rotate = 2700000x0x0,
+                radius1 = 1471,
+                radius2 = 1471,
+                height = 3059,
+            }
+
+            cylinder
+            {
+                translate = -2852x6455x2338,
+                rotate = 2700000x0x0,
+                radius1 = 1471,
+                radius2 = 1471,
+                height = 3059,
+            }
+
+            cylinder
+            {
+                translate = 951x6455x-2371,
+                rotate = 2700000x0x0,
+                radius1 = 1471,
+                radius2 = 1471,
+                height = 3059,
+            }
+        }
+
+        /* DylansGardenStuff02_49 */
+        tile
+        {
+            xy = 1x6,
+
+            cylinder
+            {
+                translate = -2791x2583x-3140,
+                rotate = 2700000x0x0,
+                radius1 = 1476,
+                radius2 = 1476,
+                height = 5167,
+            }
+        }
+
+        /* DylansGardenStuff02_50 */
+        tile
+        {
+            xy = 2x6,
+
+            cylinder
+            {
+                translate = -2791x2583x2880,
+                rotate = 2700000x0x0,
+                radius1 = 1684,
+                radius2 = 1684,
+                height = 5167,
+            }
+        }
+
+        /* DylansGardenStuff02_51 */
+        tile
+        {
+            xy = 3x6,
+
+            cylinder
+            {
+                translate = 2923x2583x-3140,
+                rotate = 2700000x0x0,
+                radius1 = 1574,
+                radius2 = 1574,
+                height = 5167,
+            }
+        }
+
+        /* DylansGardenStuff02_52 */
+        tile
+        {
+            xy = 4x6,
+
+            cylinder
+            {
+                translate = 3289x2583x2909,
+                rotate = 2700000x0x0,
+                radius1 = 1608,
+                radius2 = 1608,
+                height = 5167,
+            }
+        }
+
+        /* DylansGardenStuff02_53 */
+        tile
+        {
+            xy = 5x6,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x8402x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_54 */
+        tile
+        {
+            xy = 6x6,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x11490x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_55 */
+        tile
+        {
+            xy = 7x6,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x9662x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_56 */
+        tile
+        {
+            xy = 0x7,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x7020x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_57 */
+        tile
+        {
+            xy = 1x7,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x4663x2574,
+            }
+
+            properties
+            {
+                Surface = 18,
+            }
+        }
+
+        /* DylansGardenStuff02_58 */
+        tile
+        {
+            xy = 2x7,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x7670x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_59 */
+        tile
+        {
+            xy = 3x7,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x5964x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_60 */
+        tile
+        {
+            xy = 4x7,
+
+            box
+            {
+                translate = 153x0x-219,
+                rotate = 0x0x0,
+                min = -2651x0x-2574,
+                max = 2651x8361x2574,
+            }
+        }
+
+        /* DylansGardenStuff02_61 */
+        tile
+        {
+            xy = 5x7,
+
+            box
+            {
+                translate = 936x0x-1483,
+                rotate = 0x0x0,
+                min = -1795x0x-1725,
+                max = 1795x3038x1725,
+            }
+
+            box
+            {
+                translate = 1373x3056x-2084,
+                rotate = 0x0x0,
+                min = -1084x0x-1124,
+                max = 1084x1677x1124,
+            }
+
+            cylinder
+            {
+                translate = -2349x1661x2273,
+                rotate = 2700000x0x0,
+                radius1 = 1624,
+                radius2 = 1624,
+                height = 3322,
+            }
+
+            cylinder
+            {
+                translate = -2349x1661x-1595,
+                rotate = 2700000x0x0,
+                radius1 = 1624,
+                radius2 = 1624,
+                height = 3322,
+            }
+        }
+
+        /* DylansGardenStuff02_62 */
+        tile
+        {
+            xy = 6x7,
+
+            box
+            {
+                translate = -546x0x-791,
+                rotate = 0x0x0,
+                min = -3427x0x-3411,
+                max = 3427x9951x3411,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+
+        /* DylansGardenStuff02_63 */
+        tile
+        {
+            xy = 7x7,
+
+            box
+            {
+                translate = 468x0x64,
+                rotate = 0x0x0,
+                min = -3427x0x-3411,
+                max = 3427x9951x3411,
+            }
+
+            properties
+            {
+                Translucent = true,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansRandomFurniture01,
+
+        /* DylansRandomFurniture01_0 */
+        tile
+        {
+            xy = 0x0,
+
+            box
+            {
+                translate = -170x0x-532,
+                rotate = 0x0x0,
+                min = -3694x0x-4746,
+                max = 3694x1570x4746,
+            }
+        }
+
+        /* DylansRandomFurniture01_1 */
+        tile
+        {
+            xy = 1x0,
+
+            box
+            {
+                translate = -337x0x-473,
+                rotate = 0x-899802x0,
+                min = -3694x0x-4746,
+                max = 3694x1570x4746,
+            }
+        }
+
+        /* DylansRandomFurniture01_2 */
+        tile
+        {
+            xy = 2x0,
+
+            box
+            {
+                translate = -170x0x-532,
+                rotate = 0x0x0,
+                min = -3694x0x-4746,
+                max = 3694x1570x4746,
+            }
+        }
+
+        /* DylansRandomFurniture01_3 */
+        tile
+        {
+            xy = 3x0,
+
+            box
+            {
+                translate = -337x0x-473,
+                rotate = 0x-899802x0,
+                min = -3694x0x-4746,
+                max = 3694x1570x4746,
+            }
+        }
+
+        /* DylansRandomFurniture01_4 */
+        tile
+        {
+            xy = 4x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -400x3940x262,
+                rotate = 0x0x0,
+                min = -5014x0x-3276,
+                max = 5014x5187x3276,
+            }
+
+            box
+            {
+                translate = 4571x-13x3362,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = 4571x-13x-2502,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = -5085x-13x3362,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+        }
+
+        /* DylansRandomFurniture01_5 */
+        tile
+        {
+            xy = 5x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -592x3940x-53,
+                rotate = 0x-899802x0,
+                min = -4898x0x-3276,
+                max = 4898x5187x3276,
+            }
+
+            box
+            {
+                translate = -3660x-13x4571,
+                rotate = 0x-899802x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = 2227x-13x4571,
+                rotate = 0x-899802x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = 2363x-13x-4844,
+                rotate = 0x-899802x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+        }
+
+        /* DylansRandomFurniture01_6 */
+        tile
+        {
+            xy = 6x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -400x3940x262,
+                rotate = 0x0x0,
+                min = -5014x0x-3276,
+                max = 5014x5187x3276,
+            }
+
+            box
+            {
+                translate = 4571x-13x3362,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = 4571x-13x-2502,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+
+            box
+            {
+                translate = -5085x-13x3362,
+                rotate = 0x0x0,
+                min = -43x0x-176,
+                max = 43x5187x176,
+            }
+        }
+
+        /* DylansRandomFurniture01_8 */
+        tile
+        {
+            xy = 0x1,
+
+            box
+            {
+                translate = 127x0x650,
+                rotate = 0x0x0,
+                min = -3199x0x-2577,
+                max = 3199x7578x2577,
+            }
+        }
+
+        /* DylansRandomFurniture01_9 */
+        tile
+        {
+            xy = 1x1,
+
+            box
+            {
+                translate = 211x0x274,
+                rotate = 0x-899802x0,
+                min = -3199x0x-2577,
+                max = 3199x7578x2577,
+            }
+        }
+
+        /* DylansRandomFurniture01_10 */
+        tile
+        {
+            xy = 2x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -1272x859x-126,
+                rotate = 0x0x0,
+                min = -3122x0x-4436,
+                max = 3122x9482x4436,
+            }
+
+            box
+            {
+                translate = -1771x10326x-126,
+                rotate = 0x0x0,
+                min = -2170x0x-4436,
+                max = 2170x4473x4436,
+            }
+
+            box
+            {
+                translate = -3877x-35x4255,
+                rotate = 0x0x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 1439x-35x4067,
+                rotate = 0x0x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 1439x-35x-4030,
+                rotate = 0x0x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            properties
+            {
+                Surface = 59,
+            }
+        }
+
+        /* DylansRandomFurniture01_11 */
+        tile
+        {
+            xy = 3x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -540x859x-1644,
+                rotate = 0x-899802x0,
+                min = -3122x0x-4436,
+                max = 3122x9482x4436,
+            }
+
+            box
+            {
+                translate = -465x10326x-2279,
+                rotate = 0x-899802x0,
+                min = -2170x0x-4436,
+                max = 2170x4473x4436,
+            }
+
+            box
+            {
+                translate = 3883x-35x-4154,
+                rotate = 0x-899802x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = -3984x-35x1707,
+                rotate = 0x-899802x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 3873x-35x1439,
+                rotate = 0x-899802x0,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            properties
+            {
+                Surface = 59,
+            }
+        }
+
+        /* DylansRandomFurniture01_12 */
+        tile
+        {
+            xy = 4x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -483x5123x113,
+                rotate = 0x0x0,
+                min = -3077x0x-4599,
+                max = 3077x3459x4599,
+            }
+
+            box
+            {
+                translate = -483x985x113,
+                rotate = 0x0x0,
+                min = -3077x0x-4599,
+                max = 3077x503x4599,
+            }
+
+            box
+            {
+                translate = 2378x1379x4319,
+                rotate = 0x0x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            box
+            {
+                translate = -3289x1379x4319,
+                rotate = 0x0x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            box
+            {
+                translate = 2378x1379x-4051,
+                rotate = 0x0x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            properties
+            {
+                Surface = 34,
+            }
+        }
+
+        /* DylansRandomFurniture01_13 */
+        tile
+        {
+            xy = 5x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x-900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -361x5123x96,
+                rotate = 0x-899802x0,
+                min = -3077x0x-4599,
+                max = 3077x3459x4599,
+            }
+
+            box
+            {
+                translate = -540x985x41,
+                rotate = 0x-899802x0,
+                min = -3077x0x-4599,
+                max = 3077x503x4599,
+            }
+
+            box
+            {
+                translate = -4561x1379x2695,
+                rotate = 0x-899802x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            box
+            {
+                translate = 3867x1379x-2920,
+                rotate = 0x-899802x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            box
+            {
+                translate = 3830x1379x2971,
+                rotate = 0x-899802x0,
+                min = -216x0x-393,
+                max = 216x4050x393,
+            }
+
+            properties
+            {
+                Surface = 34,
+            }
+        }
+
+        /* DylansRandomFurniture01_14 */
+        tile
+        {
+            xy = 6x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -679x3963x679,
+                rotate = 0x0x0,
+                min = -1483x0x-1590,
+                max = 1483x500x1590,
+            }
+
+            box
+            {
+                translate = -956x452x366,
+                rotate = 0x0x0,
+                min = -1206x0x-1276,
+                max = 1206x3544x1276,
+            }
+
+            box
+            {
+                translate = 55x-482x1421,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+
+            box
+            {
+                translate = 55x-482x-662,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+
+            box
+            {
+                translate = -1916x-482x1421,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+        }
+
+        /* DylansRandomFurniture01_15 */
+        tile
+        {
+            xy = 7x1,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -368x3963x783,
+                rotate = 0x0x0,
+                min = -1483x0x-1590,
+                max = 1483x500x1590,
+            }
+
+            box
+            {
+                translate = -793x452x366,
+                rotate = 0x0x0,
+                min = -1206x0x-1276,
+                max = 1206x3544x1276,
+            }
+
+            box
+            {
+                translate = 293x-482x1406,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+
+            box
+            {
+                translate = 231x-482x-721,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+
+            box
+            {
+                translate = -1764x-482x1361,
+                rotate = 0x0x0,
+                min = -194x0x-221,
+                max = 194x967x221,
+            }
+        }
+
+        /* DylansRandomFurniture01_16 */
+        tile
+        {
+            xy = 0x2,
+
+            box
+            {
+                translate = 588x8518x1095,
+                rotate = 0x0x0,
+                min = -2384x0x-1494,
+                max = 2384x453x1494,
+            }
+
+            box
+            {
+                translate = -33x8945x454,
+                rotate = 0x0x0,
+                min = -1764x0x-854,
+                max = 1764x5084x854,
+            }
+
+            box
+            {
+                translate = 1222x10991x1535,
+                rotate = 0x0x0,
+                min = -509x0x-2395,
+                max = 509x251x2395,
+            }
+
+            box
+            {
+                translate = -2014x10948x1695,
+                rotate = 0x0x0,
+                min = -169x0x-856,
+                max = 169x1378x856,
+            }
+        }
+
+        /* DylansRandomFurniture01_17 */
+        tile
+        {
+            xy = 1x2,
+
+            box
+            {
+                translate = 685x8652x132,
+                rotate = 0x0x0,
+                min = -2475x0x-2680,
+                max = 2475x1823x2680,
+            }
+        }
+
+        /* DylansRandomFurniture01_18 */
+        tile
+        {
+            xy = 2x2,
+
+            box
+            {
+                translate = 833x8652x1064,
+                rotate = 0x-899802x0,
+                min = -2475x0x-2680,
+                max = 2475x1823x2680,
+            }
+        }
+
+        /* DylansRandomFurniture01_19 */
+        tile
+        {
+            xy = 3x2,
+
+            box
+            {
+                translate = -27x8594x1325,
+                rotate = 0x0x0,
+                min = -2929x0x-2828,
+                max = 2929x6042x2828,
+            }
+        }
+
+        /* DylansRandomFurniture01_20 */
+        tile
+        {
+            xy = 4x2,
+
+            box
+            {
+                translate = 2306x8652x-617,
+                rotate = -1800000x-198x-1800000,
+                min = -1816x0x-2128,
+                max = 1816x5310x2128,
+            }
+        }
+
+        /* DylansRandomFurniture01_21 */
+        tile
+        {
+            xy = 5x2,
+
+            box
+            {
+                translate = -418x8652x1723,
+                rotate = 0x-899802x0,
+                min = -1816x0x-2128,
+                max = 1816x5310x2128,
+            }
+        }
+
+        /* DylansRandomFurniture01_22 */
+        tile
+        {
+            xy = 6x2,
+
+            polygon
+            {
+                translate = 0x8713x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            cylinder
+            {
+                translate = 0x9185x770,
+                rotate = 1795915x0x0,
+                radius1 = 437,
+                radius2 = 437,
+                height = 1547,
+            }
+
+            cylinder
+            {
+                translate = -1248x9185x770,
+                rotate = 1795915x0x0,
+                radius1 = 437,
+                radius2 = 437,
+                height = 1547,
+            }
+
+            cylinder
+            {
+                translate = -696x10042x596,
+                rotate = -4093x894122x-1800000,
+                radius1 = 437,
+                radius2 = 437,
+                height = 1547,
+            }
+
+            properties
+            {
+                Surface = 35,
+            }
+        }
+
+        /* DylansRandomFurniture01_23 */
+        tile
+        {
+            xy = 7x2,
+
+            box
+            {
+                translate = -1481x8652x925,
+                rotate = 0x-899802x0,
+                min = -1018x0x-1088,
+                max = 1018x3444x1088,
+            }
+
+            polygon
+            {
+                translate = 0x8858x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 727x11057x924,
+                rotate = 0x-899802x0,
+                min = -1018x0x-1556,
+                max = 1018x1039x1556,
+            }
+
+            properties
+            {
+                Surface = 35,
+            }
+        }
+
+        /* DylansRandomFurniture01_24 */
+        tile
+        {
+            xy = 0x3,
+
+            box
+            {
+                translate = 232x8868x1823,
+                rotate = 0x0x0,
+                min = -2818x0x-2747,
+                max = 2818x6362x2747,
+            }
+
+            box
+            {
+                translate = -1007x15230x402,
+                rotate = 0x0x0,
+                min = -632x0x-434,
+                max = 632x1462x434,
+            }
+        }
+
+        /* DylansRandomFurniture01_25 */
+        tile
+        {
+            xy = 1x3,
+
+            box
+            {
+                translate = 232x8868x1823,
+                rotate = 0x0x0,
+                min = -2818x0x-2747,
+                max = 2818x6362x2747,
+            }
+
+            box
+            {
+                translate = -1117x15230x760,
+                rotate = 0x0x0,
+                min = -632x0x-594,
+                max = 632x1462x594,
+            }
+        }
+
+        /* DylansRandomFurniture01_26 */
+        tile
+        {
+            xy = 2x3,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x900000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -194x859x1238,
+                rotate = 1799855x899802x-1799855,
+                min = -3122x0x-4436,
+                max = 3122x9482x4436,
+            }
+
+            box
+            {
+                translate = -257x10326x1771,
+                rotate = 1799855x899802x-1799855,
+                min = -2170x0x-4436,
+                max = 2170x4473x4436,
+            }
+
+            box
+            {
+                translate = -4131x-35x4154,
+                rotate = 1799855x899802x-1799855,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 3839x-35x4049,
+                rotate = 1799855x899802x-1799855,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 4012x-35x-1611,
+                rotate = 1799855x899802x-1799855,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+        }
+
+        /* DylansRandomFurniture01_27 */
+        tile
+        {
+            xy = 3x3,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = -900000x0x1800000,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = 1238x859x194,
+                rotate = -1800000x-198x-1800000,
+                min = -3122x0x-4436,
+                max = 3122x9482x4436,
+            }
+
+            box
+            {
+                translate = 2177x10326x20,
+                rotate = -1800000x-198x-1800000,
+                min = -2170x0x-4436,
+                max = 2170x4473x4436,
+            }
+
+            box
+            {
+                translate = 4154x-35x4131,
+                rotate = -1800000x-198x-1800000,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = 4049x-35x-3839,
+                rotate = -1800000x-198x-1800000,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+
+            box
+            {
+                translate = -1608x-35x4087,
+                rotate = -1800000x-198x-1800000,
+                min = -192x0x-539,
+                max = 192x897x539,
+            }
+        }
+    }
+tileset
+    {
+        name = WECommunity_DylansRandomFurniture02,
+
+        /* DylansRandomFurniture02_0 */
+        tile
+        {
+            xy = 0x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -4141x12422 -4141x10547 -4063x3125 -5313x3125,
+            }
+
+            box
+            {
+                translate = -312x26937x0,
+                rotate = 0x0x0,
+                min = -4318x0x-5000,
+                max = 4318x4379x5000,
+            }
+
+            cylinder
+            {
+                translate = -3905x2617x2138,
+                rotate = 2700000x0x0,
+                radius1 = 354,
+                radius2 = 354,
+                height = 3866,
+            }
+
+            box
+            {
+                translate = -312x6635x0,
+                rotate = 0x0x0,
+                min = -4318x0x-5000,
+                max = 4318x2282x5000,
+            }
+
+            cylinder
+            {
+                translate = 990x235x1804,
+                rotate = 2700000x0x0,
+                radius1 = 495,
+                radius2 = 495,
+                height = 458,
+            }
+
+            cylinder
+            {
+                translate = 1277x2749x2138,
+                rotate = 2700000x0x0,
+                radius1 = 354,
+                radius2 = 354,
+                height = 4109,
+            }
+
+            cylinder
+            {
+                translate = -4161x235x1846,
+                rotate = 2700000x0x0,
+                radius1 = 495,
+                radius2 = 495,
+                height = 458,
+            }
+        }
+
+        /* DylansRandomFurniture02_1 */
+        tile
+        {
+            xy = 1x0,
+
+            polygon
+            {
+                translate = 0x0x0,
+                rotate = 2700000x0x0,
+                plane = XZ,
+                points = -5000x-5000 5000x-5000 5000x5000 -5000x5000,
+            }
+
+            box
+            {
+                translate = -312x4538x0,
+                rotate = 0x0x0,
+                min = -4318x0x-5000,
+                max = 4318x4379x5000,
+            }
+
+            cylinder
+            {
+                translate = 3298x2495x-3270,
+                rotate = 2700000x0x0,
+                radius1 = 354,
+                radius2 = 354,
+                height = 4109,
+            }
+
+            box
+            {
+                translate = -312x4538x0,
+                rotate = 0x0x0,
+                min = -4318x0x-5000,
+                max = 4318x4379x5000,
+            }
+
+            cylinder
+            {
+                translate = 3298x235x-3270,
+                rotate = 2700000x0x0,
+                radius1 = 495,
+                radius2 = 495,
+                height = 458,
+            }
+        }
+    }
+}

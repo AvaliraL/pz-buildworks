@@ -1,0 +1,7 @@
+name=World Essentials - TikiTown Buildworks
+id=TikiTownKBW
+description=Knox Buildworks buildables for Drazion's Tilepack (TikiTown). Bundled World Essentials submod; requires Knox Buildworks, Knox Buildworks Vanilla Expanded, and Drazion's Tilepack. World Essentials required.
+require=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,tikitown_tiles
+loadModAfter=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,tikitown_tiles
+versionMin=42.0
+tags=Build 42,Build

@@ -1,0 +1,2131 @@
+{
+  "schemaVersion": 1,
+  "category": "Walls and Wall Finishes",
+  "source": "Community Tilepack (TK) WALLS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+  "buildables": [
+    {
+      "id": "community.tk.walls.industry_tk_01_0",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_0",
+      "displayName": "White Industrial Wall",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_0",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "cornerSprite": "industry_tk_01_2",
+            "pillarSprite": "industry_tk_01_3"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_8",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_8",
+      "displayName": "White Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_8",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_3"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_2_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_2_corner",
+      "displayName": "White Industrial Corner Wall Corner",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_2",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_2"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_2_pillar",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_2_pillar",
+      "displayName": "White Industrial Corner Wall Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_3",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "dismantable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "isCorner": true
+          }
+        }
+      ],
+      "pieceClass": "pillar"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_3",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_3",
+      "displayName": "White Industrial Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_3",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_4",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_4",
+      "displayName": "Blue Industrial Wall",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_4",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_5"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "cornerSprite": "industry_tk_01_6",
+            "pillarSprite": "industry_tk_01_7"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_12",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_12",
+      "displayName": "Blue Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_12",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_13"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_7"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_6_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_6_corner",
+      "displayName": "Blue Industrial Corner Wall Corner",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_6",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_6_pillar",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_6_pillar",
+      "displayName": "Blue Industrial Corner Wall Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_7",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "dismantable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "isCorner": true
+          }
+        }
+      ],
+      "pieceClass": "pillar"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_7",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_7",
+      "displayName": "Blue Industrial Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_7",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_24",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_24",
+      "displayName": "Light Green Industrial Wall",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_24",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_25"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "cornerSprite": "industry_tk_01_26",
+            "pillarSprite": "industry_tk_01_27"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_32",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_32",
+      "displayName": "Light Green Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_32",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_32"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_33"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_27"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_26_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_26_corner",
+      "displayName": "Light Green Industrial Corner Wall Corner",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_26",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_26"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_26_pillar",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_26_pillar",
+      "displayName": "Light Green Industrial Corner Wall Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_27",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "dismantable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "isCorner": true
+          }
+        }
+      ],
+      "pieceClass": "pillar"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_27",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_27",
+      "displayName": "Light Green Industrial Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_27",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_28",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_28",
+      "displayName": "Green Industrial Wall",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_28",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_29"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "cornerSprite": "industry_tk_01_30",
+            "pillarSprite": "industry_tk_01_31"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_36",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_36",
+      "displayName": "Green Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_36",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_37"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_31"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_30_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_30_corner",
+      "displayName": "Green Industrial Corner Wall Corner",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_30",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_30"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_30_pillar",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_30_pillar",
+      "displayName": "Green Industrial Corner Wall Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_31",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "dismantable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "isCorner": true
+          }
+        }
+      ],
+      "pieceClass": "pillar"
+    },
+    {
+      "id": "community.tk.walls.industry_tk_01_31",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_walls_industry_tk_01_31",
+      "displayName": "Green Industrial Pillar",
+      "tooltipKey": "Tooltip_KBW_Shared_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_31",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    }
+  ]
+}

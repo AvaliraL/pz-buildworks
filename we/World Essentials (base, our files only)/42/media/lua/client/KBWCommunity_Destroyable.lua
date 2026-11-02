@@ -1,0 +1,3 @@
+-- Deliberately preserve the preceding destruction validator, including other mods' denials.
+-- Buildable objects use normal Knox/vanilla destruction and dismantling eligibility.
+-- Never turn a rejected canDestroy result into permission based on an ID prefix.

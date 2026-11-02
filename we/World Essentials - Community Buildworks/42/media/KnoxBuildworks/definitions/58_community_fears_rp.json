@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "category": "Decorations and Landscaping",
+  "source": "Fears RP tiles: raccoon figure (61-63). COST TODO.",
+  "buildables": [
+    {
+      "id": "community.fears.rp.raccoon_figure",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_rp_raccoon_figure",
+      "displayName": "Raccoon Figure",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Statues",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "fears_rp_tiles_62",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "decoration"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_rp_tiles_61"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_rp_tiles_62"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_rp_tiles_63"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      }
+    }
+  ]
+}

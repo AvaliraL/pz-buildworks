@@ -1,0 +1,7 @@
+Bundled with World Essentials, with author attribution.
+Original Workshop item: 3828081863
+Original content and identifiers retained; metadata adjusted for optional WE submod.
+Reviewed Community runtime callbacks are supplied once by main World Essentials.
+Do not enable the separate Workshop copy alongside this bundled version.
+
+Local adaptation 2026-10-30: KBWCommunity_Seating.lua initializes missing seating registration using vanilla initModData, validates counts/source positions and runs once after readiness. Upstream hashes retained separately; local override hash in tools/bundled-kbw-local-overrides.json. No tile IDs or definitions changed.

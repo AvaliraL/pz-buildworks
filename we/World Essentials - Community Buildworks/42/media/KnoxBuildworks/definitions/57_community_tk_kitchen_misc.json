@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "category": "Furniture and Appliances",
+  "source": "TK kitchen_misc_tk_01 (rest of the sheet; the wire rack is in sheet 42). COST TODO.",
+  "buildables": [
+    {
+      "id": "community.tk.kitchen_misc.deli_slicer",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_deli_slicer",
+      "displayName": "Deli Slicer",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_0",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      }
+    },
+    {
+      "id": "community.tk.kitchen_misc.wall_shelf",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_wall_shelf",
+      "displayName": "Metal Kitchen Wall Shelf",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Storage",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_4",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          },
+          "container": {
+            "type": "SpoonRack",
+            "capacity": 30
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+    },
+    {
+      "id": "community.tk.kitchen_misc.ice_machine",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine",
+      "displayName": "Commercial Ice Machine",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            }
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+    },
+    {
+      "id": "community.tk.kitchen_misc.deep_fryer",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_deep_fryer",
+      "displayName": "Commercial Deep Fryer",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_16",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_16"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_17"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_18"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_19"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            }
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      }
+    },
+    {
+      "id": "community.tk.kitchen_misc.coffee_maker",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_maker",
+      "displayName": "Drip Coffee Maker",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_24",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_25"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      }
+    },
+    {
+      "id": "community.tk.kitchen_misc.coffee_machine",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_machine",
+      "displayName": "Commercial Coffee Machine",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_28",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      }
+    }
+  ]
+}

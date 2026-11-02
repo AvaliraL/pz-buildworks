@@ -1,0 +1,10 @@
+# build output, caches, scratch
+__pycache__/
+*.pyc
+_cache_*/
+mod_build/
+_*.txt
+*.zip
+*.pdf
+.DS_Store
+Thumbs.db

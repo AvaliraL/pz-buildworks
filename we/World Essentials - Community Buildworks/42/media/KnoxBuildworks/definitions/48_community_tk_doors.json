@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "category": "Doors",
+  "source": "Community Tilepack (TK) DOORS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+  "buildables": [
+    {
+      "id": "community.tk.doorframes.industry_tk_01_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_10",
+      "displayName": "White Industrial Door Frame Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Door",
+      "category": "Doors",
+      "subcategory": "Door Frames",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_10",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "doorframe"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "isDoorFrame": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_3"
+          }
+        }
+      ],
+      "pieceClass": "doorframe"
+    },
+    {
+      "id": "community.tk.doorframes.industry_tk_01_14",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_14",
+      "displayName": "Blue Industrial Door Frame Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Door",
+      "category": "Doors",
+      "subcategory": "Door Frames",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_14",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "doorframe"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_15"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "isDoorFrame": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_7"
+          }
+        }
+      ],
+      "pieceClass": "doorframe"
+    },
+    {
+      "id": "community.tk.doorframes.industry_tk_01_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_34",
+      "displayName": "Light Green Industrial Door Frame Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Door",
+      "category": "Doors",
+      "subcategory": "Door Frames",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_34",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "doorframe"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_35"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "isDoorFrame": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_27"
+          }
+        }
+      ],
+      "pieceClass": "doorframe"
+    },
+    {
+      "id": "community.tk.doorframes.industry_tk_01_38",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_38",
+      "displayName": "Green Industrial Door Frame Frame",
+      "tooltipKey": "Tooltip_KBW_Shared_Door",
+      "category": "Doors",
+      "subcategory": "Door Frames",
+      "material": "Wood",
+      "iconSprite": "industry_tk_01_38",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "doorframe"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_01_39"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "isDoorFrame": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "dismantable": true,
+            "pillarSprite": "industry_tk_01_31"
+          }
+        }
+      ],
+      "pieceClass": "doorframe"
+    }
+  ]
+}

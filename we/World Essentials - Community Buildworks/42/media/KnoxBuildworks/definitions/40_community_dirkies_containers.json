@@ -1,0 +1,6772 @@
+{
+  "schemaVersion": 1,
+  "category": "Containers",
+  "source": "Community Tilepack (Dirkies) CONTAINERS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+  "buildables": [
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_3",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_3",
+      "displayName": "Fancy White Double Wardrobe",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Wardrobes",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_3",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "wardrobe"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_2",
+                        "edit_ddd_RUS_furniture_storage_03_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_1"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_6",
+                        "edit_ddd_RUS_furniture_storage_03_7"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_5"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_4"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_large",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "wardrobe",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_11",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_11",
+      "displayName": "Fancy White Glass Wardrobe",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Wardrobes",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "wardrobe"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_10",
+                        "edit_ddd_RUS_furniture_storage_03_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_9"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_14",
+                        "edit_ddd_RUS_furniture_storage_03_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_13"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_12"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_large",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "wardrobe",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_28",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_28",
+      "displayName": "Oak Chest of Drawers",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Dressers",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_28",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_33",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_33",
+      "displayName": "Oak Hutch",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_33",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_33"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_50"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_51"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_41",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_41",
+      "displayName": "Oak Hall Bench with Coat Hooks",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_41",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_41"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_40"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_43"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_42"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_34",
+      "displayName": "Oak Glass Display Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_35"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_48"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_49"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_67",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_67",
+      "displayName": "Light Wood Double Wardrobe",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Wardrobes",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_67",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "wardrobe"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_66",
+                        "edit_ddd_RUS_furniture_storage_03_67"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_65"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_64"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_70",
+                        "edit_ddd_RUS_furniture_storage_03_71"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_69"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_68"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_large",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "wardrobe",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_75",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_75",
+      "displayName": "Light Wood Glass Wardrobe",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Wardrobes",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_75",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "wardrobe"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_74",
+                        "edit_ddd_RUS_furniture_storage_03_75"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_73"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_72"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_78",
+                        "edit_ddd_RUS_furniture_storage_03_79"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_77"
+                      ],
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_76"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_large",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "wardrobe",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_100",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_100",
+      "displayName": "Dark Chest of Drawers",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Dressers",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_100",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_100"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_101"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_102"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_103"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_32",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_32",
+      "displayName": "Oak Display Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_32",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_32"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_39"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_80",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_80",
+      "displayName": "Dark Display Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_80",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_80"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_85"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_86"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_87"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_81",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_81",
+      "displayName": "Dark Hutch",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_81",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_81"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_84"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_98"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_99"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_82",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_furniture_storage_03_82",
+      "displayName": "Dark Glass Display Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Cabinets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_furniture_storage_03_82",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "dresser"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_82"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_83"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_96"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_furniture_storage_03_97"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood_glass",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Dressers"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Dressers"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "dresser",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.d_location_sofaking_11",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_d_location_sofaking_11",
+      "displayName": "White Counter, Blue Top",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_location_sofaking_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_13"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.d_location_sofaking_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_d_location_sofaking_10",
+      "displayName": "White Counter, Blue Top (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_location_sofaking_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_location_business_machinery_02_1",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_location_business_machinery_02_1",
+      "displayName": "Blue Rolling Tool Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Tool Cabinets",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_location_business_machinery_02_1",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_location_business_machinery_02_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_location_business_machinery_02_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_location_business_machinery_02_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_location_business_machinery_02_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_14",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_14",
+      "displayName": "Black Metal Shelving",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Shelving",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_14",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_15"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_30",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_30",
+      "displayName": "White Metal Shelf Rack",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Shelving",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_30",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_dirkea_ddd_01_15",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_dirkea_ddd_01_15",
+      "displayName": "Dark Metal Shelving",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Shelving",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "industry_dirkea_ddd_01_15",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_14",
+                        "industry_dirkea_ddd_01_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_13"
+                      ],
+                      [
+                        "industry_dirkea_ddd_01_12"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_8",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_8",
+      "displayName": "Steel Work Table",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Medical",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_10",
+      "displayName": "Steel Medical Counter with Shelves",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Medical",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_12",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_12",
+      "displayName": "Metal Wall Shelves",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Shelving",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_12",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_13"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_16",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_16",
+      "displayName": "Glass Medical Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Medical",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_16",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_16"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_17"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_18"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_19"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_28",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_28",
+      "displayName": "Medical Drawer Cart",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Medical",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_28",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_12",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_12",
+      "displayName": "Open Crate with Cloth",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_12",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_12"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_20",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_20",
+      "displayName": "Broken Wooden Crate",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_20",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_20"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_4",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_4",
+      "displayName": "Green Military Case",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityCasesMirror_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_4.crate",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_4_crate",
+      "displayName": "Green Military Crate Case",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityCasesMirror_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true,
+            "blockAllSquare": true
+          },
+          "container": {
+            "type": "militarycrate",
+            "capacity": 100
+          },
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_7",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_7",
+      "displayName": "Pallet of Green Military Cases",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_7",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_9",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_9",
+      "displayName": "White Military Case",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_9",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityCasesMirror_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_9.crate",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_9_crate",
+      "displayName": "White Military Crate Case",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_9",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityCasesMirror_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true,
+            "blockAllSquare": true
+          },
+          "container": {
+            "type": "militarycrate",
+            "capacity": 100
+          },
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_8",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_8",
+      "displayName": "Pallet of White Military Cases",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_4",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_4",
+      "displayName": "Wooden Barrel on Pallet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_5",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_5",
+      "displayName": "Green Barrel on Pallet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_5",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_5"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_6",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_6",
+      "displayName": "Blue Barrel on Pallet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_6",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_7",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_7",
+      "displayName": "Red Barrel on Pallet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_7",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_55",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_55",
+      "displayName": "Small Boxes on Pallet (Full)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_55",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_55"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_53",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_53",
+      "displayName": "Small Boxes on Pallet (Half)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_53",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_53"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_54",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_54",
+      "displayName": "Small Boxes on Pallet (Few)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_54",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_54"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_52",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_52",
+      "displayName": "Vegetable Baskets on Pallet (Tall)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_52",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_52"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_60",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_60",
+      "displayName": "Vegetable Baskets on Pallet (Mixed)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_60",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_60"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_56",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_56",
+      "displayName": "Vegetable Baskets on Pallet (Blue Stack)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_56",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_56"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_57",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_57",
+      "displayName": "Vegetable Baskets on Pallet (Green Stack)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_57",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_57"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_58",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_58",
+      "displayName": "Vegetable Baskets on Pallet (Pink Top)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_58",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_58"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.industry_ddd_01_59",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_industry_ddd_01_59",
+      "displayName": "Vegetable Baskets on Pallet (Low)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Pallets",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "industry_ddd_01_59",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_ddd_01_59"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.furniture_storage_ddd_01_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_furniture_storage_ddd_01_34",
+      "displayName": "In-Wall Bookshelf",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Shelving",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "furniture_storage_ddd_01_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "shelves"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_storage_ddd_01_35"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_2",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_2",
+      "displayName": "Walnut Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_2",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_3",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_3",
+      "displayName": "Walnut Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_3",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_7"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_10",
+      "displayName": "Dark Wood Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_11",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_11",
+      "displayName": "Dark Wood Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_13"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_18",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_18",
+      "displayName": "Grey Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_18",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_18"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_20"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_22"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_16"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_19",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_19",
+      "displayName": "Grey Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_19",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_19"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_21"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_23"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_17"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_26",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_26",
+      "displayName": "Tan Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_26",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_24"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_27",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_27",
+      "displayName": "Tan Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_27",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_27"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_31"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_25"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_34",
+      "displayName": "Oak Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_32"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_35",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_35",
+      "displayName": "Oak Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_35",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_35"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_39"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_33"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_42",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_42",
+      "displayName": "Charcoal Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_42",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_42"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_44"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_46"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_40"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_43",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_43",
+      "displayName": "Charcoal Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_43",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_43"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_47"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_41"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_50",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_50",
+      "displayName": "Olive Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_50",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_50"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_52"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_54"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_48"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_51",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_51",
+      "displayName": "Olive Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_51",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_51"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_53"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_55"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_49"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_58",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_58",
+      "displayName": "Cream Upper Cabinet (Corner)",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_58",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_58"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_60"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_62"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_56"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_59",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_59",
+      "displayName": "Cream Upper Cabinet",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_59",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_59"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_61"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_63"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_57"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          }
+        }
+      ]
+    }
+  ]
+}

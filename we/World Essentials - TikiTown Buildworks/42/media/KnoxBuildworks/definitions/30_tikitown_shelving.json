@@ -1,0 +1,547 @@
+{
+ "schemaVersion": 1,
+ "category": "Furniture and Appliances",
+ "source": "TikiTown furniture_shelving_tterika_01 (1024x4096 = 8 cols x 16 rows @128x256). TYPE 1 Tall Bookshelf: 4 color variants from rows 0-1 (sprites 0-15); each variant = 4 sprites in a line, facing S,E,W,N (base+0/+1/+2/+3). Modeled on verified bedroom shelf. More shelving types (short, multi-tile, wall, corner) to be added to this file.",
+ "buildables": [
+  {
+   "id": "worldessentials.tikitown.furniture_shelving_tterika_01_0",
+   "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_0",
+   "displayName": "Tall Bookshelf - Walnut",
+   "tooltipKey": "Tooltip_WETiki_furniture_shelving_tterika_01_0",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "furniture_shelving_tterika_01_0",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_2"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_3"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canBePadlocked": true,
+      "isProp": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+    "name": "TikiTown Bookshelf",
+    "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+    "level": 1
+   }
+  },
+  {
+   "id": "worldessentials.tikitown.furniture_shelving_tterika_01_4",
+   "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_4",
+   "displayName": "Tall Bookshelf - Oak",
+   "tooltipKey": "Tooltip_WETiki_furniture_shelving_tterika_01_4",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "furniture_shelving_tterika_01_4",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_6"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_7"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canBePadlocked": true,
+      "isProp": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+    "name": "TikiTown Bookshelf",
+    "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+    "level": 2
+   }
+  },
+  {
+   "id": "worldessentials.tikitown.furniture_shelving_tterika_01_8",
+   "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_8",
+   "displayName": "Tall Bookshelf - Charcoal",
+   "tooltipKey": "Tooltip_WETiki_furniture_shelving_tterika_01_8",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "furniture_shelving_tterika_01_8",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_9"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_10"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_11"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canBePadlocked": true,
+      "isProp": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+    "name": "TikiTown Bookshelf",
+    "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+    "level": 3
+   }
+  },
+  {
+   "id": "worldessentials.tikitown.furniture_shelving_tterika_01_12",
+   "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_12",
+   "displayName": "Tall Bookshelf - White",
+   "tooltipKey": "Tooltip_WETiki_furniture_shelving_tterika_01_12",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "furniture_shelving_tterika_01_12",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_14"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "furniture_shelving_tterika_01_15"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "canBePadlocked": true,
+      "isProp": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+    "name": "TikiTown Bookshelf",
+    "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+    "level": 4
+   }
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "category": "Containers",
+  "source": "TK 2-tile dumpsters (green + red), merged from the B41 addon's split W/N + E/S double-tile halves into single 4-facing objects. KBW metal container cost.",
+  "buildables": [
+    {
+      "id": "community.tk.containers.dumpster_green",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_dumpster_green",
+      "displayName": "Green Dumpster",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Trash Cans",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "trash_containers_tk_01_27",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "dumpster"
+      ],
+      "construction": {
+        "time": 100,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_26",
+                        "trash_containers_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_25"
+                      ],
+                      [
+                        "trash_containers_tk_01_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_30",
+                        "trash_containers_tk_01_31"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_29"
+                      ],
+                      [
+                        "trash_containers_tk_01_28"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "metal_shelves",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.dumpster_brown",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_dumpster_brown",
+      "displayName": "Red Dumpster",
+      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "category": "Containers",
+      "subcategory": "Trash Cans",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "trash_containers_tk_01_51",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "dumpster"
+      ],
+      "construction": {
+        "time": 100,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_50",
+                        "trash_containers_tk_01_51"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_49"
+                      ],
+                      [
+                        "trash_containers_tk_01_48"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_54",
+                        "trash_containers_tk_01_55"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_53"
+                      ],
+                      [
+                        "trash_containers_tk_01_52"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "metal_shelves",
+            "capacity": 40
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -131,7 +131,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceLow"
     },
     {
       "id": "community.dirkies.fencing.picket_corner",
@@ -249,7 +250,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.picket_post",
@@ -366,7 +368,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.concrete_wire",
@@ -506,7 +509,8 @@
         "level": 1,
         "name": "Concrete Pillar and Wire Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_concrete_wire"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.concrete_wire.half_a",
@@ -642,7 +646,8 @@
         "level": 2,
         "name": "Concrete Pillar and Wire Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_concrete_wire"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.concrete_wire.half_b",
@@ -778,7 +783,8 @@
         "level": 3,
         "name": "Concrete Pillar and Wire Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_concrete_wire"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.concrete_wire_corner",
@@ -896,7 +902,8 @@
             "category": "Welding"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.concrete_wire_post",
@@ -1013,7 +1020,8 @@
             "category": "Welding"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.cinderblock",
@@ -1133,7 +1141,8 @@
         "level": 1,
         "name": "Cinderblock Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.cinderblock.half_a",
@@ -1249,7 +1258,8 @@
         "level": 2,
         "name": "Cinderblock Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock.half_b",
@@ -1365,7 +1375,8 @@
         "level": 3,
         "name": "Cinderblock Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_corner",
@@ -1463,7 +1474,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_post",
@@ -1560,7 +1572,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_planks",
@@ -1680,7 +1693,8 @@
         "level": 1,
         "name": "Cinderblock and Planks Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_planks"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_planks.half_a",
@@ -1796,7 +1810,8 @@
         "level": 2,
         "name": "Cinderblock and Planks Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_planks"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_planks.half_b",
@@ -1912,7 +1927,8 @@
         "level": 3,
         "name": "Cinderblock and Planks Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_planks"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_planks_corner",
@@ -2010,7 +2026,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_planks_post",
@@ -2107,7 +2124,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines",
@@ -2227,7 +2245,8 @@
         "level": 1,
         "name": "Cinderblock Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines.alt",
@@ -2347,7 +2366,8 @@
         "level": 2,
         "name": "Cinderblock Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines.half_a",
@@ -2463,7 +2483,8 @@
         "level": 3,
         "name": "Cinderblock Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines.half_b",
@@ -2579,7 +2600,8 @@
         "level": 4,
         "name": "Cinderblock Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines.half_b_alt",
@@ -2695,7 +2717,8 @@
         "level": 5,
         "name": "Cinderblock Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_cinderblock_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines_corner",
@@ -2793,7 +2816,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.cinderblock_vines_post",
@@ -2890,7 +2914,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.old_wood",
@@ -2999,7 +3024,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.old_wood_corner",
@@ -3096,7 +3122,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.old_wood_post",
@@ -3192,7 +3219,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.plank",
@@ -3311,7 +3339,8 @@
         "level": 1,
         "name": "Plank Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.plank.half_a",
@@ -3426,7 +3455,8 @@
         "level": 2,
         "name": "Plank Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.plank.half_b",
@@ -3541,7 +3571,8 @@
         "level": 3,
         "name": "Plank Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.plank_corner",
@@ -3638,7 +3669,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.plank_post",
@@ -3734,7 +3766,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.plank_vines",
@@ -3853,7 +3886,8 @@
         "level": 1,
         "name": "Plank Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.plank_vines.alt",
@@ -3972,7 +4006,8 @@
         "level": 2,
         "name": "Plank Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHigh"
     },
     {
       "id": "community.dirkies.fencing.plank_vines.half_a",
@@ -4087,7 +4122,8 @@
         "level": 3,
         "name": "Plank Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.plank_vines.half_b",
@@ -4202,7 +4238,8 @@
         "level": 4,
         "name": "Plank Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.plank_vines.half_b_alt",
@@ -4317,7 +4354,8 @@
         "level": 5,
         "name": "Plank Fence with Vines",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_plank_vines"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.plank_vines_corner",
@@ -4414,7 +4452,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.plank_vines_post",
@@ -4510,7 +4549,8 @@
             "category": "Carpentry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.low_concrete",
@@ -4630,7 +4670,8 @@
         "level": 1,
         "name": "Low Concrete Wall",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_low_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceLow"
     },
     {
       "id": "community.dirkies.fencing.low_concrete.half_a",
@@ -4746,7 +4787,8 @@
         "level": 2,
         "name": "Low Concrete Wall",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_low_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.low_concrete.half_b",
@@ -4862,7 +4904,8 @@
         "level": 3,
         "name": "Low Concrete Wall",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_low_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.low_concrete_corner",
@@ -4960,7 +5003,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.low_concrete_post",
@@ -5057,7 +5101,8 @@
             "category": "Masonry"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.angled",
@@ -5215,7 +5260,8 @@
         "level": 1,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceTwoStorey"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.flat",
@@ -5373,7 +5419,8 @@
         "level": 2,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceTwoStorey"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.angled.half_a",
@@ -5523,7 +5570,8 @@
         "level": 3,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.angled.half_b",
@@ -5673,7 +5721,8 @@
         "level": 4,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.flat.half_a",
@@ -5823,7 +5872,8 @@
         "level": 5,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete.flat.half_b",
@@ -5973,7 +6023,8 @@
         "level": 6,
         "name": "Louvered Fence on Concrete",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete_corner.angled",
@@ -6104,7 +6155,8 @@
         "level": 1,
         "name": "Louvered Fence on Concrete Corner",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete_corner"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete_post.angled",
@@ -6234,7 +6286,8 @@
         "level": 1,
         "name": "Louvered Fence on Concrete Post",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete_post"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete_corner.flat",
@@ -6365,7 +6418,8 @@
         "level": 2,
         "name": "Louvered Fence on Concrete Corner",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete_corner"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.louvered_concrete_post.flat",
@@ -6495,7 +6549,8 @@
         "level": 2,
         "name": "Louvered Fence on Concrete Post",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_concrete_post"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.angled",
@@ -6653,7 +6708,8 @@
         "level": 1,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceTwoStorey"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.flat",
@@ -6811,7 +6867,8 @@
         "level": 2,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceTwoStorey"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.angled.half_a",
@@ -6961,7 +7018,8 @@
         "level": 3,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.angled.half_b",
@@ -7111,7 +7169,8 @@
         "level": 4,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.flat.half_a",
@@ -7261,7 +7320,8 @@
         "level": 5,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone.flat.half_b",
@@ -7411,7 +7471,8 @@
         "level": 6,
         "name": "Louvered Fence on Sandstone",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone_corner.angled",
@@ -7542,7 +7603,8 @@
         "level": 1,
         "name": "Louvered Fence on Sandstone Corner",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone_corner"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone_post.angled",
@@ -7672,7 +7734,8 @@
         "level": 1,
         "name": "Louvered Fence on Sandstone Post",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone_post"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone_corner.flat",
@@ -7803,7 +7866,8 @@
         "level": 2,
         "name": "Louvered Fence on Sandstone Corner",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone_corner"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.louvered_sandstone_post.flat",
@@ -7933,7 +7997,8 @@
         "level": 2,
         "name": "Louvered Fence on Sandstone Post",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_sandstone_post"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     },
     {
       "id": "community.dirkies.fencing.louvered_broken",
@@ -8073,7 +8138,8 @@
         "level": 1,
         "name": "Broken Louvered Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_broken"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceLow"
     },
     {
       "id": "community.dirkies.fencing.louvered_broken.half_a",
@@ -8209,7 +8275,8 @@
         "level": 2,
         "name": "Broken Louvered Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_broken"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_broken.half_b",
@@ -8345,7 +8412,8 @@
         "level": 3,
         "name": "Broken Louvered Fence",
         "translationKey": "IGUI_KBW_Group_community_dirkies_fencing_louvered_broken"
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_FenceHalf"
     },
     {
       "id": "community.dirkies.fencing.louvered_broken_corner",
@@ -8463,7 +8531,8 @@
             "category": "Welding"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FenceCorner"
     },
     {
       "id": "community.dirkies.fencing.louvered_broken_post",
@@ -8580,7 +8649,8 @@
             "category": "Welding"
           }
         }
-      ]
+      ],
+      "tooltipKey": "Tooltip_KBWCB_FencePost"
     }
   ]
 }

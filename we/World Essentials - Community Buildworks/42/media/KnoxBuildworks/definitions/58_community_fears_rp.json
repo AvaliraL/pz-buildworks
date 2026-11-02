@@ -84,7 +84,8 @@
         "xp": {
           "Woodwork": 40
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_Figure"
     }
   ]
 }

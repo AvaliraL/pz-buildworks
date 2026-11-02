@@ -8,7 +8,7 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_containers_blocktrasher_bookshelf",
       "displayName": "Store Bookshelf",
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+      "tooltipKey": "Tooltip_KBWCB_Bookshelf",
       "category": "Containers",
       "subcategory": "Shelves",
       "material": "Wood",

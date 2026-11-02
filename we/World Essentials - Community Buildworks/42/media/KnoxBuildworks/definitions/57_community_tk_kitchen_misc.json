@@ -95,7 +95,8 @@
         "xp": {
           "MetalWelding": 30
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_Slicer"
     },
     {
       "id": "community.tk.kitchen_misc.wall_shelf",
@@ -195,7 +196,7 @@
           "MetalWelding": 30
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_KitchenShelf"
     },
     {
       "id": "community.tk.kitchen_misc.ice_machine",
@@ -291,7 +292,7 @@
           "MetalWelding": 50
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_IceMachine"
     },
     {
       "id": "community.tk.kitchen_misc.deep_fryer",
@@ -386,7 +387,8 @@
         "xp": {
           "MetalWelding": 50
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_DeepFryer"
     },
     {
       "id": "community.tk.kitchen_misc.coffee_maker",
@@ -481,7 +483,8 @@
         "xp": {
           "MetalWelding": 30
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
     },
     {
       "id": "community.tk.kitchen_misc.coffee_machine",
@@ -576,7 +579,8 @@
         "xp": {
           "MetalWelding": 30
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
     }
   ]
 }

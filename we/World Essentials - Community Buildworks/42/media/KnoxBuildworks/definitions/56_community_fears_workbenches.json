@@ -82,7 +82,7 @@
           "Woodwork": 40
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.metalworking",
@@ -163,7 +163,7 @@
           "MetalWelding": 50
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.electrical",
@@ -244,7 +244,7 @@
           "Woodwork": 40
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.carpentry",
@@ -325,7 +325,7 @@
           "Woodwork": 40
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.chemistry",
@@ -406,7 +406,7 @@
           "MetalWelding": 30
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.gunsmithing",
@@ -487,7 +487,7 @@
           "MetalWelding": 50
         }
       },
-      "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
       "id": "community.fears.workbench.wood_gas_stove",
@@ -548,7 +548,8 @@
         "xp": {
           "MetalWelding": 50
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
     },
     {
       "id": "community.fears.workbench.anvil",
@@ -620,7 +621,8 @@
         "xp": {
           "MetalWelding": 50
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
     },
     {
       "id": "community.fears.workbench.air_compressor",
@@ -692,7 +694,8 @@
         "xp": {
           "MetalWelding": 30
         }
-      }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
     }
   ]
 }

@@ -1,0 +1,4 @@
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), Community submod dated 2026-10-31 08:13:15.476828
+work/     = our working copy (reset to upstream on refresh). Diff against upstream/ for hand-offs.
+upstream_2026-10-30/ = the previous snapshot (before WE's isolated Dylan assets).
+Never edit the Steam copy.

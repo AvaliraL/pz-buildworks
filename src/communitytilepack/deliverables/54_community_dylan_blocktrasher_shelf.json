@@ -1,0 +1,135 @@
+{
+ "schemaVersion": 1,
+ "category": "Containers",
+ "source": "Block_Trasher bookshelf merged from the addon's split W/N + E/S double-tile halves into one 4-facing 2-tile shelf. KBW shelves container. Standalone.",
+ "buildables": [
+  {
+   "id": "community.dylan.containers.blocktrasher_bookshelf",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_blocktrasher_bookshelf",
+   "displayName": "Store Bookshelf",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Shelves",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Block_Trasher_1",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 100,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_0",
+            "Block_Trasher_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_3"
+           ],
+           [
+            "Block_Trasher_2"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_4",
+            "Block_Trasher_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_7"
+           ],
+           [
+            "Block_Trasher_6"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ]
+  }
+ ]
+}

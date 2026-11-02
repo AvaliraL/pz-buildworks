@@ -1,0 +1,427 @@
+{
+ "schemaVersion": 1,
+ "category": "Walls and Wall Finishes",
+ "source": "Community Tilepack (Dylan) WALLS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+ "buildables": [
+  {
+   "id": "community.dylan.walls.DylansGardenStuff02_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_8",
+   "displayName": "Dylansgardenstuff02",
+   "tooltipKey": "Tooltip_KBW_Shared_Wall",
+   "category": "Walls and Wall Finishes",
+   "subcategory": "Walls",
+   "material": "Wood",
+   "iconSprite": "DylansGardenStuff02_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "wall",
+    "wood"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "pieceClass": "wall"
+  },
+  {
+   "id": "community.dylan.walls.DylansGardenStuff02_10",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_10",
+   "displayName": "Dylansgardenstuff02",
+   "tooltipKey": "Tooltip_KBW_Shared_Wall",
+   "category": "Walls and Wall Finishes",
+   "subcategory": "Walls",
+   "material": "Wood",
+   "iconSprite": "DylansGardenStuff02_10",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "wall",
+    "wood"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_10"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_10"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "pieceClass": "wall"
+  },
+  {
+   "id": "community.dylan.walls.DylansGardenStuff02_11",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_11",
+   "displayName": "Dylansgardenstuff02",
+   "tooltipKey": "Tooltip_KBW_Shared_Wall",
+   "category": "Walls and Wall Finishes",
+   "subcategory": "Walls",
+   "material": "Wood",
+   "iconSprite": "DylansGardenStuff02_11",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "wall",
+    "wood"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_11"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_12"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "pieceClass": "wall"
+  },
+  {
+   "id": "community.dylan.walls.DylansGardenStuff02_13",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_13",
+   "displayName": "Dylansgardenstuff02",
+   "tooltipKey": "Tooltip_KBW_Shared_Wall",
+   "category": "Walls and Wall Finishes",
+   "subcategory": "Walls",
+   "material": "Wood",
+   "iconSprite": "DylansGardenStuff02_13",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "wall",
+    "wood"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff02_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 40
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "pieceClass": "wall"
+  }
+ ]
+}

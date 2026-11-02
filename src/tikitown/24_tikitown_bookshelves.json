@@ -1,0 +1,146 @@
+{
+ "schemaVersion": 1,
+ "category": "Furniture and Appliances",
+ "source": "TikiTown bookshelves/shelving from REGISTERED container-overlay sheets (tikitown_furniture_01/_03/_shelving_02). These base sprites ARE in WorldFiller_Tikitown.lua getContainerOverlays(); the vanilla ItemPicker.updateOverlaySprite swaps partial/full book overlay by weight automatically. One buildable per registered base sprite so the placed sprite always matches an overlay key.",
+ "buildables": [
+  {
+   "id": "worldessentials.tikitown.tikitown_furniture_03_41",
+   "translationKey": "IGUI_WETiki_tikitown_furniture_03_41",
+   "displayName": "Bookshelf - In-Wall",
+   "tooltipKey": "Tooltip_WETiki_tikitown_furniture_03_41",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "tikitown_furniture_03_41",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "container-overlay"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_41"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_41"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tool_saw",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:saw"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 6
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 220,
+      "timedAction": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 45
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 40
+     }
+    }
+   ]
+  }
+ ]
+}

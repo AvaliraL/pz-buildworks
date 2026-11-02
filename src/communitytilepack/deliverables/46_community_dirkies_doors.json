@@ -1,0 +1,8517 @@
+{
+ "schemaVersion": 1,
+ "category": "Doors",
+ "source": "Community Tilepack (Dirkies) DOORS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+ "buildables": [
+  {
+   "id": "community.dirkies.doorframes.industry_dirkea_ddd_01_18",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doorframes_industry_dirkea_ddd_01_18",
+   "displayName": "Blue Industrial Door Frame",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Door Frames",
+   "material": "Wood",
+   "iconSprite": "industry_dirkea_ddd_01_18",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "doorframe"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "industry_dirkea_ddd_01_18"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "industry_dirkea_ddd_01_19"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false,
+      "isDoorFrame": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false,
+      "dismantable": true,
+      "pillarSprite": "industry_dirkea_ddd_01_11"
+     }
+    }
+   ],
+   "pieceClass": "doorframe"
+  },
+  {
+   "id": "community.dirkies.doorframes.more_walls_ddd_01_86",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doorframes_more_walls_ddd_01_86",
+   "displayName": "Red Industrial Door Frame",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Door Frames",
+   "material": "Wood",
+   "iconSprite": "more_walls_ddd_01_86",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "doorframe"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_01_86"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_01_87"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false,
+      "isDoorFrame": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false,
+      "dismantable": true,
+      "pillarSprite": "more_walls_ddd_01_79"
+     }
+    }
+   ],
+   "pieceClass": "doorframe"
+  },
+  {
+   "id": "community.dirkies.doorframes.more_walls_ddd_01_82",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doorframes_more_walls_ddd_01_82",
+   "displayName": "Orange Industrial Door Frame",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Door Frames",
+   "material": "Wood",
+   "iconSprite": "more_walls_ddd_01_82",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "doorframe"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_01_82"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_01_83"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false,
+      "isDoorFrame": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false,
+      "dismantable": true,
+      "pillarSprite": "more_walls_ddd_01_75"
+     }
+    }
+   ],
+   "pieceClass": "doorframe"
+  },
+  {
+   "id": "community.dirkies.doorframes.more_walls_ddd_02_26",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doorframes_more_walls_ddd_02_26",
+   "displayName": "Corrugated Metal Door Frame",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Door Frames",
+   "material": "Wood",
+   "iconSprite": "more_walls_ddd_02_26",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "doorframe"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_02_26"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "more_walls_ddd_02_27"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false,
+      "isDoorFrame": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false,
+      "dismantable": true,
+      "pillarSprite": "more_walls_ddd_02_19"
+     }
+    }
+   ],
+   "pieceClass": "doorframe"
+  },
+  {
+   "id": "community.dirkies.doors.location_farm_accesories_spyjack_01_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_location_farm_accesories_spyjack_01_8",
+   "displayName": "Wooden Double Gate (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Gates",
+   "material": "Wood",
+   "iconSprite": "location_farm_accesories_spyjack_01_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false,
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_9"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": false
+     },
+     "sprites": {
+      "W_open": "location_farm_accesories_spyjack_01_10",
+      "N_open": "location_farm_accesories_spyjack_01_11",
+      "E_open": "location_farm_accesories_spyjack_01_10",
+      "S_open": "location_farm_accesories_spyjack_01_11"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.location_farm_accesories_spyjack_01_12",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_location_farm_accesories_spyjack_01_12",
+   "displayName": "Wooden Double Gate (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Gates",
+   "material": "Wood",
+   "iconSprite": "location_farm_accesories_spyjack_01_12",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false,
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": false
+     },
+     "sprites": {
+      "W_open": "location_farm_accesories_spyjack_01_14",
+      "N_open": "location_farm_accesories_spyjack_01_15",
+      "E_open": "location_farm_accesories_spyjack_01_14",
+      "S_open": "location_farm_accesories_spyjack_01_15"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.location_farm_accesories_spyjack_01_24",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_location_farm_accesories_spyjack_01_24",
+   "displayName": "White Wooden Double Gate (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Gates",
+   "material": "Wood",
+   "iconSprite": "location_farm_accesories_spyjack_01_24",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false,
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_25"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_25"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": false
+     },
+     "sprites": {
+      "W_open": "location_farm_accesories_spyjack_01_26",
+      "N_open": "location_farm_accesories_spyjack_01_27",
+      "E_open": "location_farm_accesories_spyjack_01_26",
+      "S_open": "location_farm_accesories_spyjack_01_27"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.location_farm_accesories_spyjack_01_28",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_location_farm_accesories_spyjack_01_28",
+   "displayName": "White Wooden Double Gate (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Gates",
+   "material": "Wood",
+   "iconSprite": "location_farm_accesories_spyjack_01_28",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false,
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "location_farm_accesories_spyjack_01_29"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": false
+     },
+     "sprites": {
+      "W_open": "location_farm_accesories_spyjack_01_30",
+      "N_open": "location_farm_accesories_spyjack_01_31",
+      "E_open": "location_farm_accesories_spyjack_01_30",
+      "S_open": "location_farm_accesories_spyjack_01_31"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doorframes.edit_ddd_RUS_Forest_Survival_01_6",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doorframes_edit_ddd_RUS_Forest_Survival_01_6",
+   "displayName": "Log Door Frame",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Door Frames",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Forest Survival_01_6",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "doorframe"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "health": 800,
+     "skillBaseHealth": 70,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Forest Survival_01_6"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Forest Survival_01_7"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false,
+      "isDoorFrame": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false,
+      "dismantable": true,
+      "pillarSprite": "edit_ddd_RUS_Forest Survival_01_5"
+     }
+    }
+   ],
+   "pieceClass": "doorframe"
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_0",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_0",
+   "displayName": "White Slab Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_0",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_1"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_2",
+      "N_open": "d_doors_01_3",
+      "E_open": "d_doors_01_2",
+      "S_open": "d_doors_01_3"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_36",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_36",
+   "displayName": "Black Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_36",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_38",
+      "N_open": "d_doors_01_39",
+      "E_open": "d_doors_01_38",
+      "S_open": "d_doors_01_39"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_44",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_44",
+   "displayName": "Tan Steel Door with Vent",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_44",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_45"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_46",
+      "N_open": "d_doors_01_47",
+      "E_open": "d_doors_01_46",
+      "S_open": "d_doors_01_47"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_52",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_52",
+   "displayName": "Weathered Plank Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_52",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_52"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_53"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_52"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_54",
+      "N_open": "d_doors_01_55",
+      "E_open": "d_doors_01_54",
+      "S_open": "d_doors_01_55"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_60",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_60",
+   "displayName": "Mint Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_60",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_61"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_61"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_62",
+      "N_open": "d_doors_01_63",
+      "E_open": "d_doors_01_62",
+      "S_open": "d_doors_01_63"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_8",
+   "displayName": "White Double Door (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_9"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_10",
+      "N_open": "d_doors_02_11",
+      "E_open": "d_doors_02_10",
+      "S_open": "d_doors_02_11"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_12",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_12",
+   "displayName": "White Double Door (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_12",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_14",
+      "N_open": "d_doors_02_15",
+      "E_open": "d_doors_02_14",
+      "S_open": "d_doors_02_15"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_40",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_40",
+   "displayName": "Khaki Double Door (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_40",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_41"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_41"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_42",
+      "N_open": "d_doors_02_43",
+      "E_open": "d_doors_02_42",
+      "S_open": "d_doors_02_43"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_44",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_44",
+   "displayName": "Khaki Double Door (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_44",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_45"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_46",
+      "N_open": "d_doors_02_47",
+      "E_open": "d_doors_02_46",
+      "S_open": "d_doors_02_47"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_48",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_48",
+   "displayName": "Blue Slab Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_48",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_49"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_49"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_50",
+      "N_open": "d_doors_02_51",
+      "E_open": "d_doors_02_50",
+      "S_open": "d_doors_02_51"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_56",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_56",
+   "displayName": "Rose Slab Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_56",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_56"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_57"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_56"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_57"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_58",
+      "N_open": "d_doors_02_59",
+      "E_open": "d_doors_02_58",
+      "S_open": "d_doors_02_59"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_0",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_0",
+   "displayName": "White Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_0",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_1"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_2",
+      "N_open": "edit_ddd_RUS_Doors_house_01_3",
+      "E_open": "edit_ddd_RUS_Doors_house_01_2",
+      "S_open": "edit_ddd_RUS_Doors_house_01_3"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_8",
+   "displayName": "Red Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_9"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_10",
+      "N_open": "edit_ddd_RUS_Doors_house_01_11",
+      "E_open": "edit_ddd_RUS_Doors_house_01_10",
+      "S_open": "edit_ddd_RUS_Doors_house_01_11"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_16",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_16",
+   "displayName": "Brown Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_16",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_17"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_18",
+      "N_open": "edit_ddd_RUS_Doors_house_01_19",
+      "E_open": "edit_ddd_RUS_Doors_house_01_18",
+      "S_open": "edit_ddd_RUS_Doors_house_01_19"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_24",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_24",
+   "displayName": "Olive Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_24",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_25"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_25"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_26",
+      "N_open": "edit_ddd_RUS_Doors_house_01_27",
+      "E_open": "edit_ddd_RUS_Doors_house_01_26",
+      "S_open": "edit_ddd_RUS_Doors_house_01_27"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_32",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_32",
+   "displayName": "Green Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_32",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_33"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_34",
+      "N_open": "edit_ddd_RUS_Doors_house_01_35",
+      "E_open": "edit_ddd_RUS_Doors_house_01_34",
+      "S_open": "edit_ddd_RUS_Doors_house_01_35"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_40",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_40",
+   "displayName": "Teal Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_40",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_41"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_41"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_42",
+      "N_open": "edit_ddd_RUS_Doors_house_01_43",
+      "E_open": "edit_ddd_RUS_Doors_house_01_42",
+      "S_open": "edit_ddd_RUS_Doors_house_01_43"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_48",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_48",
+   "displayName": "Slate Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_48",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_49"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_49"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_50",
+      "N_open": "edit_ddd_RUS_Doors_house_01_51",
+      "E_open": "edit_ddd_RUS_Doors_house_01_50",
+      "S_open": "edit_ddd_RUS_Doors_house_01_51"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_56",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_56",
+   "displayName": "Mauve Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_56",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_56"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_57"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_56"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_57"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_58",
+      "N_open": "edit_ddd_RUS_Doors_house_01_59",
+      "E_open": "edit_ddd_RUS_Doors_house_01_58",
+      "S_open": "edit_ddd_RUS_Doors_house_01_59"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_64",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_64",
+   "displayName": "Charcoal Arched Panel Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_64",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_64"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_65"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_64"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_65"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_66",
+      "N_open": "edit_ddd_RUS_Doors_house_01_67",
+      "E_open": "edit_ddd_RUS_Doors_house_01_66",
+      "S_open": "edit_ddd_RUS_Doors_house_01_67"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_72",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_72",
+   "displayName": "Beige Apartment Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_72",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_72"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_73"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_72"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_73"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_74",
+      "N_open": "edit_ddd_RUS_Doors_house_01_75",
+      "E_open": "edit_ddd_RUS_Doors_house_01_74",
+      "S_open": "edit_ddd_RUS_Doors_house_01_75"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_76",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_76",
+   "displayName": "Mahogany Quilted Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_76",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_76"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_77"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_76"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_77"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_78",
+      "N_open": "edit_ddd_RUS_Doors_house_01_79",
+      "E_open": "edit_ddd_RUS_Doors_house_01_78",
+      "S_open": "edit_ddd_RUS_Doors_house_01_79"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_80",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_80",
+   "displayName": "Mustard Apartment Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_80",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_80"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_81"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_80"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_81"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_82",
+      "N_open": "edit_ddd_RUS_Doors_house_01_83",
+      "E_open": "edit_ddd_RUS_Doors_house_01_82",
+      "S_open": "edit_ddd_RUS_Doors_house_01_83"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_84",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_84",
+   "displayName": "Brown Quilted Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_84",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_84"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_85"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_84"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_85"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_86",
+      "N_open": "edit_ddd_RUS_Doors_house_01_87",
+      "E_open": "edit_ddd_RUS_Doors_house_01_86",
+      "S_open": "edit_ddd_RUS_Doors_house_01_87"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_88",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_88",
+   "displayName": "Grey Apartment Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_88",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_88"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_89"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_88"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_89"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_90",
+      "N_open": "edit_ddd_RUS_Doors_house_01_91",
+      "E_open": "edit_ddd_RUS_Doors_house_01_90",
+      "S_open": "edit_ddd_RUS_Doors_house_01_91"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_92",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_92",
+   "displayName": "Navy Quilted Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Wooden Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_92",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_92"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_93"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_92"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_93"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_94",
+      "N_open": "edit_ddd_RUS_Doors_house_01_95",
+      "E_open": "edit_ddd_RUS_Doors_house_01_94",
+      "S_open": "edit_ddd_RUS_Doors_house_01_95"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_4",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_4",
+   "displayName": "White Door with Window",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_4",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_6",
+      "N_open": "d_doors_01_7",
+      "E_open": "d_doors_01_6",
+      "S_open": "d_doors_01_7"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_20",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_20",
+   "displayName": "White Stained Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_20",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_22",
+      "N_open": "d_doors_01_23",
+      "E_open": "d_doors_01_22",
+      "S_open": "d_doors_01_23"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_28",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_28",
+   "displayName": "Wooden Stained Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_28",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_29"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_30",
+      "N_open": "d_doors_01_31",
+      "E_open": "d_doors_01_30",
+      "S_open": "d_doors_01_31"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_32",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_32",
+   "displayName": "Blue Door with Window",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_32",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_33"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_34",
+      "N_open": "d_doors_02_35",
+      "E_open": "d_doors_02_34",
+      "S_open": "d_doors_02_35"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_36",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_36",
+   "displayName": "Red Door with Window",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_36",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_38",
+      "N_open": "d_doors_02_39",
+      "E_open": "d_doors_02_38",
+      "S_open": "d_doors_02_39"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_8",
+   "displayName": "White Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_9"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_10",
+      "N_open": "d_doors_01_11",
+      "E_open": "d_doors_01_10",
+      "S_open": "d_doors_01_11"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_16",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_16",
+   "displayName": "White Grid Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_01_16",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_17"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_18",
+      "N_open": "d_doors_01_19",
+      "E_open": "d_doors_01_18",
+      "S_open": "d_doors_01_19"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_0",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_0",
+   "displayName": "Aluminium Glass Double Door (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_0",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_1"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_2",
+      "N_open": "d_doors_02_3",
+      "E_open": "d_doors_02_2",
+      "S_open": "d_doors_02_3"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_4",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_4",
+   "displayName": "Aluminium Glass Double Door (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "d_doors_02_4",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_6",
+      "N_open": "d_doors_02_7",
+      "E_open": "d_doors_02_6",
+      "S_open": "d_doors_02_7"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_4",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_4",
+   "displayName": "White Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_4",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_6",
+      "N_open": "edit_ddd_RUS_Doors_house_01_7",
+      "E_open": "edit_ddd_RUS_Doors_house_01_6",
+      "S_open": "edit_ddd_RUS_Doors_house_01_7"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_12",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_12",
+   "displayName": "Red Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_12",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_14",
+      "N_open": "edit_ddd_RUS_Doors_house_01_15",
+      "E_open": "edit_ddd_RUS_Doors_house_01_14",
+      "S_open": "edit_ddd_RUS_Doors_house_01_15"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_20",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_20",
+   "displayName": "Brown Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_20",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_22",
+      "N_open": "edit_ddd_RUS_Doors_house_01_23",
+      "E_open": "edit_ddd_RUS_Doors_house_01_22",
+      "S_open": "edit_ddd_RUS_Doors_house_01_23"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_28",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_28",
+   "displayName": "Olive Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_28",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_29"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_30",
+      "N_open": "edit_ddd_RUS_Doors_house_01_31",
+      "E_open": "edit_ddd_RUS_Doors_house_01_30",
+      "S_open": "edit_ddd_RUS_Doors_house_01_31"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_36",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_36",
+   "displayName": "Green Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_36",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_38",
+      "N_open": "edit_ddd_RUS_Doors_house_01_39",
+      "E_open": "edit_ddd_RUS_Doors_house_01_38",
+      "S_open": "edit_ddd_RUS_Doors_house_01_39"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_44",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_44",
+   "displayName": "Teal Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_44",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_45"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_46",
+      "N_open": "edit_ddd_RUS_Doors_house_01_47",
+      "E_open": "edit_ddd_RUS_Doors_house_01_46",
+      "S_open": "edit_ddd_RUS_Doors_house_01_47"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_52",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_52",
+   "displayName": "Slate Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_52",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_52"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_53"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_52"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_54",
+      "N_open": "edit_ddd_RUS_Doors_house_01_55",
+      "E_open": "edit_ddd_RUS_Doors_house_01_54",
+      "S_open": "edit_ddd_RUS_Doors_house_01_55"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.edit_ddd_RUS_Doors_house_01_60",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_edit_ddd_RUS_Doors_house_01_60",
+   "displayName": "Mauve Four-Pane Glass Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Glass Doors",
+   "material": "Wood",
+   "iconSprite": "edit_ddd_RUS_Doors_house_01_60",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_61"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "edit_ddd_RUS_Doors_house_01_61"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "glass_panel",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "edit_ddd_RUS_Doors_house_01_62",
+      "N_open": "edit_ddd_RUS_Doors_house_01_63",
+      "E_open": "edit_ddd_RUS_Doors_house_01_62",
+      "S_open": "edit_ddd_RUS_Doors_house_01_63"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_28",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_28",
+   "displayName": "Red Door with Push Bar",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Metal Doors",
+   "material": "Metal",
+   "iconSprite": "d_doors_02_28",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_29"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 2
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "MetalWelding": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 30
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_30",
+      "N_open": "d_doors_02_31",
+      "E_open": "d_doors_02_30",
+      "S_open": "d_doors_02_31"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_01_12",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_01_12",
+   "displayName": "Blue Utility Door",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Metal Doors",
+   "material": "Metal",
+   "iconSprite": "d_doors_01_12",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_01_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 2
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "MetalWelding": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 30
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_01_14",
+      "N_open": "d_doors_01_15",
+      "E_open": "d_doors_01_14",
+      "S_open": "d_doors_01_15"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_16",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_16",
+   "displayName": "Steel Blue Utility Double Door (Left)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Metal Doors",
+   "material": "Metal",
+   "iconSprite": "d_doors_02_16",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_17"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 2
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "MetalWelding": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 30
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_18",
+      "N_open": "d_doors_02_19",
+      "E_open": "d_doors_02_18",
+      "S_open": "d_doors_02_19"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.doors.d_doors_02_20",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_doors_d_doors_02_20",
+   "displayName": "Steel Blue Utility Double Door (Right)",
+   "tooltipKey": "Tooltip_KBW_Shared_Door",
+   "category": "Doors",
+   "subcategory": "Metal Doors",
+   "material": "Metal",
+   "iconSprite": "d_doors_02_20",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "door"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "d_doors_02_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 2
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "MetalWelding": 4
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 30
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "d_doors_02_22",
+      "N_open": "d_doors_02_23",
+      "E_open": "d_doors_02_22",
+      "S_open": "d_doors_02_23"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2031 @@
+{
+ "schemaVersion": 1,
+ "category": "Containers",
+ "source": "Community Tilepack (Dylan) CONTAINERS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
+ "buildables": [
+  {
+   "id": "community.dylan.containers.DylansGardenStuff01_18",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_18",
+   "displayName": "Garden Crate",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Crates",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "DylansGardenStuff01_18",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "crate_wood"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 20
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff01_18"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "smallcrate",
+      "capacity": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansGardenStuff01_8",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_8",
+   "displayName": "Garden Supply Box",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Crates",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "DylansGardenStuff01_8",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "crate_wood"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 20
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff01_9"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "smallcrate",
+      "capacity": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansGardenStuff01_11",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_11",
+   "displayName": "Garden Backpack",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Crates",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "DylansGardenStuff01_11",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "crate_wood"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 20
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff01_11"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansGardenStuff01_10"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "smallcrate",
+      "capacity": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture01_10",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture01_10",
+   "displayName": "Red Toolbox Cabinet",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Metal Containers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture01_10",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_10"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_11"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_26"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_27"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture01_12",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture01_12",
+   "displayName": "Blue Toolbox Cabinet",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Metal Containers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture01_12",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture01_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_37",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_37",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_37",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_36",
+            "DylansRandomFurniture03_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_39"
+           ],
+           [
+            "DylansRandomFurniture03_38"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_49",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_49",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_49",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_48",
+            "DylansRandomFurniture03_49"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_51"
+           ],
+           [
+            "DylansRandomFurniture03_50"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_45",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_45",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_45",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_44",
+            "DylansRandomFurniture03_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_47"
+           ],
+           [
+            "DylansRandomFurniture03_46"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_59",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_59",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_59",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_58",
+            "DylansRandomFurniture03_59"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_57"
+           ],
+           [
+            "DylansRandomFurniture03_56"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_34",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_34",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_34",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_34"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_35"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_32"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_54",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_54",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_54",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_54"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_55"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansRandomFurniture03_60",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_60",
+   "displayName": "Dylansrandomfurniture03",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Lockers",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "DylansRandomFurniture03_60",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "locker"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 50
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansRandomFurniture03_61"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.metal",
+      "skills": {
+       "MetalWelding": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "locker",
+      "capacity": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.Block_Trasher_51",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_Block_Trasher_51",
+   "displayName": "Block Trasher Counter",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Counters",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Block_Trasher_51",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "counter_wood"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_51"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_53"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_55"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_49"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true
+     },
+     "container": {
+      "type": "counter"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.Block_Trasher_50",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_Block_Trasher_50",
+   "displayName": "Block Trasher Counter",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Counters",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Block_Trasher_50",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "counter_wood"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_50"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_52"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_54"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_48"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true
+     },
+     "container": {
+      "type": "counter"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansBar01_43",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansBar01_43",
+   "displayName": "Bar Counter",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Restaurant",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "DylansBar01_43",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_43"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_47"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_41"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 20
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.DylansBar01_42",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_DylansBar01_42",
+   "displayName": "Bar Counter",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Restaurant",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "DylansBar01_42",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_42"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_44"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_46"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "DylansBar01_40"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 20
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.Block_Trasher_60",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_Block_Trasher_60",
+   "displayName": "Block Trasher Shelf",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Shelves",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Block_Trasher_60",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_61",
+            "Block_Trasher_60"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Block_Trasher_63"
+           ],
+           [
+            "Block_Trasher_62"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 20
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.Bookies_Store_13",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_Bookies_Store_13",
+   "displayName": "Bookstore Shelf",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Shelves",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Bookies_Store_13",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Bookies_Store_12",
+            "Bookies_Store_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Bookies_Store_15"
+           ],
+           [
+            "Bookies_Store_14"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 20
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.containers.Bookies_Store_45",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_containers_Bookies_Store_45",
+   "displayName": "Bookstore Shelf",
+   "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
+   "category": "Containers",
+   "subcategory": "Shelves",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "Bookies_Store_45",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "container",
+    "shelves"
+   ],
+   "construction": {
+    "time": 75,
+    "timedAction": "BuildWoodenStructureMedium",
+    "completionSound": "BuildWoodenStructureMedium",
+    "category": "Furniture",
+    "xp": {
+     "Woodwork": 40
+    }
+   },
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Bookies_Store_44",
+            "Bookies_Store_45"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "Bookies_Store_47"
+           ],
+           [
+            "Bookies_Store_46"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwve.extended.wood",
+      "skills": {
+       "Woodwork": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Woodwork": 6
+         }
+        }
+       ]
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "canBePadlocked": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 20
+     }
+    }
+   ]
+  }
+ ]
+}

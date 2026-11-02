@@ -1,0 +1,1069 @@
+{
+ "schemaVersion": 1,
+ "category": "Decorations",
+ "source": "PitStop2 2-tile floor mats (6 colors). OBJECT placement per KBW_VE rugs.json (Decorations/Rugs, walk-over flags) so transparent mat edges show floor below. Standalone.",
+ "buildables": [
+  {
+   "id": "community.dylan.pitstop2.carpet_pink",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_pink",
+   "displayName": "Pink Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_12",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_12",
+            "PitStop2_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_12",
+            "PitStop2_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_15"
+           ],
+           [
+            "PitStop2_14"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_15"
+           ],
+           [
+            "PitStop2_14"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.pitstop2.carpet_blue",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_blue",
+   "displayName": "Blue Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_16",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_16",
+            "PitStop2_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_16",
+            "PitStop2_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_19"
+           ],
+           [
+            "PitStop2_18"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_19"
+           ],
+           [
+            "PitStop2_18"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.pitstop2.carpet_black",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_black",
+   "displayName": "Black Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_20",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_20",
+            "PitStop2_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_20",
+            "PitStop2_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_23"
+           ],
+           [
+            "PitStop2_22"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_23"
+           ],
+           [
+            "PitStop2_22"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.pitstop2.carpet_green",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_green",
+   "displayName": "Green Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_24",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_24",
+            "PitStop2_25"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_24",
+            "PitStop2_25"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_27"
+           ],
+           [
+            "PitStop2_26"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_27"
+           ],
+           [
+            "PitStop2_26"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.pitstop2.carpet_teal",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_teal",
+   "displayName": "Teal Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_28",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_28",
+            "PitStop2_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_28",
+            "PitStop2_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_31"
+           ],
+           [
+            "PitStop2_30"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_31"
+           ],
+           [
+            "PitStop2_30"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dylan.pitstop2.carpet_tan",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dylan_pitstop2_carpet_tan",
+   "displayName": "Tan Floor Mat",
+   "tooltipKey": "Tooltip_KBW_Shared_Floor",
+   "category": "Decorations",
+   "subcategory": "Rugs",
+   "material": "Fabric",
+   "iconSprite": "PitStop2_32",
+   "placement": {
+    "kind": "object",
+    "needToBeAgainstWall": false
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "rug",
+    "mat"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "object": {
+      "isThumpable": true,
+      "blockAllSquare": false,
+      "canPassThrough": true,
+      "canBarricade": false
+     },
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_32",
+            "PitStop2_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_32",
+            "PitStop2_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_35"
+           ],
+           [
+            "PitStop2_34"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "PitStop2_35"
+           ],
+           [
+            "PitStop2_34"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "covering_fabric",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.FabricRoll_Cotton"
+        ],
+        "amount": 1,
+        "uses": 6
+       },
+       {
+        "id": "tool_cutting",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:scissors",
+         "base:sharpknife"
+        ],
+        "amount": 1,
+        "flags": [
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "tool_sewing_needle",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:sewingneedle",
+         "base:awl"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop2",
+         "MayDegradeLight"
+        ]
+       },
+       {
+        "id": "thread",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "tags": [
+         "base:thread",
+         "base:twine"
+        ],
+        "amount": 1,
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "Tailoring": 2
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ArchitecturalDigest_RugsCarpets"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ArchitecturalDigest_RugsCarpets"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Tailoring": 5
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildLowNoTool",
+      "completionSound": "BuildWoodenStructureSmall",
+      "xp": {
+       "Tailoring": 20
+      },
+      "category": "Tailoring"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1065 @@
+TikiTown Wall Sheets - index/position/flag reference
+Grid: index = row*cols + col  (row & col 0-based, top-left origin)
+Our buildables use index 0 (W face), 1 (N face), 2 (corner/pillar) of each sheet.
+==============================================================================
+
+### fencing_tterika_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=[]  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=[]  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=[]  WallType=
+   idx   4  (row 0, col 4)  flags=[]  WallType=
+   idx   5  (row 0, col 5)  flags=['WallN', 'WallSE', 'WallW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WallN', 'WallSE', 'WallW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WallN', 'WallNW', 'WallW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WallN', 'WallNW', 'WallW']  WallType=
+   idx   9  (row 1, col 1)  flags=[]  WallType=
+   idx  10  (row 1, col 2)  flags=[]  WallType=
+   idx  11  (row 1, col 3)  flags=[]  WallType=
+
+### industry_containers_tterika_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=  <-- N face (used)
+
+### tikitown_commercial_walls_add_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_commercial_walls_add_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_commercial_walls_add_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_commercial_walls_add_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_power_plant_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+
+### tikitown_tents_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+
+### tikitown_towncenter_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallNW', 'WindowN', 'WindowW']  WallType=  <-- N face (used)
+
+### tikitown_vanilla_walls_add_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_05.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_06.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_07.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_08.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_09.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_10.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_11.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_12.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_vanilla_walls_add_bathroom_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_bathroom_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_bathroom_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_bathroom_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_bathroom_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_05.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_06.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_07.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_08.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_09.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_10.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_11.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_12.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_purewhite.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_brick_standard.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_bricks_dirtywhite.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_cement_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_decorative_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_decorative_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_decorative_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_decorative_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_decorative_05.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=
+   ... (+98 more tiles: window/door/corner variants)
+
+### tikitown_walls_interior_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_metal_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_metal_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_plaster_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_plaster_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_siding_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_siding_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_siding_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_siding_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_stone_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_stone_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_03.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_04.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_05.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_06.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_07.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_08.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_09.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wallpaper_10.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tikitown_walls_wood_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW', 'WallSE']  WallType=wall
+   idx   4  (row 0, col 4)  flags=['WallSE', 'WindowW']  WallType=windowsframe
+   idx   5  (row 0, col 5)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   6  (row 0, col 6)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   7  (row 0, col 7)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   8  (row 1, col 0)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx   9  (row 1, col 1)  flags=['WindowN', 'WindowW']  WallType=windowsframe
+   idx  10  (row 1, col 2)  flags=['DoorWallW', 'WindowN']  WallType=doorframe
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW']  WallType=doorframe
+   ... (+97 more tiles: window/door/corner variants)
+
+### tt_melos_tiles_overgrown_ruins_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallNW', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW', 'WallW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallNW']  WallType=
+
+### tt_newburbs_walls_01_white.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallW']  WallType=wall  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallW']  WallType=wall  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW']  WallType=wall  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=doorframe
+
+### walls_exterior_half_tterika_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   4  (row 0, col 4)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   7  (row 0, col 7)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   8  (row 1, col 0)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   9  (row 1, col 1)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx  10  (row 1, col 2)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx  11  (row 1, col 3)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   ... (+128 more tiles: window/door/corner variants)
+
+### walls_exterior_house_tterika_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   4  (row 0, col 4)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   ... (+20 more tiles: window/door/corner variants)
+
+### walls_interior_bathroom_tterika_01.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   4  (row 0, col 4)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   6  (row 0, col 6)  flags=['WallN', 'WallNW', 'WallSE', 'WallW']  WallType=
+   idx   7  (row 0, col 7)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallNW', 'WallSE', 'WindowN', 'WindowW']  WallType=
+
+### walls_interior_house_tterika_02.png   (cols=8)
+   idx   0  (row 0, col 0)  flags=['WallN', 'WallW']  WallType=  <-- W face (used)
+   idx   1  (row 0, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- N face (used)
+   idx   2  (row 0, col 2)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=  <-- corner/pillar (used)
+   idx   3  (row 0, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   4  (row 0, col 4)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   5  (row 0, col 5)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   6  (row 0, col 6)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   7  (row 0, col 7)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   8  (row 1, col 0)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx   9  (row 1, col 1)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx  10  (row 1, col 2)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   idx  11  (row 1, col 3)  flags=['DoorWallN', 'DoorWallW', 'WallN', 'WallNW', 'WallSE', 'WallW', 'WindowN', 'WindowW']  WallType=
+   ... (+20 more tiles: window/door/corner variants)

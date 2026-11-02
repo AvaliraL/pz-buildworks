@@ -1,0 +1,5 @@
+Copied verbatim from World Essentials (upstream snapshot). Do not edit; re-run pz_craft_loops/_vendor_we_dylan.py after an upstream refresh.
+copied 42\media\wecommunity_dylan.tiles (40f2f99f02)
+copied 42\media\texturepacks\WECommunityDylan.pack (c2103b271c)
+tileGeometry blocks: ['WECommunity_Block_Trasher', 'WECommunity_DylansBar01', 'WECommunity_DylansFutureRoom01', 'WECommunity_DylansGardenStuff01', 'WECommunity_DylansGardenStuff02', 'WECommunity_DylansRandomFurniture01', 'WECommunity_DylansRandomFurniture02']
+sprite map entries: 139 (all plain WECommunity_ prefix)

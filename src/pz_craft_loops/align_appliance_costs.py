@@ -37,30 +37,61 @@ def _kbw(fname, bid):
 # Same tile as the base ice machine. Capacity is set the way the Dirkies military crate does it:
 # stage "container": {"capacity": N}; KBW's Properties.lua calls part:getContainer():setCapacity(N)
 # on the built object (crate confirmed in game: holds 100). 100 is the game's per-container cap.
-# Cost = the chest-freezer recipe scaled up (more per unit of storage each step); tools unchanged,
-# one compressor at every tier. Skills +1 per tier; build time stays 200 (user, 2026-11-02).
+# Amounts are hand-balanced for carrying (user, 2026-11-02): an average player carries about 75
+# weight, so the 100 tier stays just under it. Blowtorch uses stay at the base 5 (a torch holds 10);
+# rods and refrigerant stay within one pack/bottle (20 / 10 uses). One compressor at every tier.
+# Skills: all of our ice machines are one level above KBW's chest freezer, +1 per tier.
+# Build time stays 200 for all (user).
 BASE_ID = "community.tk.kitchen_misc.ice_machine"
 GROUP = {"id": "kbwcb.appliances.ice_machines", "translationKey": "IGUI_KBWCB_Group_IceMachines",
          "name": "Commercial Ice Machine"}
-TIERS = [  # (capacity, id suffix, name, material multiplier, MetalWelding, Electricity, alt Electricity, xp)
-    (65, "_65", "Large Commercial Ice Machine", 2.5, 5, 4, 8, {"MetalWelding": 100, "Electricity": 35}),
-    (100, "_100", "Industrial Ice Machine", 4.5, 6, 5, 9, {"MetalWelding": 150, "Electricity": 55}),
+BASE_SKILLS = (5, 4, 8)   # base ice machine: MetalWelding, Electricity, Electricity without the magazine
+TIERS = [  # (capacity, id suffix, name, MetalWelding, Electricity, alt Electricity, xp, amounts)
+    (65, "_65", "Large Commercial Ice Machine", 6, 5, 9, {"MetalWelding": 100, "Electricity": 35},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 10, "Base.SheetMetal": 12, "Base.ElectronicsScrap": 60,
+      "Base.ElectricWire": 8, "Base.Screws": 40, "KnoxBuildworks.RefrigeratorCompressor": 1,
+      "KnoxBuildworks.RefrigerantBottle": 5, "KnoxBuildworks.InsulationFoam": 4,
+      "KnoxBuildworks.ThinCopperPipe": 4, "KnoxBuildworks.RubberSeal": 4, "KnoxBuildworks.PlasticSheet": 3}),
+    (100, "_100", "Industrial Ice Machine", 7, 6, 10, {"MetalWelding": 150, "Electricity": 55},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 15, "Base.SheetMetal": 16, "Base.ElectronicsScrap": 100,
+      "Base.ElectricWire": 12, "Base.Screws": 60, "KnoxBuildworks.RefrigeratorCompressor": 1,
+      "KnoxBuildworks.RefrigerantBottle": 8, "KnoxBuildworks.InsulationFoam": 6,
+      "KnoxBuildworks.ThinCopperPipe": 4, "KnoxBuildworks.RubberSeal": 6, "KnoxBuildworks.PlasticSheet": 4}),
 ]
-KEEP_AMOUNT = {"tool"}                       # tools are kept: never scale
-KEEP_ITEMS = {"KnoxBuildworks.RefrigeratorCompressor"}   # one compressor per freezer
+# item weights (game / KBW item scripts, 2026-11-02); drainables count once (one torch/pack/bottle)
+WEIGHT = {"Base.SheetMetal": 2.0, "Base.ElectronicsScrap": 0.1, "Base.ElectricWire": 0.1, "Base.Screws": 0.05,
+          "KnoxBuildworks.RefrigeratorCompressor": 5.0, "KnoxBuildworks.InsulationFoam": 0.9,
+          "KnoxBuildworks.ThinCopperPipe": 1.25, "KnoxBuildworks.RubberSeal": 0.5,
+          "KnoxBuildworks.PlasticSheet": 1.5}
+DRAIN_WEIGHT = {"Base.BlowTorch": 1.0, "Base.WeldingRods": 1.5, "KnoxBuildworks.RefrigerantBottle": 1.0}
+TOOLS_WEIGHT = 0.5   # screwdriver (welding mask is worn)
 
 
-def _scale(entries, mult):
-    import math
+def _with_amounts(entries, amounts):
     out = []
     for e in entries:
         e = copy.deepcopy(e)
-        if e.get("role") not in KEEP_AMOUNT and not (set(e.get("items") or []) & KEEP_ITEMS):
-            for k in ("amount", "uses"):
-                if k in e:
-                    e[k] = int(math.ceil(e[k] * mult))
+        item = (e.get("items") or [None])[0]
+        if e.get("role") != "tool" and item in amounts:
+            e["uses" if "uses" in e else "amount"] = amounts[item]
         out.append(e)
     return out
+
+
+def _carry_weight(entries):
+    w = TOOLS_WEIGHT
+    for e in entries:
+        item = (e.get("items") or [None])[0]
+        if item in DRAIN_WEIGHT:
+            w += DRAIN_WEIGHT[item]
+        elif item in WEIGHT:
+            w += WEIGHT[item] * e.get("amount", 1)
+    return w
+
+
+def _skills(r, mw, el, alt):
+    r["skills"] = {"MetalWelding": mw, "Electricity": el}
+    r["knowledge"]["skillAlternatives"] = [{"mode": "all", "skills": {"MetalWelding": mw, "Electricity": alt}}]
 
 
 def build_freezer_tiers(doc):
@@ -70,30 +101,32 @@ def build_freezer_tiers(doc):
     bs = doc["buildables"]
     base = next(b for b in bs if b["id"] == BASE_ID)
     base["group"] = dict(GROUP, level=1)
-    report = []
+    _skills(base["stages"][0]["requirements"], *BASE_SKILLS)
+    report = ["%s: capacity 30, MW%d+E%d (alt E%d), carry weight %.1f" % (
+        (BASE_ID,) + BASE_SKILLS + (_carry_weight(base_group + req.get("inputs", [])),))]
     doc.setdefault("materialGroups", {})
-    for cap, suf, name, mult, mw, el, alt, xp in TIERS:
+    for n, (cap, suf, name, mw, el, alt, xp, amounts) in enumerate(TIERS):
         gname = "kbwcb.appliance.freezer%d" % cap
-        doc["materialGroups"][gname] = _scale(base_group, mult)
+        doc["materialGroups"][gname] = _with_amounts(base_group, amounts)
         t = copy.deepcopy(base)
         t["id"] = BASE_ID + suf
         t["translationKey"] = base["translationKey"] + suf
         t["displayName"] = name
-        t["group"] = dict(GROUP, level=TIERS.index((cap, suf, name, mult, mw, el, alt, xp)) + 2)
+        t["group"] = dict(GROUP, level=n + 2)
         t["construction"] = dict(copy.deepcopy(cons), xp=xp)          # time stays 200
         r = copy.deepcopy(req)
         r["materials"] = gname
-        r["inputs"] = _scale(req.get("inputs", []), mult)
-        r["skills"] = {"MetalWelding": mw, "Electricity": el}
-        r["knowledge"]["skillAlternatives"] = [{"mode": "all", "skills": {"MetalWelding": mw, "Electricity": alt}}]
+        r["inputs"] = _with_amounts(req.get("inputs", []), amounts)
+        _skills(r, mw, el, alt)
         t["stages"][0]["requirements"] = r
         t["stages"][0]["container"] = {"capacity": cap}
         i = next((k for k, b in enumerate(bs) if b["id"] == t["id"]), None)
         if i is None:
-            bs.insert(bs.index(base) + 1 + TIERS.index((cap, suf, name, mult, mw, el, alt, xp)), t)
+            bs.insert(bs.index(base) + 1 + n, t)
         else:
             bs[i] = t
-        report.append("%s: capacity %d, x%.1f materials, MW%d+E%d (alt E%d), xp %s" % (t["id"], cap, mult, mw, el, alt, xp))
+        report.append("%s: capacity %d, MW%d+E%d (alt E%d), xp %s, carry weight %.1f" % (
+            t["id"], cap, mw, el, alt, xp, _carry_weight(doc["materialGroups"][gname] + r["inputs"])))
     return report
 
 

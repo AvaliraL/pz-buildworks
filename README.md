@@ -28,11 +28,5 @@ in WE's `mods/` folder.
 | `src/tikitown/` | TikiTown source definitions + notes |
 | `notes/` | Bug pass, workflow notes, upstream version |
 
-## Not included
-
-The tilepacks' own art and packs (other authors' work), rulebook PDFs, build output and caches.
-Those come from the installed Workshop items. The only packs here are the ones the WE submods
-already ship (our generated mirror/screen sheets and WE's isolated Dylan sheet).
-
-Private repository: contains World Essentials files and files derived from the tilepacks.
-Review licensing before making anything public.
+The tilepacks themselves (Community Tilepack, Drazion's Tilepack) are not in this repo; the
+buildables use them from the installed Workshop items.

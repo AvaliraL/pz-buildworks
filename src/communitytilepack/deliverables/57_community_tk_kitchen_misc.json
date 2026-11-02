@@ -270,10 +270,89 @@
       }
      },
      "requirements": {
-      "materials": "kbwve.extended.metal",
+      "materials": "kbwve.appliance.refrigerator",
       "skills": {
-       "MetalWelding": 4
-      }
+       "MetalWelding": 4,
+       "Electricity": 3
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 4,
+          "Electricity": 7
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "expansion_refrigeratorcompressor",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+         "KnoxBuildworks.RefrigeratorCompressor"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "expansion_refrigerantbottle",
+        "role": "component",
+        "mode": "drain",
+        "items": [
+         "KnoxBuildworks.RefrigerantBottle"
+        ],
+        "uses": 2
+       },
+       {
+        "id": "expansion_insulationfoam",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+         "KnoxBuildworks.InsulationFoam"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "expansion_thincopperpipe",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+         "KnoxBuildworks.ThinCopperPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "expansion_rubberseal",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+         "KnoxBuildworks.RubberSeal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "expansion_plasticsheet",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+         "KnoxBuildworks.PlasticSheet"
+        ],
+        "amount": 2
+       }
+      ]
      },
      "object": {
       "isProp": true,
@@ -283,12 +362,14 @@
     }
    ],
    "construction": {
-    "time": 75,
+    "time": 200,
     "timedAction": "BuildWallMetal",
     "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
     "category": "Welding",
     "xp": {
-     "MetalWelding": 50
+     "MetalWelding": 60,
+     "Electricity": 20
     }
    },
    "tooltipKey": "Tooltip_KBW_Shared_StorageFixture"
@@ -366,9 +447,32 @@
       }
      },
      "requirements": {
-      "materials": "kbwve.extended.metal",
+      "materials": "kbwve.appliance.electricOven",
       "skills": {
-       "MetalWelding": 4
+       "MetalWelding": 6,
+       "Electricity": 3
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6,
+          "Electricity": 7
+         }
+        }
+       ]
       }
      },
      "object": {
@@ -379,12 +483,14 @@
     }
    ],
    "construction": {
-    "time": 75,
+    "time": 200,
     "timedAction": "BuildWallMetal",
     "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
     "category": "Welding",
     "xp": {
-     "MetalWelding": 50
+     "MetalWelding": 60,
+     "Electricity": 20
     }
    }
   },

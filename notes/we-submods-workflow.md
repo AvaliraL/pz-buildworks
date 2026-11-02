@@ -29,3 +29,17 @@ mod ids: `World Essentials - Community Buildworks` and `World Essentials - TikiT
 - When WE updates, refresh `upstream/` (and reconcile `work/`) before making new changes.
 - `TikiTownCommunityTest` (test bundle in Zomboid\Workshop) has its own id but ships Lua with the same
   filenames as WE's runtime files. Never enable it together with World Essentials.
+
+## Hand-offs go through git (since 2026-11-02), not zips
+- Repo: `c:\Users\josep\Kiro\pz-buildworks` (private GitHub). `we/` = drop-in WE layout, `src/` = our
+  builders + sources, `notes/`.
+- Git = GitHub Desktop's bundled git (not on PATH; the folder changes when Desktop updates):
+  `(Get-ChildItem "$env:LOCALAPPDATA\GitHubDesktop" -Directory -Filter 'app-*' | Sort-Object Name -Descending | Select-Object -First 1).FullName + '\resources\app\git\cmd\git.exe'`
+- After WE updates: `_refresh_upstream.py`, then `python pz_craft_loops/export_repo.py --baseline`,
+  commit `WE baseline: ...`, tag `we-baseline-<date>`.
+- For a hand-off: build, then `python pz_craft_loops/export_repo.py`. It matches each JSON to WE's own
+  formatting, so diffs show only real changes. Commit `we/` ALONE first, tag `handoff-<date>-<topic>`,
+  then commit `src/` + `notes/` separately. Give the dev the compare link
+  `https://github.com/<owner>/pz-buildworks/compare/we-baseline-<date>...handoff-<date>-<topic>`.
+- The commit message says what changed and whether it was tested in game or only built and checked.
+  Push only when the user asks.

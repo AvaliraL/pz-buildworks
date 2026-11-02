@@ -23,6 +23,7 @@ SRC_SCRIPTS = [
     "we_sync.py", "we_dylan.py", "tooltip_fix.py", "name_tooltip_pass.py", "we_bug_pass.py",
     "_vendor_we_dylan.py", "_refresh_upstream.py", "_run_all.py", "patch_we_tooltips.py",
     "_audit_faces.py", "classify_wall_pieces.py", "gen_wall_full.py", "export_repo.py",
+    "align_appliance_costs.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",

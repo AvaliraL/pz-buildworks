@@ -373,7 +373,385 @@
           "Electricity": 20
         }
       },
-      "tooltipKey": "Tooltip_KBWCB_IceMachine"
+      "tooltipKey": "Tooltip_KBWCB_IceMachine",
+      "group": {
+        "id": "kbwcb.appliances.ice_machines",
+        "translationKey": "IGUI_KBWCB_Group_IceMachines",
+        "name": "Commercial Ice Machine",
+        "level": 1
+      }
+    },
+    {
+      "id": "community.tk.kitchen_misc.ice_machine_65",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_65",
+      "displayName": "Large Commercial Ice Machine",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwcb.appliance.freezer65",
+            "skills": {
+              "MetalWelding": 5,
+              "Electricity": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 5,
+                    "Electricity": 8
+                  }
+                }
+              ]
+            },
+            "inputs": [
+              {
+                "id": "expansion_refrigeratorcompressor",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.RefrigeratorCompressor"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "expansion_refrigerantbottle",
+                "role": "component",
+                "mode": "drain",
+                "items": [
+                  "KnoxBuildworks.RefrigerantBottle"
+                ],
+                "uses": 5
+              },
+              {
+                "id": "expansion_insulationfoam",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.InsulationFoam"
+                ],
+                "amount": 5
+              },
+              {
+                "id": "expansion_thincopperpipe",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.ThinCopperPipe"
+                ],
+                "amount": 5
+              },
+              {
+                "id": "expansion_rubberseal",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.RubberSeal"
+                ],
+                "amount": 5
+              },
+              {
+                "id": "expansion_plasticsheet",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.PlasticSheet"
+                ],
+                "amount": 5
+              }
+            ]
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          },
+          "container": {
+            "capacity": 65
+          }
+        }
+      ],
+      "construction": {
+        "time": 200,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "canWalk": false,
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 100,
+          "Electricity": 35
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_IceMachine",
+      "group": {
+        "id": "kbwcb.appliances.ice_machines",
+        "translationKey": "IGUI_KBWCB_Group_IceMachines",
+        "name": "Commercial Ice Machine",
+        "level": 2
+      }
+    },
+    {
+      "id": "community.tk.kitchen_misc.ice_machine_100",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100",
+      "displayName": "Industrial Ice Machine",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwcb.appliance.freezer100",
+            "skills": {
+              "MetalWelding": 6,
+              "Electricity": 5
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6,
+                    "Electricity": 9
+                  }
+                }
+              ]
+            },
+            "inputs": [
+              {
+                "id": "expansion_refrigeratorcompressor",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.RefrigeratorCompressor"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "expansion_refrigerantbottle",
+                "role": "component",
+                "mode": "drain",
+                "items": [
+                  "KnoxBuildworks.RefrigerantBottle"
+                ],
+                "uses": 9
+              },
+              {
+                "id": "expansion_insulationfoam",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.InsulationFoam"
+                ],
+                "amount": 9
+              },
+              {
+                "id": "expansion_thincopperpipe",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.ThinCopperPipe"
+                ],
+                "amount": 9
+              },
+              {
+                "id": "expansion_rubberseal",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.RubberSeal"
+                ],
+                "amount": 9
+              },
+              {
+                "id": "expansion_plasticsheet",
+                "role": "component",
+                "mode": "consume",
+                "items": [
+                  "KnoxBuildworks.PlasticSheet"
+                ],
+                "amount": 9
+              }
+            ]
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          },
+          "container": {
+            "capacity": 100
+          }
+        }
+      ],
+      "construction": {
+        "time": 200,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "canWalk": false,
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 150,
+          "Electricity": 55
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_IceMachine",
+      "group": {
+        "id": "kbwcb.appliances.ice_machines",
+        "translationKey": "IGUI_KBWCB_Group_IceMachines",
+        "name": "Commercial Ice Machine",
+        "level": 3
+      }
     },
     {
       "id": "community.tk.kitchen_misc.deep_fryer",
@@ -688,5 +1066,155 @@
       },
       "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
     }
-  ]
+  ],
+  "materialGroups": {
+    "kbwcb.appliance.freezer65": [
+      {
+        "id": "welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:weldingmask"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:screwdriver"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.BlowTorch"
+        ],
+        "uses": 13
+      },
+      {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.WeldingRods"
+        ],
+        "uses": 13
+      },
+      {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.SheetMetal"
+        ],
+        "amount": 20
+      },
+      {
+        "id": "electronics",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectronicsScrap"
+        ],
+        "amount": 75
+      },
+      {
+        "id": "electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectricWire"
+        ],
+        "amount": 10
+      },
+      {
+        "id": "screws",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.Screws"
+        ],
+        "amount": 50
+      }
+    ],
+    "kbwcb.appliance.freezer100": [
+      {
+        "id": "welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:weldingmask"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:screwdriver"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.BlowTorch"
+        ],
+        "uses": 23
+      },
+      {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.WeldingRods"
+        ],
+        "uses": 23
+      },
+      {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.SheetMetal"
+        ],
+        "amount": 36
+      },
+      {
+        "id": "electronics",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectronicsScrap"
+        ],
+        "amount": 135
+      },
+      {
+        "id": "electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectricWire"
+        ],
+        "amount": 18
+      },
+      {
+        "id": "screws",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.Screws"
+        ],
+        "amount": 90
+      }
+    ]
+  }
 }

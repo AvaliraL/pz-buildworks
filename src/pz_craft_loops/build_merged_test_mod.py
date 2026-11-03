@@ -265,7 +265,15 @@ def main():
     from collections import Counter
     cat_counts=Counter(); sub_counts=Counter()
     per_pack=Counter()
+    merged_groups={}
     for pack, status, fn, doc in load_sources():
+        # Source files can define their own materialGroups (e.g. the ice machine tiers). KBW only
+        # resolves a group defined in the same file or by another loaded mod, so the merged file
+        # must carry them, or those buildables are rejected ("references unknown material group").
+        for gk, gv in (doc.get("materialGroups") or {}).items():
+            if gk in merged_groups and merged_groups[gk] != gv:
+                raise RuntimeError("materialGroup %s defined differently in two sources" % gk)
+            merged_groups[gk]=gv
         for b in doc.get("buildables", []):
             bid=b.get("id")
             if bid in seen: dupes+=1; continue
@@ -288,6 +296,7 @@ def main():
     name_tooltip_pass.split_shared_keys(merged)   # unique translationKey per distinct name
     out_doc={"schemaVersion":1,"category":"Walls",
              "source":"MERGED TEST - all TikiTown + Community deliverables; category=<pack> - <status>, subcategory=<generic type>.",
+             "materialGroups":merged_groups,
              "buildables":merged}
     out_fn="90_merged_test_all.json"
     json.dump(out_doc, open(os.path.join(defs_dir,out_fn),"w",encoding="utf-8"), indent=1, ensure_ascii=False)

@@ -425,3 +425,30 @@ Last verified: 2026-10-28, from console.txt (13:52 session) + on-disk build of T
   translations; supersedes the 2026-11-01 tooltip zip).
 - Still open: in-game look at the new names/tooltips; the storage-capacity line shows the tile's
   container name and capacity (separate capacity pass).
+
+## CONFIRMED IN GAME 2026-11-02: ice machine tiers 30 / 65 / 100 all work (user)
+- Stage `container.capacity` resizes the ice machine's freezer (its only container), same as the
+  military crate. The build-menu tooltip still shows the tile's 30 (expected).
+- Test-bundle bug found and fixed: build_merged_test_mod.py dropped per-file `materialGroups`,
+  so KBW rejected the 65 / 100 ("references unknown material group"). It now merges them.
+
+## NEXT: two-stage builds for the 65 / 100 ice machines (decided 2026-11-02)
+- The 30 Commercial Ice Machine stays a single build (it fits the ~75 carry weight).
+- 65 and 100 become two builds, like vanilla frame -> wall: stage 1 "Ice Machine Shell"
+  (art only, not a freezer, heavy materials), stage 2 built ON the shell (fridge parts and
+  electronics, sets capacity 65 / 100). Each build gets its own ~75 weight budget.
+- KBW mechanism (checked in code): stage 2's stage sets `"previousStage": "<shell buildable id>"`.
+  Placement.findPrevious finds the shell on the same tile and facing; KBWBuildingObject.create
+  removes it and places stage 2 in its slot. Each stage has its own requirements, XP and time.
+  The build menu shows "Build first: X, on the same tile and facing the same direction."
+- Two catches:
+  1. The shell needs art WITHOUT the freezer properties (our kitchen_misc_tk_01_8..11 tiles are
+     patched with Freezer / FreezerCapacity, and KBW makes any tile with a container property a
+     container). Generate an inert copy in our own sheet, like KBWCommunityCasesMirror.
+  2. The shell must be an IsoThumpable (object.isThumpable, NO isProp): findPrevious only matches
+     IsoThumpables. Stage 2 can stay isProp.
+  - Use a distinct shell id (e.g. `..._shell`): previousStage matching is a suffix match, so
+    `ice_machine` alone would also match the existing working 30 ice machine.
+- Blowtorch stays at 5 uses on every build; rods / refrigerant within one pack / bottle.
+- Waiting on: in-game test of the current 65 / 100 tiers, and the push (tags need pushing from
+  here after the first GitHub Desktop push).

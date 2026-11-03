@@ -1101,8 +1101,37 @@ def iceshell_name(src_index):
     return "%s_%d" % (ICESHELL_TILESET, _ICESHELL_SRC.index(src_index))
 
 
-def write_iceshell_assets(media_dir):
-    """Inert ice-machine shell tiles: texture pack + tiledef in <media_dir>."""
+# Fridge / freezer shell tiles (EXPERIMENT 2026-11-02, test bundle only until confirmed): inert
+# single-tile copies of the vanilla 1-tile refrigerators and the chest freezer
+# (appliances_refrigeration_01), stage 1 of the two-stage fridge / freezer tiers
+# (align_appliance_costs.build_fridge_defs). Shell index = 4 + position in _FRIDGE_SRC.
+# Container / pick-up / scrap properties are dropped so the shell is inert and can't be picked up
+# or scrapped for free materials. (The 2-tile popsicle shells were dropped: WE's placement check
+# only waives collisions on the anchor tile of a replacement, so 2-tile shells can't be finished.)
+_VANILLA_TILES2X_PACK = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\texturepacks\Tiles2x.pack"
+_VANILLA_DEPTH_REFRIG = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_appliances_refrigeration_01.png"
+_FRIDGE_SHEET = "appliances_refrigeration_01"
+# white 0-3, blue 4-7, steel 8-11, green 12-15, industrial 22/23/36/37, mini 24-27, plain 28-31,
+# red 32-35, white industrial 40-43, chest freezer 48-51
+_FRIDGE_SRC = (list(range(0, 16)) + [22, 23] + list(range(24, 38)) + list(range(40, 44))
+               + list(range(48, 52)))
+_FREEZER_SRC = set(range(48, 52))
+_SHELL_DROP = {b"ContainerCapacity", b"ContainerCloseSound", b"ContainerOpenSound", b"ContainerPosition",
+               b"ContainerPutSound", b"ContainerTakeSound", b"Freezer", b"FreezerCapacity", b"container",
+               b"ForceSingleItem", b"IsMoveAble", b"PickUpLevel", b"PickUpWeight", b"CanScrap",
+               b"Material", b"Material2", b"Material3", b"ScrapSize", b"SpriteGridPos"}
+
+
+def fridge_shell_name(src_index):
+    """Shell sprite for vanilla appliances_refrigeration_01_<src_index>."""
+    return "%s_%d" % (ICESHELL_TILESET, 4 + _FRIDGE_SRC.index(src_index))
+
+
+def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=False):
+    """Inert shell tiles (stage 1 of two-stage appliances): texture pack + tiledef in <media_dir>.
+    0..3 = TK ice machine. With include_fridges: 4..43 = vanilla 1-tile fridges / chest freezer,
+    plus a depth map for those cells in <common_media_dir>/depthmaps (needs
+    common/media/tileGeometry.txt)."""
     from PIL import Image
     cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_iceshell")
     names = {"%s_%d" % (_ICESHELL_SRC_SHEET, s) for s in _ICESHELL_SRC}
@@ -1118,17 +1147,44 @@ def write_iceshell_assets(media_dir):
             if k == b"CustomName":
                 v = b"Ice Machine Shell"
             p.append((k, v))
-        bad = {b"Freezer", b"FreezerCapacity", b"container", b"ContainerCapacity"} & {k for k, _ in p}
-        if bad:
-            raise RuntimeError("ice machine shell tile would be a container: %s" % bad)
         props.append(p)
+    if include_fridges:
+        fnames = {"%s_%d" % (_FRIDGE_SHEET, s) for s in _FRIDGE_SRC}
+        _extract_from_pack(_VANILLA_TILES2X_PACK, fnames, cache)
+        _v, vts, _o = _parse(open(_VANILLA_TILES, "rb").read())
+        vsrc = vts[_FRIDGE_SHEET.encode()]
+        for s in _FRIDGE_SRC:
+            im = Image.open(os.path.join(cache, "%s_%d.png" % (_FRIDGE_SHEET, s))).convert("RGBA")
+            tiles.append(("%s_%d" % (ICESHELL_TILESET, len(tiles)), im))
+            shell = b"Freezer Shell" if s in _FREEZER_SRC else b"Refrigerator Shell"
+            # also drop every fridge/freezer marker (IsFridge, FreezerPosition, ...): an inert shell
+            # must not count as a powered appliance
+            p = [(k, shell if k == b"CustomName" else v) for k, v in vsrc[6][s]
+                 if k not in _SHELL_DROP and b"Fridge" not in k and b"Freezer" not in k]
+            props.append(p)
+    for p in props:
+        bad = {b"Freezer", b"FreezerCapacity", b"container", b"ContainerCapacity", b"IsFridge",
+               b"IsMoveAble"} & {k for k, _ in p}
+        if bad:
+            raise RuntimeError("shell tile would be a container / appliance: %s" % bad)
     n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
-    cols, rows = 8, 1
+    cols = 8
+    rows = (len(tiles) + cols - 1) // cols
     props += [[] for _ in range(cols * rows - len(props))]
     ts = [ICESHELL_TILESET.encode(), (ICESHELL_TILESET + ".png").encode(), cols, rows, 1, cols * rows, props]
     blob = b"tdef" + struct.pack("<ii", 1, 1) + _ser_tileset(ts)
     _parse(blob)
     open(os.path.join(media_dir, ICESHELL_TILEDEF_NAME + ".tiles"), "wb").write(blob)
+    if include_fridges and common_media_dir and os.path.isfile(_VANILLA_DEPTH_REFRIG):
+        depth_src = Image.open(_VANILLA_DEPTH_REFRIG).convert("RGBA")
+        cw, ch = 128, 256
+        depth = Image.new("RGBA", (cols * cw, rows * ch), (0, 0, 0, 0))
+        for j, s in enumerate(_FRIDGE_SRC):
+            sx, sy = (s % 8) * cw, (s // 8) * ch
+            dj = 4 + j
+            depth.paste(depth_src.crop((sx, sy, sx + cw, sy + ch)), ((dj % cols) * cw, (dj // cols) * ch))
+        os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
+        depth.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_%s.png" % ICESHELL_TILESET))
     return n
 
 

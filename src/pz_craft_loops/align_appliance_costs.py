@@ -190,6 +190,209 @@ def build_freezer_tiers(doc):
     return report
 
 
+# ---- Fridge / freezer tiers (EXPERIMENT 2026-11-02, test bundle only until confirmed) ---------
+# User spec (2026-11-02):
+#  * the 8 standard 1-tile KBW VE refrigerators: 3 tiers 60/30, 80/40, 100/50 (fridge/freezer)
+#  * Mini Refrigerator: 30/8, 40/12, 50/15. Trailer Built-In Fridge: untouched.
+#  * Industrial + White Industrial also get FREEZER-ONLY variants (both compartments freeze):
+#    30/30, 65/65, 100/100, cost / XP like the ice machine tiers, skills on the fridge ladder.
+#  * Chest Freezer: 65 and 100, exactly like the ice machine tiers (KBW's own covers 30).
+#  * Tier 1 = single build; tiers 2 and 3 = two-stage (inert shell, then the unit built on it).
+#  * Skills +1 per tier: fridges MW6+E4 / MW7+E5 / MW8+E6, mini MW4+E4 / MW5+E5 / MW6+E6,
+#    no-magazine alternatives E8 / E9 / E10. Build time 200, blowtorch 5 uses, each stage < 75 weight.
+# Capacities: fridges via kbwcbContainerCapacity (both compartments); freezer-only adds
+# kbwcbContainerTypes {"fridge": "freezer"}; chest freezer via KBW's own container.capacity
+# (single container, same as the ice machines). Shell art: kbw_tilepatch.fridge_shell_name.
+_KBW_VE_REFRIG = "kbw.vanillaexpanded.appliances.refrigeration."
+_ICE30 = None   # = KBW VE refrigerator recipe (materials + inputs), resolved in build_fridge_defs
+_ICE65_SHELL, _ICE65_UNIT, _ICE65_SXP, _ICE65_UXP = TIERS[0][8], TIERS[0][10], TIERS[0][7], TIERS[0][9]
+_ICE100_SHELL, _ICE100_UNIT, _ICE100_SXP, _ICE100_UXP = TIERS[1][8], TIERS[1][10], TIERS[1][7], TIERS[1][9]
+_FRIDGE_T1 = {"Base.BlowTorch": 5, "Base.WeldingRods": 8, "Base.SheetMetal": 12, "Base.Screws": 30,
+              "Base.ElectronicsScrap": 45, "Base.ElectricWire": 6, "KnoxBuildworks.RefrigeratorCompressor": 1,
+              "KnoxBuildworks.RefrigerantBottle": 3, "KnoxBuildworks.InsulationFoam": 3,
+              "KnoxBuildworks.ThinCopperPipe": 3, "KnoxBuildworks.RubberSeal": 3, "KnoxBuildworks.PlasticSheet": 3}
+_MINI_T1 = {"Base.BlowTorch": 5, "Base.WeldingRods": 6, "Base.SheetMetal": 10, "Base.Screws": 25,
+            "Base.ElectronicsScrap": 40, "Base.ElectricWire": 5, "KnoxBuildworks.RefrigeratorCompressor": 1,
+            "KnoxBuildworks.RefrigerantBottle": 2, "KnoxBuildworks.InsulationFoam": 3,
+            "KnoxBuildworks.ThinCopperPipe": 2, "KnoxBuildworks.RubberSeal": 2, "KnoxBuildworks.PlasticSheet": 2}
+_MINI_T2_SHELL = {"Base.BlowTorch": 5, "Base.WeldingRods": 6, "Base.SheetMetal": 10, "Base.MetalPipe": 2,
+                  "Base.Screws": 25, "KnoxBuildworks.InsulationFoam": 4, "KnoxBuildworks.PlasticSheet": 2,
+                  "KnoxBuildworks.RubberSeal": 2}
+_MINI_T2_UNIT = {"Base.BlowTorch": 5, "Base.WeldingRods": 3, "Base.SheetMetal": 2, "Base.Screws": 10,
+                 "Base.ElectronicsScrap": 50, "Base.ElectricWire": 6, "KnoxBuildworks.RefrigeratorCompressor": 1,
+                 "KnoxBuildworks.RefrigerantBottle": 3, "KnoxBuildworks.ThinCopperPipe": 3}
+_MINI_T3_SHELL = {"Base.BlowTorch": 5, "Base.WeldingRods": 8, "Base.SheetMetal": 12, "Base.MetalPipe": 3,
+                  "Base.Screws": 30, "KnoxBuildworks.InsulationFoam": 5, "KnoxBuildworks.PlasticSheet": 3,
+                  "KnoxBuildworks.RubberSeal": 3}
+_MINI_T3_UNIT = {"Base.BlowTorch": 5, "Base.WeldingRods": 4, "Base.SheetMetal": 3, "Base.Screws": 15,
+                 "Base.ElectronicsScrap": 60, "Base.ElectricWire": 8, "KnoxBuildworks.RefrigeratorCompressor": 1,
+                 "KnoxBuildworks.RefrigerantBottle": 4, "KnoxBuildworks.ThinCopperPipe": 4}
+
+# tier = (capacities, MW, E, alt E, single amounts | None, shell amounts, shell xp, unit amounts, unit xp)
+#   capacities: (fridge, freezer) for fridges / freezer-only, (freezer,) for the chest freezer
+_FRIDGE_TIERS = [
+    ((60, 30), 6, 4, 8, _FRIDGE_T1, None, None, None, None),
+    ((80, 40), 7, 5, 9, None, _ICE65_SHELL, _ICE65_SXP, _ICE65_UNIT, _ICE65_UXP),
+    ((100, 50), 8, 6, 10, None, _ICE100_SHELL, _ICE100_SXP, _ICE100_UNIT, _ICE100_UXP),
+]
+_MINI_TIERS = [
+    ((30, 8), 4, 4, 8, _MINI_T1, None, None, None, None),
+    ((40, 12), 5, 5, 9, None, _MINI_T2_SHELL, {"MetalWelding": 40}, _MINI_T2_UNIT,
+     {"MetalWelding": 30, "Electricity": 25}),
+    ((50, 15), 6, 6, 10, None, _MINI_T3_SHELL, {"MetalWelding": 55}, _MINI_T3_UNIT,
+     {"MetalWelding": 40, "Electricity": 35}),
+]
+_FREEZER_ONLY_TIERS = [   # ice machine cost / XP, both compartments; skills on the FRIDGE ladder
+    # (user 2026-11-02: line the freezer-only skills up with the fridges they are built from)
+    ((30, 30), 6, 4, 8, "ICE30", None, None, None, None),
+    ((65, 65), 7, 5, 9, None, _ICE65_SHELL, _ICE65_SXP, _ICE65_UNIT, _ICE65_UXP),
+    ((100, 100), 8, 6, 10, None, _ICE100_SHELL, _ICE100_SXP, _ICE100_UNIT, _ICE100_UXP),
+]
+_CHEST_TIERS = [          # ice machine tiers 65 / 100 (KBW's Chest Freezer is the 30)
+    ((65,), 6, 5, 9, None, _ICE65_SHELL, _ICE65_SXP, _ICE65_UNIT, _ICE65_UXP),
+    ((100,), 7, 6, 10, None, _ICE100_SHELL, _ICE100_SXP, _ICE100_UNIT, _ICE100_UXP),
+]
+# (KBW VE id suffix, our id stem, display name stem, tiers, kind)
+FRIDGE_PRODUCTS = [(s, s, n, _FRIDGE_TIERS, "fridge") for s, n in (
+    ("white_refrigerator", "White Refrigerator"), ("blue_refrigerator", "Blue Refrigerator"),
+    ("steel_refrigerator", "Steel Refrigerator"), ("green_refrigerator", "Green Refrigerator"),
+    ("industrial_refrigerator", "Industrial Refrigerator"), ("plain_refrigerator", "Plain Refrigerator"),
+    ("red_refrigerator", "Red Refrigerator"),
+    ("white_industrial_refrigerator", "White Industrial Refrigerator"))] + [
+    ("mini_refrigerator", "mini_refrigerator", "Mini Refrigerator", _MINI_TIERS, "fridge"),
+    ("industrial_refrigerator", "industrial_freezer", "Industrial Freezer", _FREEZER_ONLY_TIERS, "freezer2"),
+    ("white_industrial_refrigerator", "white_industrial_freezer", "White Industrial Freezer",
+     _FREEZER_ONLY_TIERS, "freezer2"),
+    ("chest_freezer", "chest_freezer", "Chest Freezer", _CHEST_TIERS, "freezer1"),
+]
+FRIDGE_ID_PREFIX = "kbwcb.appliances."
+TOOLTIP_FRIDGE_SHELL = ("Tooltip_KBWCB_FridgeShell",
+                        "Unfinished refrigerator casing. Build the matching refrigerator on it to finish it.")
+TOOLTIP_FREEZER_SHELL = ("Tooltip_KBWCB_FreezerShell",
+                         "Unfinished freezer casing. Build the matching freezer on it to finish it.")
+
+
+def _cap_label(caps):
+    return "/".join(str(c) for c in caps)
+
+
+def build_fridge_defs():
+    """(buildables, materialGroups, tooltip texts, report) for every fridge / freezer tier."""
+    from kbw_tilepatch import fridge_shell_name
+    doc = json.load(open(os.path.join(VE, "refrigeration.json"), encoding="utf-8-sig"))
+    tmpl = {}
+    for f in os.listdir(VE):
+        tmpl.update(json.load(open(os.path.join(VE, f), encoding="utf-8-sig")).get("templates", {}))
+    by_id = {b["id"]: b for b in doc["buildables"]}
+    chest_req, _ = _kbw(*MATCH[BASE_ID])
+    templates = doc["materialGroups"][chest_req["materials"]] + chest_req.get("inputs", [])
+    ice30 = {}
+    for row in templates:
+        if row.get("role") != "tool":
+            ice30[row["items"][0]] = row.get("uses", row.get("amount", 1))
+    out, mg, report = [], {}, []
+    tooltips = dict([TOOLTIP_FRIDGE_SHELL, TOOLTIP_FREEZER_SHELL])
+
+    def base_copy(kb_suffix):
+        b = copy.deepcopy(by_id[_KBW_VE_REFRIG + kb_suffix])
+        for k, v in tmpl[b.pop("extends")].items():     # inline KBW's template
+            b.setdefault(k, copy.deepcopy(v))
+        b.pop("group", None)
+        b["tags"] = ["community-tilepack", "kitchen", "refrigeration"]
+        b["stages"][0]["allowSpriteReuse"] = True
+        return b
+
+    def requirements(base_req, gname, skills, mw, alt):
+        r = copy.deepcopy(base_req)
+        r["materials"], r["inputs"] = gname, []
+        r["skills"] = skills
+        r["knowledge"]["skillAlternatives"] = [{"mode": "all", "skills": {"MetalWelding": mw, "Electricity": alt}}]
+        return r
+
+    for kb_suffix, stem, name, tiers, kind in FRIDGE_PRODUCTS:
+        base = base_copy(kb_suffix)
+        base_req = base["stages"][0]["requirements"]
+        # catalog card per product (tiers + shells in build order), like the ice machines
+        group = {"id": FRIDGE_ID_PREFIX + stem + "_tiers",
+                 "translationKey": "IGUI_KBWCB_Group_" + "".join(w.title() for w in stem.split("_")) + "Tiers",
+                 "name": name}
+        level = [0]
+
+        def grouped(b):
+            level[0] += 1
+            b["group"] = dict(group, level=level[0])
+            return b
+        unit_tooltip = "Tooltip_KBW_Shared_Refrigerator" if kind == "fridge" else "Tooltip_KBW_Shared_Freezer"
+        shell_tooltip = TOOLTIP_FRIDGE_SHELL[0] if kind == "fridge" else TOOLTIP_FREEZER_SHELL[0]
+        for caps, mw, el, alt, single, shell_amt, shell_xp, unit_amt, unit_xp in tiers:
+            label = _cap_label(caps)
+            uid = FRIDGE_ID_PREFIX + "%s_%d" % (stem, caps[0])
+            if kind == "fridge":
+                props = {"kbwcbContainerCapacity": {"fridge": caps[0], "freezer": caps[1]}}
+            elif kind == "freezer2":
+                props = {"kbwcbContainerCapacity": {"fridge": caps[0], "freezer": caps[1]},
+                         "kbwcbContainerTypes": {"fridge": "freezer"}}
+            else:
+                props = {"container": {"capacity": caps[0]}}
+            # ---- the working unit
+            u = copy.deepcopy(base)
+            u["id"] = uid
+            u["translationKey"] = "IGUI_" + uid.replace(".", "_")
+            u["displayName"] = "%s %s" % (name, label)
+            u["tooltipKey"] = unit_tooltip
+            st = u["stages"][0]
+            st.pop("container", None)
+            st.update(copy.deepcopy(props))
+            gname = "kbwcb.appliance.%s_%d" % (stem, caps[0])
+            if single is not None:   # tier 1: one build
+                amounts = ice30 if single == "ICE30" else single
+                mg[gname] = _rows_for(amounts, templates)
+                st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
+                u["construction"] = copy.deepcopy(u["construction"])   # KBW's own (time 200) and XP
+                out.append(grouped(u))
+                report.append("%-52s %-8s MW%d+E%d (alt E%d) single, weight %.1f" % (
+                    uid, label, mw, el, alt, _carry_weight(mg[gname])))
+                continue
+            # ---- stage 1: the shell
+            sid = uid + "_shell"
+            sh = copy.deepcopy(base)
+            sh["id"] = sid
+            sh["translationKey"] = "IGUI_" + sid.replace(".", "_")
+            sh["displayName"] = "%s %s Shell" % (name, label)
+            sh["tooltipKey"] = shell_tooltip
+            sh["iconSprite"] = fridge_shell_name(int(sh["iconSprite"].rsplit("_", 1)[1]))
+            sh["construction"] = dict(copy.deepcopy(sh["construction"]), xp=shell_xp)
+            sst = sh["stages"][0]
+            for face in sst["geometry"]["faces"].values():
+                for L in face["layers"]:
+                    L["rows"] = [[fridge_shell_name(int(c.rsplit("_", 1)[1])) for c in row] for row in L["rows"]]
+            sst["object"] = dict(SHELL_OBJECT)
+            sst.pop("container", None)
+            sg = gname + "_shell"
+            mg[sg] = _rows_for(shell_amt, templates)
+            sst["requirements"] = requirements(base_req, sg, {"MetalWelding": mw}, mw, alt)
+            out.append(grouped(sh))
+            # ---- stage 2: the unit, built on its shell
+            mg[gname] = _rows_for(unit_amt, templates)
+            st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
+            st["previousStage"] = sid
+            u["construction"] = dict(copy.deepcopy(u["construction"]), xp=unit_xp)
+            out.append(grouped(u))
+            report.append("%-52s %-8s MW%d+E%d (alt E%d) shell %.1f + unit %.1f weight" % (
+                uid, label, mw, el, alt, _carry_weight(mg[sg]), _carry_weight(mg[gname])))
+    for b in out:
+        if b["construction"].get("time") != 200:
+            raise RuntimeError("%s: build time %s, expected 200" % (b["id"], b["construction"].get("time")))
+    for g, rows in mg.items():
+        w = _carry_weight(rows)
+        if w >= 75:
+            raise RuntimeError("%s: carry weight %.1f over the 75 budget" % (g, w))
+        for row in rows:
+            if row.get("items") == ["Base.BlowTorch"] and row.get("uses") != 5:
+                raise RuntimeError("%s: blowtorch uses %s, expected 5" % (g, row.get("uses")))
+    return out, mg, tooltips, report
+
+
 def main():
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from export_repo import _json_style

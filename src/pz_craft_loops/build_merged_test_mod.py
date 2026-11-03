@@ -212,6 +212,28 @@ def load_sources():
         k = sheet_key(fn)
         yield PACK_OF.get(k, "Community"), ("Completed" if k in COMPLETED_SHEETS else "In Progress"), fn, json.load(open(p, encoding="utf-8"))
 
+def _test_fridge_100():
+    """KBW VE Plain Refrigerator copy with fridge 100 / freezer 100 via kbwcbContainerCapacity."""
+    ve = os.path.join(r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3772269882\mods",
+                      "KnoxBuildworks_Vanilla_Expanded", "42", "media", "KnoxBuildworks", "definitions", "appliances")
+    src = json.load(open(os.path.join(ve, "refrigeration.json"), encoding="utf-8-sig"))
+    tmpl = json.load(open(os.path.join(ve, "cooking.json"), encoding="utf-8-sig"))["templates"]["kbwve.appliance.metal"]
+    b = json.loads(json.dumps(next(x for x in src["buildables"] if x["id"].endswith("plain_refrigerator"))))
+    for k, v in tmpl.items():          # inline the template instead of relying on cross-file extends
+        b.setdefault(k, json.loads(json.dumps(v)))
+    b.pop("extends", None); b.pop("group", None)
+    b["id"] = "kbwcb.test.fridge_100"
+    b["translationKey"] = "IGUI_KBWCB_Test_Fridge100"
+    b["displayName"] = "TEST Refrigerator (Fridge 100 / Freezer 100)"
+    b["tooltipKey"] = "Tooltip_KBW_Shared_Refrigerator"
+    b["category"] = "Community - In Progress"
+    b["subcategory"] = "Test"
+    st = b["stages"][0]
+    st["allowSpriteReuse"] = True
+    st["kbwcbContainerCapacity"] = {"fridge": 100, "freezer": 100}
+    return b
+
+
 def main():
     up = os.path.join(UPLOAD_ROOT, MOD_ID)
     if os.path.isdir(up): shutil.rmtree(up)
@@ -247,10 +269,20 @@ def main():
     # depth maps + tileGeometry load only from <mod>/common/media
     write_fears_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
     write_cases_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
-    write_iceshell_assets(_media)       # inert ice-machine shell art (two-stage ice machines)
+    # inert shell art (two-stage appliances); the test bundle also gets the fridge / freezer shells
+    write_iceshell_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"), include_fridges=True)
     _write_tv_tiledef(os.path.join(_media, _TV_PATCH_NAME+".tiles"))
     # runtime removal of collision flags the additive .patch.tiles merge cannot remove
     write_removal_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TileFixes.lua"))
+    # EXPERIMENT: our KBW stage properties (container capacities by type, multi-tile replace)
+    from container_caps import write_container_caps_lua, LUA_NAME as _CC_LUA
+    write_container_caps_lua(os.path.join(_media, "lua", "shared", _CC_LUA))
+    # build-menu capacity text for those properties (client only)
+    from container_caps import write_stage_info_lua, INFO_LUA_NAME as _SI_LUA
+    write_stage_info_lua(os.path.join(_media, "lua", "client", _SI_LUA))
+    # pick up / place keeps our builds' storage + name (shared: runs where the moveable action runs)
+    from container_caps import write_pickup_lua, PICKUP_LUA_NAME as _PU_LUA
+    write_pickup_lua(os.path.join(_media, "lua", "shared", _PU_LUA))
     write_tv_screen_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TVScreens.lua"))
     # sledgehammer destroy for our builds (vanilla blocks d_/e_/f_ sprites)
     write_destroy_lua(os.path.join(_media, "lua", "client", "KBWCommunity_Destroyable.lua"))
@@ -279,6 +311,9 @@ def main():
             if gk in merged_groups and merged_groups[gk] != gv:
                 raise RuntimeError("materialGroup %s defined differently in two sources" % gk)
             merged_groups[gk]=gv
+        # reinforced counters: military-crate cost, capacity 100 (counter_variants.py)
+        import counter_variants
+        counter_variants.add_variants(doc.setdefault("buildables", []))
         for b in doc.get("buildables", []):
             bid=b.get("id")
             if bid in seen: dupes+=1; continue
@@ -298,6 +333,34 @@ def main():
             merged.append(nb)
             cat_counts[top]+=1; sub_counts[nb["subcategory"]]+=1; per_pack[pack]+=1
 
+    # EXPERIMENT (2026-11-02, test bundle only): a Plain Refrigerator copy using our
+    # kbwcbContainerCapacity stage property (container_caps.py) to set BOTH fridge and freezer.
+    merged.append(_test_fridge_100())
+    cat_counts[merged[-1]["category"]]+=1
+    # EXPERIMENT (test bundle only): fridge / freezer tiers (1 tile; tiers 2-3 two-stage)
+    from align_appliance_costs import build_fridge_defs
+    _fr, _fr_groups, _fr_tips, _fr_rep = build_fridge_defs()
+    for _gk, _gv in _fr_groups.items():
+        if _gk in merged_groups and merged_groups[_gk] != _gv:
+            raise RuntimeError("materialGroup %s defined differently in two sources" % _gk)
+        merged_groups[_gk] = _gv
+    nt_tooltips.update(_fr_tips)
+    for _b in _fr:
+        if _b["id"] in seen:
+            raise RuntimeError("duplicate buildable id %s" % _b["id"])
+        seen.add(_b["id"])
+        _b["category"] = "Community - In Progress"
+        _b["subcategory"] = "Test - Fridges"
+        merged.append(_b); cat_counts[_b["category"]] += 1
+    print("\n".join(_fr_rep))
+    # moveable rotation for pieces whose tile pack groups the facings badly (rotation_fix.py)
+    import rotation_fix
+    _rot, _rot_rep = rotation_fix.build_offsets(merged, rotation_fix.load_sheets())
+    rotation_fix.write_rotation_lua(os.path.join(_media, "lua", "shared", rotation_fix.LUA_NAME), _rot)
+    print("rotation: fixed %d pieces (%d sprites), engine already rotates %d" % (
+        _rot_rep["fixed"], len(_rot), _rot_rep["already"]))
+    for _reason, _ids in sorted(_rot_rep["skipped"].items()):
+        print("rotation skipped (%s): %d e.g. %s" % (_reason, len(_ids), ", ".join(_ids[:3])))
     name_tooltip_pass.split_shared_keys(merged)   # unique translationKey per distinct name
     out_doc={"schemaVersion":1,"category":"Walls",
              "source":"MERGED TEST - all TikiTown + Community deliverables; category=<pack> - <status>, subcategory=<generic type>.",
@@ -326,6 +389,11 @@ def main():
         elif _ig[tk]!=dn:
             _changed+=1
         _ig[tk]=dn
+    # "Build first: <shell name>" instead of the raw previous-stage id
+    from container_caps import previous_stage_names
+    _prev_names = previous_stage_names(merged)
+    _ig.update(_prev_names)
+    print("build-first names: %d" % len(_prev_names))
     json.dump(_ig, open(_ig_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("test translations: added %d, updated %d names" % (_added, _changed))
     # shared tooltip keys: never ship KBW-owned keys, generic text for ours (see tooltip_fix.py)

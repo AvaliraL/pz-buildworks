@@ -104,6 +104,10 @@ def main():
         src=os.path.join(SRC_DIR, fn)
         doc=json.load(open(src, encoding="utf-8"))
         builds=doc.get("buildables", [])
+        # reinforced counters: military-crate cost, capacity 100 (counter_variants.py)
+        import counter_variants
+        _cv=counter_variants.add_variants(builds)
+        if _cv: out.append("reinforced counters added in %s: %d" % (fn, _cv))
         per_file[fn]=len(builds)
         # dedup ids defensively (should be none across distinct sheets)
         kept=[]
@@ -136,6 +140,20 @@ def main():
     # manifest
     json.dump({"schemaVersion":1,"definitions":manifest_defs},
               open(os.path.join(mod42,"media","KnoxBuildworks","manifest.json"),"w",encoding="utf-8"))
+
+    # runtime Lua shared with the Community submod, under our own file names so the two submods
+    # never shadow each other (each file has an install guard, so loading both is harmless):
+    #   pick up / place keeps storage, build-menu + inventory text, moveable rotation offsets
+    from container_caps import write_stage_info_lua, write_pickup_lua
+    _lua = os.path.join(mod42, "media", "lua")
+    write_pickup_lua(os.path.join(_lua, "shared", "KBWTikiTown_Pickup.lua"))
+    write_stage_info_lua(os.path.join(_lua, "client", "KBWTikiTown_StageInfo.lua"))
+    import rotation_fix
+    _rot, _rot_rep = rotation_fix.build_offsets(all_built, rotation_fix.load_sheets())
+    rotation_fix.write_rotation_lua(os.path.join(_lua, "shared", "KBWTikiTown_Rotation.lua"), _rot)
+    out.append("rotation: fixed %d pieces (%d sprites), engine already rotates %d; skipped %s" % (
+        _rot_rep["fixed"], len(_rot), _rot_rep["already"],
+        {k: len(v) for k, v in _rot_rep["skipped"].items()}))
 
     # translations: ship the complete pre-built tables from the test bundle
     tr_copied=[]

@@ -475,3 +475,102 @@ Last verified: 2026-10-28, from console.txt (13:52 session) + on-disk build of T
   ice_machine_100_shell ... not queued: build action not created" (WE Knox Expansion hook), yet the
   shell DID build. Probably a duplicate/rejected click; harmless. Note WE - Knox Buildworks
   Expansion stays enabled even with WE off (separate submod).
+
+### 2026-11-02: popsicle freezer dropped; fridge / freezer tiers (test bundle only, awaiting test)
+- 2-tile two-stage builds are dropped. WE's own `WorldEssentialsKnox/Placement.lua` replaces KBW's
+  check and only waives collisions on the ANCHOR tile of a replacement ("Replacing the anchor does
+  not waive checks on other parts"). The freezer's second tile hit the solid 2nd shell tile
+  ("Something solid is in the way"); offsetting by one tile built it shifted. Single-tile shells
+  are unaffected. The `kbwcbReplacePrevious` Lua property and the popsicle shell tiles are removed.
+- New (test bundle, "Community - In Progress > Test - Fridges"), generator
+  `align_appliance_costs.build_fridge_defs`, 59 buildables (35 units + 24 shells):
+  - 8 standard KBW VE fridges: 60/30 (single), 80/40 and 100/50 (two-stage). MW6+E4 / MW7+E5 / MW8+E6.
+  - Mini Refrigerator: 30/8 (single), 40/12, 50/15. MW4+E4 / MW5+E5 / MW6+E6.
+  - Industrial + White Industrial freezer-only: 30/30 (single), 65/65, 100/100, ice-machine cost,
+    skills on the fridge ladder (MW6+E4 / MW7+E5 / MW8+E6; user: line them up with the fridges).
+  - Chest Freezer 65 / 100, ice-machine cost and skills (KBW's own Chest Freezer is the 30).
+  - Trailer Built-In Fridge untouched. Alternatives without the magazine: E8 / E9 / E10.
+- Shell art: `KBWCommunityIceShell_4..43` (vanilla appliances_refrigeration_01 copies, all
+  container / moveable / fridge / freezer properties stripped) + depth map. Test bundle only; the
+  WE build still has only the 4 ice-machine shells.
+- Freezer-only uses new Lua property `kbwcbContainerTypes {"fridge": "freezer"}`
+  (ItemContainer:setType), tested against lupa mocks only (both property orders).
+- To verify in game: each tier's capacities (loot window), freezer-only shows two freezers that
+  actually freeze, shells take no power, both survive save + reload (also still pending for the
+  100/100 test fridge). Picking up a tiered fridge returns a vanilla fridge item and re-placing it
+  probably gives the vanilla 40/20 (capacity is set on the built object, not the tile). Not checked.
+- 2026-11-02 description fixes (user: container values correct in game, build-menu text wrong):
+  - "Build first: <raw id>": KBW BuildableInfo.placementHint looks up
+    `IGUI_KBW_Vanilla_<previousStage id>`. Builders now add those keys with the shell names
+    (`container_caps.previous_stage_names`), test bundle AND Community build (ice machine shells).
+  - Capacity line showed the tile's numbers (tile ContainerCapacity / FreezerCapacity win over
+    stage container.capacity in KBW). New client file `KBWCommunity_StageInfo.lua` wraps
+    BuildableInfo.containerTiles to show kbwcbContainerCapacity / kbwcbContainerTypes /
+    container.capacity. Test bundle only, tested against lupa mocks. The WE ice machines (65/100)
+    still show 30 in the menu until this Lua ships to WE.
+  - CONFIRMED in game (user, 2026-11-02): container values correct; build-menu text correct
+    ("Build first: Green Refrigerator 80/40 Shell", "Tile 1 - Fridge: 80 + Freezer: 40").
+
+### 2026-11-02: pick-up reverted our customs to the base tile (user bug; fix awaiting test)
+- Cause: vanilla pick-up makes a plain moveable item that remembers only the sprite; placing it
+  rebuilds the containers from the tile, so build-time capacities / freezer types were lost
+  (fridge / freezer tiers, ice machines, reinforced counters and cabinets).
+- Fix (test bundle only, tested against lupa mocks): shared `KBWCommunity_Pickup.lua`
+  (`container_caps.write_pickup_lua`) wraps ISMoveableSpriteProps pickUpMoveableInternal /
+  instanceItem / placeMoveableInternal. The picked-up item gets `modData.kbwcbStorage`
+  (build id, name, each container's type + capacity) and is renamed to our build's name (KBW
+  Registry + I18n); placing it re-applies types + capacities and keeps the record on the object.
+  "Ours" = KBW buildableId starting community. / tikitown. / worldessentials.tikitown. / kbwcb.
+- Not covered: multi-tile ForceSingleItem pieces (one item for the whole grid). The re-placed
+  object is a plain moveable, not a KBW build any more (KBW dismantle refund not restored).
+- Check in game: name in inventory; capacities after placing; freezer-only stays two freezers;
+  rotate keeps capacities; a picked-up + re-placed fridge picked up again keeps the name.
+- CONFIRMED in game (user, 2026-11-02): picked-up + re-placed builds keep their capacities.
+- Item rename didn't show: `zombie.inventory.types.Moveable.getName` (javap) builds the name from
+  the tile's movableFullName / customNameFull and ignores the item name (no Lua setter). Dropped
+  setName. Instead `KBWCommunity_StageInfo.lua` (client) wraps ISToolTipInv.render and draws a box
+  under the inventory tooltip: our build's name + "Fridge: 80 + Freezer: 40" (lupa mocks only).
+  Items picked up with the previous build already carry the name in their record, so they should
+  show the box too.
+- CONFIRMED in game (user, 2026-11-02): inventory tooltip box shows our name + storage.
+
+### 2026-11-02: counters can't be rotated when placed from inventory (fix awaiting test)
+- Cause (javap, IsoWorld.LoadTileDefinitions): the engine only generates the moveable face
+  offsets (Noffset/Eoffset/Soffset/Woffset) when a tileset groups <= 4 moveable tiles under one
+  GroupName + CustomName, all with Facing, no facing twice. Dirkies groups far more
+  (d_furniture_kitchen_01 "Modern Corner / Counter" = 52 tiles, edit_ddd_RUS counters 32,
+  Block_Trasher 8); DylansRandomFurniture03 has no GroupName. TikiTown tterika / TK / Dylan bar
+  counters were fine. Not specific to our reinforced versions.
+- Fix (test bundle only): `rotation_fix.py` -> shared `KBWCommunity_Rotation.lua`. Offsets come
+  from our KBW definitions (which sprites are one piece's facings) and are set with
+  PropertyContainer:set at OnLoadedTileDefinitions / OnGameStart. 120 pieces (254 sprites)
+  fixed, 214 already rotate. Skipped: walls / non-moveables, shells, 15 pieces whose 2nd facing
+  is in our generated mirror sheet (offsets only work inside one sheet), 12 with broken pack
+  Facing (e.g. location_community_medical_ddd_01: every tile Facing=E).
+- Check in game: console "[KBWCommunity] Rotation: face offsets set on 254 sprite(s)"; a Dirkies
+  kitchen counter rotates (R) when placed from inventory and lands with the right art.
+
+## 2026-11-02: RELEASE CANDIDATE -- everything above CONFIRMED in game (user)
+All of this session's work was tested in the TikiTownCommunityTest bundle and confirmed working:
+- name / tooltip pass, WECommunity Dylan swap
+- appliance costs (ice machine = KBW Chest Freezer, deep fryer = KBW Green Oven)
+- ice machine 30 / 65 / 100 (65 + 100 two-stage on inert shells)
+- reinforced counters / upper cabinets / wall cupboards (crate cost, 100)
+- fridge / freezer tiers: 8 fridges 60/30-80/40-100/50, mini 30/8-40/12-50/15, Industrial +
+  White Industrial freezer-only 30/30-65/65-100/100, Chest Freezer 65 / 100 (59 buildables)
+- container capacity + freezer retype (KBWCommunity_StageProperties.lua), survives save / reload
+- build-menu text: "Build first: <shell name>", real capacities (KBWCommunity_StageInfo.lua)
+- pick up / place keeps storage + inventory tooltip box (KBWCommunity_Pickup.lua / StageInfo)
+- moveable rotation for badly grouped pack tiles (KBWCommunity_Rotation.lua)
+Dropped: 2-tile two-stage builds (popsicle freezer) -- WE's placement check only waives the
+anchor tile. Still open (not in this RC): build sounds on shells; TK / Dirkies tiledef isolation;
+container balance pass; desk allowSpriteReuse; Fort Waterfront-aware Dylan.
+
+RC moves the test-bundle-only pieces into the WE submod builds:
+- Community: 70_kbwcb_refrigeration_tiers.json (Appliances > Refrigeration, 12 catalog cards),
+  KBWCommunityIceShell sheet 4 -> 44 tiles (same pack / tiledef 8181, no mod.info change) +
+  common/media/depthmaps/DEPTH_KBWCommunityIceShell.png, Lua StageProperties / Pickup / Rotation
+  (shared) + StageInfo (client).
+- TikiTown: KBWTikiTown_Pickup.lua, KBWTikiTown_Rotation.lua (shared), KBWTikiTown_StageInfo.lua
+  (client) -- own file names so the submods never shadow each other; install guards make loading
+  both harmless.

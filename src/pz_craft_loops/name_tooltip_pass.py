@@ -89,6 +89,7 @@ KBW_KEYS = {  # type -> KBW-owned key (text confirmed in KBW's EN Tooltip.json, 
     "Poster": "Tooltip_KBW_Shared_Poster",
     "Window": "Tooltip_KBW_Shared_Window",
     "Roof": "Tooltip_KBW_Shared_RoofSection",
+    "Freezer": "Tooltip_KBW_Shared_Freezer",
 }
 TEXT = {
     "Wall": "{a}wall section.",
@@ -111,6 +112,8 @@ TEXT = {
     "FencePost": "Fence post for finishing fence ends.",
     "FenceHalf": "Half-width fence section for closing gaps.",
     "Counter": "Counter with storage underneath.",
+    "CounterReinforced": "Reinforced counter with large storage underneath.",
+    "UpperCabinetReinforced": "Reinforced wall-mounted cabinet with large storage. Can hang above a counter.",
     "UpperCabinet": "Wall-mounted cabinet. Can hang above a counter.",
     "BarCounter": "Bar counter with storage underneath.",
     "Pallet": "Pallet of goods. Can be used as storage.",
@@ -134,6 +137,7 @@ TEXT = {
     "WorkshopEquipment": "Workshop equipment.",
     "IceMachine": "Commercial ice machine. Works as a freezer when powered.",
     "IceMachineShell": "Unfinished ice machine casing. Build the matching ice machine on it to finish it.",
+    "FreezerShell": "Unfinished freezer casing. Build the matching freezer on it to finish it.",
     "DeepFryer": "Commercial deep fryer. Cooks like an oven when powered.",
     "CoffeeMaker": "Counter-top coffee maker.",
     "Slicer": "Counter-top deli slicer.",
@@ -192,6 +196,10 @@ def piece_type(b):
     bid = b.get("id", "")
     if bid in TYPE_BY_ID:
         return TYPE_BY_ID[bid], ""
+    if bid.endswith(".reinforced"):          # counter_variants.py: military-crate-cost counters
+        n = b.get("displayName") or ""
+        return ("UpperCabinetReinforced" if ("Upper Cabinet" in n or "Wall Cupboard" in n)
+                else "CounterReinforced"), ""
     sub, cat = b.get("subcategory") or "", b.get("category") or ""
     n = (b.get("displayName") or "").lower()
     pc = b.get("pieceClass") or ""

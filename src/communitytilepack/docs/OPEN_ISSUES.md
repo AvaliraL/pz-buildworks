@@ -432,7 +432,13 @@ Last verified: 2026-10-28, from console.txt (13:52 session) + on-disk build of T
 - Test-bundle bug found and fixed: build_merged_test_mod.py dropped per-file `materialGroups`,
   so KBW rejected the 65 / 100 ("references unknown material group"). It now merges them.
 
-## NEXT: two-stage builds for the 65 / 100 ice machines (decided 2026-11-02)
+## CONFIRMED IN GAME 2026-11-02: two-stage ice machines work (user)
+- Shells place and are not freezers; the finished 65 / 100 only place on their own shell (same
+  tile + facing), replace it, freeze, and hold 65 / 100. KBW `previousStage` + an inert generated
+  tile copy is the proven pattern for future multi-stage appliances (e.g. the 100 fridge).
+- Still open: build sounds (see TODO below).
+
+## DONE: two-stage builds for the 65 / 100 ice machines (decided 2026-11-02)
 - The 30 Commercial Ice Machine stays a single build (it fits the ~75 carry weight).
 - 65 and 100 become two builds, like vanilla frame -> wall: stage 1 "Ice Machine Shell"
   (art only, not a freezer, heavy materials), stage 2 built ON the shell (fridge parts and
@@ -452,3 +458,20 @@ Last verified: 2026-10-28, from console.txt (13:52 session) + on-disk build of T
 - Blowtorch stays at 5 uses on every build; rods / refrigerant within one pack / bottle.
 - Waiting on: in-game test of the current 65 / 100 tiers, and the push (tags need pushing from
   here after the first GitHub Desktop push).
+
+## TODO (come back later): build sounds missing on the ice machine shell (seen 2026-11-02)
+- In game (test bundle): building the Ice Machine Shell plays no welder loop and no completion
+  sound. Only the shell was tested so far; unknown whether the 30 ice machine, the finished
+  65 / 100, or KBW VE's own Chest Freezer are also silent.
+- Checked in code, all look correct: our construction block is KBW's chest-freezer template
+  (timedAction BuildWallMetal -> sound BlowTorch; completionSound BuildMetalStructureMedium, both
+  exist in the game scripts). KBW copies them onto the build (KBWBuildingObject.lua 550-557:
+  craftingBank / completionSound) and vanilla ISBuildAction plays both unconditionally
+  (ISBuildAction.lua 93-96 loop, 216-217 completion).
+- Next steps: compare with the 30 ice machine and KBW VE Chest Freezer (if silent too -> KBW-side
+  or mod-mix issue, report to the KBW dev); ask whether the build was started from the build menu
+  or KBW's planner/queue; check console.txt for sound errors during a build.
+- Unrelated log line seen at the same time: "[WorldEssentialsKnox][BuildAttempt]
+  ice_machine_100_shell ... not queued: build action not created" (WE Knox Expansion hook), yet the
+  shell DID build. Probably a duplicate/rejected click; harmless. Note WE - Knox Buildworks
+  Expansion stays enabled even with WE off (separate submod).

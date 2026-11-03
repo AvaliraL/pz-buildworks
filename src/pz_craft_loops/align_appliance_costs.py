@@ -46,20 +46,36 @@ BASE_ID = "community.tk.kitchen_misc.ice_machine"
 GROUP = {"id": "kbwcb.appliances.ice_machines", "translationKey": "IGUI_KBWCB_Group_IceMachines",
          "name": "Commercial Ice Machine"}
 BASE_SKILLS = (5, 4, 8)   # base ice machine: MetalWelding, Electricity, Electricity without the magazine
-TIERS = [  # (capacity, id suffix, name, MetalWelding, Electricity, alt Electricity, xp, amounts)
-    (65, "_65", "Large Commercial Ice Machine", 6, 5, 9, {"MetalWelding": 100, "Electricity": 35},
-     {"Base.BlowTorch": 5, "Base.WeldingRods": 10, "Base.SheetMetal": 12, "Base.ElectronicsScrap": 60,
-      "Base.ElectricWire": 8, "Base.Screws": 40, "KnoxBuildworks.RefrigeratorCompressor": 1,
-      "KnoxBuildworks.RefrigerantBottle": 5, "KnoxBuildworks.InsulationFoam": 4,
-      "KnoxBuildworks.ThinCopperPipe": 4, "KnoxBuildworks.RubberSeal": 4, "KnoxBuildworks.PlasticSheet": 3}),
-    (100, "_100", "Industrial Ice Machine", 7, 6, 10, {"MetalWelding": 150, "Electricity": 55},
-     {"Base.BlowTorch": 5, "Base.WeldingRods": 15, "Base.SheetMetal": 16, "Base.ElectronicsScrap": 100,
-      "Base.ElectricWire": 12, "Base.Screws": 60, "KnoxBuildworks.RefrigeratorCompressor": 1,
-      "KnoxBuildworks.RefrigerantBottle": 8, "KnoxBuildworks.InsulationFoam": 6,
-      "KnoxBuildworks.ThinCopperPipe": 4, "KnoxBuildworks.RubberSeal": 6, "KnoxBuildworks.PlasticSheet": 4}),
+# TWO-STAGE (2026-11-02): each tier is built as a shell (stage 1: inert art from our generated
+# KBWCommunityIceShell sheet, metal body + insulation, Metalworking only) and then the finished
+# ice machine built ON that shell (stage 2: refrigeration + electronics, full skills). KBW
+# `previousStage` makes stage 2 placeable only on its own shell (same tile, same facing) and
+# replaces the shell. Each build has its own ~75 carry-weight budget.
+TIERS = [  # (capacity, id suffix, name, MetalWelding, Electricity, alt Electricity,
+           #  shell name, shell xp, shell amounts, unit xp, unit amounts)
+    (65, "_65", "Large Commercial Ice Machine", 6, 5, 9,
+     "Large Ice Machine Shell", {"MetalWelding": 60},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 10, "Base.SheetMetal": 16, "Base.MetalPipe": 4,
+      "Base.Screws": 40, "KnoxBuildworks.InsulationFoam": 6, "KnoxBuildworks.PlasticSheet": 4,
+      "KnoxBuildworks.RubberSeal": 4},
+     {"MetalWelding": 40, "Electricity": 35},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 5, "Base.SheetMetal": 4, "Base.Screws": 20,
+      "Base.ElectronicsScrap": 80, "Base.ElectricWire": 10, "KnoxBuildworks.RefrigeratorCompressor": 1,
+      "KnoxBuildworks.RefrigerantBottle": 5, "KnoxBuildworks.ThinCopperPipe": 6}),
+    (100, "_100", "Industrial Ice Machine", 7, 6, 10,
+     "Industrial Ice Machine Shell", {"MetalWelding": 90},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 15, "Base.SheetMetal": 20, "Base.MetalPipe": 6,
+      "Base.Screws": 60, "KnoxBuildworks.InsulationFoam": 8, "KnoxBuildworks.PlasticSheet": 6,
+      "KnoxBuildworks.RubberSeal": 6},
+     {"MetalWelding": 60, "Electricity": 55},
+     {"Base.BlowTorch": 5, "Base.WeldingRods": 10, "Base.SheetMetal": 6, "Base.Screws": 30,
+      "Base.ElectronicsScrap": 140, "Base.ElectricWire": 16, "KnoxBuildworks.RefrigeratorCompressor": 1,
+      "KnoxBuildworks.RefrigerantBottle": 9, "KnoxBuildworks.ThinCopperPipe": 10}),
 ]
+SHELL_OBJECT = {"isThumpable": True, "dismantable": True, "blockAllSquare": True}   # NOT isProp:
+# Placement.findPrevious only matches IsoThumpable objects, so a prop shell could never be finished.
 # item weights (game / KBW item scripts, 2026-11-02); drainables count once (one torch/pack/bottle)
-WEIGHT = {"Base.SheetMetal": 2.0, "Base.ElectronicsScrap": 0.1, "Base.ElectricWire": 0.1, "Base.Screws": 0.05,
+WEIGHT = {"Base.SheetMetal": 2.0, "Base.MetalPipe": 1.5, "Base.ElectronicsScrap": 0.1, "Base.ElectricWire": 0.1, "Base.Screws": 0.05,
           "KnoxBuildworks.RefrigeratorCompressor": 5.0, "KnoxBuildworks.InsulationFoam": 0.9,
           "KnoxBuildworks.ThinCopperPipe": 1.25, "KnoxBuildworks.RubberSeal": 0.5,
           "KnoxBuildworks.PlasticSheet": 1.5}
@@ -67,14 +83,20 @@ DRAIN_WEIGHT = {"Base.BlowTorch": 1.0, "Base.WeldingRods": 1.5, "KnoxBuildworks.
 TOOLS_WEIGHT = 0.5   # screwdriver (welding mask is worn)
 
 
-def _with_amounts(entries, amounts):
-    out = []
-    for e in entries:
-        e = copy.deepcopy(e)
-        item = (e.get("items") or [None])[0]
-        if e.get("role") != "tool" and item in amounts:
-            e["uses" if "uses" in e else "amount"] = amounts[item]
-        out.append(e)
+def _rows_for(amounts, templates):
+    """Requirement rows for exactly the items in `amounts` (plus every tool row), built from the
+    KBW chest-freezer rows so ids/roles/modes match KBW's. Items KBW's recipe lacks (metal pipe)
+    get a plain consume row."""
+    out = [copy.deepcopy(t) for t in templates if t.get("role") == "tool"]
+    by_item = {(t.get("items") or [None])[0]: t for t in templates if t.get("role") != "tool"}
+    for item, n in amounts.items():
+        t = copy.deepcopy(by_item.get(item) or {"id": "kbwcb_" + item.split(".")[-1].lower(),
+                                               "role": "material", "mode": "consume", "items": [item]})
+        if "uses" in t:
+            t["uses"] = n
+        else:
+            t["amount"] = n
+        out.append(t)
     return out
 
 
@@ -104,29 +126,67 @@ def build_freezer_tiers(doc):
     _skills(base["stages"][0]["requirements"], *BASE_SKILLS)
     report = ["%s: capacity 30, MW%d+E%d (alt E%d), carry weight %.1f" % (
         (BASE_ID,) + BASE_SKILLS + (_carry_weight(base_group + req.get("inputs", [])),))]
+    from kbw_tilepatch import iceshell_name
+    templates = base_group + req.get("inputs", [])
     doc.setdefault("materialGroups", {})
-    for n, (cap, suf, name, mw, el, alt, xp, amounts) in enumerate(TIERS):
-        gname = "kbwcb.appliance.freezer%d" % cap
-        doc["materialGroups"][gname] = _with_amounts(base_group, amounts)
+    # drop groups from the single-stage version (freezer65 / freezer100) if present
+    for old in ("kbwcb.appliance.freezer65", "kbwcb.appliance.freezer100"):
+        doc["materialGroups"].pop(old, None)
+
+    def put(t, after_id):
+        i = next((k for k, b in enumerate(bs) if b["id"] == t["id"]), None)
+        if i is None:
+            j = next(k for k, b in enumerate(bs) if b["id"] == after_id)
+            bs.insert(j + 1, t)
+        else:
+            bs[i] = t
+
+    level, prev = 2, BASE_ID
+    for cap, suf, name, mw, el, alt, sname, sxp, samounts, uxp, uamounts in TIERS:
+        shell_id = BASE_ID + suf + "_shell"
+        # ---- stage 1: shell
+        sh = copy.deepcopy(base)
+        sh["id"] = shell_id
+        sh["translationKey"] = base["translationKey"] + suf + "_shell"
+        sh["displayName"] = sname
+        sh["iconSprite"] = iceshell_name(int(base["iconSprite"].rsplit("_", 1)[1]))
+        sh["group"] = dict(GROUP, level=level)
+        sh["construction"] = dict(copy.deepcopy(cons), xp=sxp)
+        st = sh["stages"][0]
+        for face in st["geometry"]["faces"].values():
+            for L in face["layers"]:
+                L["rows"] = [[iceshell_name(int(c.rsplit("_", 1)[1])) for c in row] for row in L["rows"]]
+        st["object"] = dict(SHELL_OBJECT)
+        st.pop("container", None)
+        gname = "kbwcb.appliance.iceshell%d" % cap
+        doc["materialGroups"][gname] = _rows_for(samounts, templates)
+        r = copy.deepcopy(req)
+        r["materials"], r["inputs"] = gname, []
+        r["skills"] = {"MetalWelding": mw}
+        r["knowledge"]["skillAlternatives"] = [{"mode": "all", "skills": {"MetalWelding": mw, "Electricity": alt}}]
+        st["requirements"] = r
+        put(sh, prev)
+        report.append("%s: shell, MW%d, xp %s, carry weight %.1f" % (
+            shell_id, mw, sxp, _carry_weight(doc["materialGroups"][gname])))
+        # ---- stage 2: the working ice machine, built on its shell
         t = copy.deepcopy(base)
         t["id"] = BASE_ID + suf
         t["translationKey"] = base["translationKey"] + suf
         t["displayName"] = name
-        t["group"] = dict(GROUP, level=n + 2)
-        t["construction"] = dict(copy.deepcopy(cons), xp=xp)          # time stays 200
+        t["group"] = dict(GROUP, level=level + 1)
+        t["construction"] = dict(copy.deepcopy(cons), xp=uxp)          # time stays 200
+        gname = "kbwcb.appliance.freezer%d" % cap
+        doc["materialGroups"][gname] = _rows_for(uamounts, templates)
         r = copy.deepcopy(req)
-        r["materials"] = gname
-        r["inputs"] = _with_amounts(req.get("inputs", []), amounts)
+        r["materials"], r["inputs"] = gname, []
         _skills(r, mw, el, alt)
         t["stages"][0]["requirements"] = r
         t["stages"][0]["container"] = {"capacity": cap}
-        i = next((k for k, b in enumerate(bs) if b["id"] == t["id"]), None)
-        if i is None:
-            bs.insert(bs.index(base) + 1 + n, t)
-        else:
-            bs[i] = t
-        report.append("%s: capacity %d, MW%d+E%d (alt E%d), xp %s, carry weight %.1f" % (
-            t["id"], cap, mw, el, alt, xp, _carry_weight(doc["materialGroups"][gname] + r["inputs"])))
+        t["stages"][0]["previousStage"] = shell_id
+        put(t, shell_id)
+        report.append("%s: capacity %d on %s, MW%d+E%d (alt E%d), xp %s, carry weight %.1f" % (
+            t["id"], cap, shell_id, mw, el, alt, uxp, _carry_weight(doc["materialGroups"][gname])))
+        level, prev = level + 2, t["id"]
     return report
 
 

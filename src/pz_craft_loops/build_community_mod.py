@@ -60,6 +60,8 @@ from kbw_tilepatch import (write_community_tilepatch, write_removal_lua, write_t
                            TILEPATCH_NAME as _TV_PATCH_NAME, TILEPATCH_ID as _TV_PATCH_ID)
 from kbw_tilepatch import (write_cases_assets, add_case_mirror_faces,
                            CASES_PACK, CASES_TILEDEF_NAME, CASES_TILEDEF_ID)
+from kbw_tilepatch import (write_iceshell_assets, ICESHELL_PACK, ICESHELL_TILEDEF_NAME,
+                           ICESHELL_TILEDEF_ID)
 import we_dylan
 import name_tooltip_pass
 WE_DYLAN_REPORT = []
@@ -106,7 +108,10 @@ def write_mod(mod_id, mod_name, description):
         "tiledef=%s %d"%(FEARS_TILEDEF_NAME, FEARS_TILEDEF_ID),
         "pack=%s"%CASES_PACK,                              # generated military-case 2nd orientation
         "tiledef=%s %d"%(CASES_TILEDEF_NAME, CASES_TILEDEF_ID),
-    ] + we_dylan.MODINFO_LINES                             # WE's isolated Dylan sprites (8182)
+    ] + we_dylan.MODINFO_LINES + [                         # WE's isolated Dylan sprites (8182)
+        "pack=%s"%ICESHELL_PACK,                           # generated inert ice-machine shell (stage 1)
+        "tiledef=%s %d"%(ICESHELL_TILEDEF_NAME, ICESHELL_TILEDEF_ID),
+    ]
     open(os.path.join(base,"42","mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
     # emit the TV patch .tiles into media/ (same dir layout as working tiledef mods)
     _media=os.path.join(base,"42","media"); os.makedirs(_media, exist_ok=True)
@@ -115,6 +120,7 @@ def write_mod(mod_id, mod_name, description):
     # depth maps + tileGeometry load only from <mod>/common/media
     write_fears_assets(_media, os.path.join(base,"common","media"))
     write_cases_assets(_media, os.path.join(base,"common","media"))
+    write_iceshell_assets(_media)       # inert ice-machine shell art (two-stage ice machines)
     # WE's isolated Dylan sheets (vendored; see we_dylan.py). After write_fears_assets, which
     # creates common/media/tileGeometry.txt that the WECommunity blocks are merged into.
     we_dylan.install_assets(_media, os.path.join(base,"common","media"))

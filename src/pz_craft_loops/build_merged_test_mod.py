@@ -30,6 +30,8 @@ from kbw_tilepatch import (write_community_tilepatch, write_removal_lua, write_t
                            TILEPATCH_NAME as _TV_PATCH_NAME, TILEPATCH_ID as _TV_PATCH_ID)
 from kbw_tilepatch import (write_cases_assets, add_case_mirror_faces,
                            CASES_PACK, CASES_TILEDEF_NAME, CASES_TILEDEF_ID)
+from kbw_tilepatch import (write_iceshell_assets, ICESHELL_PACK, ICESHELL_TILEDEF_NAME,
+                           ICESHELL_TILEDEF_ID)
 _write_tv_tiledef = write_community_tilepatch   # shared multi-group tile-property patch
 
 TT   = r"c:\Users\josep\Kiro\zomboid\tikitown"
@@ -235,6 +237,8 @@ def main():
         "tiledef=%s %d"%(FEARS_TILEDEF_NAME, FEARS_TILEDEF_ID),
         "pack=%s"%CASES_PACK,                              # generated military-case 2nd orientation
         "tiledef=%s %d"%(CASES_TILEDEF_NAME, CASES_TILEDEF_ID),
+        "pack=%s"%ICESHELL_PACK,                           # generated inert ice-machine shell (stage 1)
+        "tiledef=%s %d"%(ICESHELL_TILEDEF_NAME, ICESHELL_TILEDEF_ID),
     ]
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
     _media=os.path.join(mod42,"media"); os.makedirs(_media, exist_ok=True)
@@ -243,6 +247,7 @@ def main():
     # depth maps + tileGeometry load only from <mod>/common/media
     write_fears_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
     write_cases_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
+    write_iceshell_assets(_media)       # inert ice-machine shell art (two-stage ice machines)
     _write_tv_tiledef(os.path.join(_media, _TV_PATCH_NAME+".tiles"))
     # runtime removal of collision flags the additive .patch.tiles merge cannot remove
     write_removal_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TileFixes.lua"))

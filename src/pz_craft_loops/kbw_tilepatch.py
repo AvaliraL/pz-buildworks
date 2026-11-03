@@ -1081,6 +1081,57 @@ def write_cases_assets(media_dir, common_media_dir):
     return n
 
 
+# ---------------------------------------------------------------------------------------------
+# ICE MACHINE SHELL (generated, 2026-11-02): stage 1 of the two-stage Large / Industrial ice
+# machines. Same art as kitchen_misc_tk_01_8..11 (TK ice machine) in our own tileset, carrying the
+# tile's patch-group properties (name, facing, placement block) but NOT the vanilla chest-freezer
+# copy, so the shell is not a freezer. KBW turns any tile with a container property into a
+# container, which is why the shell can't simply reuse the patched ice machine tiles.
+# No depth map / tileGeometry: the source sheet has none.
+_TK_PACK = r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3628736763\mods\CommunityTilePack\common\media\texturepacks\tkTiles_01.pack"
+ICESHELL_TILESET = "KBWCommunityIceShell"
+ICESHELL_PACK = "KBWCommunityIceShell"
+ICESHELL_TILEDEF_NAME = "kbwcommunity_iceshell"
+ICESHELL_TILEDEF_ID = 8181          # free (8170-8199 checked across installed mods; 8182-8187 ours)
+_ICESHELL_SRC_SHEET = "kitchen_misc_tk_01"
+_ICESHELL_SRC = [8, 9, 10, 11]     # generated index j -> source index (Facing S, E, N, W)
+
+
+def iceshell_name(src_index):
+    return "%s_%d" % (ICESHELL_TILESET, _ICESHELL_SRC.index(src_index))
+
+
+def write_iceshell_assets(media_dir):
+    """Inert ice-machine shell tiles: texture pack + tiledef in <media_dir>."""
+    from PIL import Image
+    cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_iceshell")
+    names = {"%s_%d" % (_ICESHELL_SRC_SHEET, s) for s in _ICESHELL_SRC}
+    _extract_from_pack(_TK_PACK, names, cache)
+    _ver, tilesets = _load_community_tilesets()
+    src = tilesets[_ICESHELL_SRC_SHEET.encode()]
+    tiles, props = [], []
+    for j, s in enumerate(_ICESHELL_SRC):
+        im = Image.open(os.path.join(cache, "%s_%d.png" % (_ICESHELL_SRC_SHEET, s))).convert("RGBA")
+        tiles.append(("%s_%d" % (ICESHELL_TILESET, j), im))
+        p = []
+        for k, v in _patched_props(_ICESHELL_SRC_SHEET, s, src[6][s]):
+            if k == b"CustomName":
+                v = b"Ice Machine Shell"
+            p.append((k, v))
+        bad = {b"Freezer", b"FreezerCapacity", b"container", b"ContainerCapacity"} & {k for k, _ in p}
+        if bad:
+            raise RuntimeError("ice machine shell tile would be a container: %s" % bad)
+        props.append(p)
+    n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
+    cols, rows = 8, 1
+    props += [[] for _ in range(cols * rows - len(props))]
+    ts = [ICESHELL_TILESET.encode(), (ICESHELL_TILESET + ".png").encode(), cols, rows, 1, cols * rows, props]
+    blob = b"tdef" + struct.pack("<ii", 1, 1) + _ser_tileset(ts)
+    _parse(blob)
+    open(os.path.join(media_dir, ICESHELL_TILEDEF_NAME + ".tiles"), "wb").write(blob)
+    return n
+
+
 def add_case_mirror_faces(buildable):
     """Give the green/white military cases (and their .crate versions) the generated second face.
     Their one pack face is 'W'; the mirror becomes 'N'. In place; returns True if changed."""

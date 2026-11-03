@@ -118,6 +118,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.fixtures_counters_tk_01_0.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_fixtures_counters_tk_01_0_reinforced",
+      "displayName": "Steel Kitchen Counter (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fixtures_counters_tk_01_0",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "counter_metal"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]

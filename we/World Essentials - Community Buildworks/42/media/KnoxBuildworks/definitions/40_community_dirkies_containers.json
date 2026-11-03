@@ -1712,6 +1712,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.d_location_sofaking_11.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_d_location_sofaking_11_reinforced",
+      "displayName": "White Counter, Blue Top (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "d_location_sofaking_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_13"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -1831,6 +1991,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.d_location_sofaking_10.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_d_location_sofaking_10_reinforced",
+      "displayName": "White Counter, Blue Top (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "d_location_sofaking_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_location_sofaking_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -2451,6 +2771,145 @@
           "container": {
             "type": "locker",
             "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.location_community_medical_ddd_01_10.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_location_community_medical_ddd_01_10_reinforced",
+      "displayName": "Steel Medical Counter with Shelves (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Medical",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "location_community_medical_ddd_01_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "locker"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "location_community_medical_ddd_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -4979,6 +5438,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_2.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_2_reinforced",
+      "displayName": "Walnut Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_2",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5098,6 +5717,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_3.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_3_reinforced",
+      "displayName": "Walnut Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_3",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_7"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5217,6 +5996,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_10.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_10_reinforced",
+      "displayName": "Dark Wood Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5336,6 +6275,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_11.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_11_reinforced",
+      "displayName": "Dark Wood Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_13"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_15"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5455,6 +6554,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_18.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_18_reinforced",
+      "displayName": "Grey Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_18",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_18"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_20"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_22"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_16"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5574,6 +6833,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_19.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_19_reinforced",
+      "displayName": "Grey Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_19",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_19"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_21"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_23"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_17"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5693,6 +7112,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_26.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_26_reinforced",
+      "displayName": "Tan Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_26",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_30"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_24"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5812,6 +7391,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_27.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_27_reinforced",
+      "displayName": "Tan Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_27",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_27"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_31"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_25"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -5931,6 +7670,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_34.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_34_reinforced",
+      "displayName": "Oak Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_32"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6050,6 +7949,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_35.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_35_reinforced",
+      "displayName": "Oak Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_35",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_35"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_39"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_33"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6169,6 +8228,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_42.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_42_reinforced",
+      "displayName": "Charcoal Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_42",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_42"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_44"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_46"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_40"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6288,6 +8507,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_43.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_43_reinforced",
+      "displayName": "Charcoal Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_43",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_43"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_47"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_41"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6407,6 +8786,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_50.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_50_reinforced",
+      "displayName": "Olive Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_50",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_50"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_52"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_54"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_48"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6526,6 +9065,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_51.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_51_reinforced",
+      "displayName": "Olive Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_51",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_51"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_53"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_55"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_49"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6645,6 +9344,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_58.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_58_reinforced",
+      "displayName": "Cream Wall Cupboard (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_58",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_58"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_60"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_62"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_56"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]
@@ -6764,6 +9623,166 @@
           },
           "container": {
             "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_59.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_containers_edit_ddd_RUS_fixtures_counters_03_59_reinforced",
+      "displayName": "Cream Wall Cupboard (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_UpperCabinetReinforced",
+      "category": "Containers",
+      "subcategory": "Upper Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "edit_ddd_RUS_fixtures_counters_03_59",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_59"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_61"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_63"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "edit_ddd_RUS_fixtures_counters_03_57"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]

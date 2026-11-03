@@ -1,6 +1,8 @@
 {
  "Tooltip_KBWCB_Counter": "Counter with storage underneath.",
+ "Tooltip_KBWCB_CounterReinforced": "Reinforced counter with large storage underneath.",
  "Tooltip_KBWCB_UpperCabinet": "Wall-mounted cabinet. Can hang above a counter.",
+ "Tooltip_KBWCB_UpperCabinetReinforced": "Reinforced wall-mounted cabinet with large storage. Can hang above a counter.",
  "Tooltip_KBWCB_Wardrobe": "Wardrobe for storing clothes.",
  "Tooltip_KBWCB_Cabinet": "Cabinet for storing household items.",
  "Tooltip_KBWCB_ToolStorage": "Metal tool storage.",
@@ -43,5 +45,7 @@
  "Tooltip_KBWCB_FencePost": "Fence post for finishing fence ends.",
  "Tooltip_KBWCB_FenceHigh": "Tall fence section.",
  "Tooltip_KBWCB_FenceHalf": "Half-width fence section for closing gaps.",
- "Tooltip_KBWCB_FenceTwoStorey": "Two-storey fence section."
+ "Tooltip_KBWCB_FenceTwoStorey": "Two-storey fence section.",
+ "Tooltip_KBWCB_FridgeShell": "Unfinished refrigerator casing. Build the matching refrigerator on it to finish it.",
+ "Tooltip_KBWCB_FreezerShell": "Unfinished freezer casing. Build the matching freezer on it to finish it."
 }

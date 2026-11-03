@@ -18,3 +18,6 @@ tiledef=kbwcommunity_cases 8183
 
 pack=WECommunityDylan
 tiledef=wecommunity_dylan 8182
+
+pack=KBWCommunityIceShell
+tiledef=kbwcommunity_iceshell 8181

@@ -29,6 +29,136 @@ local OFFSETS = {
     ["WECommunity_DylansRandomFurniture03_55"] = { Eoffset = -1 },
     ["WECommunity_DylansRandomFurniture03_60"] = { Soffset = 1 },
     ["WECommunity_DylansRandomFurniture03_61"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_01_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_01_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_01_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_01_27"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_01_28"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_01_29"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_01_30"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_01_31"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_01_32"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_01_33"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_01_34"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_01_35"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_01_48"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_01_49"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_01_50"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_01_51"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_01_52"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_01_53"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_01_54"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_01_55"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_01_56"] = { Soffset = 1 },
+    ["d_furniture_bedroom_01_57"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_01_58"] = { Soffset = 1 },
+    ["d_furniture_bedroom_01_59"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_01_62"] = { Soffset = 1 },
+    ["d_furniture_bedroom_01_63"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_02_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_02_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_02_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_02_27"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_02_28"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_02_29"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_02_30"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_02_31"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_02_32"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_02_33"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_02_34"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_02_35"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_02_48"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_02_49"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_02_50"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_02_51"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_02_52"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_02_53"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_02_54"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_02_55"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_02_56"] = { Soffset = 1 },
+    ["d_furniture_bedroom_02_57"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_02_58"] = { Soffset = 1 },
+    ["d_furniture_bedroom_02_59"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_02_62"] = { Soffset = 1 },
+    ["d_furniture_bedroom_02_63"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_03_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_03_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_03_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_03_27"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_03_28"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_03_29"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_03_30"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_03_31"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_03_32"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_03_33"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_03_34"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_03_35"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_03_48"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_03_49"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_03_50"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_03_51"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_03_52"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_03_53"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_03_54"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_03_55"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_03_56"] = { Soffset = 1 },
+    ["d_furniture_bedroom_03_57"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_03_58"] = { Soffset = 1 },
+    ["d_furniture_bedroom_03_59"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_03_62"] = { Soffset = 1 },
+    ["d_furniture_bedroom_03_63"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_04_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_04_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_04_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_04_27"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_04_28"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_04_29"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_04_30"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_04_31"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_04_32"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_04_33"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_04_34"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_04_35"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_04_48"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_04_49"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_04_50"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_04_51"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_04_52"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_04_53"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_04_54"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_04_55"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_04_56"] = { Soffset = 1 },
+    ["d_furniture_bedroom_04_57"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_04_58"] = { Soffset = 1 },
+    ["d_furniture_bedroom_04_59"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_04_62"] = { Soffset = 1 },
+    ["d_furniture_bedroom_04_63"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_05_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_05_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_05_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_05_27"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_05_28"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_05_29"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_05_30"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_05_31"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_05_32"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_05_33"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_05_34"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_05_35"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_05_48"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_05_49"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_05_50"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_05_51"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_05_52"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
+    ["d_furniture_bedroom_05_53"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
+    ["d_furniture_bedroom_05_54"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
+    ["d_furniture_bedroom_05_55"] = { Eoffset = -2, Soffset = -3, Woffset = -1 },
+    ["d_furniture_bedroom_05_56"] = { Soffset = 1 },
+    ["d_furniture_bedroom_05_57"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_05_58"] = { Soffset = 1 },
+    ["d_furniture_bedroom_05_59"] = { Eoffset = -1 },
+    ["d_furniture_bedroom_05_62"] = { Soffset = 1 },
+    ["d_furniture_bedroom_05_63"] = { Eoffset = -1 },
     ["d_furniture_kitchen_01_0"] = { Eoffset = 1 },
     ["d_furniture_kitchen_01_1"] = { Soffset = -1 },
     ["d_furniture_kitchen_01_10"] = { Noffset = -2, Soffset = 2, Woffset = 4 },
@@ -259,6 +389,9 @@ local function apply()
         local props = sprite and sprite:getProperties() or nil
         if props then
             for key, value in pairs(values) do
+                -- set() alone does not replace a key the tile already has (seen in game with
+                -- MoveType / Facing), so drop the old value first
+                pcall(function() if props:has(key) then props:unset(key) end end)
                 pcall(function() props:set(key, tostring(value)) end)
             end
             pcall(function() props:CreateKeySet() end)
@@ -271,6 +404,34 @@ local function apply()
         .. tostring(missing) .. " not loaded")
 end
 
+-- Moveable placement (picking a piece up and placing it again) reads the tile through
+-- ISMoveableSpriteProps.new. For sprites whose tile data we override (entries with a MoveType),
+-- force the corrected values there too, so placement does not depend on the property edit above.
+local wrapped = false
+local function wrapMoveableProps()
+    if wrapped or not ISMoveableSpriteProps or not ISMoveableSpriteProps.new then return end
+    wrapped = true
+    local orig = ISMoveableSpriteProps.new
+    ISMoveableSpriteProps.new = function(_sprite)
+        local s = orig(_sprite)
+        local v = s and s.spriteName and OFFSETS[s.spriteName] or nil
+        if v and v.MoveType then
+            s.type = v.MoveType
+            if v.Facing then s.facing = v.Facing end
+            s.Noffset = v.Noffset or 0
+            s.Soffset = v.Soffset or 0
+            s.Eoffset = v.Eoffset or 0
+            s.Woffset = v.Woffset or 0
+        end
+        return s
+    end
+    print("[KBWCommunity] Rotation: moveable placement overrides active")
+end
+
 if Events.OnLoadedTileDefinitions then Events.OnLoadedTileDefinitions.Add(apply) end
 Events.OnGameStart.Add(apply)
-if Events.OnServerStarted then Events.OnServerStarted.Add(apply) end
+Events.OnGameStart.Add(wrapMoveableProps)
+if Events.OnServerStarted then
+    Events.OnServerStarted.Add(apply)
+    Events.OnServerStarted.Add(wrapMoveableProps)
+end

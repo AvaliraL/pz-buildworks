@@ -5,6 +5,38 @@
 -- inventory. Offsets come from our Knox Buildworks definitions (which sprites are the faces of
 -- one piece). Applied once tile definitions are loaded.
 local OFFSETS = {
+    ["furniture_storage_tterika_02_12"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_13"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_14"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_15"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_20"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_21"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_22"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_23"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_24"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_25"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_26"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_27"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_28"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_29"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_30"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_31"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_32"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_33"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_34"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_35"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_36"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_37"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_38"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_39"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_40"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_41"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_42"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_43"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["furniture_storage_tterika_02_44"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
+    ["furniture_storage_tterika_02_45"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
+    ["furniture_storage_tterika_02_46"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
+    ["furniture_storage_tterika_02_47"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
     ["tikitown_furniture_bedroom_01_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
     ["tikitown_furniture_bedroom_01_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
     ["tikitown_furniture_bedroom_01_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },
@@ -33,6 +65,9 @@ local function apply()
         local props = sprite and sprite:getProperties() or nil
         if props then
             for key, value in pairs(values) do
+                -- set() alone does not replace a key the tile already has (seen in game with
+                -- MoveType / Facing), so drop the old value first
+                pcall(function() if props:has(key) then props:unset(key) end end)
                 pcall(function() props:set(key, tostring(value)) end)
             end
             pcall(function() props:CreateKeySet() end)
@@ -45,6 +80,34 @@ local function apply()
         .. tostring(missing) .. " not loaded")
 end
 
+-- Moveable placement (picking a piece up and placing it again) reads the tile through
+-- ISMoveableSpriteProps.new. For sprites whose tile data we override (entries with a MoveType),
+-- force the corrected values there too, so placement does not depend on the property edit above.
+local wrapped = false
+local function wrapMoveableProps()
+    if wrapped or not ISMoveableSpriteProps or not ISMoveableSpriteProps.new then return end
+    wrapped = true
+    local orig = ISMoveableSpriteProps.new
+    ISMoveableSpriteProps.new = function(_sprite)
+        local s = orig(_sprite)
+        local v = s and s.spriteName and OFFSETS[s.spriteName] or nil
+        if v and v.MoveType then
+            s.type = v.MoveType
+            if v.Facing then s.facing = v.Facing end
+            s.Noffset = v.Noffset or 0
+            s.Soffset = v.Soffset or 0
+            s.Eoffset = v.Eoffset or 0
+            s.Woffset = v.Woffset or 0
+        end
+        return s
+    end
+    print("[KBWCommunity] Rotation: moveable placement overrides active")
+end
+
 if Events.OnLoadedTileDefinitions then Events.OnLoadedTileDefinitions.Add(apply) end
 Events.OnGameStart.Add(apply)
-if Events.OnServerStarted then Events.OnServerStarted.Add(apply) end
+Events.OnGameStart.Add(wrapMoveableProps)
+if Events.OnServerStarted then
+    Events.OnServerStarted.Add(apply)
+    Events.OnServerStarted.Add(wrapMoveableProps)
+end

@@ -271,7 +271,7 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.appliance.refrigerator",
+            "materials": "kbwcb.appliance.freezer30",
             "skills": {
               "MetalWelding": 5,
               "Electricity": 4
@@ -298,62 +298,7 @@
                 }
               ]
             },
-            "inputs": [
-              {
-                "id": "expansion_refrigeratorcompressor",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "KnoxBuildworks.RefrigeratorCompressor"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "expansion_refrigerantbottle",
-                "role": "component",
-                "mode": "drain",
-                "items": [
-                  "KnoxBuildworks.RefrigerantBottle"
-                ],
-                "uses": 2
-              },
-              {
-                "id": "expansion_insulationfoam",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "KnoxBuildworks.InsulationFoam"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "expansion_thincopperpipe",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "KnoxBuildworks.ThinCopperPipe"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "expansion_rubberseal",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "KnoxBuildworks.RubberSeal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "expansion_plasticsheet",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "KnoxBuildworks.PlasticSheet"
-                ],
-                "amount": 2
-              }
-            ]
+            "inputs": []
           },
           "object": {
             "isProp": true,
@@ -1283,7 +1228,7 @@
         "items": [
           "KnoxBuildworks.InsulationFoam"
         ],
-        "amount": 6
+        "amount": 3
       },
       {
         "id": "expansion_plasticsheet",
@@ -1292,7 +1237,7 @@
         "items": [
           "KnoxBuildworks.PlasticSheet"
         ],
-        "amount": 4
+        "amount": 2
       },
       {
         "id": "expansion_rubberseal",
@@ -1301,7 +1246,227 @@
         "items": [
           "KnoxBuildworks.RubberSeal"
         ],
+        "amount": 2
+      }
+    ],
+    "kbwcb.appliance.iceshell100": [
+      {
+        "id": "welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:weldingmask"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:screwdriver"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.BlowTorch"
+        ],
+        "uses": 5
+      },
+      {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.WeldingRods"
+        ],
+        "uses": 15
+      },
+      {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.SheetMetal"
+        ],
+        "amount": 20
+      },
+      {
+        "id": "kbwcb_metalpipe",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.MetalPipe"
+        ],
+        "amount": 6
+      },
+      {
+        "id": "screws",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.Screws"
+        ],
+        "amount": 60
+      },
+      {
+        "id": "expansion_insulationfoam",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.InsulationFoam"
+        ],
         "amount": 4
+      },
+      {
+        "id": "expansion_plasticsheet",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.PlasticSheet"
+        ],
+        "amount": 3
+      },
+      {
+        "id": "expansion_rubberseal",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.RubberSeal"
+        ],
+        "amount": 3
+      }
+    ],
+    "kbwcb.appliance.freezer30": [
+      {
+        "id": "welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:weldingmask"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+          "base:screwdriver"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.BlowTorch"
+        ],
+        "uses": 5
+      },
+      {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "items": [
+          "Base.WeldingRods"
+        ],
+        "uses": 5
+      },
+      {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.SheetMetal"
+        ],
+        "amount": 8
+      },
+      {
+        "id": "electronics",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectronicsScrap"
+        ],
+        "amount": 30
+      },
+      {
+        "id": "electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.ElectricWire"
+        ],
+        "amount": 4
+      },
+      {
+        "id": "screws",
+        "role": "material",
+        "mode": "consume",
+        "items": [
+          "Base.Screws"
+        ],
+        "amount": 20
+      },
+      {
+        "id": "expansion_refrigeratorcompressor",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.RefrigeratorCompressor"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "expansion_refrigerantbottle",
+        "role": "component",
+        "mode": "drain",
+        "items": [
+          "KnoxBuildworks.RefrigerantBottle"
+        ],
+        "uses": 1
+      },
+      {
+        "id": "expansion_insulationfoam",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.InsulationFoam"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "expansion_thincopperpipe",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.ThinCopperPipe"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "expansion_rubberseal",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.RubberSeal"
+        ],
+        "amount": 1
+      },
+      {
+        "id": "expansion_plasticsheet",
+        "role": "component",
+        "mode": "consume",
+        "items": [
+          "KnoxBuildworks.PlasticSheet"
+        ],
+        "amount": 1
       }
     ],
     "kbwcb.appliance.freezer65": [
@@ -1393,7 +1558,7 @@
         "items": [
           "KnoxBuildworks.RefrigerantBottle"
         ],
-        "uses": 5
+        "uses": 2
       },
       {
         "id": "expansion_thincopperpipe",
@@ -1402,99 +1567,7 @@
         "items": [
           "KnoxBuildworks.ThinCopperPipe"
         ],
-        "amount": 6
-      }
-    ],
-    "kbwcb.appliance.iceshell100": [
-      {
-        "id": "welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "tags": [
-          "base:weldingmask"
-        ],
-        "amount": 1
-      },
-      {
-        "id": "screwdriver",
-        "role": "tool",
-        "mode": "keep",
-        "tags": [
-          "base:screwdriver"
-        ],
-        "amount": 1
-      },
-      {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "items": [
-          "Base.BlowTorch"
-        ],
-        "uses": 5
-      },
-      {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "items": [
-          "Base.WeldingRods"
-        ],
-        "uses": 15
-      },
-      {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "items": [
-          "Base.SheetMetal"
-        ],
-        "amount": 20
-      },
-      {
-        "id": "kbwcb_metalpipe",
-        "role": "material",
-        "mode": "consume",
-        "items": [
-          "Base.MetalPipe"
-        ],
-        "amount": 6
-      },
-      {
-        "id": "screws",
-        "role": "material",
-        "mode": "consume",
-        "items": [
-          "Base.Screws"
-        ],
-        "amount": 60
-      },
-      {
-        "id": "expansion_insulationfoam",
-        "role": "component",
-        "mode": "consume",
-        "items": [
-          "KnoxBuildworks.InsulationFoam"
-        ],
-        "amount": 8
-      },
-      {
-        "id": "expansion_plasticsheet",
-        "role": "component",
-        "mode": "consume",
-        "items": [
-          "KnoxBuildworks.PlasticSheet"
-        ],
-        "amount": 6
-      },
-      {
-        "id": "expansion_rubberseal",
-        "role": "component",
-        "mode": "consume",
-        "items": [
-          "KnoxBuildworks.RubberSeal"
-        ],
-        "amount": 6
+        "amount": 3
       }
     ],
     "kbwcb.appliance.freezer100": [
@@ -1586,7 +1659,7 @@
         "items": [
           "KnoxBuildworks.RefrigerantBottle"
         ],
-        "uses": 9
+        "uses": 4
       },
       {
         "id": "expansion_thincopperpipe",
@@ -1595,7 +1668,7 @@
         "items": [
           "KnoxBuildworks.ThinCopperPipe"
         ],
-        "amount": 10
+        "amount": 5
       }
     ]
   }

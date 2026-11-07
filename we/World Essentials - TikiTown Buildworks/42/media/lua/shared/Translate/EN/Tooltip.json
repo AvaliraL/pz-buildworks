@@ -75,5 +75,9 @@
   "Tooltip_KBWCB_GarageDoor": "Garage door for vehicle access.",
   "Tooltip_KBWCB_Flag": "Decorative flag.",
   "Tooltip_KBWCB_GlassPanel": "Fixed glass panel that goes beside a sliding door.",
-  "Tooltip_KBWCB_GlassDoor": "Door with glass panes. Opens and closes."
+  "Tooltip_KBWCB_GlassDoor": "Door with glass panes. Opens and closes.",
+  "Tooltip_KBWCB_Decoration": "Decorative piece.",
+  "Tooltip_KBWCB_Locker": "Metal locker for storage.",
+  "Tooltip_KBWCB_StorageReinforced": "Reinforced metal storage with a large capacity.",
+  "Tooltip_KBWCB_Chest": "Small storage chest."
 }

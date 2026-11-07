@@ -115,6 +115,9 @@ local function install()
         self._kbwcbPending = okRecord and record or nil
         local a, b = originalPickUp(self, character, square, object, sprInstance, spriteName, createItem, rotating)
         self._kbwcbPending = nil
+        -- return exactly what vanilla returned: callers do table.insert(items, f(...)), so a
+        -- spare trailing nil turns it into a 3-argument insert and throws
+        if b == nil then return a end
         return a, b
     end
 
@@ -129,6 +132,7 @@ local function install()
             local okApply, err = pcall(applyRecord, object, record)
             if not okApply then print("[KBWCommunity] Pickup: restore failed: " .. tostring(err)) end
         end
+        if b == nil then return object end
         return object, b
     end
     print("[KBWCommunity] Pickup: pick up / place keeps our builds' storage and name")

@@ -13,7 +13,7 @@ Compares our `work/` copy against the LIVE Steam World Essentials (Workshop 3733
 
 | Submod | New files | Changed files | Identical |
 |---|---:|---:|---:|
-| World Essentials - Community Buildworks | 15 | 23 | 17 |
+| World Essentials - Community Buildworks | 17 | 23 | 17 |
 | World Essentials - TikiTown Buildworks | 6 | 17 | 2 |
 | World Essentials (base, our files only) | 0 | 0 | 11 |
 
@@ -64,7 +64,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_8`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_16`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_10_corner`
-- `44_community_dylan_walls.json`: **4** changed; what differs: tooltipKey x4, displayName x4
+- `44_community_dylan_walls.json`: **4** changed; what differs: displayName x4, tooltipKey x4
     - e.g. `community.dylan.walls.DylansGardenStuff02_8`
     - e.g. `community.dylan.walls.DylansGardenStuff02_10`
     - e.g. `community.dylan.walls.DylansGardenStuff02_11`
@@ -76,7 +76,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.doorframes.industry_dirkea_ddd_01_18`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_86`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_82`
-- `48_community_tk_doors.json`: **4** changed; what differs: tooltipKey x4, displayName x4
+- `48_community_tk_doors.json`: **4** changed; what differs: displayName x4, tooltipKey x4
     - e.g. `community.tk.doorframes.industry_tk_01_10`
     - e.g. `community.tk.doorframes.industry_tk_01_14`
     - e.g. `community.tk.doorframes.industry_tk_01_34`
@@ -103,7 +103,7 @@ Changed buildables (same id, different definition):
 - `55_community_dirkies_secret_shelf.json`: **2** changed; what differs: tooltipKey x2, displayName x1
     - e.g. `community.dirkies.secret_shelf.d_doors_02_64`
     - e.g. `community.dirkies.secret_shelf.d_doors_02_68`
-- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9
+- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.requirements x6, stage.kbwcbBenchTools x6
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
@@ -122,7 +122,9 @@ New non-definition files:
 
 - `42/media/kbwcommunity_iceshell.tiles` (5548 bytes)
 - `42/media/kbwcommunity_lcouch.tiles` (8454 bytes)
+- `42/media/lua/client/KBWCommunity_BenchMenu.lua` (2866 bytes)
 - `42/media/lua/client/KBWCommunity_StageInfo.lua` (5264 bytes)
+- `42/media/lua/shared/KBWCommunity_BenchTools.lua` (7729 bytes)
 - `42/media/lua/shared/KBWCommunity_MultiPart.lua` (8404 bytes)
 - `42/media/lua/shared/KBWCommunity_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWCommunity_Rotation.lua` (32460 bytes)
@@ -135,7 +137,7 @@ New non-definition files:
 Changed non-definition files:
 
 - `42/media/KnoxBuildworks/manifest.json` - 4 definition files added, 0 removed
-- `42/media/lua/shared/Translate/EN/IG_UI.json` - 248 keys added, 58 changed
+- `42/media/lua/shared/Translate/EN/IG_UI.json` - 254 keys added, 58 changed
 - `42/media/lua/shared/Translate/EN/Tooltip.json` - 50 keys added, 0 changed
 
 ### World Essentials - TikiTown Buildworks
@@ -299,6 +301,21 @@ Community submod, two new pack/tiledef pairs:
   picking up or smashing one tile of a bed left the rest. This wraps `ISMoveableSpriteProps:canPickUpMoveable/pickUpMoveable`
   and `ISDestroyStuffAction:complete` so all tiles of the group go together; part items drop on the floor with the generic
   `Moveables.Moveable` look (as vanilla multi-sprite pick-up does).
+
+**6. Workbenches (Fears, file 56) become real workstations**
+
+- `KBWCommunity_BenchTools.lua` (shared, NEW) registers the stage property `kbwcbBenchTools` and wraps
+  `ISInventoryPaneContextMenu.getContainers` plus the B42 craft panels' `updateContainers`: while the player is adjacent to a
+  configured bench, one detached (never saved, never shown) virtual container holding one of every member of the bench's core
+  tool tags is added to the craft-panel query only. All recipe variants and tool alternates resolve.
+- Same file wraps `ISHandcraftAction:getDuration`: crafting at a bench of the recipe's own category is 10% faster
+  (`BT.SPEED_MULTIPLIER = 0.90`).
+- `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
+- Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
+  `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft
+  category, so it gives a mortar and pestle and opens Medical.
+- New IG_UI labels `IGUI_KBWCB_Bench_<Category>`.
+- Generated from `pz_craft_loops/bench_tools.py`.
 
 **Untouched WE-owned files**: `mod.info`, `bundled_source.txt`, `KBWCommunity_Seating.lua`, and the runtime Lua WE moved into
 main World Essentials (Destroyable, MultiStorey, TableTop, TVScreens, Viewscreens).

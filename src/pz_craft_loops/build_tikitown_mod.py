@@ -81,6 +81,7 @@ def main():
     import sys as _sys
     _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from kbw_tilepatch import write_seating_lua
+    from kbw_tilepatch import TT_TILEPATCH_NAME as _TT_PATCH_NAME, TT_TILEPATCH_ID as _TT_PATCH_ID
     write_seating_lua(os.path.join(mod42, "media", "lua", "shared", "KBWCommunity_Seating.lua"))
 
     # mod.info
@@ -94,6 +95,7 @@ def main():
         "loadModAfter=%s"%",".join(REQUIRES),
         "versionMin=42.0",
         "tags=Build 42,Build",
+        "tiledef=%s %d" % (_TT_PATCH_NAME, _TT_PATCH_ID),   # tterika_02 stacking / locker patch
     ]
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
 
@@ -152,6 +154,13 @@ def main():
     # multi-tile builds (beds, counters...) pick up / smash as one piece
     from container_caps import write_multipart_lua
     write_multipart_lua(os.path.join(_lua, "shared", "KBWTikiTown_MultiPart.lua"))
+    # tterika_02 tile-property patch (footlocker stacks 6, small cabinets 2, freestanding lockers)
+    # plus the runtime removal of IsTableTop that an additive patch cannot do. Own tiledef; WE adds
+    # the tiledef line to its (WE-owned) mod.info.
+    from kbw_tilepatch import (write_community_tilepatch, write_removal_lua,
+                               TT_TILEPATCH_NAME)
+    write_community_tilepatch(os.path.join(mod42, "media", TT_TILEPATCH_NAME + ".tiles"), tikitown_only=True)
+    write_removal_lua(os.path.join(_lua, "shared", "KBWTikiTown_TileFixes.lua"), tikitown_only=True)
     write_stage_info_lua(os.path.join(_lua, "client", "KBWTikiTown_StageInfo.lua"))
     import rotation_fix
     _rot, _rot_rep = rotation_fix.build_offsets(all_built, rotation_fix.load_sheets())

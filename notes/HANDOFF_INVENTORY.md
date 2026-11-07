@@ -14,7 +14,7 @@ Compares our `work/` copy against the LIVE Steam World Essentials (Workshop 3733
 | Submod | New files | Changed files | Identical |
 |---|---:|---:|---:|
 | World Essentials - Community Buildworks | 17 | 23 | 17 |
-| World Essentials - TikiTown Buildworks | 6 | 17 | 2 |
+| World Essentials - TikiTown Buildworks | 8 | 17 | 2 |
 | World Essentials (base, our files only) | 0 | 0 | 11 |
 
 ### World Essentials - Community Buildworks
@@ -64,7 +64,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_8`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_16`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_10_corner`
-- `44_community_dylan_walls.json`: **4** changed; what differs: displayName x4, tooltipKey x4
+- `44_community_dylan_walls.json`: **4** changed; what differs: tooltipKey x4, displayName x4
     - e.g. `community.dylan.walls.DylansGardenStuff02_8`
     - e.g. `community.dylan.walls.DylansGardenStuff02_10`
     - e.g. `community.dylan.walls.DylansGardenStuff02_11`
@@ -76,7 +76,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.doorframes.industry_dirkea_ddd_01_18`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_86`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_82`
-- `48_community_tk_doors.json`: **4** changed; what differs: displayName x4, tooltipKey x4
+- `48_community_tk_doors.json`: **4** changed; what differs: tooltipKey x4, displayName x4
     - e.g. `community.tk.doorframes.industry_tk_01_10`
     - e.g. `community.tk.doorframes.industry_tk_01_14`
     - e.g. `community.tk.doorframes.industry_tk_01_34`
@@ -103,11 +103,11 @@ Changed buildables (same id, different definition):
 - `55_community_dirkies_secret_shelf.json`: **2** changed; what differs: tooltipKey x2, displayName x1
     - e.g. `community.dirkies.secret_shelf.d_doors_02_64`
     - e.g. `community.dirkies.secret_shelf.d_doors_02_68`
-- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.requirements x6, stage.kbwcbBenchTools x6
+- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.kbwcbBenchTools x6, stage.requirements x6
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, stage.requirements x2, construction x2, group x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`
@@ -124,7 +124,7 @@ New non-definition files:
 - `42/media/kbwcommunity_lcouch.tiles` (8454 bytes)
 - `42/media/lua/client/KBWCommunity_BenchMenu.lua` (2866 bytes)
 - `42/media/lua/client/KBWCommunity_StageInfo.lua` (5264 bytes)
-- `42/media/lua/shared/KBWCommunity_BenchTools.lua` (7729 bytes)
+- `42/media/lua/shared/KBWCommunity_BenchTools.lua` (11535 bytes)
 - `42/media/lua/shared/KBWCommunity_MultiPart.lua` (8404 bytes)
 - `42/media/lua/shared/KBWCommunity_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWCommunity_Rotation.lua` (32460 bytes)
@@ -197,7 +197,7 @@ Changed buildables (same id, different definition):
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_wall`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_window`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_doorframe`
-- `29_tikitown_garages.json`: **40** changed; what differs: translationKey x40, tooltipKey x40
+- `29_tikitown_garages.json`: **40** changed; what differs: tooltipKey x40, translationKey x40
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w2`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w3`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w4`
@@ -224,10 +224,12 @@ Changed buildables (same id, different definition):
 
 New non-definition files:
 
+- `42/media/kbwtikitown_tterika.patch.tiles` (14380 bytes)
 - `42/media/lua/client/KBWTikiTown_StageInfo.lua` (5264 bytes)
 - `42/media/lua/shared/KBWTikiTown_MultiPart.lua` (8404 bytes)
 - `42/media/lua/shared/KBWTikiTown_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWTikiTown_Rotation.lua` (8124 bytes)
+- `42/media/lua/shared/KBWTikiTown_TileFixes.lua` (2141 bytes)
 
 Changed non-definition files:
 
@@ -253,6 +255,10 @@ Community submod, two new pack/tiledef pairs:
     tiledef=kbwcommunity_iceshell 8181
     pack=KBWCommunityLCouch
     tiledef=kbwcommunity_lcouch 8178
+
+TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers, loads after `tikitown_tiles`):
+
+    tiledef=kbwtikitown_tterika.patch 8180
 
 **1. Names + tooltips pass (Community + TikiTown; definitions and EN translations only)**
 
@@ -289,6 +295,11 @@ Community submod, two new pack/tiledef pairs:
   couches (22: 9 couches, 9 armchairs, 4 L-shaped couches in teal/purple/pink/orange).
 - TikiTown: Newburbs trim (250), tterika_02 storage (12 lockers/chests + 12 reinforced; footlocker stacks 6, small cabinets 2),
   tterika counter and shelving additions in file 23.
+- tterika_02 needs a tile-property patch to stack and place correctly: `kbwtikitown_tterika.patch.tiles` (additive merge onto
+  `furniture_storage_tterika_02`: IsStackable/IsTable on the footlocker and small cabinets; MoveType=Object and corrected
+  Facing for the freestanding lockers, which the pack tags as wall objects) plus `KBWTikiTown_TileFixes.lua`, because a
+  patch cannot remove a property: it unsets `IsTableTop` on the footlocker at runtime (vanilla never stacks onto a square with
+  `IsTableTop`). Needs the tiledef line above.
 - L couches use `KBWCommunityLCouch`: single-tile copies of the Comfy end pieces WITHOUT their 2-tile sprite grid (orange is
   a recolour of pink). With the originals the ends ghost as the full 2-tile couch and cannot be picked up.
 - `common/media/depthmaps/DEPTH_d_location_sofaking.png`: sofaking depth map with the teal and orange corner cells cleared
@@ -310,6 +321,9 @@ Community submod, two new pack/tiledef pairs:
   tool tags is added to the craft-panel query only. All recipe variants and tool alternates resolve.
 - Same file wraps `ISHandcraftAction:getDuration`: crafting at a bench of the recipe's own category is 10% faster
   (`BT.SPEED_MULTIPLIER = 0.90`).
+- Benches are recognised by their tile as well as by `modData.kbwcbBenchTools`, so a bench that was picked up and placed again
+  (a plain moveable object; vanilla does not carry our modData across) keeps its tools. The sprite and category tables are
+  generated into the Lua from the workbench definitions.
 - `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
 - Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
   `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft

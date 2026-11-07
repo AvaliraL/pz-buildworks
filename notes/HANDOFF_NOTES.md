@@ -11,6 +11,10 @@ Community submod, two new pack/tiledef pairs:
     pack=KBWCommunityLCouch
     tiledef=kbwcommunity_lcouch 8178
 
+TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers, loads after `tikitown_tiles`):
+
+    tiledef=kbwtikitown_tterika.patch 8180
+
 **1. Names + tooltips pass (Community + TikiTown; definitions and EN translations only)**
 
 - 127 name fixes (raw sheet names, doubled words, duplicates split by art; `industry_tk_02_25` is a Fire Extinguisher Cabinet).
@@ -46,6 +50,11 @@ Community submod, two new pack/tiledef pairs:
   couches (22: 9 couches, 9 armchairs, 4 L-shaped couches in teal/purple/pink/orange).
 - TikiTown: Newburbs trim (250), tterika_02 storage (12 lockers/chests + 12 reinforced; footlocker stacks 6, small cabinets 2),
   tterika counter and shelving additions in file 23.
+- tterika_02 needs a tile-property patch to stack and place correctly: `kbwtikitown_tterika.patch.tiles` (additive merge onto
+  `furniture_storage_tterika_02`: IsStackable/IsTable on the footlocker and small cabinets; MoveType=Object and corrected
+  Facing for the freestanding lockers, which the pack tags as wall objects) plus `KBWTikiTown_TileFixes.lua`, because a
+  patch cannot remove a property: it unsets `IsTableTop` on the footlocker at runtime (vanilla never stacks onto a square with
+  `IsTableTop`). Needs the tiledef line above.
 - L couches use `KBWCommunityLCouch`: single-tile copies of the Comfy end pieces WITHOUT their 2-tile sprite grid (orange is
   a recolour of pink). With the originals the ends ghost as the full 2-tile couch and cannot be picked up.
 - `common/media/depthmaps/DEPTH_d_location_sofaking.png`: sofaking depth map with the teal and orange corner cells cleared

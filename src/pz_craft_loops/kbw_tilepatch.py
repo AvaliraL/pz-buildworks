@@ -267,19 +267,34 @@ def _vanilla_copy_groups():
     return groups
 
 
-def write_community_tilepatch(dest_path, tikitown=False):
+# The TikiTown submod's OWN tile patch (tikitown_only=True): only the tterika_02 stacking + locker
+# fixes, no Community sheets, so it never double-patches what the Community submod already does.
+# Needs its own tiledef line in the TikiTown submod's mod.info (WE-owned; handed over in the notes).
+TT_TILEPATCH_NAME = "kbwtikitown_tterika.patch"
+TT_TILEPATCH_ID = 8180      # free (8180-8187 checked across installed mods; 8181-8187 are ours)
+
+
+def write_community_tilepatch(dest_path, tikitown=False, tikitown_only=False):
     """Emit the multi-tileset .patch.tiles with all _PATCH_GROUPS applied. Returns a report dict.
     tikitown=True also patches TikiTown sheets (_TT_PATCH_GROUPS / TT_LOCKER_OVERRIDES); only for
-    builds that load after tikitown_tiles."""
-    ver, tilesets = _load_community_tilesets()
-    overrides = list(_PATCH_OVERRIDES)
-    groups_in = _PATCH_GROUPS + _vanilla_copy_groups() + _sheet_copy_groups()
-    if tikitown:
-        _v, tts, _o = _parse(open(_TIKITOWN_TILES, "rb").read())
-        for n, t in tts.items():
-            tilesets.setdefault(n, t)
-        groups_in = groups_in + _TT_PATCH_GROUPS
-        overrides += _tt_override_list()
+    builds that load after tikitown_tiles. tikitown_only=True emits ONLY the TikiTown patches (for
+    the TikiTown submod's own patch file)."""
+    if tikitown_only:
+        ver = 1
+        _v, tilesets, _o = _parse(open(_TIKITOWN_TILES, "rb").read())
+        overrides = _tt_override_list()
+        groups_in = list(_TT_PATCH_GROUPS)
+        tikitown = True
+    else:
+        ver, tilesets = _load_community_tilesets()
+        overrides = list(_PATCH_OVERRIDES)
+        groups_in = _PATCH_GROUPS + _vanilla_copy_groups() + _sheet_copy_groups()
+        if tikitown:
+            _v, tts, _o = _parse(open(_TIKITOWN_TILES, "rb").read())
+            for n, t in tts.items():
+                tilesets.setdefault(n, t)
+            groups_in = groups_in + _TT_PATCH_GROUPS
+            overrides += _tt_override_list()
 
     # group patches by tileset so each patched sheet is emitted once
     by_sheet = {}
@@ -1597,11 +1612,12 @@ def write_destroy_lua(dest_path):
     open(dest_path, "w", encoding="utf-8").write(_DESTROY_LUA)
 
 
-def write_removal_lua(dest_path, tikitown=False):
+def write_removal_lua(dest_path, tikitown=False, tikitown_only=False):
     """Emit the runtime removal script for every sprite in _PATCH_GROUPS that has removals
     (plus _TT_PATCH_GROUPS when tikitown=True)."""
     rows = []
-    for tsname, idxs, _add, remove in _PATCH_GROUPS + (_TT_PATCH_GROUPS if tikitown else []):
+    base_groups = [] if tikitown_only else _PATCH_GROUPS
+    for tsname, idxs, _add, remove in base_groups + (_TT_PATCH_GROUPS if (tikitown or tikitown_only) else []):
         if not remove:
             continue
         keys = ", ".join('"%s"' % (k.decode() if isinstance(k, bytes) else k) for k in sorted(remove))

@@ -26,7 +26,7 @@ SRC_SCRIPTS = [
     "align_appliance_costs.py", "counter_variants.py", "container_caps.py", "rotation_fix.py",
     # sheet generators + bench tools (deliverables are built from these)
     "dirkies_couches.py", "dirkies_bedroom.py", "dirkies_stairs.py", "tikitown_tterika_storage.py",
-    "bench_tools.py",
+    "bench_tools.py", "we_inventory.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",
@@ -144,6 +144,8 @@ def main():
         notes = os.path.join(REPO, "notes")
         os.makedirs(notes, exist_ok=True)
         for s in (os.path.join(K, "zomboid", "WE_submods", "BUG_PASS_2026-11-01.md"),
+                  os.path.join(K, "zomboid", "WE_submods", "HANDOFF_INVENTORY.md"),
+                  os.path.join(K, "zomboid", "WE_submods", "HANDOFF_NOTES.md"),
                   os.path.join(K, "zomboid", "WE_submods", "UPSTREAM_VERSION.txt"),
                   os.path.join(K, ".kiro", "steering", "we-submods-workflow.md"),
                   os.path.join(K, ".kiro", "steering", "pz-kahlua-lua.md")):

@@ -73,6 +73,7 @@ import counter_variants
 CV_REPORT = {}
 WE_DYLAN_REPORT = []
 FR_REPORT = []
+BT_REPORT = []
 ROT_REPORT = []
 NT_REPORT = []
 # Back-compat alias so existing call sites keep working.
@@ -161,6 +162,9 @@ def write_mod(mod_id, mod_name, description):
     write_pickup_lua(os.path.join(_media, "lua", "shared", _PU_LUA))
     from container_caps import write_multipart_lua, MULTIPART_LUA_NAME as _MP_LUA
     write_multipart_lua(os.path.join(_media, "lua", "shared", _MP_LUA))
+    # workbench built-in tools + bench craft menu + 10% craft-speed bonus (bench_tools.py)
+    import bench_tools
+    bench_tools.write_assets(_media)
 
     # definitions + translations
     manifest_defs=[]
@@ -191,6 +195,10 @@ def write_mod(mod_id, mod_name, description):
         
         # reinforced counters: military-crate cost, capacity 100 (counter_variants.py)
         CV_REPORT[fname] = counter_variants.add_variants(d.get("buildables", []))
+        # workbenches: runtime tool set + one-of-each-core-tool build cost (bench_tools.py)
+        _bt = bench_tools.apply_to_buildables(d.get("buildables", []))
+        if _bt:
+            BT_REPORT.extend(_bt)
         for _b in d.get("buildables", []):
             add_viewscreen_north_faces(_b)   # generated north-wall viewscreen art
             add_case_mirror_faces(_b)        # generated 2nd orientation for the military cases
@@ -237,6 +245,7 @@ def write_mod(mod_id, mod_name, description):
     # "Build first: <shell name>" instead of the raw previous-stage id (two-stage ice machines)
     from container_caps import previous_stage_names
     ig_ui.update(previous_stage_names(all_buildables))
+    ig_ui.update(bench_tools.TRANSLATIONS["IG_UI"])   # right-click "open <Category> crafting" labels
     # manifest
     json.dump({"schemaVersion":1,"definitions":manifest_defs},
               open(os.path.join(base,"42","media","KnoxBuildworks","manifest.json"),"w",encoding="utf-8"))
@@ -265,6 +274,7 @@ OUT.write("name/tooltip pass: %d renames\n   %s\n" % (len(NT_REPORT), "\n   ".jo
 OUT.write("reinforced counters added: %d %s\n" % (sum(CV_REPORT.values()), {k: v for k, v in CV_REPORT.items() if v}))
 OUT.write("fridge / freezer tier units: %d\n   %s\n" % (len(FR_REPORT), "\n   ".join(FR_REPORT)))
 OUT.write("\n".join(ROT_REPORT) + "\n")
+OUT.write("bench tools on: %s\n" % BT_REPORT)
 
 # ---- WORLD ESSENTIALS SUBMOD SYNC ----
 # Our standalone Workshop item (3828080624) is RETIRED. World Essentials ships this content as its

@@ -603,5 +603,11 @@
  "IGUI_KBW_Vanilla_kbwcb.appliances.white_industrial_freezer_65_shell": "White Industrial Freezer 65/65 Shell",
  "IGUI_KBW_Vanilla_kbwcb.appliances.white_industrial_freezer_100_shell": "White Industrial Freezer 100/100 Shell",
  "IGUI_KBW_Vanilla_kbwcb.appliances.chest_freezer_65_shell": "Chest Freezer 65 Shell",
- "IGUI_KBW_Vanilla_kbwcb.appliances.chest_freezer_100_shell": "Chest Freezer 100 Shell"
+ "IGUI_KBW_Vanilla_kbwcb.appliances.chest_freezer_100_shell": "Chest Freezer 100 Shell",
+ "IGUI_KBWCB_Bench_Carpentry": "Carpentry",
+ "IGUI_KBWCB_Bench_Electrical": "Electrical",
+ "IGUI_KBWCB_Bench_Medical": "Medical",
+ "IGUI_KBWCB_Bench_Metalworking": "Metalworking",
+ "IGUI_KBWCB_Bench_Tailoring": "Tailoring",
+ "IGUI_KBWCB_Bench_Weaponry": "Weaponry"
 }

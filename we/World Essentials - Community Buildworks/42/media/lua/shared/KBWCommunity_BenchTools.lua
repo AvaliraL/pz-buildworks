@@ -10,10 +10,54 @@ local CONFIG_KEY = "kbwcbBenchTools"
 local function log(text) print("[KBWCommunity] BenchTools: " .. tostring(text)) end
 
 -- hot path (runs for every object on every loaded square): cheapest tests first, no closures
+BT.SPRITE_CATEGORY = {
+    ["KBWCommunityFearsMirror_0"] = "Electrical",
+    ["KBWCommunityFearsMirror_1"] = "Electrical",
+    ["KBWCommunityFearsMirror_2"] = "Carpentry",
+    ["KBWCommunityFearsMirror_3"] = "Carpentry",
+    ["KBWCommunityFearsMirror_4"] = "Medical",
+    ["KBWCommunityFearsMirror_5"] = "Medical",
+    ["KBWCommunityFearsMirror_6"] = "Weaponry",
+    ["KBWCommunityFearsMirror_7"] = "Weaponry",
+    ["fears_workbenches_0"] = "Tailoring",
+    ["fears_workbenches_1"] = "Tailoring",
+    ["fears_workbenches_10"] = "Metalworking",
+    ["fears_workbenches_11"] = "Metalworking",
+    ["fears_workbenches_2"] = "Metalworking",
+    ["fears_workbenches_20"] = "Medical",
+    ["fears_workbenches_21"] = "Medical",
+    ["fears_workbenches_22"] = "Weaponry",
+    ["fears_workbenches_23"] = "Weaponry",
+    ["fears_workbenches_3"] = "Metalworking",
+    ["fears_workbenches_4"] = "Electrical",
+    ["fears_workbenches_5"] = "Electrical",
+    ["fears_workbenches_6"] = "Carpentry",
+    ["fears_workbenches_7"] = "Carpentry",
+    ["fears_workbenches_8"] = "Tailoring",
+    ["fears_workbenches_9"] = "Tailoring",
+}
+BT.CATEGORY_CFG = {
+    ["Tailoring"] = { category = "Tailoring", labelKey = "IGUI_KBWCB_Bench_Tailoring", items = { "Base.Multitool", "Base.Scissors", "Base.ScissorsBlunt", "Base.ScissorsBluntMedical", "Base.ScissorsForged", "Base.Needle", "Base.Needle_Bone", "Base.Needle_Brass", "Base.Needle_Forged", "Base.Awl", "Base.Awl_Bone", "Base.Awl_Stone", "Base.Handiknife", "Base.IcePick", "Base.SmallPunchSet", "Base.CrudeKnife", "Base.FightingKnife", "Base.FlintKnife", "Base.HandguardDagger", "Base.HuntingKnife", "Base.HuntingKnifeForged", "Base.KitchenKnife", "Base.KitchenKnifeForged", "Base.KnifeButterfly", "Base.KnifeFillet", "Base.KnifeParing", "Base.KnifePocket", "Base.KnifeSushi", "Base.LargeKnife", "Base.LargeKnife_Scrap", "Base.LongCrudeKnife", "Base.Machete", "Base.MacheteForged", "Base.MacheteKnife", "Base.Machete_Crude", "Base.RailroadSpikeKnife", "Base.SharpedStone", "Base.SmallKnife", "Base.SteakKnife", "Base.StoneKnifeLong", "Base.StraightRazor", "Base.SwitchKnife" } },
+    ["Metalworking"] = { category = "Metalworking", labelKey = "IGUI_KBWCB_Bench_Metalworking", items = { "Base.Glasses_OldWeldingGoggles", "Base.WeldingMask", "Base.Saw", "Base.SheetMetalSnips", "Base.MetalworkingPunch", "Base.HandDrill", "Base.BallPeenHammer", "Base.BallPeenHammerForged", "Base.Hammer", "Base.HammerForged", "Base.HammerStone", "Base.SmithingHammer", "Base.Ratchet", "Base.Wrench" } },
+    ["Electrical"] = { category = "Electrical", labelKey = "IGUI_KBWCB_Bench_Electrical", items = { "Base.Handiknife", "Base.Multitool", "Base.Screwdriver", "Base.Screwdriver_Improvised", "Base.Screwdriver_Old", "Base.MetalworkingPliers", "Base.Pliers" } },
+    ["Carpentry"] = { category = "Carpentry", labelKey = "IGUI_KBWCB_Bench_Carpentry", items = { "Base.CrudeSaw", "Base.GardenSaw", "Base.Saw", "Base.Saw_Flint", "Base.SmallSaw", "Base.BallPeenHammer", "Base.BallPeenHammerForged", "Base.Hammer", "Base.HammerForged", "Base.HammerStone", "Base.SmithingHammer" } },
+    ["Weaponry"] = { category = "Weaponry", labelKey = "IGUI_KBWCB_Bench_Weaponry", items = { "Base.HandDrill", "Base.Ratchet", "Base.Wrench" } },
+    ["Medical"] = { category = "Medical", labelKey = "IGUI_KBWCB_Bench_Medical", items = { "Base.CeramicMortarandPestle", "Base.MortarPestle" } },
+}
 function BT.configOf(object)
-    if not object or not instanceof(object, "IsoObject") or not object:hasModData() then return nil end
-    local cfg = object:getModData()[CONFIG_KEY]
-    if type(cfg) == "table" and type(cfg.items) == "table" then return cfg end
+    if not object or not instanceof(object, "IsoObject") then return nil end
+    if object:hasModData() then
+        local cfg = object:getModData()[CONFIG_KEY]
+        if type(cfg) == "table" and type(cfg.items) == "table" then return cfg end
+    end
+    -- A bench that was picked up and placed again is a plain moveable object: vanilla does not
+    -- carry our modData across, so identify benches by their tile as well.
+    local sprite = object:getSprite()
+    if sprite then
+        local name = sprite:getName()
+        local category = name and BT.SPRITE_CATEGORY[name] or nil
+        if category then return BT.CATEGORY_CFG[category] end
+    end
     return nil
 end
 

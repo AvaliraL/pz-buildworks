@@ -103,11 +103,11 @@ Changed buildables (same id, different definition):
 - `55_community_dirkies_secret_shelf.json`: **2** changed; what differs: tooltipKey x2, displayName x1
     - e.g. `community.dirkies.secret_shelf.d_doors_02_64`
     - e.g. `community.dirkies.secret_shelf.d_doors_02_68`
-- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.kbwcbBenchTools x6, stage.requirements x6
+- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.requirements x6, stage.kbwcbBenchTools x6
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1, subcategory x1, category x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1, category x1, subcategory x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`

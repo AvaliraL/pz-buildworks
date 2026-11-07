@@ -203,8 +203,8 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine",
       "displayName": "Commercial Ice Machine",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
       "material": "Metal",
       "materialTags": [
         "Metal"
@@ -331,8 +331,8 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_65_shell",
       "displayName": "Large Ice Machine Shell",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
       "material": "Metal",
       "materialTags": [
         "Metal"
@@ -457,8 +457,8 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_65",
       "displayName": "Large Commercial Ice Machine",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
       "material": "Metal",
       "materialTags": [
         "Metal"
@@ -589,8 +589,8 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100_shell",
       "displayName": "Industrial Ice Machine Shell",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
       "material": "Metal",
       "materialTags": [
         "Metal"
@@ -715,8 +715,8 @@
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100",
       "displayName": "Industrial Ice Machine",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
       "material": "Metal",
       "materialTags": [
         "Metal"

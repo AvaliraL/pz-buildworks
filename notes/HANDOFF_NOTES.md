@@ -67,6 +67,9 @@ Community submod, two new pack/tiledef pairs:
   tool tags is added to the craft-panel query only. All recipe variants and tool alternates resolve.
 - Same file wraps `ISHandcraftAction:getDuration`: crafting at a bench of the recipe's own category is 10% faster
   (`BT.SPEED_MULTIPLIER = 0.90`).
+- Benches are recognised by their tile as well as by `modData.kbwcbBenchTools`, so a bench that was picked up and placed again
+  (a plain moveable object; vanilla does not carry our modData across) keeps its tools. The sprite and category tables are
+  generated into the Lua from the workbench definitions.
 - `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
 - Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
   `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft

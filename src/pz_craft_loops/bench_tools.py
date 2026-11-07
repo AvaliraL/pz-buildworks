@@ -145,10 +145,21 @@ local CONFIG_KEY = "kbwcbBenchTools"
 local function log(text) print("[KBWCommunity] BenchTools: " .. tostring(text)) end
 
 -- hot path (runs for every object on every loaded square): cheapest tests first, no closures
+--@BENCH_MAPS@--
 function BT.configOf(object)
-    if not object or not instanceof(object, "IsoObject") or not object:hasModData() then return nil end
-    local cfg = object:getModData()[CONFIG_KEY]
-    if type(cfg) == "table" and type(cfg.items) == "table" then return cfg end
+    if not object or not instanceof(object, "IsoObject") then return nil end
+    if object:hasModData() then
+        local cfg = object:getModData()[CONFIG_KEY]
+        if type(cfg) == "table" and type(cfg.items) == "table" then return cfg end
+    end
+    -- A bench that was picked up and placed again is a plain moveable object: vanilla does not
+    -- carry our modData across, so identify benches by their tile as well.
+    local sprite = object:getSprite()
+    if sprite then
+        local name = sprite:getName()
+        local category = name and BT.SPRITE_CATEGORY[name] or nil
+        if category then return BT.CATEGORY_CFG[category] end
+    end
     return nil
 end
 
@@ -395,10 +406,61 @@ def _check(lua, name):
             raise RuntimeError("Kahlua-unsafe construct in %s: %s" % (name, bad))
 
 
+BENCH_DEFS = r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\56_community_fears_workbenches.json"
+
+
+def _strings(o):
+    if isinstance(o, str):
+        yield o
+    elif isinstance(o, list):
+        for x in o:
+            yield from _strings(x)
+    elif isinstance(o, dict):
+        for x in o.values():
+            yield from _strings(x)
+
+
+def _lua_str(s):
+    return '"%s"' % s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+def _compose_shared():
+    """The shared Lua with the sprite -> category and category -> config tables filled in. Benches
+    are recognised by their tile as well as by modData, so a bench that was picked up and placed
+    again (a plain moveable object, no modData) still works."""
+    import json
+    doc = json.load(open(BENCH_DEFS, encoding="utf-8"))
+    sprites = {}
+    for b in doc.get("buildables", []):
+        cfg = BENCH_TOOLS.get(b.get("id"))
+        if not cfg:
+            continue
+        for st in b.get("stages") or []:
+            for s in _strings(st.get("geometry")):
+                sprites[s] = cfg["category"]
+    lines = ["BT.SPRITE_CATEGORY = {"]
+    for s in sorted(sprites):
+        lines.append("    [%s] = %s," % (_lua_str(s), _lua_str(sprites[s])))
+    lines.append("}")
+    lines.append("BT.CATEGORY_CFG = {")
+    done = set()
+    for cfg in BENCH_TOOLS.values():
+        if cfg["category"] in done:
+            continue
+        done.add(cfg["category"])
+        items = ", ".join(_lua_str(i) for i in cfg["items"])
+        lines.append("    [%s] = { category = %s, labelKey = %s, items = { %s } }," % (
+            _lua_str(cfg["category"]), _lua_str(cfg["category"]), _lua_str(cfg["labelKey"]), items))
+    lines.append("}")
+    if not sprites:
+        raise RuntimeError("bench_tools: no bench sprites found in %s" % BENCH_DEFS)
+    return _SHARED.replace("--@BENCH_MAPS@--", "\n".join(lines))
+
+
 def write_assets(media_dir):
     """Write the shared + client Lua into <media_dir>. No item script needed (runtime uses real
     vanilla items), so the old KBWCommunity_BenchTools.txt scripts file is removed if present."""
-    for sub, name, text in (("shared", SHARED_LUA, _SHARED), ("client", CLIENT_LUA, _CLIENT)):
+    for sub, name, text in (("shared", SHARED_LUA, _compose_shared()), ("client", CLIENT_LUA, _CLIENT)):
         _check(text, name)
         p = os.path.join(media_dir, "lua", sub, name)
         os.makedirs(os.path.dirname(p), exist_ok=True)

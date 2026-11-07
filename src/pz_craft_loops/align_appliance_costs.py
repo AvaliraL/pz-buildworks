@@ -137,6 +137,9 @@ def build_freezer_tiers(doc):
     bs = doc["buildables"]
     base = next(b for b in bs if b["id"] == BASE_ID)
     base["group"] = dict(GROUP, level=1)
+    # all cold storage in one tab: KBW VE files its refrigerators under Appliances > Refrigeration,
+    # as do our fridge / freezer tiers. Shells and tiers below are copies of base, so they follow.
+    base["category"], base["subcategory"] = "Appliances", "Refrigeration"
     _skills(base["stages"][0]["requirements"], *BASE_SKILLS)
     report = ["%s: capacity 30, MW%d+E%d (alt E%d), carry weight %.1f" % (
         (BASE_ID,) + BASE_SKILLS + (_carry_weight(base_group + req.get("inputs", [])),))]

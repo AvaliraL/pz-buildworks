@@ -100,6 +100,20 @@ def _rows_for(amounts, templates):
     return out
 
 
+# (2026-08-28, user) KBW-only parts spawn far too rarely for our fridge / freezer tiers, so their
+# amounts are HALVED (round down, min 1) in build_fridge_defs and build_freezer_tiers. Vanilla
+# metal costs untouched; the compressor is already 1.
+HALVE_KBW_PARTS = ("KnoxBuildworks.InsulationFoam", "KnoxBuildworks.PlasticSheet",
+                   "KnoxBuildworks.RubberSeal", "KnoxBuildworks.RefrigerantBottle",
+                   "KnoxBuildworks.ThinCopperPipe")   # KBW item, not vanilla metal (user)
+# Also applied to the ice machines (build_freezer_tiers), incl. the base 30 (own group below).
+
+
+def _halve_kbw(amounts):
+    """Halve the KBW parts: round DOWN, minimum 1 (user)."""
+    return {k: (max(1, v // 2) if k in HALVE_KBW_PARTS else v) for k, v in amounts.items()}
+
+
 def _carry_weight(entries):
     w = TOOLS_WEIGHT
     for e in entries:
@@ -132,6 +146,16 @@ def build_freezer_tiers(doc):
     # drop groups from the single-stage version (freezer65 / freezer100) if present
     for old in ("kbwcb.appliance.freezer65", "kbwcb.appliance.freezer100"):
         doc["materialGroups"].pop(old, None)
+    # base 30: own group = KBW chest-freezer recipe with the KBW parts halved (user 2026-08-28)
+    base30 = {}
+    for row in templates:
+        if row.get("role") != "tool":
+            base30[row["items"][0]] = row.get("uses", row.get("amount", 1))
+    doc["materialGroups"]["kbwcb.appliance.freezer30"] = _rows_for(_halve_kbw(base30), templates)
+    br = base["stages"][0]["requirements"]
+    br["materials"], br["inputs"] = "kbwcb.appliance.freezer30", []
+    report.append("%s: own group kbwcb.appliance.freezer30 (KBW parts halved), carry weight %.1f" % (
+        BASE_ID, _carry_weight(doc["materialGroups"]["kbwcb.appliance.freezer30"])))
 
     def put(t, after_id):
         i = next((k for k, b in enumerate(bs) if b["id"] == t["id"]), None)
@@ -159,7 +183,7 @@ def build_freezer_tiers(doc):
         st["object"] = dict(SHELL_OBJECT)
         st.pop("container", None)
         gname = "kbwcb.appliance.iceshell%d" % cap
-        doc["materialGroups"][gname] = _rows_for(samounts, templates)
+        doc["materialGroups"][gname] = _rows_for(_halve_kbw(samounts), templates)
         r = copy.deepcopy(req)
         r["materials"], r["inputs"] = gname, []
         r["skills"] = {"MetalWelding": mw}
@@ -176,7 +200,7 @@ def build_freezer_tiers(doc):
         t["group"] = dict(GROUP, level=level + 1)
         t["construction"] = dict(copy.deepcopy(cons), xp=uxp)          # time stays 200
         gname = "kbwcb.appliance.freezer%d" % cap
-        doc["materialGroups"][gname] = _rows_for(uamounts, templates)
+        doc["materialGroups"][gname] = _rows_for(_halve_kbw(uamounts), templates)
         r = copy.deepcopy(req)
         r["materials"], r["inputs"] = gname, []
         _skills(r, mw, el, alt)
@@ -346,7 +370,7 @@ def build_fridge_defs():
             gname = "kbwcb.appliance.%s_%d" % (stem, caps[0])
             if single is not None:   # tier 1: one build
                 amounts = ice30 if single == "ICE30" else single
-                mg[gname] = _rows_for(amounts, templates)
+                mg[gname] = _rows_for(_halve_kbw(amounts), templates)
                 st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
                 u["construction"] = copy.deepcopy(u["construction"])   # KBW's own (time 200) and XP
                 out.append(grouped(u))
@@ -369,11 +393,11 @@ def build_fridge_defs():
             sst["object"] = dict(SHELL_OBJECT)
             sst.pop("container", None)
             sg = gname + "_shell"
-            mg[sg] = _rows_for(shell_amt, templates)
+            mg[sg] = _rows_for(_halve_kbw(shell_amt), templates)
             sst["requirements"] = requirements(base_req, sg, {"MetalWelding": mw}, mw, alt)
             out.append(grouped(sh))
             # ---- stage 2: the unit, built on its shell
-            mg[gname] = _rows_for(unit_amt, templates)
+            mg[gname] = _rows_for(_halve_kbw(unit_amt), templates)
             st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
             st["previousStage"] = sid
             u["construction"] = dict(copy.deepcopy(u["construction"]), xp=unit_xp)

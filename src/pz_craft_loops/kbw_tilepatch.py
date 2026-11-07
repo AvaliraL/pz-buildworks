@@ -166,6 +166,36 @@ def _load_community_tilesets():
 
 _VANILLA_TILES = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\newtiledefinitions.tiles"
 
+# ---- TikiTown (Drazion's tilepack) patches: opt-in via tikitown=True (the patch then also copies
+# TikiTown tilesets and must load after tikitown_tiles). Same group / override formats as above.
+_TIKITOWN_TILES = (r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3046728955\mods"
+                   r"\Drazions Tile Pack\common\media\tikitown_tiles.tiles")
+_TT_PATCH_GROUPS = [
+    # tterika_02 footlocker (4-7): stackable 6 high (user). Surface stays the tile's 15
+    # (5*15 + 15 = 90 <= 96, a 7th would be 105). IsTableTop removed: vanilla never stacks onto a
+    # square that has IsTableTop.
+    ("furniture_storage_tterika_02", {4, 5, 6, 7},
+     [(b"IsStackable", b""), (b"IsTable", b"")], {b"IsTableTop"}),
+    # tterika_02 small cabinet / small military lockers (0-3, 12-15, 20-23): stack 2 high (user).
+    # Their Surface is already 48: 48 + 48 = 96 allows a 2nd, a 3rd would be 144.
+    ("furniture_storage_tterika_02", set(range(0, 4)) | set(range(12, 16)) | set(range(20, 24)),
+     [(b"IsStackable", b""), (b"IsTable", b"")], set()),
+]
+# tterika_02 freestanding lockers: idx 12-15, 20-47 are MoveType=WallObject in the pack and 24-47
+# carry Facing E,S,W,N against the S,E,N,W art. {sprite: {key: value}} (also used by rotation_fix).
+TT_LOCKER_OVERRIDES = {
+    "furniture_storage_tterika_02_%d" % i: {"MoveType": "Object", "Facing": ("S", "E", "N", "W")[i % 4]}
+    for i in list(range(12, 16)) + list(range(20, 48))
+}
+
+
+def _tt_override_list():
+    om = {}
+    for spr, kv in TT_LOCKER_OVERRIDES.items():
+        sh, _, i = spr.rpartition("_")
+        om.setdefault(sh, {})[int(i)] = [(k.encode(), v.encode()) for k, v in kv.items()]
+    return list(om.items())
+
 # Value OVERRIDES: replace an existing property's value (the patch merge overrides values; it
 # only can't remove keys). (tileset, {index: [(key, value), ...]})
 _PATCH_OVERRIDES = [
@@ -237,14 +267,27 @@ def _vanilla_copy_groups():
     return groups
 
 
-def write_community_tilepatch(dest_path):
-    """Emit the multi-tileset .patch.tiles with all _PATCH_GROUPS applied. Returns a report dict."""
+def write_community_tilepatch(dest_path, tikitown=False):
+    """Emit the multi-tileset .patch.tiles with all _PATCH_GROUPS applied. Returns a report dict.
+    tikitown=True also patches TikiTown sheets (_TT_PATCH_GROUPS / TT_LOCKER_OVERRIDES); only for
+    builds that load after tikitown_tiles."""
     ver, tilesets = _load_community_tilesets()
+    overrides = list(_PATCH_OVERRIDES)
+    groups_in = _PATCH_GROUPS + _vanilla_copy_groups() + _sheet_copy_groups()
+    if tikitown:
+        _v, tts, _o = _parse(open(_TIKITOWN_TILES, "rb").read())
+        for n, t in tts.items():
+            tilesets.setdefault(n, t)
+        groups_in = groups_in + _TT_PATCH_GROUPS
+        overrides += _tt_override_list()
 
     # group patches by tileset so each patched sheet is emitted once
     by_sheet = {}
-    for tsname, idxs, add, remove in _PATCH_GROUPS + _vanilla_copy_groups() + _sheet_copy_groups():
+    for tsname, idxs, add, remove in groups_in:
         by_sheet.setdefault(tsname, []).append((idxs, add, remove))
+    if tikitown:                            # TikiTown override-only sheets still need emitting
+        for otsname, _om in _tt_override_list():
+            by_sheet.setdefault(otsname, [])
 
     report = {}
     emit = []
@@ -266,7 +309,7 @@ def write_community_tilepatch(dest_path):
                     if k not in have:
                         tiles[idx].append((k, v))
                 touched.append(idx)
-        for otsname, omap in _PATCH_OVERRIDES:
+        for otsname, omap in overrides:
             if otsname != tsname:
                 continue
             for idx, kvs in omap.items():
@@ -1554,10 +1597,11 @@ def write_destroy_lua(dest_path):
     open(dest_path, "w", encoding="utf-8").write(_DESTROY_LUA)
 
 
-def write_removal_lua(dest_path):
-    """Emit the runtime removal script for every sprite in _PATCH_GROUPS that has removals."""
+def write_removal_lua(dest_path, tikitown=False):
+    """Emit the runtime removal script for every sprite in _PATCH_GROUPS that has removals
+    (plus _TT_PATCH_GROUPS when tikitown=True)."""
     rows = []
-    for tsname, idxs, _add, remove in _PATCH_GROUPS:
+    for tsname, idxs, _add, remove in _PATCH_GROUPS + (_TT_PATCH_GROUPS if tikitown else []):
         if not remove:
             continue
         keys = ", ".join('"%s"' % (k.decode() if isinstance(k, bytes) else k) for k in sorted(remove))
@@ -1572,3 +1616,165 @@ if __name__ == "__main__":
     rep = write_community_tilepatch(r"c:\Users\josep\Kiro\pz_craft_loops\_kbw_tilepatch_selftest.tiles")
     print(rep)
     print("removal rows:", write_removal_lua(r"c:\Users\josep\Kiro\pz_craft_loops\_kbw_tilefixes_selftest.lua"))
+
+
+# ---------------------------------------------------------------------------------------------
+# ORANGE COMFY COUCH (generated, 2026-08-28): the sofaking sheet has an ORANGE corner but the
+# couches sheet has no orange straight couch, so the orange L-shaped couch had no end pieces.
+# We recolour the Pink Comfy couch's 8 tiles (d_furniture_couches_01_48..55) to orange. The pink
+# and orange corner tiles (sofaking 44..47 / 52..55) are the same shapes in two colours, so the
+# pink->orange colour mapping is LEARNED from those pixel pairs (hue shift + per-channel S/V
+# curves) and applied to the couch tiles. Generated tileset = same index order as the source
+# (j = source index - 48), props copied from the pink tiles with GroupName "Orange Comfy".
+ORANGE_COUCH_TILESET = "KBWCommunityLCouch"      # holds ALL four colours' L-couch end tiles
+ORANGE_COUCH_PACK = "KBWCommunityLCouch"
+ORANGE_COUCH_TILEDEF_NAME = "kbwcommunity_lcouch"
+L_COUCH_END_SOURCES = [("Teal", 0), ("Purple", 16), ("Pink", 48), ("Orange", 48)]  # (colour, src base)
+ORANGE_COUCH_TILEDEF_ID = 8178      # free (8170-8199 checked across installed mods; 8181-8187 ours)
+_OC_SRC_COUCH = [48 + j for j in range(8)]          # Pink Comfy couch tiles
+_OC_PINK_CORNER = [44 + j for j in range(4)]
+_OC_ORANGE_CORNER = [52 + j for j in range(4)]
+_OC_BINS = 64
+
+
+def _oc_build_recolor(pink_imgs, orange_imgs):
+    """Learn pink -> orange from aligned tile pairs. Returns f(rgb tuple) -> rgb tuple."""
+    import colorsys, math
+    dh_s = dh_c = 0.0
+    sb = [[0.0, 0] for _ in range(_OC_BINS)]
+    vb = [[0.0, 0] for _ in range(_OC_BINS)]
+    pairs = 0
+    for a, b in zip(pink_imgs, orange_imgs):
+        pa, pb = a.load(), b.load()
+        for y in range(a.height):
+            for x in range(a.width):
+                p, q = pa[x, y], pb[x, y]
+                if p[3] < 200 or q[3] < 200:
+                    continue
+                hp, sp, vp = colorsys.rgb_to_hsv(p[0] / 255., p[1] / 255., p[2] / 255.)
+                ho, so, vo = colorsys.rgb_to_hsv(q[0] / 255., q[1] / 255., q[2] / 255.)
+                d = (ho - hp) * 2 * math.pi
+                dh_s += math.sin(d); dh_c += math.cos(d)
+                i = min(_OC_BINS - 1, int(sp * _OC_BINS)); sb[i][0] += so; sb[i][1] += 1
+                i = min(_OC_BINS - 1, int(vp * _OC_BINS)); vb[i][0] += vo; vb[i][1] += 1
+                pairs += 1
+    if pairs < 1000:
+        raise RuntimeError("orange recolor: only %d aligned pixel pairs" % pairs)
+    dh = math.atan2(dh_s, dh_c) / (2 * math.pi)
+
+    def table(bins):
+        pts = [((i + 0.5) / _OC_BINS, s / n) for i, (s, n) in enumerate(bins) if n >= 20]
+        def f(x):
+            if x <= pts[0][0]:
+                return pts[0][1] * (x / pts[0][0]) if pts[0][0] else pts[0][1]
+            for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+                if x <= x1:
+                    return y0 + (y1 - y0) * (x - x0) / (x1 - x0)
+            return pts[-1][1]
+        return f
+    fs, fv = table(sb), table(vb)
+
+    def recolor(rgb):
+        h, s, v = colorsys.rgb_to_hsv(rgb[0] / 255., rgb[1] / 255., rgb[2] / 255.)
+        r, g, bl = colorsys.hsv_to_rgb((h + dh) % 1.0, min(1., max(0., fs(s))), min(1., max(0., fv(v))))
+        return (int(round(r * 255)), int(round(g * 255)), int(round(bl * 255)))
+    return recolor
+
+
+def _oc_apply(img, recolor):
+    out = img.copy()
+    px = out.load()
+    for y in range(out.height):
+        for x in range(out.width):
+            p = px[x, y]
+            if p[3] > 0:
+                r, g, b = recolor(p[:3])
+                px[x, y] = (r, g, b, p[3])
+    return out
+
+
+def orange_couch_tile_name(j):
+    return "%s_%d" % (ORANGE_COUCH_TILESET, j)
+
+
+def write_orange_couch_assets(media_dir, check=None):
+    """Recoloured Orange Comfy couch tiles: texture pack + tiledef in <media_dir>.
+    check: optional dict filled with the fit error on the corner pairs (mean abs RGB diff)."""
+    from PIL import Image
+    cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_orangecouch")
+    names = {"d_furniture_couches_01_%d" % (b + j) for _c, b in L_COUCH_END_SOURCES for j in range(8)}
+    names |= {"d_location_sofaking_%d" % i for i in _OC_PINK_CORNER + _OC_ORANGE_CORNER}
+    _extract_from_pack(_DTP_PACK, names, cache)
+
+    def load(n):
+        return Image.open(os.path.join(cache, n + ".png")).convert("RGBA")
+    pink_c = [load("d_location_sofaking_%d" % i) for i in _OC_PINK_CORNER]
+    orng_c = [load("d_location_sofaking_%d" % i) for i in _OC_ORANGE_CORNER]
+    recolor = _oc_build_recolor(pink_c, orng_c)
+
+    if check is not None:       # how well does the learned mapping reproduce the real orange corner
+        tot = n = 0
+        for a, b in zip(pink_c, orng_c):
+            ra = _oc_apply(a, recolor).load(); pb = b.load()
+            for y in range(b.height):
+                for x in range(b.width):
+                    if pb[x, y][3] > 200 and ra[x, y][3] > 200:
+                        tot += sum(abs(ra[x, y][c] - pb[x, y][c]) for c in range(3)) / 3.0
+                        n += 1
+        check["mean_abs_rgb_err"] = round(tot / max(1, n), 2)
+
+    _ver, tilesets = _load_community_tilesets()
+    src = tilesets[b"d_furniture_couches_01"]
+    # 32 tiles = 4 colours x the 8 Comfy end tiles (index = colour*8 + j). Teal / purple / pink are
+    # straight copies, orange is the recolour. SpriteGridPos is REMOVED and GroupName made unique
+    # per tile: the originals belong to a 2-tile couch sprite grid, so as L-couch ends the engine
+    # showed the full 2-tile ghost and refused to pick them up (the other half was never there).
+    tiles, props = [], []
+    for ci, (cname, cbase) in enumerate(L_COUCH_END_SOURCES):
+        for j in range(8):
+            i = cbase + j
+            img = load("d_furniture_couches_01_%d" % i)
+            if cname == "Orange":
+                img = _oc_apply(img, recolor)
+            tiles.append((orange_couch_tile_name(ci * 8 + j), img))
+            p = []
+            for k, v in src[6][i]:
+                if k == b"SpriteGridPos":
+                    continue
+                p.append((k, ("%s L-Couch End %d" % (cname, j)).encode()) if k == b"GroupName" else (k, v))
+            props.append(p)
+    n = _write_pack(os.path.join(media_dir, "texturepacks", ORANGE_COUCH_PACK + ".pack"),
+                    ORANGE_COUCH_PACK + "0", tiles)
+    cols, rows = 8, 4
+    ts = [ORANGE_COUCH_TILESET.encode(), (ORANGE_COUCH_TILESET + ".png").encode(), cols, rows, 1,
+          cols * rows, props]
+    blob = b"tdef" + struct.pack("<ii", 1, 1) + _ser_tileset(ts)
+    _parse(blob)
+    open(os.path.join(media_dir, ORANGE_COUCH_TILEDEF_NAME + ".tiles"), "wb").write(blob)
+    return n
+
+
+# ---------------------------------------------------------------------------------------------
+# SOFAKING DEPTH MAP OVERRIDE (2026-08-28): in DEPTH_d_location_sofaking.png only the TEAL (28-31)
+# and ORANGE (52-55) corner cells carry depth data; purple (36-39) and pink (44-47) carry none, and
+# the straight couches have none at all. Purple / pink L couches were fine in game, teal looked
+# off, so we ship the same sheet with those two colours' cells cleared (consistent with the
+# confirmed colours). Written to <common_media_dir>/depthmaps (same file name as the pack's).
+SOFAKING_DEPTH_SRC = (r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3628736763\mods"
+                      r"\CommunityTilePack\common\media\depthmaps\DEPTH_d_location_sofaking.png")
+SOFAKING_CLEAR_DEPTH = list(range(28, 32)) + list(range(52, 56))
+
+
+def write_sofaking_depth_override(common_media_dir):
+    from PIL import Image
+    im = Image.open(SOFAKING_DEPTH_SRC).convert("RGBA")
+    cleared = 0
+    for i in SOFAKING_CLEAR_DEPTH:
+        x, y = (i % 8) * 128, (i // 8) * 256
+        box = (x, y, x + 128, y + 256)
+        if im.crop(box).getbbox():
+            cleared += 1
+        im.paste((0, 0, 0, 0), box)
+    os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
+    im.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_d_location_sofaking.png"))
+    return cleared

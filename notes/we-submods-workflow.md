@@ -31,7 +31,7 @@ mod ids: `World Essentials - Community Buildworks` and `World Essentials - TikiT
   filenames as WE's runtime files. Never enable it together with World Essentials.
 
 ## Hand-offs go through git (since 2026-11-02), not zips
-- Repo: `c:\Users\josep\Kiro\pz-buildworks` (private GitHub). `we/` = drop-in WE layout, `src/` = our
+- Repo: `c:\Users\josep\Kiro\pz-buildworks` (public GitHub: https://github.com/AvaliraL/pz-buildworks). `we/` = drop-in WE layout, `src/` = our
   builders + sources, `notes/`.
 - Git = GitHub Desktop's bundled git (not on PATH; the folder changes when Desktop updates):
   `(Get-ChildItem "$env:LOCALAPPDATA\GitHubDesktop" -Directory -Filter 'app-*' | Sort-Object Name -Descending | Select-Object -First 1).FullName + '\resources\app\git\cmd\git.exe'`

@@ -24,6 +24,9 @@ SRC_SCRIPTS = [
     "_vendor_we_dylan.py", "_refresh_upstream.py", "_run_all.py", "patch_we_tooltips.py",
     "_audit_faces.py", "classify_wall_pieces.py", "gen_wall_full.py", "export_repo.py",
     "align_appliance_costs.py", "counter_variants.py", "container_caps.py", "rotation_fix.py",
+    # sheet generators + bench tools (deliverables are built from these)
+    "dirkies_couches.py", "dirkies_bedroom.py", "dirkies_stairs.py", "tikitown_tterika_storage.py",
+    "bench_tools.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",

@@ -30,6 +30,8 @@ from kbw_tilepatch import (write_community_tilepatch, write_removal_lua, write_t
                            TILEPATCH_NAME as _TV_PATCH_NAME, TILEPATCH_ID as _TV_PATCH_ID)
 from kbw_tilepatch import (write_cases_assets, add_case_mirror_faces,
                            CASES_PACK, CASES_TILEDEF_NAME, CASES_TILEDEF_ID)
+from kbw_tilepatch import (write_orange_couch_assets, write_sofaking_depth_override, ORANGE_COUCH_PACK,
+                           ORANGE_COUCH_TILEDEF_NAME, ORANGE_COUCH_TILEDEF_ID)
 from kbw_tilepatch import (write_iceshell_assets, ICESHELL_PACK, ICESHELL_TILEDEF_NAME,
                            ICESHELL_TILEDEF_ID)
 _write_tv_tiledef = write_community_tilepatch   # shared multi-group tile-property patch
@@ -75,6 +77,13 @@ PACK_OF = {
     "58": "Fears",
     # Dirkies fencing_ddd_01/02 (incl. two-storey louvered fences, z+1 top layer).
     "59": "Dirkies",
+    # Dirkies stairs (fixtures_stairs_ddd_01): 7 stairs, E/W + N/S orientations, 3 with pillars.
+    "60": "Dirkies",
+    # Dirkies bedroom (d_furniture_bedroom_01..05): beds, dressers, bookcases (75 pieces).
+    "61": "Dirkies",
+    # Dirkies couches (d_furniture_couches_01 = 27 couches) + corner couches
+    # (d_location_sofaking = 4 colors x 4-facing 90-degree corners for L/C-shapes).
+    "62": "Dirkies",
 }
 # Completed = verified in-game; everything else -> In Progress.
 # Whole sheets confirmed complete:
@@ -92,12 +101,17 @@ COMPLETED_SHEETS = {"21","22","23","24","25","26","27","28","29","31","32","33",
                     "57",   # TK kitchen misc (slicer, wall shelf, ice machine, fryer, coffee makers) confirmed
                     "43",   # Dirkies walls confirmed (2026-08-28)
                     "46",   # Dirkies doors + gates confirmed (2026-08-28)
-                    "59"}   # Dirkies fencing confirmed, except the broken louvered fence (see below)
+                    "59",   # Dirkies fencing confirmed, except the broken louvered fence (see below)
+                    # Dirkies bedroom (beds/furniture/storage) + couches confirmed (2026-08-28);
+                    # the 4 sofaking corner couches are excluded below (not shipping as-is)
+                    "61", "62"}
 # -> In Progress by omission: "30" (shelving), future sheets.
 
 # PER-PIECE status overrides (finer than sheet-level), matched by buildable id PREFIX.
 # Used when a sheet is partially confirmed (e.g. Future Room sheet 50).
 COMPLETED_ID_PREFIXES = {
+    "community.dirkies.stairs.wood_",            # all 3 wooden stairs (trims) confirmed (2026-08-28)
+    "community.dirkies.stairs.",                 # all 7 stairs: step tiles confirmed; pillars removed (2026-08-28)
     "community.dylan.futureroom.bed",            # Sci-Fi Floor Bed (2-tile) confirmed
     "community.dylan.futureroom.ctable",         # Sci-Fi Laptop Table confirmed
     "community.dylan.futureroom.lowtable",       # Sci-Fi Coffee Table confirmed
@@ -135,6 +149,7 @@ COMPLETED_IDS = {
 } | {_DC + "edit_ddd_RUS_fixtures_counters_03_%d" % i for c in range(2, 60, 8) for i in (c, c + 1)}
 # Pieces explicitly NOT yet confirmed (force In Progress even if a sibling on the sheet is done):
 INPROGRESS_ID_PREFIXES = {
+    # (couches: standalone corner pieces dropped, L couches confirmed -> nothing held back)
 }
 
 def piece_status(bid, sheet_status):
@@ -143,6 +158,10 @@ def piece_status(bid, sheet_status):
         if bid and bid.startswith(pre):
             return "In Progress"
     if bid in COMPLETED_IDS:
+        return "Completed"
+    # every reinforced counter variant (counter_variants.py) confirmed in game (user, 2026-08-28),
+    # incl. Steel Medical Counter with Shelves (Reinforced)
+    if bid and bid.endswith(".reinforced"):
         return "Completed"
     for pre in COMPLETED_ID_PREFIXES:
         if bid and bid.startswith(pre):
@@ -157,6 +176,8 @@ TT_FILES = [
     "29_tikitown_garages.json","30_tikitown_shelving.json","31_tikitown_newburbs_roofs_accurate.json",
     "32_tikitown_newburbs_flags.json","33_tikitown_newburbs_doors_accurate.json",
     "34_tikitown_newburbs_windows_accurate.json",
+    "35_tikitown_newburbs_trim.json",
+    "36_tikitown_tterika_storage.json",
 ]
 
 MOD_ID   = "TikiTownCommunityTest"
@@ -166,6 +187,19 @@ TEST_TR_DIR = r"C:\Users\josep\Zomboid\Workshop\TikiTownTestBundle\Contents\mods
 UPLOAD_ROOT = r"C:\Users\josep\Zomboid\Workshop"
 PROJECT_MIRROR = r"c:\Users\josep\Kiro\zomboid\tikitown\merged_test_upload"
 LOG = r"c:\Users\josep\Kiro\pz_craft_loops\_mergedtest.txt"
+
+# The sheet-number namespace is shared between TikiTown and Community sources, so a few prefixes
+# collide (e.g. "35" = Dirkies counters in Community, but TikiTown's 35 is Newburbs trim). For
+# TikiTown files, resolve the pack here FIRST; only fall back to the shared PACK_OF otherwise.
+TT_PACK_OF = {
+    "27": "TikiTown Newburbs", "28": "TikiTown Newburbs", "31": "TikiTown Newburbs",
+    "32": "TikiTown Newburbs", "33": "TikiTown Newburbs", "34": "TikiTown Newburbs",
+    "35": "TikiTown Newburbs",  # 35_tikitown_newburbs_trim.json (NOT Dirkies counters)
+    "36": "TikiTown",           # 36_tikitown_tterika_storage.json (lockers / footlocker)
+}
+# TikiTown sheets confirmed in-game. Newburbs trim (35) marked Completed by user (2026-08-28).
+TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34","35",
+                "30", "36"}   # shelving + tterika storage confirmed (user, 2026-08-28)
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -179,6 +213,7 @@ def generic_type(b):
     if ctype == "counter" or "counter" in subl:         return "Counters"
     if cat == "Walls and Wall Finishes":                return "Walls"
     if cat == "Roofing":                                return "Roofs"
+    if cat == "Stairs":                                 return "Stairs"
     # KBW Durability classes a wall-placed piece as a fence only if category is Fencing or the
     # subcategory contains "fence" ("Fencing" does not), so keep "Fences" here or test-bundle
     # fences get full wall health (450 base) instead of fence health (250 base).
@@ -195,6 +230,7 @@ def generic_type(b):
         if "bed" in subl:   return "Beds"
         if "desk" in subl:  return "Desks"
         if "table" in subl: return "Tables"
+        if "couch" in subl or "seat" in subl or "sofa" in subl: return "Couches"
         if "storage" in subl or "shelv" in subl or "bookshelf" in subl: return "Storage"
         return "Furniture"
     return cat or "Other"
@@ -206,33 +242,13 @@ def load_sources():
         if not os.path.isfile(p):
             continue
         k = sheet_key(fn)
-        yield PACK_OF.get(k, "TikiTown"), ("Completed" if k in COMPLETED_SHEETS else "In Progress"), fn, json.load(open(p, encoding="utf-8"))
+        pack = TT_PACK_OF.get(k) or PACK_OF.get(k, "TikiTown")
+        status = "Completed" if k in TT_COMPLETED else "In Progress"
+        yield pack, status, fn, json.load(open(p, encoding="utf-8"))
     for p in sorted(glob.glob(os.path.join(COMM, "*.json"))):
         fn = os.path.basename(p)
         k = sheet_key(fn)
         yield PACK_OF.get(k, "Community"), ("Completed" if k in COMPLETED_SHEETS else "In Progress"), fn, json.load(open(p, encoding="utf-8"))
-
-def _test_fridge_100():
-    """KBW VE Plain Refrigerator copy with fridge 100 / freezer 100 via kbwcbContainerCapacity."""
-    ve = os.path.join(r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3772269882\mods",
-                      "KnoxBuildworks_Vanilla_Expanded", "42", "media", "KnoxBuildworks", "definitions", "appliances")
-    src = json.load(open(os.path.join(ve, "refrigeration.json"), encoding="utf-8-sig"))
-    tmpl = json.load(open(os.path.join(ve, "cooking.json"), encoding="utf-8-sig"))["templates"]["kbwve.appliance.metal"]
-    b = json.loads(json.dumps(next(x for x in src["buildables"] if x["id"].endswith("plain_refrigerator"))))
-    for k, v in tmpl.items():          # inline the template instead of relying on cross-file extends
-        b.setdefault(k, json.loads(json.dumps(v)))
-    b.pop("extends", None); b.pop("group", None)
-    b["id"] = "kbwcb.test.fridge_100"
-    b["translationKey"] = "IGUI_KBWCB_Test_Fridge100"
-    b["displayName"] = "TEST Refrigerator (Fridge 100 / Freezer 100)"
-    b["tooltipKey"] = "Tooltip_KBW_Shared_Refrigerator"
-    b["category"] = "Community - In Progress"
-    b["subcategory"] = "Test"
-    st = b["stages"][0]
-    st["allowSpriteReuse"] = True
-    st["kbwcbContainerCapacity"] = {"fridge": 100, "freezer": 100}
-    return b
-
 
 def main():
     up = os.path.join(UPLOAD_ROOT, MOD_ID)
@@ -259,6 +275,8 @@ def main():
         "tiledef=%s %d"%(FEARS_TILEDEF_NAME, FEARS_TILEDEF_ID),
         "pack=%s"%CASES_PACK,                              # generated military-case 2nd orientation
         "tiledef=%s %d"%(CASES_TILEDEF_NAME, CASES_TILEDEF_ID),
+        "pack=%s"%ORANGE_COUCH_PACK,                       # generated orange Comfy couch ends (L couch)
+        "tiledef=%s %d"%(ORANGE_COUCH_TILEDEF_NAME, ORANGE_COUCH_TILEDEF_ID),
         "pack=%s"%ICESHELL_PACK,                           # generated inert ice-machine shell (stage 1)
         "tiledef=%s %d"%(ICESHELL_TILEDEF_NAME, ICESHELL_TILEDEF_ID),
     ]
@@ -269,20 +287,32 @@ def main():
     # depth maps + tileGeometry load only from <mod>/common/media
     write_fears_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
     write_cases_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
+    _oc_check = {}
+    write_orange_couch_assets(_media, _oc_check)
+    print("orange couch recolor check:", _oc_check)
+    write_sofaking_depth_override(os.path.join(os.path.dirname(mod42), "common", "media"))
     # inert shell art (two-stage appliances); the test bundle also gets the fridge / freezer shells
     write_iceshell_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"), include_fridges=True)
-    _write_tv_tiledef(os.path.join(_media, _TV_PATCH_NAME+".tiles"))
+    # tikitown=True: the bundle loads after tikitown_tiles, so it also patches TikiTown sheets
+    # (tterika_02 stacking + freestanding lockers)
+    _write_tv_tiledef(os.path.join(_media, _TV_PATCH_NAME+".tiles"), tikitown=True)
     # runtime removal of collision flags the additive .patch.tiles merge cannot remove
-    write_removal_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TileFixes.lua"))
+    write_removal_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TileFixes.lua"), tikitown=True)
     # EXPERIMENT: our KBW stage properties (container capacities by type, multi-tile replace)
     from container_caps import write_container_caps_lua, LUA_NAME as _CC_LUA
     write_container_caps_lua(os.path.join(_media, "lua", "shared", _CC_LUA))
+    # EXPERIMENT: workbench built-in tools (Tailoring Workbench needle) + bench craft menu
+    import bench_tools
+    bench_tools.write_assets(_media)
     # build-menu capacity text for those properties (client only)
     from container_caps import write_stage_info_lua, INFO_LUA_NAME as _SI_LUA
     write_stage_info_lua(os.path.join(_media, "lua", "client", _SI_LUA))
     # pick up / place keeps our builds' storage + name (shared: runs where the moveable action runs)
     from container_caps import write_pickup_lua, PICKUP_LUA_NAME as _PU_LUA
     write_pickup_lua(os.path.join(_media, "lua", "shared", _PU_LUA))
+    # multi-tile builds pick up / smash as one piece (all tiles of a KBW group)
+    from container_caps import write_multipart_lua, MULTIPART_LUA_NAME as _MP_LUA
+    write_multipart_lua(os.path.join(_media, "lua", "shared", _MP_LUA))
     write_tv_screen_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TVScreens.lua"))
     # sledgehammer destroy for our builds (vanilla blocks d_/e_/f_ sprites)
     write_destroy_lua(os.path.join(_media, "lua", "client", "KBWCommunity_Destroyable.lua"))
@@ -333,11 +363,9 @@ def main():
             merged.append(nb)
             cat_counts[top]+=1; sub_counts[nb["subcategory"]]+=1; per_pack[pack]+=1
 
-    # EXPERIMENT (2026-11-02, test bundle only): a Plain Refrigerator copy using our
-    # kbwcbContainerCapacity stage property (container_caps.py) to set BOTH fridge and freezer.
-    merged.append(_test_fridge_100())
-    cat_counts[merged[-1]["category"]]+=1
-    # EXPERIMENT (test bundle only): fridge / freezer tiers (1 tile; tiers 2-3 two-stage)
+    # (2026-08-28) the TEST Refrigerator (Fridge 100 / Freezer 100) experiment was dropped (user):
+    # no longer needed.
+    # Fridge / freezer tiers (1 tile; tiers 2-3 two-stage) -- confirmed in game (user, 2026-08-28)
     from align_appliance_costs import build_fridge_defs
     _fr, _fr_groups, _fr_tips, _fr_rep = build_fridge_defs()
     for _gk, _gv in _fr_groups.items():
@@ -349,10 +377,12 @@ def main():
         if _b["id"] in seen:
             raise RuntimeError("duplicate buildable id %s" % _b["id"])
         seen.add(_b["id"])
-        _b["category"] = "Community - In Progress"
-        _b["subcategory"] = "Test - Fridges"
+        _b["category"] = "Community - Completed"
+        _b["subcategory"] = "Fridges"
         merged.append(_b); cat_counts[_b["category"]] += 1
     print("\n".join(_fr_rep))
+    # EXPERIMENT: built-in bench tools on the configured workbenches (bench_tools.py)
+    print("bench tools on: %s" % bench_tools.apply_to_buildables(merged))
     # moveable rotation for pieces whose tile pack groups the facings badly (rotation_fix.py)
     import rotation_fix
     _rot, _rot_rep = rotation_fix.build_offsets(merged, rotation_fix.load_sheets())
@@ -394,6 +424,9 @@ def main():
     _prev_names = previous_stage_names(merged)
     _ig.update(_prev_names)
     print("build-first names: %d" % len(_prev_names))
+    _ig.update(bench_tools.TRANSLATIONS["IG_UI"])
+    json.dump(bench_tools.TRANSLATIONS["ItemName"], open(os.path.join(tr_dir, "ItemName.json"), "w", encoding="utf-8"),
+              indent=1, ensure_ascii=False)
     json.dump(_ig, open(_ig_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("test translations: added %d, updated %d names" % (_added, _changed))
     # shared tooltip keys: never ship KBW-owned keys, generic text for ours (see tooltip_fix.py)

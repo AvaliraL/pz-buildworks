@@ -114,6 +114,9 @@ TEXT = {
     "Counter": "Counter with storage underneath.",
     "CounterReinforced": "Reinforced counter with large storage underneath.",
     "UpperCabinetReinforced": "Reinforced wall-mounted cabinet with large storage. Can hang above a counter.",
+    "StorageReinforced": "Reinforced metal storage with a large capacity.",
+    "Locker": "Metal locker for storage.",
+    "Chest": "Small storage chest.",
     "UpperCabinet": "Wall-mounted cabinet. Can hang above a counter.",
     "BarCounter": "Bar counter with storage underneath.",
     "Pallet": "Pallet of goods. Can be used as storage.",
@@ -198,11 +201,18 @@ def piece_type(b):
         return TYPE_BY_ID[bid], ""
     if bid.endswith(".reinforced"):          # counter_variants.py: military-crate-cost counters
         n = b.get("displayName") or ""
+        if "reinforce" in (b.get("tags") or []):     # opt-in non-counter containers (lockers etc.)
+            return "StorageReinforced", ""
         return ("UpperCabinetReinforced" if ("Upper Cabinet" in n or "Wall Cupboard" in n)
                 else "CounterReinforced"), ""
     sub, cat = b.get("subcategory") or "", b.get("category") or ""
     n = (b.get("displayName") or "").lower()
     pc = b.get("pieceClass") or ""
+    if "reinforce" in (b.get("tags") or []):     # tterika storage (36_*): real lockers / chests
+        if sub == "Chests":
+            return "Chest", ""
+        if sub == "Lockers":
+            return "Locker", ""
     natives = [((st.get("nativeObject") or {}).get("type")) for st in b.get("stages") or []]
     if "television" in natives:
         return "Television", ""

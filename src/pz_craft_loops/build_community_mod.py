@@ -43,6 +43,9 @@ SRC_DEFS = [
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\57_community_tk_kitchen_misc.json",
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\58_community_fears_rp.json",
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\59_community_dirkies_fencing.json",
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\60_community_dirkies_stairs.json",
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\61_community_dirkies_bedroom.json",
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\62_community_dirkies_couches.json",
 ]
 OUT_ROOT = r"c:\Users\josep\Kiro\zomboid\communitytilepack\mod"
 
@@ -60,6 +63,8 @@ from kbw_tilepatch import (write_community_tilepatch, write_removal_lua, write_t
                            TILEPATCH_NAME as _TV_PATCH_NAME, TILEPATCH_ID as _TV_PATCH_ID)
 from kbw_tilepatch import (write_cases_assets, add_case_mirror_faces,
                            CASES_PACK, CASES_TILEDEF_NAME, CASES_TILEDEF_ID)
+from kbw_tilepatch import (write_orange_couch_assets, write_sofaking_depth_override, ORANGE_COUCH_PACK,
+                           ORANGE_COUCH_TILEDEF_NAME, ORANGE_COUCH_TILEDEF_ID)
 from kbw_tilepatch import (write_iceshell_assets, ICESHELL_PACK, ICESHELL_TILEDEF_NAME,
                            ICESHELL_TILEDEF_ID)
 import we_dylan
@@ -113,6 +118,8 @@ def write_mod(mod_id, mod_name, description):
         "pack=%s"%CASES_PACK,                              # generated military-case 2nd orientation
         "tiledef=%s %d"%(CASES_TILEDEF_NAME, CASES_TILEDEF_ID),
     ] + we_dylan.MODINFO_LINES + [                         # WE's isolated Dylan sprites (8182)
+        "pack=%s"%ORANGE_COUCH_PACK,                       # generated single-tile L-couch end pieces
+        "tiledef=%s %d"%(ORANGE_COUCH_TILEDEF_NAME, ORANGE_COUCH_TILEDEF_ID),
         "pack=%s"%ICESHELL_PACK,                           # generated inert ice-machine shell (stage 1)
         "tiledef=%s %d"%(ICESHELL_TILEDEF_NAME, ICESHELL_TILEDEF_ID),
     ]
@@ -124,6 +131,8 @@ def write_mod(mod_id, mod_name, description):
     # depth maps + tileGeometry load only from <mod>/common/media
     write_fears_assets(_media, os.path.join(base,"common","media"))
     write_cases_assets(_media, os.path.join(base,"common","media"))
+    write_orange_couch_assets(_media)
+    write_sofaking_depth_override(os.path.join(base,"common","media"))
     # inert shell art (stage 1 of the two-stage ice machines and fridge / freezer tiers) + depth map
     write_iceshell_assets(_media, os.path.join(base,"common","media"), include_fridges=True)
     # WE's isolated Dylan sheets (vendored; see we_dylan.py). After write_fears_assets, which
@@ -150,6 +159,8 @@ def write_mod(mod_id, mod_name, description):
     write_stage_info_lua(os.path.join(_media, "lua", "client", _SI_LUA))
     # pick up / place keeps our builds' storage (shared: runs where the moveable action runs)
     write_pickup_lua(os.path.join(_media, "lua", "shared", _PU_LUA))
+    from container_caps import write_multipart_lua, MULTIPART_LUA_NAME as _MP_LUA
+    write_multipart_lua(os.path.join(_media, "lua", "shared", _MP_LUA))
 
     # definitions + translations
     manifest_defs=[]

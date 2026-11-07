@@ -40,6 +40,8 @@ SRC_FILES = [
     "32_tikitown_newburbs_flags.json",
     "33_tikitown_newburbs_doors_accurate.json",
     "34_tikitown_newburbs_windows_accurate.json",
+    "35_tikitown_newburbs_trim.json",
+    "36_tikitown_tterika_storage.json",
 ]
 
 MOD_ID   = "TikiTownKBW"
@@ -147,6 +149,9 @@ def main():
     from container_caps import write_stage_info_lua, write_pickup_lua
     _lua = os.path.join(mod42, "media", "lua")
     write_pickup_lua(os.path.join(_lua, "shared", "KBWTikiTown_Pickup.lua"))
+    # multi-tile builds (beds, counters...) pick up / smash as one piece
+    from container_caps import write_multipart_lua
+    write_multipart_lua(os.path.join(_lua, "shared", "KBWTikiTown_MultiPart.lua"))
     write_stage_info_lua(os.path.join(_lua, "client", "KBWTikiTown_StageInfo.lua"))
     import rotation_fix
     _rot, _rot_rep = rotation_fix.build_offsets(all_built, rotation_fix.load_sheets())

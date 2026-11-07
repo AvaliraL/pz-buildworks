@@ -80,8 +80,30 @@ def _face_sprites(stage):
     return out
 
 
+# Runtime tile-property overrides for packs whose tile data breaks placing a PICKED-UP piece
+# (vanilla moveable placement reads the tile, not our KBW definition). {sprite: {key: value}}.
+# TikiTown furniture_storage_tterika_02 (user bug 2026-08-28: picked-up locker shows a red
+# placement shadow / snaps to the wrong wall): idx 12-15 and 20-47 are MoveType=WallObject and
+# 24-47 carry the wrong Facing. Single source: kbw_tilepatch.TT_LOCKER_OVERRIDES (also written into
+# the .patch.tiles when a build patches TikiTown sheets).
+PROP_OVERRIDES = k.TT_LOCKER_OVERRIDES
+
+
+def _apply_overrides(sheets):
+    """Copy of `sheets` with PROP_OVERRIDES applied (so offsets use the corrected Facing)."""
+    out = dict(sheets)
+    for spr, vals in PROP_OVERRIDES.items():
+        sh, _, i = spr.rpartition("_")
+        if sh in out and i.isdigit() and int(i) < len(out[sh]):
+            if out[sh] is sheets[sh]:
+                out[sh] = [dict(p) for p in sheets[sh]]
+            out[sh][int(i)].update(vals)
+    return out
+
+
 def build_offsets(buildables, sheets):
     """(offsets {sprite: {Noffset: n, ...}}, report dict)."""
+    sheets = _apply_overrides(sheets)
     offsets, owner = {}, {}
     report = {"fixed": 0, "already": 0, "skipped": {}}
 
@@ -118,7 +140,9 @@ def build_offsets(buildables, sheets):
             if any(p.get("SpriteGridPos", "None") != "None" for p in props):
                 skip("sprite grid", b["id"])
                 continue
-            if all(engine_rotates(sheets, sheet, i) for i in idxs):
+            # overridden tiles: the engine's own offsets were built from the wrong Facing
+            if (not any(s in PROP_OVERRIDES for s in sprites)
+                    and all(engine_rotates(sheets, sheet, i) for i in idxs)):
                 report["already"] += 1
                 continue
             by_face = dict(zip(facing, idxs))
@@ -136,6 +160,17 @@ def build_offsets(buildables, sheets):
                 offsets[s] = want
                 owner.setdefault(s, b["id"])
             report["fixed"] += 1
+    # runtime property overrides (MoveType / Facing), only for sprites this build actually uses
+    used = set()
+    for b in buildables:
+        for st in b.get("stages") or []:
+            for face in ((st.get("geometry") or {}).get("faces") or {}).values():
+                for L in face.get("layers", []):
+                    for r in L.get("rows", []):
+                        used.update(c for c in r if isinstance(c, str))
+    for s, vals in PROP_OVERRIDES.items():
+        if s in used:
+            offsets.setdefault(s, {}).update(vals)
     return offsets, report
 
 
@@ -159,6 +194,9 @@ local function apply()
         local props = sprite and sprite:getProperties() or nil
         if props then
             for key, value in pairs(values) do
+                -- set() alone does not replace a key the tile already has (seen in game with
+                -- MoveType / Facing), so drop the old value first
+                pcall(function() if props:has(key) then props:unset(key) end end)
                 pcall(function() props:set(key, tostring(value)) end)
             end
             pcall(function() props:CreateKeySet() end)
@@ -171,16 +209,48 @@ local function apply()
         .. tostring(missing) .. " not loaded")
 end
 
+-- Moveable placement (picking a piece up and placing it again) reads the tile through
+-- ISMoveableSpriteProps.new. For sprites whose tile data we override (entries with a MoveType),
+-- force the corrected values there too, so placement does not depend on the property edit above.
+local wrapped = false
+local function wrapMoveableProps()
+    if wrapped or not ISMoveableSpriteProps or not ISMoveableSpriteProps.new then return end
+    wrapped = true
+    local orig = ISMoveableSpriteProps.new
+    ISMoveableSpriteProps.new = function(_sprite)
+        local s = orig(_sprite)
+        local v = s and s.spriteName and OFFSETS[s.spriteName] or nil
+        if v and v.MoveType then
+            s.type = v.MoveType
+            if v.Facing then s.facing = v.Facing end
+            s.Noffset = v.Noffset or 0
+            s.Soffset = v.Soffset or 0
+            s.Eoffset = v.Eoffset or 0
+            s.Woffset = v.Woffset or 0
+        end
+        return s
+    end
+    print("[KBWCommunity] Rotation: moveable placement overrides active")
+end
+
 if Events.OnLoadedTileDefinitions then Events.OnLoadedTileDefinitions.Add(apply) end
 Events.OnGameStart.Add(apply)
-if Events.OnServerStarted then Events.OnServerStarted.Add(apply) end
+Events.OnGameStart.Add(wrapMoveableProps)
+if Events.OnServerStarted then
+    Events.OnServerStarted.Add(apply)
+    Events.OnServerStarted.Add(wrapMoveableProps)
+end
 '''
+
+
+def _lua_val(v):
+    return ('"%s"' % v) if isinstance(v, str) else ("%d" % v)
 
 
 def write_rotation_lua(path, offsets):
     lines = []
     for s in sorted(offsets):
-        vals = ", ".join("%s = %d" % (kk, offsets[s][kk]) for kk in sorted(offsets[s]))
+        vals = ", ".join("%s = %s" % (kk, _lua_val(offsets[s][kk])) for kk in sorted(offsets[s]))
         lines.append('    ["%s"] = { %s },' % (s, vals))
     lua = _LUA_HEAD + "\n".join(lines) + "\n" + _LUA_TAIL
     for bad in ("next(", "goto ", "//", "debug."):

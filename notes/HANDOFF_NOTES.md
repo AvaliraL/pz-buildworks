@@ -79,6 +79,11 @@ TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers
 - Benches are recognised by their tile as well as by `modData.kbwcbBenchTools`, so a bench that was picked up and placed again
   (a plain moveable object; vanilla does not carry our modData across) keeps its tools. The sprite and category tables are
   generated into the Lua from the workbench definitions.
+- Anti-duplication: the B42 craft flow moves tools from nearby containers into the player's inventory and only returns them
+  when the craft completes, so cancelling a craft (walking away) left a bench tool in the inventory. Bench tools are marked
+  (`modData.kbwcbBenchTool`); once the player has no craft or transfer queued, any marked item they hold (bags included) is
+  removed and the bench's tool set rebuilt (on craft stop/perform, plus an EveryOneMinute backstop). Marked items cannot be
+  transferred anywhere but the player's main inventory.
 - `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
 - Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
   `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft

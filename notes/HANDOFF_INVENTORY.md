@@ -64,7 +64,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_8`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_16`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_10_corner`
-- `44_community_dylan_walls.json`: **4** changed; what differs: tooltipKey x4, displayName x4
+- `44_community_dylan_walls.json`: **4** changed; what differs: displayName x4, tooltipKey x4
     - e.g. `community.dylan.walls.DylansGardenStuff02_8`
     - e.g. `community.dylan.walls.DylansGardenStuff02_10`
     - e.g. `community.dylan.walls.DylansGardenStuff02_11`
@@ -76,7 +76,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.doorframes.industry_dirkea_ddd_01_18`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_86`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_82`
-- `48_community_tk_doors.json`: **4** changed; what differs: tooltipKey x4, displayName x4
+- `48_community_tk_doors.json`: **4** changed; what differs: displayName x4, tooltipKey x4
     - e.g. `community.tk.doorframes.industry_tk_01_10`
     - e.g. `community.tk.doorframes.industry_tk_01_14`
     - e.g. `community.tk.doorframes.industry_tk_01_34`
@@ -107,7 +107,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, stage.requirements x2, construction x2, group x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`
@@ -124,7 +124,7 @@ New non-definition files:
 - `42/media/kbwcommunity_lcouch.tiles` (8454 bytes)
 - `42/media/lua/client/KBWCommunity_BenchMenu.lua` (2866 bytes)
 - `42/media/lua/client/KBWCommunity_StageInfo.lua` (5264 bytes)
-- `42/media/lua/shared/KBWCommunity_BenchTools.lua` (11535 bytes)
+- `42/media/lua/shared/KBWCommunity_BenchTools.lua` (16284 bytes)
 - `42/media/lua/shared/KBWCommunity_MultiPart.lua` (8404 bytes)
 - `42/media/lua/shared/KBWCommunity_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWCommunity_Rotation.lua` (32460 bytes)
@@ -197,7 +197,7 @@ Changed buildables (same id, different definition):
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_wall`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_window`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_doorframe`
-- `29_tikitown_garages.json`: **40** changed; what differs: tooltipKey x40, translationKey x40
+- `29_tikitown_garages.json`: **40** changed; what differs: translationKey x40, tooltipKey x40
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w2`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w3`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w4`
@@ -324,6 +324,11 @@ TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers
 - Benches are recognised by their tile as well as by `modData.kbwcbBenchTools`, so a bench that was picked up and placed again
   (a plain moveable object; vanilla does not carry our modData across) keeps its tools. The sprite and category tables are
   generated into the Lua from the workbench definitions.
+- Anti-duplication: the B42 craft flow moves tools from nearby containers into the player's inventory and only returns them
+  when the craft completes, so cancelling a craft (walking away) left a bench tool in the inventory. Bench tools are marked
+  (`modData.kbwcbBenchTool`); once the player has no craft or transfer queued, any marked item they hold (bags included) is
+  removed and the bench's tool set rebuilt (on craft stop/perform, plus an EveryOneMinute backstop). Marked items cannot be
+  transferred anywhere but the player's main inventory.
 - `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
 - Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
   `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft

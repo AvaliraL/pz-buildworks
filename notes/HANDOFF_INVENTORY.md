@@ -107,7 +107,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, subcategory x1, category x1, group x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1, category x1, subcategory x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`
@@ -181,7 +181,7 @@ Changed buildables (same id, different definition):
     - e.g. `worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern_corner`
 - `24_tikitown_bookshelves.json`: **1** changed; what differs: tooltipKey x1
     - e.g. `worldessentials.tikitown.tikitown_furniture_03_41`
-- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58, group x12, displayName x12
+- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58, displayName x12, group x12
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_1`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_17`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_24`
@@ -197,7 +197,7 @@ Changed buildables (same id, different definition):
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_wall`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_window`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_doorframe`
-- `29_tikitown_garages.json`: **40** changed; what differs: tooltipKey x40, translationKey x40
+- `29_tikitown_garages.json`: **40** changed; what differs: translationKey x40, tooltipKey x40
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w2`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w3`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w4`

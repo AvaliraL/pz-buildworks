@@ -44,7 +44,7 @@ New buildables, by definitions file:
 
 Changed buildables (same id, different definition):
 
-- `35_community_dirkie_counters.json`: **31** changed; what differs: stage.allowSpriteReuse x31, tooltipKey x31
+- `35_community_dirkie_counters.json`: **31** changed; what differs: tooltipKey x31, stage.allowSpriteReuse x31
     - e.g. `community.dirkie.counters.d_furniture_kitchen_01_10`
     - e.g. `community.dirkie.counters.d_furniture_kitchen_01_11`
     - e.g. `community.dirkie.counters.d_furniture_kitchen_01_18`
@@ -64,7 +64,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_8`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_16`
     - e.g. `community.dirkies.walls.industry_dirkea_ddd_01_10_corner`
-- `44_community_dylan_walls.json`: **4** changed; what differs: displayName x4, tooltipKey x4
+- `44_community_dylan_walls.json`: **4** changed; what differs: tooltipKey x4, displayName x4
     - e.g. `community.dylan.walls.DylansGardenStuff02_8`
     - e.g. `community.dylan.walls.DylansGardenStuff02_10`
     - e.g. `community.dylan.walls.DylansGardenStuff02_11`
@@ -76,7 +76,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.dirkies.doorframes.industry_dirkea_ddd_01_18`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_86`
     - e.g. `community.dirkies.doorframes.more_walls_ddd_01_82`
-- `48_community_tk_doors.json`: **4** changed; what differs: displayName x4, tooltipKey x4
+- `48_community_tk_doors.json`: **4** changed; what differs: tooltipKey x4, displayName x4
     - e.g. `community.tk.doorframes.industry_tk_01_10`
     - e.g. `community.tk.doorframes.industry_tk_01_14`
     - e.g. `community.tk.doorframes.industry_tk_01_34`
@@ -103,11 +103,11 @@ Changed buildables (same id, different definition):
 - `55_community_dirkies_secret_shelf.json`: **2** changed; what differs: tooltipKey x2, displayName x1
     - e.g. `community.dirkies.secret_shelf.d_doors_02_64`
     - e.g. `community.dirkies.secret_shelf.d_doors_02_68`
-- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.requirements x6, stage.kbwcbBenchTools x6
+- `56_community_fears_workbenches.json`: **9** changed; what differs: tooltipKey x9, stage.kbwcbBenchTools x6, stage.requirements x6
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, stage.requirements x2, construction x2, category x1, subcategory x1, group x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, subcategory x1, category x1, group x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`
@@ -181,7 +181,7 @@ Changed buildables (same id, different definition):
     - e.g. `worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern_corner`
 - `24_tikitown_bookshelves.json`: **1** changed; what differs: tooltipKey x1
     - e.g. `worldessentials.tikitown.tikitown_furniture_03_41`
-- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58
+- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58, group x12, displayName x12
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_1`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_17`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_24`
@@ -234,7 +234,7 @@ New non-definition files:
 Changed non-definition files:
 
 - `42/media/KnoxBuildworks/manifest.json` - 2 definition files added, 0 removed
-- `42/media/lua/shared/Translate/EN/IG_UI.json` - 372 keys added, 69 changed
+- `42/media/lua/shared/Translate/EN/IG_UI.json` - 372 keys added, 81 changed
 - `42/media/lua/shared/Translate/EN/Tooltip.json` - 81 keys added, 0 changed
 
 ### World Essentials (base, our files only)

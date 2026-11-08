@@ -4656,7 +4656,7 @@
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_1",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_1",
-   "displayName": "White Wood Wood Wood Wood Fancy Floor Bed",
+   "displayName": "White Wood Fancy Floor Bed",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_1",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -4780,12 +4780,18 @@
       "dismantable": true
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ba1bce1a90e5eb03",
+    "name": "TikiTown Fancy Floor Bed",
+    "translationKey": "IGUI_WETiki_family_ba1bce1a90e5eb03",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_17",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_17",
-   "displayName": "White Wood Wood Wood Wood Large Fancy Floor Bed",
+   "displayName": "White Wood Large Fancy Floor Bed",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_17",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -4921,12 +4927,18 @@
       "dismantable": true
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_8c657db7c9248c00",
+    "name": "TikiTown Large Fancy Floor Bed",
+    "translationKey": "IGUI_WETiki_family_8c657db7c9248c00",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_24",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_24",
-   "displayName": "White Wood Wood Wood Wood Mirror and Drawers",
+   "displayName": "White Wood Mirror and Drawers",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_24",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5050,12 +5062,18 @@
       "capacity": 20
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_33164b2e92ff90a5",
+    "name": "TikiTown Mirror and Drawers",
+    "translationKey": "IGUI_WETiki_family_33164b2e92ff90a5",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_28",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_28",
-   "displayName": "White Wood Wood Wood Wood Drawers",
+   "displayName": "White Wood Drawers",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_28",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5179,12 +5197,18 @@
       "capacity": 20
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_7ff1a5e42ab1473e",
+    "name": "TikiTown Drawers",
+    "translationKey": "IGUI_WETiki_family_7ff1a5e42ab1473e",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_32",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_32",
-   "displayName": "White Wood Wood Wood Wood Sidetable",
+   "displayName": "White Wood Sidetable",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_32",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5308,12 +5332,18 @@
       "capacity": 10
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ce11544f16022c17",
+    "name": "TikiTown Sidetable",
+    "translationKey": "IGUI_WETiki_family_ce11544f16022c17",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_36",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_36",
-   "displayName": "White Wood Wood Wood Wood Small Drawer",
+   "displayName": "White Wood Small Drawer",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_36",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5437,12 +5467,18 @@
       "capacity": 10
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_2efb2d71b4af8830",
+    "name": "TikiTown Small Drawer",
+    "translationKey": "IGUI_WETiki_family_2efb2d71b4af8830",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_40",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_40",
-   "displayName": "White Wood Wood Wood Wood Wardrobe",
+   "displayName": "White Wood Wardrobe",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_40",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5574,12 +5610,18 @@
       "capacity": 25
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_f8e23a35ad030e08",
+    "name": "TikiTown Wardrobe",
+    "translationKey": "IGUI_WETiki_family_f8e23a35ad030e08",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_48",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_48",
-   "displayName": "White Wood Wood Wood Wood Shelves",
+   "displayName": "White Wood Shelves",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_48",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5703,12 +5745,18 @@
       "capacity": 40
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_dd144a77611f8f35",
+    "name": "TikiTown Shelves",
+    "translationKey": "IGUI_WETiki_family_dd144a77611f8f35",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_52",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_52",
-   "displayName": "White Wood Wood Wood Wood Small Shelves",
+   "displayName": "White Wood Small Shelves",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_52",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5832,12 +5880,18 @@
       "capacity": 20
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_c33b5aeed092ae39",
+    "name": "TikiTown Small Shelves",
+    "translationKey": "IGUI_WETiki_family_c33b5aeed092ae39",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_57",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_57",
-   "displayName": "White Wood Wood Wood Wood Hanging Shelves",
+   "displayName": "White Wood Hanging Shelves",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_57",
    "category": "Furniture and Appliances",
    "subcategory": "Storage",
@@ -5939,12 +5993,18 @@
       "capacity": 10
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_83963535689357d4",
+    "name": "TikiTown Hanging Shelves",
+    "translationKey": "IGUI_WETiki_family_83963535689357d4",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_59",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_59",
-   "displayName": "White Wood Wood Wood Wood Long Light Table",
+   "displayName": "White Wood Long Light Table",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_59",
    "category": "Furniture and Appliances",
    "subcategory": "Small Tables",
@@ -6042,12 +6102,18 @@
       "dismantable": true
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_2fe25834aa3de81b",
+    "name": "TikiTown Long Light Table",
+    "translationKey": "IGUI_WETiki_family_2fe25834aa3de81b",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.tikitown_furniture_bedroom_04_61",
    "translationKey": "IGUI_WETiki_tikitown_furniture_bedroom_04_61",
-   "displayName": "White Wood Wood Wood Wood Bedroom Poster",
+   "displayName": "White Wood Bedroom Poster",
    "tooltipKey": "Tooltip_WETiki_tikitown_furniture_bedroom_04_61",
    "category": "Decorations and Landscaping",
    "subcategory": "Posters",
@@ -6129,7 +6195,13 @@
       "dismantable": true
      }
     }
-   ]
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_274b182ecbf16917",
+    "name": "TikiTown Bedroom Poster",
+    "translationKey": "IGUI_WETiki_family_274b182ecbf16917",
+    "level": 4
+   }
   },
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_double_a",

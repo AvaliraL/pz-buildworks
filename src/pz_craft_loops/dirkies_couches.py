@@ -227,6 +227,8 @@ def _corner_couch(color_word, base):
 #   the 2-tile sprite grid, so they ghost / pick up as single tiles.
 _LC = "KBWCommunityLCouch"
 L_COUCHES = [("Teal", 28, 0, _LC), ("Purple", 36, 8, _LC), ("Pink", 44, 16, _LC), ("Orange", 52, 24, _LC)]
+# corner tiles: copies of these sofaking bases at KBWCommunityLCouch_32 + colour*4 (same order)
+_CORNER_BASES = [28, 36, 44, 52]
 # The compositor render (_lcomp) shows ONE corner variant makes a clean L per rotation:
 #   rot0 corner NW -> S(+0)   rot1 NE -> W(+3)   rot2 SE -> N(+1)   rot3 SW -> E(+2)
 # KBW face keys cycle W,N,E,S in game, so W=rot0 N=rot1 E=rot2 S=rot3 (clockwise).
@@ -243,7 +245,9 @@ def _l_faces(corner_base, couch_base, couch_sheet=None):
     sheet = couch_sheet or COUCH_SHEET
 
     def c(v):
-        return _spr(SOFA_SHEET, corner_base + v)
+        # our depth-free copy of the sofaking corner (kbw_tilepatch.L_COUCH_CORNER_SOURCES), not
+        # the pack tile: the pack's depth map made the teal corner render wrong (2026-08-28)
+        return "%s_%d" % (_LC, 32 + _CORNER_BASES.index(corner_base) * 4 + v)
 
     def k(off):
         return _spr(sheet, couch_base + off)
@@ -259,7 +263,8 @@ def _l_faces(corner_base, couch_base, couch_sheet=None):
 
 def _l_couch(color_word, corner_base, couch_base, couch_sheet=None):
     slug = "lcouch_%s" % color_word.lower()
-    b = _base(slug, "%s L-Shaped Couch" % color_word, _spr(SOFA_SHEET, corner_base))
+    b = _base(slug, "%s L-Shaped Couch" % color_word,
+              "%s_%d" % (_LC, 32 + _CORNER_BASES.index(corner_base) * 4))
     b["stages"] = [{
         "id": "built",
         "geometry": {"faces": _l_faces(corner_base, couch_base, couch_sheet)},

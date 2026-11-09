@@ -86,7 +86,7 @@ def _face_sprites(stage):
 # placement shadow / snaps to the wrong wall): idx 12-15 and 20-47 are MoveType=WallObject and
 # 24-47 carry the wrong Facing. Single source: kbw_tilepatch.TT_LOCKER_OVERRIDES (also written into
 # the .patch.tiles when a build patches TikiTown sheets).
-PROP_OVERRIDES = k.TT_LOCKER_OVERRIDES
+PROP_OVERRIDES = k.TT_PROP_OVERRIDES      # tterika lockers + props-14 soundproofing
 
 
 def _apply_overrides(sheets):

@@ -374,8 +374,26 @@ These are MIXED prop sheets (not pure wall sheets) where only a few cells were e
 
 - [X] tikitown-props-14  (REMOVED - was 29_tikitown_soundproof.json, DELETED)
   > REMOVED per user: soundproofing was buggy in-game both as wallCovering (build silently failed) AND as structural wall (build error + would not change orientation). Deliverable 29_tikitown_soundproof.json deleted and dropped from the test bundle. The props-14 soundproof set may be revisited later with a different model.
+  > REVISITED 2026-08-28 -> 37_tikitown_soundproof.json (generator pz_craft_loops/tikitown_soundproof.py), In Progress.
+  > Root cause of the first failure: the pack's Facing contradicts the attach flags (8 attachedW+Facing S, 9 attachedN+Facing E,
+  > 18/19 same; 10/11/17 none) and KBW's against-wall check reads Facing (same bug as the TK kitchen wall shelf). The first
+  > attempt also mapped faces from the bad Facing (W=idx9), so faces were crossed. Fix: Facing overrides
+  > (kbw_tilepatch.TT_SOUNDPROOF_OVERRIDES, in the TikiTown .patch.tiles and the test bundle patch) + plain object model with
+  > needToBeAgainstWall, faces from the attach flags. 4 pieces: Wall Panel (W8 N9 E11), Corner Panel (N10), Window Panel (N17),
+  > Door Frame Panel (W18 N19). No south-wall art in the pack. idx10's CornerNorthWall/CornerWestWall point to
+  > tikitown_overlays_02_000/001, which do not exist (real names _0/_1) - left as is, unused by our model.
   > [superseded notes below]
-- [~] tikitown-props-14  (was PARTIAL -> 29_tikitown_soundproof.json)
+- [~] tikitown-props-14  (PARTIAL: soundproofing COMPLETE -> 37_tikitown_soundproof.json; rest of sheet IN PROGRESS -> 38_tikitown_props14.json; multi-part statue skipped)
+  > CURRENT (2026-08-28, confirmed in game): 5 soundproof pieces. Wall Panel (overlay, W 8 / N 9),
+  > Corner Panel (free-standing walk-through prop 10 + KBWCommunityCornerTrim.OnIsValid: needs a
+  > wall edge on BOTH the W and N sides), Window Panel (window trim model, N 17 only; a flipped W
+  > tile was tried and dropped, needs redrawn art), Door Frame Panel (door trim model, W 18 / N 19),
+  > Pillar (free-standing walk-through prop 11, no rotation). Tile fixes: IsMoveAble removed from
+  > 8-11 / 17-19 (else WE builds them through its native wall attachment, which refuses window /
+  > door walls -> "attachment support changed" error screen), Facing set from the attach flags,
+  > doorFrW / doorFrN added to 18 / 19. Overlay panels appear ~1 s after building (accepted).
+  > The rest (mic, mixers, electrical cabinet, ATM, coffee dispenser, cups) is
+  > 38_tikitown_props14.json, built, not yet tested in game. The notes below are SUPERSEDED.
   - 8-column sheet (hyphenated name; sprite refs = `tikitown-props-14_<idx>`). Column count NOT from PNG width (1024px = atlas padding, same as 10-col newburbs); confirmed cols=8 from user observation that the wall set starts at (1,0) = idx8.
   - Extracted ONLY the soundproofing set (GroupName Proof Wall / Proof Window / Proof Door Frame), modeled as Knox **wallCovering** wall-attachments (overlays applied over existing walls, like WE Baseboard/Crown Molding panels) - NOT structural walls. Confirmed against WE 01_building_decor.json: coverings carry corners via `isCorner:true` + 4 face sprites, not `cornerSprite`/`pillarSprite`.
   - 3 buildables:

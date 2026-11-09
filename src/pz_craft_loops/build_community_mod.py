@@ -152,6 +152,9 @@ def write_mod(mod_id, mod_name, description):
     write_tabletop_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TableTop.lua"))
     # two-storey wall pieces (top tile one level up) pass KBW's wall-support check
     write_multistorey_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_MultiStorey.lua"))
+    # wall overlays: the cursor also runs World Essentials' attachment check (no mid-build errors)
+    from kbw_tilepatch import write_overlay_guard_lua
+    write_overlay_guard_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_OverlayGuard.lua"))
     # KBW stage properties: per-type container capacity, container retype (container_caps.py)
     from container_caps import (write_container_caps_lua, LUA_NAME as _CC_LUA, write_stage_info_lua,
                                 INFO_LUA_NAME as _SI_LUA, write_pickup_lua, PICKUP_LUA_NAME as _PU_LUA)

@@ -1,6 +1,6 @@
 # World Essentials hand-off inventory
 
-Generated 2026-11-07 by `pz_craft_loops/we_inventory.py`.
+Generated 2026-11-08 by `pz_craft_loops/we_inventory.py`.
 Compares our `work/` copy against the LIVE Steam World Essentials (Workshop 3733324672).
 
 ## 1. Has live WE changed since our baseline (`upstream/`)?
@@ -13,9 +13,9 @@ Compares our `work/` copy against the LIVE Steam World Essentials (Workshop 3733
 
 | Submod | New files | Changed files | Identical |
 |---|---:|---:|---:|
-| World Essentials - Community Buildworks | 17 | 23 | 17 |
-| World Essentials - TikiTown Buildworks | 8 | 17 | 2 |
-| World Essentials (base, our files only) | 0 | 0 | 11 |
+| World Essentials - Community Buildworks | 18 | 23 | 17 |
+| World Essentials - TikiTown Buildworks | 23 | 17 | 2 |
+| World Essentials (base, our files only) | 2 | 0 | 11 |
 
 ### World Essentials - Community Buildworks
 
@@ -107,7 +107,7 @@ Changed buildables (same id, different definition):
     - e.g. `community.fears.workbench.tailoring`
     - e.g. `community.fears.workbench.metalworking`
     - e.g. `community.fears.workbench.electrical`
-- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, group x1, category x1, subcategory x1
+- `57_community_tk_kitchen_misc.json`: **6** changed; what differs: tooltipKey x6, construction x2, stage.requirements x2, category x1, subcategory x1, group x1
     - e.g. `community.tk.kitchen_misc.deli_slicer`
     - e.g. `community.tk.kitchen_misc.wall_shelf`
     - e.g. `community.tk.kitchen_misc.ice_machine`
@@ -121,16 +121,17 @@ Changed buildables (same id, different definition):
 New non-definition files:
 
 - `42/media/kbwcommunity_iceshell.tiles` (5548 bytes)
-- `42/media/kbwcommunity_lcouch.tiles` (8454 bytes)
+- `42/media/kbwcommunity_lcouch.tiles` (11286 bytes)
 - `42/media/lua/client/KBWCommunity_BenchMenu.lua` (2866 bytes)
 - `42/media/lua/client/KBWCommunity_StageInfo.lua` (5264 bytes)
 - `42/media/lua/shared/KBWCommunity_BenchTools.lua` (16284 bytes)
-- `42/media/lua/shared/KBWCommunity_MultiPart.lua` (8404 bytes)
+- `42/media/lua/shared/KBWCommunity_MultiPart.lua` (14697 bytes)
+- `42/media/lua/shared/KBWCommunity_OverlayGuard.lua` (6501 bytes)
 - `42/media/lua/shared/KBWCommunity_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWCommunity_Rotation.lua` (32460 bytes)
 - `42/media/lua/shared/KBWCommunity_StageProperties.lua` (4828 bytes)
 - `42/media/texturepacks/KBWCommunityIceShell.pack` (796962 bytes)
-- `42/media/texturepacks/KBWCommunityLCouch.pack` (370018 bytes)
+- `42/media/texturepacks/KBWCommunityLCouch.pack` (568129 bytes)
 - `common/media/depthmaps/DEPTH_KBWCommunityIceShell.png` (59717 bytes)
 - `common/media/depthmaps/DEPTH_d_location_sofaking.png` (38456 bytes)
 
@@ -142,7 +143,7 @@ Changed non-definition files:
 
 ### World Essentials - TikiTown Buildworks
 
-**Buildables: 332 new, 2391 changed, 0 removed.**
+**Buildables: 4125 new, 2391 changed, 0 removed.**
 
 New buildables, by definitions file:
 
@@ -161,47 +162,70 @@ New buildables, by definitions file:
     - `worldessentials.tikitown.furniture_storage_tterika_02_40`: 2
     - `worldessentials.tikitown.furniture_storage_tterika_02_44`: 2
     - `worldessentials.tikitown.furniture_storage_tterika_02_8`: 2
+- `37_tikitown_soundproof.json` (new file): **5**
+    - `worldessentials.tikitown.soundproof_corner`: 1
+    - `worldessentials.tikitown.soundproof_doorframe`: 1
+    - `worldessentials.tikitown.soundproof_pillar`: 1
+    - `worldessentials.tikitown.soundproof_wall`: 1
+    - `worldessentials.tikitown.soundproof_window`: 1
+- `38_tikitown_props14.json` (new file): **8**
+    - `worldessentials.tikitown.props14_atm`: 1
+    - `worldessentials.tikitown.props14_coffee_dispenser`: 1
+    - `worldessentials.tikitown.props14_cup`: 1
+    - `worldessentials.tikitown.props14_cup_stack`: 1
+    - `worldessentials.tikitown.props14_electrical_cabinet`: 1
+    - `worldessentials.tikitown.props14_microphone`: 1
+    - `worldessentials.tikitown.props14_mixer_large`: 1
+    - `worldessentials.tikitown.props14_mixer_small`: 1
+- `39_tikitown_wall_overlays.json` (new file): **945**
+    - `worldessentials.tikitown.walloverlay`: 945
+- `40_tikitown_lower_walls.json` (new file): **945**
+    - `worldessentials.tikitown.lowerwall`: 945
+- `41_tikitown_roof_slope_walls.json` (new file): **1701**
+    - `worldessentials.tikitown.roofslope`: 1701
+- `42_tikitown_garage_trim.json` (new file): **189**
+    - `worldessentials.tikitown.garagetrim`: 189
 - `23_tikitown_furniture.json` (existing file): **58**
     - `worldessentials.tikitown.fixtures_counters_tterika_01`: 42
     - `worldessentials.tikitown.fixtures_counters_tterika_02`: 16
 
 Changed buildables (same id, different definition):
 
-- `21_tikitown_walls.json`: **919** changed; what differs: tooltipKey x919, displayName x7
+- `21_tikitown_walls.json`: **919** changed; what differs: tooltipKey x919, displayName x919, group x917, stage.object x716, subcategory x183
     - e.g. `worldessentials.tikitown.tikitown_commercial_walls_add_01_0`
     - e.g. `worldessentials.tikitown.tikitown_commercial_walls_add_01_5`
     - e.g. `worldessentials.tikitown.tikitown_commercial_walls_add_01_7`
-- `22_tikitown_doors.json`: **97** changed; what differs: tooltipKey x97
+- `22_tikitown_doors.json`: **97** changed; what differs: tooltipKey x97, displayName x97, group x97
     - e.g. `worldessentials.tikitown.fixtures_doors_tterika_01_0`
     - e.g. `worldessentials.tikitown.fixtures_doors_tterika_01_4`
     - e.g. `worldessentials.tikitown.fixtures_doors_tterika_01_8`
-- `23_tikitown_furniture.json`: **72** changed; what differs: tooltipKey x72, stage.allowSpriteReuse x58, displayName x21
+- `23_tikitown_furniture.json`: **72** changed; what differs: tooltipKey x72, stage.allowSpriteReuse x58, displayName x22
     - e.g. `worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern_corner`
     - e.g. `worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern`
     - e.g. `worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern_corner`
 - `24_tikitown_bookshelves.json`: **1** changed; what differs: tooltipKey x1
     - e.g. `worldessentials.tikitown.tikitown_furniture_03_41`
-- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58, displayName x12, group x12
+- `25_tikitown_bedroom.json`: **58** changed; what differs: tooltipKey x58, group x57, displayName x18
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_1`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_17`
     - e.g. `worldessentials.tikitown.tikitown_furniture_bedroom_01_24`
-- `26_tikitown_glass.json`: **110** changed; what differs: tooltipKey x110
+- `26_tikitown_glass.json`: **110** changed; what differs: tooltipKey x110, displayName x22, group x22
     - e.g. `tikitown.glass.tikitown_walls_commercial_01_0`
     - e.g. `tikitown.glass.tikitown_walls_commercial_01_16`
     - e.g. `tikitown.glass.tikitown_walls_commercial_01_32`
-- `27_tikitown_newburbs_interiors.json`: **240** changed; what differs: tooltipKey x240
+- `27_tikitown_newburbs_interiors.json`: **240** changed; what differs: tooltipKey x240, displayName x60, group x48
     - e.g. `tikitown.newburbs.tt_newburbs_interiors_01_c1_wall`
     - e.g. `tikitown.newburbs.tt_newburbs_interiors_01_c1_window`
     - e.g. `tikitown.newburbs.tt_newburbs_interiors_01_c1_doorframe`
-- `28_tikitown_newburbs_walls.json`: **460** changed; what differs: tooltipKey x460, displayName x40
+- `28_tikitown_newburbs_walls.json`: **460** changed; what differs: tooltipKey x460, displayName x124, group x90
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_wall`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_window`
     - e.g. `tikitown.newburbs_walls.tt_newburbs_walls_01_white_doorframe`
-- `29_tikitown_garages.json`: **40** changed; what differs: translationKey x40, tooltipKey x40
+- `29_tikitown_garages.json`: **40** changed; what differs: tooltipKey x40, translationKey x40
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w2`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w3`
     - e.g. `tikitown.garages.tt_newburbs_doors_garages_01_white_w4`
-- `30_tikitown_shelving.json`: **4** changed; what differs: tooltipKey x4
+- `30_tikitown_shelving.json`: **4** changed; what differs: tooltipKey x4, group x4
     - e.g. `worldessentials.tikitown.furniture_shelving_tterika_01_0`
     - e.g. `worldessentials.tikitown.furniture_shelving_tterika_01_4`
     - e.g. `worldessentials.tikitown.furniture_shelving_tterika_01_8`
@@ -225,21 +249,35 @@ Changed buildables (same id, different definition):
 New non-definition files:
 
 - `42/media/kbwtikitown_tterika.patch.tiles` (14380 bytes)
+- `42/media/kbwtikitown_walloverlays.tiles` (37007 bytes)
 - `42/media/lua/client/KBWTikiTown_StageInfo.lua` (5264 bytes)
-- `42/media/lua/shared/KBWTikiTown_MultiPart.lua` (8404 bytes)
+- `42/media/lua/shared/KBWTikiTown_GeneratorRotate.lua` (4457 bytes)
+- `42/media/lua/shared/KBWTikiTown_MultiPart.lua` (14697 bytes)
+- `42/media/lua/shared/KBWTikiTown_OverlayGuard.lua` (6501 bytes)
 - `42/media/lua/shared/KBWTikiTown_Pickup.lua` (6453 bytes)
 - `42/media/lua/shared/KBWTikiTown_Rotation.lua` (8124 bytes)
+- `42/media/lua/shared/KBWTikiTown_TableTop.lua` (6594 bytes)
 - `42/media/lua/shared/KBWTikiTown_TileFixes.lua` (2141 bytes)
+- `42/media/lua/shared/Translate/EN/ItemName.json` (174 bytes)
+- `42/media/scripts/TikiTownKBW_Generators.txt` (1404 bytes)
+- `42/media/texturepacks/KBWTikiTownWallOverlays.pack` (11728600 bytes)
+- `42/media/textures/Item_KBWTikiTown_ElectricalCabinetGenerator.png` (982 bytes)
+- `42/media/textures/Item_KBWTikiTown_ElectricalCabinetGeneratorMirrored.png` (986 bytes)
 
 Changed non-definition files:
 
-- `42/media/KnoxBuildworks/manifest.json` - 2 definition files added, 0 removed
-- `42/media/lua/shared/Translate/EN/IG_UI.json` - 372 keys added, 81 changed
-- `42/media/lua/shared/Translate/EN/Tooltip.json` - 81 keys added, 0 changed
+- `42/media/KnoxBuildworks/manifest.json` - 8 definition files added, 0 removed
+- `42/media/lua/shared/Translate/EN/IG_UI.json` - 4723 keys added, 1374 changed
+- `42/media/lua/shared/Translate/EN/Tooltip.json` - 136 keys added, 0 changed
 
 ### World Essentials (base, our files only)
 
 **Buildables: 0 new, 0 changed, 0 removed.**
+
+New non-definition files:
+
+- `42/media/lua/server/Patches/WorldEssentialsSprayPaintDistribution_Server.lua` (3719 bytes)
+- `42/media/scripts/WorldEssentials_SprayPaint_Items.txt` (1049 bytes)
 
 ## 3. Notes for the WE dev
 
@@ -311,7 +349,7 @@ TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers
   (`modData.KBW.groupId`/`partCount`). Vanilla only moves tiles together when sprites share a tile-property sprite grid, so
   picking up or smashing one tile of a bed left the rest. This wraps `ISMoveableSpriteProps:canPickUpMoveable/pickUpMoveable`
   and `ISDestroyStuffAction:complete` so all tiles of the group go together; part items drop on the floor with the generic
-  `Moveables.Moveable` look (as vanilla multi-sprite pick-up does).
+  `Moveables.Moveable` look (as vanilla mu lti-sprite pick-up does).
 
 **6. Workbenches (Fears, file 56) become real workstations**
 

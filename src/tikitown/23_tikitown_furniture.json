@@ -2256,7 +2256,7 @@
   {
    "id": "worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white_corner",
    "translationKey": "IGUI_WETiki_fixtures_counters_tterika_01_grey_countertop_white_corner",
-   "displayName": "Counter - Grey Countertop White Corner",
+   "displayName": "Counter - Gray Countertop White Corner",
    "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
    "category": "Containers",
    "subcategory": "Counters",
@@ -2381,7 +2381,7 @@
   {
    "id": "worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white",
    "translationKey": "IGUI_WETiki_fixtures_counters_tterika_01_grey_countertop_white",
-   "displayName": "Counter - Grey Countertop White",
+   "displayName": "Counter - Gray Countertop White",
    "tooltipKey": "Tooltip_KBW_Shared_StorageFixture",
    "category": "Containers",
    "subcategory": "Counters",

@@ -42,6 +42,12 @@ SRC_FILES = [
     "34_tikitown_newburbs_windows_accurate.json",
     "35_tikitown_newburbs_trim.json",
     "36_tikitown_tterika_storage.json",
+    "37_tikitown_soundproof.json",
+    "38_tikitown_props14.json",
+    "39_tikitown_wall_overlays.json",
+    "40_tikitown_lower_walls.json",
+    "41_tikitown_roof_slope_walls.json",
+    "42_tikitown_garage_trim.json",
 ]
 
 MOD_ID   = "TikiTownKBW"
@@ -82,6 +88,7 @@ def main():
     _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from kbw_tilepatch import write_seating_lua
     from kbw_tilepatch import TT_TILEPATCH_NAME as _TT_PATCH_NAME, TT_TILEPATCH_ID as _TT_PATCH_ID
+    import tikitown_wall_overlays as _two
     write_seating_lua(os.path.join(mod42, "media", "lua", "shared", "KBWCommunity_Seating.lua"))
 
     # mod.info
@@ -96,7 +103,7 @@ def main():
         "versionMin=42.0",
         "tags=Build 42,Build",
         "tiledef=%s %d" % (_TT_PATCH_NAME, _TT_PATCH_ID),   # tterika_02 stacking / locker patch
-    ]
+    ] + _two.MODINFO_LINES                                   # copied wall-overlay tiles (8179)
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
 
     # definitions: copy each accurate/single-tier source verbatim (real categories preserved)
@@ -154,6 +161,24 @@ def main():
     # multi-tile builds (beds, counters...) pick up / smash as one piece
     from container_caps import write_multipart_lua
     write_multipart_lua(os.path.join(_lua, "shared", "KBWTikiTown_MultiPart.lua"))
+    # wall overlays (soundproofing, lower wall overlays): cursor also runs WE's attachment check.
+    # Same install guard as the Community copy, so loading both is harmless.
+    from kbw_tilepatch import write_overlay_guard_lua
+    write_overlay_guard_lua(os.path.join(_lua, "shared", "KBWTikiTown_OverlayGuard.lua"))
+    # props-14 table-top pieces (mic, mixers, cups, coffee dispenser): counter vs floor height.
+    # Own file + guard flags (KBWCommunity_TableTop.lua is WE-owned and Community-only).
+    from kbw_tilepatch import write_tt_tabletop_lua
+    write_tt_tabletop_lua(os.path.join(_lua, "shared", "KBWTikiTown_TableTop.lua"))
+    # wall overlays: our own copies of tiles 72-91 (overlay-only props) -- map tiles untouched
+    from tikitown_wall_overlays import write_overlay_assets
+    write_overlay_assets(os.path.join(mod42, "media"))
+    # Electrical Cabinet Generator: item scripts (one per facing) + their item names
+    import tikitown_props14 as _p14
+    _p14.write_generator_items(os.path.join(mod42, "media"))
+    _p14.write_generator_icons(os.path.join(mod42, "media"))
+    _p14.write_generator_rotate_lua(os.path.join(mod42, "media", "lua", "shared", _p14.ROTATE_LUA_NAME))
+    json.dump(_p14.GEN_ITEM_NAMES, open(os.path.join(tr_dir, "ItemName.json"), "w", encoding="utf-8"),
+              indent=1, ensure_ascii=False)
     # tterika_02 tile-property patch (footlocker stacks 6, small cabinets 2, freestanding lockers)
     # plus the runtime removal of IsTableTop that an additive patch cannot do. Own tiledef; WE adds
     # the tiledef line to its (WE-owned) mod.info.
@@ -187,6 +212,13 @@ def main():
         tk=b.get("translationKey"); dn=b.get("displayName")
         if tk and dn and _ig.get(tk)!=dn:
             _ig[tk]=dn; _ig_changed+=1
+    # group card titles: the definitions win here too (naming pass 2026-11-08 renamed groups; the
+    # copied table matched the definitions exactly before that, 0 of 710 differing)
+    for b in all_built:
+        g=b.get("group") or {}
+        if g.get("translationKey") and g.get("name") and _ig.get(g["translationKey"])!=g["name"]:
+            _ig[g["translationKey"]]=g["name"]; _ig_changed+=1
+    _ig[_p14.ROTATE_LABEL_KEY] = "Rotate"          # Electrical Cabinet Generator world option
     json.dump(_ig, open(_ig_path,"w",encoding="utf-8"), indent=1, ensure_ascii=False)
     # tooltips: only our type keys now (the old per-piece keys just repeated the name; KBW-owned
     # keys are never shipped -- tooltip_fix still guards that)

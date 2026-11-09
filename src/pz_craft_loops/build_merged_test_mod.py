@@ -146,6 +146,8 @@ COMPLETED_IDS = {
     _DC + "edit_ddd_RUS_furniture_storage_03_67", _DC + "edit_ddd_RUS_furniture_storage_03_75",
     # Counters confirmed (2026-08-28): Sofaking pair + all 16 RUS upper cabinets
     _DC + "d_location_sofaking_10", _DC + "d_location_sofaking_11",
+    # TikiTown props-14 (sheet 38): ATM confirmed (user, 2026-08-28); the rest still In Progress
+    "worldessentials.tikitown.props14_atm",
 } | {_DC + "edit_ddd_RUS_fixtures_counters_03_%d" % i for c in range(2, 60, 8) for i in (c, c + 1)}
 # Pieces explicitly NOT yet confirmed (force In Progress even if a sibling on the sheet is done):
 INPROGRESS_ID_PREFIXES = {
@@ -178,6 +180,12 @@ TT_FILES = [
     "34_tikitown_newburbs_windows_accurate.json",
     "35_tikitown_newburbs_trim.json",
     "36_tikitown_tterika_storage.json",
+    "37_tikitown_soundproof.json",
+    "38_tikitown_props14.json",
+    "39_tikitown_wall_overlays.json",
+    "40_tikitown_lower_walls.json",
+    "41_tikitown_roof_slope_walls.json",
+    "42_tikitown_garage_trim.json",
 ]
 
 MOD_ID   = "TikiTownCommunityTest"
@@ -196,10 +204,22 @@ TT_PACK_OF = {
     "32": "TikiTown Newburbs", "33": "TikiTown Newburbs", "34": "TikiTown Newburbs",
     "35": "TikiTown Newburbs",  # 35_tikitown_newburbs_trim.json (NOT Dirkies counters)
     "36": "TikiTown",           # 36_tikitown_tterika_storage.json (lockers / footlocker)
+    "37": "TikiTown",           # 37_tikitown_soundproof.json (recording-studio panels; Completed)
+    "38": "TikiTown",           # 38_tikitown_props14.json (rest of props-14 minus statue; In Progress)
+    "39": "TikiTown",           # 39_tikitown_wall_overlays.json (lower wall overlays, 60 sheets; In Progress)
+    "40": "TikiTown",           # 40_tikitown_lower_walls.json (lower walls as real walls, 60 sheets; In Progress)
+    "41": "TikiTown",           # 41_tikitown_roof_slope_walls.json (gables, 63 sheets; In Progress)
+    "42": "TikiTown",           # 42_tikitown_garage_trim.json (garage door frames, 63 sheets; In Progress)
 }
 # TikiTown sheets confirmed in-game. Newburbs trim (35) marked Completed by user (2026-08-28).
 TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34","35",
-                "30", "36"}   # shelving + tterika storage confirmed (user, 2026-08-28)
+                "30", "36",   # shelving + tterika storage confirmed (user, 2026-08-28)
+                "37",         # soundproofing (all 5 pieces) confirmed (user, 2026-08-28)
+                "38", "39", "40",  # props-14, wall overlays, lower walls: Completed for testing (user, 2026-08-28)
+                "41", "42"}        # roof slope walls, garage trim: Completed (user, 2026-11-08)
+
+# TikiTown sheets that keep their KBW groups in the test bundle (see main)
+TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42"}   # 22: doors in 12 type groups (naming round 2)
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -280,6 +300,8 @@ def main():
         "pack=%s"%ICESHELL_PACK,                           # generated inert ice-machine shell (stage 1)
         "tiledef=%s %d"%(ICESHELL_TILEDEF_NAME, ICESHELL_TILEDEF_ID),
     ]
+    import tikitown_wall_overlays as _two
+    mi += _two.MODINFO_LINES                               # copied wall-overlay tiles (8179)
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
     _media=os.path.join(mod42,"media"); os.makedirs(_media, exist_ok=True)
     write_tv_screen_assets(_media)
@@ -320,8 +342,22 @@ def main():
     write_viewscreen_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_Viewscreens.lua"))
     # counter-top appliance height (coffee makers / slicer on floor vs counter)
     write_tabletop_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_TableTop.lua"))
+    # TikiTown props-14 table-top pieces: same fix, own file (as shipped in the TikiTown submod)
+    from kbw_tilepatch import write_tt_tabletop_lua
+    write_tt_tabletop_lua(os.path.join(_media, "lua", "shared", "KBWTikiTown_TableTop.lua"))
+    # TikiTown wall overlays: our own copied tiles (as in the submod)
+    from tikitown_wall_overlays import write_overlay_assets
+    write_overlay_assets(_media)
+    # Electrical Cabinet Generator item scripts (one per facing; see tikitown_props14)
+    import tikitown_props14 as _p14
+    _p14.write_generator_items(_media)
+    _p14.write_generator_icons(_media)
+    _p14.write_generator_rotate_lua(os.path.join(_media, "lua", "shared", _p14.ROTATE_LUA_NAME))
     # two-storey wall pieces (top tile one level up) pass KBW's wall-support check
     write_multistorey_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_MultiStorey.lua"))
+    # wall overlays: the cursor also runs World Essentials' attachment check (no mid-build errors)
+    from kbw_tilepatch import write_overlay_guard_lua
+    write_overlay_guard_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_OverlayGuard.lua"))
     # seating fixes for other packs' broken bed data (tterika double bed)
     write_seating_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_Seating.lua"))
 
@@ -358,8 +394,11 @@ def main():
             name_tooltip_pass.apply([nb], nt_tooltips)
             nb["subcategory"]=generic_type(b)    # generic type as subcategory
             nb["category"]=top                   # pack + status as top-level
-            # drop any group block so the test menu is a flat type list, not family groups
-            nb.pop("group", None)
+            # drop any group block so the test menu is a flat type list, not family groups -- except
+            # sheets whose groups ARE the type entries (one card per sheet + piece type, heights /
+            # variants inside: lower walls, wall overlays, cups) (user, 2026-08-28)
+            if not (pack.startswith("TikiTown") and sheet_key(fn) in TT_KEEP_GROUPS):
+                nb.pop("group", None)
             merged.append(nb)
             cat_counts[top]+=1; sub_counts[nb["subcategory"]]+=1; per_pack[pack]+=1
 
@@ -419,13 +458,22 @@ def main():
         elif _ig[tk]!=dn:
             _changed+=1
         _ig[tk]=dn
+    # card titles of the groups we kept (definitions are the source of truth)
+    for nb in merged:
+        g=nb.get("group") or {}
+        if g.get("translationKey") and g.get("name"):
+            _ig[g["translationKey"]]=g["name"]
     # "Build first: <shell name>" instead of the raw previous-stage id
     from container_caps import previous_stage_names
     _prev_names = previous_stage_names(merged)
     _ig.update(_prev_names)
     print("build-first names: %d" % len(_prev_names))
     _ig.update(bench_tools.TRANSLATIONS["IG_UI"])
-    json.dump(bench_tools.TRANSLATIONS["ItemName"], open(os.path.join(tr_dir, "ItemName.json"), "w", encoding="utf-8"),
+    _ig["IGUI_KBWTikiTown_RotateGenerator"] = "Rotate"   # tikitown_props14.ROTATE_LABEL_KEY
+    import tikitown_props14 as _p14
+    _item_names = dict(bench_tools.TRANSLATIONS["ItemName"])
+    _item_names.update(_p14.GEN_ITEM_NAMES)        # Electrical Cabinet Generator items
+    json.dump(_item_names, open(os.path.join(tr_dir, "ItemName.json"), "w", encoding="utf-8"),
               indent=1, ensure_ascii=False)
     json.dump(_ig, open(_ig_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     print("test translations: added %d, updated %d names" % (_added, _changed))

@@ -45,13 +45,14 @@ NAME_BY_ID = {
     # wrong object: the art is a wall-mounted fire extinguisher box (container extinguisher_box)
     "community.tk.containers.industry_tk_02_25": "Fire Extinguisher Cabinet",
     # TikiTown duplicates told apart by art
-    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_10": "Bathroom Wall - Style 6 (Door Frame, White)",
-    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_14": "Bathroom Wall - Style 6 (Door Frame, Beige)",
-    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_26": "Bathroom Wall - Style 6 (Door Frame, Grey)",
-    "worldessentials.tikitown.walls_exterior_house_tterika_02_12": "Exterior Wall - Style 2 (Door Frame, Red Plank)",
-    "worldessentials.tikitown.walls_exterior_house_tterika_02_25": "Exterior Wall - Style 2 (Door Frame, Grey)",
-    "worldessentials.tikitown.walls_interior_house_tterika_02_12": "Interior Wall - Style 2 (Door Frame, Grey)",
-    "worldessentials.tikitown.walls_interior_house_tterika_02_25": "Interior Wall - Style 2 (Door Frame, Light Grey)",
+    # (style names from tikitown_naming_pass round 2, 2026-11-08)
+    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_10": "White Square Tile Wall (Door Frame, White)",
+    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_14": "White Square Tile Wall (Door Frame, Beige)",
+    "worldessentials.tikitown.walls_interior_bathroom_tterika_01_26": "White Square Tile Wall (Door Frame, Gray)",
+    "worldessentials.tikitown.walls_exterior_house_tterika_02_12": "Red Plank Siding Wall (Door Frame, Red Plank)",
+    "worldessentials.tikitown.walls_exterior_house_tterika_02_25": "Red Plank Siding Wall (Door Frame, Gray)",
+    "worldessentials.tikitown.walls_interior_house_tterika_02_12": "Gray-Green Painted Wall (Door Frame, Gray)",
+    "worldessentials.tikitown.walls_interior_house_tterika_02_25": "Gray-Green Painted Wall (Door Frame, Light Gray)",
     "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_87": "Newburbs Sliding Glass Door Side Wall (Divided)",
 }
 # Newburbs clapboard wall variants (_b vent, _c utility box, _d small box; pillar_b is a thick post)

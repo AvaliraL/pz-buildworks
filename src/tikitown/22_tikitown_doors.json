@@ -6,7 +6,7 @@
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_0",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_0",
-   "displayName": "TikiTown Door - Style 1",
+   "displayName": "Pale Blue Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_0",
    "category": "Doors",
    "subcategory": "Doors",
@@ -154,16 +154,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_4",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_4",
-   "displayName": "TikiTown Door - Style 2",
+   "displayName": "Black Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_4",
    "category": "Doors",
    "subcategory": "Doors",
@@ -311,16 +311,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_8",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_8",
-   "displayName": "TikiTown Door - Style 3",
+   "displayName": "Tan Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_8",
    "category": "Doors",
    "subcategory": "Doors",
@@ -468,16 +468,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_12",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_12",
-   "displayName": "TikiTown Door - Style 4",
+   "displayName": "Dark Brown Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_12",
    "category": "Doors",
    "subcategory": "Doors",
@@ -625,16 +625,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_16",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_16",
-   "displayName": "TikiTown Door - Style 5",
+   "displayName": "Brown Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_16",
    "category": "Doors",
    "subcategory": "Doors",
@@ -782,16 +782,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 5
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_20",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_20",
-   "displayName": "TikiTown Door - Style 6",
+   "displayName": "Gray Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_20",
    "category": "Doors",
    "subcategory": "Doors",
@@ -939,16 +939,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 6
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_24",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_24",
-   "displayName": "TikiTown Door - Style 7",
+   "displayName": "Blue Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_24",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1096,16 +1096,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 7
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_28",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_28",
-   "displayName": "TikiTown Door - Style 8",
+   "displayName": "Red Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_28",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1253,16 +1253,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 8
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_32",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_32",
-   "displayName": "TikiTown Door - Style 9",
+   "displayName": "Dark Green Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_32",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1410,16 +1410,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 9
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_36",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_36",
-   "displayName": "TikiTown Door - Style 10",
+   "displayName": "Yellow Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_36",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1567,16 +1567,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
+    "id": "worldessentials.tikitown.doors_panel",
+    "name": "Panel Door",
+    "translationKey": "IGUI_WETiki_doors_panel_group",
     "level": 10
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_40",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_40",
-   "displayName": "TikiTown Door - Style 11",
+   "displayName": "Gray Metal Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_40",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1724,16 +1724,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 11
+    "id": "worldessentials.tikitown.doors_metal",
+    "name": "Metal Door",
+    "translationKey": "IGUI_WETiki_doors_metal_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_44",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_44",
-   "displayName": "TikiTown Door - Style 12",
+   "displayName": "Gray Metal Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_44",
    "category": "Doors",
    "subcategory": "Doors",
@@ -1881,16 +1881,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 12
+    "id": "worldessentials.tikitown.doors_metal",
+    "name": "Metal Door",
+    "translationKey": "IGUI_WETiki_doors_metal_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_48",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_48",
-   "displayName": "TikiTown Door - Style 13",
+   "displayName": "Navy Metal Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_48",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2038,16 +2038,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 13
+    "id": "worldessentials.tikitown.doors_metal",
+    "name": "Metal Door",
+    "translationKey": "IGUI_WETiki_doors_metal_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_52",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_52",
-   "displayName": "TikiTown Door - Style 14",
+   "displayName": "Navy Metal Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_52",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2195,16 +2195,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 14
+    "id": "worldessentials.tikitown.doors_metal",
+    "name": "Metal Door",
+    "translationKey": "IGUI_WETiki_doors_metal_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_56",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_56",
-   "displayName": "TikiTown Door - Style 15",
+   "displayName": "Blue Panel Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_56",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2352,16 +2352,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 15
+    "id": "worldessentials.tikitown.doors_panel_window",
+    "name": "Panel Door with Window",
+    "translationKey": "IGUI_WETiki_doors_panel_window_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_60",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_60",
-   "displayName": "TikiTown Door - Style 16",
+   "displayName": "Red Panel Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_60",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2509,16 +2509,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 16
+    "id": "worldessentials.tikitown.doors_panel_window",
+    "name": "Panel Door with Window",
+    "translationKey": "IGUI_WETiki_doors_panel_window_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_64",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_64",
-   "displayName": "TikiTown Door - Style 17",
+   "displayName": "Dark Green Panel Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_64",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2666,16 +2666,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 17
+    "id": "worldessentials.tikitown.doors_panel_window",
+    "name": "Panel Door with Window",
+    "translationKey": "IGUI_WETiki_doors_panel_window_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_68",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_68",
-   "displayName": "TikiTown Door - Style 18",
+   "displayName": "Yellow Panel Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_68",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2823,16 +2823,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 18
+    "id": "worldessentials.tikitown.doors_panel_window",
+    "name": "Panel Door with Window",
+    "translationKey": "IGUI_WETiki_doors_panel_window_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_72",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_72",
-   "displayName": "TikiTown Door - Style 19",
+   "displayName": "White Louvered Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_72",
    "category": "Doors",
    "subcategory": "Doors",
@@ -2980,16 +2980,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 19
+    "id": "worldessentials.tikitown.doors_louvered",
+    "name": "Louvered Door",
+    "translationKey": "IGUI_WETiki_doors_louvered_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_76",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_76",
-   "displayName": "TikiTown Door - Style 20",
+   "displayName": "Brown Louvered Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_76",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3137,16 +3137,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 20
+    "id": "worldessentials.tikitown.doors_louvered",
+    "name": "Louvered Door",
+    "translationKey": "IGUI_WETiki_doors_louvered_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_80",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_80",
-   "displayName": "TikiTown Door - Style 21",
+   "displayName": "Gray Commercial Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_80",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3294,16 +3294,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 21
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_84",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_84",
-   "displayName": "TikiTown Door - Style 22",
+   "displayName": "Beige Commercial Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_84",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3451,16 +3451,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 22
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_88",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_88",
-   "displayName": "TikiTown Door - Style 23",
+   "displayName": "Mustard Commercial Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_88",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3608,16 +3608,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 23
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_92",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_92",
-   "displayName": "TikiTown Door - Style 24",
+   "displayName": "Black Commercial Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_92",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3765,16 +3765,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 24
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_96",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_96",
-   "displayName": "TikiTown Door - Style 25",
+   "displayName": "Gray Commercial Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_96",
    "category": "Doors",
    "subcategory": "Doors",
@@ -3922,16 +3922,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 25
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 5
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_100",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_100",
-   "displayName": "TikiTown Door - Style 26",
+   "displayName": "Beige Commercial Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_100",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4079,16 +4079,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 26
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 6
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_104",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_104",
-   "displayName": "TikiTown Door - Style 27",
+   "displayName": "White Commercial Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_104",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4236,16 +4236,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 27
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 7
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_108",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_108",
-   "displayName": "TikiTown Door - Style 28",
+   "displayName": "White Commercial Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_108",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4393,16 +4393,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 28
+    "id": "worldessentials.tikitown.doors_commercial",
+    "name": "Commercial Door",
+    "translationKey": "IGUI_WETiki_doors_commercial_group",
+    "level": 8
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_112",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_112",
-   "displayName": "TikiTown Door - Style 29",
+   "displayName": "Maroon Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_112",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4550,16 +4550,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 29
+    "id": "worldessentials.tikitown.doors_glass",
+    "name": "Glass Door",
+    "translationKey": "IGUI_WETiki_doors_glass_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_116",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_116",
-   "displayName": "TikiTown Door - Style 30",
+   "displayName": "Black Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_116",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4707,16 +4707,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 30
+    "id": "worldessentials.tikitown.doors_glass",
+    "name": "Glass Door",
+    "translationKey": "IGUI_WETiki_doors_glass_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_120",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_120",
-   "displayName": "TikiTown Door - Style 31",
+   "displayName": "White Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_120",
    "category": "Doors",
    "subcategory": "Doors",
@@ -4864,16 +4864,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 31
+    "id": "worldessentials.tikitown.doors_glass",
+    "name": "Glass Door",
+    "translationKey": "IGUI_WETiki_doors_glass_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_124",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_124",
-   "displayName": "TikiTown Door - Style 32",
+   "displayName": "Green Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_124",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5021,16 +5021,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 32
+    "id": "worldessentials.tikitown.doors_glass",
+    "name": "Glass Door",
+    "translationKey": "IGUI_WETiki_doors_glass_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_01_128",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_01_128",
-   "displayName": "TikiTown Door - Style 33",
+   "displayName": "Ochre Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_01_128",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5178,16 +5178,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_34f5dc032d472d4a",
-    "name": "TikiTown Door - Style 1",
-    "translationKey": "IGUI_WETiki_family_34f5dc032d472d4a",
-    "level": 33
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_0",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_0",
-   "displayName": "TikiTown Door - Style 34",
+   "displayName": "White Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_0",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5335,16 +5335,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
     "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_4",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_4",
-   "displayName": "TikiTown Door - Style 35",
+   "displayName": "White Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_4",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5492,16 +5492,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
     "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_8",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_8",
-   "displayName": "TikiTown Door - Style 36",
+   "displayName": "Mahogany Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_8",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5649,16 +5649,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
     "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_12",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_12",
-   "displayName": "TikiTown Door - Style 37",
+   "displayName": "Mahogany Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_12",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5806,16 +5806,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
     "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_16",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_16",
-   "displayName": "TikiTown Door - Style 38",
+   "displayName": "Sky Blue Arched Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_16",
    "category": "Doors",
    "subcategory": "Doors",
@@ -5963,16 +5963,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 5
+    "id": "worldessentials.tikitown.doors_arched_panel",
+    "name": "Arched Panel Door",
+    "translationKey": "IGUI_WETiki_doors_arched_panel_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_20",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_20",
-   "displayName": "TikiTown Door - Style 39",
+   "displayName": "Sky Blue Arched Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_20",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6120,16 +6120,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 6
+    "id": "worldessentials.tikitown.doors_arched_panel",
+    "name": "Arched Panel Door",
+    "translationKey": "IGUI_WETiki_doors_arched_panel_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_24",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_24",
-   "displayName": "TikiTown Door - Style 40",
+   "displayName": "Black Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_24",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6277,16 +6277,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 7
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 5
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_28",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_28",
-   "displayName": "TikiTown Door - Style 41",
+   "displayName": "Black Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_28",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6434,16 +6434,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 8
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 6
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_32",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_32",
-   "displayName": "TikiTown Door - Style 42",
+   "displayName": "Tan Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_32",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6591,16 +6591,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 9
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 7
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_36",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_36",
-   "displayName": "TikiTown Door - Style 43",
+   "displayName": "Tan Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_36",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6748,16 +6748,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 10
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 8
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_40",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_40",
-   "displayName": "TikiTown Door - Style 44",
+   "displayName": "Dark Brown Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_40",
    "category": "Doors",
    "subcategory": "Doors",
@@ -6905,16 +6905,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 11
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 9
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_44",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_44",
-   "displayName": "TikiTown Door - Style 45",
+   "displayName": "Dark Brown Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_44",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7062,16 +7062,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 12
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 10
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_48",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_48",
-   "displayName": "TikiTown Door - Style 46",
+   "displayName": "Brown Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_48",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7219,16 +7219,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 13
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 11
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_52",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_52",
-   "displayName": "TikiTown Door - Style 47",
+   "displayName": "Brown Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_52",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7376,16 +7376,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 14
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 12
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_56",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_56",
-   "displayName": "TikiTown Door - Style 48",
+   "displayName": "Gray Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_56",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7533,16 +7533,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 15
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 13
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_60",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_60",
-   "displayName": "TikiTown Door - Style 49",
+   "displayName": "Gray Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_60",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7690,16 +7690,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 16
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 14
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_64",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_64",
-   "displayName": "TikiTown Door - Style 50",
+   "displayName": "Blue Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_64",
    "category": "Doors",
    "subcategory": "Doors",
@@ -7847,16 +7847,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 17
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 15
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_68",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_68",
-   "displayName": "TikiTown Door - Style 51",
+   "displayName": "Blue Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_68",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8004,16 +8004,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 18
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 16
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_72",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_72",
-   "displayName": "TikiTown Door - Style 52",
+   "displayName": "Red Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_72",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8161,16 +8161,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 19
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 17
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_76",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_76",
-   "displayName": "TikiTown Door - Style 53",
+   "displayName": "Red Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_76",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8318,16 +8318,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 20
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 18
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_80",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_80",
-   "displayName": "TikiTown Door - Style 54",
+   "displayName": "Dark Green Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_80",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8475,16 +8475,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 21
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 19
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_84",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_84",
-   "displayName": "TikiTown Door - Style 55",
+   "displayName": "Dark Green Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_84",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8632,16 +8632,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 22
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 20
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_88",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_88",
-   "displayName": "TikiTown Door - Style 56",
+   "displayName": "Yellow Six-Panel Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_88",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8789,16 +8789,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 23
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 21
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_92",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_92",
-   "displayName": "TikiTown Door - Style 57",
+   "displayName": "Yellow Six-Panel Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_92",
    "category": "Doors",
    "subcategory": "Doors",
@@ -8946,16 +8946,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 24
+    "id": "worldessentials.tikitown.doors_six_panel",
+    "name": "Six-Panel Door",
+    "translationKey": "IGUI_WETiki_doors_six_panel_group",
+    "level": 22
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_96",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_96",
-   "displayName": "TikiTown Door - Style 58",
+   "displayName": "Brown Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_96",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9103,16 +9103,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 25
+    "id": "worldessentials.tikitown.doors_window",
+    "name": "Door with Window",
+    "translationKey": "IGUI_WETiki_doors_window_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_100",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_100",
-   "displayName": "TikiTown Door - Style 59",
+   "displayName": "Brown Door with Window (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_100",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9260,16 +9260,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 26
+    "id": "worldessentials.tikitown.doors_window",
+    "name": "Door with Window",
+    "translationKey": "IGUI_WETiki_doors_window_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_104",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_104",
-   "displayName": "TikiTown Door - Style 60",
+   "displayName": "White Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_104",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9417,16 +9417,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 27
+    "id": "worldessentials.tikitown.doors_window",
+    "name": "Door with Window",
+    "translationKey": "IGUI_WETiki_doors_window_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_108",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_108",
-   "displayName": "TikiTown Door - Style 61",
+   "displayName": "White Door with Window (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_108",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9574,16 +9574,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 28
+    "id": "worldessentials.tikitown.doors_window",
+    "name": "Door with Window",
+    "translationKey": "IGUI_WETiki_doors_window_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_112",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_112",
-   "displayName": "TikiTown Door - Style 62",
+   "displayName": "Navy Flush Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_112",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9731,16 +9731,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 29
+    "id": "worldessentials.tikitown.doors_flush",
+    "name": "Flush Door",
+    "translationKey": "IGUI_WETiki_doors_flush_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_116",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_116",
-   "displayName": "TikiTown Door - Style 63",
+   "displayName": "Navy Flush Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_116",
    "category": "Doors",
    "subcategory": "Doors",
@@ -9888,16 +9888,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 30
+    "id": "worldessentials.tikitown.doors_flush",
+    "name": "Flush Door",
+    "translationKey": "IGUI_WETiki_doors_flush_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_120",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_120",
-   "displayName": "TikiTown Door - Style 64",
+   "displayName": "White Flush Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_120",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10045,16 +10045,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 31
+    "id": "worldessentials.tikitown.doors_flush",
+    "name": "Flush Door",
+    "translationKey": "IGUI_WETiki_doors_flush_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_124",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_124",
-   "displayName": "TikiTown Door - Style 65",
+   "displayName": "White Flush Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_124",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10202,16 +10202,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 32
+    "id": "worldessentials.tikitown.doors_flush",
+    "name": "Flush Door",
+    "translationKey": "IGUI_WETiki_doors_flush_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_128",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_128",
-   "displayName": "TikiTown Door - Style 66",
+   "displayName": "Maroon Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_128",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10359,16 +10359,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 33
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 1
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_132",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_132",
-   "displayName": "TikiTown Door - Style 67",
+   "displayName": "Maroon Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_132",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10516,16 +10516,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 34
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_136",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_136",
-   "displayName": "TikiTown Door - Style 68",
+   "displayName": "Black Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_136",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10673,16 +10673,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 35
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_140",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_140",
-   "displayName": "TikiTown Door - Style 69",
+   "displayName": "Black Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_140",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10830,16 +10830,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 36
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_144",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_144",
-   "displayName": "TikiTown Door - Style 70",
+   "displayName": "White Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_144",
    "category": "Doors",
    "subcategory": "Doors",
@@ -10987,16 +10987,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 37
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 5
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_148",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_148",
-   "displayName": "TikiTown Door - Style 71",
+   "displayName": "White Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_148",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11144,16 +11144,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 38
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 6
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_152",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_152",
-   "displayName": "TikiTown Door - Style 72",
+   "displayName": "Green Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_152",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11301,16 +11301,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 39
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 7
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_156",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_156",
-   "displayName": "TikiTown Door - Style 73",
+   "displayName": "Green Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_156",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11458,16 +11458,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 40
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 8
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_160",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_160",
-   "displayName": "TikiTown Door - Style 74",
+   "displayName": "Red Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_160",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11615,16 +11615,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 41
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 9
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_164",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_164",
-   "displayName": "TikiTown Door - Style 75",
+   "displayName": "Red Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_164",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11772,16 +11772,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 42
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 10
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_168",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_168",
-   "displayName": "TikiTown Door - Style 76",
+   "displayName": "Blue Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_168",
    "category": "Doors",
    "subcategory": "Doors",
@@ -11929,16 +11929,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 43
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 11
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_172",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_172",
-   "displayName": "TikiTown Door - Style 77",
+   "displayName": "Blue Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_172",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12086,16 +12086,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 44
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 12
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_176",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_176",
-   "displayName": "TikiTown Door - Style 78",
+   "displayName": "Copper Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_176",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12243,16 +12243,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 45
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 13
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_180",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_180",
-   "displayName": "TikiTown Door - Style 79",
+   "displayName": "Copper Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_180",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12400,16 +12400,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 46
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 14
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_184",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_184",
-   "displayName": "TikiTown Door - Style 80",
+   "displayName": "Mahogany Framed Glass Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_184",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12557,16 +12557,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 47
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 15
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_188",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_188",
-   "displayName": "TikiTown Door - Style 81",
+   "displayName": "Mahogany Framed Glass Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_188",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12714,16 +12714,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 48
+    "id": "worldessentials.tikitown.doors_framed_glass",
+    "name": "Framed Glass Door",
+    "translationKey": "IGUI_WETiki_doors_framed_glass_group",
+    "level": 16
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_192",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_192",
-   "displayName": "TikiTown Door - Style 82",
+   "displayName": "Blue Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_192",
    "category": "Doors",
    "subcategory": "Doors",
@@ -12871,16 +12871,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 49
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 2
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_196",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_196",
-   "displayName": "TikiTown Door - Style 83",
+   "displayName": "Blue Kickplate Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_196",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13028,16 +13028,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 50
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 3
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_200",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_200",
-   "displayName": "TikiTown Door - Style 84",
+   "displayName": "Blue Kickplate Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_200",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13185,16 +13185,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 51
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 4
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_204",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_204",
-   "displayName": "TikiTown Door - Style 85",
+   "displayName": "Blue Kickplate Door with Window (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_204",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13342,16 +13342,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 52
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 5
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_208",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_208",
-   "displayName": "TikiTown Door - Style 86",
+   "displayName": "Red Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_208",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13499,16 +13499,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 53
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 6
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_212",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_212",
-   "displayName": "TikiTown Door - Style 87",
+   "displayName": "Red Kickplate Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_212",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13656,16 +13656,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 54
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 7
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_216",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_216",
-   "displayName": "TikiTown Door - Style 88",
+   "displayName": "Red Kickplate Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_216",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13813,16 +13813,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 55
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 8
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_220",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_220",
-   "displayName": "TikiTown Door - Style 89",
+   "displayName": "Red Kickplate Door with Window (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_220",
    "category": "Doors",
    "subcategory": "Doors",
@@ -13970,16 +13970,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 56
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 9
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_224",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_224",
-   "displayName": "TikiTown Door - Style 90",
+   "displayName": "Black Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_224",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14127,16 +14127,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 57
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 10
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_228",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_228",
-   "displayName": "TikiTown Door - Style 91",
+   "displayName": "Black Kickplate Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_228",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14284,16 +14284,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 58
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 11
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_232",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_232",
-   "displayName": "TikiTown Door - Style 92",
+   "displayName": "Black Kickplate Door with Window",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_232",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14441,16 +14441,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 59
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 12
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_236",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_236",
-   "displayName": "TikiTown Door - Style 93",
+   "displayName": "Black Kickplate Door with Window (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_236",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14598,16 +14598,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 60
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 13
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_240",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_240",
-   "displayName": "TikiTown Door - Style 94",
+   "displayName": "Green Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_240",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14755,16 +14755,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 61
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 14
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_244",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_244",
-   "displayName": "TikiTown Door - Style 95",
+   "displayName": "Green Kickplate Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_244",
    "category": "Doors",
    "subcategory": "Doors",
@@ -14912,16 +14912,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 62
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 15
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_248",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_248",
-   "displayName": "TikiTown Door - Style 96",
+   "displayName": "Mustard Kickplate Door",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_248",
    "category": "Doors",
    "subcategory": "Doors",
@@ -15069,16 +15069,16 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 63
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 16
    }
   },
   {
    "id": "worldessentials.tikitown.fixtures_doors_tterika_02_252",
    "translationKey": "IGUI_WETiki_fixtures_doors_tterika_02_252",
-   "displayName": "TikiTown Door - Style 97",
+   "displayName": "Mustard Kickplate Door (Mirrored)",
    "tooltipKey": "Tooltip_WETiki_fixtures_doors_tterika_02_252",
    "category": "Doors",
    "subcategory": "Doors",
@@ -15226,10 +15226,10 @@
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_d1db676d826044a1",
-    "name": "TikiTown Door - Style 34",
-    "translationKey": "IGUI_WETiki_family_d1db676d826044a1",
-    "level": 64
+    "id": "worldessentials.tikitown.doors_kickplate",
+    "name": "Kickplate Door",
+    "translationKey": "IGUI_WETiki_doors_kickplate_group",
+    "level": 17
    }
   }
  ]

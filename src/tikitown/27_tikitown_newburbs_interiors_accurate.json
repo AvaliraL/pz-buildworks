@@ -18090,7 +18090,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wall",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wall",
-   "displayName": "Grey Asparagus Wall",
+   "displayName": "Gray Asparagus Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18193,7 +18193,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_window",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_window",
-   "displayName": "Grey Asparagus Window Frame",
+   "displayName": "Gray Asparagus Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18296,7 +18296,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 1
    }
@@ -18304,7 +18304,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_doorframe",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_doorframe",
-   "displayName": "Grey Asparagus Door Frame",
+   "displayName": "Gray Asparagus Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18407,7 +18407,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_71d0d16453b02bd5",
-    "name": "Grey Asparagus Door Frames",
+    "name": "Gray Asparagus Door Frames",
     "translationKey": "IGUI_WETiki_family_71d0d16453b02bd5",
     "level": 1
    }
@@ -18415,7 +18415,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_window_l",
-   "displayName": "Grey Asparagus Window Frame - Wide Left",
+   "displayName": "Gray Asparagus Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18518,7 +18518,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 2
    }
@@ -18526,7 +18526,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_window_c",
-   "displayName": "Grey Asparagus Window Frame - Wide Center",
+   "displayName": "Gray Asparagus Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18629,7 +18629,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 3
    }
@@ -18637,7 +18637,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_window_r",
-   "displayName": "Grey Asparagus Window Frame - Wide Right",
+   "displayName": "Gray Asparagus Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18740,7 +18740,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 4
    }
@@ -18748,7 +18748,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_tall_window",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_tall_window",
-   "displayName": "Grey Asparagus Window Frame - Tall",
+   "displayName": "Gray Asparagus Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18851,7 +18851,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 5
    }
@@ -18859,7 +18859,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_tall_l",
-   "displayName": "Grey Asparagus Window Frame - Wide Tall Left",
+   "displayName": "Gray Asparagus Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -18962,7 +18962,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 6
    }
@@ -18970,7 +18970,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_tall_c",
-   "displayName": "Grey Asparagus Window Frame - Wide Tall Center",
+   "displayName": "Gray Asparagus Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19073,7 +19073,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 7
    }
@@ -19081,7 +19081,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_wide_tall_r",
-   "displayName": "Grey Asparagus Window Frame - Wide Tall Right",
+   "displayName": "Gray Asparagus Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19184,7 +19184,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_67fc3df02813f19a",
-    "name": "Grey Asparagus Window Frames",
+    "name": "Gray Asparagus Window Frames",
     "translationKey": "IGUI_WETiki_family_67fc3df02813f19a",
     "level": 8
    }
@@ -19192,7 +19192,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_garage_l",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_garage_l",
-   "displayName": "Grey Asparagus Door Frame - Garage Left",
+   "displayName": "Gray Asparagus Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19295,7 +19295,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_71d0d16453b02bd5",
-    "name": "Grey Asparagus Door Frames",
+    "name": "Gray Asparagus Door Frames",
     "translationKey": "IGUI_WETiki_family_71d0d16453b02bd5",
     "level": 2
    }
@@ -19303,7 +19303,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_garage_c",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_garage_c",
-   "displayName": "Grey Asparagus Door Frame - Garage Center",
+   "displayName": "Gray Asparagus Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19406,7 +19406,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_71d0d16453b02bd5",
-    "name": "Grey Asparagus Door Frames",
+    "name": "Gray Asparagus Door Frames",
     "translationKey": "IGUI_WETiki_family_71d0d16453b02bd5",
     "level": 3
    }
@@ -19414,7 +19414,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_garage_r",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_garage_r",
-   "displayName": "Grey Asparagus Door Frame - Garage Right",
+   "displayName": "Gray Asparagus Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19517,7 +19517,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_71d0d16453b02bd5",
-    "name": "Grey Asparagus Door Frames",
+    "name": "Gray Asparagus Door Frames",
     "translationKey": "IGUI_WETiki_family_71d0d16453b02bd5",
     "level": 4
    }
@@ -19525,7 +19525,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_corner",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_corner",
-   "displayName": "Grey Asparagus Corner Wall",
+   "displayName": "Gray Asparagus Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19628,7 +19628,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_03_c4_pillar",
    "translationKey": "IGUI_tt_newburbs_interiors_03_c4_pillar",
-   "displayName": "Grey Asparagus Pillar",
+   "displayName": "Gray Asparagus Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_03_c4_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19734,7 +19734,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wall",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wall",
-   "displayName": "Granite Grey Wall",
+   "displayName": "Granite Gray Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19837,7 +19837,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_window",
-   "displayName": "Granite Grey Window Frame",
+   "displayName": "Granite Gray Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -19940,7 +19940,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 1
    }
@@ -19948,7 +19948,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_doorframe",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_doorframe",
-   "displayName": "Granite Grey Door Frame",
+   "displayName": "Granite Gray Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20051,7 +20051,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_1b0c877f6a6fd75c",
-    "name": "Granite Grey Door Frames",
+    "name": "Granite Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_1b0c877f6a6fd75c",
     "level": 1
    }
@@ -20059,7 +20059,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_window_l",
-   "displayName": "Granite Grey Window Frame - Wide Left",
+   "displayName": "Granite Gray Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20162,7 +20162,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 2
    }
@@ -20170,7 +20170,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_window_c",
-   "displayName": "Granite Grey Window Frame - Wide Center",
+   "displayName": "Granite Gray Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20273,7 +20273,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 3
    }
@@ -20281,7 +20281,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_window_r",
-   "displayName": "Granite Grey Window Frame - Wide Right",
+   "displayName": "Granite Gray Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20384,7 +20384,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 4
    }
@@ -20392,7 +20392,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_tall_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_tall_window",
-   "displayName": "Granite Grey Window Frame - Tall",
+   "displayName": "Granite Gray Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20495,7 +20495,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 5
    }
@@ -20503,7 +20503,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_tall_l",
-   "displayName": "Granite Grey Window Frame - Wide Tall Left",
+   "displayName": "Granite Gray Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20606,7 +20606,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 6
    }
@@ -20614,7 +20614,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_tall_c",
-   "displayName": "Granite Grey Window Frame - Wide Tall Center",
+   "displayName": "Granite Gray Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20717,7 +20717,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 7
    }
@@ -20725,7 +20725,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_wide_tall_r",
-   "displayName": "Granite Grey Window Frame - Wide Tall Right",
+   "displayName": "Granite Gray Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20828,7 +20828,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d6c722bf37e4fe96",
-    "name": "Granite Grey Window Frames",
+    "name": "Granite Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d6c722bf37e4fe96",
     "level": 8
    }
@@ -20836,7 +20836,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_garage_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_garage_l",
-   "displayName": "Granite Grey Door Frame - Garage Left",
+   "displayName": "Granite Gray Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -20939,7 +20939,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_1b0c877f6a6fd75c",
-    "name": "Granite Grey Door Frames",
+    "name": "Granite Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_1b0c877f6a6fd75c",
     "level": 2
    }
@@ -20947,7 +20947,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_garage_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_garage_c",
-   "displayName": "Granite Grey Door Frame - Garage Center",
+   "displayName": "Granite Gray Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21050,7 +21050,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_1b0c877f6a6fd75c",
-    "name": "Granite Grey Door Frames",
+    "name": "Granite Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_1b0c877f6a6fd75c",
     "level": 3
    }
@@ -21058,7 +21058,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_garage_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_garage_r",
-   "displayName": "Granite Grey Door Frame - Garage Right",
+   "displayName": "Granite Gray Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21161,7 +21161,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_1b0c877f6a6fd75c",
-    "name": "Granite Grey Door Frames",
+    "name": "Granite Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_1b0c877f6a6fd75c",
     "level": 4
    }
@@ -21169,7 +21169,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_corner",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_corner",
-   "displayName": "Granite Grey Corner Wall",
+   "displayName": "Granite Gray Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21272,7 +21272,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c1_pillar",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c1_pillar",
-   "displayName": "Granite Grey Pillar",
+   "displayName": "Granite Gray Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c1_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21378,7 +21378,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wall",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wall",
-   "displayName": "Spanish Grey Wall",
+   "displayName": "Spanish Gray Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21481,7 +21481,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_window",
-   "displayName": "Spanish Grey Window Frame",
+   "displayName": "Spanish Gray Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21584,7 +21584,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 1
    }
@@ -21592,7 +21592,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_doorframe",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_doorframe",
-   "displayName": "Spanish Grey Door Frame",
+   "displayName": "Spanish Gray Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21695,7 +21695,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c17cbaf5f25b5086",
-    "name": "Spanish Grey Door Frames",
+    "name": "Spanish Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_c17cbaf5f25b5086",
     "level": 1
    }
@@ -21703,7 +21703,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_window_l",
-   "displayName": "Spanish Grey Window Frame - Wide Left",
+   "displayName": "Spanish Gray Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21806,7 +21806,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 2
    }
@@ -21814,7 +21814,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_window_c",
-   "displayName": "Spanish Grey Window Frame - Wide Center",
+   "displayName": "Spanish Gray Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -21917,7 +21917,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 3
    }
@@ -21925,7 +21925,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_window_r",
-   "displayName": "Spanish Grey Window Frame - Wide Right",
+   "displayName": "Spanish Gray Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22028,7 +22028,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 4
    }
@@ -22036,7 +22036,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_tall_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_tall_window",
-   "displayName": "Spanish Grey Window Frame - Tall",
+   "displayName": "Spanish Gray Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22139,7 +22139,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 5
    }
@@ -22147,7 +22147,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_tall_l",
-   "displayName": "Spanish Grey Window Frame - Wide Tall Left",
+   "displayName": "Spanish Gray Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22250,7 +22250,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 6
    }
@@ -22258,7 +22258,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_tall_c",
-   "displayName": "Spanish Grey Window Frame - Wide Tall Center",
+   "displayName": "Spanish Gray Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22361,7 +22361,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 7
    }
@@ -22369,7 +22369,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_wide_tall_r",
-   "displayName": "Spanish Grey Window Frame - Wide Tall Right",
+   "displayName": "Spanish Gray Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22472,7 +22472,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d7f1e9966552df5d",
-    "name": "Spanish Grey Window Frames",
+    "name": "Spanish Gray Window Frames",
     "translationKey": "IGUI_WETiki_family_d7f1e9966552df5d",
     "level": 8
    }
@@ -22480,7 +22480,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_garage_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_garage_l",
-   "displayName": "Spanish Grey Door Frame - Garage Left",
+   "displayName": "Spanish Gray Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22583,7 +22583,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c17cbaf5f25b5086",
-    "name": "Spanish Grey Door Frames",
+    "name": "Spanish Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_c17cbaf5f25b5086",
     "level": 2
    }
@@ -22591,7 +22591,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_garage_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_garage_c",
-   "displayName": "Spanish Grey Door Frame - Garage Center",
+   "displayName": "Spanish Gray Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22694,7 +22694,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c17cbaf5f25b5086",
-    "name": "Spanish Grey Door Frames",
+    "name": "Spanish Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_c17cbaf5f25b5086",
     "level": 3
    }
@@ -22702,7 +22702,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_garage_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_garage_r",
-   "displayName": "Spanish Grey Door Frame - Garage Right",
+   "displayName": "Spanish Gray Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22805,7 +22805,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c17cbaf5f25b5086",
-    "name": "Spanish Grey Door Frames",
+    "name": "Spanish Gray Door Frames",
     "translationKey": "IGUI_WETiki_family_c17cbaf5f25b5086",
     "level": 4
    }
@@ -22813,7 +22813,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_corner",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_corner",
-   "displayName": "Spanish Grey Corner Wall",
+   "displayName": "Spanish Gray Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -22916,7 +22916,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c2_pillar",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c2_pillar",
-   "displayName": "Spanish Grey Pillar",
+   "displayName": "Spanish Gray Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c2_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -24666,7 +24666,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wall",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wall",
-   "displayName": "Granite Grey Dark Wall",
+   "displayName": "Granite Gray Dark Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -24769,7 +24769,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_window",
-   "displayName": "Granite Grey Dark Window Frame",
+   "displayName": "Granite Gray Dark Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -24872,7 +24872,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 1
    }
@@ -24880,7 +24880,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_doorframe",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_doorframe",
-   "displayName": "Granite Grey Dark Door Frame",
+   "displayName": "Granite Gray Dark Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -24983,7 +24983,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_44d4937785e12f6a",
-    "name": "Granite Grey Dark Door Frames",
+    "name": "Granite Gray Dark Door Frames",
     "translationKey": "IGUI_WETiki_family_44d4937785e12f6a",
     "level": 1
    }
@@ -24991,7 +24991,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_window_l",
-   "displayName": "Granite Grey Dark Window Frame - Wide Left",
+   "displayName": "Granite Gray Dark Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25094,7 +25094,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 2
    }
@@ -25102,7 +25102,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_window_c",
-   "displayName": "Granite Grey Dark Window Frame - Wide Center",
+   "displayName": "Granite Gray Dark Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25205,7 +25205,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 3
    }
@@ -25213,7 +25213,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_window_r",
-   "displayName": "Granite Grey Dark Window Frame - Wide Right",
+   "displayName": "Granite Gray Dark Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25316,7 +25316,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 4
    }
@@ -25324,7 +25324,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_tall_window",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_tall_window",
-   "displayName": "Granite Grey Dark Window Frame - Tall",
+   "displayName": "Granite Gray Dark Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25427,7 +25427,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 5
    }
@@ -25435,7 +25435,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_tall_l",
-   "displayName": "Granite Grey Dark Window Frame - Wide Tall Left",
+   "displayName": "Granite Gray Dark Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25538,7 +25538,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 6
    }
@@ -25546,7 +25546,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_tall_c",
-   "displayName": "Granite Grey Dark Window Frame - Wide Tall Center",
+   "displayName": "Granite Gray Dark Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25649,7 +25649,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 7
    }
@@ -25657,7 +25657,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_wide_tall_r",
-   "displayName": "Granite Grey Dark Window Frame - Wide Tall Right",
+   "displayName": "Granite Gray Dark Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25760,7 +25760,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3357d01e893ac0b6",
-    "name": "Granite Grey Dark Window Frames",
+    "name": "Granite Gray Dark Window Frames",
     "translationKey": "IGUI_WETiki_family_3357d01e893ac0b6",
     "level": 8
    }
@@ -25768,7 +25768,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_garage_l",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_garage_l",
-   "displayName": "Granite Grey Dark Door Frame - Garage Left",
+   "displayName": "Granite Gray Dark Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25871,7 +25871,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_44d4937785e12f6a",
-    "name": "Granite Grey Dark Door Frames",
+    "name": "Granite Gray Dark Door Frames",
     "translationKey": "IGUI_WETiki_family_44d4937785e12f6a",
     "level": 2
    }
@@ -25879,7 +25879,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_garage_c",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_garage_c",
-   "displayName": "Granite Grey Dark Door Frame - Garage Center",
+   "displayName": "Granite Gray Dark Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -25982,7 +25982,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_44d4937785e12f6a",
-    "name": "Granite Grey Dark Door Frames",
+    "name": "Granite Gray Dark Door Frames",
     "translationKey": "IGUI_WETiki_family_44d4937785e12f6a",
     "level": 3
    }
@@ -25990,7 +25990,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_garage_r",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_garage_r",
-   "displayName": "Granite Grey Dark Door Frame - Garage Right",
+   "displayName": "Granite Gray Dark Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -26093,7 +26093,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_44d4937785e12f6a",
-    "name": "Granite Grey Dark Door Frames",
+    "name": "Granite Gray Dark Door Frames",
     "translationKey": "IGUI_WETiki_family_44d4937785e12f6a",
     "level": 4
    }
@@ -26101,7 +26101,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_corner",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_corner",
-   "displayName": "Granite Grey Dark Corner Wall",
+   "displayName": "Granite Gray Dark Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",
@@ -26204,7 +26204,7 @@
   {
    "id": "tikitown.newburbs.tt_newburbs_interiors_04_c4_pillar",
    "translationKey": "IGUI_tt_newburbs_interiors_04_c4_pillar",
-   "displayName": "Granite Grey Dark Pillar",
+   "displayName": "Granite Gray Dark Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_interiors_04_c4_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Interior",

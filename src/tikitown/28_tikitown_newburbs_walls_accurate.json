@@ -1664,7 +1664,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wall",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wall",
-   "displayName": "Warm Grey Clapboard Wall",
+   "displayName": "Warm Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -1765,7 +1765,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5920999362b5d271",
-    "name": "Warm Grey Clapboard Walls",
+    "name": "Warm Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_5920999362b5d271",
     "level": 1
    }
@@ -1773,7 +1773,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_window",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_window",
-   "displayName": "Warm Grey Clapboard Window Frame",
+   "displayName": "Warm Gray Clapboard Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -1876,7 +1876,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 1
    }
@@ -1884,7 +1884,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_doorframe",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_doorframe",
-   "displayName": "Warm Grey Clapboard Door Frame",
+   "displayName": "Warm Gray Clapboard Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -1987,7 +1987,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4cb0cdb68e75b929",
-    "name": "Warm Grey Clapboard Door Frames",
+    "name": "Warm Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_4cb0cdb68e75b929",
     "level": 1
    }
@@ -1995,7 +1995,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_window_l",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Left",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2098,7 +2098,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 2
    }
@@ -2106,7 +2106,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_window_c",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Center",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2209,7 +2209,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 3
    }
@@ -2217,7 +2217,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_window_r",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Right",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2320,7 +2320,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 4
    }
@@ -2328,7 +2328,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_tall_window",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_tall_window",
-   "displayName": "Warm Grey Clapboard Window Frame - Tall",
+   "displayName": "Warm Gray Clapboard Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2431,7 +2431,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 5
    }
@@ -2439,7 +2439,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_tall_l",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Tall Left",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2542,7 +2542,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 6
    }
@@ -2550,7 +2550,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_tall_c",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Tall Center",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2653,7 +2653,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 7
    }
@@ -2661,7 +2661,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wide_tall_r",
-   "displayName": "Warm Grey Clapboard Window Frame - Wide Tall Right",
+   "displayName": "Warm Gray Clapboard Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2764,7 +2764,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_9b8f0c356af595d1",
-    "name": "Warm Grey Clapboard Window Frames",
+    "name": "Warm Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_9b8f0c356af595d1",
     "level": 8
    }
@@ -2772,7 +2772,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_garage_l",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_garage_l",
-   "displayName": "Warm Grey Clapboard Door Frame - Garage Left",
+   "displayName": "Warm Gray Clapboard Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2875,7 +2875,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4cb0cdb68e75b929",
-    "name": "Warm Grey Clapboard Door Frames",
+    "name": "Warm Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_4cb0cdb68e75b929",
     "level": 2
    }
@@ -2883,7 +2883,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_garage_c",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_garage_c",
-   "displayName": "Warm Grey Clapboard Door Frame - Garage Center",
+   "displayName": "Warm Gray Clapboard Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -2986,7 +2986,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4cb0cdb68e75b929",
-    "name": "Warm Grey Clapboard Door Frames",
+    "name": "Warm Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_4cb0cdb68e75b929",
     "level": 3
    }
@@ -2994,7 +2994,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_garage_r",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_garage_r",
-   "displayName": "Warm Grey Clapboard Door Frame - Garage Right",
+   "displayName": "Warm Gray Clapboard Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -3097,7 +3097,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4cb0cdb68e75b929",
-    "name": "Warm Grey Clapboard Door Frames",
+    "name": "Warm Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_4cb0cdb68e75b929",
     "level": 4
    }
@@ -3105,7 +3105,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_corner",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_corner",
-   "displayName": "Warm Grey Clapboard Corner Wall",
+   "displayName": "Warm Gray Clapboard Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -3209,7 +3209,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_pillar",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_pillar",
-   "displayName": "Warm Grey Clapboard Pillar",
+   "displayName": "Warm Gray Clapboard Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -3313,7 +3313,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d5fc368088310f60",
-    "name": "Warm Grey Clapboard Pillars",
+    "name": "Warm Gray Clapboard Pillars",
     "translationKey": "IGUI_WETiki_family_d5fc368088310f60",
     "level": 1
    },
@@ -13270,7 +13270,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wall",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wall",
-   "displayName": "Cool Grey Clapboard Wall",
+   "displayName": "Cool Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13371,7 +13371,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_eb2dfc225f4dfda5",
-    "name": "Cool Grey Clapboard Walls",
+    "name": "Cool Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_eb2dfc225f4dfda5",
     "level": 1
    }
@@ -13379,7 +13379,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_window",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_window",
-   "displayName": "Cool Grey Clapboard Window Frame",
+   "displayName": "Cool Gray Clapboard Window Frame",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13482,7 +13482,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 1
    }
@@ -13490,7 +13490,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_doorframe",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_doorframe",
-   "displayName": "Cool Grey Clapboard Door Frame",
+   "displayName": "Cool Gray Clapboard Door Frame",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_doorframe",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13593,7 +13593,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b42179ec70d67286",
-    "name": "Cool Grey Clapboard Door Frames",
+    "name": "Cool Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_b42179ec70d67286",
     "level": 1
    }
@@ -13601,7 +13601,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_window_l",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_window_l",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Left",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_window_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13704,7 +13704,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 2
    }
@@ -13712,7 +13712,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_window_c",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_window_c",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Center",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_window_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13815,7 +13815,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 3
    }
@@ -13823,7 +13823,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_window_r",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_window_r",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Right",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_window_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -13926,7 +13926,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 4
    }
@@ -13934,7 +13934,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_tall_window",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_tall_window",
-   "displayName": "Cool Grey Clapboard Window Frame - Tall",
+   "displayName": "Cool Gray Clapboard Window Frame - Tall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_tall_window",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14037,7 +14037,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 5
    }
@@ -14045,7 +14045,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_tall_l",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_tall_l",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Tall Left",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Tall Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_tall_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14148,7 +14148,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 6
    }
@@ -14156,7 +14156,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_tall_c",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_tall_c",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Tall Center",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Tall Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_tall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14259,7 +14259,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 7
    }
@@ -14267,7 +14267,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wide_tall_r",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wide_tall_r",
-   "displayName": "Cool Grey Clapboard Window Frame - Wide Tall Right",
+   "displayName": "Cool Gray Clapboard Window Frame - Wide Tall Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wide_tall_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14370,7 +14370,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33e6326de5ab817b",
-    "name": "Cool Grey Clapboard Window Frames",
+    "name": "Cool Gray Clapboard Window Frames",
     "translationKey": "IGUI_WETiki_family_33e6326de5ab817b",
     "level": 8
    }
@@ -14378,7 +14378,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_garage_l",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_garage_l",
-   "displayName": "Cool Grey Clapboard Door Frame - Garage Left",
+   "displayName": "Cool Gray Clapboard Door Frame - Garage Left",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_garage_l",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14481,7 +14481,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b42179ec70d67286",
-    "name": "Cool Grey Clapboard Door Frames",
+    "name": "Cool Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_b42179ec70d67286",
     "level": 2
    }
@@ -14489,7 +14489,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_garage_c",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_garage_c",
-   "displayName": "Cool Grey Clapboard Door Frame - Garage Center",
+   "displayName": "Cool Gray Clapboard Door Frame - Garage Center",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_garage_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14592,7 +14592,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b42179ec70d67286",
-    "name": "Cool Grey Clapboard Door Frames",
+    "name": "Cool Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_b42179ec70d67286",
     "level": 3
    }
@@ -14600,7 +14600,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_garage_r",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_garage_r",
-   "displayName": "Cool Grey Clapboard Door Frame - Garage Right",
+   "displayName": "Cool Gray Clapboard Door Frame - Garage Right",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_garage_r",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14703,7 +14703,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b42179ec70d67286",
-    "name": "Cool Grey Clapboard Door Frames",
+    "name": "Cool Gray Clapboard Door Frames",
     "translationKey": "IGUI_WETiki_family_b42179ec70d67286",
     "level": 4
    }
@@ -14711,7 +14711,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_corner",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_corner",
-   "displayName": "Cool Grey Clapboard Corner Wall",
+   "displayName": "Cool Gray Clapboard Corner Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_corner",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14815,7 +14815,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_pillar",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_pillar",
-   "displayName": "Cool Grey Clapboard Pillar",
+   "displayName": "Cool Gray Clapboard Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -14919,7 +14919,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_a8678f84cdc8ca7e",
-    "name": "Cool Grey Clapboard Pillars",
+    "name": "Cool Gray Clapboard Pillars",
     "translationKey": "IGUI_WETiki_family_a8678f84cdc8ca7e",
     "level": 1
    },
@@ -19990,7 +19990,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wall_b",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wall_b",
-   "displayName": "Warm Grey Clapboard Wall",
+   "displayName": "Warm Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wall_b",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20091,7 +20091,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5920999362b5d271",
-    "name": "Warm Grey Clapboard Walls",
+    "name": "Warm Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_5920999362b5d271",
     "level": 2
    }
@@ -20099,7 +20099,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wall_c",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wall_c",
-   "displayName": "Warm Grey Clapboard Wall",
+   "displayName": "Warm Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20200,7 +20200,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5920999362b5d271",
-    "name": "Warm Grey Clapboard Walls",
+    "name": "Warm Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_5920999362b5d271",
     "level": 3
    }
@@ -20208,7 +20208,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_wall_d",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_wall_d",
-   "displayName": "Warm Grey Clapboard Wall",
+   "displayName": "Warm Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_wall_d",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20309,7 +20309,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5920999362b5d271",
-    "name": "Warm Grey Clapboard Walls",
+    "name": "Warm Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_5920999362b5d271",
     "level": 4
    }
@@ -20317,7 +20317,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_pillar_b",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_pillar_b",
-   "displayName": "Warm Grey Clapboard Pillar",
+   "displayName": "Warm Gray Clapboard Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_pillar_b",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20443,7 +20443,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_d5fc368088310f60",
-    "name": "Warm Grey Clapboard Pillars",
+    "name": "Warm Gray Clapboard Pillars",
     "translationKey": "IGUI_WETiki_family_d5fc368088310f60",
     "level": 2
    }
@@ -20451,7 +20451,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_1",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_1",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 1",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 1",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_1",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20552,7 +20552,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3c105edba129c28d",
-    "name": "Warm Grey Clapboard Roof Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_3c105edba129c28d",
     "level": 1
    }
@@ -20560,7 +20560,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_2",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_2",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 2",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 2",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_2",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20661,7 +20661,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3c105edba129c28d",
-    "name": "Warm Grey Clapboard Roof Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_3c105edba129c28d",
     "level": 2
    }
@@ -20669,7 +20669,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_3",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_3",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 3",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 3",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_3",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20770,7 +20770,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_3c105edba129c28d",
-    "name": "Warm Grey Clapboard Roof Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_3c105edba129c28d",
     "level": 3
    }
@@ -20778,7 +20778,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_4",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_4",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 4",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 4",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_4",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20879,7 +20879,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5f9d242149398b38",
-    "name": "Warm Grey Clapboard Roof Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_5f9d242149398b38",
     "level": 1
    }
@@ -20887,7 +20887,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_5",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_5",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 5",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 5",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_5",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -20988,7 +20988,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5f9d242149398b38",
-    "name": "Warm Grey Clapboard Roof Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_5f9d242149398b38",
     "level": 2
    }
@@ -20996,7 +20996,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_slope_6",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_slope_6",
-   "displayName": "Warm Grey Clapboard Roof Slope Wall 6",
+   "displayName": "Warm Gray Clapboard Roof Slope Wall 6",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_slope_6",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21097,7 +21097,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_5f9d242149398b38",
-    "name": "Warm Grey Clapboard Roof Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_5f9d242149398b38",
     "level": 3
    }
@@ -21105,7 +21105,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_end_small",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_end_small",
-   "displayName": "Warm Grey Clapboard Roof End Small",
+   "displayName": "Warm Gray Clapboard Roof End Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_end_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21206,7 +21206,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b9cafeb76160c31c",
-    "name": "Warm Grey Clapboard Roof Ends",
+    "name": "Warm Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_b9cafeb76160c31c",
     "level": 1
    }
@@ -21214,7 +21214,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_end_medium",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_end_medium",
-   "displayName": "Warm Grey Clapboard Roof End Medium",
+   "displayName": "Warm Gray Clapboard Roof End Medium",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_end_medium",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21315,7 +21315,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b9cafeb76160c31c",
-    "name": "Warm Grey Clapboard Roof Ends",
+    "name": "Warm Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_b9cafeb76160c31c",
     "level": 2
    }
@@ -21323,7 +21323,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_end_big",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_end_big",
-   "displayName": "Warm Grey Clapboard Roof End Big",
+   "displayName": "Warm Gray Clapboard Roof End Big",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_end_big",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21424,7 +21424,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b9cafeb76160c31c",
-    "name": "Warm Grey Clapboard Roof Ends",
+    "name": "Warm Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_b9cafeb76160c31c",
     "level": 3
    }
@@ -21432,7 +21432,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_1",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_1",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 1",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 1",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_1",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21533,7 +21533,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 1
    }
@@ -21541,7 +21541,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_2",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_2",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 2",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 2",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_2",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21642,7 +21642,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 2
    }
@@ -21650,7 +21650,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_3",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_3",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 3",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 3",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_3",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21751,7 +21751,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 3
    }
@@ -21759,7 +21759,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_4",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_4",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 4",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 4",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_4",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21860,7 +21860,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 4
    }
@@ -21868,7 +21868,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_5",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_5",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 5",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 5",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_5",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -21969,7 +21969,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 5
    }
@@ -21977,7 +21977,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_6",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_6",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 6",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 6",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_6",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22078,7 +22078,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_174c05b974184970",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_174c05b974184970",
     "level": 6
    }
@@ -22086,7 +22086,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_7",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_7",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 7",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 7",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_7",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22187,7 +22187,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 1
    }
@@ -22195,7 +22195,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_8",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_8",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 8",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 8",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_8",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22296,7 +22296,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 2
    }
@@ -22304,7 +22304,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_9",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_9",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 9",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 9",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_9",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22405,7 +22405,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 3
    }
@@ -22413,7 +22413,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_10",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_10",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 10",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 10",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_10",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22514,7 +22514,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 4
    }
@@ -22522,7 +22522,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_11",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_11",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 11",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 11",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_11",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22623,7 +22623,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 5
    }
@@ -22631,7 +22631,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_slope_12",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_slope_12",
-   "displayName": "Warm Grey Clapboard Roof Steep Slope Wall 12",
+   "displayName": "Warm Gray Clapboard Roof Steep Slope Wall 12",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_slope_12",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22732,7 +22732,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_b5f313501797d023",
-    "name": "Warm Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Warm Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_b5f313501797d023",
     "level": 6
    }
@@ -22740,7 +22740,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_small",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_small",
-   "displayName": "Warm Grey Clapboard Roof Steep End Small",
+   "displayName": "Warm Gray Clapboard Roof Steep End Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22841,7 +22841,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 1
    }
@@ -22849,7 +22849,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_medium_small",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_medium_small",
-   "displayName": "Warm Grey Clapboard Roof Steep End Medium Small",
+   "displayName": "Warm Gray Clapboard Roof Steep End Medium Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_medium_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -22950,7 +22950,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 2
    }
@@ -22958,7 +22958,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_medium",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_medium",
-   "displayName": "Warm Grey Clapboard Roof Steep End Medium",
+   "displayName": "Warm Gray Clapboard Roof Steep End Medium",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_medium",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -23059,7 +23059,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 3
    }
@@ -23067,7 +23067,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_medium_large",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_medium_large",
-   "displayName": "Warm Grey Clapboard Roof Steep End Medium Large",
+   "displayName": "Warm Gray Clapboard Roof Steep End Medium Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_medium_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -23168,7 +23168,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 4
    }
@@ -23176,7 +23176,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_large",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_large",
-   "displayName": "Warm Grey Clapboard Roof Steep End Large",
+   "displayName": "Warm Gray Clapboard Roof Steep End Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -23277,7 +23277,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 5
    }
@@ -23285,7 +23285,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_04_warmgray_roof_steep_end_extra_large",
    "translationKey": "IGUI_tt_newburbs_walls_04_warmgray_roof_steep_end_extra_large",
-   "displayName": "Warm Grey Clapboard Roof Steep End Extra Large",
+   "displayName": "Warm Gray Clapboard Roof Steep End Extra Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_04_warmgray_roof_steep_end_extra_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -23386,7 +23386,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f120bb967c08ca5e",
-    "name": "Warm Grey Clapboard Roof Steep Ends",
+    "name": "Warm Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_f120bb967c08ca5e",
     "level": 6
    }
@@ -43818,7 +43818,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wall_b",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wall_b",
-   "displayName": "Cool Grey Clapboard Wall",
+   "displayName": "Cool Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wall_b",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -43919,7 +43919,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_eb2dfc225f4dfda5",
-    "name": "Cool Grey Clapboard Walls",
+    "name": "Cool Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_eb2dfc225f4dfda5",
     "level": 2
    }
@@ -43927,7 +43927,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wall_c",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wall_c",
-   "displayName": "Cool Grey Clapboard Wall",
+   "displayName": "Cool Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wall_c",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44028,7 +44028,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_eb2dfc225f4dfda5",
-    "name": "Cool Grey Clapboard Walls",
+    "name": "Cool Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_eb2dfc225f4dfda5",
     "level": 3
    }
@@ -44036,7 +44036,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_wall_d",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_wall_d",
-   "displayName": "Cool Grey Clapboard Wall",
+   "displayName": "Cool Gray Clapboard Wall",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_wall_d",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44137,7 +44137,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_eb2dfc225f4dfda5",
-    "name": "Cool Grey Clapboard Walls",
+    "name": "Cool Gray Clapboard Walls",
     "translationKey": "IGUI_WETiki_family_eb2dfc225f4dfda5",
     "level": 4
    }
@@ -44145,7 +44145,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_pillar_b",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_pillar_b",
-   "displayName": "Cool Grey Clapboard Pillar",
+   "displayName": "Cool Gray Clapboard Pillar",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_pillar_b",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44271,7 +44271,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_a8678f84cdc8ca7e",
-    "name": "Cool Grey Clapboard Pillars",
+    "name": "Cool Gray Clapboard Pillars",
     "translationKey": "IGUI_WETiki_family_a8678f84cdc8ca7e",
     "level": 2
    }
@@ -44279,7 +44279,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_1",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_1",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 1",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 1",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_1",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44380,7 +44380,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_a2cbac99ed3bb6aa",
-    "name": "Cool Grey Clapboard Roof Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_a2cbac99ed3bb6aa",
     "level": 1
    }
@@ -44388,7 +44388,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_2",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_2",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 2",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 2",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_2",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44489,7 +44489,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_a2cbac99ed3bb6aa",
-    "name": "Cool Grey Clapboard Roof Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_a2cbac99ed3bb6aa",
     "level": 2
    }
@@ -44497,7 +44497,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_3",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_3",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 3",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 3",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_3",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44598,7 +44598,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_a2cbac99ed3bb6aa",
-    "name": "Cool Grey Clapboard Roof Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_a2cbac99ed3bb6aa",
     "level": 3
    }
@@ -44606,7 +44606,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_4",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_4",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 4",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 4",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_4",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44707,7 +44707,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bea04c71d6ef8fbc",
-    "name": "Cool Grey Clapboard Roof Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_bea04c71d6ef8fbc",
     "level": 1
    }
@@ -44715,7 +44715,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_5",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_5",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 5",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 5",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_5",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44816,7 +44816,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bea04c71d6ef8fbc",
-    "name": "Cool Grey Clapboard Roof Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_bea04c71d6ef8fbc",
     "level": 2
    }
@@ -44824,7 +44824,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_slope_6",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_slope_6",
-   "displayName": "Cool Grey Clapboard Roof Slope Wall 6",
+   "displayName": "Cool Gray Clapboard Roof Slope Wall 6",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_slope_6",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -44925,7 +44925,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bea04c71d6ef8fbc",
-    "name": "Cool Grey Clapboard Roof Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_bea04c71d6ef8fbc",
     "level": 3
    }
@@ -44933,7 +44933,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_end_small",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_end_small",
-   "displayName": "Cool Grey Clapboard Roof End Small",
+   "displayName": "Cool Gray Clapboard Roof End Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_end_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45034,7 +45034,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bfcca783455bb1da",
-    "name": "Cool Grey Clapboard Roof Ends",
+    "name": "Cool Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_bfcca783455bb1da",
     "level": 1
    }
@@ -45042,7 +45042,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_end_medium",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_end_medium",
-   "displayName": "Cool Grey Clapboard Roof End Medium",
+   "displayName": "Cool Gray Clapboard Roof End Medium",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_end_medium",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45143,7 +45143,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bfcca783455bb1da",
-    "name": "Cool Grey Clapboard Roof Ends",
+    "name": "Cool Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_bfcca783455bb1da",
     "level": 2
    }
@@ -45151,7 +45151,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_end_big",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_end_big",
-   "displayName": "Cool Grey Clapboard Roof End Big",
+   "displayName": "Cool Gray Clapboard Roof End Big",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_end_big",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45252,7 +45252,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_bfcca783455bb1da",
-    "name": "Cool Grey Clapboard Roof Ends",
+    "name": "Cool Gray Clapboard Roof Ends",
     "translationKey": "IGUI_WETiki_family_bfcca783455bb1da",
     "level": 3
    }
@@ -45260,7 +45260,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_1",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_1",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 1",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 1",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_1",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45361,7 +45361,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 1
    }
@@ -45369,7 +45369,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_2",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_2",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 2",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 2",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_2",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45470,7 +45470,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 2
    }
@@ -45478,7 +45478,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_3",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_3",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 3",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 3",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_3",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45579,7 +45579,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 3
    }
@@ -45587,7 +45587,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_4",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_4",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 4",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 4",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_4",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45688,7 +45688,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 4
    }
@@ -45696,7 +45696,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_5",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_5",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 5",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 5",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_5",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45797,7 +45797,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 5
    }
@@ -45805,7 +45805,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_6",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_6",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 6",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 6",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_6",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -45906,7 +45906,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_916d5d591fda4fea",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls N/W",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls N/W",
     "translationKey": "IGUI_WETiki_family_916d5d591fda4fea",
     "level": 6
    }
@@ -45914,7 +45914,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_7",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_7",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 7",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 7",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_7",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46015,7 +46015,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 1
    }
@@ -46023,7 +46023,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_8",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_8",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 8",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 8",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_8",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46124,7 +46124,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 2
    }
@@ -46132,7 +46132,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_9",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_9",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 9",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 9",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_9",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46233,7 +46233,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 3
    }
@@ -46241,7 +46241,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_10",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_10",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 10",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 10",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_10",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46342,7 +46342,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 4
    }
@@ -46350,7 +46350,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_11",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_11",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 11",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 11",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_11",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46451,7 +46451,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 5
    }
@@ -46459,7 +46459,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_slope_12",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_slope_12",
-   "displayName": "Cool Grey Clapboard Roof Steep Slope Wall 12",
+   "displayName": "Cool Gray Clapboard Roof Steep Slope Wall 12",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_slope_12",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46560,7 +46560,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_fae4e3eb56b0c8a5",
-    "name": "Cool Grey Clapboard Roof Steep Slope Walls S/E",
+    "name": "Cool Gray Clapboard Roof Steep Slope Walls S/E",
     "translationKey": "IGUI_WETiki_family_fae4e3eb56b0c8a5",
     "level": 6
    }
@@ -46568,7 +46568,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_small",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_small",
-   "displayName": "Cool Grey Clapboard Roof Steep End Small",
+   "displayName": "Cool Gray Clapboard Roof Steep End Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46669,7 +46669,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 1
    }
@@ -46677,7 +46677,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_medium_small",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_medium_small",
-   "displayName": "Cool Grey Clapboard Roof Steep End Medium Small",
+   "displayName": "Cool Gray Clapboard Roof Steep End Medium Small",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_medium_small",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46778,7 +46778,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 2
    }
@@ -46786,7 +46786,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_medium",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_medium",
-   "displayName": "Cool Grey Clapboard Roof Steep End Medium",
+   "displayName": "Cool Gray Clapboard Roof Steep End Medium",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_medium",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46887,7 +46887,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 3
    }
@@ -46895,7 +46895,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_medium_large",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_medium_large",
-   "displayName": "Cool Grey Clapboard Roof Steep End Medium Large",
+   "displayName": "Cool Gray Clapboard Roof Steep End Medium Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_medium_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -46996,7 +46996,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 4
    }
@@ -47004,7 +47004,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_large",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_large",
-   "displayName": "Cool Grey Clapboard Roof Steep End Large",
+   "displayName": "Cool Gray Clapboard Roof Steep End Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -47105,7 +47105,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 5
    }
@@ -47113,7 +47113,7 @@
   {
    "id": "tikitown.newburbs_walls.tt_newburbs_walls_17_coolgray_roof_steep_end_extra_large",
    "translationKey": "IGUI_tt_newburbs_walls_17_coolgray_roof_steep_end_extra_large",
-   "displayName": "Cool Grey Clapboard Roof Steep End Extra Large",
+   "displayName": "Cool Gray Clapboard Roof Steep End Extra Large",
    "tooltipKey": "Tooltip_tt_newburbs_walls_17_coolgray_roof_steep_end_extra_large",
    "category": "Walls and Wall Finishes",
    "subcategory": "Newburbs Exterior",
@@ -47214,7 +47214,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_59d6c8d1b4a72dc2",
-    "name": "Cool Grey Clapboard Roof Steep Ends",
+    "name": "Cool Gray Clapboard Roof Steep Ends",
     "translationKey": "IGUI_WETiki_family_59d6c8d1b4a72dc2",
     "level": 6
    }

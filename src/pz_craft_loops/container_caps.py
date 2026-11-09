@@ -544,12 +544,13 @@ local function installPickup()
         P.instanceItem = function(self, spriteName)
             local item = originalInstance(self, spriteName)
             if item and self._kbwcbGeneric then
+                -- vanilla's multi-sprite part icon: the flatpack box ("Item_Flatpack", used by
+                -- zombie.inventory.types.Moveable for gridded sprites). A blank Moveables.Moveable
+                -- has no texture ("?" placeholder) and Item_Moveable_object is the generic chair
+                -- icon (both seen in game 2026-08-28).
                 pcall(function()
-                    local blank = instanceItem("Moveables.Moveable")
-                    if blank then
-                        item:setTexture(blank:getTexture())
-                        item:setWorldTexture(blank:getWorldTexture())
-                    end
+                    local box = getTexture("Item_Flatpack")
+                    if box then item:setTexture(box) end
                 end)
             end
             return item
@@ -584,11 +585,20 @@ local function installPickup()
             return false
         end
         local items = {}
+        local asq = members[1]:getSquare()
+        local ax, ay, az = asq:getX(), asq:getY(), asq:getZ()
+        local token = tostring(members[1]:getModData().KBW.groupId) .. "@" .. tostring(getTimestampMs and getTimestampMs() or ZombRand(1000000))
         for index = 1, #members do
             local member = members[index]
             local props = propsFor(member)
             local msq = member:getSquare()
             local sprite = member:getSprite()
+            local part = nil
+            if msq and sprite then
+                part = { token = token, count = #members, index = index, sprite = sprite:getName(),
+                         dx = msq:getX() - ax, dy = msq:getY() - ay, dz = msq:getZ() - az,
+                         kbw = copyTable(member:getModData().KBW) }
+            end
             if props and msq and sprite then
                 local fluid = member.getFluidContainer and member:getFluidContainer() or nil
                 if fluid then pcall(function() fluid:Empty() end) end
@@ -602,7 +612,10 @@ local function installPickup()
                 end)
                 props.isMultiSprite = was
                 props._kbwcbGeneric = nil
-                if okPick then items[#items + 1] = res
+                if okPick then
+                    items[#items + 1] = res
+                    -- remember where this part sits in the piece, so placing one part places all
+                    if res and part then pcall(function() res:getModData().kbwcbPart = part end) end
                 else print("[KBWCommunity] MultiPart: pick-up of a part failed: " .. tostring(res)) end
             end
         end
@@ -646,10 +659,125 @@ local function installDestroy()
     return true
 end
 
+-- Placing one part of a picked-up group places the whole piece (vanilla does this only for sprite
+-- grids). Parts carry modData.kbwcbPart = { token, count, index, sprite, dx, dy, dz, kbw }. When
+-- every part with the same token is in the inventory or on the floor nearby and every target
+-- square is free, all parts are placed at their original offsets and get their KBW group data
+-- back (so the next pick-up takes the whole piece again). Otherwise, or when the part was rotated,
+-- vanilla's single placement runs unchanged.
+local FLOOR_RADIUS = 3
+
+local function partOf(item)
+    if not item or not item.hasModData or not item:hasModData() then return nil end
+    local part = item:getModData().kbwcbPart
+    if type(part) ~= "table" or type(part.token) ~= "string" then return nil end
+    return part
+end
+
+local function collectParts(character, token)
+    local found, seen = {}, {}
+    local function take(item, where)
+        local part = partOf(item)
+        if part and part.token == token and not seen[part.index] then
+            seen[part.index] = true
+            found[#found + 1] = { item = item, part = part, where = where }
+        end
+    end
+    local inv = character:getInventory()
+    local items = inv:getItems()
+    for index = 0, items:size() - 1 do take(items:get(index), inv) end
+    local sq = character:getSquare()
+    if sq then
+        local cell = getCell()
+        for x = sq:getX() - FLOOR_RADIUS, sq:getX() + FLOOR_RADIUS do
+            for y = sq:getY() - FLOOR_RADIUS, sq:getY() + FLOOR_RADIUS do
+                local fsq = cell:getGridSquare(x, y, sq:getZ())
+                local objects = fsq and fsq:getWorldObjects() or nil
+                if objects then
+                    for index = 0, objects:size() - 1 do
+                        local wo = objects:get(index)
+                        if instanceof(wo, "IsoWorldInventoryObject") then take(wo:getItem(), "floor") end
+                    end
+                end
+            end
+        end
+    end
+    return found
+end
+
+local function removePartItem(entry)
+    local item = entry.item
+    if entry.where == "floor" then
+        local wi = item:getWorldItem()
+        if wi then
+            wi:getSquare():transmitRemoveItemFromSquare(wi)
+            wi:getSquare():removeWorldObject(wi)
+            item:setWorldItem(nil)
+        end
+    else
+        entry.where:Remove(item)
+        sendRemoveItemFromContainer(entry.where, item)
+    end
+end
+
+local function installPlace()
+    if type(ISMoveableSpriteProps) ~= "table" then pcall(require, "Moveables/ISMoveableSpriteProps") end
+    local P = ISMoveableSpriteProps
+    if type(P) ~= "table" or type(P.placeMoveable) ~= "function" or type(P.findInInventory) ~= "function" then
+        return false
+    end
+    if P._kbwcbMultiPlace then return true end
+    P._kbwcbMultiPlace = true
+    local originalPlace = P.placeMoveable
+    P.placeMoveable = function(self, character, square, origSpriteName, forceAllow)
+        local placed, started = false, false
+        local okRun, err = pcall(function()
+            if self.isMultiSprite or not square or not character or self.spriteName ~= origSpriteName then return end
+            local item = self:findInInventory(character, origSpriteName)
+            local part = partOf(item)
+            if not part or (tonumber(part.count) or 1) < 2 then return end
+            local parts = collectParts(character, part.token)
+            if #parts < part.count then return end
+            local ax, ay, az = square:getX() - part.dx, square:getY() - part.dy, square:getZ() - part.dz
+            local cell = getCell()
+            for index = 1, #parts do
+                local p = parts[index].part
+                local target = cell:getGridSquare(ax + p.dx, ay + p.dy, az + p.dz)
+                local props = ISMoveableSpriteProps.new(p.sprite)
+                if not target or not props or not props.isMoveable then return end
+                if not forceAllow and not props:canPlaceMoveableInternal(character, target, parts[index].item) then return end
+                parts[index].target, parts[index].props = target, props
+            end
+            started = true
+            for index = 1, #parts do
+                local entry = parts[index]
+                local object = entry.props:placeMoveableInternal(character, entry.target, entry.item, entry.part.sprite)
+                if object and type(entry.part.kbw) == "table" then
+                    pcall(function()
+                        object:getModData().KBW = copyTable(entry.part.kbw)
+                        object:transmitModData()
+                    end)
+                end
+                removePartItem(entry)
+            end
+            placed = true
+        end)
+        if not okRun then print("[KBWCommunity] MultiPart: group placement failed: " .. tostring(err)) end
+        if placed or started then
+            if ISMoveableCursor and ISMoveableCursor.clearCacheForAllPlayers then ISMoveableCursor.clearCacheForAllPlayers() end
+            return
+        end
+        return originalPlace(self, character, square, origSpriteName, forceAllow)
+    end
+    print("[KBWCommunity] MultiPart: placing one part of a picked-up piece places the whole piece")
+    return true
+end
+
 local function installAll()
     local a = installPickup()
     local b = installDestroy()
-    return a and b
+    local c = installPlace()
+    return a and b and c
 end
 
 if not installAll() then

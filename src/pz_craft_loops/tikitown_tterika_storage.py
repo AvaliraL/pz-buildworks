@@ -38,7 +38,7 @@ OUT = r"c:\Users\josep\Kiro\zomboid\tikitown\36_tikitown_tterika_storage.json"
 
 # (base index, display name, subcategory, container type, capacity)
 OBJECTS = [
-    (0,  "Small Grey Metal Cabinet",   "Lockers", "metal_shelves", 40),
+    (0,  "Small Gray Metal Cabinet",   "Lockers", "metal_shelves", 40),
     (4,  "Small Black Footlocker",     "Chests",  "locker",        10),
     (8,  "Green Military Locker",      "Lockers", "militarylocker", 40),
     (12, "Small Olive Military Locker", "Lockers", "locker",       40),
@@ -46,7 +46,7 @@ OBJECTS = [
     (20, "Small Steel Military Locker", "Lockers", "locker",       40),
     (24, "Pink Locker",                "Lockers", "locker",        40),
     (28, "Red Locker",                 "Lockers", "locker",        40),
-    (32, "Grey Locker",                "Lockers", "locker",        40),
+    (32, "Gray Locker",                "Lockers", "locker",        40),
     (36, "Green Locker",               "Lockers", "locker",        40),
     (40, "Orange Locker",              "Lockers", "locker",        40),
     (44, "Purple Locker",              "Lockers", "locker",        40),

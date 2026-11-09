@@ -28270,9 +28270,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_01_2",
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -28392,9 +28389,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -28514,9 +28508,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -28636,9 +28627,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -28766,9 +28754,6 @@
               "tikitown_walls_brick_01_15"
             ],
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -28888,9 +28873,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29010,9 +28992,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29132,9 +29111,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29254,9 +29230,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29376,9 +29349,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29498,9 +29468,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29620,9 +29587,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29741,9 +29705,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_02_2",
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29863,9 +29824,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -29985,9 +29943,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30107,9 +30062,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30237,9 +30189,6 @@
               "tikitown_walls_brick_02_15"
             ],
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30359,9 +30308,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30481,9 +30427,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30603,9 +30546,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30725,9 +30665,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30847,9 +30784,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -30969,9 +30903,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31091,9 +31022,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_02_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31212,9 +31140,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_03_2",
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31334,9 +31259,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31456,9 +31378,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31578,9 +31497,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31708,9 +31624,6 @@
               "tikitown_walls_brick_03_15"
             ],
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31830,9 +31743,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -31952,9 +31862,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32074,9 +31981,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32196,9 +32100,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32318,9 +32219,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32440,9 +32338,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32562,9 +32457,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_03_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32683,9 +32575,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_04_2",
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32805,9 +32694,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -32927,9 +32813,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33049,9 +32932,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33179,9 +33059,6 @@
               "tikitown_walls_brick_04_15"
             ],
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33301,9 +33178,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33423,9 +33297,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33545,9 +33416,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33667,9 +33535,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33789,9 +33654,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -33911,9 +33773,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34033,9 +33892,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_04_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34154,9 +34010,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_05_2",
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34276,9 +34129,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34398,9 +34248,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34520,9 +34367,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34650,9 +34494,6 @@
               "tikitown_walls_brick_05_15"
             ],
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34772,9 +34613,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -34894,9 +34732,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35016,9 +34851,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35138,9 +34970,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35260,9 +35089,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35382,9 +35208,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35504,9 +35327,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_05_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35625,9 +35445,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_06_2",
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35747,9 +35564,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35869,9 +35683,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -35991,9 +35802,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36121,9 +35929,6 @@
               "tikitown_walls_brick_06_15"
             ],
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36243,9 +36048,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36365,9 +36167,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36487,9 +36286,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36609,9 +36405,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36731,9 +36524,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36853,9 +36643,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -36975,9 +36762,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_06_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37096,9 +36880,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_07_2",
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37218,9 +36999,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37340,9 +37118,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37462,9 +37237,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37592,9 +37364,6 @@
               "tikitown_walls_brick_07_15"
             ],
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37714,9 +37483,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37836,9 +37602,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -37958,9 +37721,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38080,9 +37840,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38202,9 +37959,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38324,9 +38078,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38446,9 +38197,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_07_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38567,9 +38315,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_08_2",
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38689,9 +38434,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38811,9 +38553,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -38933,9 +38672,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39063,9 +38799,6 @@
               "tikitown_walls_brick_08_15"
             ],
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39185,9 +38918,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39307,9 +39037,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39429,9 +39156,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39551,9 +39275,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39673,9 +39394,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39795,9 +39513,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -39917,9 +39632,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_08_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40038,9 +39750,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_09_2",
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40160,9 +39869,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40282,9 +39988,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40404,9 +40107,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40534,9 +40234,6 @@
               "tikitown_walls_brick_09_15"
             ],
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40656,9 +40353,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40778,9 +40472,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -40900,9 +40591,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41022,9 +40710,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41144,9 +40829,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41266,9 +40948,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41388,9 +41067,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_09_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41509,9 +41185,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_10_2",
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41631,9 +41304,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41753,9 +41423,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -41875,9 +41542,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42005,9 +41669,6 @@
               "tikitown_walls_brick_10_15"
             ],
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42127,9 +41788,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42249,9 +41907,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42371,9 +42026,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42493,9 +42145,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42615,9 +42264,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42737,9 +42383,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42859,9 +42502,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_10_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -42980,9 +42620,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_11_2",
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43102,9 +42739,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43224,9 +42858,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43346,9 +42977,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43476,9 +43104,6 @@
               "tikitown_walls_brick_11_15"
             ],
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43598,9 +43223,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43720,9 +43342,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43842,9 +43461,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -43964,9 +43580,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44086,9 +43699,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44208,9 +43818,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44330,9 +43937,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_11_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44451,9 +44055,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_12_2",
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44573,9 +44174,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44695,9 +44293,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44817,9 +44412,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -44947,9 +44539,6 @@
               "tikitown_walls_brick_12_15"
             ],
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45069,9 +44658,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45191,9 +44777,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45313,9 +44896,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45435,9 +45015,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45557,9 +45134,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45679,9 +45253,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45801,9 +45372,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_12_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -45922,9 +45490,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_purewhite_2",
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46044,9 +45609,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46166,9 +45728,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46288,9 +45847,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46418,9 +45974,6 @@
               "tikitown_walls_brick_purewhite_15"
             ],
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46540,9 +46093,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46662,9 +46212,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46784,9 +46331,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -46906,9 +46450,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47028,9 +46569,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47150,9 +46688,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47272,9 +46807,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_purewhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47393,9 +46925,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_brick_standard_2",
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47515,9 +47044,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47637,9 +47163,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47759,9 +47282,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -47889,9 +47409,6 @@
               "tikitown_walls_brick_standard_15"
             ],
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48011,9 +47528,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48133,9 +47647,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48255,9 +47766,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48377,9 +47885,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48499,9 +48004,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48621,9 +48123,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48743,9 +48242,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_brick_standard_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48864,9 +48360,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_bricks_dirtywhite_2",
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -48986,9 +48479,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49108,9 +48598,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49230,9 +48717,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49360,9 +48844,6 @@
               "tikitown_walls_bricks_dirtywhite_15"
             ],
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49482,9 +48963,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49604,9 +49082,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49726,9 +49201,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49848,9 +49320,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -49970,9 +49439,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50092,9 +49558,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50214,9 +49677,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_bricks_dirtywhite_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50335,9 +49795,6 @@
             "dismantable": true,
             "cornerSprite": "tikitown_walls_cement_01_2",
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50457,9 +49914,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50579,9 +50033,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50701,9 +50152,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50831,9 +50279,6 @@
               "tikitown_walls_cement_01_15"
             ],
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -50953,9 +50398,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51075,9 +50517,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51197,9 +50636,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51319,9 +50755,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51441,9 +50874,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51563,9 +50993,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -51685,9 +51112,6 @@
             "isThumpable": true,
             "dismantable": true,
             "pillarSprite": "tikitown_walls_cement_01_3"
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -97524,9 +96948,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -97646,9 +97067,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -97765,9 +97183,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -97887,9 +97302,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98006,9 +97418,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98128,9 +97537,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98247,9 +97653,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98369,9 +97772,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98488,9 +97888,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98610,9 +98007,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98729,9 +98123,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98851,9 +98242,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -98970,9 +98358,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99092,9 +98477,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99211,9 +98593,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99333,9 +98712,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99452,9 +98828,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99574,9 +98947,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99693,9 +99063,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99815,9 +99182,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -99934,9 +99298,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100056,9 +99417,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100175,9 +99533,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100297,9 +99652,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100416,9 +99768,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100538,9 +99887,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100657,9 +100003,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100779,9 +100122,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -100898,9 +100238,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -101020,9 +100357,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -101139,9 +100473,6 @@
           "object": {
             "isThumpable": true,
             "dismantable": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],
@@ -101261,9 +100592,6 @@
             "canPassThrough": true,
             "canBarricade": false,
             "isCorner": true
-          },
-          "callbacks": {
-            "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
           }
         }
       ],

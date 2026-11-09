@@ -162,6 +162,13 @@ Full write-up with the recipe table and test plan: `notes/HANDOFF_KnoxComponentR
 - Window / door-frame walls no longer merge into the plain corner sprite. Two "(Window 2)" walls meeting at a corner used to
   become the solid corner tile, because every variant carried the plain wall's `cornerSprite`. Their `cornerSprite` is
   removed (716 pieces in file 21); they keep `pillarSprite` (the gap filler). Plain walls still join as before.
+- TikiTown walls no longer offer plaster / paint / wallpaper finishes (follow-up tag `handoff-2026-11-08-plaster-fix`;
+  confirmed in game). The Brick pieces of file 21
+  carried the vanilla brick recipe's `onCreate = BuildRecipeCode.canBePlastered.OnCreate`. KBW (`WallFinishes.isPlasterable`)
+  then showed a Finish choice in the catalog, and choosing one built a vanilla `walls_interior_house_*` tile. The callback is
+  removed from 224 stages in file 21; the lower walls (40) and roof slope walls (41) copy their callbacks from 21, so they
+  lose it too (240 + 432). Other callbacks (the lower walls' `onIsValid`) are unchanged. Walls built before this keep the
+  vanilla canBePlastered flag on the placed object.
 
 **9. Naming pass (TikiTown; names, group titles and subcategories only, no cost changes)**
 
@@ -186,7 +193,7 @@ Full write-up with the recipe table and test plan: `notes/HANDOFF_KnoxComponentR
   placed on the floor, not at counter height. It is the TikiTown counterpart of the Community TableTop fix; WE's copy only runs
   with the Community submod.
 
-**11. Electrical Cabinet Generator (TikiTown, built and checked; not yet confirmed in game)**
+**11. Electrical Cabinet Generator (TikiTown; confirmed in game, single player: generator, Rotate, pick-up / re-place, save/reload)**
 
 - A real vanilla generator built by KBW (`nativeObject` generator).
   - Items `TikiTownKBW.ElectricalCabinetGenerator` / `...Mirrored`, one per facing: the game maps a placed generator's
@@ -196,8 +203,8 @@ Full write-up with the recipe table and test plan: `notes/HANDOFF_KnoxComponentR
 - Second facing = our mirrored tile `KBWTikiTownProps_0`.
 - `KBWTikiTown_GeneratorRotate.lua` (shared, NEW): vanilla can only drop a generator, so this adds a "Rotate" world option.
   It swaps the placed generator's sprite in place, keeping fuel, condition and on/off state. In MP the client asks, and the
-  server swaps and calls `transmitUpdatedSpriteToClients`. Tested against mocks (single player, MP client and MP server
-  paths), not in game.
+  server swaps and calls `transmitUpdatedSpriteToClients`. Confirmed in game (single player): Rotate works and the
+  cabinet works as a generator. The MP client / server paths are mock-tested only.
 
 **12. Community: L couch corners, multi-part pick-up**
 
@@ -240,9 +247,10 @@ main World Essentials (Destroyable, MultiStorey, TableTop, TVScreens, Viewscreen
   - wall overlays, soundproofing, props-14, the naming pass;
   - the roof slope walls and garage trim;
   - L couch corners;
-  - the KBW load-order fix.
-- Built and checked, NOT yet confirmed in game:
-  - the Electrical Cabinet Generator, its "Rotate" option (mock-tested) and its pick-up / re-place;
+  - the KBW load-order fix;
+  - the Electrical Cabinet Generator working as a generator, and its "Rotate" option;
   - the window / door-frame corner fix;
-  - the W/N slope direction of each roof slope wall when rotated.
+  - the W/N slope direction of each roof slope wall when rotated;
+  - the Electrical Cabinet Generator's pick-up / re-place and save/reload;
+  - the plaster-finish removal (no Finish choice on TikiTown walls; `handoff-2026-11-08-plaster-fix`).
 - Not tested: multiplayer.

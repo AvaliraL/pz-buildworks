@@ -30,7 +30,7 @@ SRC_SCRIPTS = [
     "bench_tools.py", "we_inventory.py", "apply_catpass.py", "tikitown_soundproof.py",
     "tikitown_props14.py", "tikitown_wall_overlays.py", "tikitown_wall_extras.py",
     "slope_pairing.py", "tikitown_naming_pass.py", "kbw_sort_depth_check.py", "recipe_check.py",
-    "sheet_coverage.py",
+    "sheet_coverage.py", "tikitown_corner_fix.py", "tikitown_plaster_fix.py", "_we_collision_check.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",

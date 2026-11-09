@@ -473,7 +473,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -1420,10 +1419,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -2366,10 +2362,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -2609,7 +2602,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -2848,10 +2840,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -3449,10 +3438,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -3693,10 +3679,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -3933,10 +3916,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -4296,10 +4276,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -4540,10 +4517,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -5134,7 +5108,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -5728,10 +5701,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -5967,7 +5937,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -6916,7 +6885,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -8459,7 +8427,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -8934,7 +8901,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -9407,10 +9373,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -9646,7 +9609,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -10003,7 +9965,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -10364,10 +10325,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -11077,7 +11035,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -12495,7 +12452,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -12618,7 +12574,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -12858,7 +12813,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -13218,10 +13172,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -13341,10 +13292,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -14522,7 +14470,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -14644,10 +14591,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -16067,10 +16011,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -16306,7 +16247,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -16904,7 +16844,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -17027,7 +16966,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -17148,7 +17086,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -17621,10 +17558,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -17982,7 +17916,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -18341,7 +18274,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -19168,7 +19100,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -19526,10 +19457,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -19648,7 +19576,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -20713,7 +20640,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -20954,10 +20880,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -21310,7 +21233,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -21433,7 +21355,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -21673,7 +21594,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -22149,7 +22069,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -22272,7 +22191,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -22395,7 +22313,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -22516,7 +22433,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -22637,7 +22553,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -22995,10 +22910,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -23117,7 +23029,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -23240,7 +23151,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -24069,7 +23979,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -24192,7 +24101,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -25021,7 +24929,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -25259,7 +25166,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -25501,7 +25407,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -26804,7 +26709,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -27281,7 +27185,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -27520,10 +27423,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -27642,7 +27542,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -27884,7 +27783,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -28006,10 +27904,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -28129,10 +28024,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -28253,7 +28145,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -28375,10 +28266,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -28499,7 +28387,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -28739,7 +28626,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -28861,10 +28747,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -30755,7 +30638,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -31112,7 +30994,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -31353,7 +31234,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -31942,7 +31822,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -32187,7 +32066,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -32786,10 +32664,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -33382,7 +33257,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -33739,7 +33613,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -34100,7 +33973,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -34579,7 +34451,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -34701,10 +34572,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -35886,7 +35754,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -36360,7 +36227,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -36483,7 +36349,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -36959,7 +36824,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -37672,10 +37536,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -37796,7 +37657,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -38392,10 +38252,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -38870,10 +38727,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -39701,10 +39555,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -40536,10 +40387,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -40659,10 +40507,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -40783,7 +40628,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -41373,10 +41217,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -41733,7 +41574,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -42209,7 +42049,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -42449,7 +42288,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -42571,10 +42409,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -43874,10 +43709,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -43997,10 +43829,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -44236,7 +44065,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -44597,7 +44425,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -44953,10 +44780,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -45194,7 +45018,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -45434,7 +45257,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -45556,10 +45378,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -46270,10 +46089,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -47095,10 +46911,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -47219,7 +47032,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -47691,7 +47503,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -47931,7 +47742,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -48293,10 +48103,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -48767,10 +48574,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -48890,10 +48694,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -49133,7 +48934,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -49608,10 +49408,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -50790,10 +50587,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -50913,10 +50707,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -51272,10 +51063,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -51396,7 +51184,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -51518,10 +51305,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -51996,7 +51780,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -52469,10 +52252,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -52946,7 +52726,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -53303,7 +53082,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -54141,7 +53919,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -54500,7 +54277,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -55560,10 +55336,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -55922,7 +55695,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -56162,7 +55934,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -56283,7 +56054,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -56760,10 +56530,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -57711,7 +57478,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -57949,7 +57715,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -58071,10 +57836,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -59137,7 +58899,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -59379,7 +59140,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -59618,10 +59378,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -60803,10 +60560,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -61987,7 +61741,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -63286,7 +63039,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -63409,7 +63161,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -63530,7 +63281,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -63770,7 +63520,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -64364,10 +64113,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -64960,7 +64706,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -65200,7 +64945,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -65677,10 +65421,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -66035,7 +65776,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -67100,7 +66840,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -67222,10 +66961,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -67345,10 +67081,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -67467,7 +67200,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -67707,7 +67439,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -68536,7 +68267,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -68891,7 +68621,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -69962,7 +69691,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -70436,7 +70164,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -70912,7 +70639,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -71034,10 +70760,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -71864,7 +71587,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -72219,7 +71941,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -73053,7 +72774,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -73878,7 +73598,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -74233,7 +73952,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -74474,10 +74192,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -75071,10 +74786,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -75193,7 +74905,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -75550,7 +75261,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -79100,7 +78810,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -79931,7 +79640,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -80292,7 +80000,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -80650,7 +80357,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -81127,10 +80833,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -81368,7 +81071,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -82081,10 +81783,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -82204,10 +81903,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -82445,7 +82141,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -83509,7 +83204,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -84102,7 +83796,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -84342,7 +84035,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -84583,10 +84275,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -84822,7 +84511,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -85651,7 +85339,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -86006,7 +85693,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -86957,10 +86643,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -87672,7 +87355,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -88029,7 +87711,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -88979,7 +88660,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -89573,7 +89253,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -90050,10 +89729,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -90409,10 +90085,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -90885,10 +90558,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -91716,10 +91386,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -91959,7 +91626,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -92671,7 +92337,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -93382,10 +93047,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -93623,7 +93285,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -95043,7 +94704,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -95759,7 +95419,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -96118,7 +95777,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -96358,7 +96016,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -96479,7 +96136,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -96834,7 +96490,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -96955,7 +96610,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -97437,10 +97091,7 @@
       "isCorner": true
      },
      "health": 400,
-     "skillBaseHealth": 35,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 35
     }
    ]
   },
@@ -97680,7 +97331,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -97802,10 +97452,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -98042,10 +97689,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -98518,10 +98162,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -98877,10 +98518,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -99471,7 +99109,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -99592,7 +99229,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -100310,7 +99946,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -100431,7 +100066,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -100552,7 +100186,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -100794,7 +100427,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -101149,7 +100781,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -101627,7 +101258,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -101750,7 +101380,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -101872,10 +101501,7 @@
       "isCorner": true
      },
      "health": 600,
-     "skillBaseHealth": 52,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 52
     }
    ]
   },
@@ -101996,7 +101622,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -102234,7 +101859,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -102357,7 +101981,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -102948,7 +102571,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -103543,7 +103165,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -104255,10 +103876,7 @@
       "isCorner": true
      },
      "health": 533,
-     "skillBaseHealth": 47,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 47
     }
    ]
   },
@@ -104494,7 +104112,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -105676,7 +105293,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -105914,7 +105530,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -106035,7 +105650,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -106750,10 +106364,7 @@
       "isCorner": true
      },
      "health": 267,
-     "skillBaseHealth": 23,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 23
     }
    ]
   },
@@ -106990,10 +106601,7 @@
       "isCorner": true
      },
      "health": 200,
-     "skillBaseHealth": 18,
-     "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate"
-     }
+     "skillBaseHealth": 18
     }
    ]
   },
@@ -107348,7 +106956,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -107822,7 +107429,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -108298,7 +107904,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -109359,7 +108964,6 @@
      "health": 267,
      "skillBaseHealth": 23,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -110890,7 +110494,6 @@
      "health": 600,
      "skillBaseHealth": 52,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -111130,7 +110733,6 @@
      "health": 533,
      "skillBaseHealth": 47,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValidCorner"
      }
     }
@@ -111253,7 +110855,6 @@
      "health": 200,
      "skillBaseHealth": 18,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }
@@ -111610,7 +111211,6 @@
      "health": 400,
      "skillBaseHealth": 35,
      "callbacks": {
-      "onCreate": "BuildRecipeCode.canBePlastered.OnCreate",
       "onIsValid": "KBWCommunityFreeEdge.OnIsValid"
      }
     }

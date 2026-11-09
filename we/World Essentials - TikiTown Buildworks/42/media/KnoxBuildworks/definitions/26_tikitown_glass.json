@@ -3008,7 +3008,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_0",
    "translationKey": "IGUI_tikitown_walls_commercial_05_0",
-   "displayName": "Grey Framed Window + Lower Panel",
+   "displayName": "Gray Framed Window + Lower Panel",
    "tooltipKey": "Tooltip_KBWCB_WallWindow_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3105,7 +3105,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 1
    },
@@ -3116,7 +3116,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_16",
    "translationKey": "IGUI_tikitown_walls_commercial_05_16",
-   "displayName": "Grey Full Glass Window",
+   "displayName": "Gray Full Glass Window",
    "tooltipKey": "Tooltip_KBWCB_WallWindow_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3213,7 +3213,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 2
    },
@@ -3224,7 +3224,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_32",
    "translationKey": "IGUI_tikitown_walls_commercial_05_32",
-   "displayName": "Grey Full Glass Window (Tall)",
+   "displayName": "Gray Full Glass Window (Tall)",
    "tooltipKey": "Tooltip_KBWCB_WallWindow_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3321,7 +3321,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 3
    },
@@ -3332,7 +3332,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_24",
    "translationKey": "IGUI_tikitown_walls_commercial_05_24",
-   "displayName": "Grey Glass Fence",
+   "displayName": "Gray Glass Fence",
    "tooltipKey": "Tooltip_KBWCB_HalfWall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Half-Walls",
@@ -3424,7 +3424,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 4
    },
@@ -3435,7 +3435,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_47",
    "translationKey": "IGUI_tikitown_walls_commercial_05_47",
-   "displayName": "Grey Frameless Glass Pane",
+   "displayName": "Gray Frameless Glass Pane",
    "tooltipKey": "Tooltip_KBWCB_Wall_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3532,7 +3532,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 5
    },
@@ -3543,7 +3543,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_55",
    "translationKey": "IGUI_tikitown_walls_commercial_05_55",
-   "displayName": "Grey Frameless Glass + Lower Panel",
+   "displayName": "Gray Frameless Glass + Lower Panel",
    "tooltipKey": "Tooltip_KBWCB_Wall_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3640,7 +3640,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 6
    },
@@ -3651,7 +3651,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_67",
    "translationKey": "IGUI_tikitown_walls_commercial_05_67",
-   "displayName": "Grey Multi-Pane Grid Window",
+   "displayName": "Gray Multi-Pane Grid Window",
    "tooltipKey": "Tooltip_KBWCB_WallWindow_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -3748,7 +3748,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 7
    },
@@ -4259,7 +4259,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_pillar",
-   "displayName": "Grey Glass Framed Pillar",
+   "displayName": "Gray Glass Framed Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -4373,7 +4373,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 8
    },
@@ -4796,7 +4796,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_doorframe",
    "translationKey": "IGUI_tikitown_walls_commercial_05_doorframe",
-   "displayName": "Grey Glass Door Frame",
+   "displayName": "Gray Glass Door Frame",
    "tooltipKey": "Tooltip_KBWCB_WallDoorway_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -4888,7 +4888,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 9
    },
@@ -10275,7 +10275,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_2_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_2_corner",
-   "displayName": "Grey Glass Framed Corner",
+   "displayName": "Gray Glass Framed Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -10366,7 +10366,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 10
    },
@@ -10377,7 +10377,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_18_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_18_corner",
-   "displayName": "Grey Glass Full Corner",
+   "displayName": "Gray Glass Full Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -10468,7 +10468,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 11
    },
@@ -10479,7 +10479,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_19_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_19_pillar",
-   "displayName": "Grey Glass Full Pillar",
+   "displayName": "Gray Glass Full Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -10573,7 +10573,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 12
    },
@@ -10584,7 +10584,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_34_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_34_corner",
-   "displayName": "Grey Glass Full Tall Corner",
+   "displayName": "Gray Glass Full Tall Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -10675,7 +10675,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 13
    },
@@ -10686,7 +10686,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_35_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_35_pillar",
-   "displayName": "Grey Glass Full Tall Pillar",
+   "displayName": "Gray Glass Full Tall Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -10780,7 +10780,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 14
    },
@@ -10791,7 +10791,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_26_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_26_corner",
-   "displayName": "Grey Glass Fence Corner",
+   "displayName": "Gray Glass Fence Corner",
    "tooltipKey": "Tooltip_KBWCB_HalfWall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Half-Walls",
@@ -10882,7 +10882,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 15
    },
@@ -10893,7 +10893,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_27_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_27_pillar",
-   "displayName": "Grey Glass Fence Pillar",
+   "displayName": "Gray Glass Fence Pillar",
    "tooltipKey": "Tooltip_KBWCB_HalfWall",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Half-Walls",
@@ -10987,7 +10987,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 16
    },
@@ -10998,7 +10998,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_50_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_50_corner",
-   "displayName": "Grey Glass Frameless Corner",
+   "displayName": "Gray Glass Frameless Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11089,7 +11089,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 17
    },
@@ -11100,7 +11100,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_51_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_51_pillar",
-   "displayName": "Grey Glass Frameless Pillar",
+   "displayName": "Gray Glass Frameless Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11194,7 +11194,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 18
    },
@@ -11205,7 +11205,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_58_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_58_corner",
-   "displayName": "Grey Glass Frameless Lower Corner",
+   "displayName": "Gray Glass Frameless Lower Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11296,7 +11296,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 19
    },
@@ -11307,7 +11307,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_59_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_59_pillar",
-   "displayName": "Grey Glass Frameless Lower Pillar",
+   "displayName": "Gray Glass Frameless Lower Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11401,7 +11401,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 20
    },
@@ -11412,7 +11412,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_74_corner",
    "translationKey": "IGUI_tikitown_walls_commercial_05_74_corner",
-   "displayName": "Grey Glass Multi-Pane Corner",
+   "displayName": "Gray Glass Multi-Pane Corner",
    "tooltipKey": "Tooltip_KBWCB_WallCorner_Glass",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11503,7 +11503,7 @@
    "pieceClass": "corner",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 21
    },
@@ -11514,7 +11514,7 @@
   {
    "id": "tikitown.glass.tikitown_walls_commercial_05_75_pillar",
    "translationKey": "IGUI_tikitown_walls_commercial_05_75_pillar",
-   "displayName": "Grey Glass Multi-Pane Pillar",
+   "displayName": "Gray Glass Multi-Pane Pillar",
    "tooltipKey": "Tooltip_KBWCB_Pillar",
    "category": "Walls and Wall Finishes",
    "subcategory": "Glass Walls",
@@ -11608,7 +11608,7 @@
    "pieceClass": "pillar",
    "group": {
     "id": "worldessentials.tikitown.family_4ec1c2e7821fa832",
-    "name": "Grey Frameless Glass Pane",
+    "name": "Gray Frameless Glass Pane",
     "translationKey": "IGUI_WETiki_family_4ec1c2e7821fa832",
     "level": 22
    },

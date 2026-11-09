@@ -133,7 +133,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
-    "name": "TikiTown Bookshelf",
+    "name": "Bookshelf",
     "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
     "level": 1
    }
@@ -268,7 +268,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
-    "name": "TikiTown Bookshelf",
+    "name": "Bookshelf",
     "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
     "level": 2
    }
@@ -403,7 +403,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
-    "name": "TikiTown Bookshelf",
+    "name": "Bookshelf",
     "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
     "level": 3
    }
@@ -538,7 +538,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
-    "name": "TikiTown Bookshelf",
+    "name": "Bookshelf",
     "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
     "level": 4
    }

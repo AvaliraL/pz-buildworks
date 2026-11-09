@@ -1,0 +1,1022 @@
+{
+ "schemaVersion": 1,
+ "category": "Appliances",
+ "source": "TikiTown tikitown-props-14 (Drazion's Tilepack), everything except the soundproofing (37) and the multi-part statue: desk mic, small + large mixer boards, electrical cabinet, ATM, thermos coffee dispenser, styrofoam cups. First-pass costs.",
+ "buildables": [
+  {
+   "id": "worldessentials.tikitown.props14_microphone",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_microphone",
+   "displayName": "Broadcast Desk Microphone",
+   "category": "Appliances",
+   "subcategory": "Audio Equipment",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_0",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_2"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_3"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Electricity": 2
+      }
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Electrical",
+      "time": 80,
+      "xp": {
+       "Electricity": 15
+      }
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_mixer_small",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_mixer_small",
+   "displayName": "Small Mixer Board",
+   "category": "Appliances",
+   "subcategory": "Audio Equipment",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_4",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_6"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_7"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ],
+      "skills": {
+       "Electricity": 3
+      }
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Electrical",
+      "time": 120,
+      "xp": {
+       "Electricity": 20
+      }
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_mixer_large",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_mixer_large",
+   "displayName": "Large Mixer Board",
+   "category": "Appliances",
+   "subcategory": "Audio Equipment",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_13",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_13"
+           ],
+           [
+            "tikitown-props-14_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_15"
+           ],
+           [
+            "tikitown-props-14_14"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Electricity": 4
+      }
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Electrical",
+      "time": 180,
+      "xp": {
+       "Electricity": 30
+      }
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_electrical_cabinet",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_electrical_cabinet",
+   "displayName": "Electrical Cabinet Generator",
+   "category": "Appliances",
+   "subcategory": "Generators",
+   "material": "Metal",
+   "materialTags": [
+    "Metal",
+    "Electronics"
+   ],
+   "iconSprite": "tikitown-props-14_16",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14",
+    "generator",
+    "electrical"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWTikiTownProps_0"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 6
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 4
+       },
+       {
+        "id": "electrical_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "electronic_parts",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 16
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 5
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.MetalPipe",
+         "Base.MetalBar"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "fasteners_screws",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Screws"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "engine_parts",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.EngineParts"
+        ],
+        "amount": 15
+       }
+      ],
+      "skills": {
+       "Electricity": 9,
+       "MetalWelding": 6
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_ProjectsInMetal_Diverse"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "Electricity": 9,
+          "MetalWelding": 7
+         }
+        }
+       ]
+      }
+     },
+     "construction": {
+      "time": 600,
+      "timedAction": "BuildMetalStructureMedium",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "Electricity": 140
+      },
+      "category": "Electrical"
+     },
+     "nativeObject": {
+      "type": "generator",
+      "item": "TikiTownKBW.ElectricalCabinetGenerator"
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_atm",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_atm",
+   "displayName": "ATM",
+   "category": "Appliances",
+   "subcategory": "Electrical",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_21",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_22"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_20"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Screws"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 15
+       },
+       {
+        "id": "source_material_4",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 4
+       }
+      ],
+      "skills": {
+       "Electricity": 5
+      }
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Electrical",
+      "time": 240,
+      "xp": {
+       "Electricity": 40
+      }
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_coffee_dispenser",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_coffee_dispenser",
+   "displayName": "Thermos Coffee Dispenser",
+   "category": "Furniture and Appliances",
+   "subcategory": "Kitchen Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_27",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_27"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_30"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Screws"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 60,
+      "xp": {
+       "MetalWelding": 5
+      }
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_cup",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_cup",
+   "displayName": "Styrofoam Cup",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Kitchen Clutter",
+   "material": "Fabric",
+   "materialTags": [
+    "Fabric"
+   ],
+   "iconSprite": "tikitown-props-14_23",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_23"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 20
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.props14_cups",
+    "name": "Styrofoam Cups",
+    "translationKey": "IGUI_WETiki_props14_cups_group",
+    "level": 1
+   },
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  },
+  {
+   "id": "worldessentials.tikitown.props14_cup_stack",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_cup_stack",
+   "displayName": "Styrofoam Cup Stack",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Kitchen Clutter",
+   "material": "Fabric",
+   "materialTags": [
+    "Fabric"
+   ],
+   "iconSprite": "tikitown-props-14_31",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_31"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 20
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.props14_cups",
+    "name": "Styrofoam Cups",
+    "translationKey": "IGUI_WETiki_props14_cups_group",
+    "level": 1
+   },
+   "tooltipKey": "Tooltip_KBWCB_Decoration"
+  }
+ ]
+}

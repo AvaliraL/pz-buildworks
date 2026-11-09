@@ -2641,8 +2641,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_01_white_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -2725,7 +2725,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -5473,8 +5476,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_02_red_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -5557,7 +5560,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -8305,8 +8311,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_05_darkgreen_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -8389,7 +8395,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -11137,8 +11146,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_06_darkblue_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -11221,7 +11230,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -13969,8 +13981,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_08_black_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -14053,7 +14065,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -16801,8 +16816,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_add_01_brightred_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -16885,7 +16900,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -19633,8 +19651,8 @@
    "material": "Wood",
    "iconSprite": "tt_newburbs_trim_add_01_orange_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -19717,7 +19735,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -22465,8 +22486,8 @@
    "material": "Wood",
    "iconSprite": "tikitown_trim_02_yellow_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -22549,7 +22570,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -25297,8 +25321,8 @@
    "material": "Wood",
    "iconSprite": "tikitown_trim_03_orange_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -25381,7 +25405,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],
@@ -28129,8 +28156,8 @@
    "material": "Wood",
    "iconSprite": "tikitown_trim_04_gray_66",
    "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
+    "kind": "object",
+    "requiresFloor": false
    },
    "tags": [
     "tikitown",
@@ -28213,7 +28240,10 @@
       "canPassThrough": true,
       "canBarricade": false,
       "dismantable": true,
-      "isCorner": true
+      "isThumpable": false
+     },
+     "callbacks": {
+      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
      }
     }
    ],

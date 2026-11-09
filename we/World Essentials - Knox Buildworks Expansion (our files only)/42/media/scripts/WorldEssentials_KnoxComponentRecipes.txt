@@ -1,0 +1,156 @@
+module Base
+{
+    /*
+     * World Essentials - Knox Buildworks component recipes.
+     * Inputs are vanilla items only; outputs are Knox Buildworks (KBW) components.
+     * Home: "World Essentials - Knox Buildworks Expansion" submod (requires KBW).
+     */
+
+    /*
+     * Asphalt, option B: make the full bucket directly (no powder bag).
+     * Vanilla Sandbag and Gravelbag are drainable with UseDelta 0.25 (4 uses), so
+     * "item 2" is half a bag of each. Binder is petrol (no vanilla tar/bitumen exists).
+     * Yields BucketAsphaltMixtureFull (10 uses) for the KBW road tiles.
+     * A "-fluid" line draws from the item line directly above it, which must be amount 1:
+     * "item 1 [*]" is the petrol container (kept), as in vanilla recipes_lightsources.txt.
+     * (Directly under "item 2 [Base.Sandbag]" it was an invalid recipe: no world could load.)
+     */
+    craftRecipe WEMakeBucketOfAsphaltMixture
+    {
+        timedAction = MixingBucket,
+        time = 150,
+        Tags = InHandCraft,
+        category = Masonry,
+        inputs
+        {
+            item 1 [Base.Bucket;Base.BucketEmpty] mode:destroy,
+            item 2 [Base.Gravelbag],
+            item 2 [Base.Sandbag],
+            item 1 [*],
+            -fluid 1.0 [Petrol],
+        }
+        outputs
+        {
+            item 1 KnoxBuildworks.BucketAsphaltMixtureFull,
+        }
+    }
+
+    /*
+     * Thin copper pipe: forged from a small copper sheet, 2 pipes per small sheet (vanilla
+     * SawCopperSheetIntoSmallSheets makes 4 small sheets per CopperSheet). Blacksmith 5 minimum. Modelled on vanilla Forge_Cup.
+     * No NeedToBeLearn, so it is available as soon as the skill is met.
+     */
+    craftRecipe WEForgeThinCopperPipe
+    {
+        time = 150,
+        SkillRequired = Blacksmith:5,
+        timedAction = HammerMetalStanding,
+        xpAward = Blacksmith:25,
+        Tags = Forge,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[base:charcoal],
+            item 1 [Base.SmallCopperSheet],
+            item 1 tags[base:smithinghammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[base:metalworkingpliers;base:tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 KnoxBuildworks.ThinCopperPipe,
+        }
+    }
+
+    /*
+     * Rubber seal: cut from a vanilla tire piece (CutUpTire makes 4 pieces per tire), 2 seals
+     * per piece. Hand craft, no skill gate. Same shape as KBW's KBWPrepareRubberTube.
+     */
+    craftRecipe WECutRubberSeal
+    {
+        timedAction = Making,
+        time = 60,
+        Tags = InHandCraft,
+        category = Mechanics,
+        inputs
+        {
+            item 1 tags[base:sharpknife] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 [Base.TirePiece],
+        }
+        outputs
+        {
+            item 2 KnoxBuildworks.RubberSeal,
+        }
+    }
+
+    /*
+     * Plastic sheet: a tarp stiffened with epoxy and heat-sealed with a lighter, trimmed with
+     * scissors. Any lighter works (tag base:lighter covers Lighter, LighterDisposable,
+     * LighterBBQ, Lighter_Battery); it spends one use of fuel. Garbage bags are deliberately
+     * not an input (too easy to get). Feeds KBWCutPlasticSheet (1 sheet -> 6 small sheets).
+     */
+    craftRecipe WEMakePlasticSheet
+    {
+        timedAction = Making,
+        time = 120,
+        Tags = InHandCraft,
+        category = Mechanics,
+        inputs
+        {
+            item 1 [Base.Scissors] mode:keep,
+            item 1 tags[base:lighter],
+            item 1 [Base.Tarp],
+            item 2 [Base.Epoxy],
+        }
+        outputs
+        {
+            item 1 KnoxBuildworks.PlasticSheet,
+        }
+    }
+
+    /*
+     * Insulation foam: a vanilla sponge bonded with glue or epoxy (2 uses of either).
+     * No tool and no heat step. Vanilla has no foam item, so the sponge stands in for it.
+     */
+    craftRecipe WEMakeInsulationFoam
+    {
+        timedAction = Making,
+        time = 80,
+        Tags = InHandCraft,
+        category = Mechanics,
+        inputs
+        {
+            item 1 [Base.Sponge],
+            item 2 [Base.Glue;Base.Epoxy],
+        }
+        outputs
+        {
+            item 1 KnoxBuildworks.InsulationFoam,
+        }
+    }
+
+    /*
+     * Refrigerant bottle: a forged copper kettle (vanilla Forge_Kettle: copper sheet +
+     * advanced forge) sealed and charged with propane (R-290 is a real refrigerant).
+     * Vanilla PropaneTank is a drainable with UseDelta 0.0002 = 5000 uses; 1250 uses is
+     * 25% of a full tank, so one tank charges 4 bottles. The tank is kept on depletion
+     * (vanilla KeepOnDeplete). Metalworking 3, small Metalworking xp.
+     */
+    craftRecipe WEChargeRefrigerantBottle
+    {
+        timedAction = Making,
+        time = 200,
+        SkillRequired = MetalWelding:3,
+        xpAward = MetalWelding:10,
+        Tags = InHandCraft,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.Kettle_Copper] mode:destroy,
+            item 1250 [Base.PropaneTank],
+        }
+        outputs
+        {
+            item 1 KnoxBuildworks.RefrigerantBottle,
+        }
+    }
+}

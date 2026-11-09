@@ -6,7 +6,7 @@
   {
    "id": "worldessentials.tikitown.furniture_storage_tterika_02_0",
    "translationKey": "IGUI_WETiki_furniture_storage_tterika_02_0",
-   "displayName": "Small Grey Metal Cabinet",
+   "displayName": "Small Gray Metal Cabinet",
    "tooltipKey": "Tooltip_KBWCB_Locker",
    "category": "Containers",
    "subcategory": "Lockers",
@@ -190,7 +190,7 @@
   {
    "id": "worldessentials.tikitown.furniture_storage_tterika_02_0.reinforced",
    "translationKey": "IGUI_WETiki_furniture_storage_tterika_02_0_reinforced",
-   "displayName": "Small Grey Metal Cabinet (Reinforced)",
+   "displayName": "Small Gray Metal Cabinet (Reinforced)",
    "tooltipKey": "Tooltip_KBWCB_StorageReinforced",
    "category": "Containers",
    "subcategory": "Lockers",
@@ -2774,7 +2774,7 @@
   {
    "id": "worldessentials.tikitown.furniture_storage_tterika_02_32",
    "translationKey": "IGUI_WETiki_furniture_storage_tterika_02_32",
-   "displayName": "Grey Locker",
+   "displayName": "Gray Locker",
    "tooltipKey": "Tooltip_KBWCB_Locker",
    "category": "Containers",
    "subcategory": "Lockers",
@@ -2958,7 +2958,7 @@
   {
    "id": "worldessentials.tikitown.furniture_storage_tterika_02_32.reinforced",
    "translationKey": "IGUI_WETiki_furniture_storage_tterika_02_32_reinforced",
-   "displayName": "Grey Locker (Reinforced)",
+   "displayName": "Gray Locker (Reinforced)",
    "tooltipKey": "Tooltip_KBWCB_StorageReinforced",
    "category": "Containers",
    "subcategory": "Lockers",

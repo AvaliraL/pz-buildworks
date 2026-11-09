@@ -133,7 +133,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ba1bce1a90e5eb03",
-    "name": "TikiTown Fancy Floor Bed",
+    "name": "Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_ba1bce1a90e5eb03",
     "level": 1
    }
@@ -280,7 +280,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_8c657db7c9248c00",
-    "name": "TikiTown Large Fancy Floor Bed",
+    "name": "Large Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_8c657db7c9248c00",
     "level": 1
    }
@@ -415,7 +415,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33164b2e92ff90a5",
-    "name": "TikiTown Mirror and Drawers",
+    "name": "Mirror and Drawers",
     "translationKey": "IGUI_WETiki_family_33164b2e92ff90a5",
     "level": 1
    }
@@ -550,7 +550,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7ff1a5e42ab1473e",
-    "name": "TikiTown Drawers",
+    "name": "Drawers",
     "translationKey": "IGUI_WETiki_family_7ff1a5e42ab1473e",
     "level": 1
    }
@@ -685,7 +685,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ce11544f16022c17",
-    "name": "TikiTown Sidetable",
+    "name": "Sidetable",
     "translationKey": "IGUI_WETiki_family_ce11544f16022c17",
     "level": 1
    }
@@ -820,7 +820,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2efb2d71b4af8830",
-    "name": "TikiTown Small Drawer",
+    "name": "Small Drawer",
     "translationKey": "IGUI_WETiki_family_2efb2d71b4af8830",
     "level": 1
    }
@@ -963,7 +963,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f8e23a35ad030e08",
-    "name": "TikiTown Wardrobe",
+    "name": "Wardrobe",
     "translationKey": "IGUI_WETiki_family_f8e23a35ad030e08",
     "level": 1
    }
@@ -1098,7 +1098,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_dd144a77611f8f35",
-    "name": "TikiTown Shelves",
+    "name": "Shelves",
     "translationKey": "IGUI_WETiki_family_dd144a77611f8f35",
     "level": 1
    }
@@ -1233,7 +1233,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c33b5aeed092ae39",
-    "name": "TikiTown Small Shelves",
+    "name": "Small Shelves",
     "translationKey": "IGUI_WETiki_family_c33b5aeed092ae39",
     "level": 1
    }
@@ -1346,7 +1346,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_83963535689357d4",
-    "name": "TikiTown Hanging Shelves",
+    "name": "Hanging Shelves",
     "translationKey": "IGUI_WETiki_family_83963535689357d4",
     "level": 1
    }
@@ -1455,7 +1455,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2fe25834aa3de81b",
-    "name": "TikiTown Long Light Table",
+    "name": "Long Light Table",
     "translationKey": "IGUI_WETiki_family_2fe25834aa3de81b",
     "level": 1
    }
@@ -1548,7 +1548,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_274b182ecbf16917",
-    "name": "TikiTown Bedroom Poster",
+    "name": "Bedroom Poster",
     "translationKey": "IGUI_WETiki_family_274b182ecbf16917",
     "level": 1
    }
@@ -1683,7 +1683,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ba1bce1a90e5eb03",
-    "name": "TikiTown Fancy Floor Bed",
+    "name": "Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_ba1bce1a90e5eb03",
     "level": 2
    }
@@ -1830,7 +1830,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_8c657db7c9248c00",
-    "name": "TikiTown Large Fancy Floor Bed",
+    "name": "Large Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_8c657db7c9248c00",
     "level": 2
    }
@@ -1965,7 +1965,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33164b2e92ff90a5",
-    "name": "TikiTown Mirror and Drawers",
+    "name": "Mirror and Drawers",
     "translationKey": "IGUI_WETiki_family_33164b2e92ff90a5",
     "level": 2
    }
@@ -2100,7 +2100,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7ff1a5e42ab1473e",
-    "name": "TikiTown Drawers",
+    "name": "Drawers",
     "translationKey": "IGUI_WETiki_family_7ff1a5e42ab1473e",
     "level": 2
    }
@@ -2235,7 +2235,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ce11544f16022c17",
-    "name": "TikiTown Sidetable",
+    "name": "Sidetable",
     "translationKey": "IGUI_WETiki_family_ce11544f16022c17",
     "level": 2
    }
@@ -2370,7 +2370,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2efb2d71b4af8830",
-    "name": "TikiTown Small Drawer",
+    "name": "Small Drawer",
     "translationKey": "IGUI_WETiki_family_2efb2d71b4af8830",
     "level": 2
    }
@@ -2513,7 +2513,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f8e23a35ad030e08",
-    "name": "TikiTown Wardrobe",
+    "name": "Wardrobe",
     "translationKey": "IGUI_WETiki_family_f8e23a35ad030e08",
     "level": 2
    }
@@ -2648,7 +2648,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_dd144a77611f8f35",
-    "name": "TikiTown Shelves",
+    "name": "Shelves",
     "translationKey": "IGUI_WETiki_family_dd144a77611f8f35",
     "level": 2
    }
@@ -2783,7 +2783,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c33b5aeed092ae39",
-    "name": "TikiTown Small Shelves",
+    "name": "Small Shelves",
     "translationKey": "IGUI_WETiki_family_c33b5aeed092ae39",
     "level": 2
    }
@@ -2896,7 +2896,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_83963535689357d4",
-    "name": "TikiTown Hanging Shelves",
+    "name": "Hanging Shelves",
     "translationKey": "IGUI_WETiki_family_83963535689357d4",
     "level": 2
    }
@@ -3005,7 +3005,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2fe25834aa3de81b",
-    "name": "TikiTown Long Light Table",
+    "name": "Long Light Table",
     "translationKey": "IGUI_WETiki_family_2fe25834aa3de81b",
     "level": 2
    }
@@ -3098,7 +3098,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_274b182ecbf16917",
-    "name": "TikiTown Bedroom Poster",
+    "name": "Bedroom Poster",
     "translationKey": "IGUI_WETiki_family_274b182ecbf16917",
     "level": 2
    }
@@ -3233,7 +3233,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ba1bce1a90e5eb03",
-    "name": "TikiTown Fancy Floor Bed",
+    "name": "Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_ba1bce1a90e5eb03",
     "level": 3
    }
@@ -3380,7 +3380,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_8c657db7c9248c00",
-    "name": "TikiTown Large Fancy Floor Bed",
+    "name": "Large Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_8c657db7c9248c00",
     "level": 3
    }
@@ -3515,7 +3515,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33164b2e92ff90a5",
-    "name": "TikiTown Mirror and Drawers",
+    "name": "Mirror and Drawers",
     "translationKey": "IGUI_WETiki_family_33164b2e92ff90a5",
     "level": 3
    }
@@ -3650,7 +3650,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7ff1a5e42ab1473e",
-    "name": "TikiTown Drawers",
+    "name": "Drawers",
     "translationKey": "IGUI_WETiki_family_7ff1a5e42ab1473e",
     "level": 3
    }
@@ -3785,7 +3785,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ce11544f16022c17",
-    "name": "TikiTown Sidetable",
+    "name": "Sidetable",
     "translationKey": "IGUI_WETiki_family_ce11544f16022c17",
     "level": 3
    }
@@ -3920,7 +3920,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2efb2d71b4af8830",
-    "name": "TikiTown Small Drawer",
+    "name": "Small Drawer",
     "translationKey": "IGUI_WETiki_family_2efb2d71b4af8830",
     "level": 3
    }
@@ -4063,7 +4063,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f8e23a35ad030e08",
-    "name": "TikiTown Wardrobe",
+    "name": "Wardrobe",
     "translationKey": "IGUI_WETiki_family_f8e23a35ad030e08",
     "level": 3
    }
@@ -4198,7 +4198,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_dd144a77611f8f35",
-    "name": "TikiTown Shelves",
+    "name": "Shelves",
     "translationKey": "IGUI_WETiki_family_dd144a77611f8f35",
     "level": 3
    }
@@ -4333,7 +4333,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c33b5aeed092ae39",
-    "name": "TikiTown Small Shelves",
+    "name": "Small Shelves",
     "translationKey": "IGUI_WETiki_family_c33b5aeed092ae39",
     "level": 3
    }
@@ -4446,7 +4446,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_83963535689357d4",
-    "name": "TikiTown Hanging Shelves",
+    "name": "Hanging Shelves",
     "translationKey": "IGUI_WETiki_family_83963535689357d4",
     "level": 3
    }
@@ -4555,7 +4555,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2fe25834aa3de81b",
-    "name": "TikiTown Long Light Table",
+    "name": "Long Light Table",
     "translationKey": "IGUI_WETiki_family_2fe25834aa3de81b",
     "level": 3
    }
@@ -4648,7 +4648,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_274b182ecbf16917",
-    "name": "TikiTown Bedroom Poster",
+    "name": "Bedroom Poster",
     "translationKey": "IGUI_WETiki_family_274b182ecbf16917",
     "level": 3
    }
@@ -4783,7 +4783,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ba1bce1a90e5eb03",
-    "name": "TikiTown Fancy Floor Bed",
+    "name": "Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_ba1bce1a90e5eb03",
     "level": 4
    }
@@ -4930,7 +4930,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_8c657db7c9248c00",
-    "name": "TikiTown Large Fancy Floor Bed",
+    "name": "Large Fancy Floor Bed",
     "translationKey": "IGUI_WETiki_family_8c657db7c9248c00",
     "level": 4
    }
@@ -5065,7 +5065,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_33164b2e92ff90a5",
-    "name": "TikiTown Mirror and Drawers",
+    "name": "Mirror and Drawers",
     "translationKey": "IGUI_WETiki_family_33164b2e92ff90a5",
     "level": 4
    }
@@ -5200,7 +5200,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7ff1a5e42ab1473e",
-    "name": "TikiTown Drawers",
+    "name": "Drawers",
     "translationKey": "IGUI_WETiki_family_7ff1a5e42ab1473e",
     "level": 4
    }
@@ -5335,7 +5335,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_ce11544f16022c17",
-    "name": "TikiTown Sidetable",
+    "name": "Sidetable",
     "translationKey": "IGUI_WETiki_family_ce11544f16022c17",
     "level": 4
    }
@@ -5470,7 +5470,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2efb2d71b4af8830",
-    "name": "TikiTown Small Drawer",
+    "name": "Small Drawer",
     "translationKey": "IGUI_WETiki_family_2efb2d71b4af8830",
     "level": 4
    }
@@ -5613,7 +5613,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_f8e23a35ad030e08",
-    "name": "TikiTown Wardrobe",
+    "name": "Wardrobe",
     "translationKey": "IGUI_WETiki_family_f8e23a35ad030e08",
     "level": 4
    }
@@ -5748,7 +5748,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_dd144a77611f8f35",
-    "name": "TikiTown Shelves",
+    "name": "Shelves",
     "translationKey": "IGUI_WETiki_family_dd144a77611f8f35",
     "level": 4
    }
@@ -5883,7 +5883,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_c33b5aeed092ae39",
-    "name": "TikiTown Small Shelves",
+    "name": "Small Shelves",
     "translationKey": "IGUI_WETiki_family_c33b5aeed092ae39",
     "level": 4
    }
@@ -5996,7 +5996,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_83963535689357d4",
-    "name": "TikiTown Hanging Shelves",
+    "name": "Hanging Shelves",
     "translationKey": "IGUI_WETiki_family_83963535689357d4",
     "level": 4
    }
@@ -6105,7 +6105,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_2fe25834aa3de81b",
-    "name": "TikiTown Long Light Table",
+    "name": "Long Light Table",
     "translationKey": "IGUI_WETiki_family_2fe25834aa3de81b",
     "level": 4
    }
@@ -6198,7 +6198,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_274b182ecbf16917",
-    "name": "TikiTown Bedroom Poster",
+    "name": "Bedroom Poster",
     "translationKey": "IGUI_WETiki_family_274b182ecbf16917",
     "level": 4
    }
@@ -6206,7 +6206,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_double_a",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_double_a",
-   "displayName": "Bedding Double Bed",
+   "displayName": "White Double Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -6448,7 +6448,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_96fef860cb32bacd",
-    "name": "TikiTown Bunk Bed",
+    "name": "Bunk Bed",
     "translationKey": "IGUI_WETiki_family_96fef860cb32bacd",
     "level": 1
    }
@@ -6557,7 +6557,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_96fef860cb32bacd",
-    "name": "TikiTown Bunk Bed",
+    "name": "Bunk Bed",
     "translationKey": "IGUI_WETiki_family_96fef860cb32bacd",
     "level": 2
    }
@@ -6666,7 +6666,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_96fef860cb32bacd",
-    "name": "TikiTown Bunk Bed",
+    "name": "Bunk Bed",
     "translationKey": "IGUI_WETiki_family_96fef860cb32bacd",
     "level": 3
    }
@@ -6775,7 +6775,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_96fef860cb32bacd",
-    "name": "TikiTown Bunk Bed",
+    "name": "Bunk Bed",
     "translationKey": "IGUI_WETiki_family_96fef860cb32bacd",
     "level": 4
    }
@@ -6783,7 +6783,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_single_r4",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_single_r4",
-   "displayName": "Bedding Single Bed R4",
+   "displayName": "White Single Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -6910,7 +6910,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7dc524bb33647454",
-    "name": "TikiTown Bedding Single Bed",
+    "name": "Single Bed",
     "translationKey": "IGUI_WETiki_family_7dc524bb33647454",
     "level": 1
    }
@@ -6918,7 +6918,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_single_r5",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_single_r5",
-   "displayName": "Bedding Single Bed R5",
+   "displayName": "Pink Single Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -7045,7 +7045,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7dc524bb33647454",
-    "name": "TikiTown Bedding Single Bed",
+    "name": "Single Bed",
     "translationKey": "IGUI_WETiki_family_7dc524bb33647454",
     "level": 2
    }
@@ -7053,7 +7053,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_single_r6",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_single_r6",
-   "displayName": "Bedding Single Bed R6",
+   "displayName": "Green Single Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -7180,7 +7180,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7dc524bb33647454",
-    "name": "TikiTown Bedding Single Bed",
+    "name": "Single Bed",
     "translationKey": "IGUI_WETiki_family_7dc524bb33647454",
     "level": 3
    }
@@ -7188,7 +7188,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_single_r7",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_single_r7",
-   "displayName": "Bedding Single Bed R7",
+   "displayName": "Blue Single Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -7315,7 +7315,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7dc524bb33647454",
-    "name": "TikiTown Bedding Single Bed",
+    "name": "Single Bed",
     "translationKey": "IGUI_WETiki_family_7dc524bb33647454",
     "level": 4
    }
@@ -7323,7 +7323,7 @@
   {
    "id": "worldessentials.tikitown.furniture_bedding_tterika_01_single_r8",
    "translationKey": "IGUI_WETiki_furniture_bedding_tterika_01_single_r8",
-   "displayName": "Bedding Single Bed R8",
+   "displayName": "Beige Single Bed",
    "tooltipKey": "Tooltip_KBWCB_Bed",
    "category": "Furniture and Appliances",
    "subcategory": "Beds",
@@ -7450,7 +7450,7 @@
    ],
    "group": {
     "id": "worldessentials.tikitown.family_7dc524bb33647454",
-    "name": "TikiTown Bedding Single Bed",
+    "name": "Single Bed",
     "translationKey": "IGUI_WETiki_family_7dc524bb33647454",
     "level": 5
    }

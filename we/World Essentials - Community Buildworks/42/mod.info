@@ -21,3 +21,5 @@ tiledef=wecommunity_dylan 8182
 
 pack=KBWCommunityIceShell
 tiledef=kbwcommunity_iceshell 8181
+pack=KBWCommunityLCouch
+tiledef=kbwcommunity_lcouch 8178

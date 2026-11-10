@@ -8,6 +8,7 @@ for i = 36, 39 do allowed.tv["DylansRandomFurniture02_"..i] = true; allowed.tv["
 for _,i in ipairs({0,1,2,3,24,25,26,27,28,29,30,31}) do
     allowed.tabletop["kitchen_misc_tk_01_"..i] = true
 end
+for _,i in ipairs({0,1,2,3,4,5,6,7,12,13,14,15,23,27,28,29,30,31}) do allowed.tabletop["tikitown-props-14_"..i] = true end
 function G.register(key, names, fn)
     if type(fn) ~= "function" or not allowed[key] then return false end
     for name in pairs(names) do if not allowed[key][name] then return false end end
@@ -38,5 +39,5 @@ local function communityLoad(sq)
 end
 G.onSquare = communityLoad
 if Events.LoadGridsquare then Events.LoadGridsquare.Add(communityLoad) end
-Health.set("Community square repair", "OK", "Single load callback; 16 sprite names; isolated failures; no polling/network")
+Health.set("Community square repair", "OK", "Single load callback; Fixed sprite allowlist; isolated failures; no polling/network")
 return G

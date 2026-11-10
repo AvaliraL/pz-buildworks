@@ -3217,7 +3217,6 @@
   "IGUI_WETiki_props14_microphone": "Broadcast Desk Microphone",
   "IGUI_WETiki_props14_mixer_small": "Small Mixer Board",
   "IGUI_WETiki_props14_mixer_large": "Large Mixer Board",
-  "IGUI_WETiki_props14_electrical_cabinet": "Electrical Cabinet Generator",
   "IGUI_WETiki_props14_atm": "ATM",
   "IGUI_WETiki_props14_coffee_dispenser": "Thermos Coffee Dispenser",
   "IGUI_WETiki_props14_cup": "Styrofoam Cup",
@@ -7558,6 +7557,5 @@
   "IGUI_WETiki_garagetrim_tikitown_walls_wallpaper_09_group": "Gray Watercolor Wallpaper Garage Door Frame",
   "IGUI_WETiki_garagetrim_tikitown_walls_brick_04_group": "Brown Brick Garage Door Frame",
   "IGUI_WETiki_garagetrim_tikitown_walls_brick_01_group": "White Brick Garage Door Frame",
-  "IGUI_WETiki_garagetrim_tikitown_commercial_walls_add_02_group": "Pale Green Cinder Block Garage Door Frame",
-  "IGUI_KBWTikiTown_RotateGenerator": "Rotate"
+  "IGUI_WETiki_garagetrim_tikitown_commercial_walls_add_02_group": "Pale Green Cinder Block Garage Door Frame"
 }

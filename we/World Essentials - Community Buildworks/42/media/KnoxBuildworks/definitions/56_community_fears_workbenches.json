@@ -61,86 +61,7 @@
             "materials": "kbwve.extended.wood",
             "skills": {
               "Woodwork": 4
-            },
-            "inputs": [
-              {
-                "id": "benchtool_scissors",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Multitool",
-                  "Base.Scissors",
-                  "Base.ScissorsBlunt",
-                  "Base.ScissorsBluntMedical",
-                  "Base.ScissorsForged"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_sewingneedle",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Needle",
-                  "Base.Needle_Bone",
-                  "Base.Needle_Brass",
-                  "Base.Needle_Forged"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_awl",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Awl",
-                  "Base.Awl_Bone",
-                  "Base.Awl_Stone",
-                  "Base.Handiknife",
-                  "Base.IcePick",
-                  "Base.Multitool",
-                  "Base.SmallPunchSet"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_sharpknife",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.CrudeKnife",
-                  "Base.FightingKnife",
-                  "Base.FlintKnife",
-                  "Base.HandguardDagger",
-                  "Base.Handiknife",
-                  "Base.HuntingKnife",
-                  "Base.HuntingKnifeForged",
-                  "Base.KitchenKnife",
-                  "Base.KitchenKnifeForged",
-                  "Base.KnifeButterfly",
-                  "Base.KnifeFillet",
-                  "Base.KnifeParing",
-                  "Base.KnifePocket",
-                  "Base.KnifeSushi",
-                  "Base.LargeKnife",
-                  "Base.LargeKnife_Scrap",
-                  "Base.LongCrudeKnife",
-                  "Base.Machete",
-                  "Base.MacheteForged",
-                  "Base.MacheteKnife",
-                  "Base.Machete_Crude",
-                  "Base.Multitool",
-                  "Base.RailroadSpikeKnife",
-                  "Base.SharpedStone",
-                  "Base.SmallKnife",
-                  "Base.SteakKnife",
-                  "Base.StoneKnifeLong",
-                  "Base.StraightRazor",
-                  "Base.SwitchKnife"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -149,54 +70,6 @@
           "container": {
             "type": "Tailoring_Bench",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.Multitool",
-              "Base.Scissors",
-              "Base.ScissorsBlunt",
-              "Base.ScissorsBluntMedical",
-              "Base.ScissorsForged",
-              "Base.Needle",
-              "Base.Needle_Bone",
-              "Base.Needle_Brass",
-              "Base.Needle_Forged",
-              "Base.Awl",
-              "Base.Awl_Bone",
-              "Base.Awl_Stone",
-              "Base.Handiknife",
-              "Base.IcePick",
-              "Base.SmallPunchSet",
-              "Base.CrudeKnife",
-              "Base.FightingKnife",
-              "Base.FlintKnife",
-              "Base.HandguardDagger",
-              "Base.HuntingKnife",
-              "Base.HuntingKnifeForged",
-              "Base.KitchenKnife",
-              "Base.KitchenKnifeForged",
-              "Base.KnifeButterfly",
-              "Base.KnifeFillet",
-              "Base.KnifeParing",
-              "Base.KnifePocket",
-              "Base.KnifeSushi",
-              "Base.LargeKnife",
-              "Base.LargeKnife_Scrap",
-              "Base.LongCrudeKnife",
-              "Base.Machete",
-              "Base.MacheteForged",
-              "Base.MacheteKnife",
-              "Base.Machete_Crude",
-              "Base.RailroadSpikeKnife",
-              "Base.SharpedStone",
-              "Base.SmallKnife",
-              "Base.SteakKnife",
-              "Base.StoneKnifeLong",
-              "Base.StraightRazor",
-              "Base.SwitchKnife"
-            ],
-            "category": "Tailoring",
-            "labelKey": "IGUI_KBWCB_Bench_Tailoring"
           }
         }
       ],
@@ -269,79 +142,7 @@
             "materials": "kbwve.extended.metal",
             "skills": {
               "MetalWelding": 4
-            },
-            "inputs": [
-              {
-                "id": "benchtool_weldingmask",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Glasses_OldWeldingGoggles",
-                  "Base.WeldingMask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_metalsaw",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Saw"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_sheetmetalsnips",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.SheetMetalSnips"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_metalworkingpunch",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.MetalworkingPunch"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_drillmetal",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.HandDrill"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_hammer",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.BallPeenHammer",
-                  "Base.BallPeenHammerForged",
-                  "Base.Hammer",
-                  "Base.HammerForged",
-                  "Base.HammerStone",
-                  "Base.SmithingHammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_wrench",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Ratchet",
-                  "Base.Wrench"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -350,26 +151,6 @@
           "container": {
             "type": "Metalworking_Bench",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.Glasses_OldWeldingGoggles",
-              "Base.WeldingMask",
-              "Base.Saw",
-              "Base.SheetMetalSnips",
-              "Base.MetalworkingPunch",
-              "Base.HandDrill",
-              "Base.BallPeenHammer",
-              "Base.BallPeenHammerForged",
-              "Base.Hammer",
-              "Base.HammerForged",
-              "Base.HammerStone",
-              "Base.SmithingHammer",
-              "Base.Ratchet",
-              "Base.Wrench"
-            ],
-            "category": "Metalworking",
-            "labelKey": "IGUI_KBWCB_Bench_Metalworking"
           }
         }
       ],
@@ -442,33 +223,7 @@
             "materials": "kbwve.extended.wood",
             "skills": {
               "Woodwork": 4
-            },
-            "inputs": [
-              {
-                "id": "benchtool_screwdriver",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Handiknife",
-                  "Base.Multitool",
-                  "Base.Screwdriver",
-                  "Base.Screwdriver_Improvised",
-                  "Base.Screwdriver_Old"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_pliers",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.MetalworkingPliers",
-                  "Base.Multitool",
-                  "Base.Pliers"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -477,19 +232,6 @@
           "container": {
             "type": "Electrical_Bench",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.Handiknife",
-              "Base.Multitool",
-              "Base.Screwdriver",
-              "Base.Screwdriver_Improvised",
-              "Base.Screwdriver_Old",
-              "Base.MetalworkingPliers",
-              "Base.Pliers"
-            ],
-            "category": "Electrical",
-            "labelKey": "IGUI_KBWCB_Bench_Electrical"
           }
         }
       ],
@@ -562,52 +304,7 @@
             "materials": "kbwve.extended.wood_large",
             "skills": {
               "Woodwork": 4
-            },
-            "inputs": [
-              {
-                "id": "benchtool_saw",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.CrudeSaw",
-                  "Base.GardenSaw",
-                  "Base.Saw"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_crudesaw",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Saw_Flint"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_smallsaw",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.SmallSaw"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_hammer",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.BallPeenHammer",
-                  "Base.BallPeenHammerForged",
-                  "Base.Hammer",
-                  "Base.HammerForged",
-                  "Base.HammerStone",
-                  "Base.SmithingHammer"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -616,23 +313,6 @@
           "container": {
             "type": "Woodworking_Bench",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.CrudeSaw",
-              "Base.GardenSaw",
-              "Base.Saw",
-              "Base.Saw_Flint",
-              "Base.SmallSaw",
-              "Base.BallPeenHammer",
-              "Base.BallPeenHammerForged",
-              "Base.Hammer",
-              "Base.HammerForged",
-              "Base.HammerStone",
-              "Base.SmithingHammer"
-            ],
-            "category": "Carpentry",
-            "labelKey": "IGUI_KBWCB_Bench_Carpentry"
           }
         }
       ],
@@ -705,19 +385,7 @@
             "materials": "kbwve.extended.metal_light",
             "skills": {
               "MetalWelding": 3
-            },
-            "inputs": [
-              {
-                "id": "benchtool_mortarpestle",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.CeramicMortarandPestle",
-                  "Base.MortarPestle"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -726,14 +394,6 @@
           "container": {
             "type": "Drug_Lab",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.CeramicMortarandPestle",
-              "Base.MortarPestle"
-            ],
-            "category": "Medical",
-            "labelKey": "IGUI_KBWCB_Bench_Medical"
           }
         }
       ],
@@ -806,28 +466,7 @@
             "materials": "kbwve.extended.metal",
             "skills": {
               "MetalWelding": 4
-            },
-            "inputs": [
-              {
-                "id": "benchtool_drillmetal",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.HandDrill"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "benchtool_wrench",
-                "role": "component",
-                "mode": "consume",
-                "items": [
-                  "Base.Ratchet",
-                  "Base.Wrench"
-                ],
-                "amount": 1
-              }
-            ]
+            }
           },
           "object": {
             "isThumpable": true,
@@ -836,15 +475,6 @@
           "container": {
             "type": "Gunsmithing Bench",
             "capacity": 80
-          },
-          "kbwcbBenchTools": {
-            "items": [
-              "Base.HandDrill",
-              "Base.Ratchet",
-              "Base.Wrench"
-            ],
-            "category": "Weaponry",
-            "labelKey": "IGUI_KBWCB_Bench_Weaponry"
           }
         }
       ],

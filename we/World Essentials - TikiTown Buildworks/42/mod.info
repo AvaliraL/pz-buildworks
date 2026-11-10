@@ -5,3 +5,7 @@ require=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,tikitown_ti
 loadModAfter=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,tikitown_tiles
 versionMin=42.0
 tags=Build 42,Build
+
+tiledef=kbwtikitown_tterika.patch 8180
+pack=KBWTikiTownWallOverlays
+tiledef=kbwtikitown_walloverlays 8179

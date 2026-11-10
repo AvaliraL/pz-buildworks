@@ -1,521 +1,521 @@
 {
- "schemaVersion": 1,
- "category": "Walls and Wall Finishes",
- "source": "TikiTown tikitown-props-14 recording-studio soundproofing (Drazion's Tilepack), modeled on the Newburbs trim (wall/corner overlay, window trim, door trim). Uses our own copies of the tiles (KBWTikiTownSoundproof_0..6; pack tiles unchanged).",
- "buildables": [
-  {
-   "id": "worldessentials.tikitown.soundproof_wall",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_WETiki_soundproof_wall",
-   "displayName": "Soundproof Wall Panel",
-   "tooltipKey": "Tooltip_KBWCB_Wall_Soundproofing",
-   "category": "Walls and Wall Finishes",
-   "subcategory": "Soundproofing",
-   "material": "Wood",
-   "materialTags": [
-    "Wood",
-    "Fabric"
-   ],
-   "iconSprite": "KBWTikiTownSoundproof_0",
-   "placement": {
-    "kind": "overlay",
-    "needToBeAgainstWall": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "world-essentials",
-    "soundproofing"
-   ],
-   "stages": [
+  "schemaVersion": 1,
+  "category": "Walls and Wall Finishes",
+  "source": "TikiTown tikitown-props-14 recording-studio soundproofing (Drazion's Tilepack), modeled on the Newburbs trim (wall/corner overlay, window trim, door trim). Uses our own copies of the tiles (KBWTikiTownSoundproof_0..6; pack tiles unchanged).",
+  "buildables": [
     {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_0"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_1"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       }
+      "id": "worldessentials.tikitown.soundproof_wall",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_WETiki_soundproof_wall",
+      "displayName": "Soundproof Wall Panel",
+      "tooltipKey": "Tooltip_KBWCB_Wall_Soundproofing",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Soundproofing",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Fabric"
       ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 40
+      "iconSprite": "KBWTikiTownSoundproof_0",
+      "placement": {
+        "kind": "overlay",
+        "needToBeAgainstWall": true
       },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false,
-      "canPassThrough": true,
-      "dismantable": true
-     },
-     "health": 150
-    }
-   ]
-  },
-  {
-   "id": "worldessentials.tikitown.soundproof_pillar",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_WETiki_soundproof_pillar",
-   "displayName": "Soundproof Pillar",
-   "tooltipKey": "Tooltip_KBWCB_Pillar",
-   "category": "Walls and Wall Finishes",
-   "subcategory": "Soundproofing",
-   "material": "Wood",
-   "materialTags": [
-    "Wood",
-    "Fabric"
-   ],
-   "iconSprite": "KBWTikiTownSoundproof_3",
-   "placement": {
-    "kind": "object",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "world-essentials",
-    "soundproofing"
-   ],
-   "stages": [
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials",
+        "soundproofing"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 2
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          },
+          "health": 150
+        }
+      ]
+    },
     {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_3"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       }
+      "id": "worldessentials.tikitown.soundproof_pillar",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_WETiki_soundproof_pillar",
+      "displayName": "Soundproof Pillar",
+      "tooltipKey": "Tooltip_KBWCB_Pillar",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Soundproofing",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Fabric"
       ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 40
+      "iconSprite": "KBWTikiTownSoundproof_3",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": false
       },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false,
-      "canPassThrough": true,
-      "blockAllSquare": false,
-      "dismantable": true
-     },
-     "health": 150
-    }
-   ]
-  },
-  {
-   "id": "worldessentials.tikitown.soundproof_corner",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_WETiki_soundproof_corner",
-   "displayName": "Soundproof Corner Panel",
-   "tooltipKey": "Tooltip_KBWCB_WallCorner_Soundproofing",
-   "category": "Walls and Wall Finishes",
-   "subcategory": "Soundproofing",
-   "material": "Wood",
-   "materialTags": [
-    "Wood",
-    "Fabric"
-   ],
-   "iconSprite": "KBWTikiTownSoundproof_2",
-   "placement": {
-    "kind": "object",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "world-essentials",
-    "soundproofing"
-   ],
-   "stages": [
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials",
+        "soundproofing"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 2
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "blockAllSquare": false,
+            "dismantable": true
+          },
+          "health": 150
+        }
+      ]
+    },
     {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_2"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       }
+      "id": "worldessentials.tikitown.soundproof_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_WETiki_soundproof_corner",
+      "displayName": "Soundproof Corner Panel",
+      "tooltipKey": "Tooltip_KBWCB_WallCorner_Soundproofing",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Soundproofing",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Fabric"
       ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 40
+      "iconSprite": "KBWTikiTownSoundproof_2",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": false
       },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false,
-      "canPassThrough": true,
-      "blockAllSquare": false,
-      "dismantable": true
-     },
-     "health": 150,
-     "callbacks": {
-      "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
-     }
-    }
-   ]
-  },
-  {
-   "id": "worldessentials.tikitown.soundproof_window",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_WETiki_soundproof_window",
-   "displayName": "Soundproof Window Panel",
-   "tooltipKey": "Tooltip_KBWCB_WallWindow_Soundproofing",
-   "category": "Walls and Wall Finishes",
-   "subcategory": "Soundproofing",
-   "material": "Wood",
-   "materialTags": [
-    "Wood",
-    "Fabric"
-   ],
-   "iconSprite": "KBWTikiTownSoundproof_4",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false,
-    "dontNeedFrame": true,
-    "providesWindowFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "world-essentials",
-    "soundproofing"
-   ],
-   "stages": [
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials",
+        "soundproofing"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_2"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 2
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "blockAllSquare": false,
+            "dismantable": true
+          },
+          "health": 150,
+          "callbacks": {
+            "onIsValid": "KBWCommunityCornerTrim.OnIsValid"
+          }
+        }
+      ]
+    },
     {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_4"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       }
+      "id": "worldessentials.tikitown.soundproof_window",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_WETiki_soundproof_window",
+      "displayName": "Soundproof Window Panel",
+      "tooltipKey": "Tooltip_KBWCB_WallWindow_Soundproofing",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Soundproofing",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Fabric"
       ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 40
+      "iconSprite": "KBWTikiTownSoundproof_4",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false,
+        "dontNeedFrame": true,
+        "providesWindowFrame": true
       },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     },
-     "health": 150
-    }
-   ],
-   "pieceClass": "window"
-  },
-  {
-   "id": "worldessentials.tikitown.soundproof_doorframe",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_WETiki_soundproof_doorframe",
-   "displayName": "Soundproof Door Frame Panel",
-   "tooltipKey": "Tooltip_KBWCB_WallDoorway_Soundproofing",
-   "category": "Walls and Wall Finishes",
-   "subcategory": "Soundproofing",
-   "material": "Wood",
-   "materialTags": [
-    "Wood",
-    "Fabric"
-   ],
-   "iconSprite": "KBWTikiTownSoundproof_5",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "world-essentials",
-    "soundproofing"
-   ],
-   "stages": [
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials",
+        "soundproofing"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_4"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 2
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          },
+          "health": 150
+        }
+      ],
+      "pieceClass": "window"
+    },
     {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_5"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "KBWTikiTownSoundproof_6"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       }
+      "id": "worldessentials.tikitown.soundproof_doorframe",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_WETiki_soundproof_doorframe",
+      "displayName": "Soundproof Door Frame Panel",
+      "tooltipKey": "Tooltip_KBWCB_WallDoorway_Soundproofing",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Soundproofing",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Fabric"
       ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 40
+      "iconSprite": "KBWTikiTownSoundproof_5",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
       },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     },
-     "health": 150
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials",
+        "soundproofing"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWTikiTownSoundproof_6"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 2
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          },
+          "health": 150
+        }
+      ],
+      "pieceClass": "door"
     }
-   ],
-   "pieceClass": "door"
-  }
- ]
+  ]
 }

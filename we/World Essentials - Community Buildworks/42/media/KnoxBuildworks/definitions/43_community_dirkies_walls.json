@@ -4,228 +4,15 @@
   "source": "Community Tilepack (Dirkies) WALLS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
   "buildables": [
     {
-      "id": "community.dirkies.walls.industry_dirkea_ddd_01_8",
+      "id": "community.dirkies.walls.more_walls_ddd_01_74_corner",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_8",
-      "displayName": "Blue Industrial Wall",
-      "tooltipKey": "Tooltip_KBWCB_Wall",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "industry_dirkea_ddd_01_8",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_dirkea_ddd_01_8"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_dirkea_ddd_01_9"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "cornerSprite": "industry_dirkea_ddd_01_10",
-            "pillarSprite": "industry_dirkea_ddd_01_11"
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.industry_dirkea_ddd_01_16",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_16",
-      "displayName": "Blue Industrial Window Frame",
-      "tooltipKey": "Tooltip_KBWCB_WallWindow",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "industry_dirkea_ddd_01_16",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_dirkea_ddd_01_16"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_dirkea_ddd_01_17"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "pillarSprite": "industry_dirkea_ddd_01_11"
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.industry_dirkea_ddd_01_10_corner",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_10_corner",
-      "displayName": "Blue Industrial Corner Wall",
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_74_corner",
+      "displayName": "Orange Industrial Corner Wall",
       "tooltipKey": "Tooltip_KBWCB_WallCorner",
       "category": "Walls and Wall Finishes",
       "subcategory": "Walls",
       "material": "Wood",
-      "iconSprite": "industry_dirkea_ddd_01_10",
+      "iconSprite": "more_walls_ddd_01_74",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -248,7 +35,7 @@
                   {
                     "rows": [
                       [
-                        "industry_dirkea_ddd_01_10"
+                        "more_walls_ddd_01_74"
                       ]
                     ]
                   }
@@ -259,7 +46,7 @@
                   {
                     "rows": [
                       [
-                        "industry_dirkea_ddd_01_10"
+                        "more_walls_ddd_01_74"
                       ]
                     ]
                   }
@@ -320,6 +107,217 @@
         }
       ],
       "pieceClass": "corner"
+    },
+    {
+      "id": "community.dirkies.walls.more_walls_ddd_01_79",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_79",
+      "displayName": "Red Industrial Pillar",
+      "tooltipKey": "Tooltip_KBWCB_Pillar",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_79",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_79"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_79"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.more_walls_ddd_01_80",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_80",
+      "displayName": "Orange Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBWCB_WallWindow",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_80",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_80"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_81"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "more_walls_ddd_01_75"
+          }
+        }
+      ],
+      "pieceClass": "wall"
     },
     {
       "id": "community.dirkies.walls.industry_dirkea_ddd_01_10_pillar",
@@ -430,15 +428,15 @@
       "pieceClass": "pillar"
     },
     {
-      "id": "community.dirkies.walls.industry_dirkea_ddd_01_11",
+      "id": "community.dirkies.walls.more_walls_ddd_01_72",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_11",
-      "displayName": "Blue Industrial Pillar",
-      "tooltipKey": "Tooltip_KBWCB_Pillar",
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_72",
+      "displayName": "Orange Industrial Wall",
+      "tooltipKey": "Tooltip_KBWCB_Wall",
       "category": "Walls and Wall Finishes",
       "subcategory": "Walls",
       "material": "Wood",
-      "iconSprite": "industry_dirkea_ddd_01_11",
+      "iconSprite": "more_walls_ddd_01_72",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -461,7 +459,7 @@
                   {
                     "rows": [
                       [
-                        "industry_dirkea_ddd_01_11"
+                        "more_walls_ddd_01_72"
                       ]
                     ]
                   }
@@ -472,7 +470,7 @@
                   {
                     "rows": [
                       [
-                        "industry_dirkea_ddd_01_11"
+                        "more_walls_ddd_01_73"
                       ]
                     ]
                   }
@@ -528,7 +526,116 @@
           },
           "object": {
             "isThumpable": true,
-            "dismantable": true
+            "dismantable": true,
+            "cornerSprite": "more_walls_ddd_01_74",
+            "pillarSprite": "more_walls_ddd_01_75"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.industry_dirkea_ddd_01_8",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_8",
+      "displayName": "Blue Industrial Wall",
+      "tooltipKey": "Tooltip_KBWCB_Wall",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_dirkea_ddd_01_8",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "cornerSprite": "industry_dirkea_ddd_01_10",
+            "pillarSprite": "industry_dirkea_ddd_01_11"
           }
         }
       ],
@@ -642,748 +749,6 @@
       "pieceClass": "wall"
     },
     {
-      "id": "community.dirkies.walls.more_walls_ddd_01_84",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_84",
-      "displayName": "Red Industrial Window Frame",
-      "tooltipKey": "Tooltip_KBWCB_WallWindow",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_84",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_84"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_85"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "pillarSprite": "more_walls_ddd_01_79"
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_78_corner",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_78_corner",
-      "displayName": "Red Industrial Corner Wall",
-      "tooltipKey": "Tooltip_KBWCB_WallCorner",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_78",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_78"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_78"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "pieceClass": "corner"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_78_pillar",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_78_pillar",
-      "displayName": "Red Industrial Corner Pillar",
-      "tooltipKey": "Tooltip_KBWCB_Pillar",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_79",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_79"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_79"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "dismantable": true,
-            "blockAllSquare": false,
-            "canPassThrough": true,
-            "canBarricade": false,
-            "isCorner": true
-          }
-        }
-      ],
-      "pieceClass": "pillar"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_79",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_79",
-      "displayName": "Red Industrial Pillar",
-      "tooltipKey": "Tooltip_KBWCB_Pillar",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_79",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_79"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_79"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_72",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_72",
-      "displayName": "Orange Industrial Wall",
-      "tooltipKey": "Tooltip_KBWCB_Wall",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_72",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_72"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_73"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "cornerSprite": "more_walls_ddd_01_74",
-            "pillarSprite": "more_walls_ddd_01_75"
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_80",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_80",
-      "displayName": "Orange Industrial Window Frame",
-      "tooltipKey": "Tooltip_KBWCB_WallWindow",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_80",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_80"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_81"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "pillarSprite": "more_walls_ddd_01_75"
-          }
-        }
-      ],
-      "pieceClass": "wall"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_74_corner",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_74_corner",
-      "displayName": "Orange Industrial Corner Wall",
-      "tooltipKey": "Tooltip_KBWCB_WallCorner",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_74",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_74"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_74"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "pieceClass": "corner"
-    },
-    {
       "id": "community.dirkies.walls.more_walls_ddd_01_74_pillar",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_74_pillar",
@@ -1490,111 +855,6 @@
         }
       ],
       "pieceClass": "pillar"
-    },
-    {
-      "id": "community.dirkies.walls.more_walls_ddd_01_75",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_75",
-      "displayName": "Orange Industrial Pillar",
-      "tooltipKey": "Tooltip_KBWCB_Pillar",
-      "category": "Walls and Wall Finishes",
-      "subcategory": "Walls",
-      "material": "Wood",
-      "iconSprite": "more_walls_ddd_01_75",
-      "placement": {
-        "kind": "wall",
-        "requiresFloor": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "wall",
-        "wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "health": 800,
-          "skillBaseHealth": 70,
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_75"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "more_walls_ddd_01_75"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWallHammer",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "pieceClass": "wall"
     },
     {
       "id": "community.dirkies.walls.more_walls_ddd_02_16",
@@ -1735,15 +995,15 @@
       "pieceClass": "wall"
     },
     {
-      "id": "community.dirkies.walls.more_walls_ddd_02_24",
+      "id": "community.dirkies.walls.more_walls_ddd_01_78_pillar",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_02_24",
-      "displayName": "Corrugated Metal Sheet Window Frame",
-      "tooltipKey": "Tooltip_KBWCB_WallWindow",
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_78_pillar",
+      "displayName": "Red Industrial Corner Pillar",
+      "tooltipKey": "Tooltip_KBWCB_Pillar",
       "category": "Walls and Wall Finishes",
       "subcategory": "Walls",
-      "material": "Metal",
-      "iconSprite": "more_walls_ddd_02_24",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_79",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -1752,7 +1012,7 @@
         "community-tilepack",
         "dirkies",
         "wall",
-        "metal"
+        "wood"
       ],
       "stages": [
         {
@@ -1766,7 +1026,7 @@
                   {
                     "rows": [
                       [
-                        "more_walls_ddd_02_24"
+                        "more_walls_ddd_01_79"
                       ]
                     ]
                   }
@@ -1777,7 +1037,7 @@
                   {
                     "rows": [
                       [
-                        "more_walls_ddd_02_25"
+                        "more_walls_ddd_01_79"
                       ]
                     ]
                   }
@@ -1788,34 +1048,14 @@
           "requirements": {
             "inputs": [
               {
-                "id": "tool_welding_mask",
+                "id": "tool_hammer",
                 "role": "tool",
                 "mode": "keep",
                 "resourceType": "Item",
                 "tags": [
-                  "base:weldingmask"
+                  "base:hammer"
                 ],
                 "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 2
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 1
               },
               {
                 "id": "source_material_1",
@@ -1823,53 +1063,359 @@
                 "mode": "consume",
                 "resourceType": "Item",
                 "items": [
-                  "Base.SheetMetal"
+                  "Base.Plank"
                 ],
                 "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
               }
             ],
             "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
+              "Woodwork": 4
             }
           },
           "construction": {
             "time": 200,
-            "timedAction": "BuildWallMetal",
-            "completionSound": "BuildMetalStructureWallFrame",
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
             "xp": {
-              "MetalWelding": 40
+              "Woodwork": 40
             },
-            "category": "Welding"
+            "category": "Carpentry"
+          },
+          "object": {
+            "dismantable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false,
+            "isCorner": true
+          }
+        }
+      ],
+      "pieceClass": "pillar"
+    },
+    {
+      "id": "community.dirkies.walls.more_walls_ddd_01_78_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_78_corner",
+      "displayName": "Red Industrial Corner Wall",
+      "tooltipKey": "Tooltip_KBWCB_WallCorner",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_78",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_78"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_78"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
           },
           "object": {
             "isThumpable": true,
-            "dismantable": true,
-            "pillarSprite": "more_walls_ddd_02_19"
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
+    },
+    {
+      "id": "community.dirkies.walls.industry_dirkea_ddd_01_11",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_11",
+      "displayName": "Blue Industrial Pillar",
+      "tooltipKey": "Tooltip_KBWCB_Pillar",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_dirkea_ddd_01_11",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
           }
         }
       ],
       "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.industry_dirkea_ddd_01_10_corner",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_10_corner",
+      "displayName": "Blue Industrial Corner Wall",
+      "tooltipKey": "Tooltip_KBWCB_WallCorner",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_dirkea_ddd_01_10",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "corner"
     },
     {
       "id": "community.dirkies.walls.more_walls_ddd_02_18_corner",
@@ -2147,6 +1693,112 @@
       "pieceClass": "pillar"
     },
     {
+      "id": "community.dirkies.walls.more_walls_ddd_01_84",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_84",
+      "displayName": "Red Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBWCB_WallWindow",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_84",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_84"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_85"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "more_walls_ddd_01_79"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
       "id": "community.dirkies.walls.more_walls_ddd_02_19",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_02_19",
@@ -2273,6 +1925,354 @@
               "MetalWelding": 40
             },
             "category": "Welding"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.more_walls_ddd_02_24",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_02_24",
+      "displayName": "Corrugated Metal Sheet Window Frame",
+      "tooltipKey": "Tooltip_KBWCB_WallWindow",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Metal",
+      "iconSprite": "more_walls_ddd_02_24",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "metal"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_02_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_02_25"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 2
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallMetal",
+            "completionSound": "BuildMetalStructureWallFrame",
+            "xp": {
+              "MetalWelding": 40
+            },
+            "category": "Welding"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "more_walls_ddd_02_19"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.industry_dirkea_ddd_01_16",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_industry_dirkea_ddd_01_16",
+      "displayName": "Blue Industrial Window Frame",
+      "tooltipKey": "Tooltip_KBWCB_WallWindow",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "industry_dirkea_ddd_01_16",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_16"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_dirkea_ddd_01_17"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "pillarSprite": "industry_dirkea_ddd_01_11"
+          }
+        }
+      ],
+      "pieceClass": "wall"
+    },
+    {
+      "id": "community.dirkies.walls.more_walls_ddd_01_75",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dirkies_walls_more_walls_ddd_01_75",
+      "displayName": "Orange Industrial Pillar",
+      "tooltipKey": "Tooltip_KBWCB_Pillar",
+      "category": "Walls and Wall Finishes",
+      "subcategory": "Walls",
+      "material": "Wood",
+      "iconSprite": "more_walls_ddd_01_75",
+      "placement": {
+        "kind": "wall",
+        "requiresFloor": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "wall",
+        "wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "health": 800,
+          "skillBaseHealth": 70,
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_75"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "more_walls_ddd_01_75"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWallHammer",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
           },
           "object": {
             "isThumpable": true,

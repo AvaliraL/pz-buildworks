@@ -127,6 +127,174 @@
           "container": {
             "type": "shelves",
             "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.blocktrasher_bookshelf.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_blocktrasher_bookshelf_reinforced",
+      "displayName": "Store Bookshelf (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Shelves",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_Block_Trasher_1",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "shelves"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_0",
+                        "WECommunity_Block_Trasher_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_3"
+                      ],
+                      [
+                        "WECommunity_Block_Trasher_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_4",
+                        "WECommunity_Block_Trasher_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_7"
+                      ],
+                      [
+                        "WECommunity_Block_Trasher_6"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
           }
         }
       ]

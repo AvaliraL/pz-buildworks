@@ -4,357 +4,6 @@
  "source": "Dirkies fixtures_stairs_ddd_01 (Daddy Dirkie / Melos tiles). 7 stairs, each with E/W + N/S orientations (3 step sprites each, low->high). KBW stair model (kind:stairs; W face = vertical 3-row stack y:-2; N face = horizontal 3-sprite row). 3 of the 7 have a support pillar added as a 2nd face layer: teal metal uses ONE post (idx 30) on both orientations; grey and white use TWO posts (one per orientation: grey 38/46, white 54/62). dark metal + the 3 wood stairs have none. The BuildingMenu addon's hardcoded pillar offsets were WRONG against the art (idx 14/15 empty; wood offsets overlapped other stairs); posts were verified by pixel inspection (tall+narrow art at idx 30/38/46/54/62).",
  "buildables": [
   {
-   "id": "community.dirkies.stairs.wood_bluetrim",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_community_dirkies_stairs_wood_bluetrim",
-   "displayName": "Wooden Stairs (Blue Trim)",
-   "tooltipKey": "Tooltip_KBWCB_Decoration",
-   "category": "Stairs",
-   "subcategory": "Stairs",
-   "material": "Wood",
-   "materialTags": [
-    "Wood"
-   ],
-   "iconSprite": "fixtures_stairs_ddd_01_32",
-   "placement": {
-    "kind": "stairs"
-   },
-   "tags": [
-    "community-tilepack",
-    "dirkies",
-    "stairs"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "z": 0,
-          "y": -2,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_37"
-           ],
-           [
-            "fixtures_stairs_ddd_01_36"
-           ],
-           [
-            "fixtures_stairs_ddd_01_35"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "z": 0,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_34",
-            "fixtures_stairs_ddd_01_33",
-            "fixtures_stairs_ddd_01_32"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1,
-        "flags": [
-         "Prop1",
-         "MayDegradeVeryLight"
-        ]
-       },
-       {
-        "id": "lumber",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 13
-       },
-       {
-        "id": "fasteners_nails",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 8
-       }
-      ],
-      "skills": {
-       "Woodwork": 6
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 60
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false
-     }
-    }
-   ]
-  },
-  {
-   "id": "community.dirkies.stairs.wood_olivetrim",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_community_dirkies_stairs_wood_olivetrim",
-   "displayName": "Wooden Stairs (Olive Trim)",
-   "tooltipKey": "Tooltip_KBWCB_Decoration",
-   "category": "Stairs",
-   "subcategory": "Stairs",
-   "material": "Wood",
-   "materialTags": [
-    "Wood"
-   ],
-   "iconSprite": "fixtures_stairs_ddd_01_40",
-   "placement": {
-    "kind": "stairs"
-   },
-   "tags": [
-    "community-tilepack",
-    "dirkies",
-    "stairs"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "z": 0,
-          "y": -2,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_45"
-           ],
-           [
-            "fixtures_stairs_ddd_01_44"
-           ],
-           [
-            "fixtures_stairs_ddd_01_43"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "z": 0,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_42",
-            "fixtures_stairs_ddd_01_41",
-            "fixtures_stairs_ddd_01_40"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1,
-        "flags": [
-         "Prop1",
-         "MayDegradeVeryLight"
-        ]
-       },
-       {
-        "id": "lumber",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 13
-       },
-       {
-        "id": "fasteners_nails",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 8
-       }
-      ],
-      "skills": {
-       "Woodwork": 6
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 60
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false
-     }
-    }
-   ]
-  },
-  {
-   "id": "community.dirkies.stairs.wood_tantrim",
-   "allowSpriteReuse": true,
-   "translationKey": "IGUI_community_dirkies_stairs_wood_tantrim",
-   "displayName": "Wooden Stairs (Tan Trim)",
-   "tooltipKey": "Tooltip_KBWCB_Decoration",
-   "category": "Stairs",
-   "subcategory": "Stairs",
-   "material": "Wood",
-   "materialTags": [
-    "Wood"
-   ],
-   "iconSprite": "fixtures_stairs_ddd_01_48",
-   "placement": {
-    "kind": "stairs"
-   },
-   "tags": [
-    "community-tilepack",
-    "dirkies",
-    "stairs"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "z": 0,
-          "y": -2,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_53"
-           ],
-           [
-            "fixtures_stairs_ddd_01_52"
-           ],
-           [
-            "fixtures_stairs_ddd_01_51"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "z": 0,
-          "rows": [
-           [
-            "fixtures_stairs_ddd_01_50",
-            "fixtures_stairs_ddd_01_49",
-            "fixtures_stairs_ddd_01_48"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1,
-        "flags": [
-         "Prop1",
-         "MayDegradeVeryLight"
-        ]
-       },
-       {
-        "id": "lumber",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 13
-       },
-       {
-        "id": "fasteners_nails",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 8
-       }
-      ],
-      "skills": {
-       "Woodwork": 6
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 60
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": false
-     }
-    }
-   ]
-  },
-  {
    "id": "community.dirkies.stairs.slate_dark",
    "allowSpriteReuse": true,
    "translationKey": "IGUI_community_dirkies_stairs_slate_dark",
@@ -495,6 +144,240 @@
        "MetalWelding": 50
       },
       "category": "Welding"
+     },
+     "object": {
+      "isThumpable": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.stairs.wood_olivetrim",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_stairs_wood_olivetrim",
+   "displayName": "Wooden Stairs (Olive Trim)",
+   "tooltipKey": "Tooltip_KBWCB_Decoration",
+   "category": "Stairs",
+   "subcategory": "Stairs",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "fixtures_stairs_ddd_01_40",
+   "placement": {
+    "kind": "stairs"
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "stairs"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "z": 0,
+          "y": -2,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_45"
+           ],
+           [
+            "fixtures_stairs_ddd_01_44"
+           ],
+           [
+            "fixtures_stairs_ddd_01_43"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "z": 0,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_42",
+            "fixtures_stairs_ddd_01_41",
+            "fixtures_stairs_ddd_01_40"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 13
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 8
+       }
+      ],
+      "skills": {
+       "Woodwork": 6
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 60
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.stairs.grey",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_stairs_grey",
+   "displayName": "Gray Concrete Stairs",
+   "tooltipKey": "Tooltip_KBWCB_Decoration",
+   "category": "Stairs",
+   "subcategory": "Stairs",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "fixtures_stairs_ddd_01_16",
+   "placement": {
+    "kind": "stairs"
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "stairs"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "z": 0,
+          "y": -2,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_26"
+           ],
+           [
+            "fixtures_stairs_ddd_01_25"
+           ],
+           [
+            "fixtures_stairs_ddd_01_24"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "z": 0,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_18",
+            "fixtures_stairs_ddd_01_17",
+            "fixtures_stairs_ddd_01_16"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 13
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 8
+       }
+      ],
+      "skills": {
+       "Woodwork": 6
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 60
+      },
+      "category": "Carpentry"
      },
      "object": {
       "isThumpable": false
@@ -651,10 +534,10 @@
    ]
   },
   {
-   "id": "community.dirkies.stairs.grey",
+   "id": "community.dirkies.stairs.wood_tantrim",
    "allowSpriteReuse": true,
-   "translationKey": "IGUI_community_dirkies_stairs_grey",
-   "displayName": "Grey Concrete Stairs",
+   "translationKey": "IGUI_community_dirkies_stairs_wood_tantrim",
+   "displayName": "Wooden Stairs (Tan Trim)",
    "tooltipKey": "Tooltip_KBWCB_Decoration",
    "category": "Stairs",
    "subcategory": "Stairs",
@@ -662,7 +545,7 @@
    "materialTags": [
     "Wood"
    ],
-   "iconSprite": "fixtures_stairs_ddd_01_16",
+   "iconSprite": "fixtures_stairs_ddd_01_48",
    "placement": {
     "kind": "stairs"
    },
@@ -683,13 +566,13 @@
           "y": -2,
           "rows": [
            [
-            "fixtures_stairs_ddd_01_26"
+            "fixtures_stairs_ddd_01_53"
            ],
            [
-            "fixtures_stairs_ddd_01_25"
+            "fixtures_stairs_ddd_01_52"
            ],
            [
-            "fixtures_stairs_ddd_01_24"
+            "fixtures_stairs_ddd_01_51"
            ]
           ]
          }
@@ -701,9 +584,126 @@
           "z": 0,
           "rows": [
            [
-            "fixtures_stairs_ddd_01_18",
-            "fixtures_stairs_ddd_01_17",
-            "fixtures_stairs_ddd_01_16"
+            "fixtures_stairs_ddd_01_50",
+            "fixtures_stairs_ddd_01_49",
+            "fixtures_stairs_ddd_01_48"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1,
+        "flags": [
+         "Prop1",
+         "MayDegradeVeryLight"
+        ]
+       },
+       {
+        "id": "lumber",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 13
+       },
+       {
+        "id": "fasteners_nails",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 8
+       }
+      ],
+      "skills": {
+       "Woodwork": 6
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 60
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": false
+     }
+    }
+   ]
+  },
+  {
+   "id": "community.dirkies.stairs.wood_bluetrim",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_community_dirkies_stairs_wood_bluetrim",
+   "displayName": "Wooden Stairs (Blue Trim)",
+   "tooltipKey": "Tooltip_KBWCB_Decoration",
+   "category": "Stairs",
+   "subcategory": "Stairs",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "fixtures_stairs_ddd_01_32",
+   "placement": {
+    "kind": "stairs"
+   },
+   "tags": [
+    "community-tilepack",
+    "dirkies",
+    "stairs"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "z": 0,
+          "y": -2,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_37"
+           ],
+           [
+            "fixtures_stairs_ddd_01_36"
+           ],
+           [
+            "fixtures_stairs_ddd_01_35"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "z": 0,
+          "rows": [
+           [
+            "fixtures_stairs_ddd_01_34",
+            "fixtures_stairs_ddd_01_33",
+            "fixtures_stairs_ddd_01_32"
            ]
           ]
          }

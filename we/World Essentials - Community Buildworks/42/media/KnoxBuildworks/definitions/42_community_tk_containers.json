@@ -4,18 +4,18 @@
   "source": "Community Tilepack (TK) CONTAINERS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
   "buildables": [
     {
-      "id": "community.tk.containers.fixtures_counters_tk_01_0",
+      "id": "community.tk.containers.trash_containers_tk_01_8",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_fixtures_counters_tk_01_0",
-      "displayName": "Steel Kitchen Counter",
-      "tooltipKey": "Tooltip_KBWCB_Counter",
+      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_8",
+      "displayName": "Yellow Waste Bin",
+      "tooltipKey": "Tooltip_KBWCB_Bin",
       "category": "Containers",
-      "subcategory": "Counters",
+      "subcategory": "Trash Cans",
       "material": "Metal",
       "materialTags": [
         "Metal"
       ],
-      "iconSprite": "fixtures_counters_tk_01_0",
+      "iconSprite": "trash_containers_tk_01_8",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -24,7 +24,7 @@
         "community-tilepack",
         "tk",
         "container",
-        "counter_metal"
+        "trashcan"
       ],
       "construction": {
         "time": 75,
@@ -32,7 +32,7 @@
         "completionSound": "BuildMetalStructureMedium",
         "category": "Welding",
         "xp": {
-          "MetalWelding": 50
+          "MetalWelding": 30
         }
       },
       "stages": [
@@ -45,40 +45,7 @@
                   {
                     "rows": [
                       [
-                        "fixtures_counters_tk_01_0"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fixtures_counters_tk_01_1"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fixtures_counters_tk_01_2"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fixtures_counters_tk_01_3"
+                        "trash_containers_tk_01_8"
                       ]
                     ]
                   }
@@ -87,20 +54,20 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.metal",
+            "materials": "kbwve.extended.metal_light",
             "skills": {
-              "MetalWelding": 4
+              "MetalWelding": 3
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+                "KBWKnowledge_ProjectsInMetal_Diverse"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
                 }
               ],
               "skillAlternatives": [
@@ -117,9 +84,9 @@
             "isThumpable": true
           },
           "container": {
-            "type": "counter"
-          },
-          "allowSpriteReuse": true
+            "type": "metal_shelves",
+            "capacity": 30
+          }
         }
       ]
     },
@@ -283,18 +250,18 @@
       ]
     },
     {
-      "id": "community.tk.containers.industry_tk_02_25",
+      "id": "community.tk.containers.industry_tk_02_33",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_industry_tk_02_25",
-      "displayName": "Fire Extinguisher Cabinet",
-      "tooltipKey": "Tooltip_KBWCB_ExtinguisherBox",
+      "translationKey": "IGUI_community_tk_containers_industry_tk_02_33",
+      "displayName": "Stacked Cardboard Boxes",
+      "tooltipKey": "Tooltip_KBWCB_Crate",
       "category": "Containers",
-      "subcategory": "Counters",
-      "material": "Metal",
+      "subcategory": "Crates",
+      "material": "Wood",
       "materialTags": [
-        "Metal"
+        "Wood"
       ],
-      "iconSprite": "industry_tk_02_25",
+      "iconSprite": "industry_tk_02_33",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -303,15 +270,15 @@
         "community-tilepack",
         "tk",
         "container",
-        "counter_metal"
+        "crate_wood"
       ],
       "construction": {
         "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
         "xp": {
-          "MetalWelding": 50
+          "Woodwork": 20
         }
       },
       "stages": [
@@ -324,7 +291,95 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_02_25"
+                        "industry_tk_02_33"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.trash_containers_tk_01_6",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_6",
+      "displayName": "Blue Recycling Bin",
+      "tooltipKey": "Tooltip_KBWCB_Bin",
+      "category": "Containers",
+      "subcategory": "Trash Cans",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "trash_containers_tk_01_6",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "trashcan"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_6"
                       ]
                     ]
                   }
@@ -335,7 +390,7 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_02_26"
+                        "trash_containers_tk_01_7"
                       ]
                     ]
                   }
@@ -344,20 +399,20 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.metal",
+            "materials": "kbwve.extended.metal_light",
             "skills": {
-              "MetalWelding": 4
+              "MetalWelding": 3
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+                "KBWKnowledge_ProjectsInMetal_Diverse"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
                 }
               ],
               "skillAlternatives": [
@@ -374,7 +429,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "counter"
+            "type": "metal_shelves",
+            "capacity": 30
           }
         }
       ]
@@ -499,182 +555,6 @@
       ]
     },
     {
-      "id": "community.tk.containers.industry_tk_02_32",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_industry_tk_02_32",
-      "displayName": "Large Cardboard Box",
-      "tooltipKey": "Tooltip_KBWCB_Crate",
-      "category": "Containers",
-      "subcategory": "Crates",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "industry_tk_02_32",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "container",
-        "crate_wood"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 20
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_tk_02_32"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.wood",
-            "skills": {
-              "Woodwork": 2
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "Woodwork": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "smallcrate",
-            "capacity": 25
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.tk.containers.industry_tk_02_33",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_industry_tk_02_33",
-      "displayName": "Stacked Cardboard Boxes",
-      "tooltipKey": "Tooltip_KBWCB_Crate",
-      "category": "Containers",
-      "subcategory": "Crates",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "industry_tk_02_33",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "container",
-        "crate_wood"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 20
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "industry_tk_02_33"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.wood",
-            "skills": {
-              "Woodwork": 2
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "Woodwork": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "smallcrate",
-            "capacity": 25
-          }
-        }
-      ]
-    },
-    {
       "id": "community.tk.containers.trash_containers_tk_01_0",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_0",
@@ -728,6 +608,311 @@
                     "rows": [
                       [
                         "trash_containers_tk_01_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "metal_shelves",
+            "capacity": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.trash_containers_tk_01_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_10",
+      "displayName": "Black Trash Barrel",
+      "tooltipKey": "Tooltip_KBWCB_Bin",
+      "category": "Containers",
+      "subcategory": "Trash Cans",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "trash_containers_tk_01_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "trashcan"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "metal_shelves",
+            "capacity": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.fixtures_counters_tk_01_0",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_fixtures_counters_tk_01_0",
+      "displayName": "Steel Kitchen Counter",
+      "tooltipKey": "Tooltip_KBWCB_Counter",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fixtures_counters_tk_01_0",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "counter_metal"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fixtures_counters_tk_01_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.trash_containers_tk_01_4",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_4",
+      "displayName": "Green Recycling Bin",
+      "tooltipKey": "Tooltip_KBWCB_Bin",
+      "category": "Containers",
+      "subcategory": "Trash Cans",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "trash_containers_tk_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "trashcan"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "trash_containers_tk_01_5"
                       ]
                     ]
                   }
@@ -871,18 +1056,18 @@
       ]
     },
     {
-      "id": "community.tk.containers.trash_containers_tk_01_4",
+      "id": "community.tk.containers.industry_tk_02_32",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_4",
-      "displayName": "Green Recycling Bin",
-      "tooltipKey": "Tooltip_KBWCB_Bin",
+      "translationKey": "IGUI_community_tk_containers_industry_tk_02_32",
+      "displayName": "Large Cardboard Box",
+      "tooltipKey": "Tooltip_KBWCB_Crate",
       "category": "Containers",
-      "subcategory": "Trash Cans",
-      "material": "Metal",
+      "subcategory": "Crates",
+      "material": "Wood",
       "materialTags": [
-        "Metal"
+        "Wood"
       ],
-      "iconSprite": "trash_containers_tk_01_4",
+      "iconSprite": "industry_tk_02_32",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -891,15 +1076,15 @@
         "community-tilepack",
         "tk",
         "container",
-        "trashcan"
+        "crate_wood"
       ],
       "construction": {
         "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
         "xp": {
-          "MetalWelding": 30
+          "Woodwork": 20
         }
       },
       "stages": [
@@ -912,7 +1097,95 @@
                   {
                     "rows": [
                       [
-                        "trash_containers_tk_01_4"
+                        "industry_tk_02_32"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.tk.containers.industry_tk_02_25",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_containers_industry_tk_02_25",
+      "displayName": "Fire Extinguisher Cabinet",
+      "tooltipKey": "Tooltip_KBWCB_ExtinguisherBox",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "industry_tk_02_25",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "container",
+        "counter_metal"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "industry_tk_02_25"
                       ]
                     ]
                   }
@@ -923,7 +1196,7 @@
                   {
                     "rows": [
                       [
-                        "trash_containers_tk_01_5"
+                        "industry_tk_02_26"
                       ]
                     ]
                   }
@@ -932,20 +1205,20 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.metal_light",
+            "materials": "kbwve.extended.metal",
             "skills": {
-              "MetalWelding": 3
+              "MetalWelding": 4
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
                 }
               ],
               "skillAlternatives": [
@@ -962,280 +1235,7 @@
             "isThumpable": true
           },
           "container": {
-            "type": "metal_shelves",
-            "capacity": 30
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.tk.containers.trash_containers_tk_01_6",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_6",
-      "displayName": "Blue Recycling Bin",
-      "tooltipKey": "Tooltip_KBWCB_Bin",
-      "category": "Containers",
-      "subcategory": "Trash Cans",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "trash_containers_tk_01_6",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "container",
-        "trashcan"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "trash_containers_tk_01_6"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "trash_containers_tk_01_7"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "metal_shelves",
-            "capacity": 30
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.tk.containers.trash_containers_tk_01_8",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_8",
-      "displayName": "Yellow Waste Bin",
-      "tooltipKey": "Tooltip_KBWCB_Bin",
-      "category": "Containers",
-      "subcategory": "Trash Cans",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "trash_containers_tk_01_8",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "container",
-        "trashcan"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "trash_containers_tk_01_8"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "metal_shelves",
-            "capacity": 30
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.tk.containers.trash_containers_tk_01_10",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_containers_trash_containers_tk_01_10",
-      "displayName": "Black Trash Barrel",
-      "tooltipKey": "Tooltip_KBWCB_Bin",
-      "category": "Containers",
-      "subcategory": "Trash Cans",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "trash_containers_tk_01_10",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "container",
-        "trashcan"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "trash_containers_tk_01_10"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "metal_shelves",
-            "capacity": 30
+            "type": "counter"
           }
         }
       ]

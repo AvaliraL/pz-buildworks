@@ -4,128 +4,6 @@
   "source": "Obs_04 potted shrubbery hedges: one straight run + one rotatable 4-corner object. Walk-through vegetation behavior (KBW_VE Vegetation flags). Standalone.",
   "buildables": [
     {
-      "id": "community.dylan.obs04.hedge_straight",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_obs04_hedge_straight",
-      "displayName": "Hedge",
-      "tooltipKey": "Tooltip_KBW_Shared_Hedge",
-      "category": "Vegetation",
-      "subcategory": "Hedges",
-      "material": "Wood",
-      "materialTags": [
-        "Wood",
-        "Natural"
-      ],
-      "iconSprite": "WECommunity_Obs_04_24",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": false
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "hedge",
-        "shrub"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Obs_04_24"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Obs_04_24"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Obs_04_25"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Obs_04_25"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_trowel",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:trowel",
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "plant_matter",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Twigs",
-                  "Base.Plank"
-                ],
-                "amount": 2
-              }
-            ],
-            "skills": {
-              "Farming": 1
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildLowNoTool",
-            "completionSound": "BuildWoodenStructureSmall",
-            "xp": {
-              "Farming": 10
-            },
-            "category": "Farming"
-          },
-          "object": {
-            "isThumpable": true,
-            "blockAllSquare": false,
-            "canPassThrough": true,
-            "canBarricade": false
-          }
-        }
-      ]
-    },
-    {
       "id": "community.dylan.obs04.hedge_corner",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_obs04_hedge_corner",
@@ -193,6 +71,128 @@
                     "rows": [
                       [
                         "WECommunity_Obs_04_26"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_trowel",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:trowel",
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "plant_matter",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Twigs",
+                  "Base.Plank"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Farming": 1
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildLowNoTool",
+            "completionSound": "BuildWoodenStructureSmall",
+            "xp": {
+              "Farming": 10
+            },
+            "category": "Farming"
+          },
+          "object": {
+            "isThumpable": true,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "canBarricade": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.obs04.hedge_straight",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_obs04_hedge_straight",
+      "displayName": "Hedge",
+      "tooltipKey": "Tooltip_KBW_Shared_Hedge",
+      "category": "Vegetation",
+      "subcategory": "Hedges",
+      "material": "Wood",
+      "materialTags": [
+        "Wood",
+        "Natural"
+      ],
+      "iconSprite": "WECommunity_Obs_04_24",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": false
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "hedge",
+        "shrub"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Obs_04_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Obs_04_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Obs_04_25"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Obs_04_25"
                       ]
                     ]
                   }

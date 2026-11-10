@@ -4,168 +4,6 @@
   "source": "Fears workbenches (Community Tilepack fears_workbenches). Missing E orientations are generated mirrors (kbw_tilepatch FEARS section). COST TODO: match synced workbench. STORAGE: 80 from the pack, revisit before Completed.",
   "buildables": [
     {
-      "id": "community.fears.workbench.tailoring",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_fears_workbench_tailoring",
-      "displayName": "Tailoring Workbench",
-      "category": "Furniture and Appliances",
-      "subcategory": "Workbenches",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "fears_workbenches_0",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "fears",
-        "workbench"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_0",
-                        "fears_workbenches_1"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_9"
-                      ],
-                      [
-                        "fears_workbenches_8"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.wood",
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          },
-          "container": {
-            "type": "Tailoring_Bench",
-            "capacity": 80
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 40
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_Workbench"
-    },
-    {
-      "id": "community.fears.workbench.metalworking",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_fears_workbench_metalworking",
-      "displayName": "Metalworking Workbench",
-      "category": "Furniture and Appliances",
-      "subcategory": "Workbenches",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "fears_workbenches_2",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "fears",
-        "workbench"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_2",
-                        "fears_workbenches_3"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_11"
-                      ],
-                      [
-                        "fears_workbenches_10"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          },
-          "container": {
-            "type": "Metalworking_Bench",
-            "capacity": 80
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_Workbench"
-    },
-    {
       "id": "community.fears.workbench.electrical",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_fears_workbench_electrical",
@@ -328,6 +166,222 @@
       "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
+      "id": "community.fears.workbench.air_compressor",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_workbench_air_compressor",
+      "displayName": "Air Compressor",
+      "category": "Furniture and Appliances",
+      "subcategory": "Workbenches",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fears_workbenches_18",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "workbench"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_18"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityFearsMirror_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
+    },
+    {
+      "id": "community.fears.workbench.wood_gas_stove",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_workbench_wood_gas_stove",
+      "displayName": "Wood Gas Stove",
+      "category": "Furniture and Appliances",
+      "subcategory": "Workbenches",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fears_workbenches_16",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "workbench"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_16"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
+    },
+    {
+      "id": "community.fears.workbench.metalworking",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_workbench_metalworking",
+      "displayName": "Metalworking Workbench",
+      "category": "Furniture and Appliances",
+      "subcategory": "Workbenches",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fears_workbenches_2",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "workbench"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_2",
+                        "fears_workbenches_3"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_11"
+                      ],
+                      [
+                        "fears_workbenches_10"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          },
+          "container": {
+            "type": "Metalworking_Bench",
+            "capacity": 80
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
+    },
+    {
       "id": "community.fears.workbench.chemistry",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_fears_workbench_chemistry",
@@ -409,6 +463,160 @@
       "tooltipKey": "Tooltip_KBWCB_Workbench"
     },
     {
+      "id": "community.fears.workbench.tailoring",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_workbench_tailoring",
+      "displayName": "Tailoring Workbench",
+      "category": "Furniture and Appliances",
+      "subcategory": "Workbenches",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "fears_workbenches_0",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "workbench"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_0",
+                        "fears_workbenches_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_9"
+                      ],
+                      [
+                        "fears_workbenches_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          },
+          "container": {
+            "type": "Tailoring_Bench",
+            "capacity": 80
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_Workbench"
+    },
+    {
+      "id": "community.fears.workbench.anvil",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_fears_workbench_anvil",
+      "displayName": "Anvil",
+      "category": "Furniture and Appliances",
+      "subcategory": "Workbenches",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "fears_workbenches_17",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "fears",
+        "workbench"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "fears_workbenches_17"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityFearsMirror_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
+    },
+    {
       "id": "community.fears.workbench.gunsmithing",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_fears_workbench_gunsmithing",
@@ -488,214 +696,6 @@
         }
       },
       "tooltipKey": "Tooltip_KBWCB_Workbench"
-    },
-    {
-      "id": "community.fears.workbench.wood_gas_stove",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_fears_workbench_wood_gas_stove",
-      "displayName": "Wood Gas Stove",
-      "category": "Furniture and Appliances",
-      "subcategory": "Workbenches",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "fears_workbenches_16",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "fears",
-        "workbench"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_16"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
-    },
-    {
-      "id": "community.fears.workbench.anvil",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_fears_workbench_anvil",
-      "displayName": "Anvil",
-      "category": "Furniture and Appliances",
-      "subcategory": "Workbenches",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "fears_workbenches_17",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "fears",
-        "workbench"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_17"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityFearsMirror_8"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
-    },
-    {
-      "id": "community.fears.workbench.air_compressor",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_fears_workbench_air_compressor",
-      "displayName": "Air Compressor",
-      "category": "Furniture and Appliances",
-      "subcategory": "Workbenches",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "fears_workbenches_18",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "fears",
-        "workbench"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "fears_workbenches_18"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityFearsMirror_9"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_WorkshopEquipment"
     }
   ]
 }

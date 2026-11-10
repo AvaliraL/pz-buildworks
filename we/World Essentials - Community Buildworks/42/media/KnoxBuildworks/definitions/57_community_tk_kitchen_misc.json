@@ -4,6 +4,138 @@
   "source": "TK kitchen_misc_tk_01 (rest of the sheet; the wire rack is in sheet 42). COST TODO.",
   "buildables": [
     {
+      "id": "community.tk.kitchen_misc.ice_machine_100",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100",
+      "displayName": "Industrial Ice Machine",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwcb.appliance.freezer100",
+            "skills": {
+              "MetalWelding": 7,
+              "Electricity": 6
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 7,
+                    "Electricity": 10
+                  }
+                }
+              ]
+            },
+            "inputs": []
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          },
+          "container": {
+            "capacity": 100
+          },
+          "previousStage": "community.tk.kitchen_misc.ice_machine_100_shell"
+        }
+      ],
+      "construction": {
+        "time": 200,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "canWalk": false,
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 60,
+          "Electricity": 55
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_IceMachine",
+      "group": {
+        "id": "kbwcb.appliances.ice_machines",
+        "translationKey": "IGUI_KBWCB_Group_IceMachines",
+        "name": "Commercial Ice Machine",
+        "level": 5
+      }
+    },
+    {
       "id": "community.tk.kitchen_misc.deli_slicer",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_tk_kitchen_misc_deli_slicer",
@@ -99,20 +231,20 @@
       "tooltipKey": "Tooltip_KBWCB_Slicer"
     },
     {
-      "id": "community.tk.kitchen_misc.wall_shelf",
+      "id": "community.tk.kitchen_misc.coffee_machine",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_wall_shelf",
-      "displayName": "Metal Kitchen Wall Shelf",
+      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_machine",
+      "displayName": "Commercial Coffee Machine",
       "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Storage",
+      "subcategory": "Kitchen Appliances",
       "material": "Metal",
       "materialTags": [
         "Metal"
       ],
-      "iconSprite": "kitchen_misc_tk_01_4",
+      "iconSprite": "kitchen_misc_tk_01_28",
       "placement": {
         "kind": "object",
-        "needToBeAgainstWall": true
+        "requiresFloor": true
       },
       "tags": [
         "community-tilepack",
@@ -129,7 +261,7 @@
                   {
                     "rows": [
                       [
-                        "kitchen_misc_tk_01_4"
+                        "kitchen_misc_tk_01_28"
                       ]
                     ]
                   }
@@ -140,7 +272,7 @@
                   {
                     "rows": [
                       [
-                        "kitchen_misc_tk_01_5"
+                        "kitchen_misc_tk_01_29"
                       ]
                     ]
                   }
@@ -151,7 +283,7 @@
                   {
                     "rows": [
                       [
-                        "kitchen_misc_tk_01_6"
+                        "kitchen_misc_tk_01_30"
                       ]
                     ]
                   }
@@ -162,7 +294,7 @@
                   {
                     "rows": [
                       [
-                        "kitchen_misc_tk_01_7"
+                        "kitchen_misc_tk_01_31"
                       ]
                     ]
                   }
@@ -177,13 +309,9 @@
             }
           },
           "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          },
-          "container": {
-            "type": "SpoonRack",
-            "capacity": 30
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
           }
         }
       ],
@@ -196,7 +324,229 @@
           "MetalWelding": 30
         }
       },
-      "tooltipKey": "Tooltip_KBWCB_KitchenShelf"
+      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
+    },
+    {
+      "id": "community.tk.kitchen_misc.coffee_maker",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_maker",
+      "displayName": "Drip Coffee Maker",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Appliances",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "kitchen_misc_tk_01_24",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_25"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_27"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal_light",
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "object": {
+            "isProp": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 30
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
+    },
+    {
+      "id": "community.tk.kitchen_misc.ice_machine_100_shell",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100_shell",
+      "displayName": "Industrial Ice Machine Shell",
+      "category": "Appliances",
+      "subcategory": "Refrigeration",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "KBWCommunityIceShell_0",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "tk",
+        "kitchen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityIceShell_0"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityIceShell_1"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityIceShell_2"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityIceShell_3"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwcb.appliance.iceshell100",
+            "skills": {
+              "MetalWelding": 7
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_PopularMechanics_HomeAppliances"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 7,
+                    "Electricity": 10
+                  }
+                }
+              ]
+            },
+            "inputs": []
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "blockAllSquare": true
+          }
+        }
+      ],
+      "construction": {
+        "time": 200,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "canWalk": false,
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 90
+        }
+      },
+      "tooltipKey": "Tooltip_KBWCB_IceMachineShell",
+      "group": {
+        "id": "kbwcb.appliances.ice_machines",
+        "translationKey": "IGUI_KBWCB_Group_IceMachines",
+        "name": "Commercial Ice Machine",
+        "level": 4
+      }
     },
     {
       "id": "community.tk.kitchen_misc.ice_machine",
@@ -327,20 +677,20 @@
       }
     },
     {
-      "id": "community.tk.kitchen_misc.ice_machine_65_shell",
+      "id": "community.tk.kitchen_misc.wall_shelf",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_65_shell",
-      "displayName": "Large Ice Machine Shell",
-      "category": "Appliances",
-      "subcategory": "Refrigeration",
+      "translationKey": "IGUI_community_tk_kitchen_misc_wall_shelf",
+      "displayName": "Metal Kitchen Wall Shelf",
+      "category": "Furniture and Appliances",
+      "subcategory": "Kitchen Storage",
       "material": "Metal",
       "materialTags": [
         "Metal"
       ],
-      "iconSprite": "KBWCommunityIceShell_0",
+      "iconSprite": "kitchen_misc_tk_01_4",
       "placement": {
         "kind": "object",
-        "requiresFloor": true
+        "needToBeAgainstWall": true
       },
       "tags": [
         "community-tilepack",
@@ -352,34 +702,23 @@
           "id": "built",
           "geometry": {
             "faces": {
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityIceShell_0"
-                      ]
-                    ]
-                  }
-                ]
-              },
               "W": {
                 "layers": [
                   {
                     "rows": [
                       [
-                        "KBWCommunityIceShell_1"
+                        "kitchen_misc_tk_01_4"
                       ]
                     ]
                   }
                 ]
               },
-              "S": {
+              "N": {
                 "layers": [
                   {
                     "rows": [
                       [
-                        "KBWCommunityIceShell_2"
+                        "kitchen_misc_tk_01_5"
                       ]
                     ]
                   }
@@ -390,7 +729,18 @@
                   {
                     "rows": [
                       [
-                        "KBWCommunityIceShell_3"
+                        "kitchen_misc_tk_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "kitchen_misc_tk_01_7"
                       ]
                     ]
                   }
@@ -399,58 +749,32 @@
             }
           },
           "requirements": {
-            "materials": "kbwcb.appliance.iceshell65",
+            "materials": "kbwve.extended.metal_light",
             "skills": {
-              "MetalWelding": 6
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_PopularMechanics_HomeAppliances"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6,
-                    "Electricity": 9
-                  }
-                }
-              ]
-            },
-            "inputs": []
+              "MetalWelding": 3
+            }
           },
           "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "blockAllSquare": true
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          },
+          "container": {
+            "type": "SpoonRack",
+            "capacity": 30
           }
         }
       ],
       "construction": {
-        "time": 200,
+        "time": 75,
         "timedAction": "BuildWallMetal",
         "completionSound": "BuildMetalStructureMedium",
-        "canWalk": false,
         "category": "Welding",
         "xp": {
-          "MetalWelding": 60
+          "MetalWelding": 30
         }
       },
-      "tooltipKey": "Tooltip_KBWCB_IceMachineShell",
-      "group": {
-        "id": "kbwcb.appliances.ice_machines",
-        "translationKey": "IGUI_KBWCB_Group_IceMachines",
-        "name": "Commercial Ice Machine",
-        "level": 2
-      }
+      "tooltipKey": "Tooltip_KBWCB_KitchenShelf"
     },
     {
       "id": "community.tk.kitchen_misc.ice_machine_65",
@@ -585,10 +909,10 @@
       }
     },
     {
-      "id": "community.tk.kitchen_misc.ice_machine_100_shell",
+      "id": "community.tk.kitchen_misc.ice_machine_65_shell",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100_shell",
-      "displayName": "Industrial Ice Machine Shell",
+      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_65_shell",
+      "displayName": "Large Ice Machine Shell",
       "category": "Appliances",
       "subcategory": "Refrigeration",
       "material": "Metal",
@@ -657,9 +981,9 @@
             }
           },
           "requirements": {
-            "materials": "kbwcb.appliance.iceshell100",
+            "materials": "kbwcb.appliance.iceshell65",
             "skills": {
-              "MetalWelding": 7
+              "MetalWelding": 6
             },
             "knowledge": {
               "recipes": [
@@ -677,8 +1001,8 @@
                 {
                   "mode": "all",
                   "skills": {
-                    "MetalWelding": 7,
-                    "Electricity": 10
+                    "MetalWelding": 6,
+                    "Electricity": 9
                   }
                 }
               ]
@@ -699,7 +1023,7 @@
         "canWalk": false,
         "category": "Welding",
         "xp": {
-          "MetalWelding": 90
+          "MetalWelding": 60
         }
       },
       "tooltipKey": "Tooltip_KBWCB_IceMachineShell",
@@ -707,139 +1031,7 @@
         "id": "kbwcb.appliances.ice_machines",
         "translationKey": "IGUI_KBWCB_Group_IceMachines",
         "name": "Commercial Ice Machine",
-        "level": 4
-      }
-    },
-    {
-      "id": "community.tk.kitchen_misc.ice_machine_100",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_ice_machine_100",
-      "displayName": "Industrial Ice Machine",
-      "category": "Appliances",
-      "subcategory": "Refrigeration",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "kitchen_misc_tk_01_8",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "kitchen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_8"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_9"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_10"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_11"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwcb.appliance.freezer100",
-            "skills": {
-              "MetalWelding": 7,
-              "Electricity": 6
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_PopularMechanics_HomeAppliances"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 7,
-                    "Electricity": 10
-                  }
-                }
-              ]
-            },
-            "inputs": []
-          },
-          "object": {
-            "isProp": true,
-            "dismantable": true,
-            "blockAllSquare": true
-          },
-          "container": {
-            "capacity": 100
-          },
-          "previousStage": "community.tk.kitchen_misc.ice_machine_100_shell"
-        }
-      ],
-      "construction": {
-        "time": 200,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "canWalk": false,
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 60,
-          "Electricity": 55
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_IceMachine",
-      "group": {
-        "id": "kbwcb.appliances.ice_machines",
-        "translationKey": "IGUI_KBWCB_Group_IceMachines",
-        "name": "Commercial Ice Machine",
-        "level": 5
+        "level": 2
       }
     },
     {
@@ -962,198 +1154,6 @@
         }
       },
       "tooltipKey": "Tooltip_KBWCB_DeepFryer"
-    },
-    {
-      "id": "community.tk.kitchen_misc.coffee_maker",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_maker",
-      "displayName": "Drip Coffee Maker",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "kitchen_misc_tk_01_24",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "kitchen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_24"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_25"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_26"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_27"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            }
-          },
-          "object": {
-            "isProp": true,
-            "dismantable": true,
-            "blockAllSquare": true
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
-    },
-    {
-      "id": "community.tk.kitchen_misc.coffee_machine",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_kitchen_misc_coffee_machine",
-      "displayName": "Commercial Coffee Machine",
-      "category": "Furniture and Appliances",
-      "subcategory": "Kitchen Appliances",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "kitchen_misc_tk_01_28",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "tk",
-        "kitchen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_28"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_29"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_30"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "kitchen_misc_tk_01_31"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal_light",
-            "skills": {
-              "MetalWelding": 3
-            }
-          },
-          "object": {
-            "isProp": true,
-            "dismantable": true,
-            "blockAllSquare": true
-          }
-        }
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 30
-        }
-      },
-      "tooltipKey": "Tooltip_KBWCB_CoffeeMaker"
     }
   ],
   "materialGroups": {

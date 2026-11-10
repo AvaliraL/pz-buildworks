@@ -4,296 +4,6 @@
   "source": "DylansRandomFurniture02 one-offs: exercise ball (3 color variants), punching bag (2 variants), and two functional CRT TVs (nativeObject:television, FLOOR-STANDING like KBW_VE valutech_television \u2014 these sprites cannot wall-mount). Standalone.",
   "buildables": [
     {
-      "id": "community.dylan.rf02.exercise_ball",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_rf02_exercise_ball",
-      "displayName": "Exercise Ball",
-      "tooltipKey": "Tooltip_KBWCB_Gym",
-      "category": "Furniture and Appliances",
-      "subcategory": "Decor",
-      "material": "Fabric",
-      "iconSprite": "WECommunity_DylansRandomFurniture02_5",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "decor",
-        "walkthrough"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture02_5"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.DuctTape",
-                  "Base.Thread"
-                ],
-                "amount": 2
-              }
-            ],
-            "skills": {
-              "Woodwork": 1
-            }
-          },
-          "construction": {
-            "time": 60,
-            "timedAction": "BuildLowNoTool",
-            "completionSound": "BuildWoodenStructureSmall",
-            "xp": {
-              "Woodwork": 5
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": false,
-            "blockAllSquare": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ],
-      "variants": [
-        {
-          "id": "pink",
-          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Pink",
-          "iconSprite": "WECommunity_DylansRandomFurniture02_5",
-          "stages": [
-            {
-              "id": "built",
-              "geometry": {
-                "faces": {
-                  "W": {
-                    "layers": [
-                      {
-                        "rows": [
-                          [
-                            "WECommunity_DylansRandomFurniture02_5"
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                }
-              },
-              "requirements": {
-                "inputs": [
-                  {
-                    "id": "tool_hammer",
-                    "role": "tool",
-                    "mode": "keep",
-                    "resourceType": "Item",
-                    "tags": [
-                      "base:hammer"
-                    ],
-                    "amount": 1
-                  },
-                  {
-                    "id": "source_material_1",
-                    "role": "material",
-                    "mode": "consume",
-                    "resourceType": "Item",
-                    "items": [
-                      "Base.DuctTape",
-                      "Base.Thread"
-                    ],
-                    "amount": 2
-                  }
-                ],
-                "skills": {
-                  "Woodwork": 1
-                }
-              },
-              "construction": {
-                "time": 60,
-                "timedAction": "BuildLowNoTool",
-                "completionSound": "BuildWoodenStructureSmall",
-                "xp": {
-                  "Woodwork": 5
-                },
-                "category": "Carpentry"
-              },
-              "object": {
-                "isThumpable": false,
-                "blockAllSquare": false,
-                "canPassThrough": true,
-                "dismantable": true
-              }
-            }
-          ]
-        },
-        {
-          "id": "blue",
-          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Blue",
-          "iconSprite": "WECommunity_DylansRandomFurniture02_6",
-          "stages": [
-            {
-              "id": "built",
-              "geometry": {
-                "faces": {
-                  "W": {
-                    "layers": [
-                      {
-                        "rows": [
-                          [
-                            "WECommunity_DylansRandomFurniture02_6"
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                }
-              },
-              "requirements": {
-                "inputs": [
-                  {
-                    "id": "tool_hammer",
-                    "role": "tool",
-                    "mode": "keep",
-                    "resourceType": "Item",
-                    "tags": [
-                      "base:hammer"
-                    ],
-                    "amount": 1
-                  },
-                  {
-                    "id": "source_material_1",
-                    "role": "material",
-                    "mode": "consume",
-                    "resourceType": "Item",
-                    "items": [
-                      "Base.DuctTape",
-                      "Base.Thread"
-                    ],
-                    "amount": 2
-                  }
-                ],
-                "skills": {
-                  "Woodwork": 1
-                }
-              },
-              "construction": {
-                "time": 60,
-                "timedAction": "BuildLowNoTool",
-                "completionSound": "BuildWoodenStructureSmall",
-                "xp": {
-                  "Woodwork": 5
-                },
-                "category": "Carpentry"
-              },
-              "object": {
-                "isThumpable": false,
-                "blockAllSquare": false,
-                "canPassThrough": true,
-                "dismantable": true
-              }
-            }
-          ]
-        },
-        {
-          "id": "yellow",
-          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Yellow",
-          "iconSprite": "WECommunity_DylansRandomFurniture02_7",
-          "stages": [
-            {
-              "id": "built",
-              "geometry": {
-                "faces": {
-                  "W": {
-                    "layers": [
-                      {
-                        "rows": [
-                          [
-                            "WECommunity_DylansRandomFurniture02_7"
-                          ]
-                        ]
-                      }
-                    ]
-                  }
-                }
-              },
-              "requirements": {
-                "inputs": [
-                  {
-                    "id": "tool_hammer",
-                    "role": "tool",
-                    "mode": "keep",
-                    "resourceType": "Item",
-                    "tags": [
-                      "base:hammer"
-                    ],
-                    "amount": 1
-                  },
-                  {
-                    "id": "source_material_1",
-                    "role": "material",
-                    "mode": "consume",
-                    "resourceType": "Item",
-                    "items": [
-                      "Base.DuctTape",
-                      "Base.Thread"
-                    ],
-                    "amount": 2
-                  }
-                ],
-                "skills": {
-                  "Woodwork": 1
-                }
-              },
-              "construction": {
-                "time": 60,
-                "timedAction": "BuildLowNoTool",
-                "completionSound": "BuildWoodenStructureSmall",
-                "xp": {
-                  "Woodwork": 5
-                },
-                "category": "Carpentry"
-              },
-              "object": {
-                "isThumpable": false,
-                "blockAllSquare": false,
-                "canPassThrough": true,
-                "dismantable": true
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "community.dylan.rf02.punching_bag",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_rf02_punching_bag",
@@ -675,6 +385,296 @@
           "nativeObject": {
             "type": "television"
           }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.rf02.exercise_ball",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_rf02_exercise_ball",
+      "displayName": "Exercise Ball",
+      "tooltipKey": "Tooltip_KBWCB_Gym",
+      "category": "Furniture and Appliances",
+      "subcategory": "Decor",
+      "material": "Fabric",
+      "iconSprite": "WECommunity_DylansRandomFurniture02_5",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "decor",
+        "walkthrough"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture02_5"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.DuctTape",
+                  "Base.Thread"
+                ],
+                "amount": 2
+              }
+            ],
+            "skills": {
+              "Woodwork": 1
+            }
+          },
+          "construction": {
+            "time": 60,
+            "timedAction": "BuildLowNoTool",
+            "completionSound": "BuildWoodenStructureSmall",
+            "xp": {
+              "Woodwork": 5
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": false,
+            "blockAllSquare": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ],
+      "variants": [
+        {
+          "id": "pink",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Pink",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_5",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_5"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Blue",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_6",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_6"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "yellow",
+          "labelKey": "IGUI_KBW_Variant_ExerciseBall_Yellow",
+          "iconSprite": "WECommunity_DylansRandomFurniture02_7",
+          "stages": [
+            {
+              "id": "built",
+              "geometry": {
+                "faces": {
+                  "W": {
+                    "layers": [
+                      {
+                        "rows": [
+                          [
+                            "WECommunity_DylansRandomFurniture02_7"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "requirements": {
+                "inputs": [
+                  {
+                    "id": "tool_hammer",
+                    "role": "tool",
+                    "mode": "keep",
+                    "resourceType": "Item",
+                    "tags": [
+                      "base:hammer"
+                    ],
+                    "amount": 1
+                  },
+                  {
+                    "id": "source_material_1",
+                    "role": "material",
+                    "mode": "consume",
+                    "resourceType": "Item",
+                    "items": [
+                      "Base.DuctTape",
+                      "Base.Thread"
+                    ],
+                    "amount": 2
+                  }
+                ],
+                "skills": {
+                  "Woodwork": 1
+                }
+              },
+              "construction": {
+                "time": 60,
+                "timedAction": "BuildLowNoTool",
+                "completionSound": "BuildWoodenStructureSmall",
+                "xp": {
+                  "Woodwork": 5
+                },
+                "category": "Carpentry"
+              },
+              "object": {
+                "isThumpable": false,
+                "blockAllSquare": false,
+                "canPassThrough": true,
+                "dismantable": true
+              }
+            }
+          ]
         }
       ]
     },

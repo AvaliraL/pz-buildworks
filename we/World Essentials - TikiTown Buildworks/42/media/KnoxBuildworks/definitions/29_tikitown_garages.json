@@ -4,14 +4,14 @@
  "source": "Drazions tt_newburbs_doors_garages_01. Garage doors modeled on GarageDoorKnox_B (fixed-width multi-tile). 8 colors x widths 3-6, grouped per color. Closed-only. E triple=base+0/1/2 (W-face run -Y), S triple=base+3/4/5 (N-face run +X); start/mid/end, middle repeats for wider. Metal welding recipe scales per tile.",
  "buildables": [
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w2",
-   "displayName": "Garage Door - White (2 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w6",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w6",
+   "displayName": "Garage Door - Gray (6 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_1",
+   "iconSprite": "tt_newburbs_doors_garages_01_17",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -30,13 +30,25 @@
        "W": {
         "layers": [
          {
-          "y": -1,
+          "y": -5,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_2"
+            "tt_newburbs_doors_garages_01_18"
            ],
            [
-            "tt_newburbs_doors_garages_01_0"
+            "tt_newburbs_doors_garages_01_17"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_17"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_17"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_17"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_16"
            ]
           ]
          }
@@ -47,8 +59,12 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_3",
-            "tt_newburbs_doors_garages_01_5"
+            "tt_newburbs_doors_garages_01_19",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_21"
            ]
           ]
          }
@@ -76,7 +92,7 @@
         "items": [
          "Base.SmallSheetMetal"
         ],
-        "amount": 6
+        "amount": 18
        },
        {
         "id": "metal_stock",
@@ -89,7 +105,7 @@
          "Base.SteelBar",
          "Base.MetalPipe"
         ],
-        "amount": 2
+        "amount": 6
        },
        {
         "id": "door_hinges",
@@ -99,7 +115,7 @@
         "items": [
          "Base.Hinge"
         ],
-        "amount": 4
+        "amount": 12
        },
        {
         "id": "door_hardware",
@@ -120,7 +136,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 5
+        "uses": 15
        },
        {
         "id": "welding_rods",
@@ -131,7 +147,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 3
+        "uses": 8
        }
       ],
       "skills": {
@@ -154,24 +170,24 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.white",
-    "level": 1,
-    "name": "Garage Door - White",
-    "translationKey": "IGUI_Group_tikitown_garage_white"
+    "id": "tikitown.garages.gray",
+    "level": 5,
+    "name": "Garage Door - Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_gray"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w2"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w6"
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w3",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w3",
-   "displayName": "Garage Door - White (3 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w6",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w6",
+   "displayName": "Garage Door - Red (6 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_1",
+   "iconSprite": "tt_newburbs_doors_garages_01_33",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -190,16 +206,25 @@
        "W": {
         "layers": [
          {
-          "y": -2,
+          "y": -5,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_2"
+            "tt_newburbs_doors_garages_01_34"
            ],
            [
-            "tt_newburbs_doors_garages_01_1"
+            "tt_newburbs_doors_garages_01_33"
            ],
            [
-            "tt_newburbs_doors_garages_01_0"
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_32"
            ]
           ]
          }
@@ -210,9 +235,12 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_3",
-            "tt_newburbs_doors_garages_01_4",
-            "tt_newburbs_doors_garages_01_5"
+            "tt_newburbs_doors_garages_01_35",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_37"
            ]
           ]
          }
@@ -240,7 +268,7 @@
         "items": [
          "Base.SmallSheetMetal"
         ],
-        "amount": 9
+        "amount": 18
        },
        {
         "id": "metal_stock",
@@ -253,7 +281,7 @@
          "Base.SteelBar",
          "Base.MetalPipe"
         ],
-        "amount": 3
+        "amount": 6
        },
        {
         "id": "door_hinges",
@@ -263,7 +291,7 @@
         "items": [
          "Base.Hinge"
         ],
-        "amount": 6
+        "amount": 12
        },
        {
         "id": "door_hardware",
@@ -284,7 +312,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 10
+        "uses": 15
        },
        {
         "id": "welding_rods",
@@ -295,7 +323,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 5
+        "uses": 8
        }
       ],
       "skills": {
@@ -318,13 +346,13 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.white",
-    "level": 2,
-    "name": "Garage Door - White",
-    "translationKey": "IGUI_Group_tikitown_garage_white"
+    "id": "tikitown.garages.red",
+    "level": 5,
+    "name": "Garage Door - Red",
+    "translationKey": "IGUI_Group_tikitown_garage_red"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w3"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w6"
    ]
   },
   {
@@ -496,14 +524,14 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w5",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w5",
-   "displayName": "Garage Door - White (5 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w5",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w5",
+   "displayName": "Garage Door - Dark Gray (5 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_1",
+   "iconSprite": "tt_newburbs_doors_garages_01_113",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -525,19 +553,19 @@
           "y": -4,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_2"
+            "tt_newburbs_doors_garages_01_114"
            ],
            [
-            "tt_newburbs_doors_garages_01_1"
+            "tt_newburbs_doors_garages_01_113"
            ],
            [
-            "tt_newburbs_doors_garages_01_1"
+            "tt_newburbs_doors_garages_01_113"
            ],
            [
-            "tt_newburbs_doors_garages_01_1"
+            "tt_newburbs_doors_garages_01_113"
            ],
            [
-            "tt_newburbs_doors_garages_01_0"
+            "tt_newburbs_doors_garages_01_112"
            ]
           ]
          }
@@ -548,11 +576,11 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_3",
-            "tt_newburbs_doors_garages_01_4",
-            "tt_newburbs_doors_garages_01_4",
-            "tt_newburbs_doors_garages_01_4",
-            "tt_newburbs_doors_garages_01_5"
+            "tt_newburbs_doors_garages_01_115",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_117"
            ]
           ]
          }
@@ -658,13 +686,1177 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.white",
+    "id": "tikitown.garages.darkgray",
     "level": 4,
-    "name": "Garage Door - White",
-    "translationKey": "IGUI_Group_tikitown_garage_white"
+    "name": "Garage Door - Dark Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w5"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w5"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w2",
+   "displayName": "Garage Door - Red (2 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_33",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -1,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_34"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_35",
+            "tt_newburbs_doors_garages_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 5
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 3
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.red",
+    "level": 1,
+    "name": "Garage Door - Red",
+    "translationKey": "IGUI_Group_tikitown_garage_red"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w2"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w4",
+   "displayName": "Garage Door - Red (4 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_33",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -3,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_34"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_35",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.red",
+    "level": 3,
+    "name": "Garage Door - Red",
+    "translationKey": "IGUI_Group_tikitown_garage_red"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w4"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w6",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w6",
+   "displayName": "Garage Door - Wood (6 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_49",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -5,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_50"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_51",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 18
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 15
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 8
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.wood",
+    "level": 5,
+    "name": "Garage Door - Wood",
+    "translationKey": "IGUI_Group_tikitown_garage_wood"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w6"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w3",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w3",
+   "displayName": "Garage Door - Gray (3 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_17",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -2,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_18"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_17"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_19",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 9
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.gray",
+    "level": 2,
+    "name": "Garage Door - Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_gray"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w3"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w4",
+   "displayName": "Garage Door - Blue (4 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_97",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -3,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_98"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_97"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_97"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_96"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_99",
+            "tt_newburbs_doors_garages_01_100",
+            "tt_newburbs_doors_garages_01_100",
+            "tt_newburbs_doors_garages_01_101"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.blue",
+    "level": 3,
+    "name": "Garage Door - Blue",
+    "translationKey": "IGUI_Group_tikitown_garage_blue"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w4"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w3",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w3",
+   "displayName": "Garage Door - Dark Gray (3 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_113",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -2,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_114"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_113"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_112"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_115",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_117"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 9
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.darkgray",
+    "level": 2,
+    "name": "Garage Door - Dark Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w3"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w3",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w3",
+   "displayName": "Garage Door - Wood (3 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_49",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -2,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_50"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_51",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 9
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.wood",
+    "level": 2,
+    "name": "Garage Door - Wood",
+    "translationKey": "IGUI_Group_tikitown_garage_wood"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w3"
    ]
   },
   {
@@ -1004,338 +2196,6 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w3",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w3",
-   "displayName": "Garage Door - Gray (3 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_17",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -2,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_18"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_19",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_21"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 9
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 3
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.gray",
-    "level": 2,
-    "name": "Garage Door - Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_gray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w3"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w4",
-   "displayName": "Garage Door - Gray (4 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_17",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -3,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_18"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_19",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_21"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.gray",
-    "level": 3,
-    "name": "Garage Door - Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_gray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w4"
-   ]
-  },
-  {
    "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w5",
    "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w5",
    "displayName": "Garage Door - Gray (5 Wide)",
@@ -1508,350 +2368,14 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w6",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w6",
-   "displayName": "Garage Door - Gray (6 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w3",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w3",
+   "displayName": "Garage Door - White (3 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_17",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -5,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_18"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_17"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_19",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_20",
-            "tt_newburbs_doors_garages_01_21"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 18
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 15
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 8
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.gray",
-    "level": 5,
-    "name": "Garage Door - Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_gray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w6"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w2",
-   "displayName": "Garage Door - Red (2 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_33",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -1,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_34"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_32"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_35",
-            "tt_newburbs_doors_garages_01_37"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 5
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 3
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.red",
-    "level": 1,
-    "name": "Garage Door - Red",
-    "translationKey": "IGUI_Group_tikitown_garage_red"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w2"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w3",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w3",
-   "displayName": "Garage Door - Red (3 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_33",
+   "iconSprite": "tt_newburbs_doors_garages_01_1",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -1873,13 +2397,13 @@
           "y": -2,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_34"
+            "tt_newburbs_doors_garages_01_2"
            ],
            [
-            "tt_newburbs_doors_garages_01_33"
+            "tt_newburbs_doors_garages_01_1"
            ],
            [
-            "tt_newburbs_doors_garages_01_32"
+            "tt_newburbs_doors_garages_01_0"
            ]
           ]
          }
@@ -1890,9 +2414,9 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_35",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_37"
+            "tt_newburbs_doors_garages_01_3",
+            "tt_newburbs_doors_garages_01_4",
+            "tt_newburbs_doors_garages_01_5"
            ]
           ]
          }
@@ -1998,24 +2522,196 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.red",
+    "id": "tikitown.garages.white",
     "level": 2,
-    "name": "Garage Door - Red",
-    "translationKey": "IGUI_Group_tikitown_garage_red"
+    "name": "Garage Door - White",
+    "translationKey": "IGUI_Group_tikitown_garage_white"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w3"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w3"
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w4",
-   "displayName": "Garage Door - Red (4 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w5",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w5",
+   "displayName": "Garage Door - White (5 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_33",
+   "iconSprite": "tt_newburbs_doors_garages_01_1",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -4,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_2"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_1"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_1"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_1"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_3",
+            "tt_newburbs_doors_garages_01_4",
+            "tt_newburbs_doors_garages_01_4",
+            "tt_newburbs_doors_garages_01_4",
+            "tt_newburbs_doors_garages_01_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 15
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 5
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 10
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 13
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 7
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.white",
+    "level": 4,
+    "name": "Garage Door - White",
+    "translationKey": "IGUI_Group_tikitown_garage_white"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w5"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w4",
+   "displayName": "Garage Door - Wood (4 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_49",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -2037,16 +2733,16 @@
           "y": -3,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_34"
+            "tt_newburbs_doors_garages_01_50"
            ],
            [
-            "tt_newburbs_doors_garages_01_33"
+            "tt_newburbs_doors_garages_01_49"
            ],
            [
-            "tt_newburbs_doors_garages_01_33"
+            "tt_newburbs_doors_garages_01_49"
            ],
            [
-            "tt_newburbs_doors_garages_01_32"
+            "tt_newburbs_doors_garages_01_48"
            ]
           ]
          }
@@ -2057,10 +2753,10 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_35",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_37"
+            "tt_newburbs_doors_garages_01_51",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_53"
            ]
           ]
          }
@@ -2166,13 +2862,501 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.red",
+    "id": "tikitown.garages.wood",
     "level": 3,
-    "name": "Garage Door - Red",
-    "translationKey": "IGUI_Group_tikitown_garage_red"
+    "name": "Garage Door - Wood",
+    "translationKey": "IGUI_Group_tikitown_garage_wood"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w4"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w4"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w2",
+   "displayName": "Garage Door - Dark Gray (2 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_113",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -1,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_114"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_112"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_115",
+            "tt_newburbs_doors_garages_01_117"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 5
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 3
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.darkgray",
+    "level": 1,
+    "name": "Garage Door - Dark Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w2"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w4",
+   "displayName": "Garage Door - Green (4 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_81",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -3,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_82"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_80"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_83",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_85"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.green",
+    "level": 3,
+    "name": "Garage Door - Green",
+    "translationKey": "IGUI_Group_tikitown_garage_green"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w4"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w2",
+   "displayName": "Garage Door - Wood (2 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_49",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -1,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_50"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_51",
+            "tt_newburbs_doors_garages_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 5
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 3
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.wood",
+    "level": 1,
+    "name": "Garage Door - Wood",
+    "translationKey": "IGUI_Group_tikitown_garage_wood"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w2"
    ]
   },
   {
@@ -2348,1182 +3532,6 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w6",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w6",
-   "displayName": "Garage Door - Red (6 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_33",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -5,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_34"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_33"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_33"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_33"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_33"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_32"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_35",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_36",
-            "tt_newburbs_doors_garages_01_37"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 18
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 15
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 8
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.red",
-    "level": 5,
-    "name": "Garage Door - Red",
-    "translationKey": "IGUI_Group_tikitown_garage_red"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w6"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w2",
-   "displayName": "Garage Door - Wood (2 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_49",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -1,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_50"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_48"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_51",
-            "tt_newburbs_doors_garages_01_53"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 5
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 3
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.wood",
-    "level": 1,
-    "name": "Garage Door - Wood",
-    "translationKey": "IGUI_Group_tikitown_garage_wood"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w2"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w3",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w3",
-   "displayName": "Garage Door - Wood (3 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_49",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -2,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_50"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_48"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_51",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_53"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 9
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 3
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.wood",
-    "level": 2,
-    "name": "Garage Door - Wood",
-    "translationKey": "IGUI_Group_tikitown_garage_wood"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w3"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w4",
-   "displayName": "Garage Door - Wood (4 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_49",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -3,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_50"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_48"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_51",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_53"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.wood",
-    "level": 3,
-    "name": "Garage Door - Wood",
-    "translationKey": "IGUI_Group_tikitown_garage_wood"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w4"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w5",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w5",
-   "displayName": "Garage Door - Wood (5 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_49",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -4,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_50"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_48"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_51",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_53"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 15
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 5
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 10
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 13
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 7
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.wood",
-    "level": 4,
-    "name": "Garage Door - Wood",
-    "translationKey": "IGUI_Group_tikitown_garage_wood"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w5"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w6",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w6",
-   "displayName": "Garage Door - Wood (6 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_49",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -5,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_50"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_49"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_48"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_51",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_52",
-            "tt_newburbs_doors_garages_01_53"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 18
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 15
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 8
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.wood",
-    "level": 5,
-    "name": "Garage Door - Wood",
-    "translationKey": "IGUI_Group_tikitown_garage_wood"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w6"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w2",
-   "displayName": "Garage Door - Tan (2 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_65",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -1,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_66"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_64"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_67",
-            "tt_newburbs_doors_garages_01_69"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 5
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 3
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.tan",
-    "level": 1,
-    "name": "Garage Door - Tan",
-    "translationKey": "IGUI_Group_tikitown_garage_tan"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w2"
-   ]
-  },
-  {
    "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w3",
    "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w3",
    "displayName": "Garage Door - Tan (3 Wide)",
@@ -3688,14 +3696,14 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w4",
-   "displayName": "Garage Door - Tan (4 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w2",
+   "displayName": "Garage Door - Green (2 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_65",
+   "iconSprite": "tt_newburbs_doors_garages_01_81",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -3714,19 +3722,13 @@
        "W": {
         "layers": [
          {
-          "y": -3,
+          "y": -1,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_66"
+            "tt_newburbs_doors_garages_01_82"
            ],
            [
-            "tt_newburbs_doors_garages_01_65"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_65"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_64"
+            "tt_newburbs_doors_garages_01_80"
            ]
           ]
          }
@@ -3737,10 +3739,8 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_67",
-            "tt_newburbs_doors_garages_01_68",
-            "tt_newburbs_doors_garages_01_68",
-            "tt_newburbs_doors_garages_01_69"
+            "tt_newburbs_doors_garages_01_83",
+            "tt_newburbs_doors_garages_01_85"
            ]
           ]
          }
@@ -3768,7 +3768,7 @@
         "items": [
          "Base.SmallSheetMetal"
         ],
-        "amount": 12
+        "amount": 6
        },
        {
         "id": "metal_stock",
@@ -3780,20 +3780,20 @@
          "Base.MetalBar",
          "Base.SteelBar",
          "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
         ],
         "amount": 4
        },
        {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
         "id": "door_hardware",
         "role": "material",
         "mode": "consume",
@@ -3812,7 +3812,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 10
+        "uses": 5
        },
        {
         "id": "welding_rods",
@@ -3823,7 +3823,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 5
+        "uses": 3
        }
       ],
       "skills": {
@@ -3846,24 +3846,24 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.tan",
-    "level": 3,
-    "name": "Garage Door - Tan",
-    "translationKey": "IGUI_Group_tikitown_garage_tan"
+    "id": "tikitown.garages.green",
+    "level": 1,
+    "name": "Garage Door - Green",
+    "translationKey": "IGUI_Group_tikitown_garage_green"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w4"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w2"
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w5",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w5",
-   "displayName": "Garage Door - Tan (5 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w2",
+   "displayName": "Garage Door - Blue (2 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_65",
+   "iconSprite": "tt_newburbs_doors_garages_01_97",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -3882,22 +3882,13 @@
        "W": {
         "layers": [
          {
-          "y": -4,
+          "y": -1,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_66"
+            "tt_newburbs_doors_garages_01_98"
            ],
            [
-            "tt_newburbs_doors_garages_01_65"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_65"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_65"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_64"
+            "tt_newburbs_doors_garages_01_96"
            ]
           ]
          }
@@ -3908,11 +3899,8 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_67",
-            "tt_newburbs_doors_garages_01_68",
-            "tt_newburbs_doors_garages_01_68",
-            "tt_newburbs_doors_garages_01_68",
-            "tt_newburbs_doors_garages_01_69"
+            "tt_newburbs_doors_garages_01_99",
+            "tt_newburbs_doors_garages_01_101"
            ]
           ]
          }
@@ -3940,7 +3928,7 @@
         "items": [
          "Base.SmallSheetMetal"
         ],
-        "amount": 15
+        "amount": 6
        },
        {
         "id": "metal_stock",
@@ -3953,7 +3941,7 @@
          "Base.SteelBar",
          "Base.MetalPipe"
         ],
-        "amount": 5
+        "amount": 2
        },
        {
         "id": "door_hinges",
@@ -3963,7 +3951,7 @@
         "items": [
          "Base.Hinge"
         ],
-        "amount": 10
+        "amount": 4
        },
        {
         "id": "door_hardware",
@@ -3984,7 +3972,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 13
+        "uses": 5
        },
        {
         "id": "welding_rods",
@@ -3995,7 +3983,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 7
+        "uses": 3
        }
       ],
       "skills": {
@@ -4018,13 +4006,13 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.tan",
-    "level": 4,
-    "name": "Garage Door - Tan",
-    "translationKey": "IGUI_Group_tikitown_garage_tan"
+    "id": "tikitown.garages.blue",
+    "level": 1,
+    "name": "Garage Door - Blue",
+    "translationKey": "IGUI_Group_tikitown_garage_blue"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w5"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w2"
    ]
   },
   {
@@ -4204,166 +4192,6 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w2",
-   "displayName": "Garage Door - Green (2 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_81",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -1,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_82"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_80"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_83",
-            "tt_newburbs_doors_garages_01_85"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 5
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 3
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.green",
-    "level": 1,
-    "name": "Garage Door - Green",
-    "translationKey": "IGUI_Group_tikitown_garage_green"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w2"
-   ]
-  },
-  {
    "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w3",
    "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w3",
    "displayName": "Garage Door - Green (3 Wide)",
@@ -4525,174 +4353,6 @@
    },
    "aliases": [
     "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w3"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w4",
-   "displayName": "Garage Door - Green (4 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_81",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -3,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_82"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_81"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_81"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_80"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_83",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_85"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.green",
-    "level": 3,
-    "name": "Garage Door - Green",
-    "translationKey": "IGUI_Group_tikitown_garage_green"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w4"
    ]
   },
   {
@@ -4868,14 +4528,14 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w6",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w6",
-   "displayName": "Garage Door - Green (6 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_gray_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_gray_w4",
+   "displayName": "Garage Door - Gray (4 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_81",
+   "iconSprite": "tt_newburbs_doors_garages_01_17",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -4894,25 +4554,19 @@
        "W": {
         "layers": [
          {
-          "y": -5,
+          "y": -3,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_82"
+            "tt_newburbs_doors_garages_01_18"
            ],
            [
-            "tt_newburbs_doors_garages_01_81"
+            "tt_newburbs_doors_garages_01_17"
            ],
            [
-            "tt_newburbs_doors_garages_01_81"
+            "tt_newburbs_doors_garages_01_17"
            ],
            [
-            "tt_newburbs_doors_garages_01_81"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_81"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_80"
+            "tt_newburbs_doors_garages_01_16"
            ]
           ]
          }
@@ -4923,12 +4577,10 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_83",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_84",
-            "tt_newburbs_doors_garages_01_85"
+            "tt_newburbs_doors_garages_01_19",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_20",
+            "tt_newburbs_doors_garages_01_21"
            ]
           ]
          }
@@ -4955,33 +4607,33 @@
         "resourceType": "Item",
         "items": [
          "Base.SmallSheetMetal"
-        ],
-        "amount": 18
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
         ],
         "amount": 12
        },
        {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 8
+       },
+       {
         "id": "door_hardware",
         "role": "material",
         "mode": "consume",
@@ -5000,7 +4652,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 15
+        "uses": 10
        },
        {
         "id": "welding_rods",
@@ -5011,7 +4663,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 8
+        "uses": 5
        }
       ],
       "skills": {
@@ -5034,24 +4686,24 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.green",
-    "level": 5,
-    "name": "Garage Door - Green",
-    "translationKey": "IGUI_Group_tikitown_garage_green"
+    "id": "tikitown.garages.gray",
+    "level": 3,
+    "name": "Garage Door - Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_gray"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w6"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_gray_w4"
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w2",
-   "displayName": "Garage Door - Blue (2 Wide)",
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w4",
+   "displayName": "Garage Door - Dark Gray (4 Wide)",
    "tooltipKey": "Tooltip_KBWCB_GarageDoor",
    "category": "Doors",
    "subcategory": "Garage Doors",
    "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_97",
+   "iconSprite": "tt_newburbs_doors_garages_01_113",
    "placement": {
     "kind": "object",
     "dontNeedFrame": true
@@ -5070,13 +4722,19 @@
        "W": {
         "layers": [
          {
-          "y": -1,
+          "y": -3,
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_98"
+            "tt_newburbs_doors_garages_01_114"
            ],
            [
-            "tt_newburbs_doors_garages_01_96"
+            "tt_newburbs_doors_garages_01_113"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_113"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_112"
            ]
           ]
          }
@@ -5087,8 +4745,10 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_garages_01_99",
-            "tt_newburbs_doors_garages_01_101"
+            "tt_newburbs_doors_garages_01_115",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_116",
+            "tt_newburbs_doors_garages_01_117"
            ]
           ]
          }
@@ -5116,7 +4776,7 @@
         "items": [
          "Base.SmallSheetMetal"
         ],
-        "amount": 6
+        "amount": 12
        },
        {
         "id": "metal_stock",
@@ -5129,7 +4789,7 @@
          "Base.SteelBar",
          "Base.MetalPipe"
         ],
-        "amount": 2
+        "amount": 4
        },
        {
         "id": "door_hinges",
@@ -5139,7 +4799,7 @@
         "items": [
          "Base.Hinge"
         ],
-        "amount": 4
+        "amount": 8
        },
        {
         "id": "door_hardware",
@@ -5160,7 +4820,7 @@
          "Base.BlowTorch"
         ],
         "amount": 1,
-        "uses": 5
+        "uses": 10
        },
        {
         "id": "welding_rods",
@@ -5171,7 +4831,7 @@
          "Base.WeldingRods"
         ],
         "amount": 1,
-        "uses": 3
+        "uses": 5
        }
       ],
       "skills": {
@@ -5194,13 +4854,517 @@
     }
    ],
    "group": {
-    "id": "tikitown.garages.blue",
-    "level": 1,
-    "name": "Garage Door - Blue",
-    "translationKey": "IGUI_Group_tikitown_garage_blue"
+    "id": "tikitown.garages.darkgray",
+    "level": 3,
+    "name": "Garage Door - Dark Gray",
+    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w2"
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w4"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w5",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w5",
+   "displayName": "Garage Door - Tan (5 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_65",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -4,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_66"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_65"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_65"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_65"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_64"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_67",
+            "tt_newburbs_doors_garages_01_68",
+            "tt_newburbs_doors_garages_01_68",
+            "tt_newburbs_doors_garages_01_68",
+            "tt_newburbs_doors_garages_01_69"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 15
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 5
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 10
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 13
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 7
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.tan",
+    "level": 4,
+    "name": "Garage Door - Tan",
+    "translationKey": "IGUI_Group_tikitown_garage_tan"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w5"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_red_w3",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_red_w3",
+   "displayName": "Garage Door - Red (3 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_33",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -2,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_34"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_33"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_35",
+            "tt_newburbs_doors_garages_01_36",
+            "tt_newburbs_doors_garages_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 9
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 3
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.red",
+    "level": 2,
+    "name": "Garage Door - Red",
+    "translationKey": "IGUI_Group_tikitown_garage_red"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_red_w3"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w4",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w4",
+   "displayName": "Garage Door - Tan (4 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_65",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -3,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_66"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_65"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_65"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_64"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_67",
+            "tt_newburbs_doors_garages_01_68",
+            "tt_newburbs_doors_garages_01_68",
+            "tt_newburbs_doors_garages_01_69"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 8
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 10
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 5
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.tan",
+    "level": 3,
+    "name": "Garage Door - Tan",
+    "translationKey": "IGUI_Group_tikitown_garage_tan"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w4"
    ]
   },
   {
@@ -5365,346 +5529,6 @@
    },
    "aliases": [
     "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w3"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w4",
-   "displayName": "Garage Door - Blue (4 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_97",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -3,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_98"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_97"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_97"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_96"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_99",
-            "tt_newburbs_doors_garages_01_100",
-            "tt_newburbs_doors_garages_01_100",
-            "tt_newburbs_doors_garages_01_101"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.blue",
-    "level": 3,
-    "name": "Garage Door - Blue",
-    "translationKey": "IGUI_Group_tikitown_garage_blue"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w4"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w5",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w5",
-   "displayName": "Garage Door - Blue (5 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_97",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -4,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_98"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_97"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_97"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_97"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_96"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_99",
-            "tt_newburbs_doors_garages_01_100",
-            "tt_newburbs_doors_garages_01_100",
-            "tt_newburbs_doors_garages_01_100",
-            "tt_newburbs_doors_garages_01_101"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 15
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 5
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 10
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 13
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 7
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.blue",
-    "level": 4,
-    "name": "Garage Door - Blue",
-    "translationKey": "IGUI_Group_tikitown_garage_blue"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w5"
    ]
   },
   {
@@ -5884,670 +5708,6 @@
    ]
   },
   {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w2",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w2",
-   "displayName": "Garage Door - Dark Gray (2 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_113",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -1,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_114"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_112"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_115",
-            "tt_newburbs_doors_garages_01_117"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 5
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 3
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.darkgray",
-    "level": 1,
-    "name": "Garage Door - Dark Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w2"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w3",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w3",
-   "displayName": "Garage Door - Dark Gray (3 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_113",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -2,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_114"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_112"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_115",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_117"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 9
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 3
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 6
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.darkgray",
-    "level": 2,
-    "name": "Garage Door - Dark Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w3"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w4",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w4",
-   "displayName": "Garage Door - Dark Gray (4 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_113",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -3,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_114"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_112"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_115",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_117"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 12
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 8
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 10
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 5
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.darkgray",
-    "level": 3,
-    "name": "Garage Door - Dark Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w4"
-   ]
-  },
-  {
-   "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w5",
-   "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w5",
-   "displayName": "Garage Door - Dark Gray (5 Wide)",
-   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
-   "category": "Doors",
-   "subcategory": "Garage Doors",
-   "material": "Metal",
-   "iconSprite": "tt_newburbs_doors_garages_01_113",
-   "placement": {
-    "kind": "object",
-    "dontNeedFrame": true
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "garage-door"
-   ],
-   "allowSpriteReuse": true,
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "y": -4,
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_114"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_113"
-           ],
-           [
-            "tt_newburbs_doors_garages_01_112"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_garages_01_115",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_116",
-            "tt_newburbs_doors_garages_01_117"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_welding_mask",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:weldingmask"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "sheet_metal",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.SmallSheetMetal"
-        ],
-        "amount": 15
-       },
-       {
-        "id": "metal_stock",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.IronBar",
-         "Base.MetalBar",
-         "Base.SteelBar",
-         "Base.MetalPipe"
-        ],
-        "amount": 5
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 10
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "torch_fuel",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.BlowTorch"
-        ],
-        "amount": 1,
-        "uses": 13
-       },
-       {
-        "id": "welding_rods",
-        "role": "consumable",
-        "mode": "drain",
-        "resourceType": "Item",
-        "items": [
-         "Base.WeldingRods"
-        ],
-        "amount": 1,
-        "uses": 7
-       }
-      ],
-      "skills": {
-       "MetalWelding": 5
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallMetal",
-      "completionSound": "BuildMetalStructureMedium",
-      "xp": {
-       "MetalWelding": 50
-      },
-      "category": "Welding"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "tikitown.garages.darkgray",
-    "level": 4,
-    "name": "Garage Door - Dark Gray",
-    "translationKey": "IGUI_Group_tikitown_garage_darkgray"
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w5"
-   ]
-  },
-  {
    "id": "tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w6",
    "translationKey": "IGUI_tt_newburbs_doors_garages_01_darkgray_w6",
    "displayName": "Garage Door - Dark Gray (6 Wide)",
@@ -6721,6 +5881,846 @@
    },
    "aliases": [
     "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_darkgray_w6"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_green_w6",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_green_w6",
+   "displayName": "Garage Door - Green (6 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_81",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -5,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_82"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_81"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_80"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_83",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_84",
+            "tt_newburbs_doors_garages_01_85"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 18
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 12
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 15
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 8
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.green",
+    "level": 5,
+    "name": "Garage Door - Green",
+    "translationKey": "IGUI_Group_tikitown_garage_green"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_green_w6"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_tan_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_tan_w2",
+   "displayName": "Garage Door - Tan (2 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_65",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -1,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_66"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_64"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_67",
+            "tt_newburbs_doors_garages_01_69"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 5
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 3
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.tan",
+    "level": 1,
+    "name": "Garage Door - Tan",
+    "translationKey": "IGUI_Group_tikitown_garage_tan"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_tan_w2"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_white_w2",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_white_w2",
+   "displayName": "Garage Door - White (2 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_1",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -1,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_2"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_3",
+            "tt_newburbs_doors_garages_01_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 5
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 3
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.white",
+    "level": 1,
+    "name": "Garage Door - White",
+    "translationKey": "IGUI_Group_tikitown_garage_white"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_white_w2"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_blue_w5",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_blue_w5",
+   "displayName": "Garage Door - Blue (5 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_97",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -4,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_98"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_97"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_97"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_97"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_96"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_99",
+            "tt_newburbs_doors_garages_01_100",
+            "tt_newburbs_doors_garages_01_100",
+            "tt_newburbs_doors_garages_01_100",
+            "tt_newburbs_doors_garages_01_101"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 15
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 5
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 10
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 13
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 7
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.blue",
+    "level": 4,
+    "name": "Garage Door - Blue",
+    "translationKey": "IGUI_Group_tikitown_garage_blue"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_blue_w5"
+   ]
+  },
+  {
+   "id": "tikitown.garages.tt_newburbs_doors_garages_01_wood_w5",
+   "translationKey": "IGUI_tt_newburbs_doors_garages_01_wood_w5",
+   "displayName": "Garage Door - Wood (5 Wide)",
+   "tooltipKey": "Tooltip_KBWCB_GarageDoor",
+   "category": "Doors",
+   "subcategory": "Garage Doors",
+   "material": "Metal",
+   "iconSprite": "tt_newburbs_doors_garages_01_49",
+   "placement": {
+    "kind": "object",
+    "dontNeedFrame": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "garage-door"
+   ],
+   "allowSpriteReuse": true,
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "y": -4,
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_50"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_49"
+           ],
+           [
+            "tt_newburbs_doors_garages_01_48"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_garages_01_51",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_52",
+            "tt_newburbs_doors_garages_01_53"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 15
+       },
+       {
+        "id": "metal_stock",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.IronBar",
+         "Base.MetalBar",
+         "Base.SteelBar",
+         "Base.MetalPipe"
+        ],
+        "amount": 5
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 10
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "amount": 1,
+        "uses": 13
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "amount": 1,
+        "uses": 7
+       }
+      ],
+      "skills": {
+       "MetalWelding": 5
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallMetal",
+      "completionSound": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 50
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "tikitown.garages.wood",
+    "level": 4,
+    "name": "Garage Door - Wood",
+    "translationKey": "IGUI_Group_tikitown_garage_wood"
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.garages.tt_newburbs_doors_garages_01_wood_w5"
    ]
   }
  ]

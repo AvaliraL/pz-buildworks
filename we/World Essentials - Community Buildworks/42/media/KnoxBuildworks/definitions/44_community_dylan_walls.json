@@ -214,15 +214,15 @@
       "pieceClass": "wall"
     },
     {
-      "id": "community.dylan.walls.DylansGardenStuff02_11",
+      "id": "community.dylan.walls.DylansGardenStuff02_13",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_11",
-      "displayName": "White Garden Trellis",
+      "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_13",
+      "displayName": "White Garden Trellis Corner",
       "tooltipKey": "Tooltip_KBWCB_Trellis",
       "category": "Walls and Wall Finishes",
       "subcategory": "Walls",
       "material": "Wood",
-      "iconSprite": "WECommunity_DylansGardenStuff02_11",
+      "iconSprite": "WECommunity_DylansGardenStuff02_13",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -245,7 +245,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff02_11"
+                        "WECommunity_DylansGardenStuff02_13"
                       ]
                     ]
                   }
@@ -256,7 +256,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff02_12"
+                        "WECommunity_DylansGardenStuff02_13"
                       ]
                     ]
                   }
@@ -319,15 +319,15 @@
       "pieceClass": "wall"
     },
     {
-      "id": "community.dylan.walls.DylansGardenStuff02_13",
+      "id": "community.dylan.walls.DylansGardenStuff02_11",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_13",
-      "displayName": "White Garden Trellis Corner",
+      "translationKey": "IGUI_community_dylan_walls_DylansGardenStuff02_11",
+      "displayName": "White Garden Trellis",
       "tooltipKey": "Tooltip_KBWCB_Trellis",
       "category": "Walls and Wall Finishes",
       "subcategory": "Walls",
       "material": "Wood",
-      "iconSprite": "WECommunity_DylansGardenStuff02_13",
+      "iconSprite": "WECommunity_DylansGardenStuff02_11",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -350,7 +350,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff02_13"
+                        "WECommunity_DylansGardenStuff02_11"
                       ]
                     ]
                   }
@@ -361,7 +361,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff02_13"
+                        "WECommunity_DylansGardenStuff02_12"
                       ]
                     ]
                   }

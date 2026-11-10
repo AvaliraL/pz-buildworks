@@ -4,13 +4,13 @@
  "source": "Drazion tt_newburbs_doors_01 (lifted from ExtraNoise addDoorsToMenu). 18 wooden openable doors + 3 sliding (2 glass side-walls + 1 openable double sliding glass door). Schema mirrors live KBW 22_tikitown_doors (W_open/N_open sprites + DoorFrame.OnIsValid). Woodwork 2.",
  "buildables": [
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_0",
-   "translationKey": "IGUI_tt_newburbs_doors_01_0",
-   "displayName": "Newburbs Wooden Door 1",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_52",
+   "translationKey": "IGUI_tt_newburbs_doors_01_52",
+   "displayName": "Newburbs Wooden Door 14",
    "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_0",
+   "iconSprite": "tt_newburbs_doors_01_52",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -30,7 +30,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_0"
+            "tt_newburbs_doors_01_52"
            ]
           ]
          }
@@ -41,7 +41,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_1"
+            "tt_newburbs_doors_01_53"
            ]
           ]
          }
@@ -52,7 +52,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_0"
+            "tt_newburbs_doors_01_52"
            ]
           ]
          }
@@ -63,7 +63,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_1"
+            "tt_newburbs_doors_01_53"
            ]
           ]
          }
@@ -146,10 +146,10 @@
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_2",
-      "N_open": "tt_newburbs_doors_01_3",
-      "E_open": "tt_newburbs_doors_01_2",
-      "S_open": "tt_newburbs_doors_01_3"
+      "W_open": "tt_newburbs_doors_01_54",
+      "N_open": "tt_newburbs_doors_01_55",
+      "E_open": "tt_newburbs_doors_01_54",
+      "S_open": "tt_newburbs_doors_01_55"
      }
     }
    ],
@@ -157,20 +157,20 @@
     "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
     "name": "Newburbs Wooden Door",
     "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 1
+    "level": 14
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_0"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_52"
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_4",
-   "translationKey": "IGUI_tt_newburbs_doors_01_4",
-   "displayName": "Newburbs Wooden Door 2",
-   "tooltipKey": "Tooltip_KBWCB_Door",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_78",
+   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_78",
+   "displayName": "Newburbs Sliding Glass Door",
+   "tooltipKey": "Tooltip_KBWCB_GlassDoor",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_4",
+   "iconSprite": "tt_newburbs_doors_01_78",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -190,7 +190,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_4"
+            "tt_newburbs_doors_01_78"
            ]
           ]
          }
@@ -201,7 +201,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_5"
+            "tt_newburbs_doors_01_95"
            ]
           ]
          }
@@ -212,7 +212,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_4"
+            "tt_newburbs_doors_01_78"
            ]
           ]
          }
@@ -223,7 +223,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_5"
+            "tt_newburbs_doors_01_95"
            ]
           ]
          }
@@ -251,7 +251,17 @@
         "items": [
          "Base.Plank"
         ],
-        "amount": 4
+        "amount": 2
+       },
+       {
+        "id": "glass_pane",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 2
        },
        {
         "id": "source_material_2",
@@ -261,27 +271,7 @@
         "items": [
          "Base.Nails"
         ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
+        "amount": 3
        }
       ],
       "skills": {
@@ -291,7 +281,7 @@
      "construction": {
       "time": 200,
       "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
+      "completionSound": "BuildWoodenStructureLarge",
       "xp": {
        "Woodwork": 30
       },
@@ -300,197 +290,37 @@
      "object": {
       "isThumpable": true,
       "dismantable": true,
-      "canBarricade": true
+      "canBarricade": false
      },
      "callbacks": {
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_6",
-      "N_open": "tt_newburbs_doors_01_7",
-      "E_open": "tt_newburbs_doors_01_6",
-      "S_open": "tt_newburbs_doors_01_7"
+      "W_open": "tt_newburbs_doors_01_86",
+      "N_open": "tt_newburbs_doors_01_103",
+      "E_open": "tt_newburbs_doors_01_86",
+      "S_open": "tt_newburbs_doors_01_103"
      }
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 2
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_4"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_8",
-   "translationKey": "IGUI_tt_newburbs_doors_01_8",
-   "displayName": "Newburbs Wooden Door 3",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_8",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_8"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_9"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_8"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_9"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_10",
-      "N_open": "tt_newburbs_doors_01_11",
-      "E_open": "tt_newburbs_doors_01_10",
-      "S_open": "tt_newburbs_doors_01_11"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
+    "name": "Newburbs Sliding Glass Door",
+    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
     "level": 3
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_8"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_78"
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_12",
-   "translationKey": "IGUI_tt_newburbs_doors_01_12",
-   "displayName": "Newburbs Wooden Door 4",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_60",
+   "translationKey": "IGUI_tt_newburbs_doors_01_60",
+   "displayName": "Newburbs Wooden Door 16",
    "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_12",
+   "iconSprite": "tt_newburbs_doors_01_60",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -510,7 +340,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_12"
+            "tt_newburbs_doors_01_60"
            ]
           ]
          }
@@ -521,7 +351,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_13"
+            "tt_newburbs_doors_01_61"
            ]
           ]
          }
@@ -532,7 +362,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_12"
+            "tt_newburbs_doors_01_60"
            ]
           ]
          }
@@ -543,7 +373,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_13"
+            "tt_newburbs_doors_01_61"
            ]
           ]
          }
@@ -626,10 +456,10 @@
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_14",
-      "N_open": "tt_newburbs_doors_01_15",
-      "E_open": "tt_newburbs_doors_01_14",
-      "S_open": "tt_newburbs_doors_01_15"
+      "W_open": "tt_newburbs_doors_01_62",
+      "N_open": "tt_newburbs_doors_01_63",
+      "E_open": "tt_newburbs_doors_01_62",
+      "S_open": "tt_newburbs_doors_01_63"
      }
     }
    ],
@@ -637,1130 +467,10 @@
     "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
     "name": "Newburbs Wooden Door",
     "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 4
+    "level": 16
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_12"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_16",
-   "translationKey": "IGUI_tt_newburbs_doors_01_16",
-   "displayName": "Newburbs Wooden Door 5",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_16",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_17"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_17"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_18",
-      "N_open": "tt_newburbs_doors_01_19",
-      "E_open": "tt_newburbs_doors_01_18",
-      "S_open": "tt_newburbs_doors_01_19"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 5
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_16"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_20",
-   "translationKey": "IGUI_tt_newburbs_doors_01_20",
-   "displayName": "Newburbs Wooden Door 6",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_20",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_20"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_21"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_20"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_21"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_22",
-      "N_open": "tt_newburbs_doors_01_23",
-      "E_open": "tt_newburbs_doors_01_22",
-      "S_open": "tt_newburbs_doors_01_23"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 6
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_20"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_24",
-   "translationKey": "IGUI_tt_newburbs_doors_01_24",
-   "displayName": "Newburbs Wooden Door 7",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_24",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_24"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_25"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_24"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_25"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_26",
-      "N_open": "tt_newburbs_doors_01_27",
-      "E_open": "tt_newburbs_doors_01_26",
-      "S_open": "tt_newburbs_doors_01_27"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 7
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_24"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_28",
-   "translationKey": "IGUI_tt_newburbs_doors_01_28",
-   "displayName": "Newburbs Wooden Door 8",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_28",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_28"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_29"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_28"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_29"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_30",
-      "N_open": "tt_newburbs_doors_01_31",
-      "E_open": "tt_newburbs_doors_01_30",
-      "S_open": "tt_newburbs_doors_01_31"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 8
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_28"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_32",
-   "translationKey": "IGUI_tt_newburbs_doors_01_32",
-   "displayName": "Newburbs Wooden Door 9",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_32",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_32"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_33"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_32"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_33"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_34",
-      "N_open": "tt_newburbs_doors_01_35",
-      "E_open": "tt_newburbs_doors_01_34",
-      "S_open": "tt_newburbs_doors_01_35"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 9
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_32"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_36",
-   "translationKey": "IGUI_tt_newburbs_doors_01_36",
-   "displayName": "Newburbs Wooden Door 10",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_36",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_36"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_37"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_36"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_37"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_38",
-      "N_open": "tt_newburbs_doors_01_39",
-      "E_open": "tt_newburbs_doors_01_38",
-      "S_open": "tt_newburbs_doors_01_39"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 10
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_36"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_40",
-   "translationKey": "IGUI_tt_newburbs_doors_01_40",
-   "displayName": "Newburbs Wooden Door 11",
-   "tooltipKey": "Tooltip_KBWCB_Door",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_40",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_40"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_41"
-           ]
-          ]
-         }
-        ]
-       },
-       "E": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_40"
-           ]
-          ]
-         }
-        ]
-       },
-       "S": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_41"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 4
-       },
-       {
-        "id": "door_hinges",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Hinge"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "door_hardware",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Doorknob"
-        ],
-        "amount": 1
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureMedium",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     },
-     "callbacks": {
-      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
-     },
-     "sprites": {
-      "W_open": "tt_newburbs_doors_01_42",
-      "N_open": "tt_newburbs_doors_01_43",
-      "E_open": "tt_newburbs_doors_01_42",
-      "S_open": "tt_newburbs_doors_01_43"
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
-    "name": "Newburbs Wooden Door",
-    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 11
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_40"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_60"
    ]
   },
   {
@@ -2084,13 +794,13 @@
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_52",
-   "translationKey": "IGUI_tt_newburbs_doors_01_52",
-   "displayName": "Newburbs Wooden Door 14",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_68",
+   "translationKey": "IGUI_tt_newburbs_doors_01_68",
+   "displayName": "Newburbs Wooden Door 18",
    "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_52",
+   "iconSprite": "tt_newburbs_doors_01_68",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -2110,7 +820,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_52"
+            "tt_newburbs_doors_01_68"
            ]
           ]
          }
@@ -2121,7 +831,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_53"
+            "tt_newburbs_doors_01_69"
            ]
           ]
          }
@@ -2132,7 +842,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_52"
+            "tt_newburbs_doors_01_68"
            ]
           ]
          }
@@ -2143,7 +853,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_53"
+            "tt_newburbs_doors_01_69"
            ]
           ]
          }
@@ -2226,10 +936,10 @@
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_54",
-      "N_open": "tt_newburbs_doors_01_55",
-      "E_open": "tt_newburbs_doors_01_54",
-      "S_open": "tt_newburbs_doors_01_55"
+      "W_open": "tt_newburbs_doors_01_70",
+      "N_open": "tt_newburbs_doors_01_71",
+      "E_open": "tt_newburbs_doors_01_70",
+      "S_open": "tt_newburbs_doors_01_71"
      }
     }
    ],
@@ -2237,10 +947,769 @@
     "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
     "name": "Newburbs Wooden Door",
     "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 14
+    "level": 18
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_52"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_68"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_28",
+   "translationKey": "IGUI_tt_newburbs_doors_01_28",
+   "displayName": "Newburbs Wooden Door 8",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_28",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_29"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_28"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_29"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_30",
+      "N_open": "tt_newburbs_doors_01_31",
+      "E_open": "tt_newburbs_doors_01_30",
+      "S_open": "tt_newburbs_doors_01_31"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 8
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_28"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_0",
+   "translationKey": "IGUI_tt_newburbs_doors_01_0",
+   "displayName": "Newburbs Wooden Door 1",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_0",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_1"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_0"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_1"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_2",
+      "N_open": "tt_newburbs_doors_01_3",
+      "E_open": "tt_newburbs_doors_01_2",
+      "S_open": "tt_newburbs_doors_01_3"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 1
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_0"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_87",
+   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_87",
+   "displayName": "Newburbs Sliding Glass Door Side Wall (Divided)",
+   "tooltipKey": "Tooltip_KBWCB_GlassPanel",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_87",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_87"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_102"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "glass_pane",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
+    "name": "Newburbs Sliding Glass Door",
+    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
+    "level": 2
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_87"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_20",
+   "translationKey": "IGUI_tt_newburbs_doors_01_20",
+   "displayName": "Newburbs Wooden Door 6",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_20",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_21"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_20"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_22",
+      "N_open": "tt_newburbs_doors_01_23",
+      "E_open": "tt_newburbs_doors_01_22",
+      "S_open": "tt_newburbs_doors_01_23"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 6
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_20"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_4",
+   "translationKey": "IGUI_tt_newburbs_doors_01_4",
+   "displayName": "Newburbs Wooden Door 2",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_4",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_5"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_4"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_5"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_6",
+      "N_open": "tt_newburbs_doors_01_7",
+      "E_open": "tt_newburbs_doors_01_6",
+      "S_open": "tt_newburbs_doors_01_7"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 2
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_4"
    ]
   },
   {
@@ -2404,13 +1873,13 @@
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_60",
-   "translationKey": "IGUI_tt_newburbs_doors_01_60",
-   "displayName": "Newburbs Wooden Door 16",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_8",
+   "translationKey": "IGUI_tt_newburbs_doors_01_8",
+   "displayName": "Newburbs Wooden Door 3",
    "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_60",
+   "iconSprite": "tt_newburbs_doors_01_8",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -2430,7 +1899,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_60"
+            "tt_newburbs_doors_01_8"
            ]
           ]
          }
@@ -2441,7 +1910,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_61"
+            "tt_newburbs_doors_01_9"
            ]
           ]
          }
@@ -2452,7 +1921,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_60"
+            "tt_newburbs_doors_01_8"
            ]
           ]
          }
@@ -2463,7 +1932,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_61"
+            "tt_newburbs_doors_01_9"
            ]
           ]
          }
@@ -2546,10 +2015,10 @@
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_62",
-      "N_open": "tt_newburbs_doors_01_63",
-      "E_open": "tt_newburbs_doors_01_62",
-      "S_open": "tt_newburbs_doors_01_63"
+      "W_open": "tt_newburbs_doors_01_10",
+      "N_open": "tt_newburbs_doors_01_11",
+      "E_open": "tt_newburbs_doors_01_10",
+      "S_open": "tt_newburbs_doors_01_11"
      }
     }
    ],
@@ -2557,10 +2026,609 @@
     "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
     "name": "Newburbs Wooden Door",
     "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 16
+    "level": 3
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_60"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_8"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_32",
+   "translationKey": "IGUI_tt_newburbs_doors_01_32",
+   "displayName": "Newburbs Wooden Door 9",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_32",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_33"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_32"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_33"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_34",
+      "N_open": "tt_newburbs_doors_01_35",
+      "E_open": "tt_newburbs_doors_01_34",
+      "S_open": "tt_newburbs_doors_01_35"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 9
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_32"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_16",
+   "translationKey": "IGUI_tt_newburbs_doors_01_16",
+   "displayName": "Newburbs Wooden Door 5",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_16",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_17"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_18",
+      "N_open": "tt_newburbs_doors_01_19",
+      "E_open": "tt_newburbs_doors_01_18",
+      "S_open": "tt_newburbs_doors_01_19"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 5
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_16"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_36",
+   "translationKey": "IGUI_tt_newburbs_doors_01_36",
+   "displayName": "Newburbs Wooden Door 10",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_36",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_37"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_36"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_37"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_38",
+      "N_open": "tt_newburbs_doors_01_39",
+      "E_open": "tt_newburbs_doors_01_38",
+      "S_open": "tt_newburbs_doors_01_39"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 10
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_36"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_79",
+   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_79",
+   "displayName": "Newburbs Sliding Glass Door Side Wall",
+   "tooltipKey": "Tooltip_KBWCB_GlassPanel",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_79",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_79"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_94"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "glass_pane",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
+    "name": "Newburbs Sliding Glass Door",
+    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
+    "level": 1
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_79"
    ]
   },
   {
@@ -2724,13 +2792,13 @@
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_68",
-   "translationKey": "IGUI_tt_newburbs_doors_01_68",
-   "displayName": "Newburbs Wooden Door 18",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_24",
+   "translationKey": "IGUI_tt_newburbs_doors_01_24",
+   "displayName": "Newburbs Wooden Door 7",
    "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_68",
+   "iconSprite": "tt_newburbs_doors_01_24",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -2750,7 +2818,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_68"
+            "tt_newburbs_doors_01_24"
            ]
           ]
          }
@@ -2761,7 +2829,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_69"
+            "tt_newburbs_doors_01_25"
            ]
           ]
          }
@@ -2772,7 +2840,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_68"
+            "tt_newburbs_doors_01_24"
            ]
           ]
          }
@@ -2783,7 +2851,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_69"
+            "tt_newburbs_doors_01_25"
            ]
           ]
          }
@@ -2866,10 +2934,10 @@
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_70",
-      "N_open": "tt_newburbs_doors_01_71",
-      "E_open": "tt_newburbs_doors_01_70",
-      "S_open": "tt_newburbs_doors_01_71"
+      "W_open": "tt_newburbs_doors_01_26",
+      "N_open": "tt_newburbs_doors_01_27",
+      "E_open": "tt_newburbs_doors_01_26",
+      "S_open": "tt_newburbs_doors_01_27"
      }
     }
    ],
@@ -2877,20 +2945,20 @@
     "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
     "name": "Newburbs Wooden Door",
     "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
-    "level": 18
+    "level": 7
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_68"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_24"
    ]
   },
   {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_79",
-   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_79",
-   "displayName": "Newburbs Sliding Glass Door Side Wall",
-   "tooltipKey": "Tooltip_KBWCB_GlassPanel",
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_40",
+   "translationKey": "IGUI_tt_newburbs_doors_01_40",
+   "displayName": "Newburbs Wooden Door 11",
+   "tooltipKey": "Tooltip_KBWCB_Door",
    "category": "Doors",
    "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_79",
+   "iconSprite": "tt_newburbs_doors_01_40",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -2910,7 +2978,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_79"
+            "tt_newburbs_doors_01_40"
            ]
           ]
          }
@@ -2921,245 +2989,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_94"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "glass_pane",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.GlassPanel"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
-    "name": "Newburbs Sliding Glass Door",
-    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
-    "level": 1
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_79"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_87",
-   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_87",
-   "displayName": "Newburbs Sliding Glass Door Side Wall (Divided)",
-   "tooltipKey": "Tooltip_KBWCB_GlassPanel",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_87",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_87"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_102"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "glass_pane",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.GlassPanel"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 200,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 30
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
-    "name": "Newburbs Sliding Glass Door",
-    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
-    "level": 2
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_87"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_78",
-   "translationKey": "IGUI_tt_newburbs_doors_01_sliding_78",
-   "displayName": "Newburbs Sliding Glass Door",
-   "tooltipKey": "Tooltip_KBWCB_GlassDoor",
-   "category": "Doors",
-   "subcategory": "Newburbs Doors",
-   "iconSprite": "tt_newburbs_doors_01_78",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-doors"
-   ],
-   "stages": [
-    {
-     "id": "built",
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_78"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tt_newburbs_doors_01_95"
+            "tt_newburbs_doors_01_41"
            ]
           ]
          }
@@ -3170,7 +3000,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_78"
+            "tt_newburbs_doors_01_40"
            ]
           ]
          }
@@ -3181,7 +3011,7 @@
          {
           "rows": [
            [
-            "tt_newburbs_doors_01_95"
+            "tt_newburbs_doors_01_41"
            ]
           ]
          }
@@ -3209,17 +3039,7 @@
         "items": [
          "Base.Plank"
         ],
-        "amount": 2
-       },
-       {
-        "id": "glass_pane",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.GlassPanel"
-        ],
-        "amount": 2
+        "amount": 4
        },
        {
         "id": "source_material_2",
@@ -3229,7 +3049,27 @@
         "items": [
          "Base.Nails"
         ],
-        "amount": 3
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
        }
       ],
       "skills": {
@@ -3239,7 +3079,7 @@
      "construction": {
       "time": 200,
       "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
+      "completionSound": "BuildWoodenStructureMedium",
       "xp": {
        "Woodwork": 30
       },
@@ -3248,27 +3088,187 @@
      "object": {
       "isThumpable": true,
       "dismantable": true,
-      "canBarricade": false
+      "canBarricade": true
      },
      "callbacks": {
       "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
      },
      "sprites": {
-      "W_open": "tt_newburbs_doors_01_86",
-      "N_open": "tt_newburbs_doors_01_103",
-      "E_open": "tt_newburbs_doors_01_86",
-      "S_open": "tt_newburbs_doors_01_103"
+      "W_open": "tt_newburbs_doors_01_42",
+      "N_open": "tt_newburbs_doors_01_43",
+      "E_open": "tt_newburbs_doors_01_42",
+      "S_open": "tt_newburbs_doors_01_43"
      }
     }
    ],
    "group": {
-    "id": "worldessentials.tikitown.family_84cc3754eb9af3da",
-    "name": "Newburbs Sliding Glass Door",
-    "translationKey": "IGUI_WETiki_family_84cc3754eb9af3da",
-    "level": 3
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 11
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_sliding_78"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_40"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_doors.tt_newburbs_doors_01_12",
+   "translationKey": "IGUI_tt_newburbs_doors_01_12",
+   "displayName": "Newburbs Wooden Door 4",
+   "tooltipKey": "Tooltip_KBWCB_Door",
+   "category": "Doors",
+   "subcategory": "Newburbs Doors",
+   "iconSprite": "tt_newburbs_doors_01_12",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-doors"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_13"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_12"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tt_newburbs_doors_01_13"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "door_hinges",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Hinge"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "door_hardware",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Doorknob"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 200,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureMedium",
+      "xp": {
+       "Woodwork": 30
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true
+     },
+     "callbacks": {
+      "onIsValid": "KnoxBuildworks.JsonCallbacks.DoorFrame.OnIsValid"
+     },
+     "sprites": {
+      "W_open": "tt_newburbs_doors_01_14",
+      "N_open": "tt_newburbs_doors_01_15",
+      "E_open": "tt_newburbs_doors_01_14",
+      "S_open": "tt_newburbs_doors_01_15"
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_ebe0f640ffba7b87",
+    "name": "Newburbs Wooden Door",
+    "translationKey": "IGUI_WETiki_family_ebe0f640ffba7b87",
+    "level": 4
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_doors.tt_newburbs_doors_01_12"
    ]
   }
  ]

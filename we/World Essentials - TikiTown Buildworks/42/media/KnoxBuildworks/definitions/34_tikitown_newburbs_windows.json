@@ -4,14 +4,14 @@
  "source": "Drazion tikitown_newburbs_windows_01 (renamed from en_newburbs_windows_01; NOTE Drazion used tikitown_ prefix for THIS sheet, not tt_newburbs_ like the rest of the family). Lifted from ExtraNoise addWindowsPlusToMenu, 13 standalone windows. onBuildWindow. Woodwork 2.",
  "buildables": [
   {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_0",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_0",
-   "displayName": "Newburbs Window 1",
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_51",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_51",
+   "displayName": "Newburbs Window 10",
    "tooltipKey": "Tooltip_KBW_Shared_Window",
    "category": "Windows",
    "subcategory": "Newburbs Windows",
    "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_0",
+   "iconSprite": "tikitown_newburbs_windows_01_51",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -34,7 +34,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_0"
+            "tikitown_newburbs_windows_01_51"
            ]
           ]
          }
@@ -45,7 +45,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_4"
+            "tikitown_newburbs_windows_01_55"
            ]
           ]
          }
@@ -111,21 +111,21 @@
     "id": "worldessentials.tikitown.family_3d700523de2df4a6",
     "name": "Newburbs Window",
     "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 1
+    "level": 10
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_0"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_51"
    ]
   },
   {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_8",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_8",
-   "displayName": "Newburbs Window 2",
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_82",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_82",
+   "displayName": "Newburbs Window 13",
    "tooltipKey": "Tooltip_KBW_Shared_Window",
    "category": "Windows",
    "subcategory": "Newburbs Windows",
    "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_8",
+   "iconSprite": "tikitown_newburbs_windows_01_82",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -148,7 +148,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_8"
+            "tikitown_newburbs_windows_01_82"
            ]
           ]
          }
@@ -159,7 +159,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_12"
+            "tikitown_newburbs_windows_01_84"
            ]
           ]
          }
@@ -225,466 +225,10 @@
     "id": "worldessentials.tikitown.family_3d700523de2df4a6",
     "name": "Newburbs Window",
     "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 2
+    "level": 13
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_8"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_16",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_16",
-   "displayName": "Newburbs Window 3",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_16",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_16"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_22"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 3
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_16"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_17",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_17",
-   "displayName": "Newburbs Window 4",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_17",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_17"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_21"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 4
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_17"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_18",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_18",
-   "displayName": "Newburbs Window 5",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_18",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_18"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_20"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 5
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_18"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_19",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_19",
-   "displayName": "Newburbs Window 6",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_19",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_19"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_23"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 6
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_19"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_82"
    ]
   },
   {
@@ -802,14 +346,14 @@
    ]
   },
   {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_49",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_49",
-   "displayName": "Newburbs Window 8",
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_81",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_81",
+   "displayName": "Newburbs Window 12",
    "tooltipKey": "Tooltip_KBW_Shared_Window",
    "category": "Windows",
    "subcategory": "Newburbs Windows",
    "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_49",
+   "iconSprite": "tikitown_newburbs_windows_01_81",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -832,7 +376,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_49"
+            "tikitown_newburbs_windows_01_81"
            ]
           ]
          }
@@ -843,7 +387,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_53"
+            "tikitown_newburbs_windows_01_85"
            ]
           ]
          }
@@ -909,238 +453,10 @@
     "id": "worldessentials.tikitown.family_3d700523de2df4a6",
     "name": "Newburbs Window",
     "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 8
+    "level": 12
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_49"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_50",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_50",
-   "displayName": "Newburbs Window 9",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_50",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_50"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_52"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 9
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_50"
-   ]
-  },
-  {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_51",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_51",
-   "displayName": "Newburbs Window 10",
-   "tooltipKey": "Tooltip_KBW_Shared_Window",
-   "category": "Windows",
-   "subcategory": "Newburbs Windows",
-   "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_51",
-   "placement": {
-    "kind": "wall",
-    "requiresFloor": false
-   },
-   "tags": [
-    "tikitown",
-    "drazion",
-    "newburbs-windows"
-   ],
-   "pieceClass": "windowsframe",
-   "stages": [
-    {
-     "id": "built",
-     "health": 180,
-     "skillBaseHealth": 10,
-     "geometry": {
-      "faces": {
-       "W": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_51"
-           ]
-          ]
-         }
-        ]
-       },
-       "N": {
-        "layers": [
-         {
-          "rows": [
-           [
-            "tikitown_newburbs_windows_01_55"
-           ]
-          ]
-         }
-        ]
-       }
-      }
-     },
-     "requirements": {
-      "inputs": [
-       {
-        "id": "tool_hammer",
-        "role": "tool",
-        "mode": "keep",
-        "resourceType": "Item",
-        "tags": [
-         "base:hammer"
-        ],
-        "amount": 1
-       },
-       {
-        "id": "source_material_1",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Plank"
-        ],
-        "amount": 2
-       },
-       {
-        "id": "source_material_2",
-        "role": "material",
-        "mode": "consume",
-        "resourceType": "Item",
-        "items": [
-         "Base.Nails"
-        ],
-        "amount": 3
-       }
-      ],
-      "skills": {
-       "Woodwork": 2
-      }
-     },
-     "construction": {
-      "time": 150,
-      "timedAction": "BuildWallHammer",
-      "completionSound": "BuildWoodenStructureLarge",
-      "xp": {
-       "Woodwork": 25
-      },
-      "category": "Carpentry"
-     },
-     "object": {
-      "isThumpable": true,
-      "dismantable": true,
-      "canBarricade": true,
-      "hoppable": true
-     }
-    }
-   ],
-   "group": {
-    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
-    "name": "Newburbs Window",
-    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 10
-   },
-   "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_51"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_81"
    ]
   },
   {
@@ -1258,14 +574,14 @@
    ]
   },
   {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_81",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_81",
-   "displayName": "Newburbs Window 12",
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_49",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_49",
+   "displayName": "Newburbs Window 8",
    "tooltipKey": "Tooltip_KBW_Shared_Window",
    "category": "Windows",
    "subcategory": "Newburbs Windows",
    "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_81",
+   "iconSprite": "tikitown_newburbs_windows_01_49",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -1288,7 +604,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_81"
+            "tikitown_newburbs_windows_01_49"
            ]
           ]
          }
@@ -1299,7 +615,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_85"
+            "tikitown_newburbs_windows_01_53"
            ]
           ]
          }
@@ -1365,21 +681,21 @@
     "id": "worldessentials.tikitown.family_3d700523de2df4a6",
     "name": "Newburbs Window",
     "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 12
+    "level": 8
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_81"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_49"
    ]
   },
   {
-   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_82",
-   "translationKey": "IGUI_tikitown_newburbs_windows_01_82",
-   "displayName": "Newburbs Window 13",
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_0",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_0",
+   "displayName": "Newburbs Window 1",
    "tooltipKey": "Tooltip_KBW_Shared_Window",
    "category": "Windows",
    "subcategory": "Newburbs Windows",
    "material": "Wood",
-   "iconSprite": "tikitown_newburbs_windows_01_82",
+   "iconSprite": "tikitown_newburbs_windows_01_0",
    "placement": {
     "kind": "wall",
     "requiresFloor": false
@@ -1402,7 +718,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_82"
+            "tikitown_newburbs_windows_01_0"
            ]
           ]
          }
@@ -1413,7 +729,7 @@
          {
           "rows": [
            [
-            "tikitown_newburbs_windows_01_84"
+            "tikitown_newburbs_windows_01_4"
            ]
           ]
          }
@@ -1479,10 +795,694 @@
     "id": "worldessentials.tikitown.family_3d700523de2df4a6",
     "name": "Newburbs Window",
     "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
-    "level": 13
+    "level": 1
    },
    "aliases": [
-    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_82"
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_0"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_16",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_16",
+   "displayName": "Newburbs Window 3",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_16",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_16"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_22"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 3
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_16"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_18",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_18",
+   "displayName": "Newburbs Window 5",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_18",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_18"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_20"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 5
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_18"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_17",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_17",
+   "displayName": "Newburbs Window 4",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_17",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_17"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_21"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 4
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_17"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_8",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_8",
+   "displayName": "Newburbs Window 2",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_8",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_8"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_12"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 2
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_8"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_50",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_50",
+   "displayName": "Newburbs Window 9",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_50",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_50"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_52"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 9
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_50"
+   ]
+  },
+  {
+   "id": "tikitown.newburbs_windows.tikitown_newburbs_windows_01_19",
+   "translationKey": "IGUI_tikitown_newburbs_windows_01_19",
+   "displayName": "Newburbs Window 6",
+   "tooltipKey": "Tooltip_KBW_Shared_Window",
+   "category": "Windows",
+   "subcategory": "Newburbs Windows",
+   "material": "Wood",
+   "iconSprite": "tikitown_newburbs_windows_01_19",
+   "placement": {
+    "kind": "wall",
+    "requiresFloor": false
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "newburbs-windows"
+   ],
+   "pieceClass": "windowsframe",
+   "stages": [
+    {
+     "id": "built",
+     "health": 180,
+     "skillBaseHealth": 10,
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_19"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_newburbs_windows_01_23"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_hammer",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:hammer"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Nails"
+        ],
+        "amount": 3
+       }
+      ],
+      "skills": {
+       "Woodwork": 2
+      }
+     },
+     "construction": {
+      "time": 150,
+      "timedAction": "BuildWallHammer",
+      "completionSound": "BuildWoodenStructureLarge",
+      "xp": {
+       "Woodwork": 25
+      },
+      "category": "Carpentry"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "canBarricade": true,
+      "hoppable": true
+     }
+    }
+   ],
+   "group": {
+    "id": "worldessentials.tikitown.family_3d700523de2df4a6",
+    "name": "Newburbs Window",
+    "translationKey": "IGUI_WETiki_family_3d700523de2df4a6",
+    "level": 6
+   },
+   "aliases": [
+    "worldessentials.tikitown.handoff.tikitown.newburbs_windows.tikitown_newburbs_windows_01_19"
    ]
   }
  ]

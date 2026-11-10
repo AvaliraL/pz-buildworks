@@ -138,8 +138,170 @@
      "container": {
       "type": "shelves",
       "capacity": 40
-     }
+     },
+     "allowSpriteReuse": true
     }
+   ],
+   "allowSpriteReuse": true
+  },
+  {
+   "id": "worldessentials.tikitown.tikitown_furniture_03_41.reinforced",
+   "translationKey": "IGUI_WETiki_tikitown_furniture_03_41_reinforced",
+   "displayName": "Bookshelf - In-Wall (Reinforced)",
+   "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+   "category": "Furniture and Appliances",
+   "subcategory": "Storage",
+   "iconSprite": "tikitown_furniture_03_41",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "container-overlay"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_40"
+           ]
+          ]
+         }
+        ]
+       },
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_41"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown_furniture_03_41"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "welding_mask",
+        "role": "tool",
+        "mode": "keep",
+        "tags": [
+         "base:weldingmask"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "torch_fuel",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.BlowTorch"
+        ],
+        "uses": 4
+       },
+       {
+        "id": "small_sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "sheet_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SheetMetal"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "scrap_metal",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ScrapMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "welding_rods",
+        "role": "consumable",
+        "mode": "drain",
+        "resourceType": "Item",
+        "items": [
+         "Base.WeldingRods"
+        ],
+        "uses": 4
+       }
+      ],
+      "skills": {
+       "MetalWelding": 7
+      }
+     },
+     "construction": {
+      "time": 50,
+      "timedAction": "BuildMetalStructureMedium",
+      "xp": {
+       "MetalWelding": 70
+      },
+      "category": "Welding"
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     },
+     "container": {
+      "type": "shelves",
+      "capacity": 100
+     },
+     "allowSpriteReuse": true
+    }
+   ],
+   "allowSpriteReuse": true,
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
    ]
   }
  ]

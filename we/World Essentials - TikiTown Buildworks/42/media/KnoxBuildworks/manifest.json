@@ -22,6 +22,8 @@
     "media/KnoxBuildworks/definitions/39_tikitown_wall_overlays.json",
     "media/KnoxBuildworks/definitions/40_tikitown_lower_walls.json",
     "media/KnoxBuildworks/definitions/41_tikitown_roof_slope_walls.json",
-    "media/KnoxBuildworks/definitions/42_tikitown_garage_trim.json"
+    "media/KnoxBuildworks/definitions/42_tikitown_garage_trim.json",
+    "media/KnoxBuildworks/definitions/43_tikitown_wall_paint_cladding.json",
+    "media/KnoxBuildworks/definitions/44_tikitown_wall_trim.json"
   ]
 }

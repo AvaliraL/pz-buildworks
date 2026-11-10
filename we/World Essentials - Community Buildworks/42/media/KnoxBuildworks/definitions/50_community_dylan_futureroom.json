@@ -136,6 +136,521 @@
       ]
     },
     {
+      "id": "community.dylan.futureroom.screen_26",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_screen_26",
+      "displayName": "Earth Viewscreen 3",
+      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Space Viewscreens",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_26",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "viewscreen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityViewscreensN_2"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electronics",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildWallNoTool",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 20
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.futureroom.screen_29",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_screen_29",
+      "displayName": "Planet Viewscreen 3",
+      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Space Viewscreens",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_29",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "viewscreen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_29"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityViewscreensN_5"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electronics",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildWallNoTool",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 20
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.futureroom.screen_25",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_screen_25",
+      "displayName": "Earth Viewscreen 2",
+      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Space Viewscreens",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_25",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "viewscreen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_25"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityViewscreensN_1"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electronics",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildWallNoTool",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 20
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.futureroom.screen_24",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_screen_24",
+      "displayName": "Earth Viewscreen 1",
+      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Space Viewscreens",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_24",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "viewscreen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_24"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityViewscreensN_0"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electronics",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildWallNoTool",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 20
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.futureroom.screen_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_screen_34",
+      "displayName": "Frosted Glass Panel 3",
+      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
+      "category": "Decorations and Landscaping",
+      "subcategory": "Frosted Panels",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_34",
+      "placement": {
+        "kind": "object",
+        "needToBeAgainstWall": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "viewscreen"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityViewscreensN_8"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "electronics",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ElectronicsScrap"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Electricity": 2
+            }
+          },
+          "construction": {
+            "time": 120,
+            "timedAction": "BuildWallNoTool",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "Electricity": 20
+            },
+            "category": "Electrical"
+          },
+          "object": {
+            "isThumpable": false,
+            "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
       "id": "community.dylan.futureroom.dresser",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_futureroom_dresser",
@@ -381,117 +896,15 @@
       ]
     },
     {
-      "id": "community.dylan.futureroom.lowtable",
+      "id": "community.dylan.futureroom.screen_32",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_lowtable",
-      "displayName": "Sci-Fi Coffee Table",
-      "tooltipKey": "Tooltip_KBWCB_Table",
-      "category": "Furniture and Appliances",
-      "subcategory": "Tables",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_20",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "table"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_20"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_21"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Screws"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 3
-            }
-          },
-          "construction": {
-            "time": 100,
-            "timedAction": "BuildWallMetal",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 25
-            },
-            "category": "Welding"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.futureroom.screen_24",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_24",
-      "displayName": "Earth Viewscreen 1",
+      "translationKey": "IGUI_community_dylan_futureroom_screen_32",
+      "displayName": "Frosted Glass Panel 1",
       "tooltipKey": "Tooltip_KBWCB_Viewscreen",
       "category": "Decorations and Landscaping",
-      "subcategory": "Space Viewscreens",
+      "subcategory": "Frosted Panels",
       "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_24",
+      "iconSprite": "WECommunity_DylansFutureRoom01_32",
       "placement": {
         "kind": "object",
         "needToBeAgainstWall": true
@@ -512,7 +925,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansFutureRoom01_24"
+                        "WECommunity_DylansFutureRoom01_32"
                       ]
                     ]
                   }
@@ -523,316 +936,7 @@
                   {
                     "rows": [
                       [
-                        "KBWCommunityViewscreensN_0"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "electronics",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ElectronicsScrap"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Electricity": 2
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildWallNoTool",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "Electricity": 20
-            },
-            "category": "Electrical"
-          },
-          "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.futureroom.screen_25",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_25",
-      "displayName": "Earth Viewscreen 2",
-      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
-      "category": "Decorations and Landscaping",
-      "subcategory": "Space Viewscreens",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_25",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "viewscreen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_25"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityViewscreensN_1"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "electronics",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ElectronicsScrap"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Electricity": 2
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildWallNoTool",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "Electricity": 20
-            },
-            "category": "Electrical"
-          },
-          "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.futureroom.screen_26",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_26",
-      "displayName": "Earth Viewscreen 3",
-      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
-      "category": "Decorations and Landscaping",
-      "subcategory": "Space Viewscreens",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_26",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "viewscreen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_26"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityViewscreensN_2"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "electronics",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ElectronicsScrap"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Electricity": 2
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildWallNoTool",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "Electricity": 20
-            },
-            "category": "Electrical"
-          },
-          "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.futureroom.screen_27",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_27",
-      "displayName": "Planet Viewscreen 1",
-      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
-      "category": "Decorations and Landscaping",
-      "subcategory": "Space Viewscreens",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_27",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "viewscreen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_27"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityViewscreensN_3"
+                        "KBWCommunityViewscreensN_6"
                       ]
                     ]
                   }
@@ -998,212 +1102,6 @@
       ]
     },
     {
-      "id": "community.dylan.futureroom.screen_29",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_29",
-      "displayName": "Planet Viewscreen 3",
-      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
-      "category": "Decorations and Landscaping",
-      "subcategory": "Space Viewscreens",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_29",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "viewscreen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_29"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityViewscreensN_5"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "electronics",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ElectronicsScrap"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Electricity": 2
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildWallNoTool",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "Electricity": 20
-            },
-            "category": "Electrical"
-          },
-          "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.futureroom.screen_32",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_32",
-      "displayName": "Frosted Glass Panel 1",
-      "tooltipKey": "Tooltip_KBWCB_Viewscreen",
-      "category": "Decorations and Landscaping",
-      "subcategory": "Frosted Panels",
-      "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_32",
-      "placement": {
-        "kind": "object",
-        "needToBeAgainstWall": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "future-room",
-        "viewscreen"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansFutureRoom01_32"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityViewscreensN_6"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_screwdriver",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:screwdriver"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "electronics",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ElectronicsScrap"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Electricity": 2
-            }
-          },
-          "construction": {
-            "time": 120,
-            "timedAction": "BuildWallNoTool",
-            "completionSound": "BuildMetalStructureMedium",
-            "xp": {
-              "Electricity": 20
-            },
-            "category": "Electrical"
-          },
-          "object": {
-            "isThumpable": false,
-            "canPassThrough": true,
-            "dismantable": true
-          }
-        }
-      ]
-    },
-    {
       "id": "community.dylan.futureroom.screen_33",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_futureroom_screen_33",
@@ -1307,15 +1205,15 @@
       ]
     },
     {
-      "id": "community.dylan.futureroom.screen_34",
+      "id": "community.dylan.futureroom.screen_27",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_futureroom_screen_34",
-      "displayName": "Frosted Glass Panel 3",
+      "translationKey": "IGUI_community_dylan_futureroom_screen_27",
+      "displayName": "Planet Viewscreen 1",
       "tooltipKey": "Tooltip_KBWCB_Viewscreen",
       "category": "Decorations and Landscaping",
-      "subcategory": "Frosted Panels",
+      "subcategory": "Space Viewscreens",
       "material": "Metal",
-      "iconSprite": "WECommunity_DylansFutureRoom01_34",
+      "iconSprite": "WECommunity_DylansFutureRoom01_27",
       "placement": {
         "kind": "object",
         "needToBeAgainstWall": true
@@ -1336,7 +1234,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansFutureRoom01_34"
+                        "WECommunity_DylansFutureRoom01_27"
                       ]
                     ]
                   }
@@ -1347,7 +1245,7 @@
                   {
                     "rows": [
                       [
-                        "KBWCommunityViewscreensN_8"
+                        "KBWCommunityViewscreensN_3"
                       ]
                     ]
                   }
@@ -1404,6 +1302,108 @@
           "object": {
             "isThumpable": false,
             "canPassThrough": true,
+            "dismantable": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.futureroom.lowtable",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_futureroom_lowtable",
+      "displayName": "Sci-Fi Coffee Table",
+      "tooltipKey": "Tooltip_KBWCB_Table",
+      "category": "Furniture and Appliances",
+      "subcategory": "Tables",
+      "material": "Metal",
+      "iconSprite": "WECommunity_DylansFutureRoom01_20",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "future-room",
+        "table"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_20"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansFutureRoom01_21"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_screwdriver",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:screwdriver"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Screws"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 3
+            }
+          },
+          "construction": {
+            "time": 100,
+            "timedAction": "BuildWallMetal",
+            "completionSound": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 25
+            },
+            "category": "Welding"
+          },
+          "object": {
+            "isThumpable": true,
             "dismantable": true
           }
         }

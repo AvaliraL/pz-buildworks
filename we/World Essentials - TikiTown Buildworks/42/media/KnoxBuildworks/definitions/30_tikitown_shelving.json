@@ -128,7 +128,8 @@
           "container": {
             "type": "shelves",
             "capacity": 40
-          }
+          },
+          "allowSpriteReuse": true
         }
       ],
       "group": {
@@ -136,16 +137,17 @@
         "name": "Bookshelf",
         "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
         "level": 1
-      }
+      },
+      "allowSpriteReuse": true
     },
     {
-      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_4",
-      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_4",
-      "displayName": "Tall Bookshelf - Oak",
-      "tooltipKey": "Tooltip_KBWCB_Storage",
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_0.reinforced",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_0_reinforced",
+      "displayName": "Tall Bookshelf - Walnut (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
       "category": "Furniture and Appliances",
       "subcategory": "Storage",
-      "iconSprite": "furniture_shelving_tterika_01_4",
+      "iconSprite": "furniture_shelving_tterika_01_0",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -165,7 +167,7 @@
                   {
                     "rows": [
                       [
-                        "furniture_shelving_tterika_01_4"
+                        "furniture_shelving_tterika_01_0"
                       ]
                     ]
                   }
@@ -176,7 +178,7 @@
                   {
                     "rows": [
                       [
-                        "furniture_shelving_tterika_01_5"
+                        "furniture_shelving_tterika_01_1"
                       ]
                     ]
                   }
@@ -187,7 +189,7 @@
                   {
                     "rows": [
                       [
-                        "furniture_shelving_tterika_01_6"
+                        "furniture_shelving_tterika_01_2"
                       ]
                     ]
                   }
@@ -198,7 +200,7 @@
                   {
                     "rows": [
                       [
-                        "furniture_shelving_tterika_01_7"
+                        "furniture_shelving_tterika_01_3"
                       ]
                     ]
                   }
@@ -209,52 +211,76 @@
           "requirements": {
             "inputs": [
               {
-                "id": "tool_hammer",
+                "id": "welding_mask",
                 "role": "tool",
                 "mode": "keep",
-                "resourceType": "Item",
                 "tags": [
-                  "base:hammer"
+                  "base:weldingmask"
                 ],
-                "amount": 1,
-                "flags": [
-                  "Prop1",
-                  "MayDegradeVeryLight"
-                ]
+                "amount": 1
               },
               {
-                "id": "lumber",
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
                 "role": "material",
                 "mode": "consume",
                 "resourceType": "Item",
                 "items": [
-                  "Base.Plank"
+                  "Base.SmallSheetMetal"
                 ],
-                "amount": 4
+                "amount": 2
               },
               {
-                "id": "fasteners_nails",
+                "id": "sheet_metal",
                 "role": "material",
                 "mode": "consume",
                 "resourceType": "Item",
                 "items": [
-                  "Base.Nails"
+                  "Base.SheetMetal"
                 ],
-                "amount": 4
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
               }
             ],
             "skills": {
-              "Woodwork": 4
+              "MetalWelding": 7
             }
           },
           "construction": {
-            "time": 200,
-            "timedAction": "BuildWoodenStructureMedium",
-            "completionSound": "BuildWoodenStructureLarge",
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
             "xp": {
-              "Woodwork": 40
+              "MetalWelding": 70
             },
-            "category": "Carpentry"
+            "category": "Welding"
           },
           "object": {
             "canBePadlocked": true,
@@ -262,151 +288,22 @@
           },
           "container": {
             "type": "shelves",
-            "capacity": 40
-          }
+            "capacity": 100
+          },
+          "allowSpriteReuse": true
         }
       ],
       "group": {
         "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
         "name": "Bookshelf",
         "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
-        "level": 2
-      }
-    },
-    {
-      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_8",
-      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_8",
-      "displayName": "Tall Bookshelf - Charcoal",
-      "tooltipKey": "Tooltip_KBWCB_Storage",
-      "category": "Furniture and Appliances",
-      "subcategory": "Storage",
-      "iconSprite": "furniture_shelving_tterika_01_8",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
+        "level": 5
       },
-      "tags": [
-        "tikitown",
-        "drazion",
-        "world-essentials"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "furniture_shelving_tterika_01_8"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "furniture_shelving_tterika_01_9"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "furniture_shelving_tterika_01_10"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "furniture_shelving_tterika_01_11"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1,
-                "flags": [
-                  "Prop1",
-                  "MayDegradeVeryLight"
-                ]
-              },
-              {
-                "id": "lumber",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "fasteners_nails",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 200,
-            "timedAction": "BuildWoodenStructureMedium",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 40
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "canBePadlocked": true,
-            "isProp": true
-          },
-          "container": {
-            "type": "shelves",
-            "capacity": 40
-          }
-        }
-      ],
-      "group": {
-        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
-        "name": "Bookshelf",
-        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
-        "level": 3
-      }
+      "allowSpriteReuse": true,
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ]
     },
     {
       "id": "worldessentials.tikitown.furniture_shelving_tterika_01_12",
@@ -533,7 +430,8 @@
           "container": {
             "type": "shelves",
             "capacity": 40
-          }
+          },
+          "allowSpriteReuse": true
         }
       ],
       "group": {
@@ -541,7 +439,777 @@
         "name": "Bookshelf",
         "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
         "level": 4
-      }
+      },
+      "allowSpriteReuse": true
+    },
+    {
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_8.reinforced",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_8_reinforced",
+      "displayName": "Tall Bookshelf - Charcoal (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Furniture and Appliances",
+      "subcategory": "Storage",
+      "iconSprite": "furniture_shelving_tterika_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          },
+          "object": {
+            "canBePadlocked": true,
+            "isProp": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true
+        }
+      ],
+      "group": {
+        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+        "name": "Bookshelf",
+        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+        "level": 7
+      },
+      "allowSpriteReuse": true,
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ]
+    },
+    {
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_12.reinforced",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_12_reinforced",
+      "displayName": "Tall Bookshelf - White (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Furniture and Appliances",
+      "subcategory": "Storage",
+      "iconSprite": "furniture_shelving_tterika_01_12",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_13"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_15"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          },
+          "object": {
+            "canBePadlocked": true,
+            "isProp": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true
+        }
+      ],
+      "group": {
+        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+        "name": "Bookshelf",
+        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+        "level": 8
+      },
+      "allowSpriteReuse": true,
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ]
+    },
+    {
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_4.reinforced",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_4_reinforced",
+      "displayName": "Tall Bookshelf - Oak (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Furniture and Appliances",
+      "subcategory": "Storage",
+      "iconSprite": "furniture_shelving_tterika_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          },
+          "object": {
+            "canBePadlocked": true,
+            "isProp": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true
+        }
+      ],
+      "group": {
+        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+        "name": "Bookshelf",
+        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+        "level": 6
+      },
+      "allowSpriteReuse": true,
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ]
+    },
+    {
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_8",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_8",
+      "displayName": "Tall Bookshelf - Charcoal",
+      "tooltipKey": "Tooltip_KBWCB_Storage",
+      "category": "Furniture and Appliances",
+      "subcategory": "Storage",
+      "iconSprite": "furniture_shelving_tterika_01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_9"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_11"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1,
+                "flags": [
+                  "Prop1",
+                  "MayDegradeVeryLight"
+                ]
+              },
+              {
+                "id": "lumber",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "fasteners_nails",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWoodenStructureMedium",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "canBePadlocked": true,
+            "isProp": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ],
+      "group": {
+        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+        "name": "Bookshelf",
+        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+        "level": 3
+      },
+      "allowSpriteReuse": true
+    },
+    {
+      "id": "worldessentials.tikitown.furniture_shelving_tterika_01_4",
+      "translationKey": "IGUI_WETiki_furniture_shelving_tterika_01_4",
+      "displayName": "Tall Bookshelf - Oak",
+      "tooltipKey": "Tooltip_KBWCB_Storage",
+      "category": "Furniture and Appliances",
+      "subcategory": "Storage",
+      "iconSprite": "furniture_shelving_tterika_01_4",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "tikitown",
+        "drazion",
+        "world-essentials"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_5"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_6"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "furniture_shelving_tterika_01_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1,
+                "flags": [
+                  "Prop1",
+                  "MayDegradeVeryLight"
+                ]
+              },
+              {
+                "id": "lumber",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "fasteners_nails",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 200,
+            "timedAction": "BuildWoodenStructureMedium",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 40
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "canBePadlocked": true,
+            "isProp": true
+          },
+          "container": {
+            "type": "shelves",
+            "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ],
+      "group": {
+        "id": "worldessentials.tikitown.family_c1c86e921ed048a3",
+        "name": "Bookshelf",
+        "translationKey": "IGUI_WETiki_family_c1c86e921ed048a3",
+        "level": 2
+      },
+      "allowSpriteReuse": true
     }
   ]
 }

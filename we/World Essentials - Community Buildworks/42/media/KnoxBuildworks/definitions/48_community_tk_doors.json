@@ -4,15 +4,15 @@
   "source": "Community Tilepack (TK) DOORS family, transpiled from the B41 BuildingMenu addon. Cost = KBW default for the type. Standalone KBW mod.",
   "buildables": [
     {
-      "id": "community.tk.doorframes.industry_tk_01_10",
+      "id": "community.tk.doorframes.industry_tk_01_34",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_10",
-      "displayName": "White Industrial Door Frame",
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_34",
+      "displayName": "Light Green Industrial Door Frame",
       "tooltipKey": "Tooltip_KBWCB_WallDoorway",
       "category": "Doors",
       "subcategory": "Door Frames",
       "material": "Wood",
-      "iconSprite": "industry_tk_01_10",
+      "iconSprite": "industry_tk_01_34",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -34,7 +34,7 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_01_10"
+                        "industry_tk_01_34"
                       ]
                     ]
                   }
@@ -45,7 +45,7 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_01_11"
+                        "industry_tk_01_35"
                       ]
                     ]
                   }
@@ -106,7 +106,7 @@
             "canPassThrough": true,
             "canBarricade": false,
             "dismantable": true,
-            "pillarSprite": "industry_tk_01_3"
+            "pillarSprite": "industry_tk_01_27"
           }
         }
       ],
@@ -222,15 +222,15 @@
       "pieceClass": "doorframe"
     },
     {
-      "id": "community.tk.doorframes.industry_tk_01_34",
+      "id": "community.tk.doorframes.industry_tk_01_10",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_34",
-      "displayName": "Light Green Industrial Door Frame",
+      "translationKey": "IGUI_community_tk_doorframes_industry_tk_01_10",
+      "displayName": "White Industrial Door Frame",
       "tooltipKey": "Tooltip_KBWCB_WallDoorway",
       "category": "Doors",
       "subcategory": "Door Frames",
       "material": "Wood",
-      "iconSprite": "industry_tk_01_34",
+      "iconSprite": "industry_tk_01_10",
       "placement": {
         "kind": "wall",
         "requiresFloor": false
@@ -252,7 +252,7 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_01_34"
+                        "industry_tk_01_10"
                       ]
                     ]
                   }
@@ -263,7 +263,7 @@
                   {
                     "rows": [
                       [
-                        "industry_tk_01_35"
+                        "industry_tk_01_11"
                       ]
                     ]
                   }
@@ -324,7 +324,7 @@
             "canPassThrough": true,
             "canBarricade": false,
             "dismantable": true,
-            "pillarSprite": "industry_tk_01_27"
+            "pillarSprite": "industry_tk_01_3"
           }
         }
       ],

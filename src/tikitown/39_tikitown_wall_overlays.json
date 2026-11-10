@@ -313,7 +313,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -759,7 +759,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -1211,7 +1211,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -1424,7 +1424,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -1986,7 +1986,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -2431,7 +2431,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -3011,7 +3011,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -3122,7 +3122,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -3348,7 +3348,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -3567,7 +3567,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -3675,7 +3675,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -5030,7 +5030,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -5568,7 +5568,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -6349,7 +6349,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -6562,7 +6562,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -7338,7 +7338,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -7551,7 +7551,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -7889,7 +7889,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -8450,7 +8450,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -8668,7 +8668,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -8776,7 +8776,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -8992,7 +8992,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -9754,7 +9754,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -9967,7 +9967,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -10530,7 +10530,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -10759,7 +10759,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -10867,7 +10867,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -11185,7 +11185,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -11861,7 +11861,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -11972,7 +11972,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -12190,7 +12190,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -12298,7 +12298,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -12826,7 +12826,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -12934,7 +12934,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -13045,7 +13045,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -13714,7 +13714,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -13932,7 +13932,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -14148,7 +14148,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -14469,7 +14469,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -14685,7 +14685,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -15131,7 +15131,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -15239,7 +15239,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -15350,7 +15350,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -15461,7 +15461,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -16005,7 +16005,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -16447,7 +16447,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -16555,7 +16555,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -17224,7 +17224,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -17335,7 +17335,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -17548,7 +17548,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -17761,7 +17761,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -17872,7 +17872,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -18203,7 +18203,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -19072,7 +19072,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -19285,7 +19285,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -19395,7 +19395,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -20278,7 +20278,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -20386,7 +20386,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -20494,7 +20494,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -20605,7 +20605,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -21477,7 +21477,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -21585,7 +21585,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -21798,7 +21798,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -22017,7 +22017,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -22125,7 +22125,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -22466,7 +22466,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -22689,7 +22689,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -23022,7 +23022,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -23130,7 +23130,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -23568,7 +23568,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -24682,7 +24682,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -25006,7 +25006,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -25114,7 +25114,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -25337,7 +25337,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -25673,7 +25673,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -25899,7 +25899,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -26680,7 +26680,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27024,7 +27024,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27134,7 +27134,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27242,7 +27242,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27352,7 +27352,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27680,7 +27680,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -27896,7 +27896,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -28224,7 +28224,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -28542,7 +28542,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -28977,7 +28977,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -29193,7 +29193,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -29416,7 +29416,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -29862,7 +29862,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -29970,7 +29970,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -30311,7 +30311,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -30419,7 +30419,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -30530,7 +30530,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -31657,7 +31657,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -31988,7 +31988,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -32653,7 +32653,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -32764,7 +32764,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -32875,7 +32875,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -32986,7 +32986,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -33317,7 +33317,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -33887,7 +33887,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -34444,7 +34444,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -34667,7 +34667,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -34778,7 +34778,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -34886,7 +34886,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35104,7 +35104,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35212,7 +35212,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35650,7 +35650,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35758,7 +35758,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35869,7 +35869,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -35977,7 +35977,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -36088,7 +36088,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -36521,7 +36521,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -36977,7 +36977,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -37423,7 +37423,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -38098,7 +38098,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -39107,7 +39107,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -39320,7 +39320,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -39756,7 +39756,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -39971,7 +39971,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -40607,7 +40607,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -40717,7 +40717,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -41494,7 +41494,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -42832,7 +42832,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -42940,7 +42940,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -43589,7 +43589,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -43812,7 +43812,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -43920,7 +43920,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -44263,7 +44263,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -44912,7 +44912,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -45232,7 +45232,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -45448,7 +45448,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -45897,7 +45897,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -46005,7 +46005,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -46113,7 +46113,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -46657,7 +46657,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -47119,7 +47119,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -47791,7 +47791,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -48352,7 +48352,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -48460,7 +48460,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -48788,7 +48788,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -49011,7 +49011,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -49234,7 +49234,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -49572,7 +49572,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -49798,7 +49798,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -50351,7 +50351,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -50459,7 +50459,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -50567,7 +50567,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -50783,7 +50783,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -50891,7 +50891,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -51114,7 +51114,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -51222,7 +51222,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -51667,7 +51667,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -51998,7 +51998,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -52106,7 +52106,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -52216,7 +52216,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -52675,7 +52675,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -53908,7 +53908,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -54131,7 +54131,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -54344,7 +54344,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -54452,7 +54452,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -54560,7 +54560,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -54891,7 +54891,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -55457,7 +55457,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -56344,7 +56344,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -56782,7 +56782,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -57238,7 +57238,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -57348,7 +57348,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -57911,7 +57911,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -58241,7 +58241,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -58677,7 +58677,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -59008,7 +59008,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -59116,7 +59116,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -59437,7 +59437,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -59650,7 +59650,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -59981,7 +59981,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -60314,7 +60314,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -60422,7 +60422,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -60532,7 +60532,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -60640,7 +60640,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -61413,7 +61413,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -61521,7 +61521,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -61852,7 +61852,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -62075,7 +62075,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -62183,7 +62183,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -62514,7 +62514,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -62625,7 +62625,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -62958,7 +62958,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -63290,7 +63290,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -63506,7 +63506,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -63732,7 +63732,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -63948,7 +63948,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -64171,7 +64171,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -64279,7 +64279,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -65276,7 +65276,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -65699,7 +65699,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -66132,7 +66132,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -66463,7 +66463,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -66574,7 +66574,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -66682,7 +66682,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -66898,7 +66898,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -67327,7 +67327,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -67772,7 +67772,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -67880,7 +67880,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -68532,7 +68532,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -69073,7 +69073,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -69181,7 +69181,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -69394,7 +69394,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -69502,7 +69502,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -69843,7 +69843,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -70286,7 +70286,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -70397,7 +70397,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -70505,7 +70505,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71176,7 +71176,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71284,7 +71284,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71500,7 +71500,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71608,7 +71608,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71716,7 +71716,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -71824,7 +71824,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -72049,7 +72049,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -73034,7 +73034,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -73142,7 +73142,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -73702,7 +73702,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -74023,7 +74023,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -74131,7 +74131,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -74465,7 +74465,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -74573,7 +74573,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -74681,7 +74681,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -75357,7 +75357,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -75934,7 +75934,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -76157,7 +76157,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -76480,7 +76480,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -76588,7 +76588,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -76696,7 +76696,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -76804,7 +76804,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -77019,7 +77019,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -77127,7 +77127,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -77585,7 +77585,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -77808,7 +77808,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -77916,7 +77916,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78024,7 +78024,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78132,7 +78132,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78355,7 +78355,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78780,7 +78780,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78888,7 +78888,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -78996,7 +78996,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -79104,7 +79104,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -79327,7 +79327,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -79658,7 +79658,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -79884,7 +79884,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -81196,7 +81196,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -81862,7 +81862,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -82534,7 +82534,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -82763,7 +82763,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -82989,7 +82989,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -83097,7 +83097,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -83526,7 +83526,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -83962,7 +83962,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -84178,7 +84178,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -84509,7 +84509,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -84620,7 +84620,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -85404,7 +85404,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -85512,7 +85512,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -85840,7 +85840,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -86282,7 +86282,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -87816,7 +87816,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -88146,7 +88146,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -88254,7 +88254,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -88595,7 +88595,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -89047,7 +89047,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -89726,7 +89726,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -90274,7 +90274,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -91408,7 +91408,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -91728,7 +91728,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -92184,7 +92184,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -92407,7 +92407,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -92843,7 +92843,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -93056,7 +93056,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -93271,7 +93271,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -93821,7 +93821,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -93932,7 +93932,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -94492,7 +94492,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -94602,7 +94602,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -95054,7 +95054,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -95385,7 +95385,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -95493,7 +95493,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -95706,7 +95706,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -95814,7 +95814,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -96250,7 +96250,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -96706,7 +96706,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -96814,7 +96814,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -96925,7 +96925,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -97148,7 +97148,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -97256,7 +97256,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -97469,7 +97469,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -97577,7 +97577,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -97803,7 +97803,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -98123,7 +98123,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -98559,7 +98559,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -98997,7 +98997,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -99105,7 +99105,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -99540,7 +99540,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -99651,7 +99651,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100087,7 +100087,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100195,7 +100195,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100305,7 +100305,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100416,7 +100416,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100744,7 +100744,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -100852,7 +100852,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -102070,7 +102070,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -102286,7 +102286,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -102624,7 +102624,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -102839,7 +102839,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -103721,7 +103721,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },
@@ -104167,7 +104167,7 @@
      },
      "object": {
       "isThumpable": false,
-      "canPassThrough": true,
+      "canPassThrough": false,
       "blockAllSquare": false,
       "dismantable": true
      },

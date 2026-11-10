@@ -164,7 +164,12 @@ def _load_community_tilesets():
     return ver, tilesets
 
 
-_VANILLA_TILES = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\newtiledefinitions.tiles"
+# PZ build 26486631 (2026-11-09) moved the vanilla tile definitions into media/tile_definitions/.
+_VANILLA_TILES = next((p for p in (
+    r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tile_definitions\newtiledefinitions.tiles",
+    r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\newtiledefinitions.tiles")
+    if os.path.isfile(p)), None) or \
+    r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tile_definitions\newtiledefinitions.tiles"
 
 # ---- TikiTown (Drazion's tilepack) patches: opt-in via tikitown=True (the patch then also copies
 # TikiTown tilesets and must load after tikitown_tiles). Same group / override formats as above.
@@ -1207,6 +1212,46 @@ def fridge_shell_name(src_index):
     return "%s_%d" % (ICESHELL_TILESET, 4 + _FRIDGE_SRC.index(src_index))
 
 
+# Hand-pump sinks (user, 2026-11-09): copies of the five vanilla counter-top sinks
+# (fixtures_sinks_01, IsTableTop: White 0-3, Industrial 4-7, Chrome 8-11, Dark Industrial 16-19,
+# Beige 20-23) that draw water like WE's Large Water Tank / a map hand pump: waterAmount and
+# waterMaxAmount 999999 and no waterPiped. Vanilla's own sinks keep their 20-unit plumbed reserve:
+# the map's sinks are never touched. They live in the ice-shell tileset at FIXED indices 48..67
+# (after the 44 fridge shells, padded to the row), so no new pack / tiledef / mod.info line.
+PUMP_SINK_SHEET = "fixtures_sinks_01"
+PUMP_SINK_SRC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 22, 23]
+PUMP_SINK_BASE = 48
+_VANILLA_DEPTH_SINKS = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_fixtures_sinks_01.png"
+_VANILLA_DEPTH_ASSIGN = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tileDepthTextureAssignments.txt"
+_PUMP_SINK_DROP = {b"waterPiped", b"waterAmount", b"waterMaxAmount"}
+
+
+def pump_sink_name(src_index):
+    """Hand-pump copy of vanilla fixtures_sinks_01_<src_index>."""
+    return "%s_%d" % (ICESHELL_TILESET, PUMP_SINK_BASE + PUMP_SINK_SRC.index(src_index))
+
+
+def _pump_sink_props(src_props):
+    out = [(k, v) for k, v in src_props if k not in _PUMP_SINK_DROP]
+    out += [(b"waterAmount", b"999999"), (b"waterMaxAmount", b"999999")]
+    # moveable name = GroupName + CustomName ("White" + "Hand Pump Sink"): picked up it stays clear
+    return [(k, b"Hand Pump Sink" if k == b"CustomName" else v) for k, v in out]
+
+
+def _vanilla_depth_cell_index(sheet, idx):
+    """The depth cell vanilla draws <sheet>_<idx> with (tileDepthTextureAssignments, else its own)."""
+    if os.path.isfile(_VANILLA_DEPTH_ASSIGN):
+        key = "%s_%d" % (sheet, idx)
+        for line in open(_VANILLA_DEPTH_ASSIGN, encoding="utf-8", errors="replace"):
+            parts = line.strip().rstrip(",").split("=")
+            if len(parts) == 2 and parts[0].strip() == key:
+                target = parts[1].strip()
+                if target.startswith(sheet + "_"):
+                    return int(target.rsplit("_", 1)[1])
+                return None
+    return idx
+
+
 def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=False):
     """Inert shell tiles (stage 1 of two-stage appliances): texture pack + tiledef in <media_dir>.
     0..3 = TK ice machine. With include_fridges: 4..43 = vanilla 1-tile fridges / chest freezer,
@@ -1247,9 +1292,26 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
                b"IsMoveAble"} & {k for k, _ in p}
         if bad:
             raise RuntimeError("shell tile would be a container / appliance: %s" % bad)
+    if include_fridges:
+        # hand-pump sinks at fixed indices PUMP_SINK_BASE.. (see PUMP_SINK_SRC)
+        if len(props) > PUMP_SINK_BASE:
+            raise RuntimeError("ice-shell tiles reach %d; pump sinks start at %d" % (len(props), PUMP_SINK_BASE))
+        props += [[] for _ in range(PUMP_SINK_BASE - len(props))]
+        snames = {"%s_%d" % (PUMP_SINK_SHEET, s) for s in PUMP_SINK_SRC}
+        _extract_from_pack(_VANILLA_TILES2X_PACK, snames, cache)
+        ssrc = vts[PUMP_SINK_SHEET.encode()]
+        for s in PUMP_SINK_SRC:
+            src_props = ssrc[6][s]
+            if not any(k == b"IsTableTop" for k, _v in src_props):
+                raise RuntimeError("%s_%d is not a counter-top sink" % (PUMP_SINK_SHEET, s))
+            im = Image.open(os.path.join(cache, "%s_%d.png" % (PUMP_SINK_SHEET, s))).convert("RGBA")
+            tiles.append((pump_sink_name(s), im))
+            props.append(_pump_sink_props(src_props))
     n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
     cols = 8
-    rows = (len(tiles) + cols - 1) // cols
+    # from the highest index used (props), not the tile count: the pump sinks sit at fixed indices
+    # after padding, so there are fewer tiles than cells
+    rows = (len(props) + cols - 1) // cols
     props += [[] for _ in range(cols * rows - len(props))]
     ts = [ICESHELL_TILESET.encode(), (ICESHELL_TILESET + ".png").encode(), cols, rows, 1, cols * rows, props]
     blob = b"tdef" + struct.pack("<ii", 1, 1) + _ser_tileset(ts)
@@ -1263,6 +1325,17 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
             sx, sy = (s % 8) * cw, (s // 8) * ch
             dj = 4 + j
             depth.paste(depth_src.crop((sx, sy, sx + cw, sy + ch)), ((dj % cols) * cw, (dj // cols) * ch))
+        # pump sinks: the depth cell vanilla draws each source sink with
+        if os.path.isfile(_VANILLA_DEPTH_SINKS):
+            sink_depth = Image.open(_VANILLA_DEPTH_SINKS).convert("RGBA")
+            scols = sink_depth.size[0] // cw
+            for s in PUMP_SINK_SRC:
+                c = _vanilla_depth_cell_index(PUMP_SINK_SHEET, s)
+                if c is None:
+                    continue
+                sx, sy = (c % scols) * cw, (c // scols) * ch
+                dj = PUMP_SINK_BASE + PUMP_SINK_SRC.index(s)
+                depth.paste(sink_depth.crop((sx, sy, sx + cw, sy + ch)), ((dj % cols) * cw, (dj // cols) * ch))
         os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
         depth.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_%s.png" % ICESHELL_TILESET))
     return n

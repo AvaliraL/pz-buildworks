@@ -48,7 +48,14 @@ SRC_FILES = [
     "40_tikitown_lower_walls.json",
     "41_tikitown_roof_slope_walls.json",
     "42_tikitown_garage_trim.json",
+    "43_tikitown_wall_paint_cladding.json",
+    "44_tikitown_wall_trim.json",
 ]
+
+# WE merge 2026-11-10: the WE dev declined these pending a multiplayer review. Not built for WE
+# (definition, item scripts, icons, Rotate Lua, item names, Rotate label); the test bundle keeps them.
+WE_HOLD_BACK_IDS = {"worldessentials.tikitown.props14_electrical_cabinet"}
+WE_HOLD_BACK_IG_KEYS = {"IGUI_WETiki_props14_electrical_cabinet", "IGUI_KBWTikiTown_RotateGenerator"}
 
 MOD_ID   = "TikiTownKBW"
 MOD_NAME = "Knox Buildworks - Drazion's Tilepack (TikiTown)"
@@ -114,6 +121,9 @@ def main():
     for fn in SRC_FILES:
         src=os.path.join(SRC_DIR, fn)
         doc=json.load(open(src, encoding="utf-8"))
+        # held back from World Essentials until the WE dev's MP review (2026-11-10): the
+        # Electrical Cabinet Generator. It stays in the test bundle (build_merged_test_mod).
+        doc["buildables"]=[b for b in doc.get("buildables", []) if b.get("id") not in WE_HOLD_BACK_IDS]
         builds=doc.get("buildables", [])
         # reinforced counters: military-crate cost, capacity 100 (counter_variants.py)
         import counter_variants
@@ -144,6 +154,8 @@ def main():
         total+=len(kept)
         # Normalize output filename (drop the _accurate suffix so the shipped name is clean)
         out_fn=fn.replace("_accurate","")
+        from kbw_sort_order import md5_order
+        md5_order(doc["buildables"])   # keeps KBW's registry sort shallow (kbw_sort_order.py)
         json.dump(doc, open(os.path.join(defs_dir,out_fn),"w",encoding="utf-8"),
                   indent=1, ensure_ascii=False)
         manifest_defs.append("media/KnoxBuildworks/definitions/%s"%out_fn)
@@ -152,33 +164,19 @@ def main():
     json.dump({"schemaVersion":1,"definitions":manifest_defs},
               open(os.path.join(mod42,"media","KnoxBuildworks","manifest.json"),"w",encoding="utf-8"))
 
-    # runtime Lua shared with the Community submod, under our own file names so the two submods
-    # never shadow each other (each file has an install guard, so loading both is harmless):
-    #   pick up / place keeps storage, build-menu + inventory text, moveable rotation offsets
-    from container_caps import write_stage_info_lua, write_pickup_lua
+    # Runtime Lua (pick up / place, multi-part, overlay guard, table-top, stage info): since the WE
+    # merge of 2026-11-10 World Essentials ships ONE consolidated copy of each in its base folder
+    # (WorldEssentialsBuildworksPickup / MultiPart / OverlayGuard / StageInfo.lua, and the TikiTown
+    # table-top fix inside KBWCommunity_TableTop.lua). Our per-submod copies are no longer built for
+    # WE; changes to that code are ported by hand into work/World Essentials (base, our files only).
+    # The test bundle (build_merged_test_mod) still writes its own copies.
     _lua = os.path.join(mod42, "media", "lua")
-    write_pickup_lua(os.path.join(_lua, "shared", "KBWTikiTown_Pickup.lua"))
-    # multi-tile builds (beds, counters...) pick up / smash as one piece
-    from container_caps import write_multipart_lua
-    write_multipart_lua(os.path.join(_lua, "shared", "KBWTikiTown_MultiPart.lua"))
-    # wall overlays (soundproofing, lower wall overlays): cursor also runs WE's attachment check.
-    # Same install guard as the Community copy, so loading both is harmless.
-    from kbw_tilepatch import write_overlay_guard_lua
-    write_overlay_guard_lua(os.path.join(_lua, "shared", "KBWTikiTown_OverlayGuard.lua"))
-    # props-14 table-top pieces (mic, mixers, cups, coffee dispenser): counter vs floor height.
-    # Own file + guard flags (KBWCommunity_TableTop.lua is WE-owned and Community-only).
-    from kbw_tilepatch import write_tt_tabletop_lua
-    write_tt_tabletop_lua(os.path.join(_lua, "shared", "KBWTikiTown_TableTop.lua"))
     # wall overlays: our own copies of tiles 72-91 (overlay-only props) -- map tiles untouched
     from tikitown_wall_overlays import write_overlay_assets
-    write_overlay_assets(os.path.join(mod42, "media"))
-    # Electrical Cabinet Generator: item scripts (one per facing) + their item names
-    import tikitown_props14 as _p14
-    _p14.write_generator_items(os.path.join(mod42, "media"))
-    _p14.write_generator_icons(os.path.join(mod42, "media"))
-    _p14.write_generator_rotate_lua(os.path.join(mod42, "media", "lua", "shared", _p14.ROTATE_LUA_NAME))
-    json.dump(_p14.GEN_ITEM_NAMES, open(os.path.join(tr_dir, "ItemName.json"), "w", encoding="utf-8"),
-              indent=1, ensure_ascii=False)
+    # corner / end-cap depth maps go to <mod>/common/media (the only place the game reads them)
+    write_overlay_assets(os.path.join(mod42, "media"), os.path.join(os.path.dirname(mod42), "common", "media"))
+    # Electrical Cabinet Generator assets (item scripts, icons, Rotate Lua, item names): held back
+    # from WE (see WE_HOLD_BACK_IDS); the test bundle builds them.
     # tterika_02 tile-property patch (footlocker stacks 6, small cabinets 2, freestanding lockers)
     # plus the runtime removal of IsTableTop that an additive patch cannot do. Own tiledef; WE adds
     # the tiledef line to its (WE-owned) mod.info.
@@ -186,7 +184,6 @@ def main():
                                TT_TILEPATCH_NAME)
     write_community_tilepatch(os.path.join(mod42, "media", TT_TILEPATCH_NAME + ".tiles"), tikitown_only=True)
     write_removal_lua(os.path.join(_lua, "shared", "KBWTikiTown_TileFixes.lua"), tikitown_only=True)
-    write_stage_info_lua(os.path.join(_lua, "client", "KBWTikiTown_StageInfo.lua"))
     import rotation_fix
     _rot, _rot_rep = rotation_fix.build_offsets(all_built, rotation_fix.load_sheets())
     rotation_fix.write_rotation_lua(os.path.join(_lua, "shared", "KBWTikiTown_Rotation.lua"), _rot)
@@ -218,7 +215,8 @@ def main():
         g=b.get("group") or {}
         if g.get("translationKey") and g.get("name") and _ig.get(g["translationKey"])!=g["name"]:
             _ig[g["translationKey"]]=g["name"]; _ig_changed+=1
-    _ig[_p14.ROTATE_LABEL_KEY] = "Rotate"          # Electrical Cabinet Generator world option
+    for _k in WE_HOLD_BACK_IG_KEYS:                # generator held back from WE
+        _ig.pop(_k, None)
     json.dump(_ig, open(_ig_path,"w",encoding="utf-8"), indent=1, ensure_ascii=False)
     # tooltips: only our type keys now (the old per-piece keys just repeated the name; KBW-owned
     # keys are never shipped -- tooltip_fix still guards that)

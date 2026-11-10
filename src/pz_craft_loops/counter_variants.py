@@ -44,9 +44,26 @@ MATCH_WORDS = ("Counter", "Upper Cabinet", "Wall Cupboard")   # counters + upper
 OPT_IN_TAG = "reinforce"   # any container tagged this also gets a reinforced version (2026-08-28)
 
 
+# Bookshelves (user, 2026-11-09): every bookshelf / bookcase, in-wall ones included, also gets a
+# reinforced version (capacity 100, military-crate cost). By final name or by id (the Dirkies
+# "<colour> Wall Shelf" pieces are in-wall bookcases: id ..._bookcase_wall). The secret-entrance
+# bookshelves are doors, not storage furniture: excluded.
+BOOK_WORDS = ("Bookshelf", "Bookcase", "Bookstore Shelf")
+BOOK_ID_WORDS = ("bookcase", "bookshelf", "bookshelves")
+BOOK_EXCLUDE = ("Secret",)
+
+
+def _is_bookshelf(b, name):
+    if any(w in name for w in BOOK_EXCLUDE):
+        return False
+    bid = (b.get("id") or "").lower()
+    return any(w in name for w in BOOK_WORDS) or any(w in bid for w in BOOK_ID_WORDS)
+
+
 def _is_counter(b):
     name = _final_name(b)
-    wanted = any(w in name for w in MATCH_WORDS) or OPT_IN_TAG in (b.get("tags") or [])
+    wanted = (any(w in name for w in MATCH_WORDS) or OPT_IN_TAG in (b.get("tags") or [])
+              or _is_bookshelf(b, name))
     return (wanted and not b.get("id", "").endswith(SUFFIX)
             and any(st.get("container") is not None for st in b.get("stages") or []))
 

@@ -186,6 +186,8 @@ TT_FILES = [
     "40_tikitown_lower_walls.json",
     "41_tikitown_roof_slope_walls.json",
     "42_tikitown_garage_trim.json",
+    "43_tikitown_wall_paint_cladding.json",
+    "44_tikitown_wall_trim.json",
 ]
 
 MOD_ID   = "TikiTownCommunityTest"
@@ -210,16 +212,20 @@ TT_PACK_OF = {
     "40": "TikiTown",           # 40_tikitown_lower_walls.json (lower walls as real walls, 60 sheets; In Progress)
     "41": "TikiTown",           # 41_tikitown_roof_slope_walls.json (gables, 63 sheets; In Progress)
     "42": "TikiTown",           # 42_tikitown_garage_trim.json (garage door frames, 63 sheets; In Progress)
+    "43": "TikiTown",           # 43_tikitown_wall_paint_cladding.json (tterika paint / cladding; In Progress)
+    "44": "TikiTown",           # 44_tikitown_wall_trim.json (tterika trim; In Progress)
 }
 # TikiTown sheets confirmed in-game. Newburbs trim (35) marked Completed by user (2026-08-28).
 TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34","35",
                 "30", "36",   # shelving + tterika storage confirmed (user, 2026-08-28)
                 "37",         # soundproofing (all 5 pieces) confirmed (user, 2026-08-28)
                 "38", "39", "40",  # props-14, wall overlays, lower walls: Completed for testing (user, 2026-08-28)
-                "41", "42"}        # roof slope walls, garage trim: Completed (user, 2026-11-08)
+                "41", "42",        # roof slope walls, garage trim: Completed (user, 2026-11-08)
+                "43", "44"}        # tterika paint / cladding / trim: working in game (user, 2026-11-10)
 
 # TikiTown sheets that keep their KBW groups in the test bundle (see main)
-TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42"}   # 22: doors in 12 type groups (naming round 2)
+TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42",   # 22: doors in 12 type groups (naming round 2)
+                  "43", "44"}                             # one card per colour / trim family
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -347,7 +353,7 @@ def main():
     write_tt_tabletop_lua(os.path.join(_media, "lua", "shared", "KBWTikiTown_TableTop.lua"))
     # TikiTown wall overlays: our own copied tiles (as in the submod)
     from tikitown_wall_overlays import write_overlay_assets
-    write_overlay_assets(_media)
+    write_overlay_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
     # Electrical Cabinet Generator item scripts (one per facing; see tikitown_props14)
     import tikitown_props14 as _p14
     _p14.write_generator_items(_media)
@@ -420,6 +426,18 @@ def main():
         _b["subcategory"] = "Fridges"
         merged.append(_b); cat_counts[_b["category"]] += 1
     print("\n".join(_fr_rep))
+    # hand-pump sinks (pump_sinks.py): In Progress until confirmed in game
+    from pump_sinks import build_pump_sink_defs
+    _ps, _ps_tips, _ps_rep = build_pump_sink_defs()
+    nt_tooltips.update(_ps_tips)
+    for _b in _ps:
+        if _b["id"] in seen:
+            raise RuntimeError("duplicate buildable id %s" % _b["id"])
+        seen.add(_b["id"])
+        _b["category"] = "Community - Completed"   # working in game (user, 2026-11-09)
+        _b["subcategory"] = "Sinks"
+        merged.append(_b); cat_counts[_b["category"]] += 1   # keeps its "Hand Pump Sinks" card
+    print("\n".join(_ps_rep))
     # EXPERIMENT: built-in bench tools on the configured workbenches (bench_tools.py)
     print("bench tools on: %s" % bench_tools.apply_to_buildables(merged))
     # moveable rotation for pieces whose tile pack groups the facings badly (rotation_fix.py)
@@ -431,6 +449,8 @@ def main():
     for _reason, _ids in sorted(_rot_rep["skipped"].items()):
         print("rotation skipped (%s): %d e.g. %s" % (_reason, len(_ids), ", ".join(_ids[:3])))
     name_tooltip_pass.split_shared_keys(merged)   # unique translationKey per distinct name
+    from kbw_sort_order import md5_order
+    md5_order(merged)                              # keeps KBW's registry sort shallow (kbw_sort_order.py)
     out_doc={"schemaVersion":1,"category":"Walls",
              "source":"MERGED TEST - all TikiTown + Community deliverables; category=<pack> - <status>, subcategory=<generic type>.",
              "materialGroups":merged_groups,

@@ -79,6 +79,8 @@ def fix_name(b):
     # "Counter - Brown Countertop Modern Corner" -> "... Modern (Corner)" (same style as Community)
     if n.startswith("Counter - ") and n.endswith(" Corner"):
         n = n[:-len(" Corner")] + " (Corner)"
+    # vanilla spelling everywhere (user, 2026-11-09; TikiTown was done by tikitown_naming_pass)
+    n = re.sub(r"\bGrey\b", "Gray", n)
     return re.sub(r"\s+", " ", n).strip()
 
 

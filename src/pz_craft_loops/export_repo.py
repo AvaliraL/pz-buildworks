@@ -31,6 +31,7 @@ SRC_SCRIPTS = [
     "tikitown_props14.py", "tikitown_wall_overlays.py", "tikitown_wall_extras.py",
     "slope_pairing.py", "tikitown_naming_pass.py", "kbw_sort_depth_check.py", "recipe_check.py",
     "sheet_coverage.py", "tikitown_corner_fix.py", "tikitown_plaster_fix.py", "_we_collision_check.py",
+    "tikitown_wall_detailing.py", "kbw_sort_order.py", "pump_sinks.py", "tile_coverage_inventory.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",
@@ -43,6 +44,7 @@ TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "35_tikitown_newburbs_trim.json", "36_tikitown_tterika_storage.json", "37_tikitown_soundproof.json",
     "38_tikitown_props14.json", "39_tikitown_wall_overlays.json", "40_tikitown_lower_walls.json",
     "41_tikitown_roof_slope_walls.json", "42_tikitown_garage_trim.json",
+    "43_tikitown_wall_paint_cladding.json", "44_tikitown_wall_trim.json",
 ]
 
 
@@ -133,17 +135,12 @@ def main():
     for s in SUBMODS:
         if os.path.isdir(os.path.join(root, s)):
             out.append(("we/" + s, mirror(os.path.join(root, s), os.path.join(REPO, "we", s))))
-    # Knox Buildworks Expansion: only OUR files (the component recipes). The folder also holds a
-    # copy of WE's own WorldEssentialsKnoxTikitown.lua (tracked by _refresh_upstream.py); identical
-    # to upstream, so it is left out instead of showing up as a new file in the compare.
-    if not baseline:
-        ex_w = os.path.join(root, EXPANSION)
-        ex_u = os.path.join(K, "zomboid", "WE_submods", "upstream", EXPANSION)
-        if os.path.isdir(ex_w):
-            def ours(rel):
-                u = os.path.join(ex_u, rel)
-                return not (os.path.isfile(u) and filecmp.cmp(u, os.path.join(ex_w, rel), shallow=False))
-            out.append(("we/" + EXPANSION, mirror(ex_w, os.path.join(REPO, "we", EXPANSION), keep=ours)))
+    # Knox Buildworks Expansion: since the 2026-11-10 baseline, upstream/ tracks WE's copies of the
+    # files there that concern us (WorldEssentialsKnoxTikitown.lua, the merged component recipes),
+    # so the folder is mirrored like the others in both modes. (Before, only files differing from
+    # upstream were kept, which would now show the merged recipes as deleted.)
+    if os.path.isdir(os.path.join(root, EXPANSION)):
+        out.append(("we/" + EXPANSION, mirror(os.path.join(root, EXPANSION), os.path.join(REPO, "we", EXPANSION))))
     if not baseline:
         up = os.path.join(K, "zomboid", "WE_submods", "upstream")
         for s in SUBMODS:
@@ -172,7 +169,10 @@ def main():
                   os.path.join(K, "zomboid", "worldessentials", "HANDOFF_KnoxComponentRecipes_WE.md"),
                   os.path.join(K, "zomboid", "worldessentials", "WorldEssentials_KnoxComponentRecipes_Recipes_EN.json"),
                   os.path.join(K, "zomboid", "worldessentials", "DEV_BUG_REPORT_ZVirusVaccine_dependency.md"),
-                  os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_registry_sort_overflow.md")):
+                  os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_registry_sort_overflow.md"),
+                  # 2026-11-10 hand-off: previous notes archived, KBW redraw bug report
+                  os.path.join(K, "zomboid", "WE_submods", "HANDOFF_NOTES_2026-11-08.md"),
+                  os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_attached_sprite_redraw.md")):
             if os.path.isfile(s):
                 shutil.copy2(s, os.path.join(notes, os.path.basename(s)))
     for name, (a, c, r) in out:

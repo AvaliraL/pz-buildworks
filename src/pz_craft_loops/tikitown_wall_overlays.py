@@ -243,6 +243,15 @@ def build_lower_walls():
 _PANEL_PLACE = {"kind": "overlay", "needToBeAgainstWall": True}
 _PROP_PLACE = {"kind": "object", "requiresFloor": False}
 _OVERLAY_OBJ = {"isThumpable": False, "canPassThrough": True, "blockAllSquare": False, "dismantable": True}
+# Overlay CORNERS build as a dismantlable IsoThumpable, not a prop (user, 2026-11-08): inside a
+# PhunInteriors room the sledgehammer is blocked and vanilla Dismantle (ISDestroyCursor /
+# ISMoveableSpriteProps) only accepts an IsoThumpable with isDismantable. KBW places a stage as a prop
+# only when canPassThrough is true (KBWBuildingObject: o.isProp = ... or canPassThrough), so false
+# here gives a thumpable. Safe for a corner: its N/W edges already carry the two walls it needs
+# (KBWCommunityCornerTrim.OnIsValid), and the copy has no collide/solid flags. isThumpable stays false
+# (zombies do not attack it; vanilla Dismantle does not need it). End caps / pillars stay props: they
+# can stand at an open wall end, where a thumpable's edge would block the gap.
+_CORNER_OBJ = {"isThumpable": False, "canPassThrough": False, "blockAllSquare": False, "dismantable": True}
 _OV_PIECES = [  # (key, label, plural, {face: offset}, placement, cost factor)
     ("panel", "Wall Overlay", "Wall Overlays", {"W": 0, "N": 1}, _PANEL_PLACE, 1.0),
     ("corner", "Wall Overlay Corner", "Wall Overlay Corners", {"W": 2}, _PROP_PLACE, 1.0),
@@ -269,7 +278,7 @@ def build_overlays():
                 stage = {"id": "built", "geometry": {"faces": _faces(sprites)},
                          "requirements": _scaled_requirements(st0.get("requirements") or {}, f),
                          "construction": _scaled_construction(st0.get("construction") or {}, f),
-                         "object": dict(_OVERLAY_OBJ)}
+                         "object": dict(_CORNER_OBJ if key == "corner" else _OVERLAY_OBJ)}
                 if key != "panel":
                     stage["health"] = 150
                 if key == "corner":
@@ -351,8 +360,10 @@ def _write_pack_multi(dest_path, tiles):
     return len(pages), len(crops), len(out)
 
 
-def write_overlay_assets(media_dir):
-    """Copy tiles 72-91 of every sheet into KBWTikiTownWallOverlays: pack + tiledef in media_dir."""
+def write_overlay_assets(media_dir, common_media_dir=None):
+    """Copy tiles 72-91 of every sheet into KBWTikiTownWallOverlays: pack + tiledef in media_dir.
+    common_media_dir: also write the copies' tileDepthTextureAssignments.txt there
+    (see _write_depth_assignments)."""
     from PIL import Image
     import kbw_tilepatch as k
     cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_walloverlays")
@@ -360,16 +371,19 @@ def write_overlay_assets(media_dir):
     k._extract_from_pack(_TIKITOWN_PACK, set(names), cache)
     tiles = []
     tilesets = {}    # tileset name -> {index: props}, in creation order
+    source_of = {}   # copy sprite -> pack sprite (for depth assignments; not for mirrored art)
 
-    def add(sprite, im, props):
+    def add(sprite, im, props, src=None):
         tsname, _sep, idx = sprite.rpartition("_")
         tilesets.setdefault(tsname, {})[int(idx)] = props
         tiles.append((sprite, im))
+        if src:
+            source_of[sprite] = src
 
     for sh in SHEETS:
         for t in range(FIRST, FIRST + PER_SHEET):
             im = Image.open(os.path.join(cache, "%s_%d.png" % (sh, t))).convert("RGBA")
-            add(overlay_sprite(sh, t), im, list(_COPY_PROPS[(t - FIRST) % 4]))
+            add(overlay_sprite(sh, t), im, list(_COPY_PROPS[(t - FIRST) % 4]), "%s_%d" % (sh, t))
     # soundproofing copies (tikitown-props-14): their own small tileset in the same file
     import tikitown_soundproof as sp
     sp_names = {"%s_%d" % (sp.SHEET, i) for i in sp.SOUNDPROOF_SRC}
@@ -378,7 +392,7 @@ def write_overlay_assets(media_dir):
     sp_src = tts[sp.SHEET.encode()][6]
     for i in sp.SOUNDPROOF_SRC:
         im = Image.open(os.path.join(cache, "%s_%d.png" % (sp.SHEET, i))).convert("RGBA")
-        add(sp.copy_sprite(i), im, sp.copy_props(i, sp_src[i]))
+        add(sp.copy_sprite(i), im, sp.copy_props(i, sp_src[i]), "%s_%d" % (sp.SHEET, i))
     # mirrored props-14 tiles (Electrical Cabinet Generator's second facing): own tileset, same file
     import tikitown_props14 as p14
     from PIL import ImageOps
@@ -389,6 +403,14 @@ def write_overlay_assets(media_dir):
         im = Image.open(os.path.join(cache, "%s_%d.png" % (p14.SHEET, i))).convert("RGBA")
         # whole-tile left-right flip: the object stays centred on its square, only the facing changes
         add(p14.mirror_sprite(i), ImageOps.mirror(im), list(p14_src[i]))
+    # tterika wall detailing (paint / wallpaper / cladding, file 43): own tilesets KBWTikiTownDetail1..3,
+    # facing flag added by position (tikitown_wall_detailing). APPENDED after the tilesets above.
+    import tikitown_wall_detailing as wd
+    det = wd.copy_tiles()
+    k._extract_from_pack(_TIKITOWN_PACK, {s for s, _c, _p in det}, cache)
+    for src_name, copy_name, props in det:
+        im = Image.open(os.path.join(cache, src_name + ".png")).convert("RGBA")
+        add(copy_name, im, props, src_name)
     assert len({n for n, _im in tiles}) == len(tiles), "duplicate copied sprite names"
     npages, ntiles, size = _write_pack_multi(
         os.path.join(media_dir, "texturepacks", OVERLAY_PACK + ".pack"), tiles)
@@ -408,13 +430,67 @@ def write_overlay_assets(media_dir):
     _v2, parsed, _o2 = k._parse(blob)
     assert all(t[5] <= MAX_TILES_PER_TILESET for t in parsed.values())
     open(os.path.join(media_dir, OVERLAY_TILEDEF_NAME + ".tiles"), "wb").write(blob)
-    print("wall overlay tiles: %d tiles in %d tilesets (%s), %d pages, pack %.1f MB" % (
+    ndepth = _write_depth_assignments(common_media_dir, tilesets, source_of)
+    print("wall overlay tiles: %d tiles in %d tilesets (%s), %d pages, pack %.1f MB; depth assignments %d" % (
         ntiles, len(parsed), ", ".join("%s=%d" % (n.decode(), t[5]) for n, t in parsed.items()),
-        npages, size / 1048576.0))
+        npages, size / 1048576.0, ndepth))
     return ntiles
 
 
 MODINFO_LINES = ["pack=%s" % OVERLAY_PACK, "tiledef=%s %d" % (OVERLAY_TILEDEF_NAME, OVERLAY_TILEDEF_ID)]
+
+# ---------------------------------------------------------------------------------------------
+# depth for our copied tiles (user, 2026-11-08: an overlay corner drew over a fridge built on the
+# same square). B42 sorts a sprite with the depth texture assigned to it in a mod's
+# common/media/tileDepthTextureAssignments.txt. Drazion's pack assigns its normal wall tiles (0 W,
+# 2 corner, 3 pillar) and the detailing sheets, but NOT the lower-wall block 72-91 we copy for file
+# 39, and our copies have new sprite names anyway, so every copy had no depth at all. Panels did not
+# show it (they hang on the host wall and use its depth); the free-standing corners and end caps
+# were sorted like a loose object and drew over whatever stood on the square.
+# Fix: assign each copy vanilla's own wall preset for its role, exactly as vanilla does for
+# walls_interior_detailing_01 (0 -> _4, 1 -> _5, 2 -> _6, 3 -> _7):
+_DEPTH_PRESET = {b"attachedW": "preset_depthmaps_01_4", b"attachedN": "preset_depthmaps_01_5",
+                 b"attachedNW": "preset_depthmaps_01_6", b"attachedSE": "preset_depthmaps_01_7"}
+DEPTH_ASSIGNMENTS = "tileDepthTextureAssignments.txt"
+
+
+def _write_depth_assignments(common_media_dir, tilesets, source_of=None):
+    """<common_media_dir>/tileDepthTextureAssignments.txt for every copied tile with a wall role.
+    source_of: copy sprite -> pack sprite, to reuse Drazion's own assignment where it has one."""
+    if not common_media_dir:
+        return 0
+    os.makedirs(common_media_dir, exist_ok=True)
+    geo = os.path.join(common_media_dir, "tileGeometry.txt")
+    if not os.path.isfile(geo):   # the test bundle already has one (Community depth fixes): keep it
+        open(geo, "w", encoding="utf-8").write("tileGeometry\n{\n    VERSION = 2,\n}\n")
+    dz = {}
+    p = os.path.join(os.path.dirname(os.path.dirname(_TIKITOWN_PACK)), DEPTH_ASSIGNMENTS)
+    if source_of and os.path.isfile(p):
+        for line in open(p, encoding="utf-8", errors="replace"):
+            m = line.strip().rstrip(",").split("=")
+            if len(m) == 2:
+                dz[m[0].strip()] = m[1].strip()
+    lines = []
+    for tsname, by_index in tilesets.items():
+        for j in sorted(by_index):
+            name = "%s_%d" % (tsname, j)
+            preset = None
+            for key, _v in by_index[j]:
+                preset = preset or _DEPTH_PRESET.get(key)
+            if source_of and name in source_of and source_of[name] in dz:
+                preset = dz[source_of[name]]        # e.g. soundproof / props copies
+            if preset:
+                lines.append("    %s = %s," % (name, preset))
+    out = os.path.join(common_media_dir, DEPTH_ASSIGNMENTS)
+    if os.path.isfile(out):
+        # ours from an earlier build is fine to replace; anything else must be merged by hand
+        names = [l.split("=")[0].strip() for l in open(out, encoding="utf-8") if "=" in l and "VERSION" not in l]
+        foreign = [n for n in names if not n.startswith(tuple(tilesets))]
+        if foreign:
+            raise RuntimeError("%s holds other entries (%s); merge instead of overwriting" % (out, foreign[:3]))
+    open(out, "w", encoding="utf-8").write(
+        "tileDepthTextureAssignments\n{\n    VERSION = 1,\n%s\n}\n" % "\n".join(lines))
+    return len(lines)
 
 
 def main():

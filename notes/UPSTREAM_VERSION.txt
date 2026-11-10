@@ -1,7 +1,6 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), Community submod dated 2026-10-31 08:13:15.476828
-            Re-verified against the installed WE update of 2026-11-08 13:58 (Steam manifest 3619131957451961672,
-            installed = latest): every tracked file is byte-identical, so the snapshot was not re-copied
-            (_refresh_upstream.py also resets work/, which would wipe our changes).
-work/     = our working copy (reset to upstream on refresh). Diff against upstream/ for hand-offs.
-upstream_2026-10-30/ = the previous snapshot (before WE's isolated Dylan assets).
-Never edit the Steam copy.
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-10
+            (Steam manifest 8104864525325359112): the WE dev's merge of handoff-2026-11-08-plaster-fix,
+            minus the Electrical Cabinet Generator and the workbench tools (held for an MP review).
+            Tracked base / Expansion files now include what WE merged from us.
+work/     = our working copy. Diff against upstream/ for hand-offs.
+upstream_2026-10-31/ = the previous snapshot. Never edit the Steam copy.

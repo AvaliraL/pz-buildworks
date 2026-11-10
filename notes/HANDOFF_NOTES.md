@@ -1,256 +1,120 @@
-Everything below is the full delta from the LIVE World Essentials (identical to our `we-baseline-2026-11-01`)
-to our tip. Sections 1-6 were in earlier hand-offs (names/tooltips, ice machines, RC1, multipart couches).
-Sections 7-14 are NEW in `handoff-2026-11-08-full-sheets` (full TikiTown wall sheets, naming pass, generator
-cabinet, KBW component recipes, Spray Paint loot). We re-checked WE's 11-08 update: it changed none of the files
-we track, so the baseline did not need a refresh. Counts in sections 1-2 are generated; the rest is hand-written
-from the git history.
+# Hand-off `handoff-2026-11-10-detailing-sinks`
 
-**mod.info lines WE needs (mod.info is WE-owned, we do not touch it)**
+Compare: `we-baseline-2026-11-10...handoff-2026-11-10-detailing-sinks`. The baseline is your merged
+WE (installed 2026-11-10, Steam manifest 8104864525325359112), so the diff only shows what's new
+since your merge. The previous notes are archived in `notes/HANDOFF_NOTES_2026-11-08.md`.
 
-Community submod, two new pack/tiledef pairs:
+**Not in this hand-off (held for your MP review, as you asked):** the Electrical Cabinet Generator and
+the workbench built-in tools. We stopped building them for WE: no definition, items, icons, Rotate
+Lua, bench Lua or labels. Your merged file 38 / file 56 are unchanged apart from the md5 reorder.
 
-    pack=KBWCommunityIceShell
-    tiledef=kbwcommunity_iceshell 8181
-    pack=KBWCommunityLCouch
-    tiledef=kbwcommunity_lcouch 8178
+**Your consolidation is respected.** Our builds no longer produce the per-submod OverlayGuard,
+MultiPart, Pickup, StageInfo or TikiTown TableTop Lua. Your `WorldEssentialsBuildworks*.lua` and
+`KBWCommunity_TableTop.lua` are untouched, and so are your `mod.info` files. The translation keys you
+added (`Tooltip_KBWCB_WallCorner`, `Tooltip_KBWCB_WallWindow` in TikiTown) are kept.
 
-TikiTown submod, one new tiledef (tile-property patch for the tterika_02 lockers, loads after `tikitown_tiles`):
+**mod.info:** no new lines needed.
 
-    tiledef=kbwtikitown_tterika.patch 8180
+## 1. TikiTown: wall paint, cladding and trim (NEW files 43 / 44)
 
-NEW in this hand-off, TikiTown submod: one pack + tiledef for the copied wall-overlay / soundproof / props tiles
-(5 tilesets, each under the game's 512-tile limit):
+- `43_tikitown_wall_paint_cladding.json` (860): the four tterika detailing sheets (interior paint /
+  wallpaper, exterior brick / stone / wood / siding). Each colour row has 10 pieces in one card:
+  - lower panel, its corner and end cap
+  - top band, its corner and end cap
+  - window and door-frame panels
+  - the two door-frame edge halves
 
-    pack=KBWTikiTownWallOverlays
-    tiledef=kbwtikitown_walloverlays 8179
+  Category "Wall Paint & Cladding". Names come from the art ("Teal Paint Lower Panel",
+  "Red Brick Cladding ...").
+- `44_tikitown_wall_trim.json` (231): the two tterika trim sheets (baseboards, chair rails, crown,
+  wainscot panels, corner trim). Category "Wall Trim".
+- Costs:
+  - paint: paintbrush + the nearest vanilla paint
+  - wallpaper: a wallpaper roll
+  - cladding: the matching TikiTown wall recipe, scaled to the piece
+  - trim: 1/4 of the wood wall recipe
+- Tiles:
+  - The paint/cladding sheets carry `WallOverlay` but mostly no `attached*` facing, so KBW would
+    place them as loose objects. They use OUR copies with the facing added by position, in new
+    tilesets `KBWTikiTownDetail1..3`.
+  - Those tilesets go into the existing `kbwtikitown_walloverlays` tiles file and pack; existing
+    sprite names are unchanged.
+  - The trim sheets already carry facings, so the pack's own tiles are used.
+- Confirmed in game (single player).
 
-**New folders in this hand-off** (nothing existed there before, so copy them over whole):
+## 2. TikiTown: overlay corners are dismantlable thumpables (file 39, also used by 43 / 44)
 
-- TikiTown submod: `42/media/scripts/` (generator cabinet items), `42/media/textures/` (generator icons),
-  and `42/media/lua/shared/Translate/EN/ItemName.json`.
-- World Essentials (base): `42/media/scripts/WorldEssentials_SprayPaint_Items.txt` and
-  `42/media/lua/server/Patches/WorldEssentialsSprayPaintDistribution_Server.lua`.
-- Knox Buildworks Expansion: `42/media/scripts/WorldEssentials_KnoxComponentRecipes.txt`
-  (recipe EN strings to merge into WE's Recipes.json: `notes/WorldEssentials_KnoxComponentRecipes_Recipes_EN.json`).
+- Corner pieces now build with `canPassThrough: false` (`isThumpable` stays false), so KBW makes
+  them an IsoThumpable instead of a prop.
+- Why: inside a PhunInteriors room the sledgehammer is blocked, and vanilla Dismantle only works on a
+  thumpable, so corners couldn't be removed there.
+- A corner only builds where both walls exist, so it blocks nothing new. End caps and pillars stay props.
 
-**1. Names + tooltips pass (Community + TikiTown; definitions and EN translations only)**
+## 3. TikiTown: depth for our copied tiles (NEW `common/media/` folder)
 
-- 127 name fixes (raw sheet names, doubled words, duplicates split by art; `industry_tk_02_25` is a Fire Extinguisher Cabinet).
-- Unique translationKey per width for the TikiTown garage doors (all showed "(2 Wide)"); 40 keys split.
-- One-line type tooltip on every piece (`tooltipKey`). This is why nearly every existing buildable shows as "changed".
-- KBW-owned tooltip keys are never shipped (includes the 2026-11-01 tooltip fix). WE's `WECommunity_*` Dylan isolation untouched.
+- `common/media/tileDepthTextureAssignments.txt` gives each copied tile vanilla's own wall preset
+  for its role (W face `preset_depthmaps_01_4`, N `_5`, corner `_6`, end cap `_7`), the same
+  presets vanilla uses for `walls_interior_detailing_01`. Without it the copies had no depth at all:
+  Drazion's pack doesn't assign the lower-wall block we copy, and the copies have new names.
+- `common/media/tileGeometry.txt` is the minimal VERSION 2 stub the engine needs before it reads a
+  mod's `common/media`.
 
-**2. Ice machines and deep fryer (`57_community_tk_kitchen_misc.json`)**
+## 4. Community: hand-pump sinks (NEW file 71)
 
-- Commercial Ice Machine and Deep Fryer now cost the same as KBW's matching appliance (chest freezer / green oven recipe,
-  magazine-gated like KBW's own).
-- Ice machine tiers: Commercial (30), Large (65) and Industrial (100), grouped with the base machine; capacity set via the
-  stage `container` capacity.
-- 65 and 100 are built in two steps (inert shell, then the finished unit built ON the shell via `previousStage`) so each build
-  stays under ~75 carry weight. New asset: `KBWCommunityIceShell` pack + tiledef 8181.
-- Confirmed in game (two-stage build and tiers).
+- The five Knox VE counter-top sinks (Beige, White, Industrial, Dark Industrial, Chrome) as
+  "<Sink> (Hand Pump)". They give water like your Large Water Tank: no plumbing or mains.
+  One card, "Hand Pump Sinks", under Appliances / Bathroom Fixtures.
+- Stage `"well": true` (Knox's well system), so the server's Knox well settings apply. In the
+  default mode the water is endless.
+- Cost: your Large Water Tank recipe (`worldessentials.kbw.camping_01_64`).
+- Tiles: our copies of `fixtures_sinks_01` 0-11 / 16-23 in the ice-shell tileset at fixed slots
+  48-67 (water 999999, no `waterPiped`, vanilla's own depth). Vanilla sinks and map sinks are
+  untouched.
+- Confirmed in game (single player).
 
-**3. RC1: fridge/freezer tiers, reinforced storage, pick-up / rotation fixes**
+## 5. Reinforced bookshelves (capacity 100, military-crate cost; same rule as the counters)
 
-- 59 tiered 1-tile fridges/freezers (`70_kbwcb_refrigeration_tiers.json`, Appliances > Refrigeration); shell sheet extended
-  to 44 tiles + depth map; "Build first" shell names. KBW part amounts (insulation foam, plastic sheet, rubber seal,
-  refrigerant, copper pipe) are halved, rounded down, min 1, for fridges and ice machines.
-- Reinforced counters/cabinets/crates (files 35/40/41/42) at military-crate capacity; TikiTown: 58 reinforced counters.
-- New Lua: `KBWCommunity_StageProperties` (container capacity per type, freezer retype), `KBWCommunity_StageInfo`
-  (build-menu capacities, picked-up tooltip), `KBWCommunity_Pickup` (pick up / place keeps storage and name),
-  `KBWCommunity_Rotation` (moveable face offsets for badly grouped pack tiles). TikiTown gets its own copies
-  (`KBWTikiTown_*`), all install-guarded so both can load together.
-- Confirmed in game, single player, test bundle. Multiplayer not tested.
+- TikiTown (5): In-Wall Bookshelf, Tall Bookshelf (Walnut, Oak, Charcoal, White).
+- Community (14):
+  - In-Wall Bookshelf, two Bookstore Shelves, Store Bookshelf
+  - five Bookcases and their five in-wall Wall Shelves
 
-**4. New Dirkies / TikiTown sheets**
+  The secret-entrance bookshelves are doors, so they're excluded.
 
-- Community: stairs (7, pillars removed), bedroom (60: floor beds, large beds, wardrobe, dressers, nightstand, bookcases),
-  couches (22: 9 couches, 9 armchairs, 4 L-shaped couches in teal/purple/pink/orange).
-- TikiTown: Newburbs trim (250), tterika_02 storage (12 lockers/chests + 12 reinforced; footlocker stacks 6, small cabinets 2),
-  tterika counter and shelving additions in file 23.
-- tterika_02 needs a tile-property patch to stack and place correctly: `kbwtikitown_tterika.patch.tiles` (additive merge onto
-  `furniture_storage_tterika_02`: IsStackable/IsTable on the footlocker and small cabinets; MoveType=Object and corrected
-  Facing for the freestanding lockers, which the pack tags as wall objects) plus `KBWTikiTown_TileFixes.lua`, because a
-  patch cannot remove a property: it unsets `IsTableTop` on the footlocker at runtime (vanilla never stacks onto a square with
-  `IsTableTop`). Needs the tiledef line above.
-- L couches use `KBWCommunityLCouch`: single-tile copies of the Comfy end pieces WITHOUT their 2-tile sprite grid (orange is
-  a recolour of pink). With the originals the ends ghost as the full 2-tile couch and cannot be picked up.
-- `common/media/depthmaps/DEPTH_d_location_sofaking.png`: sofaking depth map with the teal and orange corner cells cleared
-  (only those colours carried depth data; purple and pink had none and looked right). Fixes the odd teal look, confirmed in game.
+## 6. Community: "Grey" -> "Gray" (vanilla spelling, names only)
 
-**5. Multi-part pick-up / sledgehammer (new this hand-off)**
+## 7. All definition files are written in md5(id) order (big but data-neutral diff)
 
-- `KBWCommunity_MultiPart.lua` / `KBWTikiTown_MultiPart.lua`: KBW places each tile of a multi-tile build as its own object
-  (`modData.KBW.groupId`/`partCount`). Vanilla only moves tiles together when sprites share a tile-property sprite grid, so
-  picking up or smashing one tile of a bed left the rest. This wraps `ISMoveableSpriteProps:canPickUpMoveable/pickUpMoveable`
-  and `ISDestroyStuffAction:complete` so all tiles of the group go together; part items drop on the floor with the generic
-  `Moveables.Moveable` look (as vanilla mu lti-sprite pick-up does).
+- KBW's `Registry:list()` uses Kahlua's recursive quicksort. With 43/44 added, the files as written
+  would have reached depth 472 in the WE layout. That is the same "Stack overflow" in
+  `partition_comp` that stopped KBW loading at 482 on 2026-11-08.
+- With every file md5-ordered the depth is 20-85, about what KBW + VE produce alone (83). It stays low
+  if any file is dropped (26), in random load orders (37) and at twice the content (27).
+- Menu order is unchanged.
 
-**6. Workbenches (Fears, file 56) become real workstations**
+## 8. One question
 
-- `KBWCommunity_BenchTools.lua` (shared, NEW) registers the stage property `kbwcbBenchTools` and wraps
-  `ISInventoryPaneContextMenu.getContainers` plus the B42 craft panels' `updateContainers`: while the player is adjacent to a
-  configured bench, one detached (never saved, never shown) virtual container holding one of every member of the bench's core
-  tool tags is added to the craft-panel query only. All recipe variants and tool alternates resolve.
-- Same file wraps `ISHandcraftAction:getDuration`: crafting at a bench of the recipe's own category is 10% faster
-  (`BT.SPEED_MULTIPLIER = 0.90`).
-- Benches are recognised by their tile as well as by `modData.kbwcbBenchTools`, so a bench that was picked up and placed again
-  (a plain moveable object; vanilla does not carry our modData across) keeps its tools. The sprite and category tables are
-  generated into the Lua from the workbench definitions.
-- Anti-duplication: the B42 craft flow moves tools from nearby containers into the player's inventory and only returns them
-  when the craft completes, so cancelling a craft (walking away) left a bench tool in the inventory. Bench tools are marked
-  (`modData.kbwcbBenchTool`); once the player has no craft or transfer queued, any marked item they hold (bags included) is
-  removed and the bench's tool set rebuilt (on craft stop/perform, plus an EveryOneMinute backstop). Marked items cannot be
-  transferred anywhere but the player's main inventory.
-- `KBWCommunity_BenchMenu.lua` (client, NEW): right-click a bench to open the vanilla craft window on its category.
-- Definitions: the six benches (tailoring, metalworking, electrical, carpentry, chemistry, gunsmithing) gain the
-  `kbwcbBenchTools` stage property and a build cost of one of each core tool (any variant accepted). Chemistry has no B42 craft
-  category, so it gives a mortar and pestle and opens Medical.
-- New IG_UI labels `IGUI_KBWCB_Bench_<Category>`.
-- Generated from `pz_craft_loops/bench_tools.py`.
+- `World Essentials/42/media/scripts/WorldEssentials_SprayPaint_Items.txt` (Spray Paint weight
+  1.0 -> 0.5) was left out of your merge, with no note. The loot distribution went in. It's still
+  in this hand-off. Drop it again if that was intentional.
 
----
+## For the KBW dev (FYI)
 
-## New in `handoff-2026-11-08-full-sheets`
+- `notes/DEV_BUG_REPORT_attached_sprite_redraw.md`:
+  - Wall-overlay sprites attached by KBW don't appear, or draw in the wrong order, until the area
+    reloads. `AttachedSprites.attach` / `remove` never call `invalidateRenderChunkLevel`.
+  - This affects file 39 panels and 43/44. The pieces are built and saved; leaving the area and
+    coming back shows them.
 
-**7. CALL-OUT: Knox Buildworks component recipes + lootable Spray Paint (tested in game)**
+## Test status
 
-Full write-up with the recipe table and test plan: `notes/HANDOFF_KnoxComponentRecipes_WE.md`.
-
-- `World Essentials - Knox Buildworks Expansion/42/media/scripts/WorldEssentials_KnoxComponentRecipes.txt` (NEW folder
-  `scripts/`): six craft recipes turning vanilla-only inputs into KBW components:
-  - **Asphalt mixture:** bucket + 2 uses gravel bag + 2 uses sand bag + 1.0 L petrol.
-  - **Thin copper pipe:** Blacksmith 5, at a forge.
-  - **Rubber seals:** from a tire piece.
-  - **Plastic sheet:** tarp + epoxy + any lighter.
-  - **Insulation foam:** sponge + glue or epoxy.
-  - **Refrigerant bottle:** copper kettle + 1250 uses of a propane tank, MetalWelding 3.
-
-  It goes in the Expansion because it names `KnoxBuildworks.*` items, and the Expansion requires KBW.
-- Recipe names: merge `notes/WorldEssentials_KnoxComponentRecipes_Recipes_EN.json` (6 keys) into
-  `World Essentials/42/media/lua/shared/Translate/EN/Recipes.json`. The keys are the **bare recipe name**, as in vanilla
-  (`"Forge_Cup"`) and KBW (`"KBWCutPlasticSheet"`). Heads-up: WE's existing repair recipes use a `Recipe_` prefix
-  (`Recipe_WERepair...`). The game adds that prefix itself, so those names most likely show as raw ids. Worth a look
-  (not verified).
-- **Spray Paint** (base folder): `WorldEssentialsSprayPaintDistribution_Server.lua` mirrors every vanilla `PaintCyan` loot entry
-  with a same-weight `SprayPaint` entry (6 vanilla lists; other mods' lists are picked up too), on `OnPostDistributionMerge`,
-  additive and idempotent. `WorldEssentials_SprayPaint_Items.txt` overrides the vanilla item (full block, only `Weight` 1.0 → 0.5).
-  Vanilla has no Spray Paint loot at all, yet KBW's 12 graffiti buildables each use 1 of its 8 uses.
-- Tested in game (single player): all 6 recipes craft; Spray Paint spawns (the patch logged 8 mirrored entries with our mod list).
-
-**8. TikiTown wall sheets, full coverage (files 39-42, all NEW)**
-
-- `40_tikitown_lower_walls.json` (945): 3/4, 2/3, 1/2, 1/3, 1/4 height walls built from the pack's own tiles 72-91, as real
-  walls (panel, corner, pillar). One group card per sheet and piece type, with the heights inside it. A lower wall
-  refuses an edge that already has a wall, window, door or fence: KBW otherwise swaps a player-built wall out
-  (`KBWCommunityFreeEdge.OnIsValid` / `OnIsValidCorner`, in the OverlayGuard Lua).
-- `39_tikitown_wall_overlays.json` (945): the same heights as decorative overlays on an existing wall. These use OUR OWN COPIES
-  of the tiles (`KBWTikiTownWallOverlays1..3`, overlay-only properties). The pack's tiles are typed as walls, so KBW refused
-  them as overlays ("the wall edge is already taken"), and re-tagging the pack's tiles would change every map-placed copy
-  too. Needs the new mod.info lines above.
-- `41_tikitown_roof_slope_walls.json` (1701): 27 roof-slope / gable walls per sheet (tiles 30-71, 96-117). They are modelled
-  on the in-game-confirmed Newburbs roof slope walls: the sheet's own wall cost and health, kind wall, one card per sheet.
-  W/N pairs are matched by shape and validated against the confirmed Newburbs pairs.
-- `42_tikitown_garage_trim.json` (189): garage door frame Left / Center / Right per sheet (tiles 64-69). They are modelled on the
-  confirmed Newburbs garage door frames, at the sheet's own door-frame cost.
-- 63 sheets covered (the 60 used for lower walls + the 3 commercial cinder-block sheets). Deliberately NOT built:
-  - wall fixtures (vents, meters): art only, no tile properties;
-  - siding posts;
-  - the tents / Melos ruins / four tterika sheets (own layouts). Their main wall pieces already exist.
-
-  See `src/tikitown/TODO_wall_sheet_leftovers.md`.
-- Window / door-frame walls no longer merge into the plain corner sprite. Two "(Window 2)" walls meeting at a corner used to
-  become the solid corner tile, because every variant carried the plain wall's `cornerSprite`. Their `cornerSprite` is
-  removed (716 pieces in file 21); they keep `pillarSprite` (the gap filler). Plain walls still join as before.
-- TikiTown walls no longer offer plaster / paint / wallpaper finishes (follow-up tag `handoff-2026-11-08-plaster-fix`;
-  confirmed in game). The Brick pieces of file 21
-  carried the vanilla brick recipe's `onCreate = BuildRecipeCode.canBePlastered.OnCreate`. KBW (`WallFinishes.isPlasterable`)
-  then showed a Finish choice in the catalog, and choosing one built a vanilla `walls_interior_house_*` tile. The callback is
-  removed from 224 stages in file 21; the lower walls (40) and roof slope walls (41) copy their callbacks from 21, so they
-  lose it too (240 + 432). Other callbacks (the lower walls' `onIsValid`) are unchanged. Walls built before this keep the
-  vanilla canBePlastered flag on the placed object.
-
-**9. Naming pass (TikiTown; names, group titles and subcategories only, no cost changes)**
-
-- **69 wall styles** get descriptive names from their art instead of "Style N", e.g. "Pink Brick Wall", "Palm Leaf Wallpaper
-  Wall (Door Frame)", "Dark Green Brick Lower Wall Corner (1/2)". Lower walls, overlays, roof slopes and garage trim follow the
-  same style names.
-- The 12 sheets under plain "Walls" moved into Brick / Stone, and cement became "Concrete Walls".
-- **Doors (97):** descriptive names, regrouped from two per-sheet cards into 12 type cards (Panel, Six-Panel, Framed Glass,
-  Kickplate, ...). The second door of each mirror pair is "(Mirrored)"; handedness is a TODO.
-- **Beds and furniture cards:** beds are named by colour, and furniture group cards dropped the "TikiTown " prefix.
-- **Spelling:** "Grey" became "Gray" everywhere (vanilla spelling).
-- Translation tables regenerated: group card titles now always follow the definitions.
-
-**10. TikiTown props-14 (NEW `38_tikitown_props14.json`) and soundproofing (NEW `37_tikitown_soundproof.json`)**
-
-- props-14: desk microphone, small and large mixer boards, ATM, thermos coffee dispenser, styrofoam cups (1 plank), and the
-  Electrical Cabinet Generator (section 11).
-- Soundproofing (wall panel, pillar, corner, window, door frame) uses OUR OWN COPIES of the tiles (`KBWTikiTownSoundproof`):
-  IsMoveAble removed, Facing fixed, door-trim types, the corner as an NW corner. The earlier approach patched the pack's tiles
-  globally (map-placed copies changed too); that is gone, and the pack's soundproof tiles are untouched.
-- `KBWTikiTown_TableTop.lua` (NEW, own guard): table-top pieces (mic, mixers, cups, coffee dispenser) sit on the floor when
-  placed on the floor, not at counter height. It is the TikiTown counterpart of the Community TableTop fix; WE's copy only runs
-  with the Community submod.
-
-**11. Electrical Cabinet Generator (TikiTown; confirmed in game, single player: generator, Rotate, pick-up / re-place, save/reload)**
-
-- A real vanilla generator built by KBW (`nativeObject` generator).
-  - Items `TikiTownKBW.ElectricalCabinetGenerator` / `...Mirrored`, one per facing: the game maps a placed generator's
-    sprite to its item.
-  - Stats: wear 1 in 40, sound radius 15, weight 40, own 32x32 icons.
-  - Cost: the yellow generator as WE balances it, with every skill +1 (Electricity 9, MetalWelding 6; alternative 9 / 7).
-- Second facing = our mirrored tile `KBWTikiTownProps_0`.
-- `KBWTikiTown_GeneratorRotate.lua` (shared, NEW): vanilla can only drop a generator, so this adds a "Rotate" world option.
-  It swaps the placed generator's sprite in place, keeping fuel, condition and on/off state. In MP the client asks, and the
-  server swaps and calls `transmitUpdatedSpriteToClients`. Confirmed in game (single player): Rotate works and the
-  cabinet works as a generator. The MP client / server paths are mock-tested only.
-
-**12. Community: L couch corners, multi-part pick-up**
-
-- L couch corners use copied tiles (`KBWCommunityLCouch` 32-47) for the depth fix (pack + tiledef 8178, already listed above).
-- `KBWCommunity_MultiPart.lua` / `KBWTikiTown_MultiPart.lua`: the dropped parts of a multi-tile build use the flat-pack box icon
-  (`Item_Flatpack`), and a group places back as one piece. Parts drop like vanilla.
-
-**13. OverlayGuard Lua (Community + TikiTown, NEW files)**
-
-- `KBWCommunity_OverlayGuard.lua` / `KBWTikiTown_OverlayGuard.lua`:
-  - KBW's overlay cursor must also pass WE's own wall-attachment check, so an invalid spot shows red instead of erroring
-    mid-build.
-  - `KBWCommunityCornerTrim.OnIsValid`: inside-corner trims and soundproof corners need a wall edge on both sides.
-  - `KBWCommunityFreeEdge` (section 8).
-- Same code in both submods, install-guarded.
-
-**14. KBW load fix: definition order (affects anyone shipping large files)**
-
-- KBW sorts every buildable with Kahlua's recursive quicksort (`Registry:list()`). With our ~2,000 new pieces in generation
-  order, it hit Kahlua's stack limit ("Stack overflow" in `partition_comp`), and KBW never finished loading. Files 39-42 now
-  list their buildables in a fixed md5(id) order, which brings the sort depth back to what KBW + VE alone produce. Confirmed in
-  game. The root cause is reported for the KBW dev: `notes/DEV_BUG_REPORT_registry_sort_overflow.md`.
-
-**Also for the WE dev**: `notes/DEV_BUG_REPORT_ZVirusVaccine_dependency.md`. WE's 2026-11-08 update crashes the game before the
-menu if Zombie Virus Vaccine is not enabled: its lab recipes use that mod's timed actions, and it is only in `loadModAfter`,
-not `require`. The PAW / MedievalZ repair recipes log missing-item errors the same way when those mods are absent.
-
-**Untouched WE-owned files**: `mod.info`, `bundled_source.txt`, `KBWCommunity_Seating.lua`, and the runtime Lua WE moved into
-main World Essentials (Destroyable, MultiStorey, TableTop, TVScreens, Viewscreens).
-
-**Test status**
-
-- Confirmed in game: stairs, bedroom, couches and all four L couches, tterika storage, reinforced counters, fridge tiers,
-  two-stage ice machines and tiers, workbench pick-up, RC1 Lua (single player).
-- Also confirmed in game: multi-part pick-up / sledgehammer on multi-tile builds, generic box look for dropped parts,
-  tterika stacking, the teal depth-map fix, names/tooltips pass.
-- This hand-off, confirmed in game (user, single player, test bundle; everything marked Completed):
-  - the component recipes and Spray Paint loot;
-  - the lower walls, including the replace-refusal;
-  - wall overlays, soundproofing, props-14, the naming pass;
-  - the roof slope walls and garage trim;
-  - L couch corners;
-  - the KBW load-order fix;
-  - the Electrical Cabinet Generator working as a generator, and its "Rotate" option;
-  - the window / door-frame corner fix;
-  - the W/N slope direction of each roof slope wall when rotated;
-  - the Electrical Cabinet Generator's pick-up / re-place and save/reload;
-  - the plaster-finish removal (no Finish choice on TikiTown walls; `handoff-2026-11-08-plaster-fix`).
+- Confirmed in game (single player, test bundle):
+  - files 43/44
+  - corner thumpables
+  - hand-pump sinks
+  - Gray names
+- Built and checked only:
+  - the reinforced bookshelves, apart from the shared counter rule
+  - the md5 reorder (simulated)
 - Not tested: multiplayer.
+- Known: the KBW redraw issue above.

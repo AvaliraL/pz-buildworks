@@ -15,6 +15,9 @@ added (`Tooltip_KBWCB_WallCorner`, `Tooltip_KBWCB_WallWindow` in TikiTown) are k
 
 **mod.info:** no new lines needed.
 
+**Spray Paint matches your merge.** Loot distribution only; we dropped our item weight override
+(follow-up tag `handoff-2026-11-10-spraypaint-match`).
+
 ## 1. TikiTown: wall paint, cladding and trim (NEW files 43 / 44)
 
 - `43_tikitown_wall_paint_cladding.json` (860): the four tterika detailing sheets (interior paint /
@@ -91,12 +94,6 @@ added (`Tooltip_KBWCB_WallCorner`, `Tooltip_KBWCB_WallWindow` in TikiTown) are k
 - With every file md5-ordered the depth is 20-85, about what KBW + VE produce alone (83). It stays low
   if any file is dropped (26), in random load orders (37) and at twice the content (27).
 - Menu order is unchanged.
-
-## 8. One question
-
-- `World Essentials/42/media/scripts/WorldEssentials_SprayPaint_Items.txt` (Spray Paint weight
-  1.0 -> 0.5) was left out of your merge, with no note. The loot distribution went in. It's still
-  in this hand-off. Drop it again if that was intentional.
 
 ## For the KBW dev (FYI)
 

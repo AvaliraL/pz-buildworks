@@ -823,7 +823,67 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.metal",
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 2
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 2
+              }
+            ],
             "skills": {
               "MetalWelding": 4
             },

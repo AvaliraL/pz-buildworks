@@ -135,6 +135,11 @@
   "Tooltip_KBWCB_Wall_BathroomLower": "Bathroom lower wall section.",
   "Tooltip_KBWCB_Wall_ConcreteLower": "Concrete lower wall section.",
   "Tooltip_KBWCB_WallCorner_ConcreteLower": "Concrete lower corner wall section.",
+  "Tooltip_KBWCB_Ladder": "Climbable ladder. Leave the square above it open. For more floors, build another ladder on top of it.",
+  "Tooltip_KBWCB_BarrelPlanter": "Decorative plant in a small wooden barrel.",
+  "Tooltip_KBWCB_StripperPole": "Floor-to-ceiling dance pole.",
+  "Tooltip_KBWCB_NeonSign": "Wall-mounted neon sign. Lights up when switched on, with power.",
+  "Tooltip_KBWCB_BeadCurtain": "Hanging bead curtain for a doorway. You can walk and see through it.",
   "Tooltip_KBWCB_WallWindow": "Wall section with a window opening.",
   "Tooltip_KBWCB_WallCorner": "Corner wall section."
 }

@@ -47,7 +47,20 @@
   "Tooltip_KBWCB_FenceHalf": "Half-width fence section for closing gaps.",
   "Tooltip_KBWCB_FenceTwoStorey": "Two-storey fence section.",
   "Tooltip_KBWCB_Decoration": "Decorative piece.",
+  "Tooltip_KBWCB_StorageReinforced": "Reinforced metal storage with a large capacity.",
+  "Tooltip_KBWCB_WindowTrim": "Decorative trim that frames a tall window. Fits the Window Frame-Tall window.",
+  "Tooltip_KBWCB_WindowPlanter": "Planter box that hangs below a tall window. Fits the Window Frame-Tall window.",
+  "Tooltip_KBWCB_PottedPlant": "Decorative potted plant.",
+  "Tooltip_KBWCB_Locker": "Metal locker for storage.",
+  "Tooltip_KBWCB_StorageSink": "Plumbed sink with a storage shelf underneath.",
+  "Tooltip_KBWCB_StorageSinkReinforced": "Plumbed sink with a large reinforced storage shelf underneath.",
+  "Tooltip_KBWCB_PumpStorageSink": "Sink with a storage shelf underneath. Draws water like a hand pump: no plumbing needed. Follows the server's Knox Buildworks well settings.",
+  "Tooltip_KBWCB_PumpStorageSinkReinforced": "Sink with a large reinforced storage shelf underneath. Draws water like a hand pump: no plumbing needed. Follows the server's Knox Buildworks well settings.",
+  "Tooltip_KBWCB_MedicalEquipment": "Medical equipment for decoration.",
+  "Tooltip_KBWCB_GunRack": "Two-tile pegboard rack that hangs on a wall. Each half holds items and shows guns when filled.",
   "Tooltip_KBWCB_FridgeShell": "Unfinished refrigerator casing. Build the matching refrigerator on it to finish it.",
   "Tooltip_KBWCB_FreezerShell": "Unfinished freezer casing. Build the matching freezer on it to finish it.",
-  "Tooltip_KBWCB_PumpSink": "Draws water like a hand pump: no plumbing or water main needed. Follows the server's Knox Buildworks well settings."
+  "Tooltip_KBWCB_PumpSink": "Draws water like a hand pump: no plumbing or water main needed. Follows the server's Knox Buildworks well settings.",
+  "Tooltip_KBWCB_Ladder": "Climbable ladder. Leave the square above it open. For more floors, build another ladder on top of it.",
+  "Tooltip_KBWCB_LadderTop": "Decorative ladder top for the open square above a ladder. Not climbable; you can walk through it."
 }

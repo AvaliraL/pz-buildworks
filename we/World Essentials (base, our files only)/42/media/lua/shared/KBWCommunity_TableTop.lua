@@ -38,6 +38,12 @@ local SPRITES = {
     ["kitchen_misc_tk_01_29"] = true,
     ["kitchen_misc_tk_01_30"] = true,
     ["kitchen_misc_tk_01_31"] = true,
+    ["tikitown-props-14_90"] = true,
+    ["tikitown-props-14_91"] = true,
+    ["tikitown-props-14_92"] = true,
+    ["tikitown-props-14_93"] = true,
+    ["tikitown-props-14_104"] = true,
+    ["tikitown-props-14_105"] = true,
 }
 
 local function tableHeightUnder(obj)

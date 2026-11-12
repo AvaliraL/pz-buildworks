@@ -2643,4 +2643,6 @@ tileDepthTextureAssignments
     KBWTikiTownDetail3_349 = preset_depthmaps_01_4,
     KBWTikiTownDetail3_350 = preset_depthmaps_01_5,
     KBWTikiTownDetail3_351 = preset_depthmaps_01_5,
+    KBWTikiTownLadders_0 = location_sewer_01_32,
+    KBWTikiTownLadders_1 = location_sewer_01_33,
 }

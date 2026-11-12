@@ -6042,9 +6042,1143 @@
     ],
     "amount": 5
    }
+  ],
+  "kbwcb.appliance.future_fridge_black_60": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 8
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 12
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 30
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 45
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 1
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 1
+   }
+  ],
+  "kbwcb.appliance.future_fridge_black_80_shell": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 10
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 16
+   },
+   {
+    "id": "kbwcb_metalpipe",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.MetalPipe"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 40
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 3
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 2
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 2
+   }
+  ],
+  "kbwcb.appliance.future_fridge_black_80": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 20
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 80
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 10
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 2
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 3
+   }
+  ],
+  "kbwcb.appliance.future_fridge_black_100_shell": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 15
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 20
+   },
+   {
+    "id": "kbwcb_metalpipe",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.MetalPipe"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 60
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 3
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 3
+   }
+  ],
+  "kbwcb.appliance.future_fridge_black_100": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 10
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 30
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 140
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 16
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 4
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 5
+   }
+  ],
+  "kbwcb.appliance.future_fridge_white_60": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 8
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 12
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 30
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 45
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 1
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 1
+   }
+  ],
+  "kbwcb.appliance.future_fridge_white_80_shell": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 10
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 16
+   },
+   {
+    "id": "kbwcb_metalpipe",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.MetalPipe"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 40
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 3
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 2
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 2
+   }
+  ],
+  "kbwcb.appliance.future_fridge_white_80": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 20
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 80
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 10
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 2
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 3
+   }
+  ],
+  "kbwcb.appliance.future_fridge_white_100_shell": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 15
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 20
+   },
+   {
+    "id": "kbwcb_metalpipe",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.MetalPipe"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 60
+   },
+   {
+    "id": "expansion_insulationfoam",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.InsulationFoam"
+    ],
+    "amount": 4
+   },
+   {
+    "id": "expansion_plasticsheet",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.PlasticSheet"
+    ],
+    "amount": 3
+   },
+   {
+    "id": "expansion_rubberseal",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RubberSeal"
+    ],
+    "amount": 3
+   }
+  ],
+  "kbwcb.appliance.future_fridge_white_100": [
+   {
+    "id": "welding_mask",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:weldingmask"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "screwdriver",
+    "role": "tool",
+    "mode": "keep",
+    "tags": [
+     "base:screwdriver"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "torch_fuel",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.BlowTorch"
+    ],
+    "uses": 5
+   },
+   {
+    "id": "welding_rods",
+    "role": "consumable",
+    "mode": "drain",
+    "items": [
+     "Base.WeldingRods"
+    ],
+    "uses": 10
+   },
+   {
+    "id": "sheet_metal",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.SheetMetal"
+    ],
+    "amount": 6
+   },
+   {
+    "id": "screws",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.Screws"
+    ],
+    "amount": 30
+   },
+   {
+    "id": "electronics",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectronicsScrap"
+    ],
+    "amount": 140
+   },
+   {
+    "id": "electric_wire",
+    "role": "material",
+    "mode": "consume",
+    "items": [
+     "Base.ElectricWire"
+    ],
+    "amount": 16
+   },
+   {
+    "id": "expansion_refrigeratorcompressor",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.RefrigeratorCompressor"
+    ],
+    "amount": 1
+   },
+   {
+    "id": "expansion_refrigerantbottle",
+    "role": "component",
+    "mode": "drain",
+    "items": [
+     "KnoxBuildworks.RefrigerantBottle"
+    ],
+    "uses": 4
+   },
+   {
+    "id": "expansion_thincopperpipe",
+    "role": "component",
+    "mode": "consume",
+    "items": [
+     "KnoxBuildworks.ThinCopperPipe"
+    ],
+    "amount": 5
+   }
   ]
  },
  "buildables": [
+  {
+   "id": "kbwcb.appliances.future_fridge_white_80_shell",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_white_80_shell",
+   "displayName": "White Future Fridge 80/40 Shell",
+   "tooltipKey": "Tooltip_KBWCB_FridgeShell",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_200",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_200"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_202"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_white_80_shell",
+      "skills": {
+       "MetalWelding": 7
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 7,
+          "Electricity": 9
+         }
+        }
+       ]
+      },
+      "inputs": []
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_white_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeWhiteTiers",
+    "name": "White Future Fridge",
+    "level": 2
+   }
+  },
   {
    "id": "kbwcb.appliances.plain_refrigerator_60",
    "translationKey": "IGUI_kbwcb_appliances_plain_refrigerator_60",
@@ -6685,6 +7819,112 @@
     "translationKey": "IGUI_KBWCB_Group_IndustrialRefrigeratorTiers",
     "name": "Industrial Refrigerator",
     "level": 2
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_white_100_shell",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_white_100_shell",
+   "displayName": "White Future Fridge 100/50 Shell",
+   "tooltipKey": "Tooltip_KBWCB_FridgeShell",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_200",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_200"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_202"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_white_100_shell",
+      "skills": {
+       "MetalWelding": 8
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 8,
+          "Electricity": 10
+         }
+        }
+       ]
+      },
+      "inputs": []
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 90
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_white_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeWhiteTiers",
+    "name": "White Future Fridge",
+    "level": 4
    }
   },
   {
@@ -7864,6 +9104,256 @@
     "translationKey": "IGUI_KBWCB_Group_BlueRefrigeratorTiers",
     "name": "Blue Refrigerator",
     "level": 1
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_black_100_shell",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_black_100_shell",
+   "displayName": "Black Future Fridge 100/50 Shell",
+   "tooltipKey": "Tooltip_KBWCB_FridgeShell",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_199",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_199"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_201"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_black_100_shell",
+      "skills": {
+       "MetalWelding": 8
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 8,
+          "Electricity": 10
+         }
+        }
+       ]
+      },
+      "inputs": []
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 90
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_black_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeBlackTiers",
+    "name": "Black Future Fridge",
+    "level": 4
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_white_100",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_white_100",
+   "displayName": "White Future Fridge 100/50",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_179",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_179"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_181"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_white_100",
+      "skills": {
+       "MetalWelding": 8,
+       "Electricity": 6
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 8,
+          "Electricity": 10
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 100,
+      "freezer": 50
+     },
+     "previousStage": "kbwcb.appliances.future_fridge_white_100_shell"
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60,
+     "Electricity": 55
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_white_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeWhiteTiers",
+    "name": "White Future Fridge",
+    "level": 5
    }
   },
   {
@@ -9177,6 +10667,112 @@
     "translationKey": "IGUI_KBWCB_Group_WhiteIndustrialFreezerTiers",
     "name": "White Industrial Freezer",
     "level": 3
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_black_80_shell",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_black_80_shell",
+   "displayName": "Black Future Fridge 80/40 Shell",
+   "tooltipKey": "Tooltip_KBWCB_FridgeShell",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_199",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_199"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_201"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_black_80_shell",
+      "skills": {
+       "MetalWelding": 7
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 7,
+          "Electricity": 9
+         }
+        }
+       ]
+      },
+      "inputs": []
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_black_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeBlackTiers",
+    "name": "Black Future Fridge",
+    "level": 2
    }
   },
   {
@@ -11001,6 +12597,150 @@
    }
   },
   {
+   "id": "kbwcb.appliances.future_fridge_black_100",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_black_100",
+   "displayName": "Black Future Fridge 100/50",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_178",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_178"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_180"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_black_100",
+      "skills": {
+       "MetalWelding": 8,
+       "Electricity": 6
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 8,
+          "Electricity": 10
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 100,
+      "freezer": 50
+     },
+     "previousStage": "kbwcb.appliances.future_fridge_black_100_shell"
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60,
+     "Electricity": 55
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_black_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeBlackTiers",
+    "name": "Black Future Fridge",
+    "level": 5
+   }
+  },
+  {
    "id": "kbwcb.appliances.red_refrigerator_60",
    "translationKey": "IGUI_kbwcb_appliances_red_refrigerator_60",
    "displayName": "Red Refrigerator 60/30",
@@ -11382,6 +13122,149 @@
     "translationKey": "IGUI_KBWCB_Group_IndustrialRefrigeratorTiers",
     "name": "Industrial Refrigerator",
     "level": 4
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_black_60",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_black_60",
+   "displayName": "Black Future Fridge 60/30",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_178",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_178"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_180"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_black_60",
+      "skills": {
+       "MetalWelding": 6,
+       "Electricity": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6,
+          "Electricity": 8
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 60,
+      "freezer": 30
+     }
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60,
+     "Electricity": 20
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_black_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeBlackTiers",
+    "name": "Black Future Fridge",
+    "level": 1
    }
   },
   {
@@ -11915,6 +13798,293 @@
     "translationKey": "IGUI_KBWCB_Group_IndustrialFreezerTiers",
     "name": "Industrial Freezer",
     "level": 3
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_white_80",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_white_80",
+   "displayName": "White Future Fridge 80/40",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_179",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_179"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_181"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_white_80",
+      "skills": {
+       "MetalWelding": 7,
+       "Electricity": 5
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 7,
+          "Electricity": 9
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 80,
+      "freezer": 40
+     },
+     "previousStage": "kbwcb.appliances.future_fridge_white_80_shell"
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 40,
+     "Electricity": 35
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_white_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeWhiteTiers",
+    "name": "White Future Fridge",
+    "level": 3
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_white_60",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_white_60",
+   "displayName": "White Future Fridge 60/30",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_179",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_179"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_181"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_white_60",
+      "skills": {
+       "MetalWelding": 6,
+       "Electricity": 4
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 6,
+          "Electricity": 8
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 60,
+      "freezer": 30
+     }
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 60,
+     "Electricity": 20
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_white_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeWhiteTiers",
+    "name": "White Future Fridge",
+    "level": 1
    }
   },
   {
@@ -12949,6 +15119,150 @@
     "id": "kbwcb.appliances.plain_refrigerator_tiers",
     "translationKey": "IGUI_KBWCB_Group_PlainRefrigeratorTiers",
     "name": "Plain Refrigerator",
+    "level": 3
+   }
+  },
+  {
+   "id": "kbwcb.appliances.future_fridge_black_80",
+   "translationKey": "IGUI_kbwcb_appliances_future_fridge_black_80",
+   "displayName": "Black Future Fridge 80/40",
+   "tooltipKey": "Tooltip_KBW_Shared_Refrigerator",
+   "subcategory": "Refrigeration",
+   "iconSprite": "KBWCommunityIceShell_178",
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_178"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "KBWCommunityIceShell_180"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "materials": "kbwcb.appliance.future_fridge_black_80",
+      "skills": {
+       "MetalWelding": 7,
+       "Electricity": 5
+      },
+      "knowledge": {
+       "recipes": [
+        "KBWKnowledge_PopularMechanics_HomeAppliances"
+       ],
+       "hideUntilLearned": true,
+       "needToBeLearned": true,
+       "sources": [
+        {
+         "type": "magazine",
+         "item": "KnoxBuildworks.PopularMechanics_HomeAppliances"
+        }
+       ],
+       "skillAlternatives": [
+        {
+         "mode": "all",
+         "skills": {
+          "MetalWelding": 7,
+          "Electricity": 9
+         }
+        }
+       ]
+      },
+      "inputs": [
+       {
+        "id": "tv_source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "tv_source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "tv_electric_wire",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 2
+       }
+      ]
+     },
+     "object": {
+      "isProp": true,
+      "dismantable": true,
+      "blockAllSquare": true
+     },
+     "allowSpriteReuse": true,
+     "kbwcbContainerCapacity": {
+      "fridge": 80,
+      "freezer": 40
+     },
+     "previousStage": "kbwcb.appliances.future_fridge_black_80_shell"
+    }
+   ],
+   "category": "Appliances",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "construction": {
+    "time": 200,
+    "timedAction": "BuildWallMetal",
+    "completionSound": "BuildMetalStructureMedium",
+    "canWalk": false,
+    "category": "Welding",
+    "xp": {
+     "MetalWelding": 40,
+     "Electricity": 35
+    }
+   },
+   "tags": [
+    "community-tilepack",
+    "dylan",
+    "future-room",
+    "kitchen",
+    "refrigeration"
+   ],
+   "group": {
+    "id": "kbwcb.appliances.future_fridge_black_tiers",
+    "translationKey": "IGUI_KBWCB_Group_FutureFridgeBlackTiers",
+    "name": "Black Future Fridge",
     "level": 3
    }
   },

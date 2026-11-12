@@ -118,7 +118,9 @@ added (`Tooltip_KBWCB_WallCorner`, `Tooltip_KBWCB_WallWindow` in TikiTown) are k
 
 ---
 
-# Pending for the next hand-off (not pushed yet)
+# Hand-off 2026-11-12 (tag handoff-2026-11-12-ladders-tvs)
+
+Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-10...handoff-2026-11-12-ladders-tvs
 
 ## 8. Climbable ladders (B42 ladder mechanic). NEW TikiTown file 45, NEW Community file 72
 
@@ -138,7 +140,7 @@ added (`Tooltip_KBWCB_WallCorner`, `Tooltip_KBWCB_WallWindow` in TikiTown) are k
   - Metal cost = WE Sewer Ladders - Style 2 (read from WE). Wood = hammer + saw, 3 planks, 6 nails, Woodwork 3.
   - WE's landing-floor callback is not used.
 - **New tooltip key:** `Tooltip_KBWCB_Ladder`.
-- **Test status:** climbing CONFIRMED in game (single player, test bundle, 2026-08-28). All ladders work: TikiTown Rusted Iron Ladder plus the Wooden, Rusted Metal and Steel Ladders.
+- **Test status:** climbing CONFIRMED in game (single player, test bundle, 2026-11-12). All ladders work: TikiTown Rusted Iron Ladder plus the Wooden, Rusted Metal and Steel Ladders.
 - **Wall requirement (added after that test; tested against mocks only, NOT yet in game):**
   - Every ladder in files 45 and 72 now needs a wall. Its stage `callbacks.onIsValid` is `KBWLadderGuard.OnIsValid`.
   - The check reads the ladder's wall edge from its tile (`ladderW/N/E/S`, `attached*` as fallback). That edge needs a wall, window wall or door wall. E/S edges = the next square's W/N wall.
@@ -164,7 +166,7 @@ All tiles come from `edit_ddd_RUS_decor_house_01`.
 - **Where the copies live:** `KBWCommunityIceShell_72..83`, after the pump sinks. That means no new pack, tiledef or mod.info line. Depth uses the Community pack's own depth cells for the source tiles.
 - **Cost:** metal pieces cost the same as the Dirkies Blue Rolling Tool Cabinet. The ladder top is cheap (1 metal bar, MetalWelding 2).
 - **Tooltip key:** new `Tooltip_KBWCB_LadderTop`.
-- **Test status:** Iron Ladder + Iron Ladder Top CONFIRMED in game (2026-08-28). Drawer cabinets and Red Wall Cabinet: built and checked only.
+- **Test status:** Iron Ladder + Iron Ladder Top CONFIRMED in game (2026-11-12). Drawer cabinets and Red Wall Cabinet: built and checked only.
 
 ## 10. Community: Caged Ladder (file 72, own "Caged Ladder" card)
 
@@ -179,7 +181,7 @@ All tiles come from `edit_ddd_RUS_decor_house_01`.
 - **Copies:** `KBWCommunityIceShell_84..89`, with depth from the pack's own `DEPTH_edit_ddd_RUS_industry_crane_01.png`.
   - `kbw_tilepatch.DECOR_COPIES` now lists every decor copy (decor house + crane) in index order.
 - **Cost:** Bottom and Middle = WE Sewer Ladders cost. Top = ladder-top cost.
-- **Test status:** CONFIRMED in game (single player, test bundle, 2026-08-28). Tested over several floors: climbing up and down, stacked Middles, and the Top ring.
+- **Test status:** CONFIRMED in game (single player, test bundle, 2026-11-12). Tested over several floors: climbing up and down, stacked Middles, and the Top ring.
 
 ## 11. Community: Dirkies window decor (NEW file 64, 26 pieces)
 
@@ -254,7 +256,7 @@ These tiles sit at the bottom of the sheet, past a large empty gap, and were mis
 - **New tooltip key:** `Tooltip_KBWCB_BarrelPlanter`.
 - **Test status:** built and checked only.
 
-## 15. Fixes after the first in-game pass (2026-08-28)
+## 15. Fixes after the first in-game pass (2026-11-12)
 
 - **Table-top height ("floats at counter height on the floor"):** the fix is the sprite list in WE's own `KBWCommunity_TableTop.lua`.
   - **WE-OWNED FILE CHANGED** in our work copy: `World Essentials (base, our files only)/42/media/lua/shared/KBWCommunity_TableTop.lua`. 12 new `SPRITES` lines; nothing else touched.
@@ -268,7 +270,7 @@ These tiles sit at the bottom of the sheet, past a large empty gap, and were mis
 - **MRI Scanner:** rows corrected from the user's in-game screenshot (first and last rows swapped). North to south: `44 47 / 43 45 / 42 46`.
 - **Test status:** built and checked only. To be re-checked in game.
 
-## 16. File 64 fixes after the in-game check (2026-08-28)
+## 16. File 64 fixes after the in-game check (2026-11-12)
 
 - **Fit:** the window trim and the window planters both belong to the **Window Frame-Tall** window shape, in any colour. User-confirmed in game; the tooltips say so.
 - **Window trim:** works in game.
@@ -317,7 +319,7 @@ These tiles sit at the bottom of the sheet, past a large empty gap, and were mis
 
 **Test status:** built and checked only.
 
-## 19. Wall-mounted cabinets + log-spam fix (2026-08-28, after the in-game check)
+## 19. Wall-mounted cabinets + log-spam fix (2026-11-12, after the in-game check)
 
 - **Blue / Green Metal Drawer Cabinets (file 63):** they are wall-mounted mailbox banks at mid height. Moving them to the floor (section 15) still floated.
   - Copies `KBWCommunityIceShell_136..143` keep the pack art in place.
@@ -347,21 +349,21 @@ These tiles sit at the bottom of the sheet, past a large empty gap, and were mis
 - **New tooltip keys:** `Tooltip_KBWCB_NeonSign`, `_BeadCurtain`, `_StripperPole`.
 - **Test status:** built and checked only.
 
-## 21. File 65: Lab Centrifuge + Lab Analyzer removed (user, 2026-08-28)
+## 21. File 65: Lab Centrifuge + Lab Analyzer removed (user, 2026-11-12)
 
 - **Removed:** both pieces, because of texture issues in game. The "Lab Equipment" card now holds only the MRI Scanner.
 - **Copies:** their copies `KBWCommunityIceShell_130..133` stay in the tileset unused, so that the fixed indices of every later copy don't shift.
 - **Table-top list:** both are off WE's `KBWCommunity_TableTop.lua` list again.
 
-## 22. File 67: Future upper cabinets no longer block the square below (2026-08-28)
+## 22. File 67: Future upper cabinets no longer block the square below (2026-11-12)
 
 - **Symptom (user, in game):** nothing could be built under a Future Metal Upper Cabinet. The couch and the low cabinets were refused.
 - **Cause:** the copies carried `solidtrans`. KBW refuses any solid / BlocksPlacement piece on a square that is already solid (`Placement.lua`, solid-on-solid check).
 - **Fix:** copies `KBWCommunityIceShell_182..185` are now like the vanilla overhead cabinets: movable high `WallObject` + attached + container, with no solid flags. They still go over counters and fridges (KBW's high-wall-object rule).
 - **Known:** the Dirkie Upper Cabinets (file 35, pack tiles) carry `solidtrans` and have the same limit. Build the piece below first.
-- **Test status:** tested in game (user, 2026-08-28). The Future floor cabinets now place against a wall, and the earlier "can't be placed against a wall" report was this blocking upper cabinet.
+- **Test status:** tested in game (user, 2026-11-12). The Future floor cabinets now place against a wall, and the earlier "can't be placed against a wall" report was this blocking upper cabinet.
 
-## 23. File 63: Red Wall Cabinet had no storage (2026-08-28)
+## 23. File 63: Red Wall Cabinet had no storage (2026-11-12)
 
 - **Symptom (user, in game):** neither the cabinet nor its Reinforced version had storage.
 - **Cause:** the copies `KBWCommunityIceShell_80..83` are attached, non-solid wall objects. KBW builds those through vanilla moveable placement, which only creates the containers the tile itself declares. The definition's `container` block alone does nothing on that path.
@@ -369,7 +371,7 @@ These tiles sit at the bottom of the sheet, past a large empty gap, and were mis
 - **Audit:** no other copy with a definition container has this gap.
 - **Test status:** built and checked only.
 
-## 24. Cost rule: a metal base costs half its reinforced version (user, 2026-08-28)
+## 24. Cost rule: a metal base costs half its reinforced version (user, 2026-11-12)
 Many metal base pieces cost more than their "(Reinforced)" sibling (e.g. kbwve.extended.metal =
 3 sheet metal + 2 pipes + 4 screws vs the crate's 2 small sheets + 2 sheets + 1 scrap).
 `counter_variants.halve_metal_bases` (run by `add_variants`) now gives every base whose cost is metal
@@ -382,22 +384,22 @@ to half of its reinforced version (crate + tank). The plain sink keeps its plumb
 Built and checked: 159 pairs in the test bundle, no base costs more metal than its sibling.
 NOT tested in game.
 
-## 25. Future Room couch: depth fixed (2026-08-28)
+## 25. Future Room couch: depth fixed (2026-11-12)
 In game the couch drew over a resting player (backrest hid the body). The copies (iceshell
 190-197) used the pack's `DEPTH_DylansFutureRoom01` cells, but their seat positions are the vanilla
 Red Comfy couch's (`furniture_seating_indoor_01` 0-7). Their depth cells are now the vanilla couch's
 too (same tiles as `FR_COUCH_SRC`, from `DEPTH_furniture_seating_indoor_01.png`). Built and checked:
 8/8 cells identical to vanilla. NOT tested in game.
 
-## 26. Future Room fridge tiers: Completed in the test bundle (user confirmed in game, 2026-08-28)
+## 26. Future Room fridge tiers: Completed in the test bundle (user confirmed in game, 2026-11-12)
 
-## 27. File 47: Stripper Pole is one piece with two orientations (user, 2026-08-28)
+## 27. File 47: Stripper Pole is one piece with two orientations (user, 2026-11-12)
 Before, the two pack tiles were two styles: `entertainment_pole_1` / `_2`, grouped as "Stripper Poles".
 Now they are one buildable `worldessentials.tikitown.entertainment_pole`, with faces W =
 `tikitown_entertainment_01_0` and N = `_1`. The pack gives the tiles no `Facing`, so this mapping is
 our choice. The group is removed. Built and checked. NOT tested in game.
 
-## 28. File 65: MRI Scanner works as a bed; tiles 45 and 46 swapped (user, 2026-08-28)
+## 28. File 65: MRI Scanner works as a bed; tiles 45 and 46 swapped (user, 2026-11-12)
 - **Layout (3rd in-game correction):** rows north to south are now `44 47 / 43 46 / 42 45`.
 - **Bed:** the patient table is the west column of the two south rows, medical 42 (foot, south) and
   43 (head, north). Those tiles are now our copies `KBWCommunityIceShell_203` / `_204`, appended to
@@ -411,7 +413,7 @@ our choice. The group is removed. Built and checked. NOT tested in game.
 - **Unchecked:** the vanilla seat heights are for a normal bed, and the MRI table may sit higher.
 - **Test status:** built and checked. NOT tested in game.
 
-## 29. File 47: gaps in the built "Cheeky" and "GIRLS" neon signs (user, in game 2026-08-28)
+## 29. File 47: gaps in the built "Cheeky" and "GIRLS" neon signs (user, in game 2026-11-12)
 - **Symptom:** once built, part of the lettering was missing at the tile join (Cheeky: "Ch eeky").
   The placement ghost was fine, because it draws without depth.
 - **Cause:** every neon copy used a vanilla wall depth preset (`preset_depthmaps_01_4` / `_5`), but
@@ -427,7 +429,7 @@ our choice. The group is removed. Built and checked. NOT tested in game.
 - **Check:** 586 pixels filled, 0 art pixels left without depth.
 - **Test status:** built and checked. NOT tested in game.
 
-## 30. Future couch: gaps after the depth fix (user, in game 2026-08-28)
+## 30. Future couch: gaps after the depth fix (user, in game 2026-11-12)
 - **Symptom:** after note 25 the couch showed small texture gaps, like the neon signs (note 29).
 - **Cause:** the Future art pokes 4-48 px per tile past the vanilla couch's depth shape (cushion and
   arm edges, some detached from the shape). Art pixels with no depth are hidden.
@@ -445,7 +447,7 @@ our choice. The group is removed. Built and checked. NOT tested in game.
   Most of these holes are the same on the pack's own map tiles. If any of them shows gaps in game,
   add its kind to `FILL_DEPTH_KINDS`.
 
-## 31. MRI bed: Rest sat the player on the ground; menu said "MRI MRI Scanner" (user, in game 2026-08-28)
+## 31. MRI bed: Rest sat the player on the ground; menu said "MRI MRI Scanner" (user, in game 2026-11-12)
 - **Rest:** vanilla `ISWorldObjectContextMenu.onRest` paths to a seat position. If none is reachable,
   `onRestPathFailed` sits the player on the ground beside the object. We kept only the vanilla bed's
   `E` position (for "seated facing east"), but its stand square is the solid pedestal column east of
@@ -455,14 +457,14 @@ our choice. The group is removed. Built and checked. NOT tested in game.
 - **Name:** the menu shows "<GroupName> <CustomName>". CustomName is now "Scanner" (GroupName "MRI").
 - **Test status:** built and checked. NOT tested in game.
 
-## 32. Test bundle: all TikiTown is Completed (user, 2026-08-28)
+## 32. Test bundle: all TikiTown is Completed (user, 2026-11-12)
 `TT_COMPLETED` now includes 47 (entertainment). The bundle has no "TikiTown - In Progress" entries left.
 
-## 33. File 65: Lab Specimen Cabinet removed for now (user, 2026-08-28)
+## 33. File 65: Lab Specimen Cabinet removed for now (user, 2026-11-12)
 Neither the table-top version nor the wall-mounted version looked right. The card and its reinforced
 sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fixed indices), unused.
 
-## 34. Future fridges: the door screen is a working TV (user, 2026-08-28)
+## 34. Future fridges: the door screen is a working TV (user, 2026-11-12)
 - **Copies:** fridge copies `KBWCommunityIceShell_178-181` (black / white + mirrors) also carry the
   vanilla TV flags: `IsoType=IsoTelevision`, `signal=tv`, `TV`, `CustomItem=Base.TvWideScreen`.
   `IsMoveAble` and the pick-up keys are removed.
@@ -487,7 +489,7 @@ sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fix
   To check: the fridge/freezer still cool on power, the TV turns on and shows broadcasts, the tier
   capacities, and dismantling.
 
-## 35. MRI seats placed on the table (user, in game 2026-08-28, round 2)
+## 35. MRI seats placed on the table (user, in game 2026-11-12, round 2)
 - **Symptom:** with the vanilla bed seats copied (note 31), the player sat floating west of the
   table, facing west, on both tiles.
 - **Cause:** the MRI table is not bed-sized. Measured from the assembled art (pedestal base,
@@ -509,7 +511,7 @@ sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fix
   can adjust seats live if needed.
 - **Test status:** built and checked; the seats were projected on the art. NOT tested in game.
 
-## 36. Future couch: dithered seam between the two tiles (user, in game 2026-08-28, after note 30)
+## 36. Future couch: dithered seam between the two tiles (user, in game 2026-11-12, after note 30)
 - **Symptom:** a dithered strip, with the ground showing through, along the join of the two couch
   tiles.
 - **Cause:** the vanilla couch depth cells also hold the floor and shadow under the vanilla couch,
@@ -522,7 +524,7 @@ sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fix
   of the couch body, at the base where body and floor meet.
 - **Test status:** built and checked. NOT tested in game.
 
-## 37. Future couch: the real seam cause; art re-cut like vanilla (user, in game 2026-08-28, after note 36)
+## 37. Future couch: the real seam cause; art re-cut like vanilla (user, in game 2026-11-12, after note 36)
 - **Symptom:** a dithered strip at the join persisted after note 36. The ghost, drawn without depth,
   was fine.
 - **Cause:** the pack's two tiles of each couch OVERLAP: about 1,480-1,740 px are drawn by BOTH tiles.
@@ -540,7 +542,7 @@ sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fix
   picture (max diff 0). 0 art px without depth. Test bundle and WE work pack + depth are identical.
 - **Test status:** NOT tested in game.
 
-## 38. Future TV fridges: confirmed in game; their cost now includes a TV's parts (user, 2026-08-28)
+## 38. Future TV fridges: confirmed in game; their cost now includes a TV's parts (user, 2026-11-12)
 - **Status:** the door-screen TV works in game (note 34). The Future fridges are back under
   "Community - Completed" in the test bundle.
 - **Cost:** every Future fridge working unit (black / white, 60 / 80 / 100) also costs the Wall

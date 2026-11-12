@@ -74,8 +74,85 @@ def _reinforced_name(name):
     return name + " (Reinforced)"
 
 
+# Cost rule (user, 2026-08-28): a METAL base piece costs HALF its reinforced version. Many cost more
+# (kbwve.extended.metal = 3 sheet metal + 2 pipes + 4 screws vs the crate's 2 small sheets + 2 sheets
+# + 1 scrap). So the base of every reinforced pair whose cost is metal gets the crate's materials and
+# consumables halved (rounded up, at least 1) plus the crate's tools; it keeps its own skills,
+# knowledge gate and construction. Wood bases are unchanged.
+METAL_ITEMS = {"Base.SheetMetal", "Base.SmallSheetMetal", "Base.MetalPipe", "Base.MetalBar", "Base.ScrapMetal",
+               "Base.WeldingRods", "Base.BlowTorch"}
+
+
+def is_metal_cost(req):
+    if "metal" in (req.get("materials") or "").lower():
+        return True
+    return any(set(r.get("items") or []) & METAL_ITEMS for r in req.get("inputs") or [] if r.get("role") != "tool")
+
+
+def half_crate_requirements(base_req, reinforced_req=None):
+    """`reinforced_req` (default: the crate's) at half (rounded up, min 1); tools unchanged.
+    Keeps the base's own skills + knowledge."""
+    src = reinforced_req or crate_stage()["requirements"]
+    rows = []
+    for r in src.get("inputs", []):
+        r = copy.deepcopy(r)
+        if r.get("role") != "tool":
+            f = "uses" if "uses" in r else "amount"
+            if f in r:
+                r[f] = max(1, -(-int(r[f]) // 2))
+        rows.append(r)
+    out = {"inputs": rows}
+    for k in ("skills", "knowledge"):
+        if base_req.get(k):
+            out[k] = copy.deepcopy(base_req[k])
+    return out
+
+
+HALVE_LOG = []   # (id, before_inputs, after_inputs) for audits
+
+
+def _cost_str(req):
+    parts = []
+    for r in (req or {}).get("inputs") or []:
+        if r.get("role") == "tool":
+            continue
+        what = ",".join(x.split(".")[-1] for x in (r.get("items") or r.get("tags") or [r.get("id")]))
+        parts.append("%s x%s" % (what, r.get("uses", r.get("amount", 1))))
+    return "; ".join(parts)
+
+
+def halve_metal_bases(buildables):
+    """Apply the half-cost rule to every metal base that has a reinforced sibling: it costs half
+    the sibling's (actual) cost. Returns ids."""
+    by_id = {b.get("id"): b for b in buildables}
+    done = []
+    for b in buildables:
+        bid = b.get("id") or ""
+        sib = by_id.get(bid + SUFFIX)
+        if bid.endswith(SUFFIX) or sib is None:
+            continue
+        sst = sib.get("stages") or []
+        for i, st in enumerate(b.get("stages") or []):
+            req = st.get("requirements") or {}
+            if not is_metal_cost(req) or not sst:
+                continue
+            rreq = (sst[i] if i < len(sst) else sst[0]).get("requirements")
+            new = half_crate_requirements(req, rreq)
+            HALVE_LOG.append((bid, _cost_str(req), _cost_str(new)))
+            st["requirements"] = new
+            done.append(bid)
+    return done
+
+
 def add_variants(buildables):
     """Insert a reinforced sibling after each counter in `buildables` (in place). Returns count."""
+    try:
+        return _add_variants(buildables)
+    finally:
+        halve_metal_bases(buildables)
+
+
+def _add_variants(buildables):
     crate = crate_stage()
     existing = {b.get("id") for b in buildables}
     max_level = {}

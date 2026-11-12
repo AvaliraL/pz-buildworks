@@ -153,6 +153,24 @@ TEXT = {
     "Flag": "Decorative flag.",
     "Figure": "Decorative figure.",
     "Decoration": "Decorative piece.",
+    "StorageSink": "Plumbed sink with a storage shelf underneath.",
+    "StorageSinkReinforced": "Plumbed sink with a large reinforced storage shelf underneath.",
+    "PumpStorageSink": ("Sink with a storage shelf underneath. Draws water like a hand pump: no plumbing "
+                        "needed. Follows the server's Knox Buildworks well settings."),
+    "PumpStorageSinkReinforced": ("Sink with a large reinforced storage shelf underneath. Draws water like a "
+                                  "hand pump: no plumbing needed. Follows the server's Knox Buildworks well settings."),
+    "Chair": "Chair you can sit in. Use Rest on it.",
+    "MedicalEquipment": "Medical equipment for decoration.",
+    "WindowTrim": "Decorative trim that frames a tall window. Fits the Window Frame-Tall window.",
+    "WindowPlanter": "Planter box that hangs below a tall window. Fits the Window Frame-Tall window.",
+    "PottedPlant": "Decorative potted plant.",
+    "BarrelPlanter": "Decorative plant in a small wooden barrel.",
+    "NeonSign": "Wall-mounted neon sign. Lights up when switched on, with power.",
+    "BeadCurtain": "Hanging bead curtain for a doorway. You can walk and see through it.",
+    "StripperPole": "Floor-to-ceiling dance pole.",
+    "GunRack": "Two-tile pegboard rack that hangs on a wall. Each half holds items and shows guns when filled.",
+    "Ladder": ("Climbable ladder. Leave the square above it open. For more floors, build another "
+               "ladder on top of it."),
 }
 TYPE_BY_ID = {
     "community.dirkies.containers.furniture_storage_ddd_01_4": "StackCase",
@@ -173,6 +191,11 @@ TYPE_BY_ID = {
     "community.tk.kitchen_misc.wall_shelf": "KitchenShelf",
     "community.dylan.rf02.exercise_ball": "Gym",
     "community.dylan.rf02.punching_bag": "Gym",
+    # Dirkies medical sinks (dirkies_medical.py)
+    "community.dirkies.medical.industrial_sink": "StorageSink",
+    "community.dirkies.medical.industrial_sink_reinforced": "StorageSinkReinforced",
+    "community.dirkies.medical.industrial_sink_pump": "PumpStorageSink",
+    "community.dirkies.medical.industrial_sink_pump_reinforced": "PumpStorageSinkReinforced",
 }
 SUB_TYPE = {
     "Counters": "Counter", "Upper Counters": "UpperCabinet", "Restaurant": "BarCounter",
@@ -184,6 +207,11 @@ SUB_TYPE = {
     "Space Viewscreens": "Viewscreen", "Frosted Panels": "Viewscreen", "Statues": "Figure",
     "Rugs": "Rug", "Hedges": "Hedge", "Posters": "Poster", "Newburbs Flags": "Flag",
     "Newburbs Windows": "Window", "Decor": "Decoration", "Radios & TVs": "Television",
+    "Ladders": "Ladder",
+    "Window Trim": "WindowTrim", "Window Planters": "WindowPlanter", "Potted Plants": "PottedPlant",
+    "Chairs": "Chair", "Medical Equipment": "MedicalEquipment", "Barrel Planters": "BarrelPlanter",
+    "Gun Racks": "GunRack",
+    "Neon Signs": "NeonSign", "Curtains": "BeadCurtain", "Entertainment": "StripperPole",
 }
 
 

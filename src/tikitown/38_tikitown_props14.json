@@ -1009,6 +1009,454 @@
     "translationKey": "IGUI_WETiki_props14_cups_group",
     "level": 1
    }
+  },
+  {
+   "id": "worldessentials.tikitown.props14_bird_cage",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_bird_cage",
+   "displayName": "Floor Bird Cage",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Pet Supplies",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_86",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_86"
+           ],
+           [
+            "tikitown-props-14_85"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_88",
+            "tikitown-props-14_89"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Wire"
+        ],
+        "amount": 4
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Screws"
+        ],
+        "amount": 6
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 120
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "worldessentials.tikitown.props14_terrarium",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_terrarium",
+   "displayName": "Reptile Terrarium",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Pet Supplies",
+   "material": "Glass",
+   "materialTags": [
+    "Glass"
+   ],
+   "iconSprite": "tikitown-props-14_90",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "N": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_90"
+           ]
+          ]
+         }
+        ]
+       },
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_91"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_92"
+           ]
+          ]
+         }
+        ]
+       },
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_93"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.SmallSheetMetal"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectronicsScrap"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.ElectricWire"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_9",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.GlassPanel"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_10",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.LightBulb"
+        ],
+        "amount": 1
+       }
+      ],
+      "skills": {
+       "Electricity": 1
+      }
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Electrical",
+      "time": 100,
+      "xp": {
+       "Electricity": 10
+      }
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "worldessentials.tikitown.props14_pet_cage",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_pet_cage",
+   "displayName": "Wire Pet Cage",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Pet Supplies",
+   "material": "Metal",
+   "materialTags": [
+    "Metal"
+   ],
+   "iconSprite": "tikitown-props-14_95",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "W": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_95"
+           ],
+           [
+            "tikitown-props-14_94"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "tool_screwdriver",
+        "role": "tool",
+        "mode": "keep",
+        "resourceType": "Item",
+        "tags": [
+         "base:screwdriver"
+        ],
+        "amount": 1
+       },
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Wire"
+        ],
+        "amount": 6
+       },
+       {
+        "id": "source_material_2",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.MetalBar"
+        ],
+        "amount": 2
+       },
+       {
+        "id": "source_material_3",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Screws"
+        ],
+        "amount": 6
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 120
+     },
+     "object": {
+      "isThumpable": true,
+      "dismantable": true
+     }
+    }
+   ]
+  },
+  {
+   "id": "worldessentials.tikitown.props14_mahjong",
+   "allowSpriteReuse": true,
+   "translationKey": "IGUI_WETiki_props14_mahjong",
+   "displayName": "Mahjong Game",
+   "category": "Decorations and Landscaping",
+   "subcategory": "Games",
+   "material": "Wood",
+   "materialTags": [
+    "Wood"
+   ],
+   "iconSprite": "tikitown-props-14_104",
+   "placement": {
+    "kind": "object",
+    "requiresFloor": true
+   },
+   "tags": [
+    "tikitown",
+    "drazion",
+    "world-essentials",
+    "props14"
+   ],
+   "stages": [
+    {
+     "id": "built",
+     "geometry": {
+      "faces": {
+       "E": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_104"
+           ]
+          ]
+         }
+        ]
+       },
+       "S": {
+        "layers": [
+         {
+          "rows": [
+           [
+            "tikitown-props-14_105"
+           ]
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "requirements": {
+      "inputs": [
+       {
+        "id": "source_material_1",
+        "role": "material",
+        "mode": "consume",
+        "resourceType": "Item",
+        "items": [
+         "Base.Plank"
+        ],
+        "amount": 1
+       }
+      ]
+     },
+     "construction": {
+      "timedAction": "BuildWallNoTool",
+      "completionSound": "BuildMetalStructureMedium",
+      "category": "Carpentry",
+      "time": 30
+     },
+     "object": {
+      "isThumpable": false,
+      "canPassThrough": true,
+      "dismantable": true
+     }
+    }
+   ]
   }
  ]
 }

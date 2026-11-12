@@ -411,6 +411,27 @@ def write_overlay_assets(media_dir, common_media_dir=None):
     for src_name, copy_name, props in det:
         im = Image.open(os.path.join(cache, src_name + ".png")).convert("RGBA")
         add(copy_name, im, props, src_name)
+    # tterika sewer ladder (file 45): own tileset KBWTikiTownLadders, ladder flags instead of the
+    # pack's sheet-rope flags (ladders.py). APPENDED last so the tilesets above keep their ordinals.
+    import ladders as lad
+    l_names = {"%s_%d" % (lad.SHEET, i) for i in lad.LADDER_SRC}
+    k._extract_from_pack(_TIKITOWN_PACK, l_names, cache)
+    l_src = tts[lad.SHEET.encode()][6]
+    for i in lad.LADDER_SRC:
+        im = Image.open(os.path.join(cache, "%s_%d.png" % (lad.SHEET, i))).convert("RGBA")
+        add(lad.copy_sprite(i), im, lad.copy_props(i, l_src[i]))
+    # entertainment neon signs (file 47): own tileset KBWTikiTownEntertainment, light-switch wall
+    # objects instead of WallOverlay sprites; mirrors flipped here (tikitown_entertainment). APPENDED.
+    import tikitown_entertainment as ent
+    from PIL import ImageOps
+    e_tiles = ent.copy_tiles(tts)
+    k._extract_from_pack(_TIKITOWN_PACK, {s for s, _c, _p, _m in e_tiles}, cache)
+    for src_name, copy_name, props, mirrored in e_tiles:
+        im = Image.open(os.path.join(cache, src_name + ".png")).convert("RGBA")
+        if mirrored:   # no Drazion depth reuse for a flipped tile: the wall preset from its attach flag
+            add(copy_name, ImageOps.mirror(im), props)
+        else:
+            add(copy_name, im, props, src_name)
     assert len({n for n, _im in tiles}) == len(tiles), "duplicate copied sprite names"
     npages, ntiles, size = _write_pack_multi(
         os.path.join(media_dir, "texturepacks", OVERLAY_PACK + ".pack"), tiles)
@@ -430,7 +451,15 @@ def write_overlay_assets(media_dir, common_media_dir=None):
     _v2, parsed, _o2 = k._parse(blob)
     assert all(t[5] <= MAX_TILES_PER_TILESET for t in parsed.values())
     open(os.path.join(media_dir, OVERLAY_TILEDEF_NAME + ".tiles"), "wb").write(blob)
-    ndepth = _write_depth_assignments(common_media_dir, tilesets, source_of)
+    ndepth = _write_depth_assignments(common_media_dir, tilesets, source_of, explicit=lad.DEPTH_OF)
+    if common_media_dir:
+        art = {}
+        for sprite, im in tiles:
+            tsn, _sep, idx = sprite.rpartition("_")
+            art.setdefault(tsn, {})[int(idx)] = im
+        for tsn in OWN_DEPTH_TILESETS:
+            nfill = write_own_depth(common_media_dir, tsn, tilesets[tsn], art[tsn])
+            print("own depth %s: %d tiles, %d overhanging art px filled" % (tsn, len(tilesets[tsn]), nfill))
     print("wall overlay tiles: %d tiles in %d tilesets (%s), %d pages, pack %.1f MB; depth assignments %d" % (
         ntiles, len(parsed), ", ".join("%s=%d" % (n.decode(), t[5]) for n, t in parsed.items()),
         npages, size / 1048576.0, ndepth))
@@ -452,11 +481,68 @@ MODINFO_LINES = ["pack=%s" % OVERLAY_PACK, "tiledef=%s %d" % (OVERLAY_TILEDEF_NA
 _DEPTH_PRESET = {b"attachedW": "preset_depthmaps_01_4", b"attachedN": "preset_depthmaps_01_5",
                  b"attachedNW": "preset_depthmaps_01_6", b"attachedSE": "preset_depthmaps_01_7"}
 DEPTH_ASSIGNMENTS = "tileDepthTextureAssignments.txt"
+_PRESET_PNG = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_preset_depthmaps_01.png"
+
+# Neon signs (file 47, user 2026-08-28: a gap in "Cheeky" and "GIRLS" once built; the placement
+# ghost, drawn without depth, was fine). Their art overhangs the wall slab of the vanilla wall preset
+# (Cheeky x1 = tile 19 reaches 16 px into the x0 square, GIRLS 30 reaches past its edge), and pixels
+# with no depth are hidden. So these copies get their OWN depth texture DEPTH_<tileset>.png: each
+# cell = its wall preset, plus the preset's wall plane (least-squares fit, about 0.5 / 255 error)
+# extended under every art pixel outside the slab. No preset assignment for them.
+OWN_DEPTH_TILESETS = ("KBWTikiTownEntertainment",)
 
 
-def _write_depth_assignments(common_media_dir, tilesets, source_of=None):
+def _plane(cell):
+    """Least-squares plane v = a x + b y + c over the opaque pixels of a depth cell."""
+    import numpy as np
+    a = np.asarray(cell, dtype=float)
+    ys, xs = np.nonzero(a[:, :, 3] == 255)
+    A = np.stack([xs, ys, np.ones_like(xs)], axis=1).astype(float)
+    sol, *_ = np.linalg.lstsq(A, a[ys, xs, 0], rcond=None)
+    return sol
+
+
+def write_own_depth(common_media_dir, tsname, by_index, images, cols=8):
+    """<common_media_dir>/depthmaps/DEPTH_<tsname>.png (see OWN_DEPTH_TILESETS). by_index: index ->
+    props (the attach flag picks the preset); images: index -> art. Returns the art pixels filled."""
+    import numpy as np
+    from PIL import Image
+    pre = Image.open(_PRESET_PNG).convert("RGBA")
+    cw, ch = 128, 256
+    pcols = pre.size[0] // cw
+    n = max(by_index) + 1
+    rows = (n + cols - 1) // cols
+    depth = Image.new("RGBA", (cols * cw, rows * ch), (0, 0, 0, 0))
+    filled = 0
+    for j, props in sorted(by_index.items()):
+        preset = None
+        for key, _v in props:
+            preset = preset or _DEPTH_PRESET.get(key)
+        if not preset:
+            raise RuntimeError("%s_%d has no wall attach flag for its depth" % (tsname, j))
+        pi = int(preset.rsplit("_", 1)[1])
+        cell = pre.crop(((pi % pcols) * cw, (pi // pcols) * ch, (pi % pcols) * cw + cw, (pi // pcols) * ch + ch))
+        a = np.array(cell)
+        art = np.array(images[j].convert("RGBA"))[:, :, 3] > 0
+        hole = art & (a[:, :, 3] == 0)
+        if hole.any():
+            ca, cb, cc = _plane(cell)
+            ys, xs = np.nonzero(hole)
+            v = np.clip(np.rint(ca * xs + cb * ys + cc), 0, 255).astype(np.uint8)
+            a[ys, xs, 0] = a[ys, xs, 1] = a[ys, xs, 2] = v
+            a[ys, xs, 3] = 255
+            filled += len(xs)
+        depth.paste(Image.fromarray(a, "RGBA"), ((j % cols) * cw, (j // cols) * ch))
+    d = os.path.join(common_media_dir, "depthmaps")
+    os.makedirs(d, exist_ok=True)
+    depth.save(os.path.join(d, "DEPTH_%s.png" % tsname))
+    return filled
+
+
+def _write_depth_assignments(common_media_dir, tilesets, source_of=None, explicit=None):
     """<common_media_dir>/tileDepthTextureAssignments.txt for every copied tile with a wall role.
-    source_of: copy sprite -> pack sprite, to reuse Drazion's own assignment where it has one."""
+    source_of: copy sprite -> pack sprite, to reuse Drazion's own assignment where it has one.
+    explicit: copy sprite -> depth sprite, wins over both (e.g. ladders -> vanilla sewer ladder)."""
     if not common_media_dir:
         return 0
     os.makedirs(common_media_dir, exist_ok=True)
@@ -472,6 +558,8 @@ def _write_depth_assignments(common_media_dir, tilesets, source_of=None):
                 dz[m[0].strip()] = m[1].strip()
     lines = []
     for tsname, by_index in tilesets.items():
+        if tsname in OWN_DEPTH_TILESETS:            # depth from DEPTH_<tileset>.png instead
+            continue
         for j in sorted(by_index):
             name = "%s_%d" % (tsname, j)
             preset = None
@@ -479,6 +567,8 @@ def _write_depth_assignments(common_media_dir, tilesets, source_of=None):
                 preset = preset or _DEPTH_PRESET.get(key)
             if source_of and name in source_of and source_of[name] in dz:
                 preset = dz[source_of[name]]        # e.g. soundproof / props copies
+            if explicit and name in explicit:
+                preset = explicit[name]
             if preset:
                 lines.append("    %s = %s," % (name, preset))
     out = os.path.join(common_media_dir, DEPTH_ASSIGNMENTS)

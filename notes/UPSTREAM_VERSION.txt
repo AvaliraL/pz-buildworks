@@ -4,3 +4,7 @@ upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed 
             Tracked base / Expansion files now include what WE merged from us.
 work/     = our working copy. Diff against upstream/ for hand-offs.
 upstream_2026-10-31/ = the previous snapshot. Never edit the Steam copy.
+Checked 2026-08-28: installed WE is now Steam manifest 2008925324920512568. Read-only diff against
+upstream/ (Community + TikiTown submods in full, the tracked base / Expansion files): 0 changed,
+0 added, 0 removed. So the update touched nothing we track, and the we-baseline-2026-11-10
+snapshot still holds (no refresh / reconcile needed).

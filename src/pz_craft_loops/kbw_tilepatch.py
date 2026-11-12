@@ -1222,6 +1222,7 @@ PUMP_SINK_SHEET = "fixtures_sinks_01"
 PUMP_SINK_SRC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 22, 23]
 PUMP_SINK_BASE = 48
 _VANILLA_DEPTH_SINKS = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_fixtures_sinks_01.png"
+_VANILLA_DEPTH_SEATING = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_furniture_seating_indoor_01.png"
 _VANILLA_DEPTH_ASSIGN = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tileDepthTextureAssignments.txt"
 _PUMP_SINK_DROP = {b"waterPiped", b"waterAmount", b"waterMaxAmount"}
 
@@ -1236,6 +1237,664 @@ def _pump_sink_props(src_props):
     out += [(b"waterAmount", b"999999"), (b"waterMaxAmount", b"999999")]
     # moveable name = GroupName + CustomName ("White" + "Hand Pump Sink"): picked up it stays clear
     return [(k, b"Hand Pump Sink" if k == b"CustomName" else v) for k, v in out]
+
+
+# Dirkies decor-house copies (user, 2026-08-28) at FIXED indices 72..83 of the ice-shell tileset
+# (after the pump sinks 48..67, padded to the row). Source: edit_ddd_RUS_decor_house_01 (Community,
+# diederiks_tile_palooza.pack). The pack tiles stay as they are on the map; only our copies change:
+#   16-19 full-height iron ladder (pack: sheet-rope climbSheetW/N/S/E) -> B42 ladder flags
+#         ladderW/N/S/E + attached/Facing, like vanilla's ladders (ladders.py builds it);
+#   96-99 ladder top for the floor above (pack: climbSheetTop*; 99 says W but is drawn E) ->
+#         decoration only: no climb flag, nothing solid;
+#   100-103 red wall cabinet (pack: free-standing solidtrans block) -> MoveType WallObject on its
+#         wall edge, not solid (a container comes from the definition; dirkies_decor_house.py).
+# Edges from the art and the pack's own order (W, N, S, E). Depth: the pack's own depth cells.
+#
+# Caged crane ladder (user, 2026-08-28) at FIXED indices 84..89, right after: Dirkies
+# edit_ddd_RUS_industry_crane_01 (same pack). Two wall edges only (W, N), three pieces each:
+#   72 / 77 bottom (cage starts above an open lower part), 73 / 76 middle (full cage):
+#         pack climbSheetW/N + solidtrans -> ladderW/N, not solid (a vanilla ladder is walk-through);
+#   74 / 75 top ring for the open square above the last ladder (pack climbSheetTopW/N) ->
+#         decoration only, like the iron ladder top.
+DECOR_SHEET = "edit_ddd_RUS_decor_house_01"
+CRANE_SHEET = "edit_ddd_RUS_industry_crane_01"
+DECOR_BASE = 72
+DECOR_LADDERS, DECOR_TOPS, DECOR_CABINET = (16, 17, 18, 19), (96, 97, 98, 99), (100, 101, 102, 103)
+CRANE_BOTTOM, CRANE_MIDDLE, CRANE_TOP = (72, 77), (73, 76), (74, 75)   # (W, N)
+# Exterior window trim (user, 2026-08-28) at FIXED indices 90..121: Dirkies fixtures_details_ddd_01
+# 0-31 (4 colours x 4 styles x W/N). The pack tiles are MoveType WindowObject, which KBW / WE build as
+# a native curtain. Our copies are plain wall overlays instead (WallOverlay + attachedW/N, no
+# MoveType), like the tterika wall detailing, so KBW hangs them on the host (window) wall.
+FDD_SHEET = "fixtures_details_ddd_01"
+FDD_TRIM = tuple(range(0, 32))
+# Dirkies medical sheet (user, 2026-08-28) at FIXED indices 122..129:
+#   20-23 Large Industrial Sink (Facing E, S, W, N = KBW W, N, E, S) -> hand-pump copies, water
+#         like the other pump sinks (999999, no waterPiped);
+#   24-27 wheelchair (pack: CustomItem Wheelchair, IsMoveAble only; the pack's seating.txt already
+#         has a seat per tile: 24 E, 25 W, 26 N, 27 S) -> a chair: bed + chair<dir> + BedType like
+#         vanilla chairs, so "Rest" sits you in it. KBW face = opposite of the seat direction.
+#         Our seating.txt (write_decor_seating) copies the pack's seat positions onto the copies.
+MED_SHEET = "location_community_medical_ddd_01"
+MED_SINK = (20, 21, 22, 23)
+MED_WHEELCHAIR = (24, 25, 26, 27)
+_FACE_SEAT = {"W": "E", "E": "W", "S": "N", "N": "S"}   # KBW face -> seat direction / Facing
+# Height fixes (user, 2026-08-28) at FIXED indices 130..143:
+#   medical 32-37 (centrifuge, analyzer, specimen cabinet): the art is drawn at counter height (art
+#         bottom ~165 px, same as the desk mic) but the pack gives no table-top flags, so they float
+#         on the floor. Copies get IsTableTop + IsSurfaceOffset + Surface=29 (the desk mic's values):
+#         KBW / vanilla then drop them to the floor, or seat them on a counter, and our table-top
+#         height Lua keeps it that way on load (TABLETOP_DECOR below).
+#   decor house 0-3 / 8-11 (blue / green drawer cabinets): wall-mounted at mid height (see
+#         _WALLBOX_EDGE; a floor / stacking version was tried and still floated).
+# Window planters + pots (user, 2026-08-28) at FIXED indices 144..159, fixtures_details_ddd_01:
+#   32-39 window planters: the pack tiles are movable WallObjects, which World Essentials builds
+#         through its native wall-attachment path, and that path refuses window walls ("can't place
+#         the planters"; they belong under a Window Frame-Tall window). Copies = plain wall overlays
+#         like the window trim (WallOverlay + attached flag; no MoveType / IsMoveAble), which work.
+#   40-47 potted plants / flower basket: drawn pushed against the west / north wall edge, so on an
+#         open square they look raised. Copies have the art centred on the square (POT_BOTTOM) and
+#         no wall attachment: free-standing floor pots.
+FDD_PLANTERS = tuple(range(32, 40))
+FDD_POTS = tuple(range(40, 48))
+POT_BOTTOM = 228            # art bottom of a centred pot (floor diamond centre is y 224)
+# Gun racks (user, 2026-08-28) at FIXED indices 160..175: Dylan's DarthGunStore (dylanstiles,
+# DTilesPack). 8-15 = two 2-tile pegboard racks, each N (Facing S, 8+9 / 12+13) and W (Facing E,
+# 11 over 10 / 15 over 14); 16-23 = their fill overlays (the pack's WorldFiller_dylan.lua maps
+# DarthGunStore_8..15 -> _16.._23). The pack tiles are MoveType WallObject + WallOverlay, which vanilla
+# types as a "WallOverlay" moveable, so World Essentials builds them as a sprite attached to the wall:
+# no object, no storage (that was the old "placement bug"). Copies drop WallOverlay -> a plain wall
+# object with its own metal_shelves container per tile. The overlays are copied too (our own names,
+# safe from the dylanstiles tiledef clash) and registered for the copies by write_gunrack_overlay_lua.
+GUN_SHEET = "DarthGunStore"
+GUN_RACKS = tuple(range(8, 16))
+GUN_OVERLAYS = tuple(range(16, 24))
+_GUN_PACK = os.path.join(os.path.dirname(_COMMUNITY_TILES), "texturepacks", "DTilesPack.pack")
+# Dylan's Future Room extras (user, 2026-08-28) at FIXED indices 176..198: DylansFutureRoom01
+# (dylanstiles / DTilesPack). The pack gives these tiles NO properties at all, and World Essentials'
+# isolated WECommunity_DylansFutureRoom01 covers only the viewscreens, so every piece is built on our
+# own copies (also keeps them clear of the dylanstiles tiledef clash). MIRROR = source index + 1000:
+# a whole-tile left-right flip of the source, which turns a south-facing piece into an east-facing
+# one (and a north-wall fixture into a west-wall one); its depth cell is flipped with it.
+#   22 / 23   wall screens -> working wall TVs (vanilla TV flags; screens warped by _PACK_TVS)
+#   30 / 31   black / white fridge (Facing S) + mirrors (E): vanilla fridge flags (fridge + freezer)
+#   35 / 36   black / white upper cabinet (north wall) + mirrors (west wall): like the Dirkie upper
+#             cabinets (WallObject + IsHigh + attached + solidtrans + container): hang over counters
+#   37 / 38   black / white low cabinet (Facing S) + mirrors: floor cabinet with counter storage
+#   40-47     black 2-tile couch, 4 facings: vanilla Red Comfy couch flags + seat positions per tile
+#   49        potted plant (floor decoration)
+FR_SHEET = "DylansFutureRoom01"
+FR_TV = (22, 23)
+FR_FRIDGE = (30, 31, 1030, 1031)
+# fridge copy -> (vanilla screen series, screen quad TL / TR / BL in tile px) for the door TV
+_FRIDGE_TV_KEYS = {b"IsoType", b"signal", b"TV", b"CustomItem"}
+FR_FRIDGE_TV_QUADS = (
+    (30, "S", ((54, 99), (78, 111), (54, 123))),
+    (31, "E", ((51, 108), (77, 95), (51, 135))),
+    (1030, "E", ((50, 111), (74, 99), (50, 135))),
+    (1031, "S", ((51, 95), (77, 108), (51, 122))),
+)
+FR_UPPER = (35, 36, 1035, 1036)
+FR_LOWER = (37, 38, 1037, 1038)
+FR_COUCH = (40, 41, 42, 43, 44, 45, 46, 47)
+FR_PLANT = (49,)
+MIRROR = 1000
+SHELL = 2000                # index + SHELL = the inert shell copy of that (possibly mirrored) piece
+# couch tile -> (vanilla furniture_seating_indoor_01 tile with the same facing + grid position, grid)
+FR_COUCH_SRC = {40: (0, "0,0"), 41: (1, "1,0"), 43: (3, "0,0"), 42: (2, "0,1"),
+                45: (5, "0,0"), 44: (4, "0,1"), 46: (6, "0,0"), 47: (7, "1,0")}
+_FR_COLOUR = {30: b"Black", 31: b"White", 35: b"Black", 36: b"White", 37: b"Black", 38: b"White"}
+MED_TABLETOP = (32, 33, 34, 35)
+# 36/37 specimen cabinet: wall-mounted at mid height (user, in game 2026-08-28: as a table-top it
+# floated and showed texture trouble at the base). Copy = pack art in place, hung on the wall edge
+# its Facing names (wallbox, like the drawer cabinets).
+# All 32-37 copies drop the pack's CustomItem (medical_01/02/03): that item does not exist, and the
+# game logged "couldn't find item medical_03" over and over once one was built.
+MED_WALL = (36, 37)
+# MRI Scanner as a bed (user, 2026-08-28): the patient table runs N/S over medical 42 (south, the
+# foot) and 43 (north, the head). Copies get the flags of the vanilla single bed tile with the same
+# role (furniture_bedding_01: 0 = foot, Facing S, grid 0,1; 1 = head, grid 0,0), so Rest / Sleep
+# lie the player N/S. Seating: the vanilla bed's W + E positions. (E only, for "seated facing east",
+# failed in game 2026-08-28: Rest needs the stand square beside the seat free, and east of the table
+# is the solid pedestal column, so the path failed and vanilla sat the player on the ground. A seat
+# faces away from the bed, so the reachable W side faces west.)
+MED_MRI_BED = {42: (0, "0,1"), 43: (1, "0,0")}
+# MRI seats (user, in game 2026-08-28, 2nd round): the vanilla bed seats sat the player floating
+# west of the table. The MRI table is NOT bed-sized: measured from the assembled art it is ~0.58
+# tile wide, centred on the pedestal at x ~0.84 of the west column (spans x 0.55..1.13), its south
+# end at the piece's south edge, top ~66 px up (vanilla mattress ~56 px at seat height 0.35-0.42).
+# Seat = (id = the direction the seated player faces, x, height, y): tile units from the tile
+# centre, +x east, +y south (seating.txt "translate = x height y" x 10000). Inset from the edge
+# like vanilla's bed seats (~0.16). First id = what getFacingDirection reports.
+#   foot 42: S only, on the south end (user: "facing south, on the south edge").
+#   middle 43: W + E; Rest picks the reachable one nearest the player. E's stand square is the
+#   pedestal column, which KBW blocks (blockAllTheSquare is per buildable, not per tile), so in
+#   practice it is W; E is there for when that square is free.
+MRI_SEATS = {
+    42: [("S", 0.34, 0.41, 0.33)],
+    43: [("W", 0.21, 0.42, 0.0), ("E", 0.47, 0.41, 0.0)],
+}
+# Copy kinds whose depth cell gets the art's uncovered pixels filled with the nearest depth
+# (_fill_depth_holes; art with no depth is hidden once built). The couch always is (its own branch).
+FILL_DEPTH_KINDS = ("bed",)
+DRAWER_SRC = (0, 1, 2, 3, 8, 9, 10, 11)
+# Blue / green drawer cabinets (decor house 0-3 / 8-11): moving the art 58 px to the floor still
+# left them floating (user, 2026-08-28). They are wall-mounted mailbox banks (container postbox),
+# drawn at mid height on purpose: the copies keep the pack art where it is and hang on the wall
+# edge their facing names, like the Dirkie upper cabinets (WallObject + attached + solidtrans).
+_WALLBOX_EDGE = {b"S": b"attachedN", b"E": b"attachedW", b"N": b"attachedS", b"W": b"attachedE"}
+# (sheet, source index, wall edge, kind, group name) in copy order = index DECOR_BASE + position
+DECOR_COPIES = (
+    [(DECOR_SHEET, s, e, "ladder", b"Iron") for s, e in zip(DECOR_LADDERS, "WNSE")]
+    + [(DECOR_SHEET, s, e, "top", b"Iron") for s, e in zip(DECOR_TOPS, "WNSE")]
+    + [(DECOR_SHEET, s, e, "cabinet", b"Red") for s, e in zip(DECOR_CABINET, "WNSE")]
+    + [(CRANE_SHEET, s, e, "ladder", b"Caged") for s, e in zip(CRANE_BOTTOM, "WN")]
+    + [(CRANE_SHEET, s, e, "ladder", b"Caged") for s, e in zip(CRANE_MIDDLE, "WN")]
+    + [(CRANE_SHEET, s, e, "top", b"Caged") for s, e in zip(CRANE_TOP, "WN")]
+    + [(FDD_SHEET, s, "WN"[s % 2], "trim", b"Window Trim") for s in FDD_TRIM]
+    + [(MED_SHEET, s, e, "pumpsink", b"Large Industrial") for s, e in zip(MED_SINK, "WNES")]
+    + [(MED_SHEET, s, e, "seat", b"Wheelchair") for s, e in zip(MED_WHEELCHAIR, "WESN")]
+    + [(MED_SHEET, s, "WN"[s % 2], "wallbox" if s in MED_WALL else "tabletop", b"Medical")
+       for s in MED_TABLETOP + MED_WALL]
+    + [(DECOR_SHEET, s, e, "wallbox", b"") for s, e in zip(DRAWER_SRC, "NWSE" * 2)]
+    + [(FDD_SHEET, s, "WN"[s % 2], "overlaycopy", b"Window Planter") for s in FDD_PLANTERS]
+    + [(FDD_SHEET, s, "WN"[s % 2], "centerpot", b"") for s in FDD_POTS]
+    + [(GUN_SHEET, s, "NNWW"[(s - 8) % 4], "gunrack", b"") for s in GUN_RACKS]
+    + [(GUN_SHEET, s, "", "overlaylayer", b"") for s in GUN_OVERLAYS]
+    + [(FR_SHEET, s, "WN"[n], "tv", b"Future") for n, s in enumerate(FR_TV)]
+    + [(FR_SHEET, s, "", "fridge", b"") for s in FR_FRIDGE]
+    + [(FR_SHEET, s, "", "uppercab", b"") for s in FR_UPPER]
+    + [(FR_SHEET, s, "", "lowcab", b"") for s in FR_LOWER]
+    + [(FR_SHEET, s, "", "couch", b"Black Modern") for s in FR_COUCH]
+    + [(FR_SHEET, s, "", "plant", b"") for s in FR_PLANT]
+    # inert shells of the Future fridges (stage 1 of the 80/40 and 100/50 tiers, user 2026-08-28):
+    # same art, the shell flags of the vanilla fridge shells (no fridge / freezer / container)
+    # (index + SHELL keeps the key unique; the source tile stays index % 1000)
+    + [(FR_SHEET, s + SHELL, "", "fridgeshell", b"") for s in FR_FRIDGE]
+    + [(MED_SHEET, s, "", "bed", b"MRI") for s in sorted(MED_MRI_BED)]
+)
+
+
+def future_fridge_shells():
+    """{our Future fridge sprite: its inert shell sprite} (DylansFutureRoom01 30/31 + mirrors)."""
+    return {decor_copy_name(s, FR_SHEET): decor_copy_name(s + SHELL, FR_SHEET) for s in FR_FRIDGE}
+
+
+def _mirrored(s):
+    return (s // MIRROR) % 2 == 1        # 1030 / 3030 mirrored, 2030 (a shell of 30) not
+
+
+def _src_index(s):
+    return s % MIRROR
+
+
+def gun_overlay_map():
+    """{our rack copy: our overlay copy} (pack: DarthGunStore_<i> -> DarthGunStore_<i + 8>)."""
+    return {decor_copy_name(s, GUN_SHEET): decor_copy_name(s + 8, GUN_SHEET) for s in GUN_RACKS}
+
+
+GUNRACK_LUA_NAME = "KBWCommunity_GunRackOverlays.lua"
+
+
+def write_gunrack_overlay_lua(dest_path):
+    """Fill overlays (guns on the rack once it holds items) for our gun rack copies: the same
+    vanilla ContainerOverlays registration the pack uses for its own DarthGunStore tiles."""
+    rows = "\n".join('overlayMap["%s"] = {{ name = "other", tiles = {"%s", "%s"} }}' % (b, o, o)
+                     for b, o in sorted(gun_overlay_map().items()))
+    lua = ("-- AUTO-GENERATED by pz_craft_loops/kbw_tilepatch.py -- do not edit by hand.\n"
+           "-- Fill overlays for our gun rack copies (DarthGunStore 8-15 -> overlays 16-23).\n"
+           "local overlayMap = {}\noverlayMap.VERSION = 1\n%s\n"
+           "if not TILEZED and getContainerOverlays then\n"
+           "    getContainerOverlays():addOverlays(overlayMap)\nend\n" % rows)
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    open(dest_path, "w", encoding="utf-8", newline="\n").write(lua)
+_DECOR_SHIFT = {}   # (sheet, index) -> (dx, dy) the copy's art was moved by (depth follows)
+_DECOR_POS = {(sh, s): j for j, (sh, s, _e, _k, _g) in enumerate(DECOR_COPIES)}
+DECOR_SRC = [s for sh, s, _e, _k, _g in DECOR_COPIES if sh == DECOR_SHEET]   # decor-house sources
+_EDGE_FACING = {"W": b"E", "N": b"S", "S": b"N", "E": b"W"}   # vanilla ladders: attachedW + Facing=E
+_COMMUNITY_MEDIA = r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3628736763\mods\CommunityTilePack\common\media"
+_DECOR_PACK = os.path.join(_COMMUNITY_MEDIA, "texturepacks", "diederiks_tile_palooza.pack")
+_DECOR_DEPTH = os.path.join(_COMMUNITY_MEDIA, "depthmaps", "DEPTH_edit_ddd_RUS_decor_house_01.png")
+
+
+def _decor_depth_png(sheet):
+    return os.path.join(_COMMUNITY_MEDIA, "depthmaps", "DEPTH_%s.png" % sheet)
+
+
+_DECOR_DROP = {b"climbSheetW", b"climbSheetN", b"climbSheetS", b"climbSheetE", b"climbSheetTopW",
+               b"climbSheetTopN", b"climbSheetTopS", b"climbSheetTopE", b"solidtrans", b"solid",
+               b"BlocksPlacement", b"Facing"}
+
+
+def _shift(im, dx, dy):
+    """The tile image moved by (dx, dy) pixels, same size (what moves off the edge is dropped)."""
+    from PIL import Image
+    out = Image.new(im.mode, im.size, (0, 0, 0, 0) if im.mode == "RGBA" else 0)
+    out.paste(im, (dx, dy))
+    return out
+
+
+def _shift_down(im, px):
+    return _shift(im, 0, px)
+
+
+def _add_future_room_tvs():
+    """Our Future Room wall-TV copies get generated screens like the Dylan TVs (APPENDED to
+    _PACK_TVS so the existing KBWCommunityTVScreens_0..11 keep their names). Quads measured from the
+    art (inner screen inside the bezel): 22 west wall (screen slopes up-right, vanilla E), 23 north
+    wall (slopes down-right, vanilla S)."""
+    names = [decor_copy_name(s, FR_SHEET) for s in FR_TV]
+    if any(n == tv for n in names for tv, _f, _q in _PACK_TVS):
+        return
+    _PACK_TVS.append((names[0], "E", ((12, 82), (65, 56), (12, 131))))
+    _PACK_TVS.append((names[1], "S", ((62, 56), (115, 82), (62, 106))))
+    # Future fridges: their built-in door screen works as a TV (user, 2026-08-28). Quads measured
+    # from the art (screen panel): black 30 on its left face (slopes down-right, vanilla S), white 31
+    # on its right face (slopes up-right, vanilla E); the mirrors 1030 / 1031 flip x -> 128 - x.
+    for s, facing, quad in FR_FRIDGE_TV_QUADS:
+        _PACK_TVS.append((decor_copy_name(s, FR_SHEET), facing, quad))
+    TV_SCREEN_MAP.clear()
+    TV_SCREEN_MAP.update({tv: ["%s_%d" % (SCREEN_TILESET, t * 3 + k) for k in range(3)]
+                          for t, (tv, _f, _q) in enumerate(_PACK_TVS)})
+
+
+def sync_we_tv_screens(we_base_lua):
+    """Add our TV -> screen rows to the SCREENS table of World Essentials' own (WE-owned)
+    KBWCommunity_TVScreens.lua, in our WORK copy. Returns the TVs added."""
+    import re as _re
+    raw = open(we_base_lua, "rb").read().decode("utf-8")
+    nl = "\r\n" if "\r\n" in raw else "\n"
+    txt = raw.replace("\r\n", "\n")
+    m = _re.search(r"local SCREENS = \{\n(.*?)\n\}", txt, _re.S)
+    if not m:
+        raise RuntimeError("SCREENS table not found in %s" % we_base_lua)
+    have = set(_re.findall(r'\["([^"]+)"\]\s*=', m.group(1)))
+    add = [tv for tv in sorted(TV_SCREEN_MAP) if tv not in have]
+    if add:
+        rows = "\n".join('    ["%s"] = { %s },' % (tv, ", ".join('"%s"' % s for s in TV_SCREEN_MAP[tv])) for tv in add)
+        txt = txt[:m.end(1)] + "\n" + rows + txt[m.end(1):]
+        open(we_base_lua, "wb").write(txt.replace("\n", nl).encode("utf-8"))
+    return add
+
+
+_VANILLA_PROPS_CACHE = {}
+
+
+def _vanilla_props(sheet, idx):
+    if not _VANILLA_PROPS_CACHE:
+        _v, ts, _o = _parse(open(_VANILLA_TILES, "rb").read())
+        _VANILLA_PROPS_CACHE.update(ts)
+    return list(_VANILLA_PROPS_CACHE[sheet.encode()][6][idx])
+
+
+def _replace(props, **kv):
+    """props with the given keys set (b"" for flags) and Python None meaning 'remove'."""
+    d = dict(props)
+    for k, v in kv.items():
+        kb = k.encode()
+        if v is None:
+            d.pop(kb, None)
+        else:
+            d[kb] = v if isinstance(v, bytes) else v.encode()
+    return sorted(d.items())
+
+
+def _future_room_props(entry):
+    """Tile properties for our DylansFutureRoom01 copies (the pack tiles have none)."""
+    _sheet, s, edge, kind, group = entry
+    base, m = _src_index(s), _mirrored(s)
+    facing = "E" if m else "S"                      # source art faces south; the mirror east
+    colour = _FR_COLOUR.get(base, b"")
+    if kind == "fridge":                           # vanilla 1-tile fridge: fridge + freezer
+        # + the door screen as a working TV (user, 2026-08-28): vanilla TV flags, so KBW builds an
+        # IsoTelevision (NativeObjectTypes: IsoType) and creates the fridge / freezer containers from
+        # these same flags (createContainersFromSpriteProperties, as for map fridges). CustomItem is
+        # what IsoWaveSignal clones its TV device data from (none = a blank DeviceData). Not movable
+        # (like our wall TVs): a vanilla pick-up would hand back the CustomItem TV, not the fridge.
+        return _replace(_vanilla_props("appliances_refrigeration_01", 1 if m else 0), GroupName=colour,
+                        IsoType=b"IsoTelevision", signal=b"tv", TV=b"", CustomItem=b"Base.TvWideScreen",
+                        IsMoveAble=None, PickUpLevel=None, PickUpWeight=None)
+    if kind == "uppercab":                         # a high wall cabinet, NOT solid (user 2026-08-28)
+        # solidtrans made the square solid, and KBW refuses any solid / BlocksPlacement piece on a
+        # solid square, so nothing could be built UNDER the cabinet (couch, low cabinet). Like the
+        # vanilla overhead cabinets the copy is a movable high WallObject with its own container and
+        # no solid flags: it still passes over counters / fridges (KBW's high-wall-object rule).
+        wall = "attachedW" if m else "attachedN"
+        return sorted({b"MoveType": b"WallObject", b"IsHigh": b"", wall.encode(): b"", b"IsMoveAble": b"",
+                       b"container": b"counter", b"ContainerCapacity": b"20", b"ContainerPosition": b"High",
+                       b"Facing": facing.encode(), b"CustomName": b"Upper Cabinet", b"GroupName": colour,
+                       b"Material": b"MetalPlates", b"CanScrap": b""}.items())
+    if kind == "lowcab":
+        return sorted({b"BlocksPlacement": b"", b"solidtrans": b"", b"IsLow": b"", b"container": b"counter",
+                       b"ContainerCapacity": b"20", b"ContainerPosition": b"Low", b"Facing": facing.encode(),
+                       b"CustomName": b"Cabinet", b"GroupName": colour, b"Material": b"MetalPlates",
+                       b"CanScrap": b""}.items())
+    if kind == "tv":                               # same flags as the patched Dylan wall TVs
+        face = "E" if edge == "W" else "S"
+        return sorted({b"signal": b"tv", b"IsoType": b"IsoTelevision", b"CustomItem": b"Base.TvWideScreen",
+                       b"TV": b"", b"Surface": b"15", b"MoveType": b"WallObject", b"IsHigh": b"",
+                       ("attached" + edge).encode(): b"", b"Facing": face.encode(),
+                       b"CustomName": b"Wall Screen", b"GroupName": group}.items())
+    if kind == "couch":
+        vi, grid = FR_COUCH_SRC[s]
+        return _replace(_vanilla_props("furniture_seating_indoor_01", vi), GroupName=group,
+                        SpriteGridPos=grid, IsMoveAble=None, PickUpLevel=None, PickUpTool=None,
+                        PickUpWeight=None, PlaceTool=None)
+    return sorted({b"BlocksPlacement": b"", b"CustomName": b"Planter", b"GroupName": b"Future"}.items())
+
+
+def decor_copy_name(src_index, sheet=DECOR_SHEET):
+    """Our copy of <sheet>_<src_index> (decor house by default, or CRANE_SHEET)."""
+    return "%s_%d" % (ICESHELL_TILESET, DECOR_BASE + _DECOR_POS[(sheet, src_index)])
+
+
+def decor_edge(src_index, sheet=DECOR_SHEET):
+    """KBW face (= the wall edge the piece hangs on) of a decor copy."""
+    return DECOR_COPIES[_DECOR_POS[(sheet, src_index)]][2]
+
+
+def _decor_props(entry, src_props):
+    _sheet, _s, edge, kind, group = entry
+    if kind == "pumpsink":     # same art and props, water like a map hand pump (see _pump_sink_props)
+        return sorted(_pump_sink_props(src_props))
+    if kind == "tabletop":     # counter-height art: the desk mic's table-top flags
+        out = [(k, v) for k, v in src_props if k not in (b"IsTableTop", b"IsSurfaceOffset", b"Surface",
+                                                         b"CustomItem")]
+        out += [(b"IsTableTop", b""), (b"IsSurfaceOffset", b""), (b"Surface", b"29")]
+        return sorted(out)
+    if kind == "overlaycopy":  # plain wall overlay (not a movable WallObject): KBW hangs it on any wall
+        out = [(k, v) for k, v in src_props if k not in (b"MoveType", b"IsMoveAble", b"PickUpWeight")]
+        out += [(b"WallOverlay", b"")]
+        return sorted(dict(out).items())
+    if kind in ("fridge", "uppercab", "lowcab", "tv", "couch", "plant"):
+        return _future_room_props(entry)
+    if kind == "fridgeshell":  # inert casing: the vanilla fridge-shell rule (_SHELL_DROP + no fridge flags)
+        fr = _future_room_props((entry[0], entry[1] % SHELL, entry[2], "fridge", entry[4]))
+        # the shell is no TV either (unpowered casing): drop the door-screen TV flags too
+        return sorted((k, b"Refrigerator Shell" if k == b"CustomName" else v) for k, v in fr
+                      if k not in _SHELL_DROP and k not in _FRIDGE_TV_KEYS
+                      and b"Fridge" not in k and b"Freezer" not in k)
+    if kind == "bed":          # MRI table: the vanilla single bed tile with the same role
+        vi, grid = MED_MRI_BED[_s]
+        # the menu shows "<GroupName> <CustomName>": "MRI" + "Scanner" (was "MRI MRI Scanner")
+        return _replace(_vanilla_props("furniture_bedding_01", vi), GroupName=b"MRI",
+                        CustomName=b"Scanner", SpriteGridPos=grid.encode(), BedType=b"averageBed",
+                        IsMoveAble=None, PickUpLevel=None, PickUpTool=None, PickUpWeight=None,
+                        PlaceTool=None, CanScrap=None, Material=b"MetalPlates", Material2=None,
+                        Material3=None)
+    if kind == "gunrack":      # plain wall object with storage (not a "WallOverlay" moveable)
+        return sorted((k, v) for k, v in src_props if k != b"WallOverlay")
+    if kind == "overlaylayer":  # fill-overlay art only: no props
+        return []
+    if kind == "centerpot":    # centred floor pot: no wall attachment
+        out = [(k, v) for k, v in src_props if not k.startswith(b"attached")]
+        return sorted(out)
+    if kind == "wallbox":      # mid-height wall-mounted cabinet on the edge its Facing names
+        facing = dict(src_props).get(b"Facing", b"S")
+        out = [(k, v) for k, v in src_props if k not in (b"Surface", b"IsLow", b"IsTableTop",
+                                                         b"IsSurfaceOffset", b"CustomItem")]
+        # solidtrans keeps it on KBW's thumpable path (container from the definition), like the
+        # Dirkie upper cabinets; without it an attached sprite is placed as a bare moveable prop
+        out += [(b"MoveType", b"WallObject"), (_WALLBOX_EDGE[facing], b""), (b"solidtrans", b"")]
+        return sorted(dict(out).items())
+    if kind == "seat":         # a chair: vanilla chair flags, no pick-up as the pack's CustomItem
+        seat = _FACE_SEAT[edge]
+        out = [(k, v) for k, v in src_props if k not in (b"CustomItem", b"IsMoveAble", b"Facing")]
+        out += [(b"bed", b""), (("chair" + seat).encode(), b""), (b"BedType", b"averageBed"),
+                (b"Facing", seat.encode()), (b"CustomName", b"Wheelchair"), (b"GroupName", b"Medical"),
+                (b"BlocksPlacement", b""), (b"solidtrans", b""), (b"IsLow", b""), (b"Material", b"MetalBars")]
+        return sorted(out)
+    out = [(k, v) for k, v in src_props if k not in _DECOR_DROP]
+    out += [(("attached" + edge).encode(), b""), (b"Facing", _EDGE_FACING[edge])]
+    if kind == "ladder":
+        out += [(("ladder" + edge).encode(), b""), (b"BlocksPlacement", b""), (b"forceFade", b""),
+                (b"CanBreak", b""), (b"CustomName", b"Ladder"), (b"GroupName", group),
+                (b"Material", b"Steel"), (b"MaterialType", b"Metal")]
+    elif kind == "top":
+        out += [(b"CustomName", b"Ladder Top"), (b"GroupName", group), (b"Material", b"Steel")]
+    elif kind == "trim":
+        out = [(k, v) for k, v in out if k != b"MoveType"]   # not a curtain / window moveable
+        out += [(b"WallOverlay", b""), (b"CustomName", group)]
+        return sorted(dict(out).items())   # the pack tile already has its attached flag
+    else:
+        # The container must be on the TILE (user 2026-08-28: "no storage"): an attached, non-solid
+        # sprite is built by KBW through vanilla moveable placement, which only creates the
+        # containers the sprite itself declares. The definition's capacity (20 / Reinforced 100) is
+        # then applied to that container.
+        out += [(b"MoveType", b"WallObject"), (b"CustomName", b"Wall Cabinet"), (b"GroupName", group),
+                (b"Material", b"MetalPlates"), (b"CanBreak", b""), (b"IsMoveAble", b""),
+                (b"container", b"counter"), (b"ContainerCapacity", b"20")]
+    return sorted(dict(out).items())
+
+
+_COMMUNITY_SEATING = os.path.join(_COMMUNITY_MEDIA, "seating.txt")
+
+
+def _seating_tiles(path, tileset):
+    """{(col, row): tile block text} for one tileset of a seating.txt (brace-matched)."""
+    txt = open(path, encoding="utf-8", errors="replace").read()
+    import re as _re
+    m = _re.search(r"name\s*=\s*%s\s*," % _re.escape(tileset), txt)
+    if not m:
+        return {}
+    # the tileset block ends at the brace that closes the one opened before "name ="
+    depth, i = 1, m.end()
+    while depth and i < len(txt):
+        depth += {"{": 1, "}": -1}.get(txt[i], 0)
+        i += 1
+    body = txt[m.end():i - 1]
+    out, pos = {}, 0
+    for tm in _re.finditer(r"\btile\s*\{", body):
+        if tm.start() < pos:
+            continue
+        depth, j = 1, tm.end()
+        while depth and j < len(body):
+            depth += {"{": 1, "}": -1}.get(body[j], 0)
+            j += 1
+        block = body[tm.start():j]
+        xy = _re.search(r"xy\s*=\s*(\d+)\s+(\d+)", block)
+        if xy:
+            out[(int(xy.group(1)), int(xy.group(2)))] = block
+        pos = j
+    return out
+
+
+def _seat_block(col, row, seats):
+    """A seating.txt tile block. seats: [(id, x, height, y)] in tile units (x 10000 in the file);
+    Front approach only (BlockLeft / BlockRight, like vanilla's bed seats)."""
+    pos = []
+    for pid, x, h, y in seats:
+        pos.append("    position\n        {\n            id = %s,\n            translate = %d %d %d,\n"
+                   "            properties\n            {\n                BlockLeft = true,\n"
+                   "                BlockRight = true,\n            }\n        }"
+                   % (pid, round(x * 10000), round(h * 10000), round(y * 10000)))
+    return "tile\n        {\n            xy = %d %d,\n        %s\n        }" % (col, row, "\n        ".join(pos))
+
+
+def _keep_seat_positions(block, ids):
+    """A seating.txt tile block with only the `position` blocks whose id is in `ids`."""
+    import re as _re
+    out, pos = [], 0
+    for pm in _re.finditer(r"\bposition\s*\{", block):
+        if pm.start() < pos:
+            continue
+        depth, j = 1, pm.end()
+        while depth and j < len(block):
+            depth += {"{": 1, "}": -1}.get(block[j], 0)
+            j += 1
+        pid = _re.search(r"\bid\s*=\s*(\w+)", block[pm.start():j])
+        out.append(block[pos:pm.start()])
+        if pid and pid.group(1) in ids:
+            out.append(block[pm.start():j])
+        pos = j
+    out.append(block[pos:])
+    kept = "".join(out)
+    if not _re.search(r"\bposition\s*\{", kept):
+        raise RuntimeError("no seat position %s left in seating block" % (ids,))
+    return kept
+
+
+def write_decor_seating(common_media_dir, cols=8):
+    """<common_media_dir>/seating.txt: the pack's seat positions for our seat copies (wheelchair),
+    re-keyed to their cells in the ice-shell tileset. Returns the number of tiles written."""
+    import re as _re
+    src_cache, blocks = {}, []
+    _VANILLA_SEATING = os.path.join(os.path.dirname(os.path.dirname(_VANILLA_TILES)), "seating.txt")
+    if not os.path.isfile(_VANILLA_SEATING):
+        _VANILLA_SEATING = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\seating.txt"
+    for sh, s, _e, kind, _g in DECOR_COPIES:
+        if kind == "seat":          # the pack's own seat for this tile
+            src_file, src_set, src_i = _COMMUNITY_SEATING, sh, s
+        elif kind == "couch":       # vanilla Red Comfy couch tile with the same facing + grid position
+            src_file, src_set, src_i = _VANILLA_SEATING, "furniture_seating_indoor_01", FR_COUCH_SRC[s][0]
+        elif kind == "bed":         # MRI table: our own seats on the measured table (MRI_SEATS)
+            j = DECOR_BASE + _DECOR_POS[(sh, s)]
+            blocks.append("        /* %s_%d (MRI table seats, medical %d) */\n        %s"
+                          % (ICESHELL_TILESET, j, s, _seat_block(j % cols, j // cols, MRI_SEATS[s])))
+            continue
+        else:
+            continue
+        key = (src_file, src_set)
+        if key not in src_cache:
+            src_cache[key] = _seating_tiles(src_file, src_set)
+        block = src_cache[key].get((src_i % 8, src_i // 8))
+        if not block:
+            raise RuntimeError("no seating data for %s_%d in %s" % (src_set, src_i, src_file))
+        j = DECOR_BASE + _DECOR_POS[(sh, s)]
+        block = _re.sub(r"xy\s*=\s*\d+\s+\d+", "xy = %d %d" % (j % cols, j // cols), block, count=1)
+        blocks.append("        /* %s_%d (seat of %s_%d) */\n        %s" % (ICESHELL_TILESET, j, src_set, src_i, block.strip()))
+    if not blocks:
+        return 0
+    os.makedirs(common_media_dir, exist_ok=True)
+    out = os.path.join(common_media_dir, "seating.txt")
+    open(out, "w", encoding="utf-8").write(
+        "seating\n{\n    VERSION = 3,\n    tileset\n    {\n        name = %s,\n%s\n    }\n}\n"
+        % (ICESHELL_TILESET, "\n".join(blocks)))
+    return len(blocks)
+
+
+_COUCH_RECUT = {}
+
+
+def couch_recut_art(cache):
+    """{Future couch tile: re-cut RGBA art} (user 2026-08-28: dithered seam once built, the ghost
+    fine). The pack's two tiles of each couch OVERLAP (~1500-1700 px drawn by both) and split the
+    art elsewhere than the square boundary; each tile is depth-sorted on its own square, so the
+    shared pixels z-fought. Re-cut like vanilla: composite the pair as the ghost draws it (back tile
+    first), then give every pixel to ONE tile: the one the vanilla Red Comfy couch draws there,
+    else the nearest such tile. Same picture, no overlap, seam on vanilla's line."""
+    if _COUCH_RECUT:
+        return _COUCH_RECUT
+    import numpy as np
+    from PIL import Image as _Im
+    pairs = {}
+    for s in FR_COUCH:
+        pairs.setdefault(FR_COUCH_SRC[s][0] // 2, []).append(s)
+    need = {"furniture_seating_indoor_01_%d" % FR_COUCH_SRC[s][0] for s in FR_COUCH}
+    if not all(os.path.isfile(os.path.join(cache, n + ".png")) for n in need):
+        _extract_from_pack(_VANILLA_TILES2X_PACK, need, cache)
+    W, H = 128 * 3, 256 + 64
+    for ss in pairs.values():
+        def frame(s):
+            gx, gy = (int(v) for v in FR_COUCH_SRC[s][1].split(","))
+            return 128 + (gx - gy) * 64, (gx + gy) * 32, gx + gy
+        order = sorted(ss, key=lambda s: frame(s)[2])            # back tile first, like the ghost
+        comp = _Im.new("RGBA", (W, H), (0, 0, 0, 0))
+        van = {}
+        for s in order:
+            ox, oy, _d = frame(s)
+            comp.alpha_composite(_Im.open(os.path.join(cache, "%s_%d.png" % (FR_SHEET, s))).convert("RGBA"), (ox, oy))
+            v = np.zeros((H, W), bool)
+            v[oy:oy + 256, ox:ox + 128] = np.array(_Im.open(os.path.join(
+                cache, "furniture_seating_indoor_01_%d.png" % FR_COUCH_SRC[s][0])).convert("RGBA"))[:, :, 3] > 0
+            van[s] = v
+        # owner label per pixel: vanilla's tile there (front tile wins a shared pixel), then grow
+        label = np.full((H, W), -1, int)
+        for n, s in enumerate(order):
+            label[van[s]] = n
+        for _ in range(W + H):
+            if (label >= 0).all():
+                break
+            grown = False
+            for dy, dx in ((0, 1), (0, -1), (1, 0), (-1, 0)):
+                src = np.roll(label, (dy, dx), axis=(0, 1))
+                if dy == 1: src[0, :] = -1
+                if dy == -1: src[-1, :] = -1
+                if dx == 1: src[:, 0] = -1
+                if dx == -1: src[:, -1] = -1
+                take = (label < 0) & (src >= 0)
+                if take.any():
+                    label[take] = src[take]
+                    grown = True
+            if not grown:
+                break
+        # a pixel can only go to a tile whose 128x256 frame contains it (else it would be cropped)
+        inframe = []
+        for s in order:
+            ox, oy, _d = frame(s)
+            f = np.zeros((H, W), bool)
+            f[oy:oy + 256, ox:ox + 128] = True
+            inframe.append(f)
+        for n in range(len(order)):
+            bad = (label == n) & ~inframe[n]
+            label[bad] = 1 - n
+        c = np.array(comp)
+        lost = (c[:, :, 3] > 0) & ~np.logical_or.reduce([(label == n) & inframe[n] for n in range(len(order))])
+        if lost.any():
+            raise RuntimeError("couch re-cut would drop %d px" % int(lost.sum()))
+        for n, s in enumerate(order):
+            ox, oy, _d = frame(s)
+            mine = c.copy()
+            mine[label != n] = 0
+            _COUCH_RECUT[s] = _Im.fromarray(mine[oy:oy + 256, ox:ox + 128].copy(), "RGBA")
+    return _COUCH_RECUT
+
+
+def _mask_depth(cell, art):
+    """Depth cell with every pixel outside `art`'s drawn pixels (alpha 0) cleared."""
+    import numpy as np
+    from PIL import Image as _Im
+    d = np.array(cell.convert("RGBA"))
+    d[np.array(art.convert("RGBA"))[:, :, 3] == 0] = 0
+    return _Im.fromarray(d, "RGBA")
+
+
+def _fill_depth_holes(cell, art, max_steps=128):
+    """Depth cell (RGBA) where every art pixel (alpha > 0) with no depth (alpha 0) gets the depth
+    of the nearest pixel that has one (grown one pixel ring per step, 4-neighbour)."""
+    import numpy as np
+    from PIL import Image as _Im
+    orig = np.array(cell.convert("RGBA"))
+    d = orig.copy()
+    want = np.array(art.convert("RGBA"))[:, :, 3] > 0
+    have0 = d[:, :, 3] > 0
+    have = have0.copy()
+    # grow through the whole cell (art islands can sit apart from the shape), apply to art only
+    for _ in range(max_steps):
+        if not (want & ~have).any():
+            break
+        hole = ~have
+        grown = False
+        for dy, dx in ((0, 1), (0, -1), (1, 0), (-1, 0)):
+            src_have = np.roll(have, (dy, dx), axis=(0, 1))
+            src_val = np.roll(d, (dy, dx), axis=(0, 1))
+            # np.roll wraps: never take a value across the cell border
+            if dy == 1: src_have[0, :] = False
+            if dy == -1: src_have[-1, :] = False
+            if dx == 1: src_have[:, 0] = False
+            if dx == -1: src_have[:, -1] = False
+            take = hole & src_have
+            if take.any():
+                d[take] = src_val[take]
+                have = have | take
+                hole = hole & ~take
+                grown = True
+        if not grown:
+            break
+    if (want & ~have).any():
+        raise RuntimeError("depth cell has art pixels with no depth to grow from")
+    keep = ~(want & ~have0)               # only the art holes take a grown value
+    d[keep] = orig[keep]
+    return _Im.fromarray(d, "RGBA")
 
 
 def _vanilla_depth_cell_index(sheet, idx):
@@ -1307,6 +1966,31 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
             im = Image.open(os.path.join(cache, "%s_%d.png" % (PUMP_SINK_SHEET, s))).convert("RGBA")
             tiles.append((pump_sink_name(s), im))
             props.append(_pump_sink_props(src_props))
+        # Dirkies decor-house copies at fixed indices DECOR_BASE.. (ladders, ladder tops, red cabinet)
+        if len(props) > DECOR_BASE:
+            raise RuntimeError("ice-shell tiles reach %d; decor copies start at %d" % (len(props), DECOR_BASE))
+        props += [[] for _ in range(DECOR_BASE - len(props))]
+        _copy_pack = {GUN_SHEET: _GUN_PACK, FR_SHEET: _GUN_PACK}
+        for pk in {_copy_pack.get(sh, _DECOR_PACK) for sh, _s, _e, _k, _g in DECOR_COPIES}:
+            _extract_from_pack(pk, {"%s_%d" % (sh, _src_index(s)) for sh, s, _e, _k, _g in DECOR_COPIES
+                                    if _copy_pack.get(sh, _DECOR_PACK) == pk}, cache)
+        from PIL import ImageOps as _IO
+        for entry in DECOR_COPIES:
+            sh, s = entry[0], entry[1]
+            im = Image.open(os.path.join(cache, "%s_%d.png" % (sh, _src_index(s)))).convert("RGBA")
+            if _mirrored(s):
+                im = _IO.mirror(im)
+            if entry[3] == "centerpot":
+                # the pack has a stray pixel at y 23 above every pot: clear rows above 64 first
+                im.paste((0, 0, 0, 0), (0, 0, im.size[0], 64))
+                bb = im.split()[3].point(lambda v: 255 if v > 40 else 0).getbbox()
+                _DECOR_SHIFT[(sh, s)] = (64 - (bb[0] + bb[2]) // 2, POT_BOTTOM - bb[3])
+            if (sh, s) in _DECOR_SHIFT:
+                im = _shift(im, *_DECOR_SHIFT[(sh, s)])
+            if entry[3] == "couch":     # re-cut on vanilla's seam, no overlap (couch_recut_art)
+                im = couch_recut_art(cache)[s]
+            tiles.append((decor_copy_name(s, sh), im))
+            props.append(_decor_props(entry, tilesets[sh.encode()][6][_src_index(s)]))
     n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
     cols = 8
     # from the highest index used (props), not the tile count: the pump sinks sit at fixed indices
@@ -1336,8 +2020,67 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
                 sx, sy = (c % scols) * cw, (c // scols) * ch
                 dj = PUMP_SINK_BASE + PUMP_SINK_SRC.index(s)
                 depth.paste(sink_depth.crop((sx, sy, sx + cw, sy + ch)), ((dj % cols) * cw, (dj // cols) * ch))
+        # decor-house copies: the Community pack's own depth cells for the source tiles
+        _ddepth = {}
+        _couch_depth = None
+        for sh, s, _e, _k, _g in DECOR_COPIES:
+            if _k == "couch":
+                # Future couch (user, 2026-08-28: the pack's depth drew the backrest over a resting
+                # player). Its seat positions are the vanilla Red Comfy couch's, so it uses that
+                # couch's depth cells too (furniture_seating_indoor_01, same facing + grid position).
+                if _couch_depth is None:
+                    _couch_depth = Image.open(_VANILLA_DEPTH_SEATING).convert("RGBA")
+                vi = _vanilla_depth_cell_index("furniture_seating_indoor_01", FR_COUCH_SRC[_src_index(s)][0])
+                if vi is None:
+                    raise RuntimeError("no vanilla depth cell for couch tile %d" % s)
+                vcols = _couch_depth.size[0] // cw
+                sx, sy = (vi % vcols) * cw, (vi // vcols) * ch
+                dj = DECOR_BASE + _DECOR_POS[(sh, s)]
+                cell = _couch_depth.crop((sx, sy, sx + cw, sy + ch))
+                # The vanilla cell also holds the FLOOR / shadow under the vanilla couch (ground
+                # depth). Future art pixels past the vanilla shape landed on it and z-fought the
+                # ground (user 2026-08-28: dithered seam between the two tiles), or had no depth at
+                # all (gaps). So: keep vanilla depth only where the vanilla couch art is drawn, then
+                # give every other Future art pixel the depth of the nearest couch-body pixel.
+                vn = "furniture_seating_indoor_01_%d" % vi
+                if not os.path.isfile(os.path.join(cache, vn + ".png")):
+                    _extract_from_pack(_VANILLA_TILES2X_PACK, {vn}, cache)
+                van = Image.open(os.path.join(cache, vn + ".png")).convert("RGBA")
+                cell = _mask_depth(cell, van)
+                cell = _fill_depth_holes(cell, couch_recut_art(cache)[s])
+                depth.paste(cell, ((dj % cols) * cw, (dj // cols) * ch))
+                continue
+            if sh not in _ddepth:
+                p = _decor_depth_png(sh)
+                _ddepth[sh] = Image.open(p).convert("RGBA") if os.path.isfile(p) else None
+            ddepth = _ddepth[sh]
+            if ddepth is None:
+                continue
+            dcols = ddepth.size[0] // cw
+            si = _src_index(s)
+            sx, sy = (si % dcols) * cw, (si // dcols) * ch
+            if sy + ch > ddepth.size[1]:
+                continue
+            dj = DECOR_BASE + _DECOR_POS[(sh, s)]
+            cell = ddepth.crop((sx, sy, sx + cw, sy + ch))
+            if _mirrored(s):
+                from PIL import ImageOps as _IO2
+                cell = _IO2.mirror(cell)
+            if (sh, s) in _DECOR_SHIFT:
+                cell = _shift(cell, *_DECOR_SHIFT[(sh, s)])   # depth follows the moved art
+            if _k in FILL_DEPTH_KINDS:      # art pixels outside the depth shape would be hidden
+                art = Image.open(os.path.join(cache, "%s_%d.png" % (sh, si))).convert("RGBA")
+                if _mirrored(s):
+                    from PIL import ImageOps as _IO3
+                    art = _IO3.mirror(art)
+                if (sh, s) in _DECOR_SHIFT:
+                    art = _shift(art, *_DECOR_SHIFT[(sh, s)])
+                cell = _fill_depth_holes(cell, art)
+            depth.paste(cell, ((dj % cols) * cw, (dj // cols) * ch))
         os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
         depth.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_%s.png" % ICESHELL_TILESET))
+        # seat positions for the wheelchair copies (Rest / sit animation)
+        write_decor_seating(common_media_dir, cols)
     return n
 
 
@@ -1464,6 +2207,39 @@ _TABLETOP_SPRITES = ["kitchen_misc_tk_01_%d" % i for i in list(range(0, 4)) + li
 # flags): KBWCommunity_TableTop.lua is WE-owned (WE's copy only runs with the Community submod).
 TT_TABLETOP_SPRITES = ["tikitown-props-14_%d" % i
                        for i in list(range(0, 8)) + list(range(12, 16)) + [23] + list(range(27, 32))]
+# 2026-08-28 (user: "a common bug we should just account for"): every table-top piece we add goes on
+# these lists. props-14 terrarium 90-93 + Mahjong 104-105 (pack table-top flags); the Dirkies
+# medical centrifuge / analyzer / specimen cabinet copies (flags added on the copies, MED_TABLETOP).
+TT_TABLETOP_SPRITES += ["tikitown-props-14_%d" % i for i in (90, 91, 92, 93, 104, 105)]
+# (the medical centrifuge / analyzer copies are no longer built, user 2026-08-28: off the list)
+TABLETOP_DECOR = []
+_add_future_room_tvs()      # Future Room wall-TV copies get generated screens (append-only)
+_TABLETOP_SPRITES += TABLETOP_DECOR
+
+
+def sync_we_tabletop_sprites(we_base_lua):
+    """Add every sprite of our two table-top lists to the SPRITES table of World Essentials' own
+    KBWCommunity_TableTop.lua (WE-owned; our WORK copy only). Returns the sprites added. Lines WE
+    already has stay as they are; the hand-off notes must flag the change to the WE dev."""
+    import re as _re
+    raw = open(we_base_lua, "rb").read().decode("utf-8")
+    nl = "\r\n" if "\r\n" in raw else "\n"
+    txt = raw.replace("\r\n", "\n")
+    m = _re.search(r"local SPRITES = \{\n(.*?)\n\}", txt, _re.S)
+    if not m:
+        raise RuntimeError("SPRITES table not found in %s" % we_base_lua)
+    want = TT_TABLETOP_SPRITES + _TABLETOP_SPRITES
+    have = set(_re.findall(r'\["([^"]+)"\]\s*=\s*true', m.group(1)))
+    add = [s for s in want if s not in have]
+    # our own copies that are no longer table-top pieces (e.g. the specimen cabinet) come off the list
+    stale = [s for s in have if s.startswith(ICESHELL_TILESET + "_") and s not in want]
+    if add or stale:
+        lines = [l for l in m.group(1).split("\n")
+                 if not any('["%s"]' % s in l for s in stale)]
+        block = "\n".join(lines + ['    ["%s"] = true,' % s for s in add])
+        txt = txt[:m.start(1)] + block + txt[m.end(1):]
+        open(we_base_lua, "wb").write(txt.replace("\n", nl).encode("utf-8"))
+    return add + ["-" + s for s in stale]
 
 _TABLETOP_LUA = r'''-- AUTO-GENERATED by pz_craft_loops/kbw_tilepatch.py -- do not edit by hand.
 -- Keeps our counter-top appliances (coffee makers, slicer) at the right height: on a counter

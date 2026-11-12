@@ -23,6 +23,11 @@ Pieces (user's sheet map, checked against the tile data and the extracted art):
   6  coffee dispenser     27-30 1 tile, 4 facings   (pack Facing N,W,S,E; "Dispenser - Thermos")
   7  styrofoam cups       23 (single cup), 31 (cup stack): two buildables in one KBW group
                                 (arrows in the build menu), not facings.
+  Bottom of the sheet (added 2026-08-28, rows 10-13 after the big gap):
+  8  floor bird cage      85/86 + 88/89  2 tiles, 2 facings (joins composited from the art)
+  9  reptile terrarium    90-93 1 tile, 4 facings, table-top, the pack's light (lightswitch)
+  10 wire pet cage        95/94 2 tiles, 1 facing ("Possum Cage")
+  11 mahjong game         104/105 1 tile, 2 facings, table-top
 
 Single-tile 4-facing pieces: KBW face = the tile's Facing (same rule as the wardrobes/lockers).
 Table-top pieces (mic, mixers, dispenser, cups) keep the pack's IsTableTop / IsSurfaceOffset, so they
@@ -106,6 +111,31 @@ PIECES = [
     ("cup_stack", "Styrofoam Cup Stack", "Decorations and Landscaping", "Kitchen Clutter", "Fabric",
      {"S": _one(31)}, TABLETOP, [_mat(1, "Base.Plank", 1)], {}, 20, {},   # 1 wood (user)
      {"isThumpable": False, "canPassThrough": True, "dismantable": True}, "cups"),
+    # ---- bottom of the sheet (user, 2026-08-28; missed first time behind the big gap) ----------
+    # Bird cage, 2 tiles (pack "Colorful" / "Floor Bird Cage"). Joins read from the art (composited):
+    # 86 at y0 + 85 at y1 (runs N-S, pack Facing E), 88 at x0 + 89 at x1 (runs E-W, Facing S).
+    ("bird_cage", "Floor Bird Cage", "Decorations and Landscaping", "Pet Supplies", "Metal",
+     {"E": _col2(86, 85), "S": {"layers": [{"rows": [[_spr(88), _spr(89)]]}]}}, FLOOR,
+     [_tool("base:screwdriver", "tool_screwdriver"), _mat(1, "Base.Wire", 4), _mat(2, "Base.Plank", 2),
+      _mat(3, "Base.Screws", 6)], {}, 120, {},
+     {"isThumpable": True, "dismantable": True}, None),
+    # Terrarium (pack "Reptile" / "Terrarium", Facing N,E,S,W): a table-top lamp, the pack's
+    # lightswitch + LightRadius make it a switchable light (needs power like any lamp).
+    ("terrarium", "Reptile Terrarium", "Decorations and Landscaping", "Pet Supplies", "Glass",
+     {"N": _one(90), "E": _one(91), "S": _one(92), "W": _one(93)}, TABLETOP,
+     _electronics(scrap=1, wire=1, small_sheet=1) + [_mat(9, "Base.GlassPanel", 1), _mat(10, "Base.LightBulb", 1)],
+     {"Electricity": 1}, 100, {"Electricity": 10},
+     {"isThumpable": False, "canPassThrough": True, "dismantable": True}, None),
+    # Pet cage, 2 tiles, one orientation (pack "Possum Cage", no Facing): 95 at y0 + 94 at y1.
+    ("pet_cage", "Wire Pet Cage", "Decorations and Landscaping", "Pet Supplies", "Metal",
+     {"W": _col2(95, 94)}, FLOOR,
+     [_tool("base:screwdriver", "tool_screwdriver"), _mat(1, "Base.Wire", 6), _mat(2, "Base.MetalBar", 2),
+      _mat(3, "Base.Screws", 6)], {}, 120, {},
+     {"isThumpable": True, "dismantable": True}, None),
+    # Mahjong game in progress (pack "Board" / "Game - Mahjong", Facing E / S), table-top
+    ("mahjong", "Mahjong Game", "Decorations and Landscaping", "Games", "Wood",
+     {"E": _one(104), "S": _one(105)}, TABLETOP, [_mat(1, "Base.Plank", 1)], {}, 30, {},
+     {"isThumpable": False, "canPassThrough": True, "dismantable": True}, None),
 ]
 
 GROUPS = {"cups": ("worldessentials.tikitown.props14_cups", "Styrofoam Cups")}

@@ -292,6 +292,40 @@ FRIDGE_PRODUCTS = [(s, s, n, _FRIDGE_TIERS, "fridge") for s, n in (
      _FREEZER_ONLY_TIERS, "freezer2"),
     ("chest_freezer", "chest_freezer", "Chest Freezer", _CHEST_TIERS, "freezer1"),
 ]
+# Dylan Future Room fridges (user, 2026-08-28: "give the fridges the higher tier versions"): the
+# KBW VE White Refrigerator recipe and tier ladder on our copies (kbw_tilepatch.FR_FRIDGE: S-facing
+# source = face N, its mirror = face W); shells are our inert copies (future_fridge_shells).
+# (stem, display name, DylansFutureRoom01 source tile)
+FUTURE_FRIDGES = [("future_fridge_black", "Black Future Fridge", 30),
+                  ("future_fridge_white", "White Future Fridge", 31)]
+# The Future fridges' door screen is a working TV (kbw_tilepatch, user 2026-08-28), so their
+# working unit also costs a TV's parts (user: "include the materials required for a TV"): the
+# inputs + skills of the Wall Screen TV / Premium CRT Television, read from its definition.
+FUTURE_FRIDGE_TV_SRC = (r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\53_community_dylan_rf02_misc.json",
+                        "community.dylan.rf02.tv_crt_premium")
+
+
+def _add_tv_cost(req, group_rows=()):
+    """Add the TV's inputs (ids prefixed tv_; a tool already listed in the inputs or in the
+    requirement's material group is not repeated) and its skills (max) to a requirements dict."""
+    d = json.load(open(FUTURE_FRIDGE_TV_SRC[0], encoding="utf-8-sig"))
+    tv = next(b for b in d["buildables"] if b["id"] == FUTURE_FRIDGE_TV_SRC[1])["stages"][0]["requirements"]
+    rows = req.setdefault("inputs", [])
+    tools = {tuple(r.get("tags") or r.get("items") or ()) for r in list(rows) + list(group_rows)
+             if r.get("role") == "tool"}
+    for r in tv.get("inputs", []):
+        key = tuple(r.get("tags") or r.get("items") or ())
+        if r.get("role") == "tool" and key in tools:
+            continue
+        r = copy.deepcopy(r)
+        r["id"] = "tv_" + r["id"]
+        rows.append(r)
+    skills = req.setdefault("skills", {})
+    for s, v in (tv.get("skills") or {}).items():
+        skills[s] = max(skills.get(s, 0), v)
+    return req
+
+
 FRIDGE_ID_PREFIX = "kbwcb.appliances."
 TOOLTIP_FRIDGE_SHELL = ("Tooltip_KBWCB_FridgeShell",
                         "Unfinished refrigerator casing. Build the matching refrigerator on it to finish it.")
@@ -336,8 +370,24 @@ def build_fridge_defs():
         r["knowledge"]["skillAlternatives"] = [{"mode": "all", "skills": {"MetalWelding": mw, "Electricity": alt}}]
         return r
 
-    for kb_suffix, stem, name, tiers, kind in FRIDGE_PRODUCTS:
-        base = base_copy(kb_suffix)
+    from kbw_tilepatch import FR_SHEET, MIRROR, decor_copy_name, future_fridge_shells
+    _future_shell = future_fridge_shells()
+
+    def shell_name(sprite):
+        return _future_shell.get(sprite) or fridge_shell_name(int(sprite.rsplit("_", 1)[1]))
+    products = list(FRIDGE_PRODUCTS) + [
+        (("future", src), stem, name, _FRIDGE_TIERS, "fridge") for stem, name, src in FUTURE_FRIDGES]
+    for kb_suffix, stem, name, tiers, kind in products:
+        if isinstance(kb_suffix, tuple):            # Future Room fridge on our copies
+            base = base_copy("white_refrigerator")
+            src = kb_suffix[1]
+            n, w = decor_copy_name(src, FR_SHEET), decor_copy_name(src + MIRROR, FR_SHEET)
+            base["stages"][0]["geometry"] = {"faces": {"N": {"layers": [{"rows": [[n]]}]},
+                                                       "W": {"layers": [{"rows": [[w]]}]}}}
+            base["iconSprite"] = n
+            base["tags"] = ["community-tilepack", "dylan", "future-room", "kitchen", "refrigeration"]
+        else:
+            base = base_copy(kb_suffix)
         base_req = base["stages"][0]["requirements"]
         # catalog card per product (tiers + shells in build order), like the ice machines
         group = {"id": FRIDGE_ID_PREFIX + stem + "_tiers",
@@ -375,6 +425,8 @@ def build_fridge_defs():
                 amounts = ice30 if single == "ICE30" else single
                 mg[gname] = _rows_for(_halve_kbw(amounts), templates)
                 st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
+                if isinstance(kb_suffix, tuple):   # Future fridge: + its door TV's parts
+                    _add_tv_cost(st["requirements"], mg[gname])
                 u["construction"] = copy.deepcopy(u["construction"])   # KBW's own (time 200) and XP
                 out.append(grouped(u))
                 report.append("%-52s %-8s MW%d+E%d (alt E%d) single, weight %.1f" % (
@@ -387,12 +439,12 @@ def build_fridge_defs():
             sh["translationKey"] = "IGUI_" + sid.replace(".", "_")
             sh["displayName"] = "%s %s Shell" % (name, label)
             sh["tooltipKey"] = shell_tooltip
-            sh["iconSprite"] = fridge_shell_name(int(sh["iconSprite"].rsplit("_", 1)[1]))
+            sh["iconSprite"] = shell_name(sh["iconSprite"])
             sh["construction"] = dict(copy.deepcopy(sh["construction"]), xp=shell_xp)
             sst = sh["stages"][0]
             for face in sst["geometry"]["faces"].values():
                 for L in face["layers"]:
-                    L["rows"] = [[fridge_shell_name(int(c.rsplit("_", 1)[1])) for c in row] for row in L["rows"]]
+                    L["rows"] = [[shell_name(c) for c in row] for row in L["rows"]]
             sst["object"] = dict(SHELL_OBJECT)
             sst.pop("container", None)
             sg = gname + "_shell"
@@ -402,6 +454,8 @@ def build_fridge_defs():
             # ---- stage 2: the unit, built on its shell
             mg[gname] = _rows_for(_halve_kbw(unit_amt), templates)
             st["requirements"] = requirements(base_req, gname, {"MetalWelding": mw, "Electricity": el}, mw, alt)
+            if isinstance(kb_suffix, tuple):       # Future fridge: + its door TV's parts
+                _add_tv_cost(st["requirements"], mg[gname])
             st["previousStage"] = sid
             u["construction"] = dict(copy.deepcopy(u["construction"]), xp=unit_xp)
             out.append(grouped(u))

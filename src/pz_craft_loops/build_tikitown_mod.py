@@ -50,6 +50,9 @@ SRC_FILES = [
     "42_tikitown_garage_trim.json",
     "43_tikitown_wall_paint_cladding.json",
     "44_tikitown_wall_trim.json",
+    "45_tikitown_ladders.json",      # tterika ladder on our copied tiles (ladders.py)
+    "46_tikitown_barrel_planters.json",   # tikitown_barrel_planters.py
+    "47_tikitown_entertainment.json",     # tikitown_entertainment.py
 ]
 
 # WE merge 2026-11-10: the WE dev declined these pending a multiplayer review. Not built for WE
@@ -171,6 +174,9 @@ def main():
     # WE; changes to that code are ported by hand into work/World Essentials (base, our files only).
     # The test bundle (build_merged_test_mod) still writes its own copies.
     _lua = os.path.join(mod42, "media", "lua")
+    # ladders must hang on a wall (onIsValid used by 45_tikitown_ladders.json; ladders.py)
+    from ladders import write_ladder_guard_lua, GUARD_LUA_TIKITOWN
+    write_ladder_guard_lua(os.path.join(_lua, "shared", GUARD_LUA_TIKITOWN))
     # wall overlays: our own copies of tiles 72-91 (overlay-only props) -- map tiles untouched
     from tikitown_wall_overlays import write_overlay_assets
     # corner / end-cap depth maps go to <mod>/common/media (the only place the game reads them)

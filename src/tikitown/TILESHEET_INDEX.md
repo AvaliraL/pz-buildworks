@@ -91,7 +91,7 @@ Note: `[x]` and `[K]` can overlap when a sheet is partly in Knox and also in our
 - [ ] tikitown_walls_details_01
 - [ ] tikitown_walls_details_02
 - [ ] tikitown_walls_details_03
-- [ ] tikitown_walls_details_04
+- [=] tikitown_walls_details_04  (DUPLICATE of Community `fixtures_details_ddd_01`: tiles 0-55 pixel-identical, checked 2026-08-28. Built from the Community copy in file 64 (window trim, planters, pots); do NOT build this one too. Its props are worse: every west tile says attachedE, pots are WallOverlay.)
 - [ ] tikitown_walls_overlay_01
 - [ ] tt_newburbs_details_01
 - [ ] vegetation_ornamental_tterika_01

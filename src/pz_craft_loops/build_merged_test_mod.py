@@ -84,6 +84,16 @@ PACK_OF = {
     # Dirkies couches (d_furniture_couches_01 = 27 couches) + corner couches
     # (d_location_sofaking = 4 colors x 4-facing 90-degree corners for L/C-shapes).
     "62": "Dirkies",
+    # Dirkies decor-house drawer cabinets + red wall cabinet (dirkies_decor_house.py)
+    "63": "Dirkies",
+    # Dirkies exterior window trim, window planters, potted plants (dirkies_window_decor.py)
+    "64": "Dirkies",
+    # Dirkies medical sheet: lockers, cart, sinks, wheelchair, lab equipment, MRI (dirkies_medical.py)
+    "65": "Dirkies",
+    # Dylan DarthGunStore pegboard gun racks (dylan_gun_racks.py)
+    "66": "Dylan",
+    # Dylan Future Room extras: wall TV, fridges, cabinets, couch, planter (dylan_future_room_extras.py)
+    "67": "Dylan",
 }
 # Completed = verified in-game; everything else -> In Progress.
 # Whole sheets confirmed complete:
@@ -104,7 +114,10 @@ COMPLETED_SHEETS = {"21","22","23","24","25","26","27","28","29","31","32","33",
                     "59",   # Dirkies fencing confirmed, except the broken louvered fence (see below)
                     # Dirkies bedroom (beds/furniture/storage) + couches confirmed (2026-08-28);
                     # the 4 sofaking corner couches are excluded below (not shipping as-is)
-                    "61", "62"}
+                    "61", "62",
+                    # 2026-08-28 sheets: Dirkies decor house / window decor / medical, Dylan gun
+                    # racks / Future Room extras ("all of dirkies / Dylan can be marked complete")
+                    "63", "64", "65", "66", "67"}
 # -> In Progress by omission: "30" (shelving), future sheets.
 
 # PER-PIECE status overrides (finer than sheet-level), matched by buildable id PREFIX.
@@ -152,6 +165,10 @@ COMPLETED_IDS = {
 # Pieces explicitly NOT yet confirmed (force In Progress even if a sibling on the sheet is done):
 INPROGRESS_ID_PREFIXES = {
     # (couches: standalone corner pieces dropped, L couches confirmed -> nothing held back)
+    # (2026-08-28 additions - Dirkies decor house / medical / window decor, Dylan gun racks / Future
+    #  Room - all confirmed: "all of dirkies in progress can be marked complete", "all of Dylan can
+    #  be marked complete", user 2026-08-28)
+    # (props-14 bird cage / terrarium / pet cage / Mahjong: confirmed with all of TikiTown, user 2026-08-28)
 }
 
 def piece_status(bid, sheet_status):
@@ -188,6 +205,9 @@ TT_FILES = [
     "42_tikitown_garage_trim.json",
     "43_tikitown_wall_paint_cladding.json",
     "44_tikitown_wall_trim.json",
+    "45_tikitown_ladders.json",
+    "46_tikitown_barrel_planters.json",
+    "47_tikitown_entertainment.json",
 ]
 
 MOD_ID   = "TikiTownCommunityTest"
@@ -214,6 +234,9 @@ TT_PACK_OF = {
     "42": "TikiTown",           # 42_tikitown_garage_trim.json (garage door frames, 63 sheets; In Progress)
     "43": "TikiTown",           # 43_tikitown_wall_paint_cladding.json (tterika paint / cladding; In Progress)
     "44": "TikiTown",           # 44_tikitown_wall_trim.json (tterika trim; In Progress)
+    "45": "TikiTown",           # 45_tikitown_ladders.json (tterika ladder, ladders.py; In Progress)
+    "46": "TikiTown",           # 46_tikitown_barrel_planters.json (8 barrel planters; In Progress)
+    "47": "TikiTown",           # 47_tikitown_entertainment.json (poles, neon signs, bead curtain; In Progress)
 }
 # TikiTown sheets confirmed in-game. Newburbs trim (35) marked Completed by user (2026-08-28).
 TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34","35",
@@ -221,11 +244,19 @@ TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34"
                 "37",         # soundproofing (all 5 pieces) confirmed (user, 2026-08-28)
                 "38", "39", "40",  # props-14, wall overlays, lower walls: Completed for testing (user, 2026-08-28)
                 "41", "42",        # roof slope walls, garage trim: Completed (user, 2026-11-08)
-                "43", "44"}        # tterika paint / cladding / trim: working in game (user, 2026-11-10)
+                "43", "44",        # tterika paint / cladding / trim: working in game (user, 2026-11-10)
+                "45",              # tterika Rusted Iron Ladder: working in game (user, 2026-08-28)
+                "46",              # barrel planters: "all of tikitown in progress is good" (user, 2026-08-28)
+                "47"}              # entertainment: "all of tikitown in progress can be marked complete" (user, 2026-08-28)
 
 # TikiTown sheets that keep their KBW groups in the test bundle (see main)
 TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42",   # 22: doors in 12 type groups (naming round 2)
-                  "43", "44"}                             # one card per colour / trim family
+                  "43", "44",                             # one card per colour / trim family
+                  "46",                                   # one "Barrel Planters" card (user)
+                  "47"}                                   # "Stripper Poles" card (user)
+# Community sheets that keep their KBW groups in the test bundle, so each card reviews as it ships
+# (user 2026-08-28: "the potted plants should be a single card")
+COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67"}
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -351,6 +382,11 @@ def main():
     # TikiTown props-14 table-top pieces: same fix, own file (as shipped in the TikiTown submod)
     from kbw_tilepatch import write_tt_tabletop_lua
     write_tt_tabletop_lua(os.path.join(_media, "lua", "shared", "KBWTikiTown_TableTop.lua"))
+    # ladders must hang on a wall (ladders.py); one copy covers both packs' ladders here
+    from ladders import write_ladder_guard_lua, GUARD_LUA_COMMUNITY
+    write_ladder_guard_lua(os.path.join(_media, "lua", "shared", GUARD_LUA_COMMUNITY))
+    from kbw_tilepatch import write_gunrack_overlay_lua, GUNRACK_LUA_NAME
+    write_gunrack_overlay_lua(os.path.join(_media, "lua", "server", "Items", GUNRACK_LUA_NAME))
     # TikiTown wall overlays: our own copied tiles (as in the submod)
     from tikitown_wall_overlays import write_overlay_assets
     write_overlay_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
@@ -403,7 +439,8 @@ def main():
             # drop any group block so the test menu is a flat type list, not family groups -- except
             # sheets whose groups ARE the type entries (one card per sheet + piece type, heights /
             # variants inside: lower walls, wall overlays, cups) (user, 2026-08-28)
-            if not (pack.startswith("TikiTown") and sheet_key(fn) in TT_KEEP_GROUPS):
+            if not ((pack.startswith("TikiTown") and sheet_key(fn) in TT_KEEP_GROUPS)
+                    or (not pack.startswith("TikiTown") and sheet_key(fn) in COMM_KEEP_GROUPS)):
                 nb.pop("group", None)
             merged.append(nb)
             cat_counts[top]+=1; sub_counts[nb["subcategory"]]+=1; per_pack[pack]+=1
@@ -422,6 +459,8 @@ def main():
         if _b["id"] in seen:
             raise RuntimeError("duplicate buildable id %s" % _b["id"])
         seen.add(_b["id"])
+        # fridge tiers, Future Room ones included: their door-screen TV works too (user, in game
+        # 2026-08-28: "our new TV fridges work")
         _b["category"] = "Community - Completed"
         _b["subcategory"] = "Fridges"
         merged.append(_b); cat_counts[_b["category"]] += 1
@@ -438,6 +477,19 @@ def main():
         _b["subcategory"] = "Sinks"
         merged.append(_b); cat_counts[_b["category"]] += 1   # keeps its "Hand Pump Sinks" card
     print("\n".join(_ps_rep))
+    # vanilla ladders (ladders.py): In Progress until confirmed in game
+    from ladders import build_vanilla_ladder_defs
+    _ld, _ld_tips, _ld_rep = build_vanilla_ladder_defs()
+    nt_tooltips.update(_ld_tips)
+    for _b in _ld:
+        if _b["id"] in seen:
+            raise RuntimeError("duplicate buildable id %s" % _b["id"])
+        seen.add(_b["id"])
+        # every ladder (vanilla, iron + top, caged) confirmed working in game (user, 2026-08-28)
+        _b["category"] = "Community - Completed"
+        _b["subcategory"] = "Ladders"
+        merged.append(_b); cat_counts[_b["category"]] += 1   # keeps its "Ladders" card
+    print("\n".join(_ld_rep))
     # EXPERIMENT: built-in bench tools on the configured workbenches (bench_tools.py)
     print("bench tools on: %s" % bench_tools.apply_to_buildables(merged))
     # moveable rotation for pieces whose tile pack groups the facings badly (rotation_fix.py)

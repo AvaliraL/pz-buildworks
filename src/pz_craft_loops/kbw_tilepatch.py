@@ -1224,7 +1224,7 @@ PUMP_SINK_BASE = 48
 _VANILLA_DEPTH_SINKS = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_fixtures_sinks_01.png"
 _VANILLA_DEPTH_SEATING = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_furniture_seating_indoor_01.png"
 _VANILLA_DEPTH_ASSIGN = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tileDepthTextureAssignments.txt"
-_PUMP_SINK_DROP = {b"waterPiped", b"waterAmount", b"waterMaxAmount"}
+_PUMP_SINK_DROP = {b"waterPiped", b"waterAmount", b"waterMaxAmount"}   # re-added below (one copy)
 
 
 def pump_sink_name(src_index):
@@ -1234,7 +1234,13 @@ def pump_sink_name(src_index):
 
 def _pump_sink_props(src_props):
     out = [(k, v) for k, v in src_props if k not in _PUMP_SINK_DROP]
-    out += [(b"waterAmount", b"999999"), (b"waterMaxAmount", b"999999")]
+    # waterPiped is KEPT (user, 2026-11-13: the sinks gave tainted water). IsoObject.isWaterInfinite
+    # returns true for waterAmount >= 9999 before any room / piping / water-shutoff check, so the
+    # sinks stay infinite. getInfiniteWaterType returns clean Water only for an unmoved waterPiped
+    # object (modData canBeWaterPiped not false; KBW's NativeObjectFactory sets it true) or the
+    # hard-coded camping_01_16 / 64-67 sprites; anything else is TaintedWater. Only plumbing the
+    # sink to a barrel (ISPlumbItem / plumbObject) sets canBeWaterPiped = false.
+    out += [(b"waterAmount", b"999999"), (b"waterMaxAmount", b"999999"), (b"waterPiped", b"")]
     # moveable name = GroupName + CustomName ("White" + "Hand Pump Sink"): picked up it stays clear
     return [(k, b"Hand Pump Sink" if k == b"CustomName" else v) for k, v in out]
 

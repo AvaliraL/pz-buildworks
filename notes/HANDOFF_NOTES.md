@@ -553,3 +553,289 @@ sibling are gone. Copies `KBWCommunityIceShell_134/135` stay in the tileset (fix
   Electricity 2 is below every tier's Electricity (4-6).
 - **Unchanged:** the shells, and all other fridges.
 - **Test status:** built and checked. The cost change is NOT tested in game.
+
+---
+
+# Hand-off 2026-11-13: rugs, Ranger Station signs, neon light fix, clean pump-sink water
+Tag `handoff-2026-11-13-rugs-signs-sinks`. Minor update. Everything was tested in game by the user:
+- **39** TikiTown rugs (new file 48), **40** Ranger Station signs (new file 49).
+- **41c** Hand-pump sinks give clean water (`waterPiped` restored on the 24 pump-sink tiles; still
+  infinite).
+- **43** Neon signs 18+, GIRLS and Ladies Legs now build as real lights (below).
+- Card title `IGUI_WETiki_barrel_planters_group` added (it was missing for the barrel planters
+  shipped on 2026-11-12).
+NOT included: 41 / 41b furnace experiments (test bundle only), 42 StageInfo fix (user: not this
+time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (not tested).
+
+## 43. Neon signs 18+, GIRLS, Ladies Legs build as real lights (2026-11-13)
+- Symptom (user): these three weren't lights, unlike Cheeky and Red Legs.
+- Cause: the pack defines these three as hammer `MoveType = WallObject` moveables (Pick/PlaceTool,
+  no `IsMoveAble`). The working signs are plain `IsMoveAble` tiles, and KBW only creates an
+  IsoLightSwitch for those.
+- Fix (`tikitown_entertainment.copy_props`, our KBWTikiTownEntertainment copies only):
+  - the three get the working signs' layout (`MoveType` / tools dropped, `IsMoveAble` added)
+  - 18+ and GIRLS: pink (255/20/147, vanilla LightBulbPink)
+  - Ladies Legs: orange (255/128/0, vanilla LightBulbOrange) on ONE tile only (29); 28 is plain
+    decoration (user)
+- Signs placed before the fix stay plain objects; they must be rebuilt.
+
+# Pending for the next hand-off (not pushed yet)
+(41, 41b experiments; 42 StageInfo fix)
+
+## 39. TikiTown rugs (NEW file 48, tikitown_rugs_01) (user, 2026-11-12)
+- **Floral rugs** (Light Green / Dark Red / Yellow and Black): each colour's 12 tiles are two 2x3
+  rugs, one laid N/S and one laid E/W (read from the art, checked by compositing). They are built as
+  a **Straight** and a **Corner** piece with 4 orientations each, one card per colour, so players
+  lay out any shape.
+  - Offsets inside a colour block (start tile 4 / 6 / 10, row step 8):
+    - Straight: N +33, E +9, S +32, W +8 (the border side).
+    - Corner, clockwise: N = NW +16, E = NE +17, S = SE +1, W = SW +0 (the N/S rug's corner set;
+      its south corners carry the pineapple end motif).
+  - All corner tiles share the same border, so they join straights on both axes. Checked: 2x4 N/S
+    and 4x2 E/W rugs built from the pieces are seamless in all 3 colours.
+  - **Corner (Alt)** (user, 2026-11-12): the E/W rug's own corners, clockwise N = NW +25,
+    E = NE +41, S = SE +40, W = SW +24. Its pineapple motif sits on the west / east ends. Checked:
+    the 2x4 and 4x2 rugs built with the alt corners are seamless in all 3 colours. Each colour card
+    now has 3 pieces: Straight, Corner, Corner (Alt). Every rug tile of the sheet is used (10
+    buildables).
+- **Street Play Rug** (tiles 0-3): one 2x2 piece. North row `3 2`, south row `0 1`, west to east.
+  This is the only one of the 24 arrangements whose pieces meet with no gap or overlap (the art
+  covers less than each floor diamond). It matches the user's sketch, rotated.
+- **Pack tiles:** used directly (FloorRug + solidfloor, no grid / facing).
+- **Setup / cost:** like the confirmed Dylan floor mats (file 52): Decorations / Rugs, the same
+  object flags, Tailoring 2, the Rugs & Carpets magazine. The cost is scaled per tile from the
+  2-tile mat: a 1-tile piece = fabric 3 + thread 2 uses (100 time); the 2x2 = fabric 12 + thread 8
+  (400).
+- **Test bundle:** TikiTown - In Progress, keeps its cards (`TT_KEEP_GROUPS` 48).
+- **Test status:** built and checked. NOT tested in game.
+
+## 40. TikiTown Ranger Station signs (NEW file 49, tikitown_signs_02 46-48) (user, 2026-11-12)
+- **Card:** one card, "Ranger Station Signs", category Decorations and Landscaping / Signs.
+- **Ranger Station Sign:** 2 tiles, single orientation, built on the pack tiles. The board runs N/S:
+  rows north to south = `47`, `46`. Checked by compositing: one continuous "RANGER STATION" board on
+  two posts; the other order splits it. The pack tiles are BlocksPlacement + solidtrans, so it
+  builds as a solid sign. Cost: hammer, 4 planks, 6 nails, Woodwork 2 (time 200).
+- **Ranger Station Wall Sign:** tile `48`, a small green metal plate (pack: WallObject + WallOverlay
+  + attachedW). Built like the confirmed TikiTown posters (23_tikitown_furniture: placement object +
+  requiresFloor, not thumpable, dismantable), so WE hangs it on a west wall as an attached sprite.
+  Single orientation, since the pack has no north-wall version. Cost: hammer, 1 small sheet metal,
+  2 nails.
+- **Test bundle:** TikiTown - In Progress, keeps its card (`TT_KEEP_GROUPS` 49).
+- **Test status:** built and checked. NOT tested in game.
+
+## 41. EXPERIMENT: fuel-fired furnace on B42's unused machine path (TEST BUNDLE ONLY, not for WE) (2026-11-12)
+- **Vanilla furnaces:** `Blast_Furnace` (the Advanced Furnace) is a plain CraftBench. Every smelting
+  recipe lists its charcoal as an ordinary input. Recipe counts: PrimitiveFurnace 7, Furnace 12,
+  AdvancedFurnace 17; 29 of the 36 use charcoal.
+- **Dead end: a tank on a bench.**
+  - `CraftBench` `fluidInputChannels` / `energyInputChannels` are parsed but referenced nowhere else
+    in the jar.
+  - `CraftBench.getResources()` is a stub (`return new ArrayList()`).
+  - Handcrafting only takes fluid from fluid-container items.
+- **The implemented path: an automated machine.**
+  - Component `CraftLogic` (also `FurnaceLogic`, `MashingLogic`) plus a `Resources` component.
+  - These are registered ComponentTypes, and their systems are registered in `GameEntityManager`.
+  - `CraftLogicSystem.start` -> `CraftRecipeData.consumeInputs(resources)` -> `consumeInputFromResources`,
+    which switches on Item / Fluid / Energy.
+  - UI: `ISCraftLogicPanel` + widgets, and `ISFluidSlot` -> `ISFluidTransferUI`, so players can pour
+    into a fluid slot.
+  - Vanilla only uses `DryingCraftLogic`.
+- **Prototype:** `pz_craft_loops/fuel_furnace_proto.py`, wired into `build_merged_test_mod.py`.
+  - Script `media/scripts/KBWCommunity_FuelFurnace.txt`: module KBWCommunity, entity `Fuel_Furnace` on
+    the vanilla Blast Furnace art and cost, with its own xuiSkin style.
+  - Resources: `craft_inputs` = `Item@Input@4` + `Fluid@Input@20`; `craft_outputs` = `Item@Output@4@StackAny`.
+  - `CraftLogic`: Manual start.
+  - One recipe: vanilla ExtractSteelFromSmallItem with `fluid 0.5 [Petrol]` instead of 2 charcoal.
+  - Buildable `kbwcb.experimental.fuel_furnace`: one `entityCompat` stage, under "Community - In
+    Progress / Experimental".
+- **Unverified until in game:**
+  - the standalone `fluid` input line (vanilla only uses the item-attached `-fluid`)
+  - the unfiltered fluid slot
+  - machine time units
+  - multiplayer sync
+- **Test status:** built and checked statically (script braces balanced, buildable present, nothing in
+  WE work). NOT tested in game.
+- **First in-game load crashed** (console.txt):
+  - `Sprite 'crafted_02_11' is duplicate. entity script: Fuel_Furnace` (SpriteConfigManager). A sprite
+    can belong to one entity only. That was a script load error, so the world refused to load.
+  - Also `XuiSkin 'KBWCommunity.default' ignored, skin needs to be module Base`.
+- **Fix:**
+  - The entity now uses its own copies, test-bundle-only tileset `KBWFuelFurnaceProto`
+    (tiledef `kbwfuelfurnaceproto` 8177, free across installed mods): copy j = crafted_02_(8+j) with
+    vanilla props, depth from the crafted_02_8 cell as vanilla assigns it.
+  - The xuiSkin block moved into its own `module Base` section of the script file.
+  - Lesson for any entity work: never put a pack or vanilla sprite in an entity SpriteConfig. Use
+    copies (it would also claim every map tile of that sprite).
+- **Second run: the world loaded, but clicking the furnace threw an error.** The machine window opened
+  (so CraftLogic is live), then vanilla `ISWidgetCraftLogicInputControl.lua:64` threw
+  IndexOutOfBounds. That widget makes one item slot per recipe input, fluid inputs included.
+  - Fix: one `Item@Input` per recipe input (2).
+  - Also found: vanilla never shows a Resources fluid slot in the machine window
+    (`ISCraftLogicPanel:createFluidSlotPanel` is defined but uncalled). The panel itself is complete:
+    `ISFluidSlotPanel` -> `ISFluidSlot` -> Transfer -> `ISFluidTransferUI` on the resource.
+  - New test-bundle Lua `KBWCommunity_FuelFurnaceUI.lua` (client) wraps
+    `ISWidgetCraftLogicInputControl.createDynamicChildren`. It adds that panel in the input column's
+    unused tools spot (`inputTools`, laid out by vanilla's own calculateLayout), only when the input
+    group has Fluid@Input resources (no vanilla machine does).
+  - Checked: Kahlua-safe grep, Lua syntax with `next = nil`. NOT tested in game.
+- **Third run (a newly built furnace): still "Index 1 out of bounds for length 1".** Two identical
+  `Item@Input@4` lines in a Resources group collapse into one slot (the script parser keeps one of
+  duplicate value lines).
+  - Fix: every slot line must differ (`Item@Input@4` + `Item@Input@2`).
+  - Fourth run: **the machine window works** (2 item slots, the fuel bar, Craft / Cancel, timer,
+    In Progress / Done). Two errors repeated every frame:
+    - `ISItemSlot.lua:157`: vanilla gives the fluid input an item slot, and its preview asks for a
+      possible item. Our hook now sets `showPreviewItem = false` on slots whose input is a fluid.
+    - `ISLabel.lua:89`: ISGroupBox's default title label uses textColor `{1,1,1,1}`, but ISLabel
+      reads `.r/.g/.b`. The panel now gets title "Fuel" and an r/g/b/a colour. The label error
+      aborted drawing the panel, which is likely why Transfer / Clear were missing (their xui
+      styles exist).
+  - Fifth run: the window was clean (no errors) and the "Fuel" panel drew, but it had no Transfer /
+    Clear buttons. The default skin's base `ISFluidSlot` style (xs_ISFluidSlot.txt) sets
+    `enableTransfer = false` and `enableClear = false`, making a read-only gauge. Fix: the slots use
+    vanilla's `S_FluidSlot_Editable` style, and the panel uses `S_FluidSlotPanel_Inputs`.
+  - **Sixth run: crafting works end to end** (user confirmed): pour petrol in with Transfer, load
+    the item, press Craft, and it drains the fuel and makes the output. The engine route is proven.
+  - Recipes reworked (user: "require a crucible to output the liquid into"):
+    - B42 has no molten-metal fluids. Molten metal is a filled crucible item (CeramicCrucible_Steel /
+      _Iron, drainable, uses = units), which every casting recipe consumes. So there is no internal
+      molten tank.
+    - Generated from vanilla's own 11 charcoal Smelt* recipes (copper ore + iron / steel, smaller to
+      large): crucible in, filled crucible out via their itemMapper and Java
+      `RecipeCodeOnCreate.smeltIronOrSteel*` (it adds the units; the character is unused).
+    - Charcoal becomes Petrol at 0.25 L per charcoal, as the last input. The tongs (mode:keep) are
+      dropped.
+    - Slots: `Item@Input@1` (crucible), `@10` (metal), `@2` (the fuel input's placeholder slot) +
+      `Fluid@Input@20`.
+    - Not ported yet: Extract* (keep a crucible as a tool) and Cast* (keep a mold), because kept tools
+      don't work in machine slots.
+  - Also: a placed machine keeps the resources it was built with. Changing the script does not
+    update built ones. Before shipping, the slot layout must be final (or old ones need a Lua
+    fix-up).
+  - **v2: integrated molten tanks** (user: one built-in tank per crucible material = iron, steel,
+    glass; 100 per type; player picks the pour amount, with a fill-all option). Built and checked
+    only, NOT yet tested in game:
+    - New fluids `KBWMoltenIron` / `KBWMoltenSteel` / `KBWMoltenGlass` (module Base, Industrial,
+      Fluids.json names). Each has a `fluidFilter <Fluid>Filter { filterType = whitelist, fluid = X }`.
+      The syntax was read from `FluidFilterScript.readBlock`: a filter name without a module resolves
+      in Base, and a modded fluid's id is its bare name.
+    - Tanks: `Fluid@Output@100@KBWMolten*Filter@null@null` in the output group. Inputs:
+      `Item@Input@10`, `Item@Input@1`, `Fluid@Input@20` (petrol).
+    - 13 recipes generated from vanilla's crucible recipes: 11 Smelt*, ExtractIronFromIronOre (12),
+      MeltSand / MeltGlass (4). Charcoal becomes petrol. The crucible, tongs and startfire are dropped.
+      The output is `fluid N [KBWMolten*]`, where N is the units vanilla's OnCreate adds. Copper ore
+      is left out: it does not use a crucible.
+    - A full tank blocks a recipe on its own (`CraftUtil.findResourceOrEmpty` skips full tanks, or
+      tanks with too little free space). But a tank can't feed a recipe input: that function accepts
+      only IO == Output for outputs, and CraftLogic passes the input and output groups separately.
+      So the pour is Lua. The molten tank's vanilla Transfer button (`ISFluidSlot.onTransferFluids`
+      hook) opens a menu of the player's crucibles: "Fill (+N)", then +1/2/4/8/12. A timed action
+      sets the crucible's uses to litres poured, and empty crucibles turn into the filled type.
+      Clear (vanilla `ISFluidEmptyAction`) dumps a tank.
+    - Single player only: the pour changes the tank and the inventory locally, with no MP sync.
+    - Old furnaces must be rebuilt: the resources changed.
+  - In-game fixes, 2026-11-13:
+    - Recipe OUTPUT lines take the bare fluid name (`fluid 4 KBWMoltenIron`). The bracketed form
+      stopped world load with "Fluid not found: [KBWMoltenIron]".
+    - Vanilla machines only load or start as many items as they have free ITEM output space. That
+      comes from `ISCraftLogicPanel.ItemSlotAddItems` and `CraftLogic.willOutputsAccommodate`,
+      built for drying racks. With only fluid outputs nothing could be loaded and Craft did
+      nothing. Fix: an `Item@Output@20@StackAny` slot (headroom; it also receives the empty sacks).
+    - The engine never applies a Resources line's fluid filter, so molten fluids went to the first
+      empty tank. Recipe output does respect the tank container's whitelist, so the Lua sets
+      `FluidContainer:setWhitelist(FluidFilterScript:getFilter())` per tank when the window opens.
+    - The whitelist alone does not route. `CraftUtil.findResourceOrEmpty` records the first EMPTY
+      tank before checking `canAddFluid`, and returns it unless a tank already holds the fluid. With
+      iron in the Iron tank and Steel empty, glass was always aimed at Steel, refused, and the craft
+      couldn't start. So each molten tank keeps a 0.01 L seed of its own fluid, and the engine then
+      picks the tank already holding it. Pours ignore the seed, and Clear dumps everything above it.
+      Tested against mocks only.
+    - Melt Sand: a machine slot burns the whole sack (vanilla handcraft takes 1 of its 4 uses). Now
+      it takes one FULL sack = 4 vanilla melts: 16 L glass, 2 L petrol, and the empty sack back.
+    - StartMode Automatic was tried and reverted. In a machine window the Craft button also
+      transfers the picked ingredients (`ISWidgetCraftLogicControl.startCraft` ->
+      `GenericCraftTransferAndStart`), and Automatic hides it, so nothing could be loaded or started.
+      Vanilla's quantity box is never used either: `startCraft` caches it in `self.craftTimes`, and
+      nothing reads that. A Lua batch on Manual was tried next, but Manual start is gated on the
+      player using the machine (`CraftLogic.isInvalidStartMode` -> `GameEntity.isUsingPlayer`), so
+      it stopped once the window closed.
+    - Automatic is NOT usable in this build. `CraftLogicSystem.start` calls
+      `player.getPlayerCraftHistory()` unconditionally, after consuming the inputs. The system
+      starts Automatic machines with player = nil, so the first auto-start threw an NPE
+      (`CraftLogicSystem.java:173`) and froze the game. No vanilla machine uses Automatic.
+      **Report to the WE dev / TIS.** StartMode is saved with the placed machine, so a furnace built
+      while the script said Automatic stays Automatic. The Lua refuses to load items into one.
+    - **Confirmed in game (user, 2026-11-13):** Melt Sand (with the empty sack back), steel smelting,
+      per-metal tank routing (seed), and the crucible pour (Transfer button) for all 3 tanks.
+    - Tuning (user, 2026-11-13): fuel 0.125 L per vanilla charcoal (half of before), fuel tank
+      100 L, metal tanks 400 L each, material slot 99 (item output headroom 100). Loading an item
+      takes 5 ticks instead of vanilla's 30 + 3 x weight. Cancel also clears the queued batch. The
+      molten tank's Transfer button (the crucible pour) now has a "Pour into crucible" tooltip.
+    - Final: Manual. Before each batch restart, the Lua marks the furnace as used by the player
+      (`GameEntity:setUsingPlayer`), so the batch keeps going after the window closes. Quantity
+      1-99, MAX = until it runs out. Single player only. Tested against mocks only.
+    - Fluid bars use minimumBarSize 50 so the panel fits the window's grey area.
+    - A Resources line's filter name (`Resource.filterName`) is only set from the script when the
+      machine is built, and it isn't saved. After a reload `getFilterName()` is nil, so an old
+      furnace showed only the fuel tank. The Lua now identifies tanks by position in the output
+      group (script order Iron, Steel, Glass) and the furnace by entity name.
+    - Vanilla lays out the quantity box only for Automatic machines (`allowBatchCraft`). The Lua
+      hides it on the furnace, because the value is never used.
+
+## 41b. EXPERIMENT: furnace suite on Dirkies' Production Furnace art (TEST BUNDLE ONLY) (2026-11-13)
+- Generator: `pz_craft_loops/furnace_suite.py`. It reuses `fuel_furnace_proto.py` for the fluids, tank
+  filters, machine UI, batching and crucible pour. Tileset `KBWFurnaceSuite`, tiledef `kbwfurnacesuite`
+  8176 (free), from `edit_ddd_RUS_Production_Furnace`, with the pack's own depth cells. It is
+  planned as its own WE submod later.
+- Brick Fuel Furnace (72-75, 2x2, rows N->S `75 73` / `72 74`): the prototype machine on brick art,
+  petrol and molten tanks. **Confirmed in game (user, 2026-11-13):** it builds and crafts, and a
+  batch keeps going after the player steps away. So far only Smelt Large Iron Item (axe head) has
+  been tested.
+- Electric Furnace (32/35/38/39, faces S E N W): a machine with the same molten tanks, and the fuel
+  recipes minus the fuel input (`KBWElectricFurnace*`). It needs power and its switch on.
+- Electric Smelter (48 / 50) and Electric Kiln (56/59/62/63): CraftBench workbenches, ground or table
+  top (toaster-style props `IsTableTop`, `IsMoveAble`, `attachedSurface`). The smelter runs vanilla
+  MeltSand/MeltGlass and Smelt(Small|Smaller)(Iron|Steel)Item; the kiln runs MakeCoke and
+  MakeWoodCharcoal*. Charcoal and fire starter inputs are removed, and each recipe has
+  `OnTest = KBWFurnaceSuite.smelterPowered / kilnPowered`. OnTest runs per input item as
+  `OnTestItem(item, character)`, so the check is "a powered, switched-on bench of that kind within 2
+  tiles of the crafter".
+- States are OVERLAYS, never sprite swaps (user). The pack only has full on/running tiles, so each
+  overlay is the on-tile's pixels that differ from the off-tile. Three noise filters apply: blobs
+  under 6 px, long 1-px lines (re-drawn outlines), and faint blobs with average alpha under 160
+  (anti-aliased edges). The Lua attaches them as attached anim sprites: powered = power + switch
+  on; running = CraftLogic running, or someone handcrafting at that bench.
+- Power: `square:haveElectricity() or hasGridPower()`, plus an on/off switch (modData `KBWPowerOn`,
+  context menu "Turn On/Off <name>", default off).
+- Redraw: B42 caches each chunk's drawing, so a changed attached sprite only showed after leaving
+  and coming back (user, 2026-11-13: "same display bug from wall panels"). The fix is to call
+  `obj:invalidateRenderChunkLevel(256 + 1024)` (FBORenderChunk DIRTY_OBJECT_MODIFY + DIRTY_REDRAW)
+  after each change. Not yet confirmed in game. **The wall panels likely need the same call;
+  flag it to the WE dev** (their runtime Lua is WE-owned).
+- Not yet tested in game: entity table-top placement through KBW, OnTest gating, 4-facing
+  entity rotation in KBW, overlay depth and offset (especially on table tops). Logic checked against
+  mocks only.
+
+## 41c. Hand-pump sinks gave TAINTED water: `waterPiped` restored (2026-11-13)
+- Cause (ours, not WE's): the pump-sink tiles had `waterPiped` removed. For infinite water, the
+  engine's `IsoObject.getInfiniteWaterType` returns clean Water only for an unmoved `waterPiped` object
+  or the hard-coded sprites `camping_01_16` and `camping_01_64`-`67` (map pump, Large Water Tank).
+  Every other infinite source is TaintedWater. The list is a Java string match, so mods can't extend it.
+- Fix: `kbw_tilepatch._pump_sink_props` adds `waterPiped` back, on all 20 counter-top pump sinks
+  (KBWCommunityIceShell_48-67) and the medical Large Industrial Sink copies. They stay infinite:
+  `isWaterInfinite` returns true for `waterAmount >= 9999` BEFORE the room, piping and shutoff
+  checks.
+- Side effect: vanilla's plumb option appears on them. Plumbing one to a barrel sets
+  `canBeWaterPiped = false`, so it then draws from that barrel, the same as a vanilla sink.
+- Built and synced to `work/`; NOT yet confirmed in game (clean water with the water shutoff active).
+
+## 42. Storage tooltip: `hasModData` called on recipe script items (found 2026-11-12 with the fuel furnace)
+- **Symptom:** with the furnace's machine window open, the console logged
+  `Object tried to call nil in pcall` at `KBWCommunity_StageInfo.lua:84`, under the Tikitown Power Plant
+  tooltip render, 32 times in one session.
+- **Cause:** the ISToolTipInv storage-line hook calls `item:hasModData()`. Machine and craft windows show
+  tooltips for recipe SCRIPT items, which have no such method. The pcall catches it, but debug mode
+  logs every catch.
+- **Fix (ours, `container_caps.py`):** return early unless `instanceof(item, "InventoryItem")`.
+- **For the WE dev:** WE's consolidated `WorldEssentialsBuildworksStageInfo.lua` (line 85) has the same
+  unguarded call. Suggested one-line guard as above. We have not edited that WE-owned file.

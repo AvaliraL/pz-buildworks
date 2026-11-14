@@ -47,12 +47,35 @@ def source_index(s):
     return s % MIRROR
 
 
+# In game 2026-11-13: "18+", "GIRLS" and Ladies Legs did not build as lights, while Cheeky (18/19)
+# and Red Legs (23) did. All carry lightswitch + a light colour, but the failing pack tiles are
+# hammer WallObject moveables (MoveType = WallObject, Pick/PlaceTool, no IsMoveAble) where the working
+# ones are plain IsMoveAble tiles. Our copies of the failing ones get the working tiles' layout.
+_WALLOBJECT_SRC = (22, 28, 29, 30, 31)
+_WALLOBJECT_DROP = (b"MoveType", b"PickUpTool", b"PlaceTool")
+# Default bulb colour (user: GIRLS + 18+ pink, Ladies Legs orange), vanilla LightBulbPink /
+# LightBulbOrange ColorRed / Green / Blue.
+_PINK = (255, 20, 147)
+_ORANGE = (255, 128, 0)
+_LIGHT_COLOR = {22: _PINK, 30: _PINK, 31: _PINK, 29: _ORANGE}
+# Ladies Legs: only one of its two tiles is a light (user); 28 becomes plain decoration.
+_NO_LIGHT_SRC = (28,)
+_LIGHT_KEYS = (b"lightswitch", b"LightRadius", b"lightR", b"lightG", b"lightB")
+
+
 def copy_props(s, src_props):
     """The pack tile's props without WallOverlay (a real light-switch wall object); mirrors swap the
     wall edge and the facing."""
     out = []
+    src = source_index(s)
     for k, v in src_props:
         if k == b"WallOverlay":
+            continue
+        if src in _WALLOBJECT_SRC and k in _WALLOBJECT_DROP:
+            continue
+        if src in _NO_LIGHT_SRC and k in _LIGHT_KEYS:
+            continue
+        if src in _LIGHT_COLOR and k in (b"lightR", b"lightG", b"lightB"):
             continue
         if is_mirror(s):
             if k in _SWAP:
@@ -63,6 +86,12 @@ def copy_props(s, src_props):
                 a, b = v.split(b",")
                 v = b + b"," + a
         out.append((k, v))
+    keys = {k for k, _v in out}
+    if src in _WALLOBJECT_SRC and b"IsMoveAble" not in keys:
+        out.append((b"IsMoveAble", b""))
+    if src in _LIGHT_COLOR:
+        r, g, b = _LIGHT_COLOR[src]
+        out += [(b"lightR", str(r).encode()), (b"lightG", str(g).encode()), (b"lightB", str(b).encode())]
     return sorted(out)
 
 

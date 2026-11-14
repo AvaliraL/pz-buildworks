@@ -34,7 +34,7 @@ SRC_SCRIPTS = [
     "tikitown_wall_detailing.py", "kbw_sort_order.py", "pump_sinks.py", "tile_coverage_inventory.py",
     "ladders.py", "dirkies_decor_house.py", "dirkies_window_decor.py", "dirkies_medical.py",
     "tikitown_barrel_planters.py", "dylan_gun_racks.py", "dylan_future_room_extras.py",
-    "tikitown_entertainment.py",
+    "tikitown_entertainment.py", "tikitown_rugs.py", "tikitown_signs.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",
@@ -49,6 +49,7 @@ TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "41_tikitown_roof_slope_walls.json", "42_tikitown_garage_trim.json",
     "43_tikitown_wall_paint_cladding.json", "44_tikitown_wall_trim.json",
     "45_tikitown_ladders.json", "46_tikitown_barrel_planters.json", "47_tikitown_entertainment.json",
+    "48_tikitown_rugs.json", "49_tikitown_signs.json",
 ]
 
 

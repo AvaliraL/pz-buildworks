@@ -53,6 +53,8 @@ SRC_FILES = [
     "45_tikitown_ladders.json",      # tterika ladder on our copied tiles (ladders.py)
     "46_tikitown_barrel_planters.json",   # tikitown_barrel_planters.py
     "47_tikitown_entertainment.json",     # tikitown_entertainment.py
+    "48_tikitown_rugs.json",              # tikitown_rugs.py
+    "49_tikitown_signs.json",             # tikitown_signs.py
 ]
 
 # WE merge 2026-11-10: the WE dev declined these pending a multiplayer review. Not built for WE

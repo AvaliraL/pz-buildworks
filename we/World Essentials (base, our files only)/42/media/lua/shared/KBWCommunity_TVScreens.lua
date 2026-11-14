@@ -14,6 +14,8 @@ local SCREENS = {
     ["KBWCommunityIceShell_179"] = { "KBWCommunityTVScreens_21", "KBWCommunityTVScreens_22", "KBWCommunityTVScreens_23" },
     ["KBWCommunityIceShell_180"] = { "KBWCommunityTVScreens_24", "KBWCommunityTVScreens_25", "KBWCommunityTVScreens_26" },
     ["KBWCommunityIceShell_181"] = { "KBWCommunityTVScreens_27", "KBWCommunityTVScreens_28", "KBWCommunityTVScreens_29" },
+    ["KBWCommunityIceShell_205"] = { "KBWCommunityIceShell_221", "KBWCommunityIceShell_237", "KBWCommunityIceShell_253" },
+    ["KBWCommunityIceShell_206"] = { "KBWCommunityIceShell_222", "KBWCommunityIceShell_238", "KBWCommunityIceShell_254" },
 }
 
 -- Explicit bounded cache: Kahlua weak tables do not provide reliable eviction.

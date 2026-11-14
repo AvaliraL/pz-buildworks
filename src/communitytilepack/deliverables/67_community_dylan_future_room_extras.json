@@ -14,10 +14,10 @@
    "materialTags": [
     "Metal"
    ],
-   "iconSprite": "KBWCommunityIceShell_176",
+   "iconSprite": "KBWCommunityIceShell_205",
    "placement": {
     "kind": "object",
-    "requiresFloor": true
+    "needToBeAgainstWall": true
    },
    "tags": [
     "community-tilepack",
@@ -36,7 +36,7 @@
          {
           "rows": [
            [
-            "KBWCommunityIceShell_176"
+            "KBWCommunityIceShell_205"
            ]
           ]
          }
@@ -47,7 +47,7 @@
          {
           "rows": [
            [
-            "KBWCommunityIceShell_177"
+            "KBWCommunityIceShell_206"
            ]
           ]
          }
@@ -135,7 +135,9 @@
      "object": {
       "isProp": true,
       "dismantable": true,
-      "blockAllSquare": false
+      "blockAllSquare": false,
+      "isThumpable": false,
+      "canPassThrough": true
      }
     }
    ],

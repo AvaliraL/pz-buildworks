@@ -1223,6 +1223,7 @@ PUMP_SINK_SRC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 18, 19, 20, 21, 2
 PUMP_SINK_BASE = 48
 _VANILLA_DEPTH_SINKS = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_fixtures_sinks_01.png"
 _VANILLA_DEPTH_SEATING = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_furniture_seating_indoor_01.png"
+_VANILLA_DEPTH_PRESET = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\depthmaps\DEPTH_preset_depthmaps_01.png"
 _VANILLA_DEPTH_ASSIGN = r"C:\Program Files (x86)\Steam\steamapps\common\ProjectZomboid\media\tileDepthTextureAssignments.txt"
 _PUMP_SINK_DROP = {b"waterPiped", b"waterAmount", b"waterMaxAmount"}   # re-added below (one copy)
 
@@ -1491,8 +1492,8 @@ def _add_future_room_tvs():
     names = [decor_copy_name(s, FR_SHEET) for s in FR_TV]
     if any(n == tv for n in names for tv, _f, _q in _PACK_TVS):
         return
-    _PACK_TVS.append((names[0], "E", ((12, 82), (65, 56), (12, 131))))
-    _PACK_TVS.append((names[1], "S", ((62, 56), (115, 82), (62, 106))))
+    _PACK_TVS.append((names[0], "E", _WALLTV_QUAD[22]))
+    _PACK_TVS.append((names[1], "S", _WALLTV_QUAD[23]))
     # Future fridges: their built-in door screen works as a TV (user, 2026-08-28). Quads measured
     # from the art (screen panel): black 30 on its left face (slopes down-right, vanilla S), white 31
     # on its right face (slopes up-right, vanilla E); the mirrors 1030 / 1031 flip x -> 128 - x.
@@ -1501,6 +1502,87 @@ def _add_future_room_tvs():
     TV_SCREEN_MAP.clear()
     TV_SCREEN_MAP.update({tv: ["%s_%d" % (SCREEN_TILESET, t * 3 + k) for k in range(3)]
                           for t, (tv, _f, _q) in enumerate(_PACK_TVS)})
+    # the 2nd Wall Screen TV copies use their own screen tiles (see WALLTV_BASE)
+    TV_SCREEN_MAP.update({walltv_name(n): walltv_screen_names(n) for n in range(len(WALLTV))})
+
+
+# Future Wall Screen TV, 2nd copies (user, 2026-11-13). The first copies (IceShell 176 / 177) came
+# back from a reload with a black screen and half a Future couch on them: IsoTelevision.update()
+# runs setupDefaultScreens while the screen list is empty, and that adds the sprites at the TV's
+# own index +16 / +32 / +48 (vanilla's screen layout). For 176 that is IceShell_192, a couch tile;
+# WE's TVScreens Lua replaces the list later, but the overlay already set stays until the next
+# setScreen (switching off / on). So these copies sit at FIXED indices whose +16 / +32 / +48 hold
+# their own warped screens, in vanilla's order: whichever code fills the list, it gets the right
+# screens. 176 / 177 stay as they are (placed TVs keep their sprite); new builds use these.
+# DECOR_COPIES must end before WALLTV_BASE; later fixed blocks go after the last screen (254).
+WALLTV_BASE = 205
+WALLTV = ((22, "W"), (23, "N"))                 # (DylansFutureRoom01 source, wall edge)
+_WALLTV_SCREEN_FACING = {"W": "E", "N": "S"}    # vanilla screen series (W wall faces east)
+# screen quads (top-left, top-right, bottom-left) measured from the art, inside the bezel
+_WALLTV_QUAD = {22: ((12, 82), (65, 56), (12, 131)), 23: ((62, 56), (115, 82), (62, 106))}
+_WALLTV_DEPTH_BIAS = 2      # TV + screens this much nearer than the bare wall plane (0..255)
+# Future upper cabinets: the depth vanilla gives its floating wall cabinets (every facing of
+# fixtures_counters_01 16-31 uses cell 16), so a cabinet hung over a Wall Screen TV draws over it
+_UPPERCAB_DEPTH = ("fixtures_counters_01", 16)
+
+
+def walltv_name(n):
+    """Our 2nd Wall Screen TV copy n (0 = west wall, 1 = north wall)."""
+    return "%s_%d" % (ICESHELL_TILESET, WALLTV_BASE + n)
+
+
+def walltv_screen_names(n):
+    return ["%s_%d" % (ICESHELL_TILESET, WALLTV_BASE + n + 16 * (k + 1)) for k in range(3)]
+
+
+def walltv_face_sprites():
+    """KBW face -> our 2nd Wall Screen TV sprite."""
+    return {edge: walltv_name(n) for n, (_s, edge) in enumerate(WALLTV)}
+
+
+def _walltv_tiles(cache):
+    """{tile index: (name, image, props)} for the 2nd Wall Screen TV copies and their screens."""
+    from PIL import Image
+    _extract_vanilla_screens()
+    out = {}
+    for n, (s, edge) in enumerate(WALLTV):
+        im = Image.open(os.path.join(cache, "%s_%d.png" % (FR_SHEET, s))).convert("RGBA")
+        out[WALLTV_BASE + n] = (walltv_name(n), im, _future_room_props((FR_SHEET, s, edge, "tv", b"Future")))
+        idxs, src = _VANILLA_SCREENS[_WALLTV_SCREEN_FACING[edge]]
+        coeffs = _affine_inverse(src, _WALLTV_QUAD[s])
+        for k, (vi, name) in enumerate(zip(idxs, walltv_screen_names(n))):
+            sim = Image.open(os.path.join(_SCREEN_CACHE, "appliances_television_01_%d.png" % vi)).convert("RGBA")
+            scr = sim.transform((128, 256), Image.AFFINE, coeffs, resample=Image.BILINEAR)
+            out[WALLTV_BASE + n + 16 * (k + 1)] = (name, scr, [])    # vanilla screen tiles: no props
+    return out
+
+
+def _wall_plane_depth(edge, art, bias=0):
+    """Vanilla's wall preset depth cell for a piece hung on the <edge> wall (W -> preset_depthmaps_01_4,
+    N -> _5, as for walls_interior_detailing_01), extended along the wall plane (least-squares fit)
+    under every art pixel outside the wall slab, then moved <bias> nearer the viewer."""
+    import numpy as np
+    from PIL import Image
+    pre = Image.open(_VANILLA_DEPTH_PRESET).convert("RGBA")
+    pcols = pre.size[0] // 128
+    pi = {"W": 4, "N": 5}[edge]
+    cell = np.array(pre.crop(((pi % pcols) * 128, (pi // pcols) * 256,
+                              (pi % pcols) * 128 + 128, (pi // pcols) * 256 + 256)))
+    ys, xs = np.nonzero(cell[:, :, 3] == 255)
+    A = np.stack([xs, ys, np.ones_like(xs)], axis=1).astype(float)
+    (ca, cb, cc), *_ = np.linalg.lstsq(A, cell[ys, xs, 0].astype(float), rcond=None)
+    hole = (np.array(art.convert("RGBA"))[:, :, 3] > 0) & (cell[:, :, 3] == 0)
+    hy, hx = np.nonzero(hole)
+    v = np.clip(np.rint(ca * hx + cb * hy + cc), 0, 255).astype(np.uint8)
+    for ch in range(3):
+        cell[hy, hx, ch] = v
+    cell[hy, hx, 3] = 255
+    on = cell[:, :, 3] > 0
+    for ch in range(3):
+        c = cell[:, :, ch].astype(int)
+        c[on] = np.clip(c[on] - bias, 0, 255)
+        cell[:, :, ch] = c.astype(np.uint8)
+    return Image.fromarray(cell, "RGBA")
 
 
 def sync_we_tv_screens(we_base_lua):
@@ -1576,10 +1658,17 @@ def _future_room_props(entry):
                        b"CanScrap": b""}.items())
     if kind == "tv":                               # same flags as the patched Dylan wall TVs
         face = "E" if edge == "W" else "S"
-        return sorted({b"signal": b"tv", b"IsoType": b"IsoTelevision", b"CustomItem": b"Base.TvWideScreen",
-                       b"TV": b"", b"Surface": b"15", b"MoveType": b"WallObject", b"IsHigh": b"",
-                       ("attached" + edge).encode(): b"", b"Facing": face.encode(),
-                       b"CustomName": b"Wall Screen", b"GroupName": group}.items())
+        # + vanilla's TV pick-up flags (user 2026-11-13: no Pick up option). The pick-up item is the
+        # CustomItem TV (a Radio, which is a Moveable): ReadFromWorldSprite keeps OUR sprite on it, so
+        # it places back as this Wall Screen. Rotation: W copy (Facing E) <-> N copy (Facing S) are
+        # always adjacent indices (176/177, 205/206). No CanScrap (would scrap a built piece for free).
+        off = {b"Soffset": b"1"} if face == "E" else {b"Eoffset": b"-1"}
+        off.update({b"signal": b"tv", b"IsoType": b"IsoTelevision", b"CustomItem": b"Base.TvWideScreen",
+                    b"TV": b"", b"Surface": b"15", b"MoveType": b"WallObject", b"IsHigh": b"",
+                    ("attached" + edge).encode(): b"", b"Facing": face.encode(),
+                    b"CustomName": b"Wall Screen", b"GroupName": group, b"IsMoveAble": b"",
+                    b"PickUpWeight": b"100", b"Material": b"Electric", b"MaterialType": b"Glass_Light"})
+        return sorted(off.items())
     if kind == "couch":
         vi, grid = FR_COUCH_SRC[s]
         return _replace(_vanilla_props("furniture_seating_indoor_01", vi), GroupName=group,
@@ -1997,6 +2086,15 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
                 im = couch_recut_art(cache)[s]
             tiles.append((decor_copy_name(s, sh), im))
             props.append(_decor_props(entry, tilesets[sh.encode()][6][_src_index(s)]))
+        # 2nd Wall Screen TV copies + their screens at fixed indices (see WALLTV_BASE)
+        if len(props) > WALLTV_BASE:
+            raise RuntimeError("decor copies reach %d; the wall TVs start at %d" % (len(props), WALLTV_BASE))
+        walltv = _walltv_tiles(cache)
+        for j in sorted(walltv):
+            props += [[] for _ in range(j - len(props))]
+            name, im, p = walltv[j]
+            tiles.append((name, im))
+            props.append(p)
     n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
     cols = 8
     # from the highest index used (props), not the tile count: the pump sinks sit at fixed indices
@@ -2083,6 +2181,29 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
                     art = _shift(art, *_DECOR_SHIFT[(sh, s)])
                 cell = _fill_depth_holes(cell, art)
             depth.paste(cell, ((dj % cols) * cw, (dj // cols) * ch))
+        # Future upper cabinets: vanilla's floating-cabinet box, filled under the Future art
+        # (user 2026-11-13: the Wall Screen TV drew over the cabinet hung above it; neither had depth)
+        _ucab = Image.open(os.path.join(os.path.dirname(_VANILLA_DEPTH_REFRIG),
+                                        "DEPTH_%s.png" % _UPPERCAB_DEPTH[0])).convert("RGBA")
+        ui = _vanilla_depth_cell_index(*_UPPERCAB_DEPTH)
+        ucols = _ucab.size[0] // cw
+        ucell = _ucab.crop(((ui % ucols) * cw, (ui // ucols) * ch, (ui % ucols) * cw + cw, (ui // ucols) * ch + ch))
+        for s in FR_UPPER:
+            art = Image.open(os.path.join(cache, "%s_%d.png" % (FR_SHEET, _src_index(s)))).convert("RGBA")
+            if _mirrored(s):
+                art = _IO.mirror(art)
+            dj = DECOR_BASE + _DECOR_POS[(FR_SHEET, s)]
+            depth.paste(_fill_depth_holes(ucell, art), ((dj % cols) * cw, (dj // cols) * ch))
+        # 2nd Wall Screen TVs: the wall preset (like vanilla wall detailing); each screen uses its
+        # TV's cell, as vanilla's appliances_television_01 screens do
+        for n, (s, edge) in enumerate(WALLTV):
+            idx = [WALLTV_BASE + n] + [WALLTV_BASE + n + 16 * (k + 1) for k in range(3)]
+            art = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+            for j in idx:
+                art.alpha_composite(walltv[j][1])
+            cell = _wall_plane_depth(edge, art, _WALLTV_DEPTH_BIAS)
+            for j in idx:
+                depth.paste(cell, ((j % cols) * cw, (j // cols) * ch))
         os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
         depth.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_%s.png" % ICESHELL_TILESET))
         # seat positions for the wheelchair copies (Rest / sit animation)

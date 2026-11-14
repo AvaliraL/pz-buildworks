@@ -633,6 +633,56 @@ time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (
     decoration (user)
 - Signs placed before the fix stay plain objects; they must be rebuilt.
 
+---
+
+# Hand-off 2026-11-13 (2): Future Wall Screen TV fixes
+Tag `handoff-2026-11-13-wall-screen-tv`. Minor update, on top of
+`handoff-2026-11-13-rugs-signs-sinks` (not merged yet; this tag includes it). Tested in game by
+the user.
+- **44** Future Wall Screen TV: right screens after a reload, draws under the upper cabinet above it,
+  walk-through, Pick up option. Needs the 2 SCREENS rows in WE's `KBWCommunity_TVScreens.lua`.
+NOT included: 41 / 41b furnace experiments (test bundle only), 42 StageInfo fix, the Dirkies
+drawer-cabinet rotation offsets (not tested).
+
+## 44. Future Wall Screen TV: screens after a reload, draw order, walk-through (2026-11-13)
+Buildable `community.dylan.future_room.wall_screen_tv` (file 67). The user reported three bugs.
+- **Black screen and half a couch after leaving and coming back.**
+  - Cause: `IsoTelevision.update()` runs `setupDefaultScreens` while the screen list is empty. It adds
+    the sprites at the TV's own index +16 / +32 / +48 (vanilla's screen layout). For our TV
+    `KBWCommunityIceShell_176` that is `_192`, a Black Modern Couch tile, and `_208` / `_224` don't
+    exist. WE's `applyScreens` replaces the list later, but the overlay already shown stays until the
+    next `setScreen` (turning the TV off and on).
+  - Fix (tiles, no Lua): new TV copies at FIXED indices `KBWCommunityIceShell_205` (west wall) and
+    `_206` (north wall). Their +16 / +32 / +48 slots (`_221`/`_222`, `_237`/`_238`, `_253`/`_254`)
+    hold their own warped screens in vanilla order. Whichever code fills the list, it gets the right
+    screens. The tileset grows to 32 rows (256 cells).
+  - `_176` / `_177` stay as they were. TVs already placed keep them (and the bug) until rebuilt.
+- **The TV drew over the upper cabinet hung above it.** Neither tile had a depth cell.
+  - The new TVs and their screens use vanilla's wall preset (`preset_depthmaps_01_4` W / `_5` N, as
+    for wall detailing), extended along the wall plane under the art, 2 steps nearer than the wall.
+    Each screen uses its TV's cell, as vanilla's TV screens do.
+  - Future upper cabinets (`_182`-`_185`) use vanilla's floating-cabinet box
+    (`fixtures_counters_01` cell 16), filled under the Future art.
+- **Solid.** The placement is now `{"kind":"object","needToBeAgainstWall":true}`, and the object gets
+  `isThumpable:false, canPassThrough:true`, like the viewscreens (file 50).
+- **No Pick up option.** The TV tiles had no `IsMoveAble`. All four (`_176`/`_177`, `_205`/`_206`) now
+  get vanilla's TV pick-up flags (`IsMoveAble`, `PickUpWeight 100`, `Material Electric`,
+  `MaterialType Glass_Light`) plus face offsets for rotation (W copy `Soffset 1`, N copy `Eoffset -1`).
+  The pick-up item is the `CustomItem` (`Base.TvWideScreen`). `Radio` extends `Moveable` (checked in
+  the jar), and `ReadFromWorldSprite` keeps our sprite on the item, so it places back as the Wall
+  Screen. No `CanScrap`, so a built TV can't be scrapped for free parts. Tile properties apply to
+  TVs already placed, so the old ones get the option too.
+- **WE-owned Lua (flag to the dev):** `KBWCommunity_TVScreens.lua` SCREENS gets 2 rows (work copy of
+  `World Essentials (base, our files only)`): `_205` -> `_221, _237, _253`, `_206` -> `_222, _238, _254`.
+  - Optional dev note, not done: calling `setScreen` once right after `applyScreens` would also fix
+    TVs that are already placed. That is WE's code, so it is only a suggestion.
+- Built and synced to `work/` (collision check total 0).
+- **Confirmed in game (user, 2026-11-13), all of it:** the new TV keeps the right screen after leaving
+  and coming back (no couch), the upper cabinet draws over the TV, the TV square is walk-through,
+  and Pick up / place / rotate work.
+
+---
+
 # Pending for the next hand-off (not pushed yet)
 (41, 41b experiments; 42 StageInfo fix)
 
@@ -806,13 +856,18 @@ time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (
   been tested.
 - Electric Furnace (32/35/38/39, faces S E N W): a machine with the same molten tanks, and the fuel
   recipes minus the fuel input (`KBWElectricFurnace*`). It needs power and its switch on.
+  **Confirmed working in game (user, 2026-11-13).**
 - Electric Smelter (48 / 50) and Electric Kiln (56/59/62/63): CraftBench workbenches, ground or table
   top (toaster-style props `IsTableTop`, `IsMoveAble`, `attachedSurface`). The smelter runs vanilla
   MeltSand/MeltGlass and Smelt(Small|Smaller)(Iron|Steel)Item; the kiln runs MakeCoke and
   MakeWoodCharcoal*. Charcoal and fire starter inputs are removed, and each recipe has
   `OnTest = KBWFurnaceSuite.smelterPowered / kilnPowered`. OnTest runs per input item as
   `OnTestItem(item, character)`, so the check is "a powered, switched-on bench of that kind within 2
-  tiles of the crafter".
+  tiles of the crafter". **Confirmed in game (user, 2026-11-13):** the smelter's recipes show as
+  missing every input until it's switched on, then appear.
+- Smelter "on but idle" overlay (user, 2026-11-13): the pack has only one lit tile per
+  orientation, so the idle state is the working overlay recoloured dimmer and redder (`DIM_RGB`,
+  KBWFurnaceSuite_28/29).
 - States are OVERLAYS, never sprite swaps (user). The pack only has full on/running tiles, so each
   overlay is the on-tile's pixels that differ from the off-tile. Three noise filters apply: blobs
   under 6 px, long 1-px lines (re-drawn outlines), and faint blobs with average alpha under 160
@@ -823,11 +878,16 @@ time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (
 - Redraw: B42 caches each chunk's drawing, so a changed attached sprite only showed after leaving
   and coming back (user, 2026-11-13: "same display bug from wall panels"). The fix is to call
   `obj:invalidateRenderChunkLevel(256 + 1024)` (FBORenderChunk DIRTY_OBJECT_MODIFY + DIRTY_REDRAW)
-  after each change. Not yet confirmed in game. **The wall panels likely need the same call;
+  after each change. The overlay itself is confirmed (the kiln shows its "on" state after leaving
+  and coming back); the live redraw is not yet confirmed. **The wall panels likely need the same call;
   flag it to the WE dev** (their runtime Lua is WE-owned).
-- Not yet tested in game: entity table-top placement through KBW, OnTest gating, 4-facing
-  entity rotation in KBW, overlay depth and offset (especially on table tops). Logic checked against
-  mocks only.
+- Status (2026-11-13):
+  - Confirmed in game: Brick Fuel Furnace, Electric Furnace, the smelter's power gate, the kiln's
+    "on" overlay.
+  - Not yet tested in game: the smelter and kiln recipes end to end, entity table-top placement
+    through KBW, 4-facing rotation, overlay depth and offset (especially on table tops), the live
+    redraw, and the latest furnace tuning (99 slot, fast loading, Cancel clearing the queue).
+  - Not handled: multiplayer sync.
 
 ## 42. Storage tooltip: `hasModData` called on recipe script items (found 2026-11-12 with the fuel furnace)
 - **Symptom:** with the furnace's machine window open, the console logged

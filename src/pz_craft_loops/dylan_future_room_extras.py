@@ -5,7 +5,8 @@ coffee tables, viewscreens and frosted panels.
 
 All on our copies (kbw_tilepatch.FR_*, KBWCommunityIceShell_176..198): the pack gives these tiles
 no properties, and the south-facing-only pieces get a mirrored east-facing copy.
-  Wall Screen TV            22 (west wall) / 23 (north wall): a working TV with generated screens
+  Wall Screen TV            22 (west wall) / 23 (north wall): a working TV with generated screens,
+                            on the 2nd copies KBWCommunityIceShell_205 / 206 (screens 221-254)
   Black / White Fridge      30 / 31 + mirrors: vanilla fridge + freezer. Built as the fridge TIERS
                             (60/30, 80/40, 100/50) in file 70 (align_appliance_costs.FUTURE_FRIDGES)
   Black / White Upper Cabinet  35 / 36 + mirrors: hang high on a wall, over counters and fridges
@@ -23,7 +24,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from kbw_tilepatch import FR_SHEET, MIRROR, decor_copy_name  # noqa: E402
+from kbw_tilepatch import FR_SHEET, MIRROR, decor_copy_name, walltv_face_sprites  # noqa: E402
 
 DELIV = r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables"
 OUT = os.path.join(DELIV, "67_community_dylan_future_room_extras.json")
@@ -98,11 +99,14 @@ def build_document():
     # 1. wall screens -> TVs (same cost / object as the Dylan Premium CRT Television)
     tv = _from("53_community_dylan_rf02_misc.json", "community.dylan.rf02.tv_crt_premium")
     tst = tv["stages"][0]
+    # (user 2026-11-13) on the 2nd TV copies (kbw_tilepatch.WALLTV_BASE: own screens at +16/+32/+48,
+    # depth below the upper cabinets), hung on a wall and walk-through like the viewscreens (file 50)
+    tobj = dict(copy.deepcopy(tst.get("object")), isThumpable=False, canPassThrough=True)
     out.append(_base("wall_screen_tv", "Wall Screen TV", tv["category"], tv["subcategory"],
-                     {"W": _one(_c(22)), "N": _one(_c(23))}, copy.deepcopy(tst["requirements"]),
+                     {e: _one(s) for e, s in walltv_face_sprites().items()}, copy.deepcopy(tst["requirements"]),
                      copy.deepcopy(tv.get("construction") or tst.get("construction")),
-                     copy.deepcopy(tst.get("object")), tags=["television", "appliance"],
-                     tooltip=tv.get("tooltipKey")))
+                     tobj, tags=["television", "appliance"], tooltip=tv.get("tooltipKey"),
+                     placement={"kind": "object", "needToBeAgainstWall": True}))
     # 2. fridges: built as the fridge tier ladder in 70_kbwcb_refrigeration_tiers.json
     #    (align_appliance_costs.FUTURE_FRIDGES, user 2026-08-28), not here
     # 3. low cabinets, 4. upper cabinets (reinforced by the default rule)

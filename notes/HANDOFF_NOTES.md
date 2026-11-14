@@ -567,21 +567,6 @@ Tag `handoff-2026-11-13-rugs-signs-sinks`. Minor update. Everything was tested i
 NOT included: 41 / 41b furnace experiments (test bundle only), 42 StageInfo fix (user: not this
 time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (not tested).
 
-## 43. Neon signs 18+, GIRLS, Ladies Legs build as real lights (2026-11-13)
-- Symptom (user): these three weren't lights, unlike Cheeky and Red Legs.
-- Cause: the pack defines these three as hammer `MoveType = WallObject` moveables (Pick/PlaceTool,
-  no `IsMoveAble`). The working signs are plain `IsMoveAble` tiles, and KBW only creates an
-  IsoLightSwitch for those.
-- Fix (`tikitown_entertainment.copy_props`, our KBWTikiTownEntertainment copies only):
-  - the three get the working signs' layout (`MoveType` / tools dropped, `IsMoveAble` added)
-  - 18+ and GIRLS: pink (255/20/147, vanilla LightBulbPink)
-  - Ladies Legs: orange (255/128/0, vanilla LightBulbOrange) on ONE tile only (29); 28 is plain
-    decoration (user)
-- Signs placed before the fix stay plain objects; they must be rebuilt.
-
-# Pending for the next hand-off (not pushed yet)
-(41, 41b experiments; 42 StageInfo fix)
-
 ## 39. TikiTown rugs (NEW file 48, tikitown_rugs_01) (user, 2026-11-12)
 - **Floral rugs** (Light Green / Dark Red / Yellow and Black): each colour's 12 tiles are two 2x3
   rugs, one laid N/S and one laid E/W (read from the art, checked by compositing). They are built as
@@ -622,6 +607,34 @@ time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (
   2 nails.
 - **Test bundle:** TikiTown - In Progress, keeps its card (`TT_KEEP_GROUPS` 49).
 - **Test status:** built and checked. NOT tested in game.
+
+## 41c. Hand-pump sinks gave TAINTED water: `waterPiped` restored (2026-11-13)
+- Cause (ours, not WE's): the pump-sink tiles had `waterPiped` removed. For infinite water, the
+  engine's `IsoObject.getInfiniteWaterType` returns clean Water only for an unmoved `waterPiped` object
+  or the hard-coded sprites `camping_01_16` and `camping_01_64`-`67` (map pump, Large Water Tank).
+  Every other infinite source is TaintedWater. The list is a Java string match, so mods can't extend it.
+- Fix: `kbw_tilepatch._pump_sink_props` adds `waterPiped` back, on all 20 counter-top pump sinks
+  (KBWCommunityIceShell_48-67) and the medical Large Industrial Sink copies. They stay infinite:
+  `isWaterInfinite` returns true for `waterAmount >= 9999` BEFORE the room, piping and shutoff
+  checks.
+- Side effect: vanilla's plumb option appears on them. Plumbing one to a barrel sets
+  `canBeWaterPiped = false`, so it then draws from that barrel, the same as a vanilla sink.
+- Built and synced to `work/`; NOT yet confirmed in game (clean water with the water shutoff active).
+
+## 43. Neon signs 18+, GIRLS, Ladies Legs build as real lights (2026-11-13)
+- Symptom (user): these three weren't lights, unlike Cheeky and Red Legs.
+- Cause: the pack defines these three as hammer `MoveType = WallObject` moveables (Pick/PlaceTool,
+  no `IsMoveAble`). The working signs are plain `IsMoveAble` tiles, and KBW only creates an
+  IsoLightSwitch for those.
+- Fix (`tikitown_entertainment.copy_props`, our KBWTikiTownEntertainment copies only):
+  - the three get the working signs' layout (`MoveType` / tools dropped, `IsMoveAble` added)
+  - 18+ and GIRLS: pink (255/20/147, vanilla LightBulbPink)
+  - Ladies Legs: orange (255/128/0, vanilla LightBulbOrange) on ONE tile only (29); 28 is plain
+    decoration (user)
+- Signs placed before the fix stay plain objects; they must be rebuilt.
+
+# Pending for the next hand-off (not pushed yet)
+(41, 41b experiments; 42 StageInfo fix)
 
 ## 41. EXPERIMENT: fuel-fired furnace on B42's unused machine path (TEST BUNDLE ONLY, not for WE) (2026-11-12)
 - **Vanilla furnaces:** `Blast_Furnace` (the Advanced Furnace) is a plain CraftBench. Every smelting
@@ -815,19 +828,6 @@ time), the Dirkies drawer-cabinet rotation offsets the rotation pass now finds (
 - Not yet tested in game: entity table-top placement through KBW, OnTest gating, 4-facing
   entity rotation in KBW, overlay depth and offset (especially on table tops). Logic checked against
   mocks only.
-
-## 41c. Hand-pump sinks gave TAINTED water: `waterPiped` restored (2026-11-13)
-- Cause (ours, not WE's): the pump-sink tiles had `waterPiped` removed. For infinite water, the
-  engine's `IsoObject.getInfiniteWaterType` returns clean Water only for an unmoved `waterPiped` object
-  or the hard-coded sprites `camping_01_16` and `camping_01_64`-`67` (map pump, Large Water Tank).
-  Every other infinite source is TaintedWater. The list is a Java string match, so mods can't extend it.
-- Fix: `kbw_tilepatch._pump_sink_props` adds `waterPiped` back, on all 20 counter-top pump sinks
-  (KBWCommunityIceShell_48-67) and the medical Large Industrial Sink copies. They stay infinite:
-  `isWaterInfinite` returns true for `waterAmount >= 9999` BEFORE the room, piping and shutoff
-  checks.
-- Side effect: vanilla's plumb option appears on them. Plumbing one to a barrel sets
-  `canBeWaterPiped = false`, so it then draws from that barrel, the same as a vanilla sink.
-- Built and synced to `work/`; NOT yet confirmed in game (clean water with the water shutoff active).
 
 ## 42. Storage tooltip: `hasModData` called on recipe script items (found 2026-11-12 with the fuel furnace)
 - **Symptom:** with the furnace's machine window open, the console logged

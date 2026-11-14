@@ -5,6 +5,8 @@
 -- inventory. Offsets come from our Knox Buildworks definitions (which sprites are the faces of
 -- one piece). Applied once tile definitions are loaded.
 local OFFSETS = {
+    ["KBWTikiTownEntertainment_3"] = { Eoffset = 1 },
+    ["KBWTikiTownEntertainment_4"] = { Soffset = -1 },
     ["furniture_storage_tterika_02_12"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
     ["furniture_storage_tterika_02_13"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
     ["furniture_storage_tterika_02_14"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },

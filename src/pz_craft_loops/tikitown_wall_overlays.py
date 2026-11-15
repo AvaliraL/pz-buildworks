@@ -432,6 +432,23 @@ def write_overlay_assets(media_dir, common_media_dir=None):
             add(copy_name, ImageOps.mirror(im), props)
         else:
             add(copy_name, im, props, src_name)
+    # tterika lights (file 52): own tilesets KBWTikiTownLights + KBWTikiTownLights_on (lit art at the
+    # same index), no streetlight flag, BlocksPlacement outdoors (tikitown_lighting). APPENDED last.
+    import tikitown_lighting as tl
+    lsrc = {"%s_%d" % (sh, s) for sh, s, _j in tl.LIGHT_COPIES}
+    lsrc |= {"%s_on_%d" % (sh, s) for sh, s, _j in tl.LIGHT_COPIES if (sh, s) in tl.LIT_SOURCES}
+    k._extract_from_pack(_TIKITOWN_PACK, lsrc, cache)
+
+    def _has_on(name):
+        p = os.path.join(cache, name + ".png")
+        return os.path.isfile(p) and Image.open(p).convert("RGBA").getbbox() is not None
+    for src_name, copy_name, props, on_src, on_copy in tl.copy_tiles(tts, _has_on):
+        im = Image.open(os.path.join(cache, src_name + ".png")).convert("RGBA")
+        # Drazion's depth assignment for the outdoor tiles (poles / heads -> vanilla street lights);
+        # the indoor exit sign / long lamp have none (no attach flag, no assignment): no depth
+        add(copy_name, im, props, src_name)
+        if on_copy:
+            add(on_copy, Image.open(os.path.join(cache, on_src + ".png")).convert("RGBA"), [], src_name)
     assert len({n for n, _im in tiles}) == len(tiles), "duplicate copied sprite names"
     npages, ntiles, size = _write_pack_multi(
         os.path.join(media_dir, "texturepacks", OVERLAY_PACK + ".pack"), tiles)

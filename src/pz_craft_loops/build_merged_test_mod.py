@@ -94,6 +94,10 @@ PACK_OF = {
     "66": "Dylan",
     # Dylan Future Room extras: wall TV, fridges, cabinets, couch, planter (dylan_future_room_extras.py)
     "67": "Dylan",
+    # Blackwood one-offs: cosplay stands, poster, dartboard, rifle, table-top figures (blackwood_props.py)
+    "68": "Blackwood",
+    # vanilla Monitoring Station / Monitoring Bank as working TVs (monitoring_tvs.py)
+    "69": "Community",
 }
 # Completed = verified in-game; everything else -> In Progress.
 # Whole sheets confirmed complete:
@@ -117,7 +121,9 @@ COMPLETED_SHEETS = {"21","22","23","24","25","26","27","28","29","31","32","33",
                     "61", "62",
                     # 2026-08-28 sheets: Dirkies decor house / window decor / medical, Dylan gun
                     # racks / Future Room extras ("all of dirkies / Dylan can be marked complete")
-                    "63", "64", "65", "66", "67"}
+                    "63", "64", "65", "66", "67",
+                    "68",   # Blackwood one-offs: all confirmed in game (user, 2026-11-14)
+                    "69"}   # Monitoring Station / Bank TVs: confirmed in game (user, 2026-11-14)
 # -> In Progress by omission: "30" (shelving), future sheets.
 
 # PER-PIECE status overrides (finer than sheet-level), matched by buildable id PREFIX.
@@ -208,11 +214,17 @@ TT_FILES = [
     "45_tikitown_ladders.json",
     "46_tikitown_barrel_planters.json",
     "47_tikitown_entertainment.json",
+    "48_tikitown_rugs.json",
+    "49_tikitown_signs.json",
+    "50_tikitown_tile_floors.json",
+    "51_tikitown_commercial_glass_walls.json",
+    "52_tikitown_lighting.json",
 ]
 
 MOD_ID   = "TikiTownCommunityTest"
 MOD_NAME = "Knox Buildworks - TikiTown + Community (TEST)"
-REQUIRES = ["KnoxBuildworks","KnoxBuildworksVanillaExpanded","tikitown_tiles","UnofficialMappersCommunityTilePack"]
+REQUIRES = ["KnoxBuildworks","KnoxBuildworksVanillaExpanded","tikitown_tiles","UnofficialMappersCommunityTilePack",
+            "RavenCreek_B42"]   # Simon MD buildables use Raven Creek's LCB42_SimonMDsTiles (2026-11-14)
 TEST_TR_DIR = r"C:\Users\josep\Zomboid\Workshop\TikiTownTestBundle\Contents\mods\TikiTownTestBundle\42\media\lua\shared\Translate\EN"
 UPLOAD_ROOT = r"C:\Users\josep\Zomboid\Workshop"
 PROJECT_MIRROR = r"c:\Users\josep\Kiro\zomboid\tikitown\merged_test_upload"
@@ -237,6 +249,11 @@ TT_PACK_OF = {
     "45": "TikiTown",           # 45_tikitown_ladders.json (tterika ladder, ladders.py; In Progress)
     "46": "TikiTown",           # 46_tikitown_barrel_planters.json (8 barrel planters; In Progress)
     "47": "TikiTown",           # 47_tikitown_entertainment.json (poles, neon signs, bead curtain; In Progress)
+    "48": "TikiTown",           # 48_tikitown_rugs.json (floral straight/corner pieces + street play 2x2; In Progress)
+    "49": "TikiTown",           # 49_tikitown_signs.json (Ranger Station standing + wall sign; In Progress)
+    "50": "TikiTown",           # 50_tikitown_tile_floors.json (6 tterika tile floors WE lacks; In Progress)
+    "51": "TikiTown",           # 51_tikitown_commercial_glass_walls.json (tterika storefront glass + door frames; In Progress)
+    "52": "TikiTown",           # 52_tikitown_lighting.json (tterika lamps, street + traffic lights; In Progress)
 }
 # TikiTown sheets confirmed in-game. Newburbs trim (35) marked Completed by user (2026-08-28).
 TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34","35",
@@ -247,16 +264,24 @@ TT_COMPLETED = {"21","22","23","24","25","26","27","28","29","31","32","33","34"
                 "43", "44",        # tterika paint / cladding / trim: working in game (user, 2026-11-10)
                 "45",              # tterika Rusted Iron Ladder: working in game (user, 2026-08-28)
                 "46",              # barrel planters: "all of tikitown in progress is good" (user, 2026-08-28)
-                "47"}              # entertainment: "all of tikitown in progress can be marked complete" (user, 2026-08-28)
+                "47",              # entertainment: "all of tikitown in progress can be marked complete" (user, 2026-08-28)
+                "48", "49", "50", "51",   # rugs, signs, tile floors, storefront glass: same, user 2026-11-14
+                "52"}              # tterika lighting: confirmed in game (user, 2026-11-14)
 
 # TikiTown sheets that keep their KBW groups in the test bundle (see main)
 TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42",   # 22: doors in 12 type groups (naming round 2)
                   "43", "44",                             # one card per colour / trim family
                   "46",                                   # one "Barrel Planters" card (user)
-                  "47"}                                   # "Stripper Poles" card (user)
+                  "47",                                   # "Stripper Poles" card (user)
+                  "48",                                   # one card per rug type (user, 2026-11-12)
+                  "49",                                   # "Ranger Station Signs" card
+                  "51",                                   # one card per frame colour + glass style
+                  "52"}                                   # lamp / street-light / traffic-light cards
 # Community sheets that keep their KBW groups in the test bundle, so each card reviews as it ships
 # (user 2026-08-28: "the potted plants should be a single card")
-COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67"}
+COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67", "68"}
+# Simon MD submod files confirmed in game
+SIMON_COMPLETED = {"01"}          # scrap fences: all confirmed working (user, 2026-11-14)
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -306,6 +331,14 @@ def load_sources():
         fn = os.path.basename(p)
         k = sheet_key(fn)
         yield PACK_OF.get(k, "Community"), ("Completed" if k in COMPLETED_SHEETS else "In Progress"), fn, json.load(open(p, encoding="utf-8"))
+    # Simon MD (Raven Creek's copy) submod, build_simonmd_mod.py (2026-11-14). Own pack label, so its
+    # file numbers never meet the TikiTown / Community ones.
+    import build_simonmd_mod as _sm
+    for fn in _sm.SRC_FILES:
+        p = os.path.join(_sm.SRC_DIR, fn)
+        if os.path.isfile(p):
+            yield ("Simon MD", "Completed" if sheet_key(fn) in SIMON_COMPLETED else "In Progress",
+                   fn, json.load(open(p, encoding="utf-8")))
 
 def main():
     up = os.path.join(UPLOAD_ROOT, MOD_ID)
@@ -339,6 +372,12 @@ def main():
     ]
     import tikitown_wall_overlays as _two
     mi += _two.MODINFO_LINES                               # copied wall-overlay tiles (8179)
+    import fuel_furnace_proto as _ffp0                      # EXPERIMENT: fuel furnace art copies (8177)
+    mi += ["pack=%s" % _ffp0.TILESET, "tiledef=%s %d" % (_ffp0.TILEDEF_NAME, _ffp0.TILEDEF_ID)]
+    import furnace_suite as _fs0                            # EXPERIMENT: furnace suite art + overlays (8176)
+    mi += ["pack=%s" % _fs0.TILESET, "tiledef=%s %d" % (_fs0.TILEDEF_NAME, _fs0.TILEDEF_ID)]
+    import fridge_doom as _fd0                              # TEST ONLY, never shipped: fridge screen image (8175)
+    mi += ["pack=%s" % _fd0.TILESET, "tiledef=%s %d" % (_fd0.TILEDEF_NAME, _fd0.TILEDEF_ID)]
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
     _media=os.path.join(mod42,"media"); os.makedirs(_media, exist_ok=True)
     write_tv_screen_assets(_media)
@@ -402,6 +441,9 @@ def main():
     write_overlay_guard_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_OverlayGuard.lua"))
     # seating fixes for other packs' broken bed data (tterika double bed)
     write_seating_lua(os.path.join(_media, "lua", "shared", "KBWCommunity_Seating.lua"))
+    # TEST ONLY: World Essentials' pole-light guard (the bundle runs without WE; tikitown_lighting.py)
+    import tikitown_lighting as _tl
+    _tl.write_test_pole_guard_lua(os.path.join(_media, "lua", "server", _tl.TEST_POLE_GUARD_LUA_NAME))
 
     merged=[]
     import name_tooltip_pass
@@ -477,6 +519,35 @@ def main():
         _b["subcategory"] = "Sinks"
         merged.append(_b); cat_counts[_b["category"]] += 1   # keeps its "Hand Pump Sinks" card
     print("\n".join(_ps_rep))
+    # EXPERIMENT (user, 2026-11-12): fuel-fired furnace on B42's unused CraftLogic machine path.
+    # Test bundle only (fuel_furnace_proto.py): entity + recipe script, one KBW buildable.
+    import fuel_furnace_proto as _ffp
+    _ffp.write_tile_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
+    _ffp.write_scripts(_media)
+    _ffp.write_ui_lua(_media)
+    _ffp.write_translations(tr_dir)                # Recipes.json + Fluids.json (molten fluids)
+    _b = _ffp.buildable()
+    if _b["id"] in seen:
+        raise RuntimeError("duplicate buildable id %s" % _b["id"])
+    seen.add(_b["id"])
+    merged.append(_b); cat_counts[_b["category"]] += 1
+    # EXPERIMENT (user, 2026-11-13): furnace suite on Dirkies' furnace art (furnace_suite.py)
+    import furnace_suite as _fs
+    _fs.write_tile_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"),
+                          preview_path=os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                                    "_furnace_suite_preview.png"))
+    _fs.write_scripts(_media)
+    _fs.write_lua(_media)
+    _fs.write_translations(tr_dir)
+    # TEST ONLY, never shipped (user, 2026-11-13: screenshot only): image on the Future fridge screen
+    import fridge_doom as _fd
+    _fd.write_assets(_media)
+    _fd.write_lua(_media)
+    for _b in _fs.buildables():
+        if _b["id"] in seen:
+            raise RuntimeError("duplicate buildable id %s" % _b["id"])
+        seen.add(_b["id"])
+        merged.append(_b); cat_counts[_b["category"]] += 1
     # vanilla ladders (ladders.py): In Progress until confirmed in game
     from ladders import build_vanilla_ladder_defs
     _ld, _ld_tips, _ld_rep = build_vanilla_ladder_defs()

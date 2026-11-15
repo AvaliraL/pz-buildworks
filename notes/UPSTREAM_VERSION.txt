@@ -1,10 +1,11 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-10
-            (Steam manifest 8104864525325359112): the WE dev's merge of handoff-2026-11-08-plaster-fix,
-            minus the Electrical Cabinet Generator and the workbench tools (held for an MP review).
-            Tracked base / Expansion files now include what WE merged from us.
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-14
+            (Steam manifest 8319602489478308039): the WE dev's merge of handoff-2026-11-12-ladders-tvs
+            and part of handoff-2026-11-13-rugs-signs-sinks (ice-shell art / depth, TV screen list,
+            file 67 at that version). NOT in it: the TikiTown rugs / Ranger signs (files 48 / 49) and
+            handoff-2026-11-13-wall-screen-tv; those stay in work/ and go out with the next hand-off.
+            Checked read-only before refreshing: every file WE changed matches one of our hand-off
+            tags or is a subset of work/ (no WE-only edits to reconcile).
+            Refreshed with _refresh_upstream_keep_work.py (work/ was NOT reset).
 work/     = our working copy. Diff against upstream/ for hand-offs.
-upstream_2026-10-31/ = the previous snapshot. Never edit the Steam copy.
-Checked 2026-11-12: installed WE is now Steam manifest 2008925324920512568. Read-only diff against
-upstream/ (Community + TikiTown submods in full, the tracked base / Expansion files): 0 changed,
-0 added, 0 removed. So the update touched nothing we track, and the we-baseline-2026-11-10
-snapshot still holds (no refresh / reconcile needed).
+upstream_2026-11-10/ = the previous snapshot (manifest 8104864525325359112 / 2008925324920512568).
+upstream_2026-10-31/ = the one before. Never edit the Steam copy.

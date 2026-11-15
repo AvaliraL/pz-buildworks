@@ -420,8 +420,8 @@
       "canBePadlocked": true
      },
      "container": {
-      "type": "smallcrate",
-      "capacity": 25
+      "type": "crate",
+      "capacity": 30
      }
     }
    ]

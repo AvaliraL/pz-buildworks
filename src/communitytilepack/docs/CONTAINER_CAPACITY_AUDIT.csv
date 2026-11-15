@@ -1,0 +1,467 @@
+file,id,name,stage,def_type,def_cap,tile_types,tile_caps,status,reinforced
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_1,White Upper Cabinet,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_27.reinforced,"White Counter, Pink Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_82,"Cream Counter, Maroon Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_26.reinforced,"White Counter, Pink Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_82.reinforced,"Cream Counter, Maroon Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_10.reinforced,"White Counter, Charcoal Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_10,"White Counter, Charcoal Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_50,"Butter Yellow Counter, White Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_58,"Pale Blue Counter, Gray Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_67,Navy Counter,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_83.reinforced,"Cream Counter, Maroon Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_67.reinforced,Navy Counter (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_107,Black Counter,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_113.reinforced,Black Upper Cabinet (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_19,Charcoal Counter,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_66.reinforced,"Navy Counter (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_107.reinforced,Black Counter (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_99.reinforced,"Cream Counter, Navy Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_91,"Cream Counter, Green Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_66,Navy Counter (Corner),built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_74,"Cream Counter, Black Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_26,"White Counter, Pink Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_3.reinforced,Gray Upper Cabinet (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_98.reinforced,"Cream Counter, Navy Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_74.reinforced,"Cream Counter, Black Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_7.reinforced,Charcoal Upper Cabinet (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_3,Gray Upper Cabinet,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_113,Black Upper Cabinet,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_34,"White Counter, Terracotta Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_83,"Cream Counter, Maroon Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_1.reinforced,White Upper Cabinet (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_11.reinforced,"White Counter, Charcoal Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_42,"White Counter, Sage Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_18.reinforced,"Charcoal Counter (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_91.reinforced,"Cream Counter, Green Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_11,"White Counter, Charcoal Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_51.reinforced,"Butter Yellow Counter, White Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_7,Charcoal Upper Cabinet,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_59.reinforced,"Pale Blue Counter, Gray Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_106,Black Counter (Corner),built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_35.reinforced,"White Counter, Terracotta Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_43,"White Counter, Sage Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_58.reinforced,"Pale Blue Counter, Gray Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_18,Charcoal Counter (Corner),built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_50.reinforced,"Butter Yellow Counter, White Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_27,"White Counter, Pink Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_43.reinforced,"White Counter, Sage Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_35,"White Counter, Terracotta Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_75.reinforced,"Cream Counter, Black Top (Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_90.reinforced,"Cream Counter, Green Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_99,"Cream Counter, Navy Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_75,"Cream Counter, Black Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_5,Walnut Upper Cabinet,built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_42.reinforced,"White Counter, Sage Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.upper.d_furniture_kitchen_01_5.reinforced,Walnut Upper Cabinet (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_98,"Cream Counter, Navy Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_59,"Pale Blue Counter, Gray Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_90,"Cream Counter, Green Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_19.reinforced,Charcoal Counter (Reinforced),built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_51,"Butter Yellow Counter, White Top",built,counter,,counter,,definition has no capacity,False
+C35,community.dirkie.counters.d_furniture_kitchen_01_106.reinforced,"Black Counter (Corner, Reinforced)",built,counter,100,counter,,same,True
+C35,community.dirkie.counters.d_furniture_kitchen_01_34.reinforced,"White Counter, Terracotta Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.furniture_storage_ddd_01_34.reinforced,In-Wall Bookshelf (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C40,community.dirkies.containers.furniture_storage_ddd_01_20,Broken Wooden Crate,built,smallcrate,25,crate,,same,False
+C40,community.dirkies.containers.d_location_sofaking_10.reinforced,"White Counter, Blue Top (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.industry_ddd_01_4,Wooden Barrel on Pallet,built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_11,Dark Wood Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.industry_ddd_01_59,Vegetable Baskets on Pallet (Low),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_9.crate,White Military Crate Case,built,militarycrate,100,locker,30,definition higher,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_7,Pallet of Green Military Cases,built,StackedAmmoPallet,90,StackedAmmoPallet,90,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_34,Oak Glass Display Cabinet,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_18.reinforced,"Gray Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_3.reinforced,Walnut Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.furniture_storage_ddd_01_4,Green Military Case,built,locker,30,locker,30,same,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_12,Open Crate with Cloth,built,smallcrate,25,crate,,same,False
+C40,community.dirkies.containers.industry_ddd_01_7,Red Barrel on Pallet,built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_10.reinforced,"Dark Wood Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.d_location_sofaking_10,"White Counter, Blue Top (Corner)",built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_11.reinforced,Dark Wood Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.industry_ddd_01_53,Small Boxes on Pallet (Half),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_43.reinforced,Charcoal Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.industry_ddd_01_52,Vegetable Baskets on Pallet (Tall),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_32,Oak Display Cabinet,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_27,Tan Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.d_location_sofaking_11.reinforced,"White Counter, Blue Top (Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_42.reinforced,"Charcoal Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_80,Dark Display Cabinet,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_34,In-Wall Bookshelf,built,shelves,40,shelves,40,same,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_9,White Military Case,built,locker,30,locker,30,same,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_30,White Metal Shelf Rack,built,locker,40,shelves,20,definition higher,False
+C40,community.dirkies.containers.location_community_medical_ddd_01_8,Steel Work Table,built,locker,40,counter,,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_11,Fancy White Glass Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_35.reinforced,Oak Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_27.reinforced,Tan Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_59.reinforced,Cream Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_location_business_machinery_02_1,Blue Rolling Tool Cabinet,built,locker,40,toolcabinet,20,definition higher,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_58.reinforced,"Cream Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.d_location_sofaking_11,"White Counter, Blue Top",built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.industry_ddd_01_57,Vegetable Baskets on Pallet (Green Stack),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_34.reinforced,"Oak Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_2,Walnut Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_59,Cream Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_26.reinforced,"Tan Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.furniture_storage_ddd_01_14,Black Metal Shelving,built,locker,40,metal_shelves,,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_75,Light Wood Glass Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_50,Olive Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.industry_ddd_01_60,Vegetable Baskets on Pallet (Mixed),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_67,Light Wood Double Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.industry_ddd_01_6,Blue Barrel on Pallet,built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.location_community_medical_ddd_01_10.reinforced,Steel Medical Counter with Shelves (Reinforced),built,locker,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_42,Charcoal Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_10,Dark Wood Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_19.reinforced,Gray Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_28,Oak Chest of Drawers,built,dresser,20,wardrobe,20,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_81,Dark Hutch,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_26,Tan Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.industry_ddd_01_54,Small Boxes on Pallet (Few),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_19,Gray Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.industry_ddd_01_5,Green Barrel on Pallet,built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_3,Fancy White Double Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_35,Oak Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_58,Cream Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_51,Olive Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.location_community_medical_ddd_01_28,Medical Drawer Cart,built,locker,40,counter,,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_34,Oak Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.location_community_medical_ddd_01_16,Glass Medical Cabinet,built,locker,40,metal_shelves,,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_82,Dark Glass Display Cabinet,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_33,Oak Hutch,built,wardrobe,25,wardrobe,25,same,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_4.crate,Green Military Crate Case,built,militarycrate,100,locker,30,definition higher,False
+C40,community.dirkies.containers.industry_ddd_01_56,Vegetable Baskets on Pallet (Blue Stack),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.industry_dirkea_ddd_01_15,Dark Metal Shelving,built,shelves,80,shelves,80,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_18,Gray Wall Cupboard (Corner),built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_43,Charcoal Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.furniture_storage_ddd_01_8,Pallet of White Military Cases,built,StackedAmmoPallet,90,StackedAmmoPallet,90,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_50.reinforced,"Olive Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.location_community_medical_ddd_01_10,Steel Medical Counter with Shelves,built,locker,40,counter,,same,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_3,Walnut Wall Cupboard,built,counter,,counter,,definition has no capacity,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_41,Oak Hall Bench with Coat Hooks,built,dresser,20,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_2.reinforced,"Walnut Wall Cupboard (Corner, Reinforced)",built,counter,100,counter,,same,True
+C40,community.dirkies.containers.industry_ddd_01_58,Vegetable Baskets on Pallet (Pink Top),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.industry_ddd_01_55,Small Boxes on Pallet (Full),built,smallcrate,25,,,tile has no container,False
+C40,community.dirkies.containers.edit_ddd_RUS_furniture_storage_03_100,Dark Chest of Drawers,built,dresser,20,wardrobe,20,same,False
+C40,community.dirkies.containers.location_community_medical_ddd_01_12,Metal Wall Shelves,built,locker,40,metal_shelves,30,definition higher,False
+C40,community.dirkies.containers.edit_ddd_RUS_fixtures_counters_03_51.reinforced,Olive Wall Cupboard (Reinforced),built,counter,100,counter,,same,True
+C41,community.dylan.containers.DylansGardenStuff01_18,Garden Crate,built,smallcrate,25,,,tile has no container,False
+C41,community.dylan.containers.DylansRandomFurniture01_12,Blue Toolbox Cabinet,built,locker,40,ToolTray,25,definition higher,False
+C41,community.dylan.containers.Bookies_Store_13,Wooden Bookstore Shelf,built,shelves,40,shelves,40,same,False
+C41,community.dylan.containers.DylansBar01_43,Bar Counter,built,shelves,20,counter,,same,False
+C41,community.dylan.containers.DylansRandomFurniture03_59,Blue Lab Cabinet,built,locker,40,counter,,same,False
+C41,community.dylan.containers.Bookies_Store_45,Metal Bookstore Shelf,built,shelves,40,shelves,40,same,False
+C41,community.dylan.containers.DylansBar01_42,Bar Counter (Corner),built,shelves,20,counter,,same,False
+C41,community.dylan.containers.DylansRandomFurniture03_34,Steel Lab Hotplate Counter,built,locker,40,counter,,same,False
+C41,community.dylan.containers.DylansBar01_42.reinforced,"Bar Counter (Corner, Reinforced)",built,shelves,100,counter,,same,True
+C41,community.dylan.containers.Block_Trasher_60,Angled Shop Display Shelf,built,shelves,20,shelvesmag,15,definition higher,False
+C41,community.dylan.containers.Block_Trasher_51,Blue Shop Counter,built,counter,,counter,,definition has no capacity,False
+C41,community.dylan.containers.DylansRandomFurniture03_37,Hydroponics Lab Bench,built,locker,40,counter,,same,False
+C41,community.dylan.containers.DylansBar01_43.reinforced,Bar Counter (Reinforced),built,shelves,100,counter,,same,True
+C41,community.dylan.containers.DylansGardenStuff01_11,Garden Backpack,built,smallcrate,25,smallbox,20,definition higher,False
+C41,community.dylan.containers.Bookies_Store_45.reinforced,Metal Bookstore Shelf (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C41,community.dylan.containers.Block_Trasher_50,Blue Shop Counter (Corner),built,counter,,counter,,definition has no capacity,False
+C41,community.dylan.containers.Bookies_Store_13.reinforced,Wooden Bookstore Shelf (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C41,community.dylan.containers.DylansGardenStuff01_8,Garden Supply Box,built,smallcrate,25,smallbox,20,definition higher,False
+C41,community.dylan.containers.DylansRandomFurniture03_49,Hydroponics Lab Bench (Open),built,locker,40,counter,,same,False
+C41,community.dylan.containers.DylansRandomFurniture03_45,Steel Lab Sink Counter,built,locker,40,counter,,same,False
+C41,community.dylan.containers.Block_Trasher_51.reinforced,Blue Shop Counter (Reinforced),built,counter,100,counter,,same,True
+C41,community.dylan.containers.Block_Trasher_50.reinforced,"Blue Shop Counter (Corner, Reinforced)",built,counter,100,counter,,same,True
+C41,community.dylan.containers.DylansRandomFurniture01_10,Red Toolbox Cabinet,built,StandingToolbox,75,StandingToolbox,75,same,False
+C41,community.dylan.containers.DylansRandomFurniture03_45.reinforced,Steel Lab Sink Counter (Reinforced),built,locker,100,counter,,same,True
+C41,community.dylan.containers.DylansRandomFurniture03_34.reinforced,Steel Lab Hotplate Counter (Reinforced),built,locker,100,counter,,same,True
+C41,community.dylan.containers.DylansRandomFurniture03_60,Glass Lab Shelving (Alt),built,locker,40,metal_shelves,,same,False
+C41,community.dylan.containers.DylansRandomFurniture03_54,Glass Lab Shelving,built,locker,40,metal_shelves,,same,False
+C42,community.tk.containers.trash_containers_tk_01_8,Yellow Waste Bin,built,metal_shelves,30,bin,20,definition higher,False
+C42,community.tk.containers.fixtures_counters_tk_01_0.reinforced,Steel Kitchen Counter (Reinforced),built,counter,100,counter,,same,True
+C42,community.tk.containers.industry_tk_02_33,Stacked Cardboard Boxes,built,smallcrate,25,crate,25,same,False
+C42,community.tk.containers.trash_containers_tk_01_6,Blue Recycling Bin,built,metal_shelves,30,bin,8,definition higher,False
+C42,community.tk.containers.kitchen_misc_tk_01_12,Wire Shelf Rack,built,counter,,WireShelves,50,definition has no capacity,False
+C42,community.tk.containers.trash_containers_tk_01_0,Steel Trash Can,built,metal_shelves,30,bin,15,definition higher,False
+C42,community.tk.containers.trash_containers_tk_01_10,Black Trash Barrel,built,metal_shelves,30,bin,10,definition higher,False
+C42,community.tk.containers.fixtures_counters_tk_01_0,Steel Kitchen Counter,built,counter,,counter,,definition has no capacity,False
+C42,community.tk.containers.trash_containers_tk_01_4,Green Recycling Bin,built,metal_shelves,30,bin,8,definition higher,False
+C42,community.tk.containers.trash_containers_tk_01_2,White Trash Can,built,metal_shelves,30,bin,10,definition higher,False
+C42,community.tk.containers.industry_tk_02_32,Large Cardboard Box,built,crate,30,crate,30,same,False
+C42,community.tk.containers.industry_tk_02_25,Fire Extinguisher Cabinet,built,counter,,extinguisher_box,2,definition has no capacity,False
+C49,community.tk.containers.dumpster_green,Green Dumpster,built,metal_shelves,40,bin,30,definition higher,False
+C49,community.tk.containers.dumpster_brown,Red Dumpster,built,metal_shelves,40,bin,30,definition higher,False
+C50,community.dylan.futureroom.dresser,Sci-Fi Chest of Drawers,built,dresser,20,,,tile has no container,False
+C54,community.dylan.containers.blocktrasher_bookshelf,Store Bookshelf,built,shelves,40,shelves,,same,False
+C54,community.dylan.containers.blocktrasher_bookshelf.reinforced,Store Bookshelf (Reinforced),built,shelves,100,shelves,,same,True
+C55,community.dirkies.secret_shelf.d_doors_02_64,Secret Entrance Bookshelf,built,shelves,20,,,tile has no container,False
+C55,community.dirkies.secret_shelf.d_doors_02_68,Secret Entrance Bookshelf (Half Empty),built,shelves,20,,,tile has no container,False
+C56,community.fears.workbench.electrical,Electrical Workbench,built,Electrical_Bench,80,Electrical_Bench,80,same,False
+C56,community.fears.workbench.carpentry,Carpentry Workbench,built,Woodworking_Bench,80,Woodworking_Bench,80,same,False
+C56,community.fears.workbench.metalworking,Metalworking Workbench,built,Metalworking_Bench,80,Metalworking_Bench,80,same,False
+C56,community.fears.workbench.chemistry,Chemistry Workbench,built,Drug_Lab,80,Drug_Lab,80,same,False
+C56,community.fears.workbench.tailoring,Tailoring Workbench,built,Tailoring_Bench,80,Tailoring_Bench,80,same,False
+C56,community.fears.workbench.gunsmithing,Gunsmithing Workbench,built,Gunsmithing Bench,80,Gunsmithing Bench,80,same,False
+C57,community.tk.kitchen_misc.ice_machine_100,Industrial Ice Machine,built,,100,,,tile has no container,False
+C57,community.tk.kitchen_misc.wall_shelf,Metal Kitchen Wall Shelf,built,SpoonRack,30,SpoonRack,30,same,False
+C57,community.tk.kitchen_misc.ice_machine_65,Large Commercial Ice Machine,built,,65,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_3,Oak Wide Dresser,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_bookcase_wall.reinforced,Birch Wall Shelf (Reinforced),built,shelves,100,shelves,10,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_5,Cream Bedside Table,built,sidetable,10,wardrobe,10,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_6,Oak Low Shelf,built,shelves,20,shelves,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_bookcase_wall,Gray Wall Shelf,built,shelves,40,shelves,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_1,Cream Low Cabinet,built,dresser,20,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_bookcase_wall,Oak Wall Shelf,built,shelves,40,shelves,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_wardrobe,Weathered Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_bookcase.reinforced,Gray Bookcase (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_bookcase_wall,Weathered Wall Shelf,built,shelves,40,shelves,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_5,Birch Bedside Table,built,sidetable,10,wardrobe,10,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_6,Cream Low Shelf,built,shelves,20,shelves,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_bookcase.reinforced,Cream Bookcase (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_bookcase_wall,Cream Wall Shelf,built,shelves,40,shelves,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_bookcase,Oak Bookcase,built,shelves,40,shelves,40,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_wardrobe,Gray Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_wardrobe,Birch Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_2,Oak Dresser with Mirror,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_4,Gray Small Chest of Drawers,built,dresser,20,wardrobe,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_bookcase_wall.reinforced,Cream Wall Shelf (Reinforced),built,shelves,100,shelves,10,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_4,Oak Small Chest of Drawers,built,dresser,20,wardrobe,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_1,Oak Low Cabinet,built,dresser,20,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_bookcase.reinforced,Oak Bookcase (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_1,Weathered Low Cabinet,built,dresser,20,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_bookcase_wall.reinforced,Oak Wall Shelf (Reinforced),built,shelves,100,shelves,10,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_bookcase,Cream Bookcase,built,shelves,40,shelves,40,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_6,Weathered Low Shelf,built,shelves,20,shelves,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_dresser_5,Oak Bedside Table,built,sidetable,10,wardrobe,10,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_bookcase,Gray Bookcase,built,shelves,40,shelves,40,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_5,Weathered Bedside Table,built,sidetable,10,wardrobe,10,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_2,Birch Dresser with Mirror,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_1,Birch Low Cabinet,built,dresser,20,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_4,Birch Small Chest of Drawers,built,dresser,20,wardrobe,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_2,Cream Dresser with Mirror,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_1,Gray Low Cabinet,built,dresser,20,,,tile has no container,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_bookcase.reinforced,Birch Bookcase (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_6,Birch Low Shelf,built,shelves,20,shelves,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_2,Gray Dresser with Mirror,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_wardrobe,Cream Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_bookcase_wall.reinforced,Gray Wall Shelf (Reinforced),built,shelves,100,shelves,10,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_2,Weathered Dresser with Mirror,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_3,Cream Wide Dresser,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_01_dresser_4,Cream Small Chest of Drawers,built,dresser,20,wardrobe,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_bookcase_wall.reinforced,Weathered Wall Shelf (Reinforced),built,shelves,100,shelves,10,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_6,Gray Low Shelf,built,shelves,20,shelves,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_bookcase_wall,Birch Wall Shelf,built,shelves,40,shelves,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_bookcase,Weathered Bookcase,built,shelves,40,shelves,40,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_4,Weathered Small Chest of Drawers,built,dresser,20,wardrobe,10,definition higher,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_bookcase.reinforced,Weathered Bookcase (Reinforced),built,shelves,100,shelves,40,definition higher,True
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_5,Gray Bedside Table,built,sidetable,10,wardrobe,10,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_04_dresser_3,Weathered Wide Dresser,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_dresser_3,Birch Wide Dresser,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_02_dresser_3,Gray Wide Dresser,built,dresser,20,wardrobe,20,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_03_wardrobe,Oak Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+C61,community.dirkies.bedroom.d_furniture_bedroom_05_bookcase,Birch Bookcase,built,shelves,40,shelves,40,same,False
+C63,community.dirkies.decor_house.blue_drawer_cabinet,Blue Metal Drawer Cabinet,built,postbox,20,postbox,20,same,False
+C63,community.dirkies.decor_house.blue_drawer_cabinet.reinforced,Blue Metal Drawer Cabinet (Reinforced),built,postbox,100,postbox,20,definition higher,True
+C63,community.dirkies.decor_house.red_wall_cabinet,Red Wall Cabinet,built,counter,20,counter,20,same,False
+C63,community.dirkies.decor_house.green_drawer_cabinet,Green Metal Drawer Cabinet,built,postbox,20,postbox,20,same,False
+C63,community.dirkies.decor_house.red_wall_cabinet.reinforced,Red Wall Cabinet (Reinforced),built,counter,100,counter,20,definition higher,True
+C63,community.dirkies.decor_house.green_drawer_cabinet.reinforced,Green Metal Drawer Cabinet (Reinforced),built,postbox,100,postbox,20,definition higher,True
+C65,community.dirkies.medical.locker_teal.reinforced,Teal Medical Locker (Reinforced),built,locker,100,locker,,same,True
+C65,community.dirkies.medical.industrial_sink_pump_reinforced,"Large Industrial Sink (Hand Pump, Reinforced)",built,counter,100,,,tile has no container,True
+C65,community.dirkies.medical.locker_red,Red Medical Locker,built,locker,40,locker,,same,False
+C65,community.dirkies.medical.push_cart.reinforced,Hospital Push Cart (Reinforced),built,shelves,100,,,tile has no container,True
+C65,community.dirkies.medical.locker_teal,Teal Medical Locker,built,locker,40,locker,,same,False
+C65,community.dirkies.medical.industrial_sink_pump,Large Industrial Sink (Hand Pump),built,counter,20,,,tile has no container,False
+C65,community.dirkies.medical.industrial_sink,Large Industrial Sink,built,counter,20,,,tile has no container,False
+C65,community.dirkies.medical.locker_red.reinforced,Red Medical Locker (Reinforced),built,locker,100,locker,,same,True
+C65,community.dirkies.medical.industrial_sink_reinforced,Large Industrial Sink (Reinforced),built,counter,100,,,tile has no container,True
+C65,community.dirkies.medical.push_cart,Hospital Push Cart,built,shelves,20,,,tile has no container,False
+C66,community.dylan.gun_rack_rifles_pistols,Pegboard Gun Rack (Rifles and Pistols),built,metal_shelves,10,metal_shelves,10,same,False
+C66,community.dylan.gun_rack_rifles_shotguns.reinforced,"Pegboard Gun Rack (Rifles and Shotguns, Reinforced)",built,metal_shelves,100,metal_shelves,10,definition higher,True
+C66,community.dylan.gun_rack_rifles_shotguns,Pegboard Gun Rack (Rifles and Shotguns),built,metal_shelves,10,metal_shelves,10,same,False
+C66,community.dylan.gun_rack_rifles_pistols.reinforced,"Pegboard Gun Rack (Rifles and Pistols, Reinforced)",built,metal_shelves,100,metal_shelves,10,definition higher,True
+C67,community.dylan.future_room.cabinet_white.reinforced,White Metal Cabinet (Reinforced),built,counter,100,counter,20,definition higher,True
+C67,community.dylan.future_room.cabinet_black.reinforced,Black Metal Cabinet (Reinforced),built,counter,100,counter,20,definition higher,True
+C67,community.dylan.future_room.upper_cabinet_white.reinforced,White Metal Upper Cabinet (Reinforced),built,counter,100,counter,20,definition higher,True
+C67,community.dylan.future_room.upper_cabinet_black,Black Metal Upper Cabinet,built,counter,20,counter,20,same,False
+C67,community.dylan.future_room.cabinet_white,White Metal Cabinet,built,counter,20,counter,20,same,False
+C67,community.dylan.future_room.upper_cabinet_white,White Metal Upper Cabinet,built,counter,20,counter,20,same,False
+C67,community.dylan.future_room.upper_cabinet_black.reinforced,Black Metal Upper Cabinet (Reinforced),built,counter,100,counter,20,definition higher,True
+C67,community.dylan.future_room.cabinet_black,Black Metal Cabinet,built,counter,20,counter,20,same,False
+C70,kbwcb.appliances.chest_freezer_65,Chest Freezer 65,built,,65,,,tile has no container,False
+C70,kbwcb.appliances.chest_freezer_100,Chest Freezer 100,built,,100,,,tile has no container,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.modern_floating,Floating Counter - Modern Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern_corner,Counter - Light Countertop Modern (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.blue,Counter - Blue,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_oak_corner,Counter - Light Countertop Dark Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.red,Counter - Red,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.stained_oak_floating,Floating Counter - Stained Oak Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_green_corner.reinforced,"Counter - Light Countertop Green (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_green_corner,Counter - Light Countertop Green (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.green_floating,Floating Counter - Green Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_oak,Counter - Light Countertop Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_white.reinforced,Counter - Wood Countertop White (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.sunstar.reinforced,Counter - Sunstar (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_green,Counter - Light Countertop Green,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.birchwood_floating.reinforced,Floating Counter - Birchwood Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.oak_floating,Floating Counter - Oak Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern.reinforced,Counter - Brown Countertop Modern (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.red_floating,Floating Counter - Red Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern_corner.reinforced,"Counter - Light Countertop Modern (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_oak,Counter - Dark Countertop Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_blue,Counter - Dark Blue,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_oak_floating.reinforced,Floating Counter - Dark Oak Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_stained_oak.reinforced,Counter - Dark Countertop Stained Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.teal_floating,Floating Counter - Teal Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.blue_corner,Counter - Blue (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_oak.reinforced,Counter - Light Countertop Dark Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.black_floating.reinforced,Floating Counter - Black Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_oak_corner.reinforced,"Counter - Dark Countertop Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_stained_oak_corner.reinforced,"Counter - Light Countertop Stained Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_modern.reinforced,Counter - Wood Countertop Modern (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.sunstar,Counter - Sunstar,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_modern_corner,Counter - Wood Countertop Modern (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.blue_floating,Floating Counter - Blue Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.white_floating,Floating Counter - White Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.teal_floating.reinforced,Floating Counter - Teal Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white,Counter - Gray Countertop White,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_modern,Counter - Dark Countertop Modern,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_green.reinforced,Counter - Light Countertop Green (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_stained_oak,Counter - Dark Countertop Stained Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.teal_corner.reinforced,"Counter - Teal (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_modern_corner,Counter - Dark Countertop Modern (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_stained_oak_corner.reinforced,"Counter - Dark Countertop Stained Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.blue.reinforced,Counter - Blue (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_stained_oak_corner,Counter - Light Countertop Stained Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_birchwood_corner,Counter - Light Countertop Birchwood (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.wooden_floating,Floating Counter - Wooden Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_floating,Floating Counter - Dark Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.teal_corner,Counter - Teal (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.stained_oak_floating.reinforced,Floating Counter - Stained Oak Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.black.reinforced,Counter - Black (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_oak_corner.reinforced,"Counter - Dark Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_oak_corner,Counter - Light Countertop Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_corner,Counter - Light Countertop Dark (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.black_corner,Counter - Black (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_birchwood_corner.reinforced,"Counter - Light Countertop Birchwood (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.blue_floating.reinforced,Floating Counter - Blue Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.red_corner,Counter - Red (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.teal.reinforced,Counter - Teal (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_blue.reinforced,Counter - Dark Blue (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.red.reinforced,Counter - Red (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.green_floating.reinforced,Floating Counter - Green Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.steel_floating,Floating Counter - Steel Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.wooden_floating.reinforced,Floating Counter - Wooden Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern,Counter - Light Countertop Modern,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_oak_corner.reinforced,"Counter - Light Countertop Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_oak_corner.reinforced,"Counter - Light Countertop Dark Oak (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.red_corner.reinforced,"Counter - Red (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_stained_oak,Counter - Light Countertop Stained Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_blue_floating.reinforced,Floating Counter - Dark Blue Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.oak_floating.reinforced,Floating Counter - Oak Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.birchwood_floating,Floating Counter - Birchwood Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_white_corner,Counter - Wood Countertop White (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern_corner.reinforced,"Counter - Brown Countertop Modern (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_white_corner.reinforced,"Counter - Wood Countertop White (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_oak.reinforced,Counter - Dark Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_blue_corner,Counter - Dark Blue (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_oak.reinforced,Counter - Light Countertop Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.red_floating.reinforced,Floating Counter - Red Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.sunstar_floating.reinforced,Floating Counter - Sunstar Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.sunstar_corner,Counter - Sunstar (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.steel_floating.reinforced,Floating Counter - Steel Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white_corner.reinforced,"Counter - Gray Countertop White (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_modern,Counter - Wood Countertop Modern,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.black_corner.reinforced,"Counter - Black (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_oak_corner,Counter - Dark Countertop Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_modern_corner.reinforced,"Counter - Wood Countertop Modern (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.teal,Counter - Teal,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_oak_corner,Counter - Dark Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.modern_floating.reinforced,Floating Counter - Modern Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern,Counter - Brown Countertop Modern,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_floating.reinforced,Floating Counter - Dark Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_stained_oak.reinforced,Counter - Light Countertop Stained Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark,Counter - Light Countertop Dark,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white.reinforced,Counter - Gray Countertop White (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_birchwood,Counter - Light Countertop Birchwood,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark.reinforced,Counter - Light Countertop Dark (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_birchwood.reinforced,Counter - Light Countertop Birchwood (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_stained_oak_corner,Counter - Dark Countertop Stained Oak (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_oak_floating,Floating Counter - Dark Oak Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_corner.reinforced,"Counter - Light Countertop Dark (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.blue_corner.reinforced,"Counter - Blue (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_modern_corner.reinforced,"Counter - Dark Countertop Modern (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_oak.reinforced,Counter - Dark Countertop Oak (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_oak,Counter - Dark Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.brown_countertop_modern_corner,Counter - Brown Countertop Modern (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.sunstar_corner.reinforced,"Counter - Sunstar (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_blue_corner.reinforced,"Counter - Dark Blue (Corner, Reinforced)",built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.sunstar_floating,Floating Counter - Sunstar Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.dark_countertop_modern.reinforced,Counter - Dark Countertop Modern (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.black,Counter - Black,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.black_floating,Floating Counter - Black Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.dark_blue_floating,Floating Counter - Dark Blue Floating,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_02.white_floating.reinforced,Floating Counter - White Floating (Reinforced),built,counter,100,counter,,same,True
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_dark_oak,Counter - Light Countertop Dark Oak,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.wood_countertop_white,Counter - Wood Countertop White,built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.grey_countertop_white_corner,Counter - Gray Countertop White (Corner),built,counter,,counter,,definition has no capacity,False
+T23,worldessentials.tikitown.fixtures_counters_tterika_01.light_countertop_modern.reinforced,Counter - Light Countertop Modern (Reinforced),built,counter,100,counter,,same,True
+T24,worldessentials.tikitown.tikitown_furniture_03_41,Bookshelf - In-Wall,built,shelves,40,shelves,30,definition higher,False
+T24,worldessentials.tikitown.tikitown_furniture_03_41.reinforced,Bookshelf - In-Wall (Reinforced),built,shelves,100,shelves,30,definition higher,True
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_32,Pink Wood Sidetable,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_52,Light Wood Small Shelves,built,shelves,20,shelves,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_28,Pink Wood Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_48,Pink Wood Shelves,built,shelves,40,shelves,40,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_57,Light Wood Hanging Shelves,built,shelves,10,shelves,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_32,White Wood Sidetable,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_48,Blue Wood Shelves,built,shelves,40,shelves,40,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_24,White Wood Mirror and Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_52,Blue Wood Small Shelves,built,shelves,20,shelves,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_40,Light Wood Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_36,Pink Wood Small Drawer,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_52,Pink Wood Small Shelves,built,shelves,20,shelves,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_24,Light Wood Mirror and Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_57,Pink Wood Hanging Shelves,built,shelves,10,shelves,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_40,White Wood Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_28,Blue Wood Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_24,Pink Wood Mirror and Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_28,White Wood Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_36,Light Wood Small Drawer,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_36,Blue Wood Small Drawer,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_48,Light Wood Shelves,built,shelves,40,shelves,40,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_36,White Wood Small Drawer,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_57,Blue Wood Hanging Shelves,built,shelves,10,shelves,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_57,White Wood Hanging Shelves,built,shelves,10,shelves,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_32,Light Wood Sidetable,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_48,White Wood Shelves,built,shelves,40,shelves,40,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_40,Blue Wood Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_32,Blue Wood Sidetable,built,sidetable,10,sidetable,10,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_02_40,Pink Wood Wardrobe,built,wardrobe,25,wardrobe,25,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_04_52,White Wood Small Shelves,built,shelves,20,shelves,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_01_28,Light Wood Drawers,built,dresser,20,dresser,20,same,False
+T25,worldessentials.tikitown.tikitown_furniture_bedroom_03_24,Blue Wood Mirror and Drawers,built,dresser,20,dresser,20,same,False
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_0,Tall Bookshelf - Walnut,built,shelves,40,shelves,40,same,False
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_0.reinforced,Tall Bookshelf - Walnut (Reinforced),built,shelves,100,shelves,40,definition higher,True
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_12,Tall Bookshelf - White,built,shelves,40,shelves,40,same,False
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_8.reinforced,Tall Bookshelf - Charcoal (Reinforced),built,shelves,100,shelves,40,definition higher,True
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_12.reinforced,Tall Bookshelf - White (Reinforced),built,shelves,100,shelves,40,definition higher,True
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_4.reinforced,Tall Bookshelf - Oak (Reinforced),built,shelves,100,shelves,40,definition higher,True
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_8,Tall Bookshelf - Charcoal,built,shelves,40,shelves,40,same,False
+T30,worldessentials.tikitown.furniture_shelving_tterika_01_4,Tall Bookshelf - Oak,built,shelves,40,shelves,40,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_36.reinforced,Green Locker (Reinforced),built,locker,100,locker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_40,Orange Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_8.reinforced,Green Military Locker (Reinforced),built,militarylocker,100,militarylocker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_32,Gray Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_44.reinforced,Purple Locker (Reinforced),built,locker,100,locker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_20,Small Steel Military Locker,built,locker,40,locker,40,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_12.reinforced,Small Olive Military Locker (Reinforced),built,locker,100,locker,40,definition higher,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_32.reinforced,Gray Locker (Reinforced),built,locker,100,locker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_24,Pink Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_40.reinforced,Orange Locker (Reinforced),built,locker,100,locker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_36,Green Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_28,Red Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_16.reinforced,Steel Military Locker (Reinforced),built,militarylocker,100,militarylocker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_0.reinforced,Small Gray Metal Cabinet (Reinforced),built,metal_shelves,100,metal_shelves,40,definition higher,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_28.reinforced,Red Locker (Reinforced),built,locker,100,locker,,same,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_0,Small Gray Metal Cabinet,built,metal_shelves,40,metal_shelves,40,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_44,Purple Locker,built,locker,40,locker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_4.reinforced,Small Black Footlocker (Reinforced),built,locker,100,locker,10,definition higher,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_20.reinforced,Small Steel Military Locker (Reinforced),built,locker,100,locker,40,definition higher,True
+T36,worldessentials.tikitown.furniture_storage_tterika_02_12,Small Olive Military Locker,built,locker,40,locker,40,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_4,Small Black Footlocker,built,locker,10,locker,10,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_8,Green Military Locker,built,militarylocker,40,militarylocker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_16,Steel Military Locker,built,militarylocker,40,militarylocker,,same,False
+T36,worldessentials.tikitown.furniture_storage_tterika_02_24.reinforced,Pink Locker (Reinforced),built,locker,100,locker,,same,True

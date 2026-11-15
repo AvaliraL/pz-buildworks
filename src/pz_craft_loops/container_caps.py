@@ -213,6 +213,9 @@ local function installTooltip()
         if ISContextMenu and ISContextMenu.instance and ISContextMenu.instance.visibleCheck then return end
         local item = self.item
         if not item then return end
+        -- tooltips also show recipe SCRIPT items (machine / craft windows), which have no mod data:
+        -- calling hasModData on one was caught by the pcall but logged every frame in debug mode
+        if not instanceof(item, "InventoryItem") then return end
         local record = nil
         pcall(function()
             if item:hasModData() then record = item:getModData().kbwcbStorage end

@@ -49,9 +49,20 @@ _PATCH_GROUPS = [
     # ContainerPosition Low, no IsHigh), so KBW treated them as floor counters and refused to put
     # them over one. KBW lets a piece share a square with a counter only if it is a high wall
     # object (MoveType=WallObject + IsHigh), as the sheet-35 upper cabinets are.
+    # solidtrans removed too (user 2026-11-13: upper counters blocked movement). KBW / WE build a
+    # piece as passable only when its sprite has no solid / solidtrans (applyPartFlags), and a
+    # vanilla overhead cabinet has neither. No attached flags here, so it stays on WE's thumpable
+    # path (container from the definition), now with canPassThrough.
     ("edit_ddd_RUS_fixtures_counters_03", set(range(0, 64)),
      [(b"MoveType", b"WallObject"), (b"IsHigh", b"")],
-     {b"Surface", b"ContainerPosition"}),
+     {b"Surface", b"ContainerPosition", b"solidtrans"}),
+
+    # --- Dirkie "Swikea" upper counters (d_furniture_kitchen_01 0-7, 112, 113; file 35): high
+    # attached WallObjects with their own container, but the pack also made them solidtrans, so
+    # they blocked the square (user 2026-11-13). Without it WE builds them like our Future upper
+    # cabinets (confirmed: walk-through, container works): a moveable wall prop + the definition's
+    # properties (Properties.applyToObject).
+    ("d_furniture_kitchen_01", {0, 1, 2, 3, 4, 5, 6, 7, 112, 113}, [], {b"solidtrans"}),
 
     # --- Dirkies green military case (furniture_storage_ddd_01_4): stackable like vanilla/KBW crates
     # (IsStackable + IsTable + Surface). Vanilla allows a crate while stack height + Surface <= 96.
@@ -185,6 +196,14 @@ _TT_PATCH_GROUPS = [
     # Their Surface is already 48: 48 + 48 = 96 allows a 2nd, a 3rd would be 144.
     ("furniture_storage_tterika_02", set(range(0, 4)) | set(range(12, 16)) | set(range(20, 24)),
      [(b"IsStackable", b""), (b"IsTable", b"")], set()),
+    # tterika lighting (52_tikitown_lighting.json, user 2026-11-14). Tiles with a lit version on the
+    # pack's *_on sheet get HasLightOnSprite, like vanilla's lamps: without it the game never swaps
+    # to <sheet>_on_<i> when the light is on. OUTDOOR: only the OPEN neon sign (6 / 7, built on the
+    # pack tiles). The street / traffic lights are built on our copies (tikitown_lighting.LIGHT_COPIES,
+    # user: map-placed copies must not change), so the traffic-head light and their lit-sprite flags
+    # moved there and are no longer patched onto the pack tiles.
+    ("lighting_outdoor_tterika_01", {6, 7}, [(b"HasLightOnSprite", b"")], set()),
+    ("lighting_indoor_tterika_01", {0} | set(range(4, 14)) | set(range(16, 62)), [(b"HasLightOnSprite", b"")], set()),
     # tikitown-props-14 soundproofing: NO LONGER PATCHED (2026-08-28). The IsMoveAble removal, Facing
     # and door-trim overrides changed map-placed soundproofing too; they now live on our own copies
     # (tikitown_soundproof.copy_props, KBWTikiTownWallOverlays_1200..1206).
@@ -1504,6 +1523,8 @@ def _add_future_room_tvs():
                           for t, (tv, _f, _q) in enumerate(_PACK_TVS)})
     # the 2nd Wall Screen TV copies use their own screen tiles (see WALLTV_BASE)
     TV_SCREEN_MAP.update({walltv_name(n): walltv_screen_names(n) for n in range(len(WALLTV))})
+    # Monitoring Station / Bank TVs: their own screen frames (monitoring_tvs.py)
+    TV_SCREEN_MAP.update({mon_tv_name(s): mon_tv_screen_names(s) for s in MON_TV_SRC})
 
 
 # Future Wall Screen TV, 2nd copies (user, 2026-11-13). The first copies (IceShell 176 / 177) came
@@ -1535,9 +1556,107 @@ def walltv_screen_names(n):
     return ["%s_%d" % (ICESHELL_TILESET, WALLTV_BASE + n + 16 * (k + 1)) for k in range(3)]
 
 
+# Monitoring Station / Monitoring Bank TVs (user, 2026-11-14; monitoring_tvs.py): vanilla security_01
+# 0-3 ("Terminal", Facing S/E/N/W, two angled screens) and 4-5 ("Monitors", wall objects Facing S/E,
+# four screens) as working TVs. Copies at FIXED indices MON_TV_BASE.. after the Blackwood copies,
+# each with its own screen frames at +16 / +32 / +48 (vanilla screen layout, as WALLTV).
+MON_TV_SHEET = "security_01"
+MON_TV_SRC = [0, 1, 2, 3, 4, 5]
+MON_TV_BASE = 264
+
+
+def mon_tv_name(src):
+    return "%s_%d" % (ICESHELL_TILESET, MON_TV_BASE + MON_TV_SRC.index(src))
+
+
+def mon_tv_screen_names(src):
+    j = MON_TV_BASE + MON_TV_SRC.index(src)
+    return ["%s_%d" % (ICESHELL_TILESET, j + 16 * (k + 1)) for k in range(3)]
+
+
+def mon_tv_props(src):
+    """Vanilla props + the TV flags our working TVs use (Wall Screen TV / fridge door TV). No CanScrap
+    (it would scrap a built piece for free); pick-up stays as vanilla (CustomItem = the TV item,
+    which keeps our sprite, like the Wall Screen TV)."""
+    return _replace(_vanilla_props(MON_TV_SHEET, src), signal=b"tv", IsoType=b"IsoTelevision", TV=b"",
+                    CustomItem=b"Base.TvWideScreen", CanScrap=None)
+
+
 def walltv_face_sprites():
     """KBW face -> our 2nd Wall Screen TV sprite."""
     return {edge: walltv_name(n) for n, (_s, edge) in enumerate(WALLTV)}
+
+
+# Blackwood one-offs (Community pack Blackwood.tiles, user 2026-11-14): mirrored second facings at
+# FIXED indices BLACKWOOD_BASE.. (after the last Wall Screen TV screen, 254). Art = the pack tile
+# flipped left-right (Resources/Blackwood/<sheet>.png: the pack's blackwood.pack is the old
+# headerless format), props = the pack's with the attached flag swapped and the new Facing.
+# No depth maps (the pack ships none for Blackwood). In the ice-shell tileset so no new tiledef
+# (and no change to WE's mod.info) is needed.
+BLACKWOOD_BASE = 256
+_BLACKWOOD_ART = r"C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\3628736763\mods\CommunityTilePack\Resources\Blackwood"
+# (sheet, source index, mirrored Facing or None)
+BLACKWOOD_MIRRORS = [
+    ("blackwood3", 14, None),     # War on a Star cosplay (gold)       faces E -> S
+    ("blackwood3", 15, None),     # War on a Star cosplay (trooper)    faces E -> S
+    ("blackwood3", 17, b"S"),     # Cosplay squid poster  attachedW -> attachedN (pack says Facing N)
+    ("blackwood5", 16, b"S"),     # Dartboard             attachedW, Facing E -> attachedN, Facing S
+    ("blackwood5", 17, b"E"),     # Ye ol' Winchester     attachedN, Facing S -> attachedW, Facing E
+]
+# UNFLIPPED copies with a corrected Facing, after the mirrors (user, in game 2026-11-14: the squid
+# poster could not be placed on a west wall). The pack tile says attachedW + Facing N; vanilla's
+# ISMoveableSpriteProps picks the wall from Facing (N = a south wall), so a west wall is refused.
+# West-wall pieces use Facing E (like the Blackwood dartboard).
+BLACKWOOD_FIXES = [
+    ("blackwood3", 17, b"E"),     # Cosplay squid poster  attachedW, Facing N -> Facing E
+    ("blackwood3", 14, None),     # War on a Star cosplay (gold)    : walk-through copy (no solid)
+    ("blackwood3", 15, None),     # War on a Star cosplay (trooper) : walk-through copy (no solid)
+]
+# props dropped from every Blackwood copy (user, in game 2026-11-14: the cosplay armour stands should
+# not block movement; WE's applyPartFlags makes any solid / solidtrans sprite block)
+_BLACKWOOD_DROP = {b"solid", b"solidtrans"}
+
+
+def blackwood_mirror_name(sheet, src_index):
+    """Our mirrored copy of <sheet>_<src_index>."""
+    j = [(sh, s) for sh, s, _f in BLACKWOOD_MIRRORS].index((sheet, src_index))
+    return "%s_%d" % (ICESHELL_TILESET, BLACKWOOD_BASE + j)
+
+
+def blackwood_fixed_name(sheet, src_index):
+    """Our unflipped, Facing-corrected copy of <sheet>_<src_index>."""
+    j = [(sh, s) for sh, s, _f in BLACKWOOD_FIXES].index((sheet, src_index))
+    return "%s_%d" % (ICESHELL_TILESET, BLACKWOOD_BASE + len(BLACKWOOD_MIRRORS) + j)
+
+
+def _blackwood_tiles(tilesets):
+    """[(index, name, image, props)] for the Blackwood mirrors."""
+    from PIL import Image
+    out = []
+    sheets = {}
+    entries = ([(sh, s, f, True, blackwood_mirror_name(sh, s)) for sh, s, f in BLACKWOOD_MIRRORS]
+               + [(sh, s, f, False, blackwood_fixed_name(sh, s)) for sh, s, f in BLACKWOOD_FIXES])
+    for j, (sh, s, facing, flip, name) in enumerate(entries):
+        if sh not in sheets:
+            sheets[sh] = Image.open(os.path.join(_BLACKWOOD_ART, sh + ".png")).convert("RGBA")
+        x, y = (s % 8) * 128, (s // 8) * 256
+        im = sheets[sh].crop((x, y, x + 128, y + 256))
+        if flip:
+            im = im.transpose(Image.FLIP_LEFT_RIGHT)
+        p = []
+        for k, v in tilesets[sh.encode()][6][s]:
+            if k in _BLACKWOOD_DROP:
+                continue
+            if k == b"Facing":
+                if not facing:
+                    p.append((k, v))      # no new Facing given: keep the pack's
+                continue
+            p.append((_ATTACH_SWAP.get(k, k) if flip else k, v))
+        if facing:
+            p.append((b"Facing", facing))
+        p.sort(key=lambda kv: kv[0])
+        out.append((BLACKWOOD_BASE + j, name, im, p))
+    return out
 
 
 def _walltv_tiles(cache):
@@ -2095,6 +2214,27 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
             name, im, p = walltv[j]
             tiles.append((name, im))
             props.append(p)
+        # Blackwood mirrored facings at fixed indices BLACKWOOD_BASE..
+        if len(props) > BLACKWOOD_BASE:
+            raise RuntimeError("wall TV screens reach %d; Blackwood mirrors start at %d" % (len(props), BLACKWOOD_BASE))
+        for j, name, im, p in _blackwood_tiles(tilesets):
+            props += [[] for _ in range(j - len(props))]
+            tiles.append((name, im))
+            props.append(p)
+        # Monitoring Station / Bank TVs + their screen frames at fixed indices MON_TV_BASE..
+        if len(props) > MON_TV_BASE:
+            raise RuntimeError("Blackwood copies reach %d; the monitoring TVs start at %d" % (len(props), MON_TV_BASE))
+        import monitoring_tvs as _mtv
+        mon = {}
+        for s in MON_TV_SRC:
+            mon[MON_TV_BASE + MON_TV_SRC.index(s)] = (mon_tv_name(s), _mtv.art(s), mon_tv_props(s))
+            for name, fr in zip(mon_tv_screen_names(s), _mtv.screen_frames(s)):
+                mon[int(name.rsplit("_", 1)[1])] = (name, fr, [])      # screen tiles: no props
+        for j in sorted(mon):
+            props += [[] for _ in range(j - len(props))]
+            name, im, p = mon[j]
+            tiles.append((name, im))
+            props.append(p)
     n = _write_pack(os.path.join(media_dir, "texturepacks", ICESHELL_PACK + ".pack"), ICESHELL_PACK + "0", tiles)
     cols = 8
     # from the highest index used (props), not the tile count: the pump sinks sit at fixed indices
@@ -2204,6 +2344,20 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
             cell = _wall_plane_depth(edge, art, _WALLTV_DEPTH_BIAS)
             for j in idx:
                 depth.paste(cell, ((j % cols) * cw, (j // cols) * ch))
+        # Monitoring Station / Bank TVs: vanilla's own DEPTH_security_01 cell, for the TV and (as
+        # vanilla does for its TV screens) its three screen frames
+        _sec = os.path.join(os.path.dirname(_VANILLA_DEPTH_REFRIG), "DEPTH_%s.png" % MON_TV_SHEET)
+        if os.path.isfile(_sec):
+            sdepth = Image.open(_sec).convert("RGBA")
+            scols = sdepth.size[0] // cw
+            for s in MON_TV_SRC:
+                c = _vanilla_depth_cell_index(MON_TV_SHEET, s)
+                if c is None:
+                    continue
+                cell = sdepth.crop(((c % scols) * cw, (c // scols) * ch, (c % scols) * cw + cw, (c // scols) * ch + ch))
+                j0 = MON_TV_BASE + MON_TV_SRC.index(s)
+                for j in [j0] + [j0 + 16 * (k + 1) for k in range(3)]:
+                    depth.paste(cell, ((j % cols) * cw, (j // cols) * ch))
         os.makedirs(os.path.join(common_media_dir, "depthmaps"), exist_ok=True)
         depth.save(os.path.join(common_media_dir, "depthmaps", "DEPTH_%s.png" % ICESHELL_TILESET))
         # seat positions for the wheelchair copies (Rest / sit animation)
@@ -2340,6 +2494,10 @@ TT_TABLETOP_SPRITES = ["tikitown-props-14_%d" % i
 TT_TABLETOP_SPRITES += ["tikitown-props-14_%d" % i for i in (90, 91, 92, 93, 104, 105)]
 # (the medical centrifuge / analyzer copies are no longer built, user 2026-08-28: off the list)
 TABLETOP_DECOR = []
+# Blackwood table-top one-offs (blackwood_props.py, file 68): IsTableTop + IsSurfaceOffset, Surface 34
+BLACKWOOD_TABLETOP = (["blackwood5_%d" % i for i in (40, 44, 45, 47)] + ["blackwood6_60"]
+                      + ["blackwood7_%d" % i for i in (24, 25, 26, 61)])
+TABLETOP_DECOR += BLACKWOOD_TABLETOP
 _add_future_room_tvs()      # Future Room wall-TV copies get generated screens (append-only)
 _TABLETOP_SPRITES += TABLETOP_DECOR
 

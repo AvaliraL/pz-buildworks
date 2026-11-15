@@ -404,8 +404,8 @@
       "canBePadlocked": true
      },
      "container": {
-      "type": "locker",
-      "capacity": 40
+      "type": "StandingToolbox",
+      "capacity": 75
      }
     }
    ]
@@ -1919,7 +1919,7 @@
      },
      "container": {
       "type": "shelves",
-      "capacity": 20
+      "capacity": 40
      }
     }
    ]
@@ -2022,7 +2022,7 @@
      },
      "container": {
       "type": "shelves",
-      "capacity": 20
+      "capacity": 40
      }
     }
    ]

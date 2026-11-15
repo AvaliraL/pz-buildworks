@@ -16,7 +16,8 @@ K = r"c:\Users\josep\Kiro"
 REPO = os.path.join(K, "pz-buildworks")
 P = os.path.join(K, "pz_craft_loops")
 SUBMODS = ["World Essentials - Community Buildworks", "World Essentials - TikiTown Buildworks",
-           "World Essentials (base, our files only)"]
+           "World Essentials (base, our files only)",
+           "World Essentials - Simon MD Buildworks"]   # NEW submod 2026-11-14 (build_simonmd_mod.py)
 EXPANSION = "World Essentials - Knox Buildworks Expansion (our files only)"
 
 SRC_SCRIPTS = [
@@ -34,7 +35,11 @@ SRC_SCRIPTS = [
     "tikitown_wall_detailing.py", "kbw_sort_order.py", "pump_sinks.py", "tile_coverage_inventory.py",
     "ladders.py", "dirkies_decor_house.py", "dirkies_window_decor.py", "dirkies_medical.py",
     "tikitown_barrel_planters.py", "dylan_gun_racks.py", "dylan_future_room_extras.py",
-    "tikitown_entertainment.py", "tikitown_rugs.py", "tikitown_signs.py",
+    "tikitown_entertainment.py", "tikitown_rugs.py", "tikitown_signs.py", "tikitown_tile_floors.py",
+    "tikitown_commercial_glass_walls.py", "tikitown_lighting.py",
+    "build_simonmd_mod.py", "simonmd_fencing.py", "map_buildmenu_addons.py", "buildingcraft_b42_inventory.py",
+    "container_capacity_audit.py", "fix_container_caps_to_tile.py",
+    "blackwood_props.py", "monitoring_tvs.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",
@@ -49,7 +54,8 @@ TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "41_tikitown_roof_slope_walls.json", "42_tikitown_garage_trim.json",
     "43_tikitown_wall_paint_cladding.json", "44_tikitown_wall_trim.json",
     "45_tikitown_ladders.json", "46_tikitown_barrel_planters.json", "47_tikitown_entertainment.json",
-    "48_tikitown_rugs.json", "49_tikitown_signs.json",
+    "48_tikitown_rugs.json", "49_tikitown_signs.json", "50_tikitown_tile_floors.json",
+    "51_tikitown_commercial_glass_walls.json", "52_tikitown_lighting.json",
 ]
 
 
@@ -121,6 +127,23 @@ def match_we_format(we_dir, baseline_dir):
                 skipped.append(os.path.relpath(p, we_dir)); continue
             indent, ascii_, seps, nl, tail, bom = style
             data = json.loads(open(p, "rb").read().decode("utf-8-sig"))
+            # (2026-11-14) WE ships the definitions in its own buildable order, not our md5 order, so
+            # a compare listed every line of an unchanged file. Follow the baseline's order (ids WE
+            # has keep WE's position; new ids follow in our order): data-neutral.
+            base = json.loads(open(q, "rb").read().decode("utf-8-sig"))
+            if (isinstance(data, dict) and isinstance(base, dict) and isinstance(data.get("buildables"), list)
+                    and isinstance(base.get("buildables"), list)):
+                ours = {b.get("id"): b for b in data["buildables"]}
+                pos = [b.get("id") for b in base["buildables"]]
+                known = set(pos)
+                data["buildables"] = ([ours[i] for i in pos if i in ours]
+                                      + [b for b in data["buildables"] if b.get("id") not in known])
+            elif (isinstance(data, dict) and isinstance(base, dict) and data and base
+                  and all(isinstance(v, str) for v in data.values())
+                  and all(isinstance(v, str) for v in base.values())):
+                # flat translation tables (IG_UI / Tooltip): WE's key order, then our new keys
+                data = dict([(kk, data[kk]) for kk in base if kk in data]
+                            + [(kk, v) for kk, v in data.items() if kk not in base])
             out = json.dumps(data, indent=indent, ensure_ascii=ascii_, separators=seps).replace("\n", nl) + tail
             raw = (b"\xef\xbb\xbf" if bom else b"") + out.encode("utf-8")
             if raw != open(p, "rb").read():
@@ -162,6 +185,10 @@ def main():
         tk = os.path.join(K, "zomboid", "tikitown")
         tk_files = TIKI_SRC + [f for f in os.listdir(tk) if f.endswith(".md") or f == "WALL_SHEET_INDEX_REFERENCE.txt"]
         out.append(("src/tikitown", mirror_files(tk, tk_files, os.path.join(REPO, "src", "tikitown"))))
+        sm = os.path.join(K, "zomboid", "simonmd")       # Simon MD submod sources (2026-11-14)
+        if os.path.isdir(sm):
+            sm_files = [f for f in os.listdir(sm) if f.endswith((".json", ".md"))]
+            out.append(("src/simonmd", mirror_files(sm, sm_files, os.path.join(REPO, "src", "simonmd"))))
         notes = os.path.join(REPO, "notes")
         os.makedirs(notes, exist_ok=True)
         for s in (os.path.join(K, "zomboid", "WE_submods", "BUG_PASS_2026-11-01.md"),

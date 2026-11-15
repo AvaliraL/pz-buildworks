@@ -51,6 +51,10 @@ SRC_DEFS = [
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\65_community_dirkies_medical.json",
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\66_community_dylan_gun_racks.json",
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\67_community_dylan_future_room_extras.json",
+    # Blackwood one-offs: cosplay stands, poster, dartboard, rifle, table-top figures (blackwood_props.py)
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\68_community_blackwood_props.json",
+    # vanilla Monitoring Station / Monitoring Bank as working TVs (monitoring_tvs.py)
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\69_community_monitoring_tvs.json",
 ]
 OUT_ROOT = r"c:\Users\josep\Kiro\zomboid\communitytilepack\mod"
 

@@ -55,6 +55,9 @@ SRC_FILES = [
     "47_tikitown_entertainment.json",     # tikitown_entertainment.py
     "48_tikitown_rugs.json",              # tikitown_rugs.py
     "49_tikitown_signs.json",             # tikitown_signs.py
+    "50_tikitown_tile_floors.json",       # tikitown_tile_floors.py
+    "51_tikitown_commercial_glass_walls.json",   # tikitown_commercial_glass_walls.py
+    "52_tikitown_lighting.json",          # tikitown_lighting.py
 ]
 
 # WE merge 2026-11-10: the WE dev declined these pending a multiplayer review. Not built for WE

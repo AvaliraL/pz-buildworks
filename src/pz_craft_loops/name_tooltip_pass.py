@@ -93,6 +93,11 @@ KBW_KEYS = {  # type -> KBW-owned key (text confirmed in KBW's EN Tooltip.json, 
     "Window": "Tooltip_KBW_Shared_Window",
     "Roof": "Tooltip_KBW_Shared_RoofSection",
     "Freezer": "Tooltip_KBW_Shared_Freezer",
+    # lamps (52_tikitown_lighting.json, 2026-11-14): KBW VE's own lamp keys
+    "TableLamp": "Tooltip_KBW_Shared_TableLamp",
+    "FloorLamp": "Tooltip_KBW_Shared_FloorLamp",
+    "WallLamp": "Tooltip_KBW_Shared_WallLamp",
+    "ExitSign": "Tooltip_KBW_Shared_ExitSign",
 }
 TEXT = {
     "Wall": "{a}wall section.",
@@ -153,6 +158,10 @@ TEXT = {
     "Flag": "Decorative flag.",
     "Figure": "Decorative figure.",
     "Decoration": "Decorative piece.",
+    "Floor": "Floor covering. Lay it on a square with a floor.",
+    "StreetLight": "Street light. Lights up when switched on, with power. The pole can be walked and driven through.",
+    "TrafficLight": ("Two-storey traffic light with a yellow bulb. Lights up when switched on, with power. "
+                     "The pole can be walked and driven through."),
     "StorageSink": "Plumbed sink with a storage shelf underneath.",
     "StorageSinkReinforced": "Plumbed sink with a large reinforced storage shelf underneath.",
     "PumpStorageSink": ("Sink with a storage shelf underneath. Draws water like a hand pump: no plumbing "
@@ -212,6 +221,8 @@ SUB_TYPE = {
     "Chairs": "Chair", "Medical Equipment": "MedicalEquipment", "Barrel Planters": "BarrelPlanter",
     "Gun Racks": "GunRack",
     "Neon Signs": "NeonSign", "Curtains": "BeadCurtain", "Entertainment": "StripperPole",
+    "Table Lamps": "TableLamp", "Floor Lamps": "FloorLamp", "Wall Lights": "WallLamp", "Exit Signs": "ExitSign",
+    "Street Lights": "StreetLight", "Traffic Lights": "TrafficLight",
 }
 
 
@@ -276,12 +287,18 @@ def piece_type(b):
         if "trellis" in n: return "Trellis", ""
         if "Half-Wall" in sub: return "HalfWall", ""
         if "door frame" in n or pc in ("doorframe", "door"): return "WallDoorway", a
+        # an explicit corner / post class wins over "window" in the name (51_ storefront corners
+        # and posts are named after their window style; no earlier piece is affected)
+        if pc == "pillar": return "Pillar", ""
+        if pc == "corner": return "WallCorner", a
         if "window" in n or pc in ("window", "windowsframe"): return "WallWindow", a
         if pc == "pillar" or "pillar" in n or "post" in n: return "Pillar", ""
         if pc == "corner" or "corner" in n: return "WallCorner", a
         return "Wall", a
     if cat.startswith("Windows"):
         return "Window", ""
+    if cat == "Floors":                          # 50_tikitown_tile_floors.json (2026-11-14)
+        return "Floor", ""
     return SUB_TYPE.get(sub, "Decoration"), ""
 
 

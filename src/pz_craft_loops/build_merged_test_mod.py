@@ -98,6 +98,8 @@ PACK_OF = {
     "68": "Blackwood",
     # vanilla Monitoring Station / Monitoring Bank as working TVs (monitoring_tvs.py)
     "69": "Community",
+    # vanilla B42 ramps_01 drivable car ramps (vehicle_ramps.py)
+    "73": "Community",
 }
 # Completed = verified in-game; everything else -> In Progress.
 # Whole sheets confirmed complete:
@@ -123,7 +125,8 @@ COMPLETED_SHEETS = {"21","22","23","24","25","26","27","28","29","31","32","33",
                     # racks / Future Room extras ("all of dirkies / Dylan can be marked complete")
                     "63", "64", "65", "66", "67",
                     "68",   # Blackwood one-offs: all confirmed in game (user, 2026-11-14)
-                    "69"}   # Monitoring Station / Bank TVs: confirmed in game (user, 2026-11-14)
+                    "69",   # Monitoring Station / Bank TVs: confirmed in game (user, 2026-11-14)
+                    "73"}   # vehicle ramps: build + remove confirmed in game (user, 2026-11-14)
 # -> In Progress by omission: "30" (shelving), future sheets.
 
 # PER-PIECE status overrides (finer than sheet-level), matched by buildable id PREFIX.
@@ -426,6 +429,10 @@ def main():
     write_ladder_guard_lua(os.path.join(_media, "lua", "shared", GUARD_LUA_COMMUNITY))
     from kbw_tilepatch import write_gunrack_overlay_lua, GUNRACK_LUA_NAME
     write_gunrack_overlay_lua(os.path.join(_media, "lua", "server", "Items", GUNRACK_LUA_NAME))
+    from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
+    write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
+    from vehicle_ramps import write_ramp_remove_lua, REMOVE_LUA_NAME
+    write_ramp_remove_lua(os.path.join(_media, "lua", "client", REMOVE_LUA_NAME))
     # TikiTown wall overlays: our own copied tiles (as in the submod)
     from tikitown_wall_overlays import write_overlay_assets
     write_overlay_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))

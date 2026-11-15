@@ -180,6 +180,8 @@ TEXT = {
     "GunRack": "Two-tile pegboard rack that hangs on a wall. Each half holds items and shows guns when filled.",
     "Ladder": ("Climbable ladder. Leave the square above it open. For more floors, build another "
                "ladder on top of it."),
+    "VehicleRamp": ("Drivable ramp, 20 tiles long, that climbs one storey. Needs 20 clear squares, open "
+                    "air above the run, and a floor to drive onto at the top."),
 }
 TYPE_BY_ID = {
     "community.dirkies.containers.furniture_storage_ddd_01_4": "StackCase",
@@ -216,7 +218,7 @@ SUB_TYPE = {
     "Space Viewscreens": "Viewscreen", "Frosted Panels": "Viewscreen", "Statues": "Figure",
     "Rugs": "Rug", "Hedges": "Hedge", "Posters": "Poster", "Newburbs Flags": "Flag",
     "Newburbs Windows": "Window", "Decor": "Decoration", "Radios & TVs": "Television",
-    "Ladders": "Ladder",
+    "Ladders": "Ladder", "Ramps": "VehicleRamp",
     "Window Trim": "WindowTrim", "Window Planters": "WindowPlanter", "Potted Plants": "PottedPlant",
     "Chairs": "Chair", "Medical Equipment": "MedicalEquipment", "Barrel Planters": "BarrelPlanter",
     "Gun Racks": "GunRack",

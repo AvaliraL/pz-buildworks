@@ -110,6 +110,15 @@ def half_crate_requirements(base_req, reinforced_req=None):
 
 HALVE_LOG = []   # (id, before_inputs, after_inputs) for audits
 
+# WE declined the half-cost recipe for these (update 6371434639292603896); keep their original
+# `materials: kbwve.extended.metal` cost to match WE (user, honour WE's choice).
+HALVE_EXCLUDE = {
+    "community.dirkies.containers.location_community_medical_ddd_01_10",
+    "community.dylan.containers.DylansRandomFurniture03_34",
+    "community.dylan.containers.DylansRandomFurniture03_45",
+    "community.tk.containers.fixtures_counters_tk_01_0",
+}
+
 
 def _cost_str(req):
     parts = []
@@ -129,7 +138,7 @@ def halve_metal_bases(buildables):
     for b in buildables:
         bid = b.get("id") or ""
         sib = by_id.get(bid + SUFFIX)
-        if bid.endswith(SUFFIX) or sib is None:
+        if bid.endswith(SUFFIX) or sib is None or bid in HALVE_EXCLUDE:
             continue
         sst = sib.get("stages") or []
         for i, st in enumerate(b.get("stages") or []):

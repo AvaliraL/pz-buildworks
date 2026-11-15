@@ -55,6 +55,8 @@ SRC_DEFS = [
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\68_community_blackwood_props.json",
     # vanilla Monitoring Station / Monitoring Bank as working TVs (monitoring_tvs.py)
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\69_community_monitoring_tvs.json",
+    # vanilla B42 ramps_01 drivable car ramps (vehicle_ramps.py)
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\73_kbwcb_vehicle_ramps.json",
 ]
 OUT_ROOT = r"c:\Users\josep\Kiro\zomboid\communitytilepack\mod"
 
@@ -180,6 +182,12 @@ def write_mod(mod_id, mod_name, description):
     # gun rack fill overlays for our copies (66_community_dylan_gun_racks.json)
     from kbw_tilepatch import write_gunrack_overlay_lua, GUNRACK_LUA_NAME
     write_gunrack_overlay_lua(os.path.join(_media, "lua", "server", "Items", GUNRACK_LUA_NAME))
+    # hand-pump sinks give clean water (clears vanilla's moved-sink marker; kbw_tilepatch.py)
+    from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
+    write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
+    # built vehicle ramps can be removed (right-click, destroy tool; vehicle_ramps.py)
+    from vehicle_ramps import write_ramp_remove_lua, REMOVE_LUA_NAME
+    write_ramp_remove_lua(os.path.join(_media, "lua", "client", REMOVE_LUA_NAME))
     # workbench built-in tools + bench craft menu (bench_tools.py): HELD BACK from World Essentials
     # (WE merge 2026-11-10: the WE dev declined them pending a multiplayer review). Not applied to
     # the definitions, no Lua, no labels here; the test bundle (build_merged_test_mod) keeps them.

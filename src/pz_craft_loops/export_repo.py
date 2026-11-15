@@ -16,8 +16,10 @@ K = r"c:\Users\josep\Kiro"
 REPO = os.path.join(K, "pz-buildworks")
 P = os.path.join(K, "pz_craft_loops")
 SUBMODS = ["World Essentials - Community Buildworks", "World Essentials - TikiTown Buildworks",
-           "World Essentials (base, our files only)",
-           "World Essentials - Simon MD Buildworks"]   # NEW submod 2026-11-14 (build_simonmd_mod.py)
+           "World Essentials (base, our files only)"]
+# "World Essentials - Simon MD Buildworks" (2026-11-14) is no longer exported: WE merged its 12
+# buildables into Knox Buildworks Expansion (definitions/35_simonmd_fencing.json, identical, same
+# ids), so offering the submod again would define them twice. Still built into work/ for reference.
 EXPANSION = "World Essentials - Knox Buildworks Expansion (our files only)"
 
 SRC_SCRIPTS = [
@@ -39,7 +41,8 @@ SRC_SCRIPTS = [
     "tikitown_commercial_glass_walls.py", "tikitown_lighting.py",
     "build_simonmd_mod.py", "simonmd_fencing.py", "map_buildmenu_addons.py", "buildingcraft_b42_inventory.py",
     "container_capacity_audit.py", "fix_container_caps_to_tile.py",
-    "blackwood_props.py", "monitoring_tvs.py",
+    "blackwood_props.py", "monitoring_tvs.py", "vehicle_ramps.py", "we_update_check.py",
+    "_refresh_upstream_keep_work.py",
 ]
 TIKI_SRC = [  # build_tikitown_mod.SRC_FILES
     "21_tikitown_walls_accurate.json", "22_tikitown_doors.json", "23_tikitown_furniture.json",

@@ -1,0 +1,252 @@
+seating
+{
+    VERSION = 3,
+    tileset
+    {
+        name = KBWCommunityIceShell,
+        /* KBWCommunityIceShell_126 (seat of location_community_medical_ddd_01_24) */
+        tile
+        {
+            xy = 6 15,
+
+            position
+            {
+                id = E,
+                translate = 0 988 313,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_127 (seat of location_community_medical_ddd_01_25) */
+        tile
+        {
+            xy = 7 15,
+
+            position
+            {
+                id = W,
+                translate = 0 786 554,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_128 (seat of location_community_medical_ddd_01_26) */
+        tile
+        {
+            xy = 0 16,
+
+            position
+            {
+                id = N,
+                translate = 1723 536 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_129 (seat of location_community_medical_ddd_01_27) */
+        tile
+        {
+            xy = 1 16,
+
+            position
+            {
+                id = S,
+                translate = 0 382 0,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_190 (seat of furniture_seating_indoor_01_0) */
+        tile
+        {
+            xy = 6 23,
+
+            position
+            {
+                id = S,
+                translate = 2693 1233 1944,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_191 (seat of furniture_seating_indoor_01_1) */
+        tile
+        {
+            xy = 7 23,
+
+            position
+            {
+                id = S,
+                translate = -248 1243 1952,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_192 (seat of furniture_seating_indoor_01_2) */
+        tile
+        {
+            xy = 0 24,
+
+            position
+            {
+                id = E,
+                translate = 1586 1227 -610,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_193 (seat of furniture_seating_indoor_01_3) */
+        tile
+        {
+            xy = 1 24,
+
+            position
+            {
+                id = E,
+                translate = 1744 1201 1934,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_194 (seat of furniture_seating_indoor_01_4) */
+        tile
+        {
+            xy = 2 24,
+
+            position
+            {
+                id = W,
+                translate = -1787 1188 -1463,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_195 (seat of furniture_seating_indoor_01_5) */
+        tile
+        {
+            xy = 3 24,
+
+            position
+            {
+                id = W,
+                translate = -1996 1175 1685,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_196 (seat of furniture_seating_indoor_01_6) */
+        tile
+        {
+            xy = 4 24,
+
+            position
+            {
+                id = N,
+                translate = 1197 1227 -1672,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_197 (seat of furniture_seating_indoor_01_7) */
+        tile
+        {
+            xy = 5 24,
+
+            position
+            {
+                id = N,
+                translate = -1417 1197 -1602,
+
+                properties
+                {
+                    BlockLeft = true,
+                    BlockRight = true,
+                }
+            }
+        }
+        /* KBWCommunityIceShell_203 (MRI table seats, medical 42) */
+        tile
+        {
+            xy = 3 25,
+            position
+        {
+            id = S,
+            translate = 3400 4100 3300,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+        /* KBWCommunityIceShell_204 (MRI table seats, medical 43) */
+        tile
+        {
+            xy = 4 25,
+            position
+        {
+            id = W,
+            translate = 2100 4200 0,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+            position
+        {
+            id = E,
+            translate = 4700 4100 0,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+    }
+}

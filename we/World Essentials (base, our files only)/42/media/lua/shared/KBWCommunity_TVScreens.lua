@@ -14,6 +14,14 @@ local SCREENS = {
     ["KBWCommunityIceShell_179"] = { "KBWCommunityTVScreens_21", "KBWCommunityTVScreens_22", "KBWCommunityTVScreens_23" },
     ["KBWCommunityIceShell_180"] = { "KBWCommunityTVScreens_24", "KBWCommunityTVScreens_25", "KBWCommunityTVScreens_26" },
     ["KBWCommunityIceShell_181"] = { "KBWCommunityTVScreens_27", "KBWCommunityTVScreens_28", "KBWCommunityTVScreens_29" },
+    ["KBWCommunityIceShell_205"] = { "KBWCommunityIceShell_221", "KBWCommunityIceShell_237", "KBWCommunityIceShell_253" },
+    ["KBWCommunityIceShell_206"] = { "KBWCommunityIceShell_222", "KBWCommunityIceShell_238", "KBWCommunityIceShell_254" },
+    ["KBWCommunityIceShell_264"] = { "KBWCommunityIceShell_280", "KBWCommunityIceShell_296", "KBWCommunityIceShell_312" },
+    ["KBWCommunityIceShell_265"] = { "KBWCommunityIceShell_281", "KBWCommunityIceShell_297", "KBWCommunityIceShell_313" },
+    ["KBWCommunityIceShell_266"] = { "KBWCommunityIceShell_282", "KBWCommunityIceShell_298", "KBWCommunityIceShell_314" },
+    ["KBWCommunityIceShell_267"] = { "KBWCommunityIceShell_283", "KBWCommunityIceShell_299", "KBWCommunityIceShell_315" },
+    ["KBWCommunityIceShell_268"] = { "KBWCommunityIceShell_284", "KBWCommunityIceShell_300", "KBWCommunityIceShell_316" },
+    ["KBWCommunityIceShell_269"] = { "KBWCommunityIceShell_285", "KBWCommunityIceShell_301", "KBWCommunityIceShell_317" },
 }
 
 -- Explicit bounded cache: Kahlua weak tables do not provide reliable eviction.

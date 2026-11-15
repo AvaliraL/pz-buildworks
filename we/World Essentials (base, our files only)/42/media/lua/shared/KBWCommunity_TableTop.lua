@@ -44,6 +44,15 @@ local SPRITES = {
     ["tikitown-props-14_93"] = true,
     ["tikitown-props-14_104"] = true,
     ["tikitown-props-14_105"] = true,
+    ["blackwood5_40"] = true,
+    ["blackwood5_44"] = true,
+    ["blackwood5_45"] = true,
+    ["blackwood5_47"] = true,
+    ["blackwood6_60"] = true,
+    ["blackwood7_24"] = true,
+    ["blackwood7_25"] = true,
+    ["blackwood7_26"] = true,
+    ["blackwood7_61"] = true,
 }
 
 local function tableHeightUnder(obj)

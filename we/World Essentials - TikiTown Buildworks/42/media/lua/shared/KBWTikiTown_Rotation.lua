@@ -5,6 +5,8 @@
 -- inventory. Offsets come from our Knox Buildworks definitions (which sprites are the faces of
 -- one piece). Applied once tile definitions are loaded.
 local OFFSETS = {
+    ["KBWTikiTownEntertainment_3"] = { Eoffset = 1 },
+    ["KBWTikiTownEntertainment_4"] = { Soffset = -1 },
     ["furniture_storage_tterika_02_12"] = { Eoffset = 1, Facing = "S", MoveType = "Object", Noffset = 2, Woffset = 3 },
     ["furniture_storage_tterika_02_13"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
     ["furniture_storage_tterika_02_14"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
@@ -37,6 +39,8 @@ local OFFSETS = {
     ["furniture_storage_tterika_02_45"] = { Facing = "E", MoveType = "Object", Noffset = 1, Soffset = -1, Woffset = 2 },
     ["furniture_storage_tterika_02_46"] = { Eoffset = -1, Facing = "N", MoveType = "Object", Soffset = -2, Woffset = 1 },
     ["furniture_storage_tterika_02_47"] = { Eoffset = -2, Facing = "W", MoveType = "Object", Noffset = -1, Soffset = -3 },
+    ["lighting_indoor_tterika_01_60"] = { Eoffset = 1 },
+    ["lighting_indoor_tterika_01_61"] = { Soffset = -1 },
     ["tikitown_furniture_bedroom_01_24"] = { Eoffset = 1, Noffset = 3, Woffset = 2 },
     ["tikitown_furniture_bedroom_01_25"] = { Noffset = 2, Soffset = -1, Woffset = 1 },
     ["tikitown_furniture_bedroom_01_26"] = { Eoffset = -1, Noffset = 1, Soffset = -2 },

@@ -495,8 +495,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -735,8 +735,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -1231,8 +1231,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -1351,8 +1351,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -1471,8 +1471,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -1591,8 +1591,8 @@
             "isThumpable": true
           },
           "container": {
-            "type": "dresser",
-            "capacity": 20
+            "type": "wardrobe",
+            "capacity": 25
           }
         }
       ]
@@ -2571,8 +2571,8 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "locker",
-            "capacity": 40
+            "type": "shelves",
+            "capacity": 80
           }
         }
       ]
@@ -2738,7 +2738,67 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.metal",
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 2
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 2
+              }
+            ],
             "skills": {
               "MetalWelding": 4
             },
@@ -3524,8 +3584,8 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "smallcrate",
-            "capacity": 25
+            "type": "locker",
+            "capacity": 30
           }
         }
       ]
@@ -3750,8 +3810,8 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "smallcrate",
-            "capacity": 25
+            "type": "StackedAmmoPallet",
+            "capacity": 90
           }
         }
       ]
@@ -3849,8 +3909,8 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "smallcrate",
-            "capacity": 25
+            "type": "locker",
+            "capacity": 30
           }
         }
       ]
@@ -4075,8 +4135,8 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "smallcrate",
-            "capacity": 25
+            "type": "StackedAmmoPallet",
+            "capacity": 90
           }
         }
       ]
@@ -5318,7 +5378,7 @@
           },
           "container": {
             "type": "shelves",
-            "capacity": 20
+            "capacity": 40
           },
           "allowSpriteReuse": true
         }

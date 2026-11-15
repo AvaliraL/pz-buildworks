@@ -79,7 +79,7 @@ local function installTooltip()
         originalRender(self)
         if ISContextMenu and ISContextMenu.instance and ISContextMenu.instance.visibleCheck then return end
         local item = self.item
-        if not item then return end
+        if not item or not instanceof(item, "InventoryItem") then return end
         local record = nil
         pcall(function()
             if item:hasModData() then record = item:getModData().kbwcbStorage end

@@ -4,11 +4,8 @@ local G = { bySprite = {}, failures = 0 }
 local slots = {}
 -- Restrict registration to the exact scope certified by Java LoadGridGate.
 local allowed = { tv = {}, tabletop = {} }
-for i = 36, 39 do allowed.tv["DylansRandomFurniture02_"..i] = true; allowed.tv["WECommunity_DylansRandomFurniture02_"..i] = true end
-for _,i in ipairs({0,1,2,3,24,25,26,27,28,29,30,31}) do
-    allowed.tabletop["kitchen_misc_tk_01_"..i] = true
-end
-for _,i in ipairs({0,1,2,3,4,5,6,7,12,13,14,15,23,27,28,29,30,31}) do allowed.tabletop["tikitown-props-14_"..i] = true end
+for _,name in ipairs({"DylansRandomFurniture02_36","DylansRandomFurniture02_37","DylansRandomFurniture02_38","DylansRandomFurniture02_39","WECommunity_DylansRandomFurniture02_36","WECommunity_DylansRandomFurniture02_37","WECommunity_DylansRandomFurniture02_38","WECommunity_DylansRandomFurniture02_39","KBWCommunityIceShell_176","KBWCommunityIceShell_177","KBWCommunityIceShell_178","KBWCommunityIceShell_179","KBWCommunityIceShell_180","KBWCommunityIceShell_181","KBWCommunityIceShell_205","KBWCommunityIceShell_206","KBWCommunityIceShell_264","KBWCommunityIceShell_265","KBWCommunityIceShell_266","KBWCommunityIceShell_267","KBWCommunityIceShell_268","KBWCommunityIceShell_269"}) do allowed.tv[name] = true end
+for _,name in ipairs({"kitchen_misc_tk_01_0","kitchen_misc_tk_01_1","kitchen_misc_tk_01_2","kitchen_misc_tk_01_3","kitchen_misc_tk_01_24","kitchen_misc_tk_01_25","kitchen_misc_tk_01_26","kitchen_misc_tk_01_27","kitchen_misc_tk_01_28","kitchen_misc_tk_01_29","kitchen_misc_tk_01_30","kitchen_misc_tk_01_31","tikitown-props-14_0","tikitown-props-14_1","tikitown-props-14_2","tikitown-props-14_3","tikitown-props-14_4","tikitown-props-14_5","tikitown-props-14_6","tikitown-props-14_7","tikitown-props-14_12","tikitown-props-14_13","tikitown-props-14_14","tikitown-props-14_15","tikitown-props-14_23","tikitown-props-14_27","tikitown-props-14_28","tikitown-props-14_29","tikitown-props-14_30","tikitown-props-14_31","tikitown-props-14_90","tikitown-props-14_91","tikitown-props-14_92","tikitown-props-14_93","tikitown-props-14_104","tikitown-props-14_105","blackwood5_40","blackwood5_44","blackwood5_45","blackwood5_47","blackwood6_60","blackwood7_24","blackwood7_25","blackwood7_26","blackwood7_61"}) do allowed.tabletop[name] = true end
 function G.register(key, names, fn)
     if type(fn) ~= "function" or not allowed[key] then return false end
     for name in pairs(names) do if not allowed[key][name] then return false end end

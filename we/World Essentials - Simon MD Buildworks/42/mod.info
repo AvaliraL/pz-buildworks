@@ -1,7 +1,0 @@
-name=World Essentials - Simon MD Buildworks
-id=SimonMDKBW
-description=Knox Buildworks buildables for Simon MD's tiles as bundled in Raven Creek. Bundled World Essentials submod; requires Knox Buildworks, Knox Buildworks Vanilla Expanded and Raven Creek.
-require=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,RavenCreek_B42
-loadModAfter=WorldEssentials,KnoxBuildworks,KnoxBuildworksVanillaExpanded,RavenCreek_B42
-versionMin=42.0
-tags=Build 42,Build

@@ -25,15 +25,16 @@
     "media/KnoxBuildworks/definitions/60_community_dirkies_stairs.json",
     "media/KnoxBuildworks/definitions/61_community_dirkies_bedroom.json",
     "media/KnoxBuildworks/definitions/62_community_dirkies_couches.json",
-    "media/KnoxBuildworks/definitions/70_kbwcb_refrigeration_tiers.json",
     "media/KnoxBuildworks/definitions/63_community_dirkies_decor_house.json",
     "media/KnoxBuildworks/definitions/64_community_dirkies_window_decor.json",
     "media/KnoxBuildworks/definitions/65_community_dirkies_medical.json",
     "media/KnoxBuildworks/definitions/66_community_dylan_gun_racks.json",
     "media/KnoxBuildworks/definitions/67_community_dylan_future_room_extras.json",
-    "media/KnoxBuildworks/definitions/71_kbwcb_pump_sinks.json",
-    "media/KnoxBuildworks/definitions/72_kbwcb_ladders.json",
     "media/KnoxBuildworks/definitions/68_community_blackwood_props.json",
-    "media/KnoxBuildworks/definitions/69_community_monitoring_tvs.json"
+    "media/KnoxBuildworks/definitions/69_community_monitoring_tvs.json",
+    "media/KnoxBuildworks/definitions/73_kbwcb_vehicle_ramps.json",
+    "media/KnoxBuildworks/definitions/70_kbwcb_refrigeration_tiers.json",
+    "media/KnoxBuildworks/definitions/71_kbwcb_pump_sinks.json",
+    "media/KnoxBuildworks/definitions/72_kbwcb_ladders.json"
   ]
 }

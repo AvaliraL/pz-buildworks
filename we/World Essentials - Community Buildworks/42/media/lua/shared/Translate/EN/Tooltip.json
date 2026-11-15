@@ -62,5 +62,6 @@
   "Tooltip_KBWCB_GunRack": "Two-tile pegboard rack that hangs on a wall. Each half holds items and shows guns when filled.",
   "Tooltip_KBWCB_PumpSink": "Draws water like a hand pump: no plumbing or water main needed. Follows the server's Knox Buildworks well settings.",
   "Tooltip_KBWCB_Ladder": "Climbable ladder. Leave the square above it open. For more floors, build another ladder on top of it.",
-  "Tooltip_KBWCB_LadderTop": "Decorative ladder top for the open square above a ladder. Not climbable; you can walk through it."
+  "Tooltip_KBWCB_LadderTop": "Decorative ladder top for the open square above a ladder. Not climbable; you can walk through it.",
+  "Tooltip_KBWCB_VehicleRamp": "Drivable ramp, 20 tiles long, that climbs one storey. Needs 20 clear squares, open air above the run, and a floor to drive onto at the top."
 }

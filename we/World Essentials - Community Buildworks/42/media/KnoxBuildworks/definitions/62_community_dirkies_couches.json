@@ -4,10 +4,10 @@
   "source": "Dirkies d_furniture_couches_01 (9 two-tile couches + 9 armchairs, merged to all-4-facings from the addon's split S/E and N/W entries) + d_location_sofaking corner couches (4 colors teal/purple/pink/orange, 1-tile 4-facing 90-degree corners for L/C-shape designs). Facings/grid from the pack .tiles (Facing/SpriteGridPos); corners net-new (addon never built them). Props mirror the addon couch: isThumpable/canPassThrough/isCorner.",
   "buildables": [
     {
-      "id": "community.dirkies.couches.lcouch_pink",
+      "id": "community.dirkies.couches.couch_blue_comfy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_lcouch_pink",
-      "displayName": "Pink L-Shaped Couch",
+      "translationKey": "IGUI_dirkies_couches_couch_blue_comfy",
+      "displayName": "Blue Comfy Couch",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -15,7 +15,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "KBWCommunityLCouch_40",
+      "iconSprite": "d_furniture_couches_01_0",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -30,17 +30,13 @@
           "id": "built",
           "geometry": {
             "faces": {
-              "W": {
+              "S": {
                 "layers": [
                   {
                     "rows": [
                       [
-                        "KBWCommunityLCouch_40",
-                        "KBWCommunityLCouch_17"
-                      ],
-                      [
-                        "KBWCommunityLCouch_18",
-                        false
+                        "d_furniture_couches_01_0",
+                        "d_furniture_couches_01_1"
                       ]
                     ]
                   }
@@ -49,15 +45,10 @@
               "N": {
                 "layers": [
                   {
-                    "x": -1,
                     "rows": [
                       [
-                        "KBWCommunityLCouch_16",
-                        "KBWCommunityLCouch_43"
-                      ],
-                      [
-                        false,
-                        "KBWCommunityLCouch_20"
+                        "d_furniture_couches_01_6",
+                        "d_furniture_couches_01_7"
                       ]
                     ]
                   }
@@ -66,33 +57,26 @@
               "E": {
                 "layers": [
                   {
-                    "x": -1,
-                    "y": -1,
                     "rows": [
                       [
-                        false,
-                        "KBWCommunityLCouch_21"
+                        "d_furniture_couches_01_3"
                       ],
                       [
-                        "KBWCommunityLCouch_22",
-                        "KBWCommunityLCouch_41"
+                        "d_furniture_couches_01_2"
                       ]
                     ]
                   }
                 ]
               },
-              "S": {
+              "W": {
                 "layers": [
                   {
-                    "y": -1,
                     "rows": [
                       [
-                        "KBWCommunityLCouch_19",
-                        false
+                        "d_furniture_couches_01_5"
                       ],
                       [
-                        "KBWCommunityLCouch_42",
-                        "KBWCommunityLCouch_23"
+                        "d_furniture_couches_01_4"
                       ]
                     ]
                   }
@@ -120,7 +104,7 @@
                 "items": [
                   "Base.Plank"
                 ],
-                "amount": 11
+                "amount": 6
               },
               {
                 "id": "source_material_2",
@@ -130,7 +114,7 @@
                 "items": [
                   "Base.Nails"
                 ],
-                "amount": 11
+                "amount": 6
               },
               {
                 "id": "source_material_3",
@@ -140,7 +124,7 @@
                 "items": [
                   "Base.Thread"
                 ],
-                "amount": 8
+                "amount": 4
               }
             ],
             "skills": {
@@ -148,425 +132,11 @@
             }
           },
           "construction": {
-            "time": 260,
+            "time": 220,
             "timedAction": "BuildWoodenStructureSmall",
             "completionSound": "BuildWoodenStructureLarge",
             "xp": {
-              "Woodwork": 60
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.armchair_dark_blue_lazy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_dark_blue_lazy",
-      "displayName": "Dark Blue Lazy Armchair",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_73",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_73"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_72"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_74"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_75"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.armchair_blue_lazy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_blue_lazy",
-      "displayName": "Blue Lazy Armchair",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_36",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_36"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_37"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_38"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_39"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.armchair_blue_comfy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_blue_comfy",
-      "displayName": "Blue Comfy Armchair",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_12",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_12"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_13"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_14"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_15"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
+              "Woodwork": 45
             },
             "category": "Carpentry"
           },
@@ -726,10 +296,10 @@
       ]
     },
     {
-      "id": "community.dirkies.couches.armchair_dark_brown_lazy",
+      "id": "community.dirkies.couches.couch_blue_lazy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_dark_brown_lazy",
-      "displayName": "Dark Brown Lazy Armchair",
+      "translationKey": "IGUI_dirkies_couches_couch_blue_lazy",
+      "displayName": "Blue Lazy Couch",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -737,7 +307,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "d_furniture_couches_01_77",
+      "iconSprite": "d_furniture_couches_01_24",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -757,29 +327,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_77"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_76"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_78"
+                        "d_furniture_couches_01_24",
+                        "d_furniture_couches_01_25"
                       ]
                     ]
                   }
@@ -790,112 +339,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_79"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.armchair_pink_comfy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_pink_comfy",
-      "displayName": "Pink Comfy Armchair",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_56",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_56"
+                        "d_furniture_couches_01_30",
+                        "d_furniture_couches_01_31"
                       ]
                     ]
                   }
@@ -906,7 +351,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_57"
+                        "d_furniture_couches_01_27"
+                      ],
+                      [
+                        "d_furniture_couches_01_26"
                       ]
                     ]
                   }
@@ -917,472 +365,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_58"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_59"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.couch_blue_comfy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_couch_blue_comfy",
-      "displayName": "Blue Comfy Couch",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_0",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_0",
-                        "d_furniture_couches_01_1"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_6",
-                        "d_furniture_couches_01_7"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_3"
+                        "d_furniture_couches_01_29"
                       ],
                       [
-                        "d_furniture_couches_01_2"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_5"
-                      ],
-                      [
-                        "d_furniture_couches_01_4"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 6
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 6
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 4
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 220,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 45
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.lcouch_teal",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_lcouch_teal",
-      "displayName": "Teal L-Shaped Couch",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "KBWCommunityLCouch_32",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_32",
-                        "KBWCommunityLCouch_1"
-                      ],
-                      [
-                        "KBWCommunityLCouch_2",
-                        false
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "x": -1,
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_0",
-                        "KBWCommunityLCouch_35"
-                      ],
-                      [
-                        false,
-                        "KBWCommunityLCouch_4"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "x": -1,
-                    "y": -1,
-                    "rows": [
-                      [
-                        false,
-                        "KBWCommunityLCouch_5"
-                      ],
-                      [
-                        "KBWCommunityLCouch_6",
-                        "KBWCommunityLCouch_33"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "y": -1,
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_3",
-                        false
-                      ],
-                      [
-                        "KBWCommunityLCouch_34",
-                        "KBWCommunityLCouch_7"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 11
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 11
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 8
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 260,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 60
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.couch_dark_brown_comfy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_couch_dark_brown_comfy",
-      "displayName": "Dark Brown Comfy Couch",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_82",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_82",
-                        "d_furniture_couches_01_83"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_86",
-                        "d_furniture_couches_01_87"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_81"
-                      ],
-                      [
-                        "d_furniture_couches_01_80"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_85"
-                      ],
-                      [
-                        "d_furniture_couches_01_84"
+                        "d_furniture_couches_01_28"
                       ]
                     ]
                   }
@@ -1602,10 +588,10 @@
       ]
     },
     {
-      "id": "community.dirkies.couches.couch_dark_red_comfy",
+      "id": "community.dirkies.couches.couch_pink_comfy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_couch_dark_red_comfy",
-      "displayName": "Dark Red Comfy Couch",
+      "translationKey": "IGUI_dirkies_couches_couch_pink_comfy",
+      "displayName": "Pink Comfy Couch",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -1613,7 +599,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "d_furniture_couches_01_106",
+      "iconSprite": "d_furniture_couches_01_48",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -1633,8 +619,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_106",
-                        "d_furniture_couches_01_107"
+                        "d_furniture_couches_01_48",
+                        "d_furniture_couches_01_49"
                       ]
                     ]
                   }
@@ -1645,8 +631,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_110",
-                        "d_furniture_couches_01_111"
+                        "d_furniture_couches_01_54",
+                        "d_furniture_couches_01_55"
                       ]
                     ]
                   }
@@ -1657,10 +643,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_105"
+                        "d_furniture_couches_01_51"
                       ],
                       [
-                        "d_furniture_couches_01_104"
+                        "d_furniture_couches_01_50"
                       ]
                     ]
                   }
@@ -1671,10 +657,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_109"
+                        "d_furniture_couches_01_53"
                       ],
                       [
-                        "d_furniture_couches_01_108"
+                        "d_furniture_couches_01_52"
                       ]
                     ]
                   }
@@ -1735,144 +721,6 @@
             "completionSound": "BuildWoodenStructureLarge",
             "xp": {
               "Woodwork": 45
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.armchair_purple_comfy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_armchair_purple_comfy",
-      "displayName": "Purple Comfy Armchair",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_8",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_8"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_9"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_10"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_11"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 4
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 3
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 150,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 30
             },
             "category": "Carpentry"
           },
@@ -1959,6 +807,152 @@
                       ],
                       [
                         "d_furniture_couches_01_68"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 6
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 6
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 4
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 220,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 45
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.couch_dark_brown_comfy",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_couch_dark_brown_comfy",
+      "displayName": "Dark Brown Comfy Couch",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_furniture_couches_01_82",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_82",
+                        "d_furniture_couches_01_83"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_86",
+                        "d_furniture_couches_01_87"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_81"
+                      ],
+                      [
+                        "d_furniture_couches_01_80"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_85"
+                      ],
+                      [
+                        "d_furniture_couches_01_84"
                       ]
                     ]
                   }
@@ -2178,10 +1172,10 @@
       ]
     },
     {
-      "id": "community.dirkies.couches.lcouch_purple",
+      "id": "community.dirkies.couches.couch_dark_red_comfy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_lcouch_purple",
-      "displayName": "Purple L-Shaped Couch",
+      "translationKey": "IGUI_dirkies_couches_couch_dark_red_comfy",
+      "displayName": "Dark Red Comfy Couch",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -2189,169 +1183,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "KBWCommunityLCouch_36",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dirkies",
-        "couches"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_36",
-                        "KBWCommunityLCouch_9"
-                      ],
-                      [
-                        "KBWCommunityLCouch_10",
-                        false
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "x": -1,
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_8",
-                        "KBWCommunityLCouch_39"
-                      ],
-                      [
-                        false,
-                        "KBWCommunityLCouch_12"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "x": -1,
-                    "y": -1,
-                    "rows": [
-                      [
-                        false,
-                        "KBWCommunityLCouch_13"
-                      ],
-                      [
-                        "KBWCommunityLCouch_14",
-                        "KBWCommunityLCouch_37"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "y": -1,
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_11",
-                        false
-                      ],
-                      [
-                        "KBWCommunityLCouch_38",
-                        "KBWCommunityLCouch_15"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "tool_hammer",
-                "role": "tool",
-                "mode": "keep",
-                "resourceType": "Item",
-                "tags": [
-                  "base:hammer"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "source_material_1",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Plank"
-                ],
-                "amount": 11
-              },
-              {
-                "id": "source_material_2",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Nails"
-                ],
-                "amount": 11
-              },
-              {
-                "id": "source_material_3",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.Thread"
-                ],
-                "amount": 8
-              }
-            ],
-            "skills": {
-              "Woodwork": 4
-            }
-          },
-          "construction": {
-            "time": 260,
-            "timedAction": "BuildWoodenStructureSmall",
-            "completionSound": "BuildWoodenStructureLarge",
-            "xp": {
-              "Woodwork": 60
-            },
-            "category": "Carpentry"
-          },
-          "object": {
-            "isThumpable": true,
-            "dismantable": true,
-            "canPassThrough": true,
-            "isCorner": true
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dirkies.couches.couch_blue_lazy",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_couch_blue_lazy",
-      "displayName": "Blue Lazy Couch",
-      "tooltipKey": "Tooltip_KBWCB_Decoration",
-      "category": "Furniture and Appliances",
-      "subcategory": "Seating",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "d_furniture_couches_01_24",
+      "iconSprite": "d_furniture_couches_01_106",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -2371,8 +1203,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_24",
-                        "d_furniture_couches_01_25"
+                        "d_furniture_couches_01_106",
+                        "d_furniture_couches_01_107"
                       ]
                     ]
                   }
@@ -2383,8 +1215,8 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_30",
-                        "d_furniture_couches_01_31"
+                        "d_furniture_couches_01_110",
+                        "d_furniture_couches_01_111"
                       ]
                     ]
                   }
@@ -2395,10 +1227,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_27"
+                        "d_furniture_couches_01_105"
                       ],
                       [
-                        "d_furniture_couches_01_26"
+                        "d_furniture_couches_01_104"
                       ]
                     ]
                   }
@@ -2409,10 +1241,10 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_29"
+                        "d_furniture_couches_01_109"
                       ],
                       [
-                        "d_furniture_couches_01_28"
+                        "d_furniture_couches_01_108"
                       ]
                     ]
                   }
@@ -2486,10 +1318,10 @@
       ]
     },
     {
-      "id": "community.dirkies.couches.couch_pink_comfy",
+      "id": "community.dirkies.couches.armchair_blue_comfy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_couch_pink_comfy",
-      "displayName": "Pink Comfy Couch",
+      "translationKey": "IGUI_dirkies_couches_armchair_blue_comfy",
+      "displayName": "Blue Comfy Armchair",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -2497,7 +1329,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "d_furniture_couches_01_48",
+      "iconSprite": "d_furniture_couches_01_12",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -2517,20 +1349,7 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_48",
-                        "d_furniture_couches_01_49"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "d_furniture_couches_01_54",
-                        "d_furniture_couches_01_55"
+                        "d_furniture_couches_01_12"
                       ]
                     ]
                   }
@@ -2541,10 +1360,7 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_51"
-                      ],
-                      [
-                        "d_furniture_couches_01_50"
+                        "d_furniture_couches_01_13"
                       ]
                     ]
                   }
@@ -2555,10 +1371,18 @@
                   {
                     "rows": [
                       [
-                        "d_furniture_couches_01_53"
-                      ],
+                        "d_furniture_couches_01_14"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
                       [
-                        "d_furniture_couches_01_52"
+                        "d_furniture_couches_01_15"
                       ]
                     ]
                   }
@@ -2586,7 +1410,7 @@
                 "items": [
                   "Base.Plank"
                 ],
-                "amount": 6
+                "amount": 4
               },
               {
                 "id": "source_material_2",
@@ -2596,7 +1420,7 @@
                 "items": [
                   "Base.Nails"
                 ],
-                "amount": 6
+                "amount": 4
               },
               {
                 "id": "source_material_3",
@@ -2606,7 +1430,7 @@
                 "items": [
                   "Base.Thread"
                 ],
-                "amount": 4
+                "amount": 3
               }
             ],
             "skills": {
@@ -2614,11 +1438,11 @@
             }
           },
           "construction": {
-            "time": 220,
+            "time": 150,
             "timedAction": "BuildWoodenStructureSmall",
             "completionSound": "BuildWoodenStructureLarge",
             "xp": {
-              "Woodwork": 45
+              "Woodwork": 30
             },
             "category": "Carpentry"
           },
@@ -2632,10 +1456,10 @@
       ]
     },
     {
-      "id": "community.dirkies.couches.lcouch_orange",
+      "id": "community.dirkies.couches.armchair_purple_comfy",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_dirkies_couches_lcouch_orange",
-      "displayName": "Orange L-Shaped Couch",
+      "translationKey": "IGUI_dirkies_couches_armchair_purple_comfy",
+      "displayName": "Purple Comfy Armchair",
       "tooltipKey": "Tooltip_KBWCB_Decoration",
       "category": "Furniture and Appliances",
       "subcategory": "Seating",
@@ -2643,7 +1467,7 @@
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "KBWCommunityLCouch_44",
+      "iconSprite": "d_furniture_couches_01_8",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -2658,34 +1482,12 @@
           "id": "built",
           "geometry": {
             "faces": {
-              "W": {
+              "S": {
                 "layers": [
                   {
                     "rows": [
                       [
-                        "KBWCommunityLCouch_44",
-                        "KBWCommunityLCouch_25"
-                      ],
-                      [
-                        "KBWCommunityLCouch_26",
-                        false
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "x": -1,
-                    "rows": [
-                      [
-                        "KBWCommunityLCouch_24",
-                        "KBWCommunityLCouch_47"
-                      ],
-                      [
-                        false,
-                        "KBWCommunityLCouch_28"
+                        "d_furniture_couches_01_8"
                       ]
                     ]
                   }
@@ -2694,33 +1496,31 @@
               "E": {
                 "layers": [
                   {
-                    "x": -1,
-                    "y": -1,
                     "rows": [
                       [
-                        false,
-                        "KBWCommunityLCouch_29"
-                      ],
-                      [
-                        "KBWCommunityLCouch_30",
-                        "KBWCommunityLCouch_45"
+                        "d_furniture_couches_01_9"
                       ]
                     ]
                   }
                 ]
               },
-              "S": {
+              "W": {
                 "layers": [
                   {
-                    "y": -1,
                     "rows": [
                       [
-                        "KBWCommunityLCouch_27",
-                        false
-                      ],
+                        "d_furniture_couches_01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
                       [
-                        "KBWCommunityLCouch_46",
-                        "KBWCommunityLCouch_31"
+                        "d_furniture_couches_01_11"
                       ]
                     ]
                   }
@@ -2748,7 +1548,7 @@
                 "items": [
                   "Base.Plank"
                 ],
-                "amount": 11
+                "amount": 4
               },
               {
                 "id": "source_material_2",
@@ -2758,7 +1558,7 @@
                 "items": [
                   "Base.Nails"
                 ],
-                "amount": 11
+                "amount": 4
               },
               {
                 "id": "source_material_3",
@@ -2768,7 +1568,7 @@
                 "items": [
                   "Base.Thread"
                 ],
-                "amount": 8
+                "amount": 3
               }
             ],
             "skills": {
@@ -2776,11 +1576,149 @@
             }
           },
           "construction": {
-            "time": 260,
+            "time": 150,
             "timedAction": "BuildWoodenStructureSmall",
             "completionSound": "BuildWoodenStructureLarge",
             "xp": {
-              "Woodwork": 60
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.armchair_blue_lazy",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_armchair_blue_lazy",
+      "displayName": "Blue Lazy Armchair",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_furniture_couches_01_36",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_36"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_38"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_39"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 3
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
             },
             "category": "Carpentry"
           },
@@ -2859,6 +1797,420 @@
                     "rows": [
                       [
                         "d_furniture_couches_01_35"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 3
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.armchair_pink_comfy",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_armchair_pink_comfy",
+      "displayName": "Pink Comfy Armchair",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_furniture_couches_01_56",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_56"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_57"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_58"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_59"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 3
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.armchair_dark_blue_lazy",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_armchair_dark_blue_lazy",
+      "displayName": "Dark Blue Lazy Armchair",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_furniture_couches_01_73",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_73"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_72"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_74"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_75"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 4
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 3
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 150,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.armchair_dark_brown_lazy",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_armchair_dark_brown_lazy",
+      "displayName": "Dark Brown Lazy Armchair",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "d_furniture_couches_01_77",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_77"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_76"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_78"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "d_furniture_couches_01_79"
                       ]
                     ]
                   }
@@ -3195,6 +2547,654 @@
             "completionSound": "BuildWoodenStructureLarge",
             "xp": {
               "Woodwork": 30
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.lcouch_teal",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_lcouch_teal",
+      "displayName": "Teal L-Shaped Couch",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "KBWCommunityLCouch_32",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_32",
+                        "KBWCommunityLCouch_1"
+                      ],
+                      [
+                        "KBWCommunityLCouch_2",
+                        false
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_0",
+                        "KBWCommunityLCouch_35"
+                      ],
+                      [
+                        false,
+                        "KBWCommunityLCouch_4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "y": -1,
+                    "rows": [
+                      [
+                        false,
+                        "KBWCommunityLCouch_5"
+                      ],
+                      [
+                        "KBWCommunityLCouch_6",
+                        "KBWCommunityLCouch_33"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "y": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_3",
+                        false
+                      ],
+                      [
+                        "KBWCommunityLCouch_34",
+                        "KBWCommunityLCouch_7"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 8
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 260,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 60
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.lcouch_purple",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_lcouch_purple",
+      "displayName": "Purple L-Shaped Couch",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "KBWCommunityLCouch_36",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_36",
+                        "KBWCommunityLCouch_9"
+                      ],
+                      [
+                        "KBWCommunityLCouch_10",
+                        false
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_8",
+                        "KBWCommunityLCouch_39"
+                      ],
+                      [
+                        false,
+                        "KBWCommunityLCouch_12"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "y": -1,
+                    "rows": [
+                      [
+                        false,
+                        "KBWCommunityLCouch_13"
+                      ],
+                      [
+                        "KBWCommunityLCouch_14",
+                        "KBWCommunityLCouch_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "y": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_11",
+                        false
+                      ],
+                      [
+                        "KBWCommunityLCouch_38",
+                        "KBWCommunityLCouch_15"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 8
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 260,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 60
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.lcouch_pink",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_lcouch_pink",
+      "displayName": "Pink L-Shaped Couch",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "KBWCommunityLCouch_40",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_40",
+                        "KBWCommunityLCouch_17"
+                      ],
+                      [
+                        "KBWCommunityLCouch_18",
+                        false
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_16",
+                        "KBWCommunityLCouch_43"
+                      ],
+                      [
+                        false,
+                        "KBWCommunityLCouch_20"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "y": -1,
+                    "rows": [
+                      [
+                        false,
+                        "KBWCommunityLCouch_21"
+                      ],
+                      [
+                        "KBWCommunityLCouch_22",
+                        "KBWCommunityLCouch_41"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "y": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_19",
+                        false
+                      ],
+                      [
+                        "KBWCommunityLCouch_42",
+                        "KBWCommunityLCouch_23"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 8
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 260,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 60
+            },
+            "category": "Carpentry"
+          },
+          "object": {
+            "isThumpable": true,
+            "dismantable": true,
+            "canPassThrough": true,
+            "isCorner": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dirkies.couches.lcouch_orange",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_dirkies_couches_lcouch_orange",
+      "displayName": "Orange L-Shaped Couch",
+      "tooltipKey": "Tooltip_KBWCB_Decoration",
+      "category": "Furniture and Appliances",
+      "subcategory": "Seating",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "KBWCommunityLCouch_44",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dirkies",
+        "couches"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_44",
+                        "KBWCommunityLCouch_25"
+                      ],
+                      [
+                        "KBWCommunityLCouch_26",
+                        false
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_24",
+                        "KBWCommunityLCouch_47"
+                      ],
+                      [
+                        false,
+                        "KBWCommunityLCouch_28"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "x": -1,
+                    "y": -1,
+                    "rows": [
+                      [
+                        false,
+                        "KBWCommunityLCouch_29"
+                      ],
+                      [
+                        "KBWCommunityLCouch_30",
+                        "KBWCommunityLCouch_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "y": -1,
+                    "rows": [
+                      [
+                        "KBWCommunityLCouch_27",
+                        false
+                      ],
+                      [
+                        "KBWCommunityLCouch_46",
+                        "KBWCommunityLCouch_31"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "tool_hammer",
+                "role": "tool",
+                "mode": "keep",
+                "resourceType": "Item",
+                "tags": [
+                  "base:hammer"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "source_material_1",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Plank"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_2",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Nails"
+                ],
+                "amount": 11
+              },
+              {
+                "id": "source_material_3",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.Thread"
+                ],
+                "amount": 8
+              }
+            ],
+            "skills": {
+              "Woodwork": 4
+            }
+          },
+          "construction": {
+            "time": 260,
+            "timedAction": "BuildWoodenStructureSmall",
+            "completionSound": "BuildWoodenStructureLarge",
+            "xp": {
+              "Woodwork": 60
             },
             "category": "Carpentry"
           },

@@ -92,6 +92,325 @@
       ]
     },
     {
+      "id": "community.dylan.containers.DylansGardenStuff01_8",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_8",
+      "displayName": "Garden Supply Box",
+      "tooltipKey": "Tooltip_KBWCB_Crate",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "WECommunity_DylansGardenStuff01_8",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansGardenStuff01_8"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansGardenStuff01_9"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansGardenStuff01_11",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_11",
+      "displayName": "Garden Backpack",
+      "tooltipKey": "Tooltip_KBWCB_Crate",
+      "category": "Containers",
+      "subcategory": "Crates",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "WECommunity_DylansGardenStuff01_11",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "crate_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 20
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansGardenStuff01_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansGardenStuff01_10"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 2
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "smallcrate",
+            "capacity": 25
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture01_10",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture01_10",
+      "displayName": "Red Toolbox Cabinet",
+      "tooltipKey": "Tooltip_KBWCB_ToolStorage",
+      "category": "Containers",
+      "subcategory": "Metal Containers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture01_10",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture01_10"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture01_11"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture01_26"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture01_27"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
       "id": "community.dylan.containers.DylansRandomFurniture01_12",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture01_12",
@@ -191,18 +510,18 @@
       ]
     },
     {
-      "id": "community.dylan.containers.Bookies_Store_13",
+      "id": "community.dylan.containers.DylansRandomFurniture03_37",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Bookies_Store_13",
-      "displayName": "Wooden Bookstore Shelf",
-      "tooltipKey": "Tooltip_KBWCB_Shelf",
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_37",
+      "displayName": "Hydroponics Lab Bench",
+      "tooltipKey": "Tooltip_KBWCB_LabStorage",
       "category": "Containers",
-      "subcategory": "Shelves",
-      "material": "Wood",
+      "subcategory": "Lockers",
+      "material": "Metal",
       "materialTags": [
-        "Wood"
+        "Metal"
       ],
-      "iconSprite": "WECommunity_Bookies_Store_13",
+      "iconSprite": "WECommunity_DylansRandomFurniture03_37",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -211,7 +530,1042 @@
         "community-tilepack",
         "dylan",
         "container",
-        "shelves"
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_36",
+                        "WECommunity_DylansRandomFurniture03_37"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_39"
+                      ],
+                      [
+                        "WECommunity_DylansRandomFurniture03_38"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_49",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_49",
+      "displayName": "Hydroponics Lab Bench (Open)",
+      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_49",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_48",
+                        "WECommunity_DylansRandomFurniture03_49"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_51"
+                      ],
+                      [
+                        "WECommunity_DylansRandomFurniture03_50"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_45",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_45",
+      "displayName": "Steel Lab Sink Counter",
+      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_45",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_44",
+                        "WECommunity_DylansRandomFurniture03_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_47"
+                      ],
+                      [
+                        "WECommunity_DylansRandomFurniture03_46"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_45.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_45_reinforced",
+      "displayName": "Steel Lab Sink Counter (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_45",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_44",
+                        "WECommunity_DylansRandomFurniture03_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_47"
+                      ],
+                      [
+                        "WECommunity_DylansRandomFurniture03_46"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_59",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_59",
+      "displayName": "Blue Lab Cabinet",
+      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_59",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_58",
+                        "WECommunity_DylansRandomFurniture03_59"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_57"
+                      ],
+                      [
+                        "WECommunity_DylansRandomFurniture03_56"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_34",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_34",
+      "displayName": "Steel Lab Hotplate Counter",
+      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_35"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_33"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_32"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_34.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_34_reinforced",
+      "displayName": "Steel Lab Hotplate Counter (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_34",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_34"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_35"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_33"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_32"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_54",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_54",
+      "displayName": "Glass Lab Shelving",
+      "tooltipKey": "Tooltip_KBWCB_Shelf",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_54",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_54"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_55"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.DylansRandomFurniture03_60",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_60",
+      "displayName": "Glass Lab Shelving (Alt)",
+      "tooltipKey": "Tooltip_KBWCB_Shelf",
+      "category": "Containers",
+      "subcategory": "Lockers",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_DylansRandomFurniture03_60",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "locker"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWallMetal",
+        "completionSound": "BuildMetalStructureMedium",
+        "category": "Welding",
+        "xp": {
+          "MetalWelding": 50
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_60"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansRandomFurniture03_61"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.metal",
+            "skills": {
+              "MetalWelding": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_ProjectsInMetal_Diverse"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "MetalWelding": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true,
+            "canBePadlocked": true
+          },
+          "container": {
+            "type": "locker",
+            "capacity": 40
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.Block_Trasher_51",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_51",
+      "displayName": "Blue Shop Counter",
+      "tooltipKey": "Tooltip_KBWCB_Counter",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "WECommunity_Block_Trasher_51",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "counter_wood"
       ],
       "construction": {
         "time": 75,
@@ -232,8 +1586,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Bookies_Store_12",
-                        "WECommunity_Bookies_Store_13"
+                        "WECommunity_Block_Trasher_51"
                       ]
                     ]
                   }
@@ -244,10 +1597,29 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Bookies_Store_15"
-                      ],
+                        "WECommunity_Block_Trasher_53"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
                       [
-                        "WECommunity_Bookies_Store_14"
+                        "WECommunity_Block_Trasher_55"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_49"
                       ]
                     ]
                   }
@@ -262,14 +1634,14 @@
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
                 }
               ],
               "skillAlternatives": [
@@ -283,14 +1655,450 @@
             }
           },
           "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
+            "isThumpable": true
           },
           "container": {
-            "type": "shelves",
-            "capacity": 20
+            "type": "counter"
           },
           "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.Block_Trasher_51.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_51_reinforced",
+      "displayName": "Blue Shop Counter (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_Block_Trasher_51",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_51"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_53"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_55"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_49"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.Block_Trasher_50",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_50",
+      "displayName": "Blue Shop Counter (Corner)",
+      "tooltipKey": "Tooltip_KBWCB_Counter",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Wood",
+      "materialTags": [
+        "Wood"
+      ],
+      "iconSprite": "WECommunity_Block_Trasher_50",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "counter_wood"
+      ],
+      "construction": {
+        "time": 75,
+        "timedAction": "BuildWoodenStructureMedium",
+        "completionSound": "BuildWoodenStructureMedium",
+        "category": "Furniture",
+        "xp": {
+          "Woodwork": 40
+        }
+      },
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_50"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_52"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_54"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_48"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "materials": "kbwve.extended.wood",
+            "skills": {
+              "Woodwork": 4
+            },
+            "knowledge": {
+              "recipes": [
+                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+              ],
+              "hideUntilLearned": true,
+              "needToBeLearned": true,
+              "sources": [
+                {
+                  "type": "magazine",
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                }
+              ],
+              "skillAlternatives": [
+                {
+                  "mode": "all",
+                  "skills": {
+                    "Woodwork": 6
+                  }
+                }
+              ]
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter"
+          },
+          "allowSpriteReuse": true
+        }
+      ]
+    },
+    {
+      "id": "community.dylan.containers.Block_Trasher_50.reinforced",
+      "allowSpriteReuse": true,
+      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_50_reinforced",
+      "displayName": "Blue Shop Counter (Corner, Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
+      "category": "Containers",
+      "subcategory": "Counters",
+      "material": "Metal",
+      "materialTags": [
+        "Metal"
+      ],
+      "iconSprite": "WECommunity_Block_Trasher_50",
+      "placement": {
+        "kind": "object",
+        "requiresFloor": true
+      },
+      "tags": [
+        "community-tilepack",
+        "dylan",
+        "container",
+        "counter_wood"
+      ],
+      "stages": [
+        {
+          "id": "built",
+          "geometry": {
+            "faces": {
+              "W": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_50"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "N": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_52"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_54"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_Block_Trasher_48"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "requirements": {
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
+            "skills": {
+              "MetalWelding": 7
+            }
+          },
+          "object": {
+            "isThumpable": true
+          },
+          "container": {
+            "type": "counter",
+            "capacity": 100
+          },
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
         }
       ]
     },
@@ -416,121 +2224,18 @@
       ]
     },
     {
-      "id": "community.dylan.containers.DylansRandomFurniture03_59",
+      "id": "community.dylan.containers.DylansBar01_43.reinforced",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_59",
-      "displayName": "Blue Lab Cabinet",
-      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "translationKey": "IGUI_community_dylan_containers_DylansBar01_43_reinforced",
+      "displayName": "Bar Counter (Reinforced)",
+      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
       "category": "Containers",
-      "subcategory": "Lockers",
+      "subcategory": "Restaurant",
       "material": "Metal",
       "materialTags": [
         "Metal"
       ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_59",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_58",
-                        "WECommunity_DylansRandomFurniture03_59"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_57"
-                      ],
-                      [
-                        "WECommunity_DylansRandomFurniture03_56"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.Bookies_Store_45",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Bookies_Store_45",
-      "displayName": "Metal Bookstore Shelf",
-      "tooltipKey": "Tooltip_KBWCB_Shelf",
-      "category": "Containers",
-      "subcategory": "Shelves",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "WECommunity_Bookies_Store_45",
+      "iconSprite": "WECommunity_DylansBar01_43",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -541,15 +2246,6 @@
         "container",
         "shelves"
       ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 40
-        }
-      },
       "stages": [
         {
           "id": "built",
@@ -560,8 +2256,7 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Bookies_Store_44",
-                        "WECommunity_Bookies_Store_45"
+                        "WECommunity_DylansBar01_43"
                       ]
                     ]
                   }
@@ -572,10 +2267,29 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Bookies_Store_47"
-                      ],
+                        "WECommunity_DylansBar01_45"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "E": {
+                "layers": [
+                  {
+                    "rows": [
                       [
-                        "WECommunity_Bookies_Store_46"
+                        "WECommunity_DylansBar01_47"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              "S": {
+                "layers": [
+                  {
+                    "rows": [
+                      [
+                        "WECommunity_DylansBar01_41"
                       ]
                     ]
                   }
@@ -584,41 +2298,87 @@
             }
           },
           "requirements": {
-            "materials": "kbwve.extended.wood",
+            "inputs": [
+              {
+                "id": "welding_mask",
+                "role": "tool",
+                "mode": "keep",
+                "tags": [
+                  "base:weldingmask"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "torch_fuel",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.BlowTorch"
+                ],
+                "uses": 4
+              },
+              {
+                "id": "small_sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SmallSheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "sheet_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.SheetMetal"
+                ],
+                "amount": 2
+              },
+              {
+                "id": "scrap_metal",
+                "role": "material",
+                "mode": "consume",
+                "resourceType": "Item",
+                "items": [
+                  "Base.ScrapMetal"
+                ],
+                "amount": 1
+              },
+              {
+                "id": "welding_rods",
+                "role": "consumable",
+                "mode": "drain",
+                "resourceType": "Item",
+                "items": [
+                  "Base.WeldingRods"
+                ],
+                "uses": 4
+              }
+            ],
             "skills": {
-              "Woodwork": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "Woodwork": 6
-                  }
-                }
-              ]
+              "MetalWelding": 7
             }
           },
           "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
+            "isThumpable": true
           },
           "container": {
             "type": "shelves",
-            "capacity": 20
+            "capacity": 100
           },
-          "allowSpriteReuse": true
+          "allowSpriteReuse": true,
+          "construction": {
+            "time": 50,
+            "timedAction": "BuildMetalStructureMedium",
+            "xp": {
+              "MetalWelding": 70
+            },
+            "category": "Welding"
+          }
         }
       ]
     },
@@ -738,188 +2498,6 @@
           "container": {
             "type": "shelves",
             "capacity": 20
-          },
-          "allowSpriteReuse": true
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_34",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_34",
-      "displayName": "Steel Lab Hotplate Counter",
-      "tooltipKey": "Tooltip_KBWCB_LabStorage",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_34",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_34"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_35"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_33"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_32"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 2
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 2
-              }
-            ],
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
           },
           "allowSpriteReuse": true
         }
@@ -1188,18 +2766,18 @@
       ]
     },
     {
-      "id": "community.dylan.containers.Block_Trasher_51",
+      "id": "community.dylan.containers.Bookies_Store_13",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_51",
-      "displayName": "Blue Shop Counter",
-      "tooltipKey": "Tooltip_KBWCB_Counter",
+      "translationKey": "IGUI_community_dylan_containers_Bookies_Store_13",
+      "displayName": "Wooden Bookstore Shelf",
+      "tooltipKey": "Tooltip_KBWCB_Shelf",
       "category": "Containers",
-      "subcategory": "Counters",
+      "subcategory": "Shelves",
       "material": "Wood",
       "materialTags": [
         "Wood"
       ],
-      "iconSprite": "WECommunity_Block_Trasher_51",
+      "iconSprite": "WECommunity_Bookies_Store_13",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -1208,7 +2786,7 @@
         "community-tilepack",
         "dylan",
         "container",
-        "counter_wood"
+        "shelves"
       ],
       "construction": {
         "time": 75,
@@ -1229,7 +2807,8 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Block_Trasher_51"
+                        "WECommunity_Bookies_Store_12",
+                        "WECommunity_Bookies_Store_13"
                       ]
                     ]
                   }
@@ -1240,29 +2819,10 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_Block_Trasher_53"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
+                        "WECommunity_Bookies_Store_15"
+                      ],
                       [
-                        "WECommunity_Block_Trasher_55"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_49"
+                        "WECommunity_Bookies_Store_14"
                       ]
                     ]
                   }
@@ -1277,14 +2837,14 @@
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
+                "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
                 }
               ],
               "skillAlternatives": [
@@ -1298,131 +2858,30 @@
             }
           },
           "object": {
-            "isThumpable": true
+            "isThumpable": true,
+            "canBePadlocked": true
           },
           "container": {
-            "type": "counter"
+            "type": "shelves",
+            "capacity": 20
           },
           "allowSpriteReuse": true
         }
       ]
     },
     {
-      "id": "community.dylan.containers.DylansRandomFurniture03_37",
+      "id": "community.dylan.containers.Bookies_Store_45",
       "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_37",
-      "displayName": "Hydroponics Lab Bench",
-      "tooltipKey": "Tooltip_KBWCB_LabStorage",
+      "translationKey": "IGUI_community_dylan_containers_Bookies_Store_45",
+      "displayName": "Metal Bookstore Shelf",
+      "tooltipKey": "Tooltip_KBWCB_Shelf",
       "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
+      "subcategory": "Shelves",
+      "material": "Wood",
       "materialTags": [
-        "Metal"
+        "Wood"
       ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_37",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_36",
-                        "WECommunity_DylansRandomFurniture03_37"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_39"
-                      ],
-                      [
-                        "WECommunity_DylansRandomFurniture03_38"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansBar01_43.reinforced",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansBar01_43_reinforced",
-      "displayName": "Bar Counter (Reinforced)",
-      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
-      "category": "Containers",
-      "subcategory": "Restaurant",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansBar01_43",
+      "iconSprite": "WECommunity_Bookies_Store_45",
       "placement": {
         "kind": "object",
         "requiresFloor": true
@@ -1433,172 +2892,13 @@
         "container",
         "shelves"
       ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansBar01_43"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansBar01_45"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansBar01_47"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansBar01_41"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 4
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 7
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "shelves",
-            "capacity": 100
-          },
-          "allowSpriteReuse": true,
-          "construction": {
-            "time": 50,
-            "timedAction": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 70
-            },
-            "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansGardenStuff01_11",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_11",
-      "displayName": "Garden Backpack",
-      "tooltipKey": "Tooltip_KBWCB_Crate",
-      "category": "Containers",
-      "subcategory": "Crates",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "WECommunity_DylansGardenStuff01_11",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "crate_wood"
-      ],
       "construction": {
         "time": 75,
         "timedAction": "BuildWoodenStructureMedium",
         "completionSound": "BuildWoodenStructureMedium",
         "category": "Furniture",
         "xp": {
-          "Woodwork": 20
+          "Woodwork": 40
         }
       },
       "stages": [
@@ -1611,7 +2911,8 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff01_11"
+                        "WECommunity_Bookies_Store_44",
+                        "WECommunity_Bookies_Store_45"
                       ]
                     ]
                   }
@@ -1622,7 +2923,10 @@
                   {
                     "rows": [
                       [
-                        "WECommunity_DylansGardenStuff01_10"
+                        "WECommunity_Bookies_Store_47"
+                      ],
+                      [
+                        "WECommunity_Bookies_Store_46"
                       ]
                     ]
                   }
@@ -1633,18 +2937,18 @@
           "requirements": {
             "materials": "kbwve.extended.wood",
             "skills": {
-              "Woodwork": 2
+              "Woodwork": 4
             },
             "knowledge": {
               "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
+                "KBWKnowledge_FineWoodWorking_Furniture_DesksTables"
               ],
               "hideUntilLearned": true,
               "needToBeLearned": true,
               "sources": [
                 {
                   "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
+                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_DesksTables"
                 }
               ],
               "skillAlternatives": [
@@ -1662,9 +2966,10 @@
             "canBePadlocked": true
           },
           "container": {
-            "type": "smallcrate",
-            "capacity": 25
-          }
+            "type": "shelves",
+            "capacity": 20
+          },
+          "allowSpriteReuse": true
         }
       ]
     },
@@ -1811,126 +3116,6 @@
       ]
     },
     {
-      "id": "community.dylan.containers.Block_Trasher_50",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_50",
-      "displayName": "Blue Shop Counter (Corner)",
-      "tooltipKey": "Tooltip_KBWCB_Counter",
-      "category": "Containers",
-      "subcategory": "Counters",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "WECommunity_Block_Trasher_50",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "counter_wood"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 40
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_50"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_52"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_54"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_48"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.wood",
-            "skills": {
-              "Woodwork": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Counters"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Counters"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "Woodwork": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "counter"
-          },
-          "allowSpriteReuse": true
-        }
-      ]
-    },
-    {
       "id": "community.dylan.containers.Bookies_Store_13.reinforced",
       "allowSpriteReuse": true,
       "translationKey": "IGUI_community_dylan_containers_Bookies_Store_13_reinforced",
@@ -2068,1311 +3253,6 @@
               "MetalWelding": 70
             },
             "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansGardenStuff01_8",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansGardenStuff01_8",
-      "displayName": "Garden Supply Box",
-      "tooltipKey": "Tooltip_KBWCB_Crate",
-      "category": "Containers",
-      "subcategory": "Crates",
-      "material": "Wood",
-      "materialTags": [
-        "Wood"
-      ],
-      "iconSprite": "WECommunity_DylansGardenStuff01_8",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "crate_wood"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWoodenStructureMedium",
-        "completionSound": "BuildWoodenStructureMedium",
-        "category": "Furniture",
-        "xp": {
-          "Woodwork": 20
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansGardenStuff01_8"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansGardenStuff01_9"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.wood",
-            "skills": {
-              "Woodwork": 2
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_FineWoodWorking_Furniture_Crates"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.FineWoodWorking_Furniture_Crates"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "Woodwork": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "smallcrate",
-            "capacity": 25
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_49",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_49",
-      "displayName": "Hydroponics Lab Bench (Open)",
-      "tooltipKey": "Tooltip_KBWCB_LabStorage",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_49",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_48",
-                        "WECommunity_DylansRandomFurniture03_49"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_51"
-                      ],
-                      [
-                        "WECommunity_DylansRandomFurniture03_50"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_45",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_45",
-      "displayName": "Steel Lab Sink Counter",
-      "tooltipKey": "Tooltip_KBWCB_LabStorage",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_45",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_44",
-                        "WECommunity_DylansRandomFurniture03_45"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_47"
-                      ],
-                      [
-                        "WECommunity_DylansRandomFurniture03_46"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 2
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 2
-              }
-            ],
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          },
-          "allowSpriteReuse": true
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.Block_Trasher_51.reinforced",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_51_reinforced",
-      "displayName": "Blue Shop Counter (Reinforced)",
-      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
-      "category": "Containers",
-      "subcategory": "Counters",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_Block_Trasher_51",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "counter_wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_51"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_53"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_55"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_49"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 4
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 7
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "counter",
-            "capacity": 100
-          },
-          "allowSpriteReuse": true,
-          "construction": {
-            "time": 50,
-            "timedAction": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 70
-            },
-            "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.Block_Trasher_50.reinforced",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_Block_Trasher_50_reinforced",
-      "displayName": "Blue Shop Counter (Corner, Reinforced)",
-      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
-      "category": "Containers",
-      "subcategory": "Counters",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_Block_Trasher_50",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "counter_wood"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_50"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_52"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_54"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_Block_Trasher_48"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 4
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 7
-            }
-          },
-          "object": {
-            "isThumpable": true
-          },
-          "container": {
-            "type": "counter",
-            "capacity": 100
-          },
-          "allowSpriteReuse": true,
-          "construction": {
-            "time": 50,
-            "timedAction": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 70
-            },
-            "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture01_10",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture01_10",
-      "displayName": "Red Toolbox Cabinet",
-      "tooltipKey": "Tooltip_KBWCB_ToolStorage",
-      "category": "Containers",
-      "subcategory": "Metal Containers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture01_10",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture01_10"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture01_11"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture01_26"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture01_27"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_45.reinforced",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_45_reinforced",
-      "displayName": "Steel Lab Sink Counter (Reinforced)",
-      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_45",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_44",
-                        "WECommunity_DylansRandomFurniture03_45"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_47"
-                      ],
-                      [
-                        "WECommunity_DylansRandomFurniture03_46"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 4
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 7
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 100
-          },
-          "allowSpriteReuse": true,
-          "construction": {
-            "time": 50,
-            "timedAction": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 70
-            },
-            "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_34.reinforced",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_34_reinforced",
-      "displayName": "Steel Lab Hotplate Counter (Reinforced)",
-      "tooltipKey": "Tooltip_KBWCB_CounterReinforced",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_34",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_34"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_35"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "E": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_33"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "S": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_32"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "inputs": [
-              {
-                "id": "welding_mask",
-                "role": "tool",
-                "mode": "keep",
-                "tags": [
-                  "base:weldingmask"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "torch_fuel",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.BlowTorch"
-                ],
-                "uses": 4
-              },
-              {
-                "id": "small_sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SmallSheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "sheet_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.SheetMetal"
-                ],
-                "amount": 2
-              },
-              {
-                "id": "scrap_metal",
-                "role": "material",
-                "mode": "consume",
-                "resourceType": "Item",
-                "items": [
-                  "Base.ScrapMetal"
-                ],
-                "amount": 1
-              },
-              {
-                "id": "welding_rods",
-                "role": "consumable",
-                "mode": "drain",
-                "resourceType": "Item",
-                "items": [
-                  "Base.WeldingRods"
-                ],
-                "uses": 4
-              }
-            ],
-            "skills": {
-              "MetalWelding": 7
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 100
-          },
-          "allowSpriteReuse": true,
-          "construction": {
-            "time": 50,
-            "timedAction": "BuildMetalStructureMedium",
-            "xp": {
-              "MetalWelding": 70
-            },
-            "category": "Welding"
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_60",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_60",
-      "displayName": "Glass Lab Shelving (Alt)",
-      "tooltipKey": "Tooltip_KBWCB_Shelf",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_60",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_60"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_61"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
-          }
-        }
-      ]
-    },
-    {
-      "id": "community.dylan.containers.DylansRandomFurniture03_54",
-      "allowSpriteReuse": true,
-      "translationKey": "IGUI_community_dylan_containers_DylansRandomFurniture03_54",
-      "displayName": "Glass Lab Shelving",
-      "tooltipKey": "Tooltip_KBWCB_Shelf",
-      "category": "Containers",
-      "subcategory": "Lockers",
-      "material": "Metal",
-      "materialTags": [
-        "Metal"
-      ],
-      "iconSprite": "WECommunity_DylansRandomFurniture03_54",
-      "placement": {
-        "kind": "object",
-        "requiresFloor": true
-      },
-      "tags": [
-        "community-tilepack",
-        "dylan",
-        "container",
-        "locker"
-      ],
-      "construction": {
-        "time": 75,
-        "timedAction": "BuildWallMetal",
-        "completionSound": "BuildMetalStructureMedium",
-        "category": "Welding",
-        "xp": {
-          "MetalWelding": 50
-        }
-      },
-      "stages": [
-        {
-          "id": "built",
-          "geometry": {
-            "faces": {
-              "W": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_54"
-                      ]
-                    ]
-                  }
-                ]
-              },
-              "N": {
-                "layers": [
-                  {
-                    "rows": [
-                      [
-                        "WECommunity_DylansRandomFurniture03_55"
-                      ]
-                    ]
-                  }
-                ]
-              }
-            }
-          },
-          "requirements": {
-            "materials": "kbwve.extended.metal",
-            "skills": {
-              "MetalWelding": 4
-            },
-            "knowledge": {
-              "recipes": [
-                "KBWKnowledge_ProjectsInMetal_Diverse"
-              ],
-              "hideUntilLearned": true,
-              "needToBeLearned": true,
-              "sources": [
-                {
-                  "type": "magazine",
-                  "item": "KnoxBuildworks.ProjectsInMetal_Diverse"
-                }
-              ],
-              "skillAlternatives": [
-                {
-                  "mode": "all",
-                  "skills": {
-                    "MetalWelding": 6
-                  }
-                }
-              ]
-            }
-          },
-          "object": {
-            "isThumpable": true,
-            "canBePadlocked": true
-          },
-          "container": {
-            "type": "locker",
-            "capacity": 40
           }
         }
       ]

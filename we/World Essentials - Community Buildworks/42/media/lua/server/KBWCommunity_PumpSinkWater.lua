@@ -5,6 +5,7 @@
 -- clear it on our pump-sink copies only. Map sinks and vanilla sinks are never touched.
 -- Kahlua-safe: no next, goto, integer division or bitwise operators.
 if isClient() then return end
+require "Moveables/ISMoveableSpriteProps"
 
 local SPRITES = {
     "KBWCommunityIceShell_48",

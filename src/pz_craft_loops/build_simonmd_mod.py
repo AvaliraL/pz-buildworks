@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Build the Simon MD Knox Buildworks submod (user, 2026-11-14): "World Essentials - Simon MD Buildworks",
-mod id SimonMDKBW. Buildables on Simon MD's tiles as Raven Creek ships them (RavenCreek_B42,
-LCB42_SimonMDsTiles); a version for the standalone B42 Simon MD pack can follow if the server adds it.
+"""Build the Raven Creek Knox Buildworks submod: "World Essentials - Raven Creek Buildworks", mod id
+RavenCreekKBW (user, 2026-11-15; first built 2026-11-14 as "Simon MD Buildworks" / SimonMDKBW). Buildables
+on Raven Creek's tiles (RavenCreek_B42: its RCBucho sheets and its LCB42_SimonMDsTiles copy of Simon MD).
+Gated by require=RavenCreek_B42, so none of it shows up without Raven Creek.
 
 Like build_tikitown_mod.py: definitions from zomboid/simonmd/*.json (SRC_FILES), names + tooltips
 from name_tooltip_pass, translation tables built from the definitions, canonical build in the
@@ -20,16 +21,23 @@ SRC_DIR = r"c:\Users\josep\Kiro\zomboid\simonmd"
 SRC_FILES = [
     "01_simonmd_fencing.json",    # simonmd_fencing.py
 ]
-MOD_ID = "SimonMDKBW"
-SUBMOD = "World Essentials - Simon MD Buildworks"
+# 2026-11-15 (user): the submod covers all of Raven Creek's tiles (RCBucho + its Simon MD copy), and it
+# stays gated on Raven Creek: require=RavenCreek_B42 means it can't be enabled without it, so its
+# buildables never show up as blank entries. WE had merged the fencing into Knox Buildworks Expansion
+# (35_simonmd_fencing.json, no gate); the hand-off asks to move it back here. Buildable ids stay
+# worldessentials.simonmd.* so fences already built keep their link.
+MOD_ID = "RavenCreekKBW"
+SUBMOD = "World Essentials - Raven Creek Buildworks"
+OLD_SUBMODS = ["World Essentials - Simon MD Buildworks"]    # earlier name of this work folder
 REQUIRES = ["WorldEssentials", "KnoxBuildworks", "KnoxBuildworksVanillaExpanded", "RavenCreek_B42"]
 UPLOAD_ROOT = r"c:\Users\josep\Kiro\zomboid\simonmd\mod_build"
 LOG = r"c:\Users\josep\Kiro\pz_craft_loops\_simonmdmod.txt"
 MODINFO = [
     "name=%s" % SUBMOD,
     "id=%s" % MOD_ID,
-    "description=Knox Buildworks buildables for Simon MD's tiles as bundled in Raven Creek. Bundled World "
-    "Essentials submod; requires Knox Buildworks, Knox Buildworks Vanilla Expanded and Raven Creek.",
+    "description=Knox Buildworks buildables for Raven Creek's tiles (its RCBucho sheets and its copy of "
+    "Simon MD's tiles). Bundled World Essentials submod; requires Knox Buildworks, Knox Buildworks Vanilla "
+    "Expanded and Raven Creek, so nothing shows up without Raven Creek.",
     "require=%s" % ",".join(REQUIRES),
     "loadModAfter=%s" % ",".join(REQUIRES),
     "versionMin=42.0",
@@ -83,6 +91,12 @@ def main():
     # WE work copy: a new submod gets its folder + proposed mod.info once; later syncs leave it alone
     import we_sync
     work = os.path.join(we_sync.WORK, SUBMOD)
+    for old in OLD_SUBMODS:     # our own generated folder under its earlier name (never shipped by WE)
+        old_dir = os.path.join(we_sync.WORK, old)
+        if os.path.isdir(old_dir) and not os.path.isdir(work):
+            shutil.move(old_dir, work)
+            shutil.copyfile(os.path.join(mod42, "mod.info"), os.path.join(work, "42", "mod.info"))
+            out.append("renamed work submod %s -> %s (mod.info rewritten)" % (old, SUBMOD))
     if not os.path.isdir(work):
         os.makedirs(os.path.join(work, "42"))
         shutil.copyfile(os.path.join(mod42, "mod.info"), os.path.join(work, "42", "mod.info"))

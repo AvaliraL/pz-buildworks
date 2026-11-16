@@ -1,14 +1,16 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-14 (2)
-            (Steam manifest 6371434639292603896): the WE dev's merge of
-            handoff-2026-11-14-blackwood-lights-simon, EXCEPT: the Simon MD submod, file 70's Future
-            Room fridge tiers, common/media/seating.txt (MRI bed / wheelchair seats), and the half-cost
-            itemised recipes on 4 metal pieces (40 medical_ddd_01_10, 41 DylansRandomFurniture03_34/45,
-            42 fixtures_counters_tk_01_0: WE keeps materials kbwve.extended.metal).
-            WE's own edits: WorldEssentialsBuildworksStageInfo.lua (instanceof InventoryItem guard, the
-            script-item tooltip bug of note 42) and WorldEssentialsCommunityGrid.lua (sprite lists
-            spelled out); both copied into work/ (WE-owned).
-            Checked read-only with we_update_check.py / we_update_detail.py; refreshed with
-            _refresh_upstream_keep_work.py 2026-11-14 (work/ was NOT reset).
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-16
+            (Steam manifest 4476907045485774239): the WE dev's merge of handoff-2026-11-14b-sinks-ramps
+            in full, plus the two items held from 11-14 (file 70's Future Room fridge tiers and
+            common/media/seating.txt). The Simon MD fencing stays in Knox Buildworks Expansion
+            (35_simonmd_fencing.json, no Raven Creek gate; see note 57).
+            WE's own edits: the ramp removal rewritten server-side (KBWCommunity_RampRemove.lua plus NEW
+            KBWCommunity_RampRemoveServer.lua and KBWCommunity_RampRecovery.lua: server-authoritative,
+            safehouse / occupant / vehicle checks, sledgehammer server options, dirt floor put back at
+            ground level), and a require line in KBWCommunity_PumpSinkWater.lua. All adopted: the ramp
+            files are WE-owned now (we_sync.WE_SUBMOD_OWNED), the pump-sink generator writes WE's line.
+            (An update in between, manifest 6713841222098744715, shipped our pump-sink and ramp Lua.)
+            Checked read-only with we_update_check.py; refreshed with _refresh_upstream_keep_work.py
+            2026-11-14b (work/ was NOT reset).
 work/     = our working copy. Diff against upstream/ for hand-offs.
-upstream_2026-11-14/ = the previous snapshot (manifest 8319602489478308039).
-upstream_2026-11-10/, upstream_2026-10-31/ = older ones. Never edit the Steam copy.
+upstream_2026-11-14b/ = the previous snapshot (manifest 6371434639292603896).
+upstream_2026-11-14/, upstream_2026-11-10/, upstream_2026-10-31/ = older ones. Never edit the Steam copy.

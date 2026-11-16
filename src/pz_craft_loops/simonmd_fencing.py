@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Generate zomboid/simonmd/01_simonmd_fencing.json (user, 2026-11-14): Simon MD's scrap fences.
 
-New World Essentials submod "World Essentials - Simon MD Buildworks" (build_simonmd_mod.py). It
+World Essentials submod "World Essentials - Raven Creek Buildworks" (build_simonmd_mod.py). It
 requires Raven Creek (RavenCreek_B42), whose LCB42_SimonMDsTiles copy is what the server runs; a
 version for the standalone B42 Simon MD pack can follow if the server adds it. Raven Creek's copy
 has the same sheet names, indices, tile properties and art as the standalone pack for the sheets it

@@ -683,6 +683,102 @@ Buildable `community.dylan.future_room.wall_screen_tv` (file 67). The user repor
 
 ---
 
+# Hand-off 2026-11-16 (tag handoff-2026-11-16-shelves-bushmaster)
+Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-16...handoff-2026-11-16-shelves-bushmaster
+
+New baseline `we-baseline-2026-11-16` = your 2026-11-16 update (Steam manifest 4476907045485774239).
+Thanks for merging all of 11-14b, plus the fridge tiers and seating. Your server-side ramp removal
+(RampRemove / RampRemoveServer / RampRecovery) is adopted as-is; we no longer generate that file.
+
+Small update, two fixes:
+- **Reinforced containers on servers (note 58 below).** Players saw the tile's capacity (e.g. Gray
+  Bookcase (Reinforced): 40, not 100). Knox places prop pieces with vanilla `placeMoveableInternal`,
+  which sends them to clients before Knox sets the capacity on the server, and the new capacity is
+  never sent. `KBWCommunity_StageProperties.lua` now sends the containers
+  (`IsoObjectChange.CONTAINERS`) one tick after such a build. Affects every reinforced container and
+  the fridge / freezer tiers. Already-built pieces are right on the server; players see it after the
+  area reloads. Tested against mocks; NOT tested on a server yet.
+- **Bushmaster Auto Manual in loot (NEW base-folder patch).**
+  `World Essentials/42/media/lua/server/Patches/WorldEssentialsBushmasterManualDistribution_Server.lua`.
+  The manual (teaches the 17 Bushmaster part recipes) only spawned in a Bushmaster's glovebox. The
+  patch adds it to 5 ProceduralDistributions lists with the M998 mod's own weights (BookstoreMisc 0.3,
+  CrateMagazines 0.3, MagazineRackMixed 0.3, MechanicShelfBooks 0.5, PostOfficeMagazines 0.2). Needs
+  only `97bushmaster`, additive and idempotent, no vehicle tables. Details:
+  `notes/HANDOFF_BushmasterManualDistribution.md`. CONFIRMED in game.
+
+NOT in this hand-off (still pending below): note 56 (Wall Screen TV over light switches) and note 57
+(Raven Creek Buildworks submod, the gated home for the Simon MD fencing).
+
+---
+
+# Pending for the next hand-off (not pushed yet)
+
+## 58. Reinforced containers held the tile's capacity in multiplayer (2026-11-15) [in handoff-2026-11-16]
+- **Player report:** Gray Bookcase (Reinforced) says 100 but holds 52 with Organized, so 40 (the
+  tile's `ContainerCapacity`; `d_furniture_bedroom_02_48`-`51`).
+- **Cause (Knox Buildworks, multiplayer only):** for `isProp` pieces KBW places the object with
+  vanilla `placeMoveableInternal`, which sends it to every client straight away, with the tile's
+  capacity. KBW's `container.capacity` (and our `kbwcbContainerCapacity`) then change it on the
+  server only, and KBW sends just the modData. Clients keep the tile's number until they reload the
+  chunk. Single player has no second copy, which is why every in-game test passed. The server's own
+  copy, and the save, hold the right capacity (`ItemContainer` saves it, and
+  `createContainersFromSpriteProperties` leaves an existing container alone on load).
+- **Affects:** every reinforced container (counters, bookshelves, cabinets...) and the fridge /
+  freezer tiers, on servers.
+- **Fix (our file, `KBWCommunity_StageProperties.lua`, server only):** wraps KBW's
+  `Properties.applyToObject`. After a stage that sets `container.capacity`, `kbwcbContainerCapacity`
+  or `kbwcbContainerTypes`, it sends the object's containers to clients with
+  `sendObjectChange(IsoObjectChange.CONTAINERS)`, as vanilla's campfire does. The send waits one tick,
+  so it always follows KBW's own transmit of the object. Floor pieces and objects removed meanwhile
+  are skipped.
+- **Already-built pieces:** the server already has 100, so a player sees it after the area reloads
+  (walk far away and back, or rejoin). Not checked: a piece picked up and placed again with Pick up
+  is re-created from the tile, so it probably gets 40 on the server too unless WE's
+  `WorldEssentialsBuildworksPickup.lua` restores the capacity.
+- **For the KBW dev (FYI):** the same send after `Properties.applyToObject` belongs in
+  `KBWBuildingObject` itself. Every mod using `container.capacity` on a prop has this bug.
+- **Test status:** tested against mocks (lupa, `next = nil`). NOT tested in game or on a server.
+
+## 57. Simon MD fencing: please move it back into a submod gated on Raven Creek (2026-11-15)
+- **Problem with the current merge:** the 12 fences are in Knox Buildworks Expansion
+  (`35_simonmd_fencing.json`), which doesn't require Raven Creek. Without Raven Creek, Knox loads them
+  anyway: it logs `Missing sprite 'fencing_Simon_MD_…'`, the 12 entries show in the build menu with
+  blank previews, and the server refuses each build (`footprint sprite … is unavailable`, before
+  materials are taken).
+- **Our submod (renamed, NEW):** `World Essentials - Raven Creek Buildworks`, mod id `RavenCreekKBW`
+  (was "Simon MD Buildworks" / `SimonMDKBW`, never shipped). `require=...,RavenCreek_B42`, so it can't
+  be enabled without Raven Creek and nothing shows up. It holds the same 12 fences with the same ids
+  (`worldessentials.simonmd.*`), so fences already built keep their link. Future Raven Creek pieces
+  (its `RCBucho` sheets and the rest of its Simon MD copy) go here too.
+- **Please, in Knox Buildworks Expansion:** remove `definitions/35_simonmd_fencing.json`, its manifest
+  line, and its translation keys: 14 `IGUI_WESimon_*` in `IG_UI.json`, and the 3 tooltip keys in
+  `Tooltip.json` (`Tooltip_KBWCB_FenceHigh` / `_FenceLow` / `_FencePost`). Those 3 tooltip keys are
+  also in Community Buildworks, so the text stays available there. We don't track those KBWE files,
+  so this part can't show in the compare.
+- Until then, the collision check reports the 12 ids twice (KBWE and Raven Creek Buildworks).
+- **Coverage:** `TILE_COVERAGE_INVENTORY.md` now has a Raven Creek section (40 sheets, 3904 tiles; we
+  build 41 tiles of `fencing_Simon_MD`, file R01). Inventory only, no new buildables yet.
+- **Test status:** built and checked. The gate is the standard `require=`; NOT tested in game
+  (enable without Raven Creek: the submod should refuse to enable).
+
+## 56. Future Wall Screen TV draws over a light switch on the same wall (2026-11-15)
+- **Symptom (user, in game):** the TV draws behind counters correctly (note 44), but a light switch
+  on the same wall drew over it.
+- **Cause:** the TV's depth sits 2 steps (of 255) nearer than the wall. A vanilla wall switch
+  (`DEPTH_lighting_indoor_01` cells 0 / 1) is a slab 9-10.3 steps nearer, so it won.
+- **Fix (depth only, `kbw_tilepatch._WALLTV_DEPTH_BIAS_UPPER`):** on rows 93-121 of the TV tile
+  (where vanilla switch art is drawn: rows 93-119) the TV and its screens sit 12 steps nearer. Every
+  other row stays at 2. A flat 12 would also have put the TV over the back strip of a counter on the
+  same square (rows 125-225) and of an upper cabinet above it (rows 2-92).
+- **Checked against vanilla depth cells (TVs 205 / 206, both walls):** switch art covered by the TV
+  0 -> 288 of 288 px; counter (`fixtures_counters_01` cell 0) and Future upper cabinets (182-185) over
+  the TV: unchanged, pixel for pixel.
+- Only the depth sheet changes (`common/media/depthmaps/DEPTH_KBWCommunityIceShell.png`). TVs already
+  placed get it too. Needs a full game restart.
+- **Test status:** built and checked against depth cells only. NOT tested in game.
+
+---
+
 # Hand-off 2026-11-14b (tag handoff-2026-11-14b-sinks-ramps)
 Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-14b...handoff-2026-11-14b-sinks-ramps
 

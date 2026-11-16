@@ -185,9 +185,8 @@ def write_mod(mod_id, mod_name, description):
     # hand-pump sinks give clean water (clears vanilla's moved-sink marker; kbw_tilepatch.py)
     from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
-    # built vehicle ramps can be removed (right-click, destroy tool; vehicle_ramps.py)
-    from vehicle_ramps import write_ramp_remove_lua, REMOVE_LUA_NAME
-    write_ramp_remove_lua(os.path.join(_media, "lua", "client", REMOVE_LUA_NAME))
+    # ramp removal: WE's own server-side version since 2026-11-16 (we_sync.WE_RAMP_FILES, WE-owned);
+    # our first client-only version (vehicle_ramps.write_ramp_remove_lua) is no longer shipped
     # workbench built-in tools + bench craft menu (bench_tools.py): HELD BACK from World Essentials
     # (WE merge 2026-11-10: the WE dev declined them pending a multiplayer review). Not applied to
     # the definitions, no Lua, no labels here; the test bundle (build_merged_test_mod) keeps them.

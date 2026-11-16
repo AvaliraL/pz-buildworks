@@ -431,8 +431,13 @@ def main():
     write_gunrack_overlay_lua(os.path.join(_media, "lua", "server", "Items", GUNRACK_LUA_NAME))
     from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
-    from vehicle_ramps import write_ramp_remove_lua, REMOVE_LUA_NAME
-    write_ramp_remove_lua(os.path.join(_media, "lua", "client", REMOVE_LUA_NAME))
+    # ramp removal: WE's own files as WE ships them (2026-11-16; we_sync.WE_RAMP_FILES)
+    import we_sync as _ws
+    for _rel in _ws.WE_RAMP_FILES:
+        _src = os.path.join(_ws.UPSTREAM, "World Essentials - Community Buildworks", *_rel.split("/"))
+        _dst = os.path.join(_media, *_rel.split("/")[2:])
+        os.makedirs(os.path.dirname(_dst), exist_ok=True)
+        shutil.copyfile(_src, _dst)
     # TikiTown wall overlays: our own copied tiles (as in the submod)
     from tikitown_wall_overlays import write_overlay_assets
     write_overlay_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))

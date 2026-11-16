@@ -21,7 +21,7 @@ REPO = r"c:\Users\josep\Kiro\pz-buildworks"
 GIT = sorted(glob.glob(os.path.join(os.environ["LOCALAPPDATA"], "GitHubDesktop", "app-*")))[-1] + r"\resources\app\git\cmd\git.exe"
 PAIRS = [("World Essentials - Community Buildworks", "World Essentials - Community Buildworks", True),
          ("World Essentials - TikiTown Buildworks", "World Essentials - TikiTown Buildworks", True),
-         ("World Essentials - Simon MD Buildworks", "World Essentials - Simon MD Buildworks", True),
+         ("World Essentials - Raven Creek Buildworks", "World Essentials - Raven Creek Buildworks", True),
          ("World Essentials", "World Essentials (base, our files only)", False),
          ("World Essentials - Knox Buildworks Expansion", "World Essentials - Knox Buildworks Expansion (our files only)", False)]
 

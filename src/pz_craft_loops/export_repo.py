@@ -16,10 +16,11 @@ K = r"c:\Users\josep\Kiro"
 REPO = os.path.join(K, "pz-buildworks")
 P = os.path.join(K, "pz_craft_loops")
 SUBMODS = ["World Essentials - Community Buildworks", "World Essentials - TikiTown Buildworks",
-           "World Essentials (base, our files only)"]
-# "World Essentials - Simon MD Buildworks" (2026-11-14) is no longer exported: WE merged its 12
-# buildables into Knox Buildworks Expansion (definitions/35_simonmd_fencing.json, identical, same
-# ids), so offering the submod again would define them twice. Still built into work/ for reference.
+           "World Essentials (base, our files only)",
+           "World Essentials - Raven Creek Buildworks"]
+# Raven Creek Buildworks (2026-11-15, was "Simon MD Buildworks"): gated on RavenCreek_B42. WE had
+# merged its 12 fences into Knox Buildworks Expansion (35_simonmd_fencing.json) with no gate; the
+# hand-off asks to move them back into this submod (same ids) and drop file 35 + its keys there.
 EXPANSION = "World Essentials - Knox Buildworks Expansion (our files only)"
 
 SRC_SCRIPTS = [
@@ -154,6 +155,31 @@ def match_we_format(we_dir, baseline_dir):
     return done, skipped
 
 
+TEXT_EXT = (".lua", ".txt", ".md", ".info")
+
+
+def match_we_newlines(we_dir, baseline_dir):
+    """(2026-11-16) WE ships some of our Lua with CRLF line endings; ours are LF. The repo keeps bytes
+    as they are (.gitattributes `* -text`), so a compare showed every line of such a file as changed.
+    Rewrite each text file in we_dir with the line endings of its baseline copy: data-neutral."""
+    done = 0
+    for d, _, fs in os.walk(we_dir):
+        for f in fs:
+            if not f.endswith(TEXT_EXT):
+                continue
+            p = os.path.join(d, f)
+            q = os.path.join(baseline_dir, os.path.relpath(p, we_dir))
+            if not os.path.isfile(q):
+                continue
+            base, raw = open(q, "rb").read(), open(p, "rb").read()
+            want = b"\r\n" if b"\r\n" in base else b"\n"
+            norm = raw.replace(b"\r\n", b"\n")
+            out = norm.replace(b"\n", want) if want == b"\r\n" else norm
+            if out != raw:
+                open(p, "wb").write(out); done += 1
+    return done
+
+
 def mirror_files(src_dir, names, dst):
     tmp = {n for n in names if os.path.isfile(os.path.join(src_dir, n))}
     return mirror(src_dir, dst, keep=lambda rel: rel in tmp)
@@ -179,6 +205,8 @@ def main():
                 n, skipped = match_we_format(os.path.join(REPO, "we", s), os.path.join(up, s))
                 print("%-40s reformatted %d JSON to WE's style; style unknown for %d: %s"
                       % ("we/" + s, n, len(skipped), skipped[:5]))
+                print("%-40s matched WE's line endings in %d text files"
+                      % ("we/" + s, match_we_newlines(os.path.join(REPO, "we", s), os.path.join(up, s))))
         out.append(("src/pz_craft_loops", mirror_files(P, SRC_SCRIPTS, os.path.join(REPO, "src", "pz_craft_loops"))))
         ct = os.path.join(K, "zomboid", "communitytilepack")
         out.append(("src/communitytilepack/deliverables", mirror(os.path.join(ct, "deliverables"), os.path.join(REPO, "src", "communitytilepack", "deliverables"))))
@@ -207,7 +235,9 @@ def main():
                   os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_registry_sort_overflow.md"),
                   # 2026-11-10 hand-off: previous notes archived, KBW redraw bug report
                   os.path.join(K, "zomboid", "WE_submods", "HANDOFF_NOTES_2026-11-08.md"),
-                  os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_attached_sprite_redraw.md")):
+                  os.path.join(K, "zomboid", "knoxbuildworks", "DEV_BUG_REPORT_attached_sprite_redraw.md"),
+                  # 2026-11-16 hand-off: Bushmaster Auto Manual loot spawns (base-folder patch)
+                  os.path.join(K, "zomboid", "worldessentials", "HANDOFF_BushmasterManualDistribution.md")):
             if os.path.isfile(s):
                 shutil.copy2(s, os.path.join(notes, os.path.basename(s)))
     for name, (a, c, r) in out:

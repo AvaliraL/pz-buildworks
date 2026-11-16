@@ -1502,6 +1502,7 @@ def write_pump_sink_water_lua(dest_path):
 -- clear it on our pump-sink copies only. Map sinks and vanilla sinks are never touched.
 -- Kahlua-safe: no next, goto, integer division or bitwise operators.
 if isClient() then return end
+require "Moveables/ISMoveableSpriteProps"
 
 local SPRITES = {
 %s
@@ -1610,6 +1611,15 @@ _WALLTV_SCREEN_FACING = {"W": "E", "N": "S"}    # vanilla screen series (W wall 
 # screen quads (top-left, top-right, bottom-left) measured from the art, inside the bezel
 _WALLTV_QUAD = {22: ((12, 82), (65, 56), (12, 131)), 23: ((62, 56), (115, 82), (62, 106))}
 _WALLTV_DEPTH_BIAS = 2      # TV + screens this much nearer than the bare wall plane (0..255)
+# On _WALLTV_UPPER_ROWS the TV sits nearer still, in front of a light switch on the same wall
+# (user, 2026-11-15: the switch drew over the TV). Measured from vanilla (DEPTH_lighting_indoor_01
+# cells 0 / 1): a wall switch is a slab 9-10.3 steps nearer than the wall, its art on rows 93-119.
+# Below the row the bias stays 2, so the TV still draws behind a counter on the same square (the
+# counter pixels a bias of 12 would cover are all on rows 125-225; fixtures_counters_01 cell 0).
+# Only the switch's own band gets it: an upper cabinet above the TV loses its back strip on rows
+# 2-92 at bias 12, so rows 0-92 stay at 2 too.
+_WALLTV_DEPTH_BIAS_UPPER = 12
+_WALLTV_UPPER_ROWS = (93, 122)    # [first, last) rows that sit in front of a wall switch
 # Future upper cabinets: the depth vanilla gives its floating wall cabinets (every facing of
 # fixtures_counters_01 16-31 uses cell 16), so a cabinet hung over a Wall Screen TV draws over it
 _UPPERCAB_DEPTH = ("fixtures_counters_01", 16)
@@ -1744,10 +1754,11 @@ def _walltv_tiles(cache):
     return out
 
 
-def _wall_plane_depth(edge, art, bias=0):
+def _wall_plane_depth(edge, art, bias=0, upper_bias=None, upper_rows=(0, 0)):
     """Vanilla's wall preset depth cell for a piece hung on the <edge> wall (W -> preset_depthmaps_01_4,
     N -> _5, as for walls_interior_detailing_01), extended along the wall plane (least-squares fit)
-    under every art pixel outside the wall slab, then moved <bias> nearer the viewer."""
+    under every art pixel outside the wall slab, then moved <bias> nearer the viewer. With
+    <upper_bias>, rows in [upper_rows[0], upper_rows[1]) move <upper_bias> nearer instead."""
     import numpy as np
     from PIL import Image
     pre = Image.open(_VANILLA_DEPTH_PRESET).convert("RGBA")
@@ -1765,9 +1776,12 @@ def _wall_plane_depth(edge, art, bias=0):
         cell[hy, hx, ch] = v
     cell[hy, hx, 3] = 255
     on = cell[:, :, 3] > 0
+    b = np.full(cell.shape[:2], bias, dtype=int)
+    if upper_bias is not None:
+        b[upper_rows[0]:upper_rows[1], :] = upper_bias
     for ch in range(3):
         c = cell[:, :, ch].astype(int)
-        c[on] = np.clip(c[on] - bias, 0, 255)
+        c[on] = np.clip(c[on] - b[on], 0, 255)
         cell[:, :, ch] = c.astype(np.uint8)
     return Image.fromarray(cell, "RGBA")
 
@@ -2409,7 +2423,7 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
             art = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
             for j in idx:
                 art.alpha_composite(walltv[j][1])
-            cell = _wall_plane_depth(edge, art, _WALLTV_DEPTH_BIAS)
+            cell = _wall_plane_depth(edge, art, _WALLTV_DEPTH_BIAS, _WALLTV_DEPTH_BIAS_UPPER, _WALLTV_UPPER_ROWS)
             for j in idx:
                 depth.paste(cell, ((j % cols) * cw, (j // cols) * ch))
         # Monitoring Station / Bank TVs: vanilla's own DEPTH_security_01 cell, for the TV and (as

@@ -121,6 +121,48 @@ Properties.register("kbwcbContainerTypes", {
     end,
 })
 print("[KBWCommunity] StageProperties: registered stage property kbwcbContainerTypes")
+
+-- Multiplayer capacity sync (2026-11-15, player report: Gray Bookcase (Reinforced) held 40, not 100).
+-- For isProp pieces KBW places the object with vanilla placeMoveableInternal, which sends it to the
+-- clients right away with the TILE's ContainerCapacity. KBW (stage "container".capacity) and our
+-- properties change the capacity afterwards, on the server only, and KBW then sends just the modData,
+-- so every client kept the tile's number until it reloaded the chunk. Fix: after a stage that changes
+-- containers is applied, send the object's containers (IsoObjectChange.CONTAINERS, as vanilla's
+-- campfire does). The send waits one tick, so it always follows KBW's own transmit of the object.
+if isServer() and not Properties.__kbwcbContainerSync and type(Properties.applyToObject) == "function" then
+    local applyToObject = Properties.applyToObject
+    local pending = {}
+    local function changesContainers(stage)
+        if type(stage) ~= "table" then return false end
+        local c = stage.container
+        return (type(c) == "table" and c.capacity ~= nil) or stage.kbwcbContainerCapacity ~= nil
+            or stage.kbwcbContainerTypes ~= nil
+    end
+    local function flush()
+        Events.OnTick.Remove(flush)
+        local list = pending
+        pending = {}
+        for i = 1, #list do
+            local part = list[i]
+            pcall(function()
+                if part:getSquare() and part:getObjectIndex() >= 0 and containerCount(part) > 0 then
+                    part:sendObjectChange(IsoObjectChange.CONTAINERS)
+                end
+            end)
+        end
+    end
+    Properties.applyToObject = function(part, buildObj, context)
+        local result = applyToObject(part, buildObj, context)
+        if part and IsoObjectChange and not (context and context.isFloor)
+            and changesContainers(buildObj and buildObj.stage) then
+            if #pending == 0 then Events.OnTick.Add(flush) end
+            pending[#pending + 1] = part
+        end
+        return result
+    end
+    Properties.__kbwcbContainerSync = true
+    print("[KBWCommunity] StageProperties: container capacities are sent to clients after a build")
+end
 '''
 
 

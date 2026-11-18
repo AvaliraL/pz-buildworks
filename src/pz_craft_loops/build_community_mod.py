@@ -185,6 +185,9 @@ def write_mod(mod_id, mod_name, description):
     # hand-pump sinks give clean water (clears vanilla's moved-sink marker; kbw_tilepatch.py)
     from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
+    # ice machines make Sapph's Cooking ice (inert without that mod; ice_machine_ice.py, 2026-11-16)
+    from ice_machine_ice import write_ice_lua
+    write_ice_lua(_media)
     # ramp removal: WE's own server-side version since 2026-11-16 (we_sync.WE_RAMP_FILES, WE-owned);
     # our first client-only version (vehicle_ramps.write_ramp_remove_lua) is no longer shipped
     # workbench built-in tools + bench craft menu (bench_tools.py): HELD BACK from World Essentials

@@ -40,7 +40,7 @@ SRC_SCRIPTS = [
     "tikitown_barrel_planters.py", "dylan_gun_racks.py", "dylan_future_room_extras.py",
     "tikitown_entertainment.py", "tikitown_rugs.py", "tikitown_signs.py", "tikitown_tile_floors.py",
     "tikitown_commercial_glass_walls.py", "tikitown_lighting.py",
-    "build_simonmd_mod.py", "simonmd_fencing.py", "map_buildmenu_addons.py", "buildingcraft_b42_inventory.py",
+    "build_simonmd_mod.py", "simonmd_fencing.py", "simonmd_doors_furniture.py", "ice_machine_ice.py", "simonmd_barricades.py", "simonmd_countertops.py", "simonmd_furniture2.py", "shelf_relayout.py", "knox_vegetation.py", "map_buildmenu_addons.py", "buildingcraft_b42_inventory.py",
     "container_capacity_audit.py", "fix_container_caps_to_tile.py",
     "blackwood_props.py", "monitoring_tvs.py", "vehicle_ramps.py", "we_update_check.py",
     "_refresh_upstream_keep_work.py",

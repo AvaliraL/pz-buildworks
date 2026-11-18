@@ -369,6 +369,22 @@ local function recordFor(object)
     return record
 end
 
+-- our reinforced pieces: KBW id in one of our namespaces ending ".reinforced" (counter_variants) or
+-- ".crate" (the military-crate-capacity cases)
+local function isUnbreakable(object)
+    if not object then return false end
+    local okData, data = pcall(function() return object:getModData() end)
+    if not okData or type(data) ~= "table" then return false end
+    local id = type(data.KBW) == "table" and data.KBW.buildableId or nil
+    if type(id) ~= "string" and type(data.kbwcbStorage) == "table" then id = data.kbwcbStorage.buildableId end
+    if type(id) ~= "string" then return false end
+    if not (string.find(id, "community.", 1, true) == 1 or string.find(id, "tikitown.", 1, true) == 1
+            or string.find(id, "worldessentials.", 1, true) == 1 or string.find(id, "kbwcb.", 1, true) == 1) then
+        return false
+    end
+    return string.sub(id, -11) == ".reinforced" or string.sub(id, -6) == ".crate"
+end
+
 local function applyRecord(object, record)
     local list = record.containers
     local done = {}
@@ -416,11 +432,26 @@ local function install()
         return item
     end
 
+    -- Reinforced pieces (military-crate cost, capacity 100) never break on pick-up (user, 2026-11-17:
+    -- at Carpentry 3 vanilla's (10 - level) * 7.5 percent roll lost half of them, silently when the tile has
+    -- no Material). They share the base piece's tile, so this goes by the object's KBW id.
+    local originalBreakTest = P.doBreakTest
+    if type(originalBreakTest) == "function" then
+        P.doBreakTest = function(self, player)
+            if self._kbwNoBreak then return false end
+            return originalBreakTest(self, player)
+        end
+    end
+
     local originalPickUp = P.pickUpMoveableInternal
     P.pickUpMoveableInternal = function(self, character, square, object, sprInstance, spriteName, createItem, rotating)
         local okRecord, record = pcall(recordFor, (not sprInstance) and object or nil)
         self._kbwcbPending = okRecord and record or nil
-        local a, b = originalPickUp(self, character, square, object, sprInstance, spriteName, createItem, rotating)
+        local okNb, noBreak = pcall(isUnbreakable, (not sprInstance) and object or nil)
+        self._kbwNoBreak = okNb and noBreak or nil
+        local okCall, a, b = pcall(originalPickUp, self, character, square, object, sprInstance, spriteName, createItem, rotating)
+        self._kbwNoBreak = nil
+        if not okCall then self._kbwcbPending = nil; error(a) end
         self._kbwcbPending = nil
         -- return exactly what vanilla returned: callers do table.insert(items, f(...)), so a
         -- spare trailing nil turns it into a 3-argument insert and throws

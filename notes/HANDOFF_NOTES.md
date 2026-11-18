@@ -711,7 +711,508 @@ NOT in this hand-off (still pending below): note 56 (Wall Screen TV over light s
 
 ---
 
-# Pending for the next hand-off (not pushed yet)
+# Hand-off 2026-11-18 (tag handoff-2026-11-18-ravencreek): major release
+Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-17...handoff-2026-11-18-ravencreek
+
+New baseline `we-baseline-2026-11-17` = your 2026-11-17 update (Steam manifest 3980620932794181319). In
+the files we track it equals 2026-11-16, so **handoff-2026-11-16-shelves-bushmaster is not merged yet**
+(reinforced capacity sync, note 58; Bushmaster Auto Manual loot patch). It is included again here.
+
+What is in it (details in the notes below):
+1. **NEW submod `World Essentials - Raven Creek Buildworks`** (mod id `RavenCreekKBW`, requires
+   `RavenCreek_B42`; notes 57, 59, 61-64). 239 buildables on Raven Creek's copy of Simon MD's tiles: scrap
+   fences and heavy barriers, doors and garage doors, lockers, display counter / cabinet, gun rack, marble
+   counter tops, glass low tables, barrel table, in-wall and wine shelves, bar corner shelves, sloped-wall
+   shelves, honeywood wardrobes / wall benches / clothes racks, speakers, disco ball, posters, statues,
+   table-top figures, chalkboard, floor wedges, neon strips in 10 colours + 2 neon signs, planter boxes,
+   potted rose, flower buckets. Own tileset `KBWRavenCreek` (+ `_on` lit art) with depth maps, tiledef
+   `kbwravencreek 8174`. **Please also remove `35_simonmd_fencing.json` from Knox Buildworks Expansion**
+   (note 57): the same 12 fences now live in this gated submod, same ids.
+2. **Knox Buildworks Expansion: Vegetation** (note 65): 188 BuildingCraft trees / shrubs on vanilla tiles in
+   your empty `10_vegetation.json`, + NEW `WorldEssentialsKnoxVegetation.lua`.
+3. **Ice machines make ice with Sapph's Cooking** (note 60, Community submod, 2 NEW Lua).
+4. **Wall Screen TV no longer drawn over by a light switch** (note 56, depth sheet only).
+5. **World Essentials base, WE-owned file edited by hand: reinforced pieces never break on pick-up**
+   (note 66, `WorldEssentialsBuildworksPickup.lua`; please merge).
+6. Again from 11-16: reinforced capacities reach clients on servers (note 58), Bushmaster manual in loot.
+
+Test status: every Raven Creek buildable shipped here was confirmed in game by the user in the test bundle
+(single player, 2026-11-14 to 11-18; the last rounds: neon strips and corner joins, bar corner shelves,
+sloped shelves, planter boxes, potted rose). Vegetation confirmed in game (test bundle). TV / light switch
+confirmed in game. NOT tested in game: the ice machines (mocks only), the reinforced no-break (mocks only),
+the Raven Creek gate when Raven Creek is off, and multiplayer for all of it.
+
+Held back (not in this hand-off, revisit later, user 2026-11-18): the raised / ground planter beds and the
+indoor plants that go in them (note 64 rounds 17-18; `simonmd_doors_furniture.PLANTERS_ON = False`).
+
+## Pending for the next hand-off (not pushed yet)
+(none)
+
+## Notes in this hand-off
+
+## 66. World Essentials base: reinforced pieces never break on pick-up (WE-owned file, edited by hand) (2026-11-17)
+- **Player report (server Discord):** picking up the 100-storage military crate made it vanish: no item,
+  no break sound; "at carp 3 it's a 50% chance".
+- **Cause:** vanilla's pick-up break roll (`ISMoveableSpriteProps:getBreakChance`, (10 - Carpentry) x 7.5 %,
+  52.5 % at level 3). Our reinforced pieces share the base piece's tile (CanBreak + PickUpTool). The break
+  sound and debris need the tile's `Material`; without it the object is removed and nothing is given back.
+- **Change, in `World Essentials (base, our files only)/42/media/lua/shared/WorldEssentialsBuildworksPickup.lua`
+  (WE-owned, so edited by hand in work/; please merge):** a new `isUnbreakable(object)` (KBW buildable id in
+  `community.` / `tikitown.` / `worldessentials.` / `kbwcb.` ending `.reinforced` or `.crate`), and
+  `doBreakTest` wrapped once to return false while `pickUpMoveableInternal` handles such an object
+  (`self._kbwNoBreak`, cleared after the call). Everything else rolls as vanilla. The same change is in our
+  generator (`container_caps.py`) for the test bundle.
+- **Note:** this file only runs when Community or TikiTown Buildworks is active (its first line), and its
+  `isOurs` list has no `worldessentials.simonmd.`. The no-break check has its own namespace test, but Raven
+  Creek's reinforced pieces are only covered when one of those two submods is also on.
+- **Test status:** tested against mocks (lupa, `next` removed; vanilla stand-in always breaks): reinforced,
+  `.crate` and Simon reinforced kept; a plain piece and another mod's `.reinforced` object still break.
+  NOT tested in game.
+
+## 64. Raven Creek Buildworks: honeywood furniture, planters (NEW file 09), 3-wide fence (2026-11-17)
+- **Heavy Barrier Fence (3 Wide)** replaces the 2-wide one (user: the wall is meant to have 3-wide
+  sections). Id `heavy_3wide`. N face (south edges) west -> east 58 / 60 / 62, top layer 59 / 61 / 63;
+  W face (east edges) north -> south 70 / 68 / 66, top layer 71 / 69 / 67. Costs three single panels.
+- **Honeywood furniture (file 06, user "honeywood shelves"):** the sheet's "shelves" are Oak / White
+  Glass-Front Wardrobes, Shoe Display Bench 1 / 2 and clothes racks. Our copies 341-350 (furniture-shelving
+  depth, wall plane for the wall pieces), fill overlays on copies 351-370. Containers with reinforced
+  siblings.
+- **Planters (NEW file 09, 57 buildables, `planters()` in `simonmd_furniture2.py`, vegetation_indoor_Simon_MD,
+  pages SimonMDsTiles198-200):** no overgrown tiles (user). Stone beds at three heights (low / tall /
+  ground), each with Middle, Edge, Outer Corner, End (4 faces each), Strip (2), Inside Corner Post (4), plus
+  a Low Single. Cost: mason's trowel, stone blocks, dirt bag uses, mortar. Seven plants (fern, yucca, snake
+  plant, peace lily, boxwood, pothos, purple rose) in three versions: floor, in a low bed, in a tall bed
+  (raised versions = our copies 371-384, art moved up, no BlocksPlacement, vegetation_indoor depth), plus a
+  potted purple rose. Planter Boxes (grey / black / navy, one card per colour, four faces). Flower buckets
+  43-55. The pack has no plant overlays (checked), so a plant is a separate object placed on the bed.
+- **BuildingCraft vegetation (investigated only):** Knox and the Building Menu addons have no trees.
+  BuildingCraft (3459887404) has ~270 entries in `AddModTextureBase.lua` (trees small to giant, shrubs,
+  grass) built with `IsoTree.new` + attached leaves sprites, saplings + a digging tool. All vanilla tiles;
+  which submod should hold it is the user's call.
+- **Test status:** built and checked by composite (`_planter_check.py`); NOT tested in game. Test bundle In
+  Progress.
+- **Fixes after the in-game check (user, 2026-11-17, round 4):**
+  - Star Destroyer: its mirrored copy (301) was missing from `KBWRavenCreek_TableTop.lua` and floated at
+    table height on the floor. The list now takes every figure's mirror.
+  - Stargate lamp: the 1st cut took the ring's inner rim (the dimly lit blue pixels) with the horizon. Now
+    only the strongly lit blue (B > 140) is cut; the rim is kept and greyed.
+  - Bottoms sinking into the ground (stargate DHD + stairs, bar corner shelf base; the build ghost has no
+    depth, so it showed them). Two depth clamps on our copies: table-top figures are never farther than the
+    90th percentile of vanilla's Surface-34 table-top depth at the same row (rows >= 140, made
+    non-increasing; one gate pixel was at 253); everything else is never behind the floor it is drawn over
+    (vanilla floor depth = 637 - 2y, exact fit of the rug cell), 2 steps nearer.
+  - Sloped-wall shelves get the other slope direction: "Reversed" pieces on mirrored copies 409-414 (a
+    N-wall tile mirrors into a W-wall one) with mirrored overlays 415-422.
+  - Floor wedges: the W face (east half mirrored) was 2 px off. The floor diamond spans columns 0-125
+    (centre 62.5), so a plain 128-wide flip moved it; now mirrored about the diamond centre. Carpets use the
+    pack's own east halves (48-63; the 1st pass cut its own) and the six missing carpets 42-47 are added
+    (copies 385-408). "Oak Plank" / "Oak" renamed "Cinnamon Plank" / "Cinnamon" (user: they match the
+    Cinnamon floors; closest by colour: TikiTown Cinnamon Parquet / Inlaid Tiles).
+  - W-wall chalkboard: light edge columns at the tile seams (24's last, 26's first column). Built on copies
+    423-425 with those pixels taken from the next inner column, and wall-plane depth (the pack tiles' edge
+    column was drawn under the next square's wall).
+  - Neon lights did not light: their stages lacked `nativeObject: {type: lightSwitch}` (KBW makes an
+    IsoLightSwitch only then; the TikiTown neon and the stargate lamp have it). All 18 now do.
+- **Test status (round 4):** built and checked by composite / depth dumps; NOT tested in game.
+- **Glass Display Cabinet fill overlays (user, 2026-11-17: overlay 44 on page SimonMDsTiles36 matches it,
+  but no second orientation):** Simon registers 46 -> (45, 44) and 47 -> (47, 46); Raven Creek's pack ships
+  only 44. User: copying art from the full Simon MD pack is fine (a standalone version on the full pack will
+  follow). Overlays 45-47 are now copied from the standalone pack (Workshop 2852704777) into our tileset
+  (`FROM_STANDALONE`; copies 428-431 = overlays 44-47), and the cabinet is built on copies 426 / 427 so the
+  registration leaves map cabinets alone. Depth: best vanilla container of the same Facing; overlays take
+  the cabinet's. Built and checked by composite; NOT tested in game.
+- **Simon's own fill overlays for the rest (user: "yes switch them"):** container_overlays 48-77 copied from
+  the standalone pack (copies 432-461), registered as Simon_MD_WorldFiller.lua pairs: wine shelf 48 / 49,
+  bar corner shelves 50 / 51 (bottles), barrel table 53, in-wall shelves 88-90 / 93 / 94 / 96-99 and the
+  ends 92 / 95. They replace the re-laid vanilla books (`shelf_relayout.py` no longer used; copies 154-205
+  reserved, unused). The pieces that were on pack tiles (wine 48 / 49, barrel table 53, ends 92 / 95) are now
+  on copies 462-466 (wall-plane depth for the wall pieces, a matched vanilla table for the barrel table).
+  Simon registers no overlay for barrel table 52 or the outer pillar 91. 53's overlay mirrored onto 52 was
+  tried (user) and dropped: 52 is the barrel seen from its closed side (the opening faces away), so the
+  mirrored bottles drew over solid staves (`_barrel_check.py`).
+- **Round 5 (user, in game 2026-11-17):**
+  - Confirmed: every Simon MD piece in the test bundle's Counters (glass display counter, 4 marble counter
+    tops), Garage Doors, Lockers and Tables (glass low tables, barrel table) subcategories, and all speakers
+    -> Completed (`SIMON_COMPLETED_SUBCATS` / `_PREFIXES` in build_merged_test_mod.py).
+  - White Glass-Front Wardrobe, W-wall (east-facing) face, partly filled overlay too high: container_overlays
+    20 is overlay 21 less some items, drawn 10 rows higher (99 % of its pixels match 21 at +10). Our copy
+    (355) moves it down 10 rows (`OVL_ROW_SHIFT`). The other three partial overlays line up (0 rows).
+  - W-wall chalkboard, still dotted lines at the seams: it is the wall behind showing through on alternate
+    rows where the next square's wall tile reaches 2 columns into this one. Pixel edits were tried and
+    dropped (they ate letter strokes); the art is Simon's again and the board's wall-plane depth is 12 steps
+    nearer (the gun rack's margin) instead of 2.
+  - Built and checked by composite / alignment; the chalkboard fix can only be confirmed in game.
+- **Round 6 (user, in game 2026-11-17):**
+  - Confirmed -> Completed: Fences subcategory (incl. the barricades), all floor wedges, Disco Ball,
+    Tsargate Replica Lamp.
+  - Neon strips gave no visible light: the pack's colours (193 / 100 / 100, 30 / 100 / 100) are hue /
+    saturation / brightness typed into lightR / G / B, so as RGB they were a dim teal and a dull red. Now
+    cyan 20 / 220 / 255 (lightR kept non-zero) and pink 255 / 60 / 200 (strips and the dancer).
+  - Flower buckets use the game's table-top mechanic (like crates and the figures) instead of separate raised
+    copies: our copies 467-477 of 43-51, 54, 55 with IsTableTop (pack BlocksPlacement dropped), on
+    `KBWRavenCreek_TableTop.lua`'s list. 52 / 53 were 48 / 49 drawn 61 / 66 rows higher: dropped. 54 / 55 have
+    no floor twin: moved down 63 rows to the floor. 11 buckets now.
+- **Note 65 changes (same round):** giant trees and grass removed. The build ghost of large and giant trees
+  is drawn off the placement square (KBW draws their oversized JumboTrees textures as a normal tile; medium
+  ones are fine). Large deciduous trees lose their tile 0, the bare winter tree (tiles 2-5 are spring
+  blossom / summer / autumn / late autumn, checked by render). The large ghost offset remains.
+- **Round 7 (user, in game 2026-11-17):**
+  - Confirmed -> Completed: all in-wall shelves (oak and glass-door, straight / corner / end / outer pillar,
+    and their reinforced versions).
+  - Wine shelf clipped into the wall like the cabinet door once did: it is a deep standing unit, so
+    wall-plane depth put its front inside the wall. Depth now from the best vanilla container with the art's
+    facing (crafted_05_16 / _17, 0.81 / 0.85 overlap).
+  - Bar corner shelves drew behind the straight shelves next to them (the ghost, drawn without depth, was
+    right): the pillar planes now sit 16 steps nearer (was 2).
+  - "Shoe Display Bench" -> "Wall Bench with Shoes" (1 / 2), Furniture / Seating: a seat like vanilla chairs
+    (bed + chair<Facing> + BedType averageBed; the pack's IsTable / Surface dropped), seat position in the
+    submod's NEW `common/media/seating.txt` (tileset KBWRavenCreek; facing away from the wall, 0.05 off it,
+    height 0.095, scaled from vanilla couch seats). Shoe storage kept. Seat position NOT checked in game.
+    `kbw_tilepatch.merge_seating` keeps other tilesets' seats when several mods share a common/media (test
+    bundle).
+  - Reversed sloped-wall shelves were identical to the originals: a plain mirror turns a W-wall tile into an
+    N-wall tile with the same slope direction. Now reflected along their own wall (`_wall_reflect`: flip about
+    the wall's middle + move each column along the wall's slope); the base stays on the wall line and the
+    shelf is short at the corner and tall at the far end, the opposite of Simon's. Overlays the same way.
+    Wall-plane depth.
+  - Note 65: giant trees re-added (user: the trees have foliage now). Giant sheets' tiles 0 (bare) and 1
+    (bare, snow) are dropped for the deciduous species, like large tile 0. Build ghost of large / giant trees
+    fixed: `WorldEssentialsKnoxVegetation.lua` wraps `KBWBuildingObject:getCachedSprite` (in memory) and, for
+    JUMBOXL / JUMBOXXL sprites only, returns a stand-in that draws the real sprite shifted (64, 128) x tile
+    scale per size step (Large 1, Giant 2), BuildingCraft's ISBuildTree:render shift. getCachedSprite is
+    only used by Knox's preview render. Tested against mocks (lupa, `next` removed); NOT tested in game.
+  - Round 9 (user, in game): Completed -> Couches (wall benches) and Wardrobes subcategories, Retro Wave
+    pictures + movie posters, T-800 and alien statues, wall shelves (flowers / bonsai / empty), chalkboard,
+    every table-top figure, glass display cabinet, military wall gun rack, wall clothes rack. Flower buckets:
+    on a table the grass showed through under the pots (Simon's faint halo + dark semi-transparent drop
+    shadow won the depth test); cleared on our copies (alpha < 64, and semi-transparent pixels with luminance
+    < 60), as for the figures. NOT re-tested in game.
+  - Bar corner shelves, 2nd fix (still drew behind the pieces beside them): they are not thin pillars on the
+    corner point but boxes filling the near half of their square (footprint top 192 / sides 33,206 and
+    92,204 / front corner row 218). Depth was the wall planes at the corner point, ~50 steps too far back
+    (the +16 margin could not make that up). Now `_contact_depth`: each column a vertical face standing where
+    its lowest pixel meets the floor (floor depth 637 - 2y + vanilla's wall vertical gradient), 2 nearer.
+    Their bottle overlays take the same cell. NOT re-tested in game.
+  - Round 11 (user, in game): flower buckets and the Knox Expansion vegetation (note 65) -> Completed. Neon
+    still gave no light although the switch clicked: the engine's IsoLightSwitch sets canBeModified from
+    IsMoveAble (both names are in IsoLightSwitch.class), and setActive returns early for a light that cannot
+    be modified on a square outside a map room (as Knox's World/LightSwitches.lua notes). The pack's neon tiles
+    lack IsMoveAble; the working lamps (Tsargate, disco ball, TikiTown neon) have it. Our neon copies now carry
+    IsMoveAble + PickUpWeight 10. CONFIRMED in game (user, round 12): neon -> Completed. Note: where a cyan
+    and a pink neon's light overlap the ground turns white; the engine adds light colours, and cyan (G + B)
+    plus pink (R + B) sum to every channel, clamped at full. Expected; dimmer colours would give lavender.
+  - Round 13 (user, in game): wine shelves -> Completed. "The Italian Bowl" lit each half on its own: the
+    game links a multi-tile light only when every tile of its GroupName + CustomName + Facing group has
+    SpriteGridPos (the TikiTown 2-tile wall light fix). Copies 337-340 now CustomName "Neon Sign", GroupName
+    "Italian Bowl", SpriteGridPos W 0,0 (north) / 0,1, N 0,0 (west) / 1,0; back to In Progress for a re-test.
+    Bar corner, west side still wrong: depth margins over the walls / wall-plane shelves on the neighbouring
+    squares are now the same on both sides (min 56-64 steps), so the remaining fault is not explained by
+    depth; waiting on the user (what stands on that side). Reversed sloped shelves: the wall-reflection keeps
+    every line along the wall right but turns lines going INTO the wall (bay sides, board depth) the wrong
+    way; a true mirror along the wall cannot be done as an image transform in this projection. Waiting on
+    the user's choice.
+  - Round 14 (user): reversed sloped-wall shelves REMOVED (copies 409-422 stay reserved, unused). NEW
+    `lua/shared/KBWRavenCreek_NeonLink.lua`: switching one neon strip (vanilla ISToggleLightAction:complete,
+    wrapped in memory) switches every strip of the same colour and height joined to it square by square
+    along the run (same level, up to 200 squares) with the engine's own toggle. Tested against mocks (lupa,
+    `next` removed): a joined run follows, a strip past a gap, a touching pink strip and a low strip on the
+    same square do not. NOT tested in game. Bar corner: the post (tile 50 is only the corner post) loses
+    to the pieces beside it on the west side; none of our copies beats it there, so those pieces are pack or
+    vanilla tiles; waiting on the user (which pieces).
+  - Round 15 (user): neon strips in every vanilla bulb colour. Red, Orange, Yellow, Green, Blue, Purple,
+    Magenta, White added (64 buildables): the cyan strips' six pieces per height recoloured (every pixel of
+    Simon's cyan art, unlit and lit, is a saturated cyan, hue 170-210: hue changed, saturation / brightness /
+    alpha kept; white desaturated). 96 new copies in the free slots (154-205, 409-422, 478-511), lit art in
+    KBWRavenCreek_on. Light colour = the bulb's (lightR kept non-zero); each colour's recipe takes its own
+    bulb (cyan LightBulbCyan, pink LightBulbPink now too). One card per colour with both heights ("<Colour>
+    Neon Strips", 8 pieces); the test bundle keeps file 07's groups. The neon link covers the new colours
+    (each colour + height its own run). Built and checked by render; the new colours NOT tested in game.
+  - Heavy Barrier Fence (3 Wide) cost halved: 1.5 single panels (6 sheet metal, 6 bars, 3 barbed wire, 6
+    concrete / torch uses, 3 rods; was 12 / 12 / 6 / 12 / 6). Built and checked by composite
+  (`_shelf_overlay_check.py`, all 16 bases registered); NOT tested in game.
+  - Round 17 (user, in game 2026-11-18): every neon colour + sign, the grey / black / navy planter boxes and
+    the potted purple rose confirmed (Completed in the test bundle).
+    - Bar corner shelves: the post still lost to the straight piece on its west side (red overlay = the build
+      ghost, post over both sides). Depth now `_contact_depth(..., "flat")`: every column stands at the
+      post's front corner, `BAR_POST_BIAS` 8 nearer (the left face's back end moves ~43 steps nearer). Built
+      and checked by value; NOT tested in game.
+    - Plants in a raised bed (copies 371-384) showed behind the bed. Raven Creek's bed tiles have no depth
+      map and Simon drew the plants to be painted over them, so the plants' depth is now the square's front
+      faces, `PLANT_IN_BED_BIAS` 4 nearer (`_contact_depth(..., "front")`). Built and checked by value; NOT
+      tested in game. (Superseded by round 18.)
+  - Round 18 (user, in game 2026-11-18):
+    - Neon joins: the N-S (W wall) runs sat 1 row lower than the inside corner's W half, and the low runs
+      end one row short in their own square (they rely on the next piece's overhang, which looked thin).
+      `neon_seam_fix`: each run carries in its own columns the pixels the next run adds (W: from the run
+      south of it, N: east of it); the corner's W half is the fixed W run's. Unlit and lit art, every colour.
+      Checked per column on the built copies; NOT tested in game.
+    - Plants handle height automatically (user: "both catches are fine"): the 14 "in Low / Tall Planter"
+      plants are dropped. One plant per kind (7, card "Indoor Plants"), a copy of the floor plant with
+      IsTableTop (371-377, halo / shadow cleared like the flower buckets), on KBWRavenCreek_TableTop.lua's
+      list. The low / tall bed pieces use our copies in their own tileset `KBWRavenCreekBeds` (0-38, third
+      tileset in kbwravencreek.tiles, own DEPTH_KBWRavenCreekBeds.png). First attempt put them at
+      KBWRavenCreek 512-550: the game refuses a tileset over 512 tiles ("invalid number of tiles 552") and
+      dropped the whole tileset; the builder now raises if KBWRavenCreek passes 512. Beds: IsTable + Surface 25 / 33 (Simon's raised
+      plants were 50 / 67 rows up) and a box depth (`_box_depth`: front faces + flat top at that height).
+      Catches: a plant on a map-placed bed (pack tile) stays at floor level. Composite matches Simon's raised
+      art; NOT tested in game. Simon MD now 265 buildables.
+
+## 65. Knox Buildworks Expansion: BuildingCraft's Vegetation tab (10_vegetation.json + 1 Lua) (2026-11-17)
+- **Why:** user: "since they are vanilla tiles, add them to the base expansion". WE ships
+  `definitions/10_vegetation.json` empty but already in the manifest, and already has
+  `WorldEssentialsKnoxNative.OnCreateTree` (stage `worldEssentialsNative.attachedSprite`); no definition
+  used it yet.
+- **Content (258 buildables, 46 cards, `knox_vegetation.py`, read from BuildingCraft 3459887404
+  `AddModTextureBase.lua` at build time):** Small / Medium / Large / Giant trees of 11 species (163; one card
+  per size + species), Shrubs (41, one card), Grass (54, one card). All sprites vanilla (checked against
+  vanilla's tiledefs).
+  - One-tile trees: `OnCreateTree` makes the IsoTree. Two-tile trees (BuildingCraft's ISBuildTowTileTree):
+    trunk as the geometry, leaves as `attachedSprite`.
+  - Shrubs (ISBuildShrub): an IsoThumpable of the bush sprite with its leaves attached. New callback
+    `WorldEssentialsKnoxVegetation.OnCreateShrub` in NEW `lua/shared/WorldEssentialsKnoxVegetation.lua`
+    (`attachedSprites`), passable, dismantable.
+  - Grass: the `blends_grassoverlays_01` sprite (attachedFloor, so Knox places it as a floor attachment).
+  - Costs as BuildingCraft: saplings 4 / 6 / 8 / 8 (small / medium / large / giant), shrubs 2, Farming 1 / 1
+    / 2 / 3, any of Shovel / Shovel2 / SpadeForged / SpadeWood / EntrenchingTool; grass 2 grass tufts, no
+    tool. Farming XP as BuildingCraft. Timed action BuildLowNoTool (vanilla has no digging build action).
+  - No translation keys (Knox shows `displayName`); please add IG_UI keys if you want them translated.
+  - The build ghost of a two-tile tree shows its trunk only (the leaves are attached on completion).
+- **Test bundle:** shipped as pack "Knox Expansion - In Progress", plus a test-only shim
+  (`KBWTest_WEKnoxTreeShim.lua`, a verbatim copy of WE's OnCreateTree defined only when WE's is absent,
+  since the bundle runs without WE).
+- **Test status:** callbacks tested against mocks (lupa, `next` removed); NOT tested in game.
+
+## 63. Raven Creek Buildworks: Simon MD batch 2, tables / shelves / speakers / decor (NEW files 06, 07 + Lua) (2026-11-17)
+- **Source:** the user's pack-viewer list (pages SimonMDsTiles38 / 99 / 100 / 102). Not in the Building
+  Menu addon, so layouts come from the user, the tiles' Facing / SpriteGridPos and the art; costs are our
+  first pass (KBW VE material presets; speakers planks + electronics scrap + wire). Generated by
+  `simonmd_furniture2.py`.
+- **File 06 (containers, all with reinforced siblings):** 4 Glass Low Tables (2 tiles, 30-45), 3 In-Wall
+  Shelves (88/89, 94/93, glass 97/98, W/N wall), 5 corner pieces (90, 96, 99, bar shelves 50, 51; need walls
+  on W and N, WE's `KBWCommunityCornerTrim.OnIsValid`), Wine Shelf (48/49), Sloped-Wall Shelves tall /
+  short / side panel (furniture_03 10-15).
+- **File 07 (decor):** Large / Medium / Small / On-Stand speakers (4 faces), Small Wall Speaker (W/N), Hot
+  Dog Cart (3 tiles: W->E 61-62-63, S->N 56-57-58), two statues (30, 33), five table-top figures (0, 32, 34,
+  37, 38), two movie posters (1/2, 20/21).
+- **Our tile copies (KBWRavenCreek 60-114):** low tables + their fill overlays (container_overlays 36-43,
+  registered for our copies only); speakers and sloped shelves (Raven Creek ships the art but no tiledef;
+  properties from the standalone Simon MD tiledef, speakers given a Facing from the art); figures (drawn
+  raised for a display shelf, with IsSurfaceOffset but no Surface, so they would float: copies get
+  Surface 25-61 from the art, plus `KBWRavenCreek_TableTop.lua`, our own copy of the table-top height fix).
+  Depth: best-overlapping vanilla tile of the same kind and Facing (wall speakers: the wall plane).
+  Copies 0-59 are byte-identical to before.
+- **No fill overlays** for the in-wall and wine shelves: their overlays (48-77) are in the standalone Simon
+  MD pack only, not in Raven Creek's.
+- **Added on the user's word:** "Oak In-Wall Shelf End" (92 W wall / 95 N wall, the end pieces); "Oak
+  In-Wall Shelf Outer Corner" (91, the pillar joining two in-wall shelves round an outer corner; needs a
+  W wall on the square to the north and an N wall on the square to the west, or a WallSE post:
+  `KBWRavenCreekPlacement.OnIsValidOuterCorner`, new `KBWRavenCreek_Placement.lua`); the hot dog cart's
+  shadow as a 4th, walkable square past the pole end (59 east of 63, 60 south of 56; the standalone
+  pack's tileGeometry and the pole position agree; neither tile has a solid flag).
+- **Wall shelves (page SimonMDsTiles112, honeywood_Simon_MD 116-133):** 9 pieces in 3 cards (empty, with
+  flowers, with bonsai; light wood / dark wood / white each), even tile = W wall, odd = N wall. The pack
+  names every tile "Window Plant", Facing E, `solidtrans`, so they are built on our copies (KBWRavenCreek
+  115-132) with the right Facing, no solid flag (walk-through, they hang mid-wall like the gun rack) and
+  wall-plane depth. Decorative only: the pack gives them no container.
+- **2026-11-17 fixes (user, in game):**
+  - Hot dog cart REMOVED for now: it has many umbrella tiles not yet accounted for.
+  - BT-BT figure notch (like the gun rack's) and facehugger invisible pixels. 1st pass (halo cleared,
+    depth 12 steps nearer) made the facehugger worse: its translucent grey drop shadow then covered the
+    table, showing the grass through. 2nd pass, vanilla's table-top convention: 220 of vanilla's 256
+    IsSurfaceOffset table-top tiles are Surface 34 with the art's bottom at row 170. The figure copies now
+    have their art moved to that row, Surface 34, halo (alpha < 64) and grey drop shadow removed, and depth
+    from the best vanilla Surface-34 table-top piece (shift <= 5 rows; before, up to 79), trimmed to the
+    art, 2 steps nearer (TV margin).
+  - Heavy Barrier Fence (2 Wide) laid along the wrong axis (user, in game). 58-61 stand on a square's
+    south edge and 68-71 on its east edge, so the run is now west -> east 58 + 60 and north -> south
+    70 + 68 (end panels at the outer ends).
+  - T-800 and Alienation statues now have both orientations: our copies (144 / 145) plus mirrored
+    copies (146 / 147, Facing swapped E <-> S, depth = the original's flipped). Depth from vanilla's
+    gallery statues.
+  - In-wall shelves (88-99) get fill overlays on our copies (133-141). Simon's own are missing from Raven
+    Creek's pack. 1st pass used vanilla's entries verbatim (furniture_shelving_01_10 / _9 / _8): in game
+    the books drew in front of the shelves and between the boards (vanilla's shelf stands out from the
+    wall and has 3 boards; ours are recessed with 4). 2nd pass: `shelf_relayout.py` cuts vanilla's book
+    tiles (both sets, books&misc_01 / _02) into rows, moves each row back into our shelf along the wall
+    normal, sets it on our board (lips 57 / 93 / 144 / 195), clips it to the shelf outline; glass-door
+    pieces get the books at 60 % so the glass shows; corners lay the left half as W, the right as N.
+    52 generated overlay tiles (154-205). The sloped-wall shelves (missing before) get the same, on their
+    own boards, clipped to the slope. Wall-plane depth for the shelves; the overlays take their shelf's.
+  - Bar corner shelves (50 / 51) are outer-corner pillars (user): placed with the outer-corner check (like
+    91), depth N plane left / W plane right, no overlay (vanilla's fridge bottles did not fit).
+  - Green Military Locker: Simon registers fill overlays for its two front-facing tiles (0 / 1, art in Raven
+    Creek's pack); now built on our copies (148 / 149) with overlays 150-153. Copies 148+ keep the pack's
+    solid flags (only the batch-1 copies 0-9 drop them).
+  - The end pieces 92 / 95 and the outer pillar 91 stay on pack tiles (no shelves to fill). Wine shelf:
+    still no overlay.
+- **2026-11-17, round 3 (user):**
+  - Glass Low Tables and the two floor statues no longer block movement (copies without solid /
+    solidtrans; walk-through objects).
+  - Facehugger and the stargate replica get both orientations (mirrored copies 207 / 206 of the cleaned
+    figure art, depth = the original's flipped).
+  - "Tsargate Replica Lamp" (was Tsargate Replica, same id): a table lamp like vanilla's (lightswitch,
+    HasLightOnSprite, IsTableTop + IsSurfaceOffset, Surface 34, KBW native light switch, under Lighting /
+    Table Lamps). Unlit sprite = the gate with its event horizon cut out and the horizon's blue glow on the
+    platform and the DHD turned back to grey; lit sprite = the pack art, in a new tileset `KBWRavenCreek_on`
+    at the same index (2nd tileset in kbwravencreek.tiles, own depth map). Light 90 / 200 / 255, radius 4;
+    the recipe takes a cyan bulb (vanilla LightBulbCyan), and like any lamp the bulb can be swapped for
+    another colour.
+- **Floor wedges (NEW file 08, user 2026-11-17, page SimonMDsTiles97):** `floors_Simon_MD`, half-square
+  floor overlays (FloorOverlay / attachedFloor, placed over an existing floor like a rug). 13 hardwoods
+  (pack: north half 0-12, east half 16-28) and 10 carpets (north half 32-41 only), 23 pieces in two cards
+  ("Hardwood Floor Wedges", "Carpet Floor Wedges"), four faces each on our copies 208-299: N = north half,
+  S = north half flipped vertically, E = east half, W = east half flipped horizontally; a carpet's east
+  half is cut from a full square of its north half + flip. Depth: vanilla's rug cell (floors_rugs_01_0)
+  trimmed to the triangle. Costs: wood 1 plank + 2 nails + hammer, Woodwork 1; carpet = the TikiTown rug
+  cost. Names are ours, from the look (the pack calls every one "Hardwood Floor").
+- **Batch 3 (user, 2026-11-17):**
+  - Overlay audit of Simon_MD_WorldFiller.lua vs Raven Creek's pack (`_simon_overlay_audit.py`): every base
+    we build whose overlay art Raven Creek ships now has it. Still missing in Raven Creek's pack: the glass
+    display cabinet (44-47), wine shelf (48-51), bar shelves (52-55), in-wall shelves (56-77; ours use the
+    re-laid vanilla books). Overlays 160-167 ARE in the pack but WorldFiller never registers them: they are
+    the sloped-wall shelves' (user spotted 160 / 166; by overlap 160 / 161 tall N furniture_03 10, 162 / 163
+    short N 11, 164 / 165 tall W 15, 166 / 167 short W 14). The sloped shelves now use these (copies
+    303-310, fuller tile first as vanilla / Simon list pairs) instead of the re-laid vanilla books.
+  - Star Destroyer Figure (decoration_Simon_MD 36, the pack's "Solar Destroyer"): figure copy 300 + mirror 301.
+  - Disco Ball (decoration_Simon_MD 137): ceiling lamp, walk-through. The pack already makes it a light
+    (light blue, radius 10); copy 302 adds HasLightOnSprite: lit = the pack art (KBWRavenCreek_on_302),
+    unlit = dimmed to 45 %. Depth: a vertical line through the square's centre (no close vanilla match).
+  - Retro Wave Pictures 1-5 (decoration_Simon_MD 127-136, pack tiles; W wall odd, N wall even).
+  - Barrel Table (furniture_02 52 / 53, pack tiles, shelves 15, reinforced sibling; its overlay 54 / 55 is
+    not in Raven Creek's pack).
+  - Chalkboard (3 Wide) (furniture_02 24-29, pack tiles, wall-hung, walk-through): W wall north -> south
+    26 / 25 / 24, N wall west -> east 27 / 28 / 29 (user's order, matches SpriteGridPos).
+- **Neon lights (user 2026-11-17, page SimonMDsTiles135):** every lighting_Simon_MD tile with a lit partner on
+  lighting_Simon_MD_on; the neon ones built (14-53; the wall lamps 0-13 also have lit partners, not asked).
+  Our copies 311-340: unlit = pack tile, lit = its _on partner in KBWRavenCreek_on, HasLightOnSprite, the
+  pack's `streetlight` flag dropped, wall-plane depth. Light colours matched to the art: the pack has the
+  cyan and pink strips' colours swapped (cyan tubes tagged 193/100/100, pink 30/100/100) and the pink dancer
+  tagged teal. Facing set from the art (the signs' Facing did not match their wall).
+  - Strips, cyan and pink, at the top of the wall (14-25) and floor level (26-37): run (W 16 / N 15), end
+    (W 17 / N 14), inside corner (22 / 23, needs walls W and N), corner cap (24 / 25). 16 pieces in 4 cards.
+  - Pink Dancer (40 W / 41 N).
+  - "The Italian Bowl" (42-53): 2 tiles wide, each tile split by Simon into green text / white pasta / red
+    bowl; merged into one tile per square (W wall 43+45+47 north, 42+44+46 south; N wall 48+50+52 west,
+    49+51+53 east; checked by composite). One white light per tile.
+  - Cost: the TikiTown neon signs'. Walk-through.
+- **Wine shelf missing in game (user, 2026-11-17):** only the reinforced one showed. Its construction named
+  a timed action that does not exist (`BuildWoodenStructureLarge`), and KBW drops such a buildable with a
+  warning in console.txt. Now `BuildWoodenStructureMedium`; `simonmd_furniture2.py` refuses unknown timed
+  actions at build time. No other Simon MD piece had the problem.
+- **Wine shelf:** the pack's Facing is the opposite of the art (48 says E, its slots face south), so 48 is
+  the N-wall face and 49 the W-wall face.
+- **Test status:** built and checked by composite; NOT tested in game. Test bundle In Progress.
+## 62. Raven Creek Buildworks: marble counter tops built onto counters (NEW file 05 + Lua) (2026-11-17)
+- **Source:** Simon MD's `overlays_Simon_MD` 56-87 (standalone pack names: Dark / White / Gold / Blue
+  Marble Counter Top, flagged `TileOverlay`). Raven Creek's pack has the art but no tiledef for that
+  sheet, so they are copies 28-59 in our `KBWRavenCreek` tileset (no properties, like vanilla's counter
+  overlays). Generated by `simonmd_countertops.py`.
+- **Draw order (the user's requirement: above the counter, below anything on it such as a sink):** done
+  the way vanilla draws its own counter overlays (`CounterOverlays.lua` -> `TileOverlays`, read from the
+  jar). The top is an attached sprite of the counter, inserted FIRST in its attached list, with the
+  counter's own depth cell (vanilla assigns `fixtures_counters_01_0` to all its counter overlays; ours
+  use the same cell). It draws straight after the counter, so a sink or appliance on the square draws
+  over it, whichever was built first. Other attached sprites (vanilla stains) stay above it.
+- **How it builds:** the buildable is a placeholder. `KBWRavenCreekCounterTop.OnIsValid` needs a counter
+  on the square (`container = counter`). `OnCreate` (server, same pattern as vanilla's barricade
+  OnCreate) attaches the top, removes the placeholder before clients see it, transmits the counter, and
+  returns `objectAlreadyTransmitted`. The shape (4 straight, 4 corner) comes from the counter's tile
+  (`Facing`, and `Corner` in `GroupName`); the player's rotation is only the fallback for counters with no
+  `Facing`. A second top on the same counter replaces the first.
+- **Removal:** the top is recorded in KBW's own `modData.KBWAttachedSprites`, so KBW's context menu
+  offers "Remove <name>" (no refund, as for KBW's wall details).
+- **Costs (first pass):** 2 stone blocks, concrete 1 use, mason's trowel, Masonry 3, 10 xp.
+- **Also fixed in file 02:** the Simon doors had `callbacks` (door-frame check) and `sprites` (open
+  sprites) at buildable level. KBW reads both from the stage only, so they were moved into the stage.
+- **Test status:** built and checked; shape choice checked on three vanilla counter styles by composite;
+  Lua tested against mocks (lupa, `next` removed). Test bundle In Progress. NOT tested in game.
+## 61. Raven Creek Buildworks: Simon MD heavy barrier fences + low barriers (NEW file 04) (2026-11-16)
+- **Source:** `barricades_Simon_MD` (pack pages SimonMDsTiles32 / 33), in Raven Creek's copy. The Building
+  Menu addon doesn't use this sheet, so the layout is the user's (from the pack viewer) and the costs are
+  ours, first pass. Generated by `simonmd_barricades.py`.
+- **The tiles** have no wall flags: each is a solid object filling its square (heavy `solid`, low
+  `solidtrans`).
+- **Heavy barrier fences, two storeys tall:** lower tile on the ground floor, its razor-wire top on the
+  floor above, as two layers of one face. Pairs: 56/57, 62/63, 64/65, 58/59, 60/61, 66/67, 68/69, 70/71.
+  "Heavy Barrier Fence 1" (W 60/61, N 68/69), "2" (W 58/59, N 70/71), "(Wide)" (W 62/63, N 66/67), and
+  two posts (56/57, 64/65). The W/N pairing is from the art (same panel, matching pixel counts).
+- **Low barriers:** "Low Barrier (Do Not Cross)", two wide (N wall: 73 west + 74 east; W wall: 76 north
+  + 75 south, from composites), and two singles (72, 77).
+- **Costs (first pass):** heavy fence 4 sheet metal, 4 metal bars / pipes, 2 barbed wire, concrete
+  4 uses, blowtorch 4, rods 2, welding mask, MetalWelding 4 + Masonry 2; posts about half; low barrier
+  3 planks, 4 nails, concrete 2 uses, hammer, Woodwork 2 + Masonry 1 (singles about two thirds).
+- **Known risk:** Raven Creek ships no depth maps for this sheet. If they show draw-order problems in
+  game, they get depth copies like the secret cabinet (note 59).
+- **2026-11-17 (user):** the inner and outer corners are now ONE piece each, two orientations: "Heavy
+  Barrier Corner" (W = inner 56/57, N = outer 64/65; replaces Heavy Barrier Post 1 / 2) and "Low Barrier
+  Corner" (W = inner 77, N = outer 72; replaces Low Barrier 1 / 2). New "Heavy Barrier Fence (2 Wide)",
+  the completed section: straight panel + end panel (W wall 60 north + 58 south, N wall 68 west + 70 east,
+  both storeys), costing two singles. 8 pieces became 7.
+- **Test status:** built and checked; test bundle In Progress. NOT tested in game.
+
+## 60. Ice machines make ice, with Sapph's Cooking (2026-11-16)
+- **Why:** players couldn't find how to make ice. Sapph's Cooking (3409143790, `SapphCooking_B42`) B42
+  makes Ice Cubes from any item holding 0.2 cold water ("Make Ice Cubes"); its B41 Ice Tray can't hold
+  water in B42 (old `CanStoreWater`). Our ice machines held items but made nothing.
+- **What:** right-click a Commercial / Large / Industrial Ice Machine built with Knox -> "Make Ice":
+  2 `SapphCooking.IceCubes` per use, 100 ticks, Sapph's own `IceBreaking` sound. Needs power (the
+  machine's container `isPowered()`, as vanilla checks fridges); greyed with a tooltip without it.
+  Map-placed TK ice machines are left alone.
+- **Guard:** inert unless `SapphCooking_B42` is active AND its `SapphCooking.IceCubes` item exists: no
+  option, no item, no sound reference.
+- **NEW Lua (ours, Community submod):** `media/lua/shared/TimedActions/KBWCommunityMakeIceAction.lua`
+  (B42 timed action; `complete()` re-checks and adds the items, so it runs on the server in
+  multiplayer) and `media/lua/client/KBWCommunity_IceMachineMenu.lua`. Generated by `ice_machine_ice.py`.
+- **Test status:** tested against mocks (lupa, `next = nil`): with / without Sapph, item missing,
+  powered / unpowered, map-placed and other buildables. NOT tested in game.
+
+## 59. Raven Creek Buildworks: Simon MD doors + furniture (NEW files 02 / 03) (2026-11-16)
+- **Confirmed in game (user, 2026-11-17):** the three hinged doors (Half-Metal Plank Door,
+  Reinforced Metal-Plank Door, Secret Entrance (Metal Cabinet)); test bundle Completed. The shipping
+  container garage doors are still In Progress.
+- **Source:** the B41 Building Menu Simon MD addon (3137092790): its scrap doors, secret entrance,
+  garage doors and metal containers, on Raven Creek's copy of the sheets. Recipes are Building Menu's
+  at its default sandbox values. Generated by `simonmd_doors_furniture.py`; in the gated submod
+  (note 57), so none of it shows without Raven Creek.
+- **02 Doors (5):** Half-Metal Plank Door and Reinforced Metal-Plank Door (one "Scrap Doors" card),
+  Secret Entrance (Metal Cabinet) (`fixtures_doors_Simon_MD_20`-`31`, hinged doors with open sprites
+  and the door-frame check), Shipping Container Doors 3 and 4 wide (`furniture_Simon_MD_72`-`77`, laid out
+  like the TikiTown garages: same GarageDoor part numbers).
+- **03 Furniture (4 + 4 Reinforced):** Green Military Locker (80, padlockable), Glass Display Counter
+  (30), Glass Display Cabinet (60, `furniture_02_Simon_MD_46`/`47`), Military Wall Gun Rack (50, 2 tiles,
+  against a wall; faces from the tiles' own attachedW / attachedN + SpriteGridPos, because the addon
+  names them the other way round). Each has a Reinforced version (100) on the same card.
+- **Costs:** everything uses the addon's own recipes. The four base containers are exempt from our
+  half-of-Reinforced rule (note 24; `counter_variants.HALVE_EXCLUDE`, user 2026-11-16), so the glass
+  counter and cabinet cost glass panes (`Base.GlassPanel`).
+- **Gun rack walk-through (user, 2026-11-16):** the pack's 4 rack tiles carry `solid`. The buildable
+  uses our copies without it, in the submod's own small tileset: NEW `KBWRavenCreek.pack` +
+  `kbwravencreek.tiles`, `tiledef=kbwravencreek 8174` (free across every installed mod; collision check
+  clean). Map copies of the pack tiles keep theirs. The object is `canPassThrough`.
+- **Not built:** the Scrap Double Door Gate (sheet not in Raven Creek's copy) and the corrugated roof
+  pieces on the furniture sheet (roofing).
+- **Secret entrance drew behind its door frame (user, in game 2026-11-16).** Raven Creek ships no depth
+  maps for this sheet, so the cabinet (which stands out from the wall) had none and the frame drew over
+  it. The buildable now uses our copies `KBWRavenCreek_4`-`7` (closed W / N, open) with a depth map
+  (`common/media/depthmaps/DEPTH_KBWRavenCreek.png`, + the minimal `tileGeometry.txt` the depth loader
+  needs): vanilla's cell for the single-tile tall shelving whose outline matches best
+  (`furniture_shelving_01_41` / `_40`, overlap 0.88 / 0.87), with uncovered art pixels filled from the
+  nearest depth. Checked: every art pixel has depth, and the cabinet is nearer than its wall on 100% of
+  pixels (median 56-69 steps). Renamed "Metal Wardrobe" -> "Metal Cabinet" (id `door_secret_cabinet`).
+- **Gun rack notch (user, in game 2026-11-16, one orientation):** a triangle missing from the top at
+  the join between its two squares. The pack art composites cleanly on both walls, so it came from depth:
+  the rack copies had the Wall Screen TV's margin (2 steps in front of the wall), and the rack is the
+  only wall piece spanning two squares, so the neighbouring square's wall corner won at the join. Now
+  12 steps in front (the TV's light-switch margin). Not yet confirmed in game.
+- **Fill overlays (user, 2026-11-16):** the standalone Simon MD pack registers "items inside" overlays
+  for the gun rack and both glass display pieces (`Simon_MD_WorldFiller.lua`). Raven Creek ships the
+  overlay art (`container_overlays_Simon_MD`) but no tiledef or registration for it. Our copies now
+  include the overlay tiles for the rack and the Glass Display Counter (`KBWRavenCreek_16`-`27`), and
+  NEW `media/lua/server/Items/KBWRavenCreek_ContainerOverlays.lua` registers them for our copies only.
+  The Glass Display Counter is now built on copies (`_8` / `_9`) with matched vanilla depth.
+  **Not possible:** the Glass Display Cabinet's overlays: Raven Creek's pack lacks 3 of its 4 overlay
+  tiles (45-47).
+- **Test status:** built and checked; test bundle In Progress. NOT tested in game.
 
 ## 58. Reinforced containers held the tile's capacity in multiplayer (2026-11-15) [in handoff-2026-11-16]
 - **Player report:** Gray Bookcase (Reinforced) says 100 but holds 52 with Organized, so 40 (the
@@ -775,7 +1276,8 @@ NOT in this hand-off (still pending below): note 56 (Wall Screen TV over light s
   the TV: unchanged, pixel for pixel.
 - Only the depth sheet changes (`common/media/depthmaps/DEPTH_KBWCommunityIceShell.png`). TVs already
   placed get it too. Needs a full game restart.
-- **Test status:** built and checked against depth cells only. NOT tested in game.
+- **Test status:** CONFIRMED in game (user, test bundle, 2026-11-16). Not a priority: held for the
+  next major hand-off.
 
 ---
 
@@ -1381,6 +1883,8 @@ your own to merge, so nothing of yours is overwritten.
   - Not yet tested in game: the smelter and kiln recipes end to end, entity table-top placement
     through KBW, 4-facing rotation, overlay depth and offset (especially on table tops), the live
     redraw, and the latest furnace tuning (99 slot, fast loading, Cancel clearing the queue).
+  - **Confirmed in game (user, 2026-11-17):** the Electric Kiln and Electric Smelter on a table top, and
+    the kiln halo / depth fix (no more invisible pixels getting in the way on a table; test bundle).
   - Not handled: multiplayer sync.
 
 ## 42. Storage tooltip: `hasModData` called on recipe script items (found 2026-11-12 with the fuel furnace)

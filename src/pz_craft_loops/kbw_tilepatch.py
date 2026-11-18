@@ -2060,12 +2060,33 @@ def write_decor_seating(common_media_dir, cols=8):
         blocks.append("        /* %s_%d (seat of %s_%d) */\n        %s" % (ICESHELL_TILESET, j, src_set, src_i, block.strip()))
     if not blocks:
         return 0
-    os.makedirs(common_media_dir, exist_ok=True)
-    out = os.path.join(common_media_dir, "seating.txt")
-    open(out, "w", encoding="utf-8").write(
-        "seating\n{\n    VERSION = 3,\n    tileset\n    {\n        name = %s,\n%s\n    }\n}\n"
-        % (ICESHELL_TILESET, "\n".join(blocks)))
+    merge_seating(os.path.join(common_media_dir, "seating.txt"), ICESHELL_TILESET, blocks)
     return len(blocks)
+
+
+def merge_seating(path, tileset, blocks):
+    """Write `tileset`'s tile blocks into the seating.txt at `path`. Other tilesets already in the file are
+    kept (the test bundle's one common/media holds several mods' seats); this tileset's old block is replaced."""
+    import re as _re
+    tsblock = "    tileset\n    {\n        name = %s,\n%s\n    }" % (tileset, "\n".join(blocks))
+    others = []
+    if os.path.isfile(path):
+        txt = open(path, encoding="utf-8", errors="replace").read()
+        pos = 0
+        for m in _re.finditer(r"\btileset\s*\{", txt):
+            if m.start() < pos:
+                continue
+            depth, j = 1, m.end()
+            while depth and j < len(txt):
+                depth += {"{": 1, "}": -1}.get(txt[j], 0)
+                j += 1
+            blk = txt[m.start():j]
+            nm = _re.search(r"name\s*=\s*([^,\s]+)\s*,", blk)
+            if not nm or nm.group(1) != tileset:
+                others.append("    " + blk.strip())
+            pos = j
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    open(path, "w", encoding="utf-8").write("seating\n{\n    VERSION = 3,\n%s\n}\n" % "\n".join(others + [tsblock]))
 
 
 _COUCH_RECUT = {}

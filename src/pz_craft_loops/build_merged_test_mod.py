@@ -142,6 +142,9 @@ COMPLETED_ID_PREFIXES = {
 # EXACT buildable ids confirmed in-game (when a prefix would also catch unconfirmed siblings).
 _DC = "community.dirkies.containers."
 COMPLETED_IDS = {
+    # Simon MD hinged doors: confirmed in game (user, 2026-11-17)
+    "worldessentials.simonmd.door_scrap_1", "worldessentials.simonmd.door_scrap_2",
+    "worldessentials.simonmd.door_secret_cabinet",
     # Dirkies containers (sheet 40), user review 2026-08-28: Medical, Dressers, Crates, Pallets,
     # Shelving, Tool Cabinets all good (Wardrobes/Cabinets/Counters still being reworked)
     _DC + "location_community_medical_ddd_01_8", _DC + "location_community_medical_ddd_01_10",
@@ -178,6 +181,27 @@ INPROGRESS_ID_PREFIXES = {
     #  Room - all confirmed: "all of dirkies in progress can be marked complete", "all of Dylan can
     #  be marked complete", user 2026-08-28)
     # (props-14 bird cage / terrarium / pet cage / Mahjong: confirmed with all of TikiTown, user 2026-08-28)
+    # Simon MD doors + furniture (2026-11-16, simonmd_doors_furniture.py), incl. their reinforced
+    # variants: not tested yet
+    # the 3 hinged doors (scrap 1 / 2, secret cabinet): confirmed in game, user 2026-11-17 -> Completed
+    "worldessentials.simonmd.garage_",
+    "worldessentials.simonmd.locker_", "worldessentials.simonmd.display_",
+    "worldessentials.simonmd.gun_rack_",
+    "worldessentials.simonmd.barricade_",          # Simon MD barricades (2026-11-16): not tested yet
+    "worldessentials.simonmd.countertop_",         # marble counter tops (2026-11-17): not tested yet
+    # Simon MD batch 2 (2026-11-17, simonmd_furniture2.py): not tested yet
+    "worldessentials.simonmd.low_table_", "worldessentials.simonmd.inwall_",
+    "worldessentials.simonmd.bar_column_", "worldessentials.simonmd.wine_", "worldessentials.simonmd.sloped_",
+    "worldessentials.simonmd.speaker_", "worldessentials.simonmd.statue_",
+    "worldessentials.simonmd.figure_", "worldessentials.simonmd.poster_",
+    "worldessentials.simonmd.wall_shelf",          # Simon MD wall shelves (2026-11-17): not tested yet
+    "worldessentials.simonmd.floor_wedge_",        # Simon MD floor wedges (2026-11-17): not tested yet
+    "worldessentials.simonmd.disco_ball", "worldessentials.simonmd.chalkboard_",   # batch 3: not tested yet
+    "worldessentials.simonmd.barrel_table",
+    "worldessentials.simonmd.neon_",                # Simon MD neon (2026-11-17): not tested yet
+    "worldessentials.simonmd.hw_",                  # Simon MD honeywood furniture (2026-11-17): not tested yet
+    "worldessentials.simonmd.planter_", "worldessentials.simonmd.plant_",   # Simon MD planters: not tested yet
+    "worldessentials.simonmd.flowers_",
 }
 
 def piece_status(bid, sheet_status):
@@ -282,9 +306,35 @@ TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42",   # 22: doors in 12 type g
                   "52"}                                   # lamp / street-light / traffic-light cards
 # Community sheets that keep their KBW groups in the test bundle, so each card reviews as it ships
 # (user 2026-08-28: "the potted plants should be a single card")
-COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67", "68"}
+COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67", "68",
+                    "10",   # Knox Expansion 10_vegetation.json: one card per tree size + species (knox_vegetation.py)
+                    "07"}   # Simon MD decor: one card per neon colour (user 2026-11-17), posters, speakers ...
 # Simon MD submod files confirmed in game
 SIMON_COMPLETED = {"01"}          # scrap fences: all confirmed working (user, 2026-11-14)
+# Simon MD test-bundle subcategories confirmed in game (user, 2026-11-17): counters (glass display counter +
+# the 4 marble counter tops), garage doors, lockers, tables (glass low tables + barrel table); and every speaker
+SIMON_COMPLETED_SUBCATS = {"Counters", "Garage Doors", "Lockers", "Tables",
+                           "Fences", "Floors",     # + barricades, floor wedges (user, 2026-11-17)
+                           "Couches", "Wardrobes"}  # wall benches with shoes, glass-front wardrobes (round 9)
+SIMON_COMPLETED_PREFIXES = ("worldessentials.simonmd.speaker_",
+                            "worldessentials.simonmd.disco_ball", "worldessentials.simonmd.figure_tsargate",
+                            # in-wall shelves: glass + oak, straight / corner / end / pillar, + reinforced
+                            "worldessentials.simonmd.inwall_",
+                            # user, in game 2026-11-17 (round 9): Retro Wave pictures + movie posters, T-800 and
+                            # alien statues, wall shelves (with flowers / bonsai / empty), chalkboard, every
+                            # table-top figure, glass display cabinet, military wall gun rack, wall clothes rack
+                            "worldessentials.simonmd.poster_", "worldessentials.simonmd.statue_",
+                            "worldessentials.simonmd.wall_shelf", "worldessentials.simonmd.chalkboard_",
+                            "worldessentials.simonmd.figure_", "worldessentials.simonmd.display_cabinet_glass",
+                            "worldessentials.simonmd.gun_rack_", "worldessentials.simonmd.hw_clothes_rack",
+                            "worldessentials.simonmd.flowers_",    # flower buckets (round 11)
+                            "worldessentials.simonmd.neon_",       # every neon colour + signs (round 17, 19)
+                            "worldessentials.simonmd.bar_column_",  # bar corner shelves (round 19)
+                            "worldessentials.simonmd.wine_",       # wine shelves (round 13)
+                            "worldessentials.simonmd.sloped_",     # sloped-wall shelves (round 16)
+                            # grey / black / navy planter boxes, potted purple rose (round 17)
+                            "worldessentials.simonmd.planter_box_",
+                            "worldessentials.simonmd.plant_potted_purple_rose")
 
 def sheet_key(fname):
     return os.path.basename(fname).split("_")[0]
@@ -336,6 +386,11 @@ def load_sources():
         yield PACK_OF.get(k, "Community"), ("Completed" if k in COMPLETED_SHEETS else "In Progress"), fn, json.load(open(p, encoding="utf-8"))
     # Simon MD (Raven Creek's copy) submod, build_simonmd_mod.py (2026-11-14). Own pack label, so its
     # file numbers never meet the TikiTown / Community ones.
+    # Knox Buildworks Expansion additions (vanilla sprites; knox_vegetation.py, 2026-11-17): own pack label
+    import knox_vegetation as _kv
+    for p in sorted(glob.glob(os.path.join(_kv.OUT_DIR, "*.json"))):
+        # vegetation (trees, shrubs): confirmed in game (user, 2026-11-17)
+        yield "Knox Expansion", "Completed", os.path.basename(p), json.load(open(p, encoding="utf-8"))
     import build_simonmd_mod as _sm
     for fn in _sm.SRC_FILES:
         p = os.path.join(_sm.SRC_DIR, fn)
@@ -381,8 +436,22 @@ def main():
     mi += ["pack=%s" % _fs0.TILESET, "tiledef=%s %d" % (_fs0.TILEDEF_NAME, _fs0.TILEDEF_ID)]
     import fridge_doom as _fd0                              # TEST ONLY, never shipped: fridge screen image (8175)
     mi += ["pack=%s" % _fd0.TILESET, "tiledef=%s %d" % (_fd0.TILEDEF_NAME, _fd0.TILEDEF_ID)]
+    import simonmd_doors_furniture as _sdf0                 # Raven Creek submod tile copies (8174)
+    mi += _sdf0.modinfo_lines()
     open(os.path.join(mod42,"mod.info"),"w",encoding="utf-8").write("\n".join(mi)+"\n")
     _media=os.path.join(mod42,"media"); os.makedirs(_media, exist_ok=True)
+    _sdf0.write_copy_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
+    _sdf0.write_overlay_lua(os.path.join(_media, "lua", "server", "Items", _sdf0.OVERLAY_LUA_NAME))
+    import simonmd_countertops as _sct0                     # marble counter tops (2026-11-17)
+    _sct0.write_lua(os.path.join(_media, "lua", "shared", _sct0.LUA_NAME))
+    import simonmd_furniture2 as _sf20                      # Simon MD batch 2 figures (2026-11-17)
+    _sf20.write_tabletop_lua(os.path.join(_media, "lua", "shared", _sf20.TABLETOP_LUA_NAME))
+    _sf20.write_placement_lua(os.path.join(_media, "lua", "shared", _sf20.PLACEMENT_LUA_NAME))
+    _sf20.write_neon_link_lua(os.path.join(_media, "lua", "shared", _sf20.NEON_LINK_LUA_NAME))
+    import knox_vegetation as _kv0                          # BuildingCraft vegetation (2026-11-17)
+    _kv0.main()
+    _kv0.write_veg_lua(os.path.join(_media, "lua", "shared", _kv0.VEG_LUA))
+    _kv0.write_test_shim(os.path.join(_media, "lua", "shared", _kv0.TEST_TREE_SHIM_LUA))
     write_tv_screen_assets(_media)
     write_viewscreen_assets(_media)
     # depth maps + tileGeometry load only from <mod>/common/media
@@ -431,6 +500,8 @@ def main():
     write_gunrack_overlay_lua(os.path.join(_media, "lua", "server", "Items", GUNRACK_LUA_NAME))
     from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
+    from ice_machine_ice import write_ice_lua       # ice machines -> Sapph's ice (2026-11-16)
+    write_ice_lua(_media)
     # ramp removal: WE's own files as WE ships them (2026-11-16; we_sync.WE_RAMP_FILES)
     import we_sync as _ws
     for _rel in _ws.WE_RAMP_FILES:
@@ -482,6 +553,9 @@ def main():
             seen.add(bid)
             # per-piece status override (finer than sheet-level)
             pstatus = piece_status(bid, status)
+            if pack == "Simon MD" and (generic_type(b) in SIMON_COMPLETED_SUBCATS
+                                       or any(bid.startswith(p) for p in SIMON_COMPLETED_PREFIXES)):
+                pstatus = "Completed"
             top = "%s - %s" % (pack, pstatus)
             nb=json.loads(json.dumps(b))         # deep copy
             add_viewscreen_north_faces(nb)       # generated north-wall viewscreen art

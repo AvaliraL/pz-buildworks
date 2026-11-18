@@ -182,6 +182,11 @@ TEXT = {
                "ladder on top of it."),
     "VehicleRamp": ("Drivable ramp, 20 tiles long, that climbs one storey. Needs 20 clear squares, open "
                     "air above the run, and a floor to drive onto at the top."),
+    "Speaker": "Speaker cabinet for decoration. It does not play sound.",
+    "HotDogCart": "Three-tile street vendor's hot dog cart, for decoration.",
+    "WallShelfDecor": "Small decorative shelf that hangs on a wall. It does not hold items.",
+    "CounterTop": ("New top for a counter. Build it on a counter; it fits the counter's shape, and a "
+                   "sink or anything else on the counter stays on top. Right-click the counter to remove it."),
 }
 TYPE_BY_ID = {
     "community.dirkies.containers.furniture_storage_ddd_01_4": "StackCase",
@@ -200,6 +205,9 @@ TYPE_BY_ID = {
     "community.tk.kitchen_misc.coffee_machine": "CoffeeMaker",
     "community.tk.kitchen_misc.deli_slicer": "Slicer",
     "community.tk.kitchen_misc.wall_shelf": "KitchenShelf",
+    "worldessentials.simonmd.hotdog_cart": "HotDogCart",
+    "worldessentials.simonmd.sloped_end": "Decoration",       # side panel, no storage
+    "worldessentials.simonmd.inwall_oak_pillar": "Decoration",  # outer-corner pillar, no storage
     "community.dylan.rf02.exercise_ball": "Gym",
     "community.dylan.rf02.punching_bag": "Gym",
     # Dirkies medical sinks (dirkies_medical.py)
@@ -221,7 +229,7 @@ SUB_TYPE = {
     "Ladders": "Ladder", "Ramps": "VehicleRamp",
     "Window Trim": "WindowTrim", "Window Planters": "WindowPlanter", "Potted Plants": "PottedPlant",
     "Chairs": "Chair", "Medical Equipment": "MedicalEquipment", "Barrel Planters": "BarrelPlanter",
-    "Gun Racks": "GunRack",
+    "Gun Racks": "GunRack", "Counter Tops": "CounterTop", "Speakers": "Speaker", "Wall Shelves": "WallShelfDecor",
     "Neon Signs": "NeonSign", "Curtains": "BeadCurtain", "Entertainment": "StripperPole",
     "Table Lamps": "TableLamp", "Floor Lamps": "FloorLamp", "Wall Lights": "WallLamp", "Exit Signs": "ExitSign",
     "Street Lights": "StreetLight", "Traffic Lights": "TrafficLight",

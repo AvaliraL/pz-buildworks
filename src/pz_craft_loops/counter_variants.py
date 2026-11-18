@@ -117,6 +117,11 @@ HALVE_EXCLUDE = {
     "community.dylan.containers.DylansRandomFurniture03_34",
     "community.dylan.containers.DylansRandomFurniture03_45",
     "community.tk.containers.fixtures_counters_tk_01_0",
+    # Simon MD furniture (user, 2026-11-16): keep the Building Menu addon's own recipes
+    "worldessentials.simonmd.locker_military_green",
+    "worldessentials.simonmd.display_counter_glass",
+    "worldessentials.simonmd.display_cabinet_glass",
+    "worldessentials.simonmd.gun_rack_wall",
 }
 
 

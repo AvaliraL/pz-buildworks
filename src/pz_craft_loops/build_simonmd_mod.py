@@ -20,6 +20,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = r"c:\Users\josep\Kiro\zomboid\simonmd"
 SRC_FILES = [
     "01_simonmd_fencing.json",    # simonmd_fencing.py
+    "02_simonmd_doors.json",      # simonmd_doors_furniture.py (2026-11-16)
+    "03_simonmd_furniture.json",  # simonmd_doors_furniture.py (2026-11-16): containers, "reinforce"
+    "04_simonmd_barricades.json", # simonmd_barricades.py (2026-11-16): heavy barrier fences, low barriers
+    "05_simonmd_countertops.json", # simonmd_countertops.py (2026-11-17): marble tops built onto counters
+    "06_simonmd_furniture2.json",  # simonmd_furniture2.py (2026-11-17): tables, in-wall / wine / sloped shelves
+    "07_simonmd_decor.json",       # simonmd_furniture2.py (2026-11-17): speakers, cart, statues, figures, posters
+    "08_simonmd_floor_wedges.json",  # simonmd_furniture2.py (2026-11-17): half-square floor overlays
+    "09_simonmd_planters.json",      # simonmd_furniture2.py (2026-11-17): planter beds, boxes, plants, flowers
 ]
 # 2026-11-15 (user): the submod covers all of Raven Creek's tiles (RCBucho + its Simon MD copy), and it
 # stays gated on Raven Creek: require=RavenCreek_B42 means it can't be enabled without it, so its
@@ -43,6 +51,9 @@ MODINFO = [
     "versionMin=42.0",
     "tags=Build 42,Build",
 ]
+# our own small tileset (gun rack copies without `solid`; simonmd_doors_furniture.py, 2026-11-16)
+import simonmd_doors_furniture as _sdf   # noqa: E402
+MODINFO += _sdf.modinfo_lines()
 
 
 def main():
@@ -58,6 +69,19 @@ def main():
     os.makedirs(tr_dir)
     os.makedirs(os.path.join(mod_root, "common"))
     open(os.path.join(mod42, "mod.info"), "w", encoding="utf-8").write("\n".join(MODINFO) + "\n")
+    out.append("  tile copies: %d (%s)" % (_sdf.write_copy_assets(os.path.join(mod42, "media"),
+                                                                  os.path.join(mod_root, "common", "media")),
+                                           _sdf.COPY_TILESET))
+    _sdf.write_overlay_lua(os.path.join(mod42, "media", "lua", "server", "Items", _sdf.OVERLAY_LUA_NAME))
+    # counter-top callbacks: shared, KBW resolves onIsValid / onCreate on both sides
+    import simonmd_countertops as _sct
+    _sct.write_lua(os.path.join(mod42, "media", "lua", "shared", _sct.LUA_NAME))
+    # raised table-top figures keep their height on load / pick-up (own copy of the Community fix)
+    import simonmd_furniture2 as _sf2
+    _sf2.write_tabletop_lua(os.path.join(mod42, "media", "lua", "shared", _sf2.TABLETOP_LUA_NAME))
+    _sf2.write_placement_lua(os.path.join(mod42, "media", "lua", "shared", _sf2.PLACEMENT_LUA_NAME))
+    _sf2.write_neon_link_lua(os.path.join(mod42, "media", "lua", "shared", _sf2.NEON_LINK_LUA_NAME))
+    out.append("  depth matches: %s" % ", ".join("%d=%s (%.2f)" % (c, n, s) for c, (n, s) in sorted(_sdf.DEPTH_MATCH.items())))
 
     import name_tooltip_pass
     from kbw_sort_order import md5_order
@@ -65,6 +89,12 @@ def main():
     for fn in SRC_FILES:
         doc = json.load(open(os.path.join(SRC_DIR, fn), encoding="utf-8"))
         kept = [b for b in doc["buildables"] if b["id"] not in seen]
+        # reinforced containers: military-crate cost, capacity 100 (counter_variants.py; the
+        # "reinforce" tag, as in the Community / TikiTown builders)
+        import counter_variants
+        n_rf = counter_variants.add_variants(kept)
+        if n_rf:
+            out.append("  reinforced variants added in %s: %d" % (fn, n_rf))
         seen.update(b["id"] for b in kept)
         name_tooltip_pass.apply(kept, tooltips, report)
         doc["buildables"] = kept
@@ -101,6 +131,9 @@ def main():
         os.makedirs(os.path.join(work, "42"))
         shutil.copyfile(os.path.join(mod42, "mod.info"), os.path.join(work, "42", "mod.info"))
         out.append("created new WE work submod %s (proposed mod.info)" % work)
+    elif not os.path.isdir(os.path.join(we_sync.UPSTREAM, SUBMOD)):
+        # WE doesn't ship this submod yet, so its mod.info is still ours: keep the proposal current
+        shutil.copyfile(os.path.join(mod42, "mod.info"), os.path.join(work, "42", "mod.info"))
     try:
         we_sync.sync_to_we_work(mod_root, SUBMOD, out)
     except Exception as e:

@@ -1,16 +1,11 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-16
-            (Steam manifest 4476907045485774239): the WE dev's merge of handoff-2026-11-14b-sinks-ramps
-            in full, plus the two items held from 11-14 (file 70's Future Room fridge tiers and
-            common/media/seating.txt). The Simon MD fencing stays in Knox Buildworks Expansion
-            (35_simonmd_fencing.json, no Raven Creek gate; see note 57).
-            WE's own edits: the ramp removal rewritten server-side (KBWCommunity_RampRemove.lua plus NEW
-            KBWCommunity_RampRemoveServer.lua and KBWCommunity_RampRecovery.lua: server-authoritative,
-            safehouse / occupant / vehicle checks, sledgehammer server options, dirt floor put back at
-            ground level), and a require line in KBWCommunity_PumpSinkWater.lua. All adopted: the ramp
-            files are WE-owned now (we_sync.WE_SUBMOD_OWNED), the pump-sink generator writes WE's line.
-            (An update in between, manifest 6713841222098744715, shipped our pump-sink and ramp Lua.)
-            Checked read-only with we_update_check.py; refreshed with _refresh_upstream_keep_work.py
-            2026-11-14b (work/ was NOT reset).
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-17
+            (Steam manifest 3980620932794181319). In the files we track it is the same as the 2026-11-16
+            update: nothing from handoff-2026-11-16-shelves-bushmaster is merged yet (we_update_check.py:
+            every tracked file unchanged). The Expansion's 10_vegetation.json (WE's empty placeholder,
+            already shipped) is now tracked, because work/ fills it (note 65).
+            Refreshed with _refresh_upstream_keep_work.py 2026-11-16 (work/ was NOT reset).
 work/     = our working copy. Diff against upstream/ for hand-offs.
-upstream_2026-11-14b/ = the previous snapshot (manifest 6371434639292603896).
-upstream_2026-11-14/, upstream_2026-11-10/, upstream_2026-10-31/ = older ones. Never edit the Steam copy.
+upstream_2026-11-16/ = the previous snapshot (manifest 4476907045485774239: the WE dev's merge of
+            handoff-2026-11-14b-sinks-ramps, WE's server-side ramp removal rewrite, adopted).
+upstream_2026-11-14b/ (manifest 6371434639292603896), upstream_2026-11-14/, upstream_2026-11-10/,
+upstream_2026-10-31/ = older ones. Never edit the Steam copy.

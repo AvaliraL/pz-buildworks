@@ -1,0 +1,8 @@
+name=Better Containers: Take Pinned
+id=BC_TakePinned
+description=Adds a "Take Pinned" button to the loot window. One click moves every item whose type you pinned in Better Containers (right-click, Pin Item Type) out of all nearby containers, the floor, the Better Containers Proximity and zombie corpse views, and any bags inside them, into the container you currently have open in your inventory window. Client-side only. Requires Better Containers 42.19 or newer (the version that has pinned items).
+poster=poster.png
+require=EURY_CONTAINERS
+loadModAfter=EURY_CONTAINERS
+versionMin=42.0
+tags=Build 42,Interface,Multiplayer

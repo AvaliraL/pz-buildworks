@@ -27,6 +27,7 @@ in WE's `mods/` folder.
 | `src/communitytilepack/vendor_we/` | WE's isolated Dylan assets, copied verbatim (WE's work) |
 | `src/tikitown/` | TikiTown source definitions + notes |
 | `notes/` | Bug pass, workflow notes, upstream version |
+| `mods/BC_TakePinned/` | Separate small mod, not part of WE: "Take Pinned" button for Better Containers. See its README |
 
 The tilepacks themselves (Community Tilepack, Drazion's Tilepack) are not in this repo; the
 buildables use them from the installed Workshop items.

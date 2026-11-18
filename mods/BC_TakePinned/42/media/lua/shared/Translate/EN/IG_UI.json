@@ -1,0 +1,8 @@
+{
+    "IGUI_BCTakePinned_Button" : "Take Pinned",
+    "IGUI_BCTakePinned_Tooltip" : "Move every pinned item type from all nearby containers, the floor, and bags inside them into the container open in your inventory window.",
+    "IGUI_BCTakePinned_Moved" : "Taking pinned items: %1",
+    "IGUI_BCTakePinned_NoRoom" : "No room for %1 pinned item(s)",
+    "IGUI_BCTakePinned_NoneFound" : "No pinned items nearby",
+    "IGUI_BCTakePinned_Unreachable" : "Can't reach %1 pinned item(s)"
+}

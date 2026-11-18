@@ -754,10 +754,12 @@ the Raven Creek gate when Raven Creek is off, and multiplayer for all of it.
 Held back (not in this hand-off, revisit later, user 2026-11-18): the raised / ground planter beds and the
 indoor plants that go in them (note 64 rounds 17-18; `simonmd_doors_furniture.PLANTERS_ON = False`).
 
-## Follow-up 2026-11-18b (tag handoff-2026-11-18b-veg-keys-ice)
-Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-17b...handoff-2026-11-18b-veg-keys-ice
-(`we-baseline-2026-11-17b` = the 11-18 hand-off plus your Expansion `IG_UI.json` exactly as shipped, so the
-compare shows only the lines below.)
+## Follow-up 2026-11-18b (tag handoff-2026-11-18b-veg-keys-ice), sent together with 11-18
+**One compare for the whole release (11-18 + 11-18b):**
+https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-17-full..handoff-2026-11-18b-veg-keys-ice
+(a direct two-dot comparison; `we-baseline-2026-11-17-full` = your 2026-11-17 files plus your Expansion
+`IG_UI.json` exactly as shipped, so that file shows only our added lines.)
+Follow-up alone: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-17b...handoff-2026-11-18b-veg-keys-ice
 
 ### 67. Vegetation translation keys (Knox Buildworks Expansion) (2026-11-18)
 - **Why:** Knox logged 564 `Missing translation 'IGUI_KBW_Buildable_worldessentials_kbw_veg_…'` warnings

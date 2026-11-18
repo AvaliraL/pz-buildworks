@@ -1,4 +1,7 @@
-# BC_TakePinned (prototype)
+# BC_TakePinned
+
+Published on the Steam Workshop (2026-11-18): https://steamcommunity.com/sharedfiles/filedetails/?id=3842073243
+(Workshop id 3842073243, mod id `BC_TakePinned`).
 
 Adds a **Take Pinned** button to the loot window controls row (next to Take All / Take Same Type).
 One click moves every item whose type is pinned in Better Containers into the container that is
@@ -43,6 +46,13 @@ open in the player's inventory window.
   of them skipped as `equipped`. Items a zombie corpse wears report `isEquipped`; they are now taken (the
   player's own equipped items stay excluded, as carried). The "Taking pinned items: 1$s" text came from
   filling `%1` by hand in a Translator string; translated texts now go through `getText(key, n)`.
+
+## Workshop
+`python make_workshop.py` stages `%USERPROFILE%\Zomboid\Workshop\BC_TakePinned\` (workshop.txt, preview.png,
+Contents\mods\BC_TakePinned\42 + common) and writes `42/poster.png`. Upload from the game: main menu > Workshop >
+Create and update items. After the first upload, put the Workshop id into `WORKSHOP_ID` in the script, re-run
+it, and add Better Containers (3586216562) as a Required Item on the Steam page. The old local copy in
+`Zomboid\mods\BC_TakePinned` was parked in `Zomboid\_staging_parked\` so the id isn't loaded twice.
 
 ## Known gaps
 - Button only appears in the loot window controls row. If CleanUI is active, Better Containers skips

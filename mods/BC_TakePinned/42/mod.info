@@ -5,4 +5,4 @@ poster=poster.png
 require=EURY_CONTAINERS
 loadModAfter=EURY_CONTAINERS
 versionMin=42.0
-tags=Build 42,Interface,Multiplayer
+tags=Build 42,Interface

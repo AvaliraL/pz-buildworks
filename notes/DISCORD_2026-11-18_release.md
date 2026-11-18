@@ -67,7 +67,7 @@ Build Simon MD's furniture and decor from Raven Creek with Knox Buildworks, 239 
 - **Storage:** military lockers, glass display counters and cabinets, a military wall gun rack, in-wall and wine shelves, bar corner shelves, sloped-wall shelves, glass-front wardrobes and clothes racks. Most also come in a sturdier Reinforced version with more room.
 - **Furniture:** glass low tables, a barrel table, marble counter tops you build onto your counters, and wall benches you can sit on.
 - **Neon:** strips in 10 colours at two heights (they light up, and joined strips switch on and off together), plus "The Italian Bowl" sign and a dancer sign.
-- **Decor:** speakers, a disco ball, posters and pictures, statues, table-top figures, a chalkboard, floor wedges in wood and carpet, planter boxes, a potted rose and flower buckets (on a table they sit on the table top).
+- **Decor:** speakers, a disco ball, posters and pictures, statues, table-top figures, a chalkboard, floor wedges in wood and carpet, planter boxes, a potted rose and flower buckets.
 
 **New: trees and shrubs** (Knox Buildworks Expansion, Vegetation)
 Plant small, medium, large and giant trees of 11 species, plus shrubs. You need saplings and a shovel or spade.

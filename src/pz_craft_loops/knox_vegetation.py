@@ -69,6 +69,10 @@ DIG_TOOLS = ["Base.Shovel", "Base.Shovel2", "Base.SpadeForged", "Base.SpadeWood"
 TIMED_ACTION = "BuildLowNoTool"      # vanilla has no digging build action script; the low build animation
 TIME = 200
 NS = "worldessentials.kbw.veg_"
+KEY_NS, KEY_PREFIX = "worldessentials.kbw.", "IGUI_WEKBW_"     # WE's own key scheme for the Expansion
+# the Expansion's English IG_UI.json (WE-owned): work/ = WE's installed file + our keys inserted before the
+# closing brace in WE's own layout (2-space indent, CRLF), so the hand-off diff is only the added lines
+IG_UI_REL = os.path.join("42", "media", "lua", "shared", "Translate", "EN", "IG_UI.json")
 TAGS = ["world-essentials", "buildingcraft-replacement", "vanilla-sprites", "vegetation"]
 
 
@@ -181,10 +185,14 @@ def buildables():
                 stage["callbacks"] = callbacks
             if native:
                 stage["worldEssentialsNative"] = native
-            out.append({"id": bid, "displayName": "%s %d" % (gname, n), "category": "Vegetation", "subcategory": sub,
+            # translation keys in WE's own convention for this submod (every Expansion buildable and group has
+            # one, IGUI_WEKBW_<id after "worldessentials.kbw.">); the texts go into its IG_UI.json (write_keys)
+            out.append({"id": bid, "translationKey": KEY_PREFIX + bid[len(KEY_NS):], "displayName": "%s %d" % (gname, n),
+                        "category": "Vegetation", "subcategory": sub,
                         "iconSprite": leaves or main, "allowSpriteReuse": True,
                         "placement": {"kind": "object", "requiresFloor": True},
-                        "group": {"id": NS + gid, "name": gname, "level": n},
+                        "group": {"id": NS + gid, "name": gname,
+                                  "translationKey": KEY_PREFIX + (NS + gid)[len(KEY_NS):] + "_group", "level": n},
                         "tags": list(TAGS), "stages": [stage]})
     return out
 
@@ -287,6 +295,38 @@ def write_veg_lua(path):
     open(path, "w", encoding="utf-8", newline="\n").write(SHRUB_LUA)
 
 
+def veg_keys(bs):
+    """{translation key: English text} for the buildables and their groups (sorted by key)."""
+    keys = {}
+    for b in bs:
+        keys[b["translationKey"]] = b["displayName"]
+        keys[b["group"]["translationKey"]] = b["group"]["name"]
+    return dict(sorted(keys.items()))
+
+
+def write_keys(bs):
+    """WE's installed Expansion IG_UI.json with our keys added (work/), and the key list alone for the notes.
+    Keys WE already defines keep WE's text. Returns (added, already in WE)."""
+    src = os.path.join(os.path.dirname(os.path.dirname(WE_EXP_STEAM)), IG_UI_REL)   # WE_EXP_STEAM = .../42/media
+    raw = open(src, "rb").read().decode("utf-8")
+    have = json.loads(raw)
+    keys = veg_keys(bs)
+    add = {k: v for k, v in keys.items() if k not in have}
+    body = raw.rstrip()
+    assert body.endswith("}"), src
+    nl = "\r\n" if "\r\n" in raw else "\n"
+    head = body[:-1].rstrip()
+    lines = ['  %s: %s' % (json.dumps(k, ensure_ascii=False), json.dumps(v, ensure_ascii=False)) for k, v in add.items()]
+    out = head + ("," + nl + ("," + nl).join(lines) if lines else "") + nl + "}" + (nl if raw.endswith(("\n", "\r\n")) else "")
+    json.loads(out)                                     # still valid JSON
+    dst = os.path.join(WORK_EXP, IG_UI_REL)
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    open(dst, "wb").write(out.encode("utf-8"))
+    json.dump(keys, open(os.path.join(OUT_DIR, "IG_UI_vegetation_EN.json"), "w", encoding="utf-8"), indent=1,
+              ensure_ascii=False)
+    return len(add), len(keys) - len(add)
+
+
 def main():
     bs = buildables()
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -296,6 +336,7 @@ def main():
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     json.dump(doc, open(dst, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     write_veg_lua(os.path.join(WORK_EXP, "42", "media", "lua", "shared", VEG_LUA))
+    print("IG_UI keys:", write_keys(bs))
     from collections import Counter
     print("wrote %s (%d buildables) %s" % (OUT_JSON, len(bs), dict(Counter(b["stages"][0].get("worldEssentialsNative", {}).get("kind", "grass") for b in bs))))
     print("groups", len({b["group"]["id"] for b in bs}))

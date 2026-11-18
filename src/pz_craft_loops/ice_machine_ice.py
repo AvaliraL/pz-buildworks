@@ -89,7 +89,14 @@ function A:update()
 end
 
 function A:start()
+    -- (user, in game 2026-11-18: no sound heard; the log showed the character's emitter returning 0 for
+    -- Sapph's sound) the character's emitter first, as vanilla actions do; if it gives no handle, the
+    -- machine's square plays it (confirmed audible in game)
     self.sound = self.character:playSound(I.SOUND)
+    if not self.sound or self.sound == 0 then
+        local sq = self.machine and self.machine:getSquare()
+        if sq and sq.playSound then sq:playSound(I.SOUND) end
+    end
     self:setActionAnim("Loot")
     self.character:SetVariable("LootPosition", "Mid")
     self:setOverrideHandModels(nil, nil)
@@ -104,8 +111,8 @@ function A:stop()
     ISBaseTimedAction.stop(self)
 end
 
+-- the 3 s clip is left to finish (also with instant timed actions); only a cancel cuts it
 function A:perform()
-    self:stopIceSound()
     ISBaseTimedAction.perform(self)
 end
 

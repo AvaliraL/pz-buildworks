@@ -220,6 +220,10 @@ def main():
         if os.path.isdir(sm):
             sm_files = [f for f in os.listdir(sm) if f.endswith((".json", ".md"))]
             out.append(("src/simonmd", mirror_files(sm, sm_files, os.path.join(REPO, "src", "simonmd"))))
+        kx = os.path.join(K, "zomboid", "knox_expansion")   # vegetation source + its key list (2026-11-18)
+        if os.path.isdir(kx):
+            out.append(("src/knox_expansion", mirror_files(kx, [f for f in os.listdir(kx) if f.endswith(".json")],
+                                                           os.path.join(REPO, "src", "knox_expansion"))))
         notes = os.path.join(REPO, "notes")
         os.makedirs(notes, exist_ok=True)
         for s in (os.path.join(K, "zomboid", "WE_submods", "BUG_PASS_2026-11-01.md"),

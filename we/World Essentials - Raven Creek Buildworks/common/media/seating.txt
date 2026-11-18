@@ -1,0 +1,68 @@
+seating
+{
+    VERSION = 3,
+    tileset
+    {
+        name = KBWRavenCreek,
+        /* KBWRavenCreek_345 (wall bench, honeywood 66) */
+        tile
+        {
+            xy = 1 43,
+            position
+        {
+            id = E,
+            translate = -500 950 0,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+        /* KBWRavenCreek_346 (wall bench, honeywood 67) */
+        tile
+        {
+            xy = 2 43,
+            position
+        {
+            id = S,
+            translate = 0 950 -500,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+        /* KBWRavenCreek_347 (wall bench, honeywood 68) */
+        tile
+        {
+            xy = 3 43,
+            position
+        {
+            id = E,
+            translate = -500 950 0,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+        /* KBWRavenCreek_348 (wall bench, honeywood 69) */
+        tile
+        {
+            xy = 4 43,
+            position
+        {
+            id = S,
+            translate = 0 950 -500,
+            properties
+            {
+                BlockLeft = true,
+                BlockRight = true,
+            }
+        }
+        }
+    }
+}

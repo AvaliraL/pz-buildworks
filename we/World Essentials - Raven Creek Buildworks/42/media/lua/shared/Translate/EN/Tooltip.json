@@ -1,0 +1,21 @@
+{
+ "Tooltip_KBWCB_FenceHigh": "Tall fence section.",
+ "Tooltip_KBWCB_FencePost": "Fence post for finishing fence ends.",
+ "Tooltip_KBWCB_FenceLow": "Low fence section.",
+ "Tooltip_KBWCB_Door": "Door that opens and closes.",
+ "Tooltip_KBWCB_GarageDoor": "Garage door for vehicle access.",
+ "Tooltip_KBWCB_Locker": "Metal locker for storage.",
+ "Tooltip_KBWCB_StorageReinforced": "Reinforced metal storage with a large capacity.",
+ "Tooltip_KBWCB_Counter": "Counter with storage underneath.",
+ "Tooltip_KBWCB_Shelf": "Open shelving for storage.",
+ "Tooltip_KBWCB_FenceCorner": "Corner fence section.",
+ "Tooltip_KBWCB_CounterTop": "New top for a counter. Build it on a counter; it fits the counter's shape, and a sink or anything else on the counter stays on top. Right-click the counter to remove it.",
+ "Tooltip_KBWCB_Table": "Table for placing items on.",
+ "Tooltip_KBWCB_Decoration": "Decorative piece.",
+ "Tooltip_KBWCB_Wardrobe": "Wardrobe for storing clothes.",
+ "Tooltip_KBWCB_Speaker": "Speaker cabinet for decoration. It does not play sound.",
+ "Tooltip_KBWCB_Figure": "Decorative figure.",
+ "Tooltip_KBWCB_NeonSign": "Wall-mounted neon sign. Lights up when switched on, with power.",
+ "Tooltip_KBWCB_WallShelfDecor": "Small decorative shelf that hangs on a wall. It does not hold items.",
+ "Tooltip_KBWCB_Floor": "Floor covering. Lay it on a square with a floor."
+}

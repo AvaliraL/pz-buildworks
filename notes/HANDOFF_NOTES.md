@@ -728,6 +728,15 @@ What is in it (details in the notes below):
    potted rose, flower buckets. Own tileset `KBWRavenCreek` (+ `_on` lit art) with depth maps, tiledef
    `kbwravencreek 8174`. **Please also remove `35_simonmd_fencing.json` from Knox Buildworks Expansion**
    (note 57): the same 12 fences now live in this gated submod, same ids.
+   - **Why a submod that requires Raven Creek:** Raven Creek bundles its own cut-down copy of Simon MD's
+     tiles (`LCB42_SimonMDsTiles`, 36 sheets). Every buildable points at those sheets or at our copies made
+     from that pack's art and properties. Without Raven Creek the items don't work (missing sprites, blank
+     previews, the server refuses the build); `require=RavenCreek_B42` keeps the submod off instead.
+   - **Not covered: Simon MD's standalone B42 pack** "Simon MDs Tiles" (Workshop 2852704777,
+     `simonMDsTiles`, 205 sheets; Raven Creek's 36 use the same sheet names and both declare tiledef file
+     number 3333). Not required, not supported, not tested in place of Raven Creek; its other 169 sheets
+     are untouched (a possible later submod). Art Raven Creek lacks (glass cabinet + container fill
+     overlays) is copied from it into `KBWRavenCreek.pack`, so there is no runtime dependency on it.
 2. **Knox Buildworks Expansion: Vegetation** (note 65): 188 BuildingCraft trees / shrubs on vanilla tiles in
    your empty `10_vegetation.json`, + NEW `WorldEssentialsKnoxVegetation.lua`.
 3. **Ice machines make ice with Sapph's Cooking** (note 60, Community submod, 2 NEW Lua).

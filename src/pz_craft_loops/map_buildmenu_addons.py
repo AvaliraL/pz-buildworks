@@ -37,6 +37,25 @@ OUT_DIR = r"c:\Users\josep\Kiro\zomboid\communitytilepack"
 OUT_MD = os.path.join(OUT_DIR, "ADDON_SPRITE_MAP.md")
 OUT_CSV = os.path.join(OUT_DIR, "ADDON_SPRITE_MAP.csv")
 OUT_RECIPES = os.path.join(OUT_DIR, "ADDON_RECIPES.json")
+# (addon, menu category) left out of the conversion queue by decision, with the reason
+SKIPPED = {("Dylan", "Barricades"): "user 2026-11-19: junk piles, effectively clutter; not wanted for now"}
+# Dylan entries using a dylanstiles sprite that World Essentials' WECommunity_Dylan copies don't cover
+DYLAN_UNMAPPED_WHY = ("Dylan entries with a sprite outside WE's WECommunity_Dylan copies: not built (user "
+                      "2026-08-28). The raw dylanstiles numbers shift with Fort Waterfront B42 (we_dylan.py).")
+_WE_DYLAN = None
+
+
+def _we_dylan_map():
+    global _WE_DYLAN
+    if _WE_DYLAN is None:
+        import we_dylan
+        _WE_DYLAN = we_dylan.sprite_map()
+    return _WE_DYLAN
+
+
+# single entries left out by decision, keyed by any of their sprites
+SKIPPED_SPRITES = {"d_doors_01_56": "Grey Door (Bloodied): removed on purpose, the blood texture never shows "
+                                    "in game (rename_dirkies_doors.py)"}
 
 # Lua side: stubs + recorders. Runs in plain Lua 5.1 (not Kahlua); only used to read data.
 _HARNESS = r'''
@@ -286,6 +305,12 @@ def main():
         n_built = sum(1 for sh, i, _p in comm if i in built.get(sh, ()))
         st = ("no community sprite" if not comm else "built" if n_built == len(comm)
               else "not built" if n_built == 0 else "partly built")
+        if st in ("not built", "partly built") and (
+                (r["addon"], tr.get(r["category"], r["category"])) in SKIPPED
+                or any(sp in SKIPPED_SPRITES for _p, sp in r["sprites"])
+                or (r["addon"] == "Dylan" and any(sh in cov and "%s_%d" % (sh, i) not in _we_dylan_map()
+                                                  for sh, i, _p in comm))):
+            st = "skipped"
         for sh in sheets:
             per_sheet[sh]["entries"].append((r, name, st))
         out_rows.append([r["addon"], r["tab"], r["category"], r["subcategory"], name, r["displayName"], r["action"],
@@ -319,10 +344,19 @@ def main():
     L.append("| **all** | %d | %d | %d | %d | %d |" % (len(out_rows), st_count["built"], st_count["partly built"],
                                                       st_count["not built"], st_count["no community sprite"]))
     L.append("")
+    if st_count["skipped"]:
+        L.append("**Skipped by decision** (not in the queue): %s." % "; ".join(
+            "%s %s, %d entries (%s)" % (a, c, sum(1 for r in out_rows if r[0] == a and r[8] == "skipped"
+                                               and (tr.get(r[2], r[2]) or "?") == c), why)
+            for (a, c), why in sorted(SKIPPED.items())))
+        for sp, why in sorted(SKIPPED_SPRITES.items()):
+            L.append("- single entry with %s: %s" % (sp, why))
+        L.append("- %s" % DYLAN_UNMAPPED_WHY)
+        L.append("")
     # queue by the addon's own category: batches of the same kind of piece (one KBW template each)
     q = collections.defaultdict(lambda: [0, set(), collections.Counter()])
     for r in out_rows:
-        if r[8] in ("built", "no community sprite"):
+        if r[8] in ("built", "no community sprite", "skipped"):
             continue
         key = (r[0], tr.get(r[2], r[2]) or "?")
         q[key][0] += 1

@@ -553,25 +553,50 @@ def _affine_inverse(src, dst):
 
 
 def _write_pack(dest_path, page_name, tiles):
-    """Write a single-page PZPK v1 texture pack. tiles: [(name, 128x256 RGBA Image)]."""
+    """Write a single-page PZPK v1 texture pack. tiles: [(name, 128x256 RGBA Image)].
+    extrude: copy each sprite's border pixels this many px outward into its padding, so a sprite edge
+    that meets the next tile of the same piece blends with its own colour, not transparency, when the
+    game smooths the sprite (a faint seam line; Fears workbenches, user in game 2026-08-28)."""
+    return _write_pack_ex(dest_path, page_name, tiles, 0)
+
+
+def _write_pack_ex(dest_path, page_name, tiles, extrude):
     import io
     from PIL import Image
-    placed, x, y, rowh, W = [], 0, 0, 0, 1024
     crops = []
     for name, im in tiles:
         bbox = im.getbbox() or (0, 0, 1, 1)
         crops.append((name, im.crop(bbox), bbox, im.size))
+    # 2 px of transparent padding between sprites, as vanilla Tiles2x.pack (was 1 px: zoomed out, the
+    # half-size page lost the gap and sprite edges blended with their neighbours, a dashed line at seams;
+    # found on the TikiTown wall overlays, confirmed fixed in game 2026-08-28). With extrusion each
+    # sprite also keeps its extruded border clear of its neighbour's.
+    pad = 2 + 2 * extrude
+    W = 1024
+    placed, x, y, rowh = [], extrude, extrude, 0
     for name, c, bbox, full in crops:
-        if x + c.width > W:
-            x, y, rowh = 0, y + rowh + 1, 0
+        if x + c.width + extrude > W:
+            x, y, rowh = extrude, y + rowh + pad, 0
         placed.append((name, c, x, y, bbox, full))
-        x += c.width + 1
+        x += c.width + pad
         rowh = max(rowh, c.height)
     H = 1
-    while H < y + rowh:
+    while H < y + rowh + extrude:
         H *= 2
     page = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     for name, c, px, py, bbox, full in placed:
+        if extrude:
+            w, h = c.size
+            for k in range(1, extrude + 1):
+                page.paste(c.crop((0, 0, w, 1)), (px, py - k))
+                page.paste(c.crop((0, h - 1, w, h)), (px, py + h - 1 + k))
+            band = page.crop((px, py - extrude, px + 1, py + h + extrude))
+            band.paste(c.crop((0, 0, 1, h)), (0, extrude))
+            rband = page.crop((px + w - 1, py - extrude, px + w, py + h + extrude))
+            rband.paste(c.crop((w - 1, 0, w, h)), (0, extrude))
+            for k in range(1, extrude + 1):
+                page.paste(band, (px - k, py - extrude))
+                page.paste(rband, (px + w - 1 + k, py - extrude))
         page.paste(c, (px, py))
     buf = io.BytesIO()
     page.save(buf, "PNG")
@@ -1080,7 +1105,9 @@ def write_fears_assets(media_dir, common_media_dir):
         if facing and not any(k == b"Facing" for k, _ in p):
             p.append((b"Facing", facing.encode()))
         props.append(p)
-    n = _write_pack(os.path.join(media_dir, "texturepacks", FEARS_PACK + ".pack"), FEARS_PACK + "0", tiles)
+    # edge extrusion: the 2-tile workbenches showed a seam where their two tiles meet once the 1 px
+    # neighbour bleed was gone (user, in game 2026-08-28); see _write_pack
+    n = _write_pack_ex(os.path.join(media_dir, "texturepacks", FEARS_PACK + ".pack"), FEARS_PACK + "0", tiles, 2)
 
     cols = 8
     rows = (len(tiles) + cols - 1) // cols
@@ -1333,6 +1360,7 @@ POT_BOTTOM = 228            # art bottom of a centred pot (floor diamond centre 
 # safe from the dylanstiles tiledef clash) and registered for the copies by write_gunrack_overlay_lua.
 GUN_SHEET = "DarthGunStore"
 GUN_RACKS = tuple(range(8, 16))
+GUNRACK_DEPTH_BIAS = 12   # rack depth this much nearer than the bare wall plane (overlay +2 on top)
 GUN_OVERLAYS = tuple(range(16, 24))
 _GUN_PACK = os.path.join(os.path.dirname(_COMMUNITY_TILES), "texturepacks", "DTilesPack.pack")
 # Dylan's Future Room extras (user, 2026-08-28) at FIXED indices 176..198: DylansFutureRoom01
@@ -2371,6 +2399,19 @@ def write_iceshell_assets(media_dir, common_media_dir=None, include_fridges=Fals
         _ddepth = {}
         _couch_depth = None
         for sh, s, _e, _k, _g in DECOR_COPIES:
+            if sh == GUN_SHEET and _k in ("gunrack", "overlaylayer"):
+                # Pegboard gun racks (user, in game 2026-08-28: drew behind some wall trim). The pack's
+                # DEPTH_DarthGunStore cells sit at the wall, where trim and overlays (vanilla wall preset)
+                # tie or win. Now vanilla's wall plane GUNRACK_DEPTH_BIAS nearer (the margin that fixed the
+                # Simon MD wall gun rack), and the fill overlay (the guns) 2 nearer again, so the rack is in
+                # front of everything on its wall but its own overlay.
+                rack = s if _k == "gunrack" else s - 8
+                edge = "NNWW"[(rack - 8) % 4]
+                art = Image.open(os.path.join(cache, "%s_%d.png" % (sh, _src_index(s)))).convert("RGBA")
+                bias = GUNRACK_DEPTH_BIAS + (0 if _k == "gunrack" else 2)
+                dj = DECOR_BASE + _DECOR_POS[(sh, s)]
+                depth.paste(_wall_plane_depth(edge, art, bias), ((dj % cols) * cw, (dj // cols) * ch))
+                continue
             if _k == "couch":
                 # Future couch (user, 2026-08-28: the pack's depth drew the backrest over a resting
                 # player). Its seat positions are the vanilla Red Comfy couch's, so it uses that

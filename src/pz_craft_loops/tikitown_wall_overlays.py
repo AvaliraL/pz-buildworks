@@ -93,6 +93,82 @@ def overlay_sprite(sheet, tile):
 
 
 # ---------------------------------------------------------------------------------------------
+# GENERATED overlay tiles (user, 2026-08-28: "lets create these from our existing overlay set, but i also
+# want to add the newburb walls as overlays of the same type. including the new upper band").
+#  * TOP (1/4) band for every SHEETS entry: the sheet's full wall (tiles 0-3) minus its own 3/4 overlay
+#    (72-75), so the two meet with no gap and no overlap (the 3/4 piece's top edge is 0.20 of the wall
+#    height down; the tterika Paint Top Bands stop at 0.12). Tileset KBWTikiTownWallTops, index =
+#    sheet position x 4 + role.
+#  * NEWBURBS: the 10 clapboard sheets (tt_newburbs_walls_*) and the 16 interior paint colours
+#    (tt_newburbs_interiors_01-04, 4 colours per sheet at 0 / 32 / 64 / 96) have no lower-wall block, so
+#    their 3/4 .. 1/4 panels / corners / pillars + the top band are cut from their full wall (block
+#    base + 0..3) with the TikiTown shapes (MASK_SHEET's 72-91; every sheet and both Newburbs sets have
+#    the identical full-wall outline, checked 2026-08-28). Tilesets KBWTikiTownNewburbsOverlays1..2,
+#    NB_PER_TILESET colours each, NB_PER_COLOUR tiles per colour: 5 heights x 4 roles, then the top band.
+# Roles 0 W panel, 1 N panel, 2 corner (attachedNW), 3 pillar (attachedSE), as the copied block.
+# APPEND only (positions fix sprite names).
+TOP_TILESET = "KBWTikiTownWallTops"
+TOP = ("top14", "Top 1/4", 1 / 4.0)          # (id slug, label, cost fraction)
+NB_TILESET = "KBWTikiTownNewburbsOverlays"
+NB_PER_COLOUR = len(HEIGHTS) * 4 + 4       # 24
+NB_PER_TILESET = 13                        # 13 x 24 = 312 tiles
+MASK_SHEET = "tikitown_walls_plaster_01"
+NB_WALLS = r"c:\Users\josep\Kiro\zomboid\tikitown\28_tikitown_newburbs_walls_accurate.json"
+NB_INTERIORS = r"c:\Users\josep\Kiro\zomboid\tikitown\27_tikitown_newburbs_interiors_accurate.json"
+# (sheet, block base): colour blocks in tile order
+NEWBURBS = ([(s, 0) for s in ("tt_newburbs_walls_01_white", "tt_newburbs_walls_04_warmgray",
+                              "tt_newburbs_walls_05_red", "tt_newburbs_walls_06_orange",
+                              "tt_newburbs_walls_07_redbrown", "tt_newburbs_walls_11_yellow",
+                              "tt_newburbs_walls_14_blue", "tt_newburbs_walls_16_pink",
+                              "tt_newburbs_walls_17_coolgray", "tt_newburbs_walls_18_black")]
+            + [("tt_newburbs_interiors_%02d" % n, b) for n in range(1, 5) for b in (0, 32, 64, 96)])
+
+
+def top_sprite(sheet, role):
+    return "%s_%d" % (TOP_TILESET, SHEETS.index(sheet) * 4 + role)
+
+
+def nb_sprite(colour, slot, role):
+    """slot 0..4 = HEIGHTS index, 5 = top band."""
+    ci = NEWBURBS.index(colour)
+    return "%s%d_%d" % (NB_TILESET, ci // NB_PER_TILESET + 1, (ci % NB_PER_TILESET) * NB_PER_COLOUR + slot * 4 + role)
+
+
+def generated_tiles():
+    """[(copy sprite, RGBA image, props)] for the top bands and the Newburbs overlays, in tileset order."""
+    import numpy as np
+    from PIL import Image
+    import kbw_tilepatch as k
+    cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_walloverlays")
+    need = {"%s_%d" % (s, t) for s in SHEETS for t in (0, 1, 2, 3, 72, 73, 74, 75)}
+    need |= {"%s_%d" % (MASK_SHEET, t) for t in list(range(4)) + list(range(FIRST, FIRST + PER_SHEET))}
+    need |= {"%s_%d" % (s, b + r) for s, b in NEWBURBS for r in range(4)}
+    k._extract_from_pack(_TIKITOWN_PACK, need, cache)
+    arr = lambda n: np.array(Image.open(os.path.join(cache, n + ".png")).convert("RGBA"))
+
+    def cut(full, keep):
+        out = full.copy()
+        out[:, :, 3] = np.where(keep, full[:, :, 3], 0)
+        return Image.fromarray(out, "RGBA")
+
+    out = []
+    for sh in SHEETS:
+        for r in range(4):
+            lower = arr("%s_%d" % (sh, 72 + r))[:, :, 3] > 0
+            out.append((top_sprite(sh, r), cut(arr("%s_%d" % (sh, r)), ~lower), list(_COPY_PROPS[r])))
+    masks = {(hi, r): arr("%s_%d" % (MASK_SHEET, base + r))[:, :, 3] > 0
+             for hi, (base, _s, _l, _f) in enumerate(HEIGHTS) for r in range(4)}
+    for colour in NEWBURBS:
+        sh, b = colour
+        for slot in range(len(HEIGHTS) + 1):
+            for r in range(4):
+                full = arr("%s_%d" % (sh, b + r))
+                keep = masks[(slot, r)] if slot < len(HEIGHTS) else ~masks[(0, r)]
+                out.append((nb_sprite(colour, slot, r), cut(full, keep), list(_COPY_PROPS[r])))
+    return out
+
+
+# ---------------------------------------------------------------------------------------------
 # costs
 def _scale(n, f):
     return max(1, int(math.ceil(n * f - 1e-9)))
@@ -259,6 +335,57 @@ _OV_PIECES = [  # (key, label, plural, {face: offset}, placement, cost factor)
 ]
 
 
+def _overlay_piece(key, label, placement, cost, frac, hslug, hlabel, sprites, wall, gkey, sub):
+    """One overlay buildable (panel / corner / pillar) at one height. gkey: the sheet / colour slug."""
+    st0 = wall["stages"][0]
+    style = _style(wall)
+    f = frac * cost
+    stage = {"id": "built", "geometry": {"faces": _faces(sprites)},
+             "requirements": _scaled_requirements(st0.get("requirements") or {}, f),
+             "construction": _scaled_construction(st0.get("construction") or {}, f),
+             "object": dict(_CORNER_OBJ if key == "corner" else _OVERLAY_OBJ)}
+    if key != "panel":
+        stage["health"] = 150
+    if key == "corner":
+        stage["callbacks"] = {"onIsValid": CORNER_ISVALID}
+    slug = "%s_%s_%s" % (gkey, key, hslug)
+    return {
+        "id": "worldessentials.tikitown.walloverlay.%s" % slug,
+        "allowSpriteReuse": True,
+        "translationKey": "IGUI_WETiki_walloverlay_%s" % slug,
+        "displayName": "%s (%s)" % (_family_name(style, label), hlabel),
+        "tooltipKey": "Tooltip_KBW_DecorativeWallFixture",
+        "category": "Decorations and Landscaping",
+        "subcategory": sub,
+        "material": wall.get("material", "Wood"),
+        "iconSprite": next(iter(sprites.values())),
+        "placement": dict(placement),
+        "tags": ["tikitown", "drazion", "world-essentials", "wall-overlay"],
+        "pieceClass": "decoration",
+        "group": {"id": "worldessentials.tikitown.walloverlay.%s_%s" % (gkey, key), "name": _family_name(style, label),
+                  "translationKey": "IGUI_WETiki_walloverlay_%s_%s_group" % (gkey, key),
+                  "level": 1},
+        "stages": [stage],
+    }
+
+
+def _newburbs_sources():
+    """(sheet, base) -> the Newburbs wall buildable for that colour (W face = <sheet>_<base>)."""
+    out = {}
+    for path in (NB_WALLS, NB_INTERIORS):
+        for b in json.load(open(path, encoding="utf-8"))["buildables"]:
+            if b.get("pieceClass") != "wall":
+                continue
+            try:
+                spr = b["stages"][0]["geometry"]["faces"]["W"]["layers"][0]["rows"][0][0]
+            except (KeyError, IndexError, TypeError):
+                continue
+            sh, _u, i = spr.rpartition("_")
+            if (sh, int(i)) in NEWBURBS and (sh, int(i)) not in out:
+                out[(sh, int(i))] = b
+    return out
+
+
 def build_overlays():
     src = _wall_sources()
     builds, missing = [], []
@@ -267,46 +394,37 @@ def build_overlays():
         if not wall:
             missing.append(sheet)
             continue
-        style, tw = _style(wall), _type_word(wall)
-        sub = ("%s Wall Overlays" % tw).strip()
-        st0 = wall["stages"][0]
+        sub = ("%s Wall Overlays" % _type_word(wall)).strip()
         for key, label, plural, faces, placement, cost in _OV_PIECES:
-            gid = "worldessentials.tikitown.walloverlay.%s_%s" % (sheet, key)
             for base, hslug, hlabel, frac in HEIGHTS:
-                f = frac * cost
                 sprites = {fc: overlay_sprite(sheet, base + off) for fc, off in faces.items()}
-                stage = {"id": "built", "geometry": {"faces": _faces(sprites)},
-                         "requirements": _scaled_requirements(st0.get("requirements") or {}, f),
-                         "construction": _scaled_construction(st0.get("construction") or {}, f),
-                         "object": dict(_CORNER_OBJ if key == "corner" else _OVERLAY_OBJ)}
-                if key != "panel":
-                    stage["health"] = 150
-                if key == "corner":
-                    stage["callbacks"] = {"onIsValid": CORNER_ISVALID}
-                slug = "%s_%s_%s" % (sheet, key, hslug)
-                builds.append({
-                    "id": "worldessentials.tikitown.walloverlay.%s" % slug,
-                    "allowSpriteReuse": True,
-                    "translationKey": "IGUI_WETiki_walloverlay_%s" % slug,
-                    "displayName": "%s (%s)" % (_family_name(style, label), hlabel),
-                    "tooltipKey": "Tooltip_KBW_DecorativeWallFixture",
-                    "category": "Decorations and Landscaping",
-                    "subcategory": sub,
-                    "material": wall.get("material", "Wood"),
-                    "iconSprite": next(iter(sprites.values())),
-                    "placement": dict(placement),
-                    "tags": ["tikitown", "drazion", "world-essentials", "wall-overlay"],
-                    "pieceClass": "decoration",
-                    "group": {"id": gid, "name": _family_name(style, label),
-                              "translationKey": "IGUI_WETiki_walloverlay_%s_%s_group" % (sheet, key),
-                              "level": 1},
-                    "stages": [stage],
-                })
+                builds.append(_overlay_piece(key, label, placement, cost, frac, hslug, hlabel, sprites,
+                                             wall, sheet, sub))
+            # the top band that completes the 3/4 piece (generated_tiles), in the same card
+            sprites = {fc: top_sprite(sheet, off) for fc, off in faces.items()}
+            builds.append(_overlay_piece(key, label, placement, cost, TOP[2], TOP[0], TOP[1], sprites,
+                                         wall, sheet, sub))
+    nb_src = _newburbs_sources()
+    for colour in NEWBURBS:
+        wall = nb_src.get(colour)
+        if not wall:
+            missing.append("%s_%d" % colour)
+            continue
+        sub = ("%s Wall Overlays" % _type_word(wall)).strip()
+        gkey = "%s_c%d" % colour
+        slots = [(hi, base_slug, lab, fr) for hi, (_b, base_slug, lab, fr) in enumerate(HEIGHTS)]
+        slots.append((len(HEIGHTS),) + TOP)
+        for key, label, plural, faces, placement, cost in _OV_PIECES:
+            for slot, hslug, hlabel, frac in slots:
+                sprites = {fc: nb_sprite(colour, slot, off) for fc, off in faces.items()}
+                builds.append(_overlay_piece(key, label, placement, cost, frac, hslug, hlabel, sprites,
+                                             wall, gkey, sub))
     return {"schemaVersion": 1, "category": "Decorations and Landscaping",
             "source": ("TikiTown wall sheets, tiles 72-91 as WALL OVERLAYS on our own copied tiles "
                        "(KBWTikiTownWallOverlays, overlay-only props; pack tiles unchanged): 3/4 .. 1/4 "
-                       "height panel / corner / pillar, 60 sheets. Needs pack=KBWTikiTownWallOverlays + "
-                       "tiledef=kbwtikitown_walloverlays 8179 in mod.info."),
+                       "height panel / corner / pillar + a Top 1/4 band completing the 3/4 piece, 63 sheets; "
+                       "the 26 Newburbs wall colours (clapboard + interior paint) cut to the same shapes. "
+                       "Needs pack=KBWTikiTownWallOverlays + tiledef=kbwtikitown_walloverlays 8179 in mod.info."),
             "buildables": builds}, missing
 
 
@@ -324,15 +442,21 @@ def _write_pack_multi(dest_path, tiles):
     for name, im in tiles:
         bbox = im.getbbox() or (0, 0, 1, 1)
         crops.append((name, im.crop(bbox), bbox, im.size))
+    # 2 px of transparent padding between sprites, as vanilla Tiles2x.pack and Drazion's tikitown_tiles.pack
+    # (measured 2026-08-28). It was 1 px: zoomed out, the game samples the half-size copy of the page, where a
+    # 1 px gap is gone and each sprite's edge blends with its neighbour. That drew a dashed line in the
+    # neighbour's colour at every square-to-square seam of the Newburbs 3/4 and Top 1/4 overlays, whose
+    # neighbours on the page are the lighter N-face tiles (user, in game 2026-08-28).
+    pad = 2
     pages, cur, x, y, rowh = [], [], 0, 0, 0
     for name, c, bbox, full in crops:
         if x + c.width > _PAGE:
-            x, y, rowh = 0, y + rowh + 1, 0
+            x, y, rowh = 0, y + rowh + pad, 0
         if y + c.height > _PAGE:
             pages.append(cur)
             cur, x, y, rowh = [], 0, 0, 0
         cur.append((name, c, x, y, bbox, full))
-        x += c.width + 1
+        x += c.width + pad
         rowh = max(rowh, c.height)
     if cur:
         pages.append(cur)
@@ -367,7 +491,7 @@ def write_overlay_assets(media_dir, common_media_dir=None):
     from PIL import Image
     import kbw_tilepatch as k
     cache = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_cache_walloverlays")
-    names = ["%s_%d" % (sh, t) for sh in SHEETS for t in range(FIRST, FIRST + PER_SHEET)]
+    names = ["%s_%d" % (sh, t) for sh in SHEETS for t in list(range(FIRST, FIRST + PER_SHEET)) + [0, 1, 2, 3]]
     k._extract_from_pack(_TIKITOWN_PACK, set(names), cache)
     tiles = []
     tilesets = {}    # tileset name -> {index: props}, in creation order
@@ -449,6 +573,10 @@ def write_overlay_assets(media_dir, common_media_dir=None):
         add(copy_name, im, props, src_name)
         if on_copy:
             add(on_copy, Image.open(os.path.join(cache, on_src + ".png")).convert("RGBA"), [], src_name)
+    # generated top bands + Newburbs overlays (generated_tiles): own tilesets KBWTikiTownWallTops,
+    # KBWTikiTownNewburbsOverlays1..2. APPENDED last; depth = the wall preset of their attach flag.
+    for copy_name, im, props in generated_tiles():
+        add(copy_name, im, props)
     assert len({n for n, _im in tiles}) == len(tiles), "duplicate copied sprite names"
     npages, ntiles, size = _write_pack_multi(
         os.path.join(media_dir, "texturepacks", OVERLAY_PACK + ".pack"), tiles)

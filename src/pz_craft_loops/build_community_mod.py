@@ -57,6 +57,10 @@ SRC_DEFS = [
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\69_community_monitoring_tvs.json",
     # vanilla B42 ramps_01 drivable car ramps (vehicle_ramps.py)
     r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\73_kbwcb_vehicle_ramps.json",
+    # Building Menu addon batch 2: Dirkies foundation trim / floors / hall tree / crate, TK outdoor
+    # seating + garage doors (community_addon_batch2.py; NOT yet tested in game)
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\74_community_dirkies_architecture.json",
+    r"c:\Users\josep\Kiro\zomboid\communitytilepack\deliverables\75_community_tk_outdoor.json",
 ]
 OUT_ROOT = r"c:\Users\josep\Kiro\zomboid\communitytilepack\mod"
 
@@ -187,6 +191,9 @@ def write_mod(mod_id, mod_name, description):
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
     # ice machines make Sapph's Cooking ice (inert without that mod; ice_machine_ice.py, 2026-11-16)
     from ice_machine_ice import write_ice_lua
+    # Wall Screen TV + counters / upper cabinets: vanilla Place check relaxed for the screen (2026-11-19)
+    import wallscreen_placement
+    wallscreen_placement.write_lua(_media)
     write_ice_lua(_media)
     # ramp removal: WE's own server-side version since 2026-11-16 (we_sync.WE_RAMP_FILES, WE-owned);
     # our first client-only version (vehicle_ramps.write_ramp_remove_lua) is no longer shipped

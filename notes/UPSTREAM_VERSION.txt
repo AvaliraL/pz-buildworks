@@ -1,11 +1,12 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-17
-            (Steam manifest 3980620932794181319). In the files we track it is the same as the 2026-11-16
-            update: nothing from handoff-2026-11-16-shelves-bushmaster is merged yet (we_update_check.py:
-            every tracked file unchanged). The Expansion's 10_vegetation.json (WE's empty placeholder,
-            already shipped) is now tracked, because work/ fills it (note 65).
-            Refreshed with _refresh_upstream_keep_work.py 2026-11-16 (work/ was NOT reset).
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-19
+            (Steam manifest 7628044029899949491). In the files we track, only WE's own
+            lua/client/Patches/WorldEssentialsReadIcons.lua changed (base folder); work/ had no change of
+            ours there, so work/ now holds WE's new version too. Nothing from handoff-2026-11-18(b) is merged
+            yet. Refreshed with _refresh_upstream_keep_work.py 2026-11-17 (work/ was NOT reset).
 work/     = our working copy. Diff against upstream/ for hand-offs.
-upstream_2026-11-16/ = the previous snapshot (manifest 4476907045485774239: the WE dev's merge of
+upstream_2026-11-17/ = the previous snapshot (manifest 3980620932794181319; tracks the Expansion IG_UI.json and
+            10_vegetation.json).
+upstream_2026-11-16/ = the one before (manifest 4476907045485774239: the WE dev's merge of
             handoff-2026-11-14b-sinks-ramps, WE's server-side ramp removal rewrite, adopted).
 upstream_2026-11-14b/ (manifest 6371434639292603896), upstream_2026-11-14/, upstream_2026-11-10/,
 upstream_2026-10-31/ = older ones. Never edit the Steam copy.

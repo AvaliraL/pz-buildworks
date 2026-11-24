@@ -100,6 +100,8 @@ PACK_OF = {
     "69": "Community",
     # vanilla B42 ramps_01 drivable car ramps (vehicle_ramps.py)
     "73": "Community",
+    # Building Menu addon batch 2 (community_addon_batch2.py, 2026-08-28)
+    "74": "Dirkies", "75": "TK",
 }
 # Completed = verified in-game; everything else -> In Progress.
 # Whole sheets confirmed complete:
@@ -126,7 +128,12 @@ COMPLETED_SHEETS = {"21","22","23","24","25","26","27","28","29","31","32","33",
                     "63", "64", "65", "66", "67",
                     "68",   # Blackwood one-offs: all confirmed in game (user, 2026-11-14)
                     "69",   # Monitoring Station / Bank TVs: confirmed in game (user, 2026-11-14)
-                    "73"}   # vehicle ramps: build + remove confirmed in game (user, 2026-11-14)
+                    "73",   # vehicle ramps: build + remove confirmed in game (user, 2026-11-14)
+                    # Dirkies addon batch 2 (foundation trim, columns, floors, hall tree, crate):
+                    # "all of dirkies in progress can be marked complete" (user, 2026-08-28)
+                    "74",
+                    # TK addon batch 2 (outdoor seating, plank garage doors): "as can all TK in progress"
+                    "75"}
 # -> In Progress by omission: "30" (shelving), future sheets.
 
 # PER-PIECE status overrides (finer than sheet-level), matched by buildable id PREFIX.
@@ -176,6 +183,12 @@ COMPLETED_IDS = {
 } | {_DC + "edit_ddd_RUS_fixtures_counters_03_%d" % i for c in range(2, 60, 8) for i in (c, c + 1)}
 # Pieces explicitly NOT yet confirmed (force In Progress even if a sibling on the sheet is done):
 INPROGRESS_ID_PREFIXES = {
+    # re-check after the 2026-08-28 repack (user): the pegboard gun racks drew behind some wall trim (now
+    # wall-plane depth + GUNRACK_DEPTH_BIAS), and the 2-tile Fears workbenches showed a seam where their tiles
+    # meet (now edge-extruded in KBWCommunityFears.pack). Air compressor + anvil were fine.
+    "community.dylan.gun_rack_",
+    "community.fears.workbench.electrical", "community.fears.workbench.carpentry",
+    "community.fears.workbench.chemistry", "community.fears.workbench.gunsmithing",
     # (couches: standalone corner pieces dropped, L couches confirmed -> nothing held back)
     # (2026-08-28 additions - Dirkies decor house / medical / window decor, Dylan gun racks / Future
     #  Room - all confirmed: "all of dirkies in progress can be marked complete", "all of Dylan can
@@ -203,6 +216,52 @@ INPROGRESS_ID_PREFIXES = {
     "worldessentials.simonmd.planter_", "worldessentials.simonmd.plant_",   # Simon MD planters: not tested yet
     "worldessentials.simonmd.flowers_",
 }
+
+# RETEST (user, 2026-08-28: "we will need to mark all of those back to in progress so i can retest all of
+# them"): kbw_tilepatch._write_pack now leaves 2 px between sprites (was 1 px: seam lines, as on the TikiTown
+# overlays), so every pack it writes was repacked. Completed pieces whose art comes from those packs are
+# shown as In Progress until re-checked in game: sprites of these tilesets anywhere in the definition, and
+# the TVs that get generated screens (KBWCommunityTVScreens, via Lua). Empty this tuple once re-checked.
+# Re-checked in game (user, 2026-08-28): Blackwood, Community (not the experimental pieces), Dirkies, Dylan,
+# TK, Simon MD all good -> cleared. Still open: the Dylan gun racks (depth) and the Fears 2-tile workbenches
+# (seam), held back in INPROGRESS_ID_PREFIXES.
+RETEST_TILESETS = ()
+
+
+def _retest_sprites():
+    """Sprites that send a piece back to In Progress: the TVs with generated screens (pack + WE names)."""
+    import kbw_tilepatch as _k
+    import we_dylan as _wd
+    out = set()
+    if "KBWCommunityTVScreens" in RETEST_TILESETS:
+        _map = _wd.sprite_map()
+        for tv in _k.TV_SCREEN_MAP:
+            out.add(tv)
+            if tv in _map:
+                out.add(_map[tv])
+    return out
+
+
+def retest_pass(merged):
+    """Completed -> In Progress for pieces using repacked art (RETEST_TILESETS). Returns a Counter by pack."""
+    import re as _re
+    from collections import Counter as _C
+    if not RETEST_TILESETS:
+        return _C()
+    pat = _re.compile(r'"((?:%s)_\d+)"' % "|".join(_re.escape(t) for t in RETEST_TILESETS))
+    tvs = _retest_sprites()
+    sprite_pat = _re.compile(r'"([A-Za-z0-9_\-]+_\d+)"')
+    out = _C()
+    for b in merged:
+        cat = b.get("category") or ""
+        if not cat.endswith(" - Completed"):
+            continue
+        s = json.dumps(b)
+        if pat.search(s) or (tvs and any(x in tvs for x in sprite_pat.findall(s))):
+            b["category"] = cat[:-len("Completed")] + "In Progress"
+            out[cat[:-len(" - Completed")]] += 1
+    return out
+
 
 def piece_status(bid, sheet_status):
     """Resolve a single buildable's status with per-id overrides winning over the sheet default."""
@@ -307,6 +366,7 @@ TT_KEEP_GROUPS = {"22", "38", "39", "40", "41", "42",   # 22: doors in 12 type g
 # Community sheets that keep their KBW groups in the test bundle, so each card reviews as it ships
 # (user 2026-08-28: "the potted plants should be a single card")
 COMM_KEEP_GROUPS = {"63", "64", "65", "66", "67", "68",
+                    "74", "75",   # foundation trim / column / floor / garage-door cards (community_addon_batch2.py)
                     "10",   # Knox Expansion 10_vegetation.json: one card per tree size + species (knox_vegetation.py)
                     "07"}   # Simon MD decor: one card per neon colour (user 2026-11-17), posters, speakers ...
 # Simon MD submod files confirmed in game
@@ -501,6 +561,8 @@ def main():
     from kbw_tilepatch import write_pump_sink_water_lua, PUMP_WATER_LUA_NAME
     write_pump_sink_water_lua(os.path.join(_media, "lua", "server", PUMP_WATER_LUA_NAME))
     from ice_machine_ice import write_ice_lua       # ice machines -> Sapph's ice (2026-11-16)
+    import wallscreen_placement                     # Wall Screen TV placement next to counters (2026-11-19)
+    wallscreen_placement.write_lua(_media)
     write_ice_lua(_media)
     # ramp removal: WE's own files as WE ships them (2026-11-16; we_sync.WE_RAMP_FILES)
     import we_sync as _ws
@@ -509,6 +571,14 @@ def main():
         _dst = os.path.join(_media, *_rel.split("/")[2:])
         os.makedirs(os.path.dirname(_dst), exist_ok=True)
         shutil.copyfile(_src, _dst)
+    # local test-only Lua kept outside work/ (WE_submods/held_back/, not part of the hand-offs): copied into
+    # the bundle when present
+    _phun = os.path.join(os.path.dirname(_ws.WORK), "held_back", "World Essentials (base, our files only)", "42",
+                         "media", "lua", "client", "Patches", "WorldEssentialsPhunInteriorsBuildRemoval_Client.lua")
+    if os.path.isfile(_phun):                       # local only (not in the repo)
+        _phun_dst = os.path.join(_media, "lua", "client", "Patches", os.path.basename(_phun))
+        os.makedirs(os.path.dirname(_phun_dst), exist_ok=True)
+        shutil.copyfile(_phun, _phun_dst)
     # TikiTown wall overlays: our own copied tiles (as in the submod)
     from tikitown_wall_overlays import write_overlay_assets
     write_overlay_assets(_media, os.path.join(os.path.dirname(mod42), "common", "media"))
@@ -658,6 +728,8 @@ def main():
     for _reason, _ids in sorted(_rot_rep["skipped"].items()):
         print("rotation skipped (%s): %d e.g. %s" % (_reason, len(_ids), ", ".join(_ids[:3])))
     name_tooltip_pass.split_shared_keys(merged)   # unique translationKey per distinct name
+    _rt = retest_pass(merged)
+    print("retest (repacked art): %d Completed pieces moved back to In Progress %s" % (sum(_rt.values()), dict(_rt)))
     from kbw_sort_order import md5_order
     md5_order(merged)                              # keeps KBW's registry sort shallow (kbw_sort_order.py)
     out_doc={"schemaVersion":1,"category":"Walls",

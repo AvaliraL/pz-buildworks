@@ -144,5 +144,9 @@
   "Tooltip_KBWCB_BeadCurtain": "Hanging bead curtain for a doorway. You can walk and see through it.",
   "Tooltip_KBWCB_Floor": "Floor covering. Lay it on a square with a floor.",
   "Tooltip_KBWCB_StreetLight": "Street light. Lights up when switched on, with power. The pole can be walked and driven through.",
-  "Tooltip_KBWCB_TrafficLight": "Two-storey traffic light with a yellow bulb. Lights up when switched on, with power. The pole can be walked and driven through."
+  "Tooltip_KBWCB_TrafficLight": "Two-storey traffic light with a yellow bulb. Lights up when switched on, with power. The pole can be walked and driven through.",
+  "Tooltip_KBWCB_Wall_NewburbsExteriorOverlays": "Newburbs exterior overlays wall section.",
+  "Tooltip_KBWCB_Wall_NewburbsInteriorOverlays": "Newburbs interior overlays wall section.",
+  "Tooltip_KBWCB_WallCorner_NewburbsInteriorOverlays": "Newburbs interior overlays corner wall section.",
+  "Tooltip_KBWCB_WallCorner_NewburbsExteriorOverlays": "Newburbs exterior overlays corner wall section."
 }

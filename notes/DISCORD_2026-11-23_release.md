@@ -9,7 +9,9 @@ Each part is under Discord's 2000-character limit. Post the dev note parts in or
 **Buildworks hand-off, 2026-11-23**
 
 Compare (your 2026-11-23 update as the base, so it shows only our changes):
-https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-23...handoff-2026-11-23b-no-neon
+https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-23-full..handoff-2026-11-23b-no-neon
+
+Use the `-full` baseline: the plain one still had our old Raven Creek export in it, which hid that whole submod.
 
 Use the **23b** tag. An earlier tag from today (`handoff-2026-11-23-overlays-repack`) still had a neon card patch for your Expansion, which we've withdrawn. 23b removes it, and your Expansion `manifest.json` is exactly yours again.
 
@@ -39,7 +41,13 @@ Our packer left 1 px between sprites, vanilla leaves 2. Zoomed out, the game sam
 - NEW file 75: TK hammock, couch, lawn chair, shell chair, lawn lounger, plank garage door (3 and 4 wide).
 - NEW `KBWCommunity_WallScreenPlacement.lua` (shared): the Wall Screen TV can be placed (moveable Place) on wall squares that have counters or upper cabinets, and they can be placed next to it. Vanilla's own rule otherwise.
 
-**Still open from earlier hand-offs** (they show again as new files): the ice machine menu + Make Ice action (Community) and the Bushmaster manual distribution (base).
+**Still not in WE from earlier hand-offs** (all in this compare again):
+- **Raven Creek Buildworks**, the whole submod (Simon MD furniture, decor incl. the facehugger, doors, planters...). Your Expansion has only its 12 fences (file 35).
+- Knox Expansion vegetation: `10_vegetation.json` + `WorldEssentialsKnoxVegetation.lua`.
+- Ice machine menu + Make Ice action (Community).
+- Bushmaster manual distribution (base).
+- Pickup no-break, `WorldEssentialsBuildworksPickup.lua` (base, note 66).
+- Stage capacity MP sync, `KBWCommunity_StageProperties.lua` (Community).
 
 Full details are in `notes/HANDOFF_NOTES.md`, notes 70-73 and 75. Note 70 is an FYI about your snow Lua errors.
 

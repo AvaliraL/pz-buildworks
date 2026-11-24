@@ -193,6 +193,11 @@ def main():
     for s in SUBMODS:
         if os.path.isdir(os.path.join(root, s)):
             out.append(("we/" + s, mirror(os.path.join(root, s), os.path.join(REPO, "we", s))))
+        elif baseline and os.path.isdir(os.path.join(REPO, "we", s)):
+            # (2026-11-23) A submod WE does not ship (Raven Creek) must not stay in the baseline as
+            # our own earlier export: the compare then hid the whole submod from the dev. Remove it.
+            out.append(("we/" + s + " (not shipped by WE, removed)",
+                        mirror(os.path.join(root, s), os.path.join(REPO, "we", s))))
     # Knox Buildworks Expansion: since the 2026-11-10 baseline, upstream/ tracks WE's copies of the
     # files there that concern us (WorldEssentialsKnoxTikitown.lua, the merged component recipes),
     # so the folder is mirrored like the others in both modes. (Before, only files differing from

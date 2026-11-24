@@ -788,14 +788,29 @@ Follow-up alone: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2
 
 ## Hand-off 2026-11-23 (tag `handoff-2026-11-23b-no-neon`; replaces `handoff-2026-11-23-overlays-repack`)
 
-Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-23...handoff-2026-11-23b-no-neon
+Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-23-full..handoff-2026-11-23b-no-neon
+
+Use the `-full` baseline. `we-baseline-2026-11-23` still carried our own earlier export of the Raven Creek
+Buildworks submod, which you haven't shipped, so a compare against it hid the whole submod. `-full` is that
+baseline minus the Raven Creek folder (a side commit; nothing pushed was rewritten).
 
 Your updates of 2026-11-19 (manifest 7628044029899949491) and 2026-11-23 (manifest 2380534916916018674) each
 changed one file we track, both your own: `WorldEssentialsReadIcons.lua` and `WorldEssentialsCommunityGrid.lua`.
 We had no change in either, so our work copy carries your versions and the compare won't undo them.
 Not in this hand-off: our experimental pieces (furnaces, bench tools).
-Still waiting from earlier hand-offs: the ice machine menu / Make Ice action (Community) and the Bushmaster manual
-distribution (base), which show up as new files again in this compare.
+
+**Still not in World Essentials from earlier hand-offs** (checked against your 2026-11-23 update; all of it is
+in this compare again):
+- **Raven Creek Buildworks**, the whole submod (2026-11-18 hand-off): Simon MD fencing, doors, furniture,
+  barricades, countertops, decor (incl. the facehugger), floor wedges, planters. Your Expansion has only the 12
+  fences (`35_simonmd_fencing.json`); the hand-off asks to move them into this submod (same ids).
+- **Knox Expansion vegetation** (2026-11-18b): `10_vegetation.json` (yours is the 35-byte stub) and
+  `WorldEssentialsKnoxVegetation.lua`.
+- **Ice machine menu / Make Ice** (Community): `KBWCommunity_IceMachineMenu.lua`,
+  `TimedActions/KBWCommunityMakeIceAction.lua`.
+- **Bushmaster manual distribution** (base): `WorldEssentialsBushmasterManualDistribution_Server.lua`.
+- **Pickup no-break** (base, note 66): our change to `WorldEssentialsBuildworksPickup.lua`.
+- **Stage capacity sync in multiplayer** (Community): our change to `KBWCommunity_StageProperties.lua`.
 
 ### 69. WITHDRAWN (user, 2026-11-23): your own neon lights in one card per colour
 - The first 2026-11-23 tag (`handoff-2026-11-23-overlays-repack`) still carried `99b_neon_colour_groups.json` and its

@@ -255,6 +255,20 @@ local function drawOverlay(frame, texture, x, y, alpha)
     if positions and positions[x] and positions[x][y] then return end
     frame.pane:drawTexture(texture, x, y, alpha, 1, 1, 1)
 end
+-- Pools are isolated by nested render depth. Item references are cleared after every pass.
+local frames={}
+local frameDepth=0
+local function acquireFrame(depth,pane,dragged)
+    local frame=frames[depth]
+    if not frame then frame={pool={},rows={},mediaCache={}};if depth<=8 then frames[depth]=frame end end
+    frame.depth=depth;frame.pane=pane;frame.dragged=dragged;frame.native={};frame.nativeCount=0
+    return frame
+end
+local function releaseFrame(frame)
+    for i=#frame.rows,1,-1 do frame.rows[i].item=nil;frame.rows[i]=nil end
+    for key in pairs(frame.mediaCache) do frame.mediaCache[key]=nil end
+    frame.pane=nil;frame.native=nil
+end
 local function draw(frame, t)
     local pane = frame.pane
     local player = getSpecificPlayer(pane.player)
@@ -263,7 +277,7 @@ local function draw(frame, t)
     local markedMap = (root and root.markedMap) or {}
     local radio = getZomboidRadio and getZomboidRadio()
     local media = radio and radio:getRecordedMedia()
-    local mediaCache = {}
+    local mediaCache = frame.mediaCache
     -- primary rows draw their icon at column2-texWH-texInset; expanded stack rows at 10+16
     local texWH = math.min((pane.itemHgt or 34) - 2, 32)
     local primaryX = (pane.column2 or 0) - texWH - ((pane.itemHgt or 34) - texWH) / 2
@@ -319,14 +333,18 @@ local function install()
         local frame = active
         if frame and frame.pane == pane and item and type(x) == 'number'
             and type(y) == 'number' and type(h) == 'number' and #frame.rows < State.limit then
-            frame.rows[#frame.rows + 1] = { item = item, x = x, y = y, h = h, alpha = alpha or 1 }
+            local i=#frame.rows+1
+            local row=frame.pool[i]
+            if not row then row={};frame.pool[i]=row end
+            row.item=item;row.x=x;row.y=y;row.h=h;row.alpha=alpha or 1
+            frame.rows[i]=row
         end
         return result
     end
 
     ISInventoryPane.renderdetails = function(self, doDragged, ...)
         if State.failed then return render(self, doDragged, ...) end
-        local depth = active and active.depth + 1 or 1
+        local depth = frameDepth+1
         local optionsOK, options = pcall(readOptions, depth)
         if not optionsOK then
             State.failed = true
@@ -336,7 +354,8 @@ local function install()
         local t = options
         if not t.visible then return render(self, doDragged, ...) end
         local parent = active
-        local frame = { depth = depth, pane = self, dragged = doDragged == true, rows = {}, native = {}, nativeCount = 0 }
+        local frame = acquireFrame(depth,self,doDragged==true)
+        frameDepth=depth
         local ownDraw, effectiveDraw = rawget(self, 'drawTexture'), self.drawTexture
         active = frame
         -- Preserve instance/class overrides, including nested renders on this same pane.
@@ -356,7 +375,7 @@ local function install()
         local ok, result = pcall(render, self, doDragged, ...)
         self.drawTexture = ownDraw
         active = nil -- do not capture child overlays as parent native icons
-        if not ok then active = parent; error(result) end
+        if not ok then releaseFrame(frame);frameDepth=depth-1;active = parent; error(result) end
         if #frame.rows > 0 then
             if frame.dragged then self:suspendStencil() end
             local overlayOK, reason = pcall(draw, frame, t)
@@ -366,6 +385,8 @@ local function install()
                 report('degraded', 'overlay disabled after error: '..tostring(reason))
             end
         end
+        releaseFrame(frame)
+        frameDepth=depth-1
         active = parent
         return result
     end

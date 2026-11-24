@@ -2,6 +2,8 @@
 local Health = require "WorldEssentialsPatchHealth"
 local G = { bySprite = {}, failures = 0 }
 local slots = {}
+local hooked=false
+local communityLoad
 -- Restrict registration to the exact scope certified by Java LoadGridGate.
 local allowed = { tv = {}, tabletop = {} }
 for _,name in ipairs({"DylansRandomFurniture02_36","DylansRandomFurniture02_37","DylansRandomFurniture02_38","DylansRandomFurniture02_39","WECommunity_DylansRandomFurniture02_36","WECommunity_DylansRandomFurniture02_37","WECommunity_DylansRandomFurniture02_38","WECommunity_DylansRandomFurniture02_39","KBWCommunityIceShell_176","KBWCommunityIceShell_177","KBWCommunityIceShell_178","KBWCommunityIceShell_179","KBWCommunityIceShell_180","KBWCommunityIceShell_181","KBWCommunityIceShell_205","KBWCommunityIceShell_206","KBWCommunityIceShell_264","KBWCommunityIceShell_265","KBWCommunityIceShell_266","KBWCommunityIceShell_267","KBWCommunityIceShell_268","KBWCommunityIceShell_269"}) do allowed.tv[name] = true end
@@ -11,10 +13,11 @@ function G.register(key, names, fn)
     for name in pairs(names) do if not allowed[key][name] then return false end end
     -- Replace this slot rather than append: repeated loading cannot duplicate work.
     slots[key] = fn
+    if not hooked and Events.LoadGridsquare then Events.LoadGridsquare.Add(communityLoad);hooked=true end
     for name in pairs(allowed[key]) do G.bySprite[name] = key end
     return true
 end
-local function communityLoad(sq)
+communityLoad=function(sq)
     local objects = sq and sq:getObjects()
     if not objects then return end
     for i = 0, objects:size()-1 do
@@ -35,6 +38,6 @@ local function communityLoad(sq)
     end
 end
 G.onSquare = communityLoad
-if Events.LoadGridsquare then Events.LoadGridsquare.Add(communityLoad) end
+-- Registration is demand-driven by G.register.
 Health.set("Community square repair", "OK", "Single load callback; Fixed sprite allowlist; isolated failures; no polling/network")
 return G

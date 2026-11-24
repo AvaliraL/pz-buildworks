@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "definitions": [
+    "media/KnoxBuildworks/definitions/00_dependency_patches.json",
+    "media/KnoxBuildworks/definitions/01_building_decor.json",
+    "media/KnoxBuildworks/definitions/02_containers.json",
+    "media/KnoxBuildworks/definitions/03_doors.json",
+    "media/KnoxBuildworks/definitions/04_fences.json",
+    "media/KnoxBuildworks/definitions/05_floors.json",
+    "media/KnoxBuildworks/definitions/06_furniture.json",
+    "media/KnoxBuildworks/definitions/07_sloped_walls.json",
+    "media/KnoxBuildworks/definitions/08_roofs.json",
+    "media/KnoxBuildworks/definitions/09_stairs.json",
+    "media/KnoxBuildworks/definitions/10_vegetation.json",
+    "media/KnoxBuildworks/definitions/11_walls.json",
+    "media/KnoxBuildworks/definitions/12_windows.json",
+    "media/KnoxBuildworks/definitions/13_other.json",
+    "media/KnoxBuildworks/definitions/14_material_balance.json",
+    "media/KnoxBuildworks/definitions/15_catalogue_consolidation.json",
+    "media/KnoxBuildworks/definitions/16_tablesaw.json",
+    "media/KnoxBuildworks/definitions/17_garage_door_sizes.json",
+    "media/KnoxBuildworks/definitions/20_tikitown.json",
+    "media/KnoxBuildworks/definitions/18_irregular_water_tank.json",
+    "media/KnoxBuildworks/definitions/19_street_overlays.json",
+    "media/KnoxBuildworks/definitions/98_no_shingles.json",
+    "media/KnoxBuildworks/definitions/99_catalogue_finish.json",
+    "media/KnoxBuildworks/definitions/35_simonmd_fencing.json"
+  ]
+}

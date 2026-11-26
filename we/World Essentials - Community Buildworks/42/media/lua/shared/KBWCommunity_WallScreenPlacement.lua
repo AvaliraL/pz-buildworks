@@ -102,6 +102,12 @@ end
 
 function W.relaxed(self, square, forceTypeObject)
     if not square or not self.isMoveable then return false end
+    -- Mirrors and other child sprites remain placement blockers.
+    local objects=square:getObjects()
+    for i=0,objects:size()-1 do
+        local children=objects:get(i):getChildSprites()
+        if children and children:size()>0 then return false end
+    end
     if square.isVehicleIntersecting and square:isVehicleIntersecting() then return false end
     if not square:getFloor() then return false end
     if self.spriteName and W.SPRITES[self.spriteName] then
@@ -124,6 +130,10 @@ local function install()
     ISMoveableSpriteProps.canPlaceMoveableInternal = function(self, character, square, item, forceTypeObject)
         local ok = orig(self, character, square, item, forceTypeObject)
         if ok then return ok end
+        if character and square and SafeHouse and not SafeHouse.isSafehouseAllowInteract(square,character) then
+            local guests=WorldEssentialsSafehouseGuests
+            if not (guests and guests.canInteract(square,character)) then return ok end
+        end
         local good, res = pcall(W.relaxed, self, square, forceTypeObject)
         if good and res == true then return true end
         return ok

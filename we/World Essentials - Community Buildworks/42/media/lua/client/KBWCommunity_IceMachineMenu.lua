@@ -28,10 +28,10 @@ local function onFill(playerNum, context, worldObjects, test)
                 if I.isMachine(obj) then
                     local label = getTextOrNull("ContextMenu_KBWCB_MakeIce") or "Make Ice"
                     local option = context:addOption(label, playerObj, onMakeIce, obj)
-                    if not I.isPowered(obj) then
+                    if not I.isPowered(obj) or not I.waterItem(playerObj) then
                         option.notAvailable = true
                         local tip = ISWorldObjectContextMenu.addToolTip()
-                        tip.description = getTextOrNull("Tooltip_KBWCB_MakeIceNoPower") or "The ice machine needs power."
+                        tip.description = "Requires power and 0.1 L of clean water in a carried container."
                         option.toolTip = tip
                     end
                     return

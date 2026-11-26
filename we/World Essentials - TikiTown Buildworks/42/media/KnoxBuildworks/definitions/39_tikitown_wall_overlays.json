@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "category": "Decorations and Landscaping",
-  "source": "TikiTown wall sheets, tiles 72-91 as WALL OVERLAYS on our own copied tiles (KBWTikiTownWallOverlays, overlay-only props; pack tiles unchanged): 3/4 .. 1/4 height panel / corner / pillar + a Top 1/4 band completing the 3/4 piece, 63 sheets; the 26 Newburbs wall colours (clapboard + interior paint) cut to the same shapes. Needs pack=KBWTikiTownWallOverlays + tiledef=kbwtikitown_walloverlays 8179 in mod.info.",
+  "source": "TikiTown wall sheets, tiles 72-91 as WALL OVERLAYS on our own copied tiles (KBWTikiTownWallOverlays, overlay-only props; pack tiles unchanged): 3/4 .. 1/4 height panel / corner / pillar, 60 sheets. Needs pack=KBWTikiTownWallOverlays + tiledef=kbwtikitown_walloverlays 8179 in mod.info.",
   "buildables": [
     {
       "id": "worldessentials.tikitown.walloverlay.tikitown_vanilla_walls_add_01_pillar_34",

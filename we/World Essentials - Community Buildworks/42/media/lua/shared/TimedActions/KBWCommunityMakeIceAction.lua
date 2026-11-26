@@ -40,12 +40,31 @@ function I.isPowered(obj)
     return world ~= nil and world.isHydroPowerOn and world:isHydroPowerOn() and not sq:isOutside()
 end
 
+-- Portable clean water is consumed server-side; no free ice production.
+I.WATER_LITRES = 0.1
+function I.waterItem(player)
+    local inv=player and player:getInventory()
+    if not inv then return nil end
+    return inv:getFirstEvalRecurse(function(item)
+        local fluid=item.getFluidContainer and item:getFluidContainer()
+        return fluid and fluid:isFilledWithCleanWater() and fluid:getAmount()>=I.WATER_LITRES
+    end)
+end
+function I.canUse(player,machine)
+    local square=machine and machine:getSquare()
+    if not player or player:isDead() or not square or machine:getObjectIndex()<0 then return false end
+    if math.floor(player:getZ())~=square:getZ() or math.abs(player:getX()-square:getX())>2
+        or math.abs(player:getY()-square:getY())>2 then return false end
+    local guests=WorldEssentialsSafehouseGuests
+    if not SafeHouse.isSafehouseAllowInteract(square,player) and not (guests and guests.canInteract(square,player)) then return false end
+    return I.available() and I.isMachine(machine) and I.isPowered(machine) and I.waterItem(player)~=nil
+end
+
 KBWCommunityMakeIceAction = ISBaseTimedAction:derive("KBWCommunityMakeIceAction")
 local A = KBWCommunityMakeIceAction
 
 function A:isValid()
-    return I.available() and self.machine ~= nil and self.machine:getObjectIndex() ~= -1
-        and I.isMachine(self.machine) and I.isPowered(self.machine)
+    return I.canUse(self.character,self.machine)
 end
 
 function A:waitToStart()
@@ -88,15 +107,19 @@ end
 
 -- runs on the server in multiplayer (and in single player): re-checks, then adds the cubes
 function A:complete()
-    if not (I.available() and self.machine and self.machine:getObjectIndex() ~= -1
-            and I.isMachine(self.machine) and I.isPowered(self.machine)) then
-        return false
+    if self.weCompleted or isClient() or not I.canUse(self.character,self.machine) then return false end
+    local water=I.waterItem(self.character)
+    local inv=self.character:getInventory()
+    -- Create detached results first; an unavailable item cannot consume the player's water.
+    local items={}
+    for i=1,I.PER_USE do
+        items[i]=instanceItem(I.ITEM)
+        if not items[i] then return false end
     end
-    local inv = self.character:getInventory()
-    for _ = 1, I.PER_USE do
-        local item = inv:AddItem(I.ITEM)
-        if item then sendAddItemToContainer(inv, item) end
-    end
+    self.weCompleted=true
+    water:getFluidContainer():removeFluid(I.WATER_LITRES)
+    water:syncItemFields()
+    for _,item in ipairs(items) do inv:AddItem(item);sendAddItemToContainer(inv,item) end
     return true
 end
 

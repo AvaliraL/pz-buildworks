@@ -106,31 +106,38 @@ print("[KBWCommunity] StageProperties: registered stage property kbwcbContainerT
 -- campfire does). The send waits one tick, so it always follows KBW's own transmit of the object.
 if isServer() and not Properties.__kbwcbContainerSync and type(Properties.applyToObject) == "function" then
     local applyToObject = Properties.applyToObject
-    local pending = {}
+    local pending, queued = {}, {}
     local function changesContainers(stage)
         if type(stage) ~= "table" then return false end
         local c = stage.container
         return (type(c) == "table" and c.capacity ~= nil) or stage.kbwcbContainerCapacity ~= nil
             or stage.kbwcbContainerTypes ~= nil
     end
+    local head=1
     local function flush()
-        Events.OnTick.Remove(flush)
-        local list = pending
-        pending = {}
-        for i = 1, #list do
-            local part = list[i]
+        local started=getTimestampMs()
+        for _=1,16 do
+            local part=pending[head]
+            if not part then
+                Events.OnTick.Remove(flush)
+                pending,queued,head={},{},1
+                return
+            end
+            pending[head]=false;head=head+1;queued[part]=nil
             pcall(function()
-                if part:getSquare() and part:getObjectIndex() >= 0 and containerCount(part) > 0 then
+                if part:getSquare() and part:getObjectIndex()>=0 and containerCount(part)>0 then
                     part:sendObjectChange(IsoObjectChange.CONTAINERS)
                 end
             end)
+            if getTimestampMs()-started>=2 then return end
         end
     end
     Properties.applyToObject = function(part, buildObj, context)
         local result = applyToObject(part, buildObj, context)
         if part and IsoObjectChange and not (context and context.isFloor)
-            and changesContainers(buildObj and buildObj.stage) then
+            and changesContainers(buildObj and buildObj.stage) and not queued[part] then
             if #pending == 0 then Events.OnTick.Add(flush) end
+            queued[part] = true
             pending[#pending + 1] = part
         end
         return result

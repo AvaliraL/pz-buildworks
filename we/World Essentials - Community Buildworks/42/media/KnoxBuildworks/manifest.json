@@ -33,10 +33,10 @@
     "media/KnoxBuildworks/definitions/68_community_blackwood_props.json",
     "media/KnoxBuildworks/definitions/69_community_monitoring_tvs.json",
     "media/KnoxBuildworks/definitions/73_kbwcb_vehicle_ramps.json",
-    "media/KnoxBuildworks/definitions/74_community_dirkies_architecture.json",
-    "media/KnoxBuildworks/definitions/75_community_tk_outdoor.json",
     "media/KnoxBuildworks/definitions/70_kbwcb_refrigeration_tiers.json",
     "media/KnoxBuildworks/definitions/71_kbwcb_pump_sinks.json",
-    "media/KnoxBuildworks/definitions/72_kbwcb_ladders.json"
+    "media/KnoxBuildworks/definitions/72_kbwcb_ladders.json",
+    "media/KnoxBuildworks/definitions/74_community_dirkies_architecture.json",
+    "media/KnoxBuildworks/definitions/75_community_tk_outdoor.json"
   ]
 }

@@ -24,6 +24,14 @@
     "media/KnoxBuildworks/definitions/19_street_overlays.json",
     "media/KnoxBuildworks/definitions/98_no_shingles.json",
     "media/KnoxBuildworks/definitions/99_catalogue_finish.json",
-    "media/KnoxBuildworks/definitions/35_simonmd_fencing.json"
+    "media/KnoxBuildworks/definitions/35_simonmd_fencing.json",
+    "media/KnoxBuildworks/definitions/raven_02_simonmd_doors.json",
+    "media/KnoxBuildworks/definitions/raven_03_simonmd_furniture.json",
+    "media/KnoxBuildworks/definitions/raven_04_simonmd_barricades.json",
+    "media/KnoxBuildworks/definitions/raven_05_simonmd_countertops.json",
+    "media/KnoxBuildworks/definitions/raven_06_simonmd_furniture2.json",
+    "media/KnoxBuildworks/definitions/raven_07_simonmd_decor.json",
+    "media/KnoxBuildworks/definitions/raven_08_simonmd_floor_wedges.json",
+    "media/KnoxBuildworks/definitions/raven_09_simonmd_planters.json"
   ]
 }

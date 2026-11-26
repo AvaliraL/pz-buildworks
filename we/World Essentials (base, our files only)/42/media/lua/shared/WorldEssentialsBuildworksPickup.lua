@@ -119,8 +119,11 @@ local function install()
         local item = originalInstance(self, spriteName)
         local pending = self._kbwcbPending
         if item and pending then
-            self._kbwNoBreak=priorNoBreak
-        self._kbwcbPending = nil
+            -- KBW hand-off 2026-11-24: removed `self._kbwNoBreak=priorNoBreak` here. priorNoBreak is a
+            -- local of pickUpMoveableInternal, so this read a nil global and cleared the no-break flag;
+            -- vanilla calls instanceItem before doBreakTest, so reinforced pieces with a storage record
+            -- could break again on pick-up (note 66).
+            self._kbwcbPending = nil
             -- (the list name can't be changed: Moveable.getName ignores the item name; the
             -- inventory tooltip shows record.name instead, see KBWCommunity_StageInfo.lua)
             pcall(function() item:getModData().kbwcbStorage = pending end)

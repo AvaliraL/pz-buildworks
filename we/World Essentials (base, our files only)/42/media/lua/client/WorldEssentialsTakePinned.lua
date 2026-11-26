@@ -311,6 +311,7 @@ end
 -- A single interactive operation per local player. All transfers remain vanilla timed actions.
 local operations={}
 local armed=false
+local LAST_WAIT_MS=3000 -- MP: time allowed for the server's sync of the last moved item
 local drain
 local function finish(id)
     operations[id]=nil
@@ -366,9 +367,18 @@ local function step(id,op)
     local queue=ISTimedActionQueue.getTimedActionQueue(player)
     if queue and #queue.queue>0 then return "wait" end
     if op.last then
-        -- An emptied queue with the item still at source means cancellation/failure.
-        if op.last:getContainer()~=op.dest then finish(id);return end
-        op.last=nil
+        -- KBW hand-off 2026-11-24: in MP the client's transfer action leaves the queue before the
+        -- server's container sync arrives (ISInventoryTransferAction:perform only moves the item when
+        -- not isClient()), and the synced item can be a new object. Checking only "last item is in
+        -- dest" stopped the run after one or two items. Moved = in dest OR gone from its source;
+        -- still at source = wait for the sync, and only after LAST_WAIT_MS treat it as cancelled.
+        if op.last:getContainer()==op.dest or not op.lastSource:contains(op.last) then
+            op.last=nil;op.lastSource=nil;op.lastDone=nil
+        else
+            op.lastDone=op.lastDone or getTimestampMs()
+            if getTimestampMs()-op.lastDone<LAST_WAIT_MS then return "wait" end
+            finish(id);return
+        end
     end
     local group=op.groups[op.groupIndex]
     if not group then finish(id);return end
@@ -381,7 +391,7 @@ local function step(id,op)
     if not hasRoom(op.dest,player,item,0) then return end
     if queueWalkNear(rootContainerOf(item),player) then
         ISTimedActionQueue.add(ISInventoryTransferUtil.newInventoryTransferAction(player,item,source,op.dest))
-        op.last=item
+        op.last=item;op.lastSource=source;op.lastDone=nil
     end
     return "wait"
 end

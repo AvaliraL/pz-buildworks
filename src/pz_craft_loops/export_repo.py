@@ -22,11 +22,16 @@ SUBMODS = ["World Essentials - Community Buildworks", "World Essentials - TikiTo
 # merged its 12 fences into Knox Buildworks Expansion (35_simonmd_fencing.json) with no gate; the
 # hand-off asks to move them back into this submod (same ids) and drop file 35 + its keys there.
 EXPANSION = "World Essentials - Knox Buildworks Expansion (our files only)"
+# (2026-11-24) WE's 2026-11-24 update merged Raven Creek Buildworks INTO Knox Buildworks Expansion
+# (raven_02..09 definitions, KBWRavenCreek pack / tiles / Lua, no RavenCreek_B42 gate) instead of
+# shipping it as its own submod. Until we decide whether to follow that layout, our separate submod
+# is not exported (the baseline drops it, as WE doesn't ship it).
+HELD = {"World Essentials - Raven Creek Buildworks"}
 
 SRC_SCRIPTS = [
     "build_community_mod.py", "build_tikitown_mod.py", "build_merged_test_mod.py", "kbw_tilepatch.py",
     "we_sync.py", "we_dylan.py", "tooltip_fix.py", "name_tooltip_pass.py", "we_bug_pass.py",
-    "_vendor_we_dylan.py", "_refresh_upstream.py", "_run_all.py", "patch_we_tooltips.py",
+    "_vendor_we_dylan.py", "_refresh_upstream.py", "_refresh_upstream_keep_work.py", "_takepinned_mp_mock.py", "_run_all.py", "patch_we_tooltips.py",
     "_audit_faces.py", "classify_wall_pieces.py", "gen_wall_full.py", "export_repo.py",
     "align_appliance_costs.py", "counter_variants.py", "container_caps.py", "rotation_fix.py",
     # sheet generators + bench tools (deliverables are built from these)
@@ -191,6 +196,9 @@ def main():
     root = os.path.join(K, "zomboid", "WE_submods", "upstream" if baseline else "work")
     out = []
     for s in SUBMODS:
+        if s in HELD and not baseline:
+            out.append(("we/" + s + " (held, not exported)", (0, 0, 0)))
+            continue
         if os.path.isdir(os.path.join(root, s)):
             out.append(("we/" + s, mirror(os.path.join(root, s), os.path.join(REPO, "we", s))))
         elif baseline and os.path.isdir(os.path.join(REPO, "we", s)):

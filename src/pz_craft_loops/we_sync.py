@@ -54,7 +54,14 @@ WE_SUBMOD_OWNED = {"kbwcommunity_seating.lua",
                    # WE update 2026-11-16 (manifest 4476907045485774239): WE rewrote the ramp removal
                    # server-side (RampRemove client + RampRemoveServer + RampRecovery). Theirs from now on.
                    "kbwcommunity_rampremove.lua", "kbwcommunity_rampremoveserver.lua",
-                   "kbwcommunity_ramprecovery.lua"}
+                   "kbwcommunity_ramprecovery.lua",
+                   # WE update 2026-11-24 (manifest 3524223825142291260): WE merged and then rewrote these
+                   # (Make Ice needs 0.1 L clean water + safehouse guests; Wall Screen keeps child-sprite
+                   # blockers + safehouse check; stage container sync throttled). Theirs from now on;
+                   # work/ holds WE's copies. The generators (ice_machine_ice.py, wallscreen_placement.py,
+                   # container_caps.py) still write our older versions for the test bundle only.
+                   "kbwcommunity_icemachinemenu.lua", "kbwcommunitymakeiceaction.lua",
+                   "kbwcommunity_wallscreenplacement.lua", "kbwcommunity_stageproperties.lua"}
 # WE's ramp-removal files, copied from upstream/ into work/ and the test bundle as WE ships them
 WE_RAMP_FILES = ["42/media/lua/client/KBWCommunity_RampRemove.lua",
                  "42/media/lua/server/KBWCommunity_RampRemoveServer.lua",

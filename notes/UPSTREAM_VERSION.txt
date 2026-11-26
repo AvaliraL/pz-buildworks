@@ -1,8 +1,12 @@
-upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-19
-            (Steam manifest 7628044029899949491). In the files we track, only WE's own
-            lua/client/Patches/WorldEssentialsReadIcons.lua changed (base folder); work/ had no change of
-            ours there, so work/ now holds WE's new version too. Nothing from handoff-2026-11-18(b) is merged
-            yet. Refreshed with _refresh_upstream_keep_work.py 2026-11-17 (work/ was NOT reset).
+upstream/ = untouched copy of World Essentials (Workshop 3733324672), installed update 2026-11-24
+            (Steam manifest 3524223825142291260). WE merged handoff-2026-11-23b and the older open items.
+            Raven Creek went INTO Knox Buildworks Expansion (raven_02..09, pack, tiles, Lua), not as its own
+            submod; our separate submod is held out of the export (export_repo.py HELD). WE rewrote Make Ice,
+            Wall Screen placement, StageProperties and Pickup; work/ took WE's copies (we_sync WE_SUBMOD_OWNED).
+            Now tracked too: base lua/client/WorldEssentialsTakePinned.lua (WE's adaptation of BC_TakePinned).
+            Refreshed with _refresh_upstream_keep_work.py 2026-11-23 (work/ was NOT reset).
+upstream_2026-11-23/ = the previous snapshot (manifest 2380534916916018674).
+upstream_2026-11-19/ = the one before (manifest 7628044029899949491).
 work/     = our working copy. Diff against upstream/ for hand-offs.
 upstream_2026-11-17/ = the previous snapshot (manifest 3980620932794181319; tracks the Expansion IG_UI.json and
             10_vegetation.json).

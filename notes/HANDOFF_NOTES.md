@@ -786,6 +786,45 @@ Follow-up alone: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2
 
 (nothing yet)
 
+## Hand-off 2026-11-24 (tag `handoff-2026-11-24-takepinned-mp`)
+
+Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-24..handoff-2026-11-24-takepinned-mp
+
+The baseline is your 2026-11-24 update (Steam manifest 3524223825142291260). Thanks for the merge: it took
+everything from 11-23 plus the older items we listed (Raven Creek, vegetation, Make Ice, Bushmaster
+distribution, pickup no-break, stage sync). Your own edits to our files (Make Ice water cost, Wall Screen
+child-sprite and safehouse checks, throttled stage sync, Pickup reorder, manifests) are now our working copy
+too, and our builds won't overwrite them. This hand-off is two small Lua fixes in your base folder.
+
+**Raven Creek layout (question, nothing changed):** you shipped it inside Knox Buildworks Expansion
+(`raven_02..09` + pack / tiles / Lua) rather than as its own submod, so it no longer needs `RavenCreek_B42`.
+We've stopped exporting our separate submod. Tell us if that's the layout you want to keep, and we'll
+build Raven Creek changes into the Expansion from now on.
+
+### 76. Take Pinned only moves one or two items per click in multiplayer (base) (2026-11-24)
+- **Symptom (player, on the server):** "Would only grab a couple items per click from zombie corpses."
+- **Cause (`WorldEssentialsTakePinned.lua`):** your one-item-at-a-time loop ends the run when the queue is
+  empty and the last item isn't in the destination. In MP the client's `ISInventoryTransferAction:perform()`
+  doesn't move the item (`if not isClient() then self:transferItem(item)`): the server does, and its
+  container sync arrives after the action has left the queue, sometimes as a new item object. So the
+  check reads a successful transfer as a cancel. Single player moves the item before the queue empties,
+  which is why it only shows on the server.
+- **Fix:** the last item counts as moved when it's in the destination *or* gone from its source. While
+  it's still in the source, the loop waits up to 3 s (`LAST_WAIT_MS`) for the sync, then treats it as
+  cancelled and stops, as before. Everything else in your file is unchanged.
+- **Test status:** tested against mocks only (`pz_craft_loops/_takepinned_mp_mock.py`, lupa, `next` removed,
+  8 pinned items). Your current file: single player 8 of 8, MP-timing 1 of 8. Fixed file: single player
+  8 of 8, MP-timing 8 of 8, cancelled transfer stops after 3 s. **Not tested on a server yet.**
+
+### 77. Reinforced pieces can break on pick-up again (base) (2026-11-24)
+- **Cause (`WorldEssentialsBuildworksPickup.lua`, your 11-24 reorder):** inside the `instanceItem` wrapper
+  you added `self._kbwNoBreak=priorNoBreak`. `priorNoBreak` is a local of `pickUpMoveableInternal`, so
+  here it's a nil global, and the line clears the no-break flag. Vanilla calls `instanceItem` (line 1379)
+  before `doBreakTest` (line 1388), so a reinforced piece with a storage record gets the vanilla break
+  roll again (note 66).
+- **Fix:** that one line removed. Your `priorNoBreak` save / restore in `pickUpMoveableInternal` is kept.
+- **Test status:** built and checked only (syntax, Kahlua scan). Not tested in game.
+
 ## Hand-off 2026-11-23 (tag `handoff-2026-11-23b-no-neon`; replaces `handoff-2026-11-23-overlays-repack`)
 
 Compare: https://github.com/AvaliraL/pz-buildworks/compare/we-baseline-2026-11-23-full..handoff-2026-11-23b-no-neon
